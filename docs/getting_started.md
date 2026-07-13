@@ -22,7 +22,7 @@ conda run -n merlin-dev uv run tools/merlin.py <subcommand>        # direct, no 
 Prefer a one-command setup? Open the repo in VSCode with the **Dev Containers**
 extension and accept the "Reopen in Container" prompt — or, from the command
 line, `docker compose run --rm merlin-dev ./merlin --help`. See
-[`.devcontainer/devcontainer.json`](https://github.com/ucb-bar/merlin/blob/main/.devcontainer/devcontainer.json).
+[`.devcontainer/devcontainer.json`](https://github.com/ucb-bar/Merlin-IREE/blob/main/.devcontainer/devcontainer.json).
 The image is several GB because it bakes the conda env; first build takes
 ~10 minutes.
 

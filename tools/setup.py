@@ -181,8 +181,8 @@ def setup_parser(parser: argparse.ArgumentParser):
     )
     parser.add_argument(
         "--prebuilt-repo",
-        default="ucb-bar/merlin",
-        help="GitHub repository containing release assets (default: ucb-bar/merlin).",
+        default="ucb-bar/Merlin-IREE",
+        help="GitHub repository containing release assets (default: ucb-bar/Merlin-IREE).",
     )
     parser.add_argument(
         "--prebuilt-force",

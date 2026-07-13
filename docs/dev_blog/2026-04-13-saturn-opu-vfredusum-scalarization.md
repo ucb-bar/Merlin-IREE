@@ -1,6 +1,6 @@
 # 2026-04-13: Saturn OPU `vfredusum.vs` hang — opcode survey + MLIR scalarization fix
 
-> **Repro pin:** merlin@[`320fbf06`](https://github.com/ucb-bar/merlin/commit/320fbf064de5572cbae276206c479f0bed843eb8) · iree_bar@[`68acd99c74`](https://github.com/ucb-bar/iree_bar/commit/68acd99c74)
+> **Repro pin:** merlin@[`320fbf06`](https://github.com/ucb-bar/Merlin-IREE/commit/320fbf064de5572cbae276206c479f0bed843eb8) · iree_bar@[`68acd99c74`](https://github.com/ucb-bar/iree_bar/commit/68acd99c74)
 > **Status:** Active
 
 Related entries:

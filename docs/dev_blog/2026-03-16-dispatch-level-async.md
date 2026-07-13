@@ -1,6 +1,6 @@
 # 2026-03-17: SpacemiTX60 Dispatch Scheduler Tuning for Periodic MLP + dronet
 
-> **Repro pin:** merlin@[`e18fc562`](https://github.com/ucb-bar/merlin/commit/e18fc562c5c9a9601fc3e34a6d990a0427ddc255) · iree_bar@[`dd293bb513`](https://github.com/ucb-bar/iree_bar/commit/dd293bb513)
+> **Repro pin:** merlin@[`e18fc562`](https://github.com/ucb-bar/Merlin-IREE/commit/e18fc562c5c9a9601fc3e34a6d990a0427ddc255) · iree_bar@[`dd293bb513`](https://github.com/ucb-bar/iree_bar/commit/dd293bb513)
 > **Status:** Active
 
 ## 0. Scope

@@ -1,5 +1,10 @@
 # Merlin Compiler Infrastructure
 
+> **Archived — the IREE-based predecessor of Merlin.** This is the original MLIR/IREE-based Merlin
+> compiler stack. Merlin has since been reimagined as its own, IREE-independent project, which now
+> lives at [**ucb-bar/merlin**](https://github.com/ucb-bar/merlin). This repository is preserved here
+> and is re-consumed by the new Merlin as a well-defined **baseline**.
+
 Merlin is an MLIR/IREE-based compiler stack that lowers ML models to host CPU
 and custom RISC-V targets (SpacemiT, Saturn OPU, Gemmini, NPU). Ideally this
 is where the *Compiler Magic* happens, so you don't have to.
@@ -7,20 +12,20 @@ is where the *Compiler Magic* happens, so you don't have to.
 > **Early Development Warning** — ***Merlin*** is under active development. Expect bugs,
 > incomplete features, and APIs that may change. Bugfixes are welcome; please
 > discuss significant changes in the
-> [issue tracker](https://github.com/ucb-bar/merlin/issues) before
+> [issue tracker](https://github.com/ucb-bar/Merlin-IREE/issues) before
 > starting work.
 
 > **Early Development Warning** — ***Merlin*** under active development. Expect bugs,
 > incomplete features, and APIs that may change. Bugfixes are welcome; please
 > discuss significant changes in the
-> [issue tracker](https://github.com/ucb-bar/merlin/issues) before
+> [issue tracker](https://github.com/ucb-bar/Merlin-IREE/issues) before
 > starting work.
 
 <p align="center">
   <img src="docs/assets/merlin_transparent.png" width="400">
 </p>
 
-- [**Documentation site**](https://ucb-bar.github.io/merlin/) — start here for guides, architecture, and reference
+- [**Documentation site**](https://ucb-bar.github.io/Merlin-IREE/) — start here for guides, architecture, and reference
 - [docs/getting_started.md](docs/getting_started.md) — fastest path from a fresh clone to a compiled model
 - [docs/user_paths.md](docs/user_paths.md) — workflow-first map of the repo
 - [CONTRIBUTING.md](CONTRIBUTING.md) — contributor guide
@@ -42,7 +47,7 @@ Two ways to use Merlin: install prebuilt release artifacts, or build from source
 
 ### Option A — Prebuilt binaries (recommended)
 
-Release tarballs land on the [GitHub Releases](https://github.com/ucb-bar/merlin/releases) page:
+Release tarballs land on the [GitHub Releases](https://github.com/ucb-bar/Merlin-IREE/releases) page:
 `merlin-host-linux-x86_64`, `merlin-host-macos`, `merlin-runtime-spacemit`,
 `merlin-runtime-saturnopu`. Install them into the expected `build/...` layout:
 

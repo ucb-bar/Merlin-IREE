@@ -1,6 +1,6 @@
 # 2026-03-25: Ray Control Plane Bootstrap
 
-> **Repro pin:** merlin@[`2903e28b`](https://github.com/ucb-bar/merlin/commit/2903e28b0ec45c4e109fa9c98592b7f0353fcf40) · iree_bar@[`ddf4685ae1`](https://github.com/ucb-bar/iree_bar/commit/ddf4685ae1)
+> **Repro pin:** merlin@[`2903e28b`](https://github.com/ucb-bar/Merlin-IREE/commit/2903e28b0ec45c4e109fa9c98592b7f0353fcf40) · iree_bar@[`ddf4685ae1`](https://github.com/ucb-bar/iree_bar/commit/ddf4685ae1)
 > **Status:** Active
 
 This log tracks the first Merlin-owned Ray control-plane slice.

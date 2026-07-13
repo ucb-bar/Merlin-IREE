@@ -1,6 +1,6 @@
 # 2026-03-12: SmolVLA FP8/INT8 Global-Optimization Workstream
 
-> **Repro pin:** merlin@[`cf8c3ac1`](https://github.com/ucb-bar/merlin/commit/cf8c3ac1061b1db4cf3878725f7ff4007ad94183) · iree_bar@[`68acd99c74`](https://github.com/ucb-bar/iree_bar/commit/68acd99c74)
+> **Repro pin:** merlin@[`cf8c3ac1`](https://github.com/ucb-bar/Merlin-IREE/commit/cf8c3ac1061b1db4cf3878725f7ff4007ad94183) · iree_bar@[`68acd99c74`](https://github.com/ucb-bar/iree_bar/commit/68acd99c74)
 > **Status:** Active
 
 ## At a glance

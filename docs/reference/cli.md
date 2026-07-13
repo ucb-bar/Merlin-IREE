@@ -302,7 +302,7 @@ usage: ./merlin setup [-h] [--env-name ENV_NAME] [--env-file ENV_FILE]
 | `--toolchain-force` | no | `False` | - | Reinstall toolchains even if the destination already exists. |
 | `--prebuilt-artifact` | no | `host-linux-x86_64` | `host-linux-x86_64, host-macos, runtime-saturnopu, runtime-spacemit` | Which published Merlin prebuilt artifact to install. |
 | `--prebuilt-tag` | no | `latest` | - | GitHub release tag to download from, or 'latest' (default: latest). |
-| `--prebuilt-repo` | no | `ucb-bar/merlin` | - | GitHub repository containing release assets (default: ucb-bar/merlin). |
+| `--prebuilt-repo` | no | `ucb-bar/Merlin-IREE` | - | GitHub repository containing release assets (default: ucb-bar/Merlin-IREE). |
 | `--prebuilt-force` | no | `False` | - | Replace an existing destination build tree when installing a prebuilt artifact. |
 
 #### Subcommand `sim`
@@ -849,7 +849,7 @@ usage: ./merlin setup [-h] [--env-name ENV_NAME] [--env-file ENV_FILE]
 | `--toolchain-force` | no | `False` | - | Reinstall toolchains even if the destination already exists. |
 | `--prebuilt-artifact` | no | `host-linux-x86_64` | `host-linux-x86_64, host-macos, runtime-saturnopu, runtime-spacemit` | Which published Merlin prebuilt artifact to install. |
 | `--prebuilt-tag` | no | `latest` | - | GitHub release tag to download from, or 'latest' (default: latest). |
-| `--prebuilt-repo` | no | `ucb-bar/merlin` | - | GitHub repository containing release assets (default: ucb-bar/merlin). |
+| `--prebuilt-repo` | no | `ucb-bar/Merlin-IREE` | - | GitHub repository containing release assets (default: ucb-bar/Merlin-IREE). |
 | `--prebuilt-force` | no | `False` | - | Replace an existing destination build tree when installing a prebuilt artifact. |
 
 ### `--help` Output
@@ -917,7 +917,7 @@ options:
                         (default: latest).
   --prebuilt-repo PREBUILT_REPO
                         GitHub repository containing release assets (default:
-                        ucb-bar/merlin).
+                        ucb-bar/Merlin-IREE).
   --prebuilt-force      Replace an existing destination build tree when
                         installing a prebuilt artifact.
 ```

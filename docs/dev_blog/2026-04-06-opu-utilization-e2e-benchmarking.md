@@ -1,6 +1,6 @@
 # 2026-04-06: Saturn OPU — Int8 QDQ Model Compilation & VOPACC Coverage
 
-> **Repro pin:** merlin@[`57529095`](https://github.com/ucb-bar/merlin/commit/57529095a81ea8df1258170c961da02f73423858) · iree_bar@[`b05497ea75`](https://github.com/ucb-bar/iree_bar/commit/b05497ea75)
+> **Repro pin:** merlin@[`57529095`](https://github.com/ucb-bar/Merlin-IREE/commit/57529095a81ea8df1258170c961da02f73423858) · iree_bar@[`b05497ea75`](https://github.com/ucb-bar/iree_bar/commit/b05497ea75)
 > **Status:** Active
 
 Related entries:

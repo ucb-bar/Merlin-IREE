@@ -9,12 +9,12 @@ a link to the deep-dive doc if you need more.
 
 | Thing | Value | Where it is defined |
 |---|---|---|
-| HuggingFace model | `lerobot/smolvla_base` | default `--model-id` in [`models/smolVLA/export_smolvla.py`](https://github.com/ucb-bar/merlin/blob/dev/main/models/smolVLA/export_smolvla.py) line 74 |
+| HuggingFace model | `lerobot/smolvla_base` | default `--model-id` in [`models/smolVLA/export_smolvla.py`](https://github.com/ucb-bar/Merlin-IREE/blob/dev/main/models/smolVLA/export_smolvla.py) line 74 |
 | Understanding-PI0 fork | branch `mlir-smolvla` | `.gitmodules` → `third_party/Understanding-PI0` (ucb-bar fork) |
 | Understanding-PI0 commit | submodule SHA | `git -C third_party/Understanding-PI0 rev-parse HEAD` |
 | AutoComp fork | `third_party/autocomp` | `.gitmodules` → `third_party/autocomp` |
 | AutoComp commit | submodule SHA | `git -C third_party/autocomp rev-parse HEAD` |
-| Kernel catalog | 21 atomic/fused kernels | [`benchmarks/SaturnNPU/kernels/`](https://github.com/ucb-bar/merlin/tree/dev/main/benchmarks/SaturnNPU/kernels) |
+| Kernel catalog | 21 atomic/fused kernels | [`benchmarks/SaturnNPU/kernels/`](https://github.com/ucb-bar/Merlin-IREE/tree/dev/main/benchmarks/SaturnNPU/kernels) |
 
 To get the **exact** SHAs for your Merlin checkout, run from the repo root:
 
@@ -57,21 +57,21 @@ The `--target <X>` switch picks a compile profile from `models/<X>.yaml`.
 How the compiler lowers SmolVLA (dialect layers, op coverage, known gaps):
 [`docs/architecture/npu_compilation_pipeline.md`](../architecture/npu_compilation_pipeline.md).
 What's inside the NPU dialect plugin itself:
-[`compiler/src/merlin/Dialect/NPU/README.md`](https://github.com/ucb-bar/merlin/blob/dev/main/compiler/src/merlin/Dialect/NPU/README.md).
+[`compiler/src/merlin/Dialect/NPU/README.md`](https://github.com/ucb-bar/Merlin-IREE/blob/dev/main/compiler/src/merlin/Dialect/NPU/README.md).
 
 ## 3. Kernels: what runs on the NPU
 
 The 21 kernels that back a full SmolVLA forward pass live under
-[`benchmarks/SaturnNPU/kernels/`](https://github.com/ucb-bar/merlin/tree/dev/main/benchmarks/SaturnNPU/kernels).
+[`benchmarks/SaturnNPU/kernels/`](https://github.com/ucb-bar/Merlin-IREE/tree/dev/main/benchmarks/SaturnNPU/kernels).
 Each kernel directory has variants (shape/dtype combinations) and an ISA body.
 
-- **Catalog and variant counts**: [`benchmarks/SaturnNPU/kernels/README.md`](https://github.com/ucb-bar/merlin/blob/dev/main/benchmarks/SaturnNPU/kernels/README.md).
+- **Catalog and variant counts**: [`benchmarks/SaturnNPU/kernels/README.md`](https://github.com/ucb-bar/Merlin-IREE/blob/dev/main/benchmarks/SaturnNPU/kernels/README.md).
 - **Golden-data workflow** (how kernels are validated against PyTorch refs, how
   to add new shapes, how the harness wires into the simulator):
-  [`benchmarks/SaturnNPU/golden_data/KERNEL_GUIDE.md`](https://github.com/ucb-bar/merlin/blob/dev/main/benchmarks/SaturnNPU/golden_data/KERNEL_GUIDE.md).
+  [`benchmarks/SaturnNPU/golden_data/KERNEL_GUIDE.md`](https://github.com/ucb-bar/Merlin-IREE/blob/dev/main/benchmarks/SaturnNPU/golden_data/KERNEL_GUIDE.md).
 - **Layer → kernel decomposition** (which SmolVLA layer lowers into which
   kernel, and why those fusions exist):
-  [`benchmarks/SaturnNPU/LAYER_DECOMPOSITION_TRACE.md`](https://github.com/ucb-bar/merlin/blob/dev/main/benchmarks/SaturnNPU/LAYER_DECOMPOSITION_TRACE.md).
+  [`benchmarks/SaturnNPU/LAYER_DECOMPOSITION_TRACE.md`](https://github.com/ucb-bar/Merlin-IREE/blob/dev/main/benchmarks/SaturnNPU/LAYER_DECOMPOSITION_TRACE.md).
 
 The kernels themselves were hand-derived with AutoComp
 (`third_party/autocomp`) against the fp8/int8 schemes from the export step.
@@ -82,7 +82,7 @@ fused norm/scale kernels to need regeneration.
 
 - **Kernel-level golden tests**: see the workflow in `KERNEL_GUIDE.md` above.
 - **Full-graph benchmarking on the Saturn NPU simulator**:
-  [`benchmarks/SaturnNPU/README.md`](https://github.com/ucb-bar/merlin/blob/dev/main/benchmarks/SaturnNPU/README.md).
+  [`benchmarks/SaturnNPU/README.md`](https://github.com/ucb-bar/Merlin-IREE/blob/dev/main/benchmarks/SaturnNPU/README.md).
 - **Graph manifest** (exact op/layer/kernel call order used by the benchmarks):
   `benchmarks/SaturnNPU/smolvla_graph_manifest.json`.
 

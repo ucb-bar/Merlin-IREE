@@ -1,6 +1,6 @@
 # 2026-03-13: RISC-V MMT4D Ukernel Workstream
 
-> **Repro pin:** merlin@[`36576ee7`](https://github.com/ucb-bar/merlin/commit/36576ee757e1564494dbe24a0a0204c5c1785de7) · iree_bar@[`a53ce62467`](https://github.com/ucb-bar/iree_bar/commit/a53ce62467)
+> **Repro pin:** merlin@[`36576ee7`](https://github.com/ucb-bar/Merlin-IREE/commit/36576ee757e1564494dbe24a0a0204c5c1785de7) · iree_bar@[`a53ce62467`](https://github.com/ucb-bar/iree_bar/commit/a53ce62467)
 > **Status:** Active
 
 Related entries:

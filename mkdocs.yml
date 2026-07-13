@@ -1,6 +1,6 @@
 site_name: Merlin Compiler Infrastructure for UCB-BAR
 site_description: Docs for Merlin (Setup, Tutorial, API, etc)
-repo_url: https://github.com/ucb-bar/merlin
+repo_url: https://github.com/ucb-bar/Merlin-IREE
 edit_uri: edit/main/docs/
 docs_dir: docs
 
