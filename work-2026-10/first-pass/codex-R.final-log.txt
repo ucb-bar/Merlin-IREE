@@ -1,0 +1,40 @@
+from pathlib import Path
+import json
+p=Path('/home/loren/work/runs/gemR');r=json.loads((p/'result-manifest.json').read_text());r['instance_cleanup']=json.loads((p/'ec2-final.json').read_text());(p/'result-manifest.json').write_text(json.dumps(r,indent=2)+'\\n')
+s=(p/'REPORT.md').read_text().replace('Awaiting terminal-state confirmation.','Latest independent EC2 check2026-10-27T17:38:47UTC still reports shutting-down. Termination was requested by manager and own instance is NOT running; no other run was stopped. Terminal terminated state is not claimed.');(p/'REPORT.md').write_text(s)
+f=p/'manifest.py';s=f.read_text().replace(\"files += list((p/'fpga').rglob('*'))\",\"files += [p/'README.md']\\nfiles += list((p/'fpga').rglob('*'))\");f.write_text(s)
+PY
+/home/loren/work/runs/smolvla/venv/bin/python /home/loren/work/runs/gemR/manifest.py
+cd /home/loren/work/runs/gemR
+sha256sum -c SHA256SUMS > manifest-check.log
+tail -5 manifest-check.log" in /home/loren/work
+ succeeded in 1112ms:
+/home/loren/work/runs/gemR/fpga-output.f32: OK
+/home/loren/work/runs/gemR/fpga-uart-normalized.log: OK
+/home/loren/work/runs/gemR/fpga-dispatch-a1.log: OK
+/home/loren/work/runs/gemR/fpga-status-final.log: OK
+/home/loren/work/runs/gemR/ec2-final.json: OK
+
+codex
+Executed on Spike and F2; **numerics fail on both**.
+
+- Spike: **864,621,908 cycles**, 7.95% below historical functional count.
+- F2: **1,760,982,669 invoke cycles**; FMR **1.01**, emulation wall **617 s**.
+- FPGA output is **bit-identical to Spike**.
+- Both fail **302/1000 logits**, max error **5.85761**, top-1 **0 vs 21**.
+- Likely compiler defect: classifier tile offsets/strides are lost.
+- No retries. Own F2 is `shutting-down`, absent from active runs.
+
+[Report](/home/loren/work/runs/gemR/REPORT.md) · [ELF](/home/loren/work/runs/gemR/resnet50-gemR.elf) · [Manifest](/home/loren/work/runs/gemR/result-manifest.json)
+tokens used
+143,957
+Executed on Spike and F2; **numerics fail on both**.
+
+- Spike: **864,621,908 cycles**, 7.95% below historical functional count.
+- F2: **1,760,982,669 invoke cycles**; FMR **1.01**, emulation wall **617 s**.
+- FPGA output is **bit-identical to Spike**.
+- Both fail **302/1000 logits**, max error **5.85761**, top-1 **0 vs 21**.
+- Likely compiler defect: classifier tile offsets/strides are lost.
+- No retries. Own F2 is `shutting-down`, absent from active runs.
+
+[Report](/home/loren/work/runs/gemR/REPORT.md) · [ELF](/home/loren/work/runs/gemR/resnet50-gemR.elf) · [Manifest](/home/loren/work/runs/gemR/result-manifest.json)
