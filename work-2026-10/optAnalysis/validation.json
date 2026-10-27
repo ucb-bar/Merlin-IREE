@@ -1,0 +1,6 @@
+{
+  "dispatch_count": 106,
+  "upstream_timing_and_gemmini_MAC_reconciliation": "PASS",
+  "maxpool_catalog_correction": "PASS",
+  "script_syntax": "PASS"
+}

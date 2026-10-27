@@ -1,0 +1,17 @@
+{
+  "command": [
+    "runs/optAnalysis/analyze.py",
+    "runs/perfX/results/resnet/firesim-trace.csv",
+    "runs/perfX/results/resnet-assembly-catalog.json",
+    "--assembly",
+    "runs/perfX/assembly/resnet",
+    "--out",
+    "runs/optAnalysis/resnet"
+  ],
+  "python": "3.12.3",
+  "inputs": {
+    "runs/perfX/results/resnet/firesim-trace.csv": "0e1bbe18ddb502f4778cb23a61c47309118137cf394b21a2ff823eaacdf9899a",
+    "runs/perfX/results/resnet-assembly-catalog.json": "b4e31bce7c20ae0384f727a4c96903931190a093a0f7b04f41cae4e87163e597",
+    "runs/perfX/assembly/resnet/module_resnet50_q_int8_linked_embedded_elf_riscv_64.s": "81f66fc0f49f7dcd73d87950d0827d985c0cfa08d1aadd9478c189aa43098f79"
+  }
+}
