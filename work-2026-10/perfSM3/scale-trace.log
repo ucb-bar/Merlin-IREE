@@ -1,0 +1,543 @@
+{
+  "dispatches": 17953,
+  "estimated_instructions": 430334661263,
+  "groups": {
+    "batch_matmul_12x256x512x64_f32": {
+      "calls": 288,
+      "instructions": 102542966784
+    },
+    "elementwise_3072x64_f32": {
+      "calls": 288,
+      "instructions": 88212291648
+    },
+    "elementwise_broadcast_196608_f32": {
+      "calls": 144,
+      "instructions": 88120762368
+    },
+    "elementwise_broadcast_786432_f32": {
+      "calls": 3,
+      "instructions": 61667057664
+    },
+    "matmul_1024x3072x768_i8xi8xi32": {
+      "calls": 36,
+      "instructions": 19525926912
+    },
+    "elementwise_3072x512_f32": {
+      "calls": 288,
+      "instructions": 16944247296
+    },
+    "elementwise_1024x3072_f32xf32xi8": {
+      "calls": 36,
+      "instructions": 7319255040
+    },
+    "batch_matmul_15x291x291x64_f32": {
+      "calls": 8,
+      "instructions": 7086442875
+    },
+    "batch_matmul_15x241x241x64_f32": {
+      "calls": 8,
+      "instructions": 4499239680
+    },
+    "elementwise_broadcast_279360_f32": {
+      "calls": 8,
+      "instructions": 3996943200
+    },
+    "elementwise_1024x768_f32xf32xi8": {
+      "calls": 72,
+      "instructions": 3646888704
+    },
+    "elementwise_broadcast_3072_f32": {
+      "calls": 288,
+      "instructions": 3642385344
+    },
+    "matmul_241x2560x960_i8xi8xi32": {
+      "calls": 30,
+      "instructions": 2646180000
+    },
+    "elementwise_broadcast_231360_f32": {
+      "calls": 7,
+      "instructions": 2409744540
+    },
+    "matmul_1024x768x768_i8xi8xi32": {
+      "calls": 144,
+      "instructions": 2264543232
+    },
+    "elementwise_broadcast_49152_f32": {
+      "calls": 288,
+      "instructions": 2129577984
+    },
+    "elementwise_transpose_1024x12x64_f32xf32xi8": {
+      "calls": 36,
+      "instructions": 1787321728
+    },
+    "elementwise_4365x291_f32": {
+      "calls": 16,
+      "instructions": 1125450865
+    },
+    "reduction_1024x3072_f32": {
+      "calls": 36,
+      "instructions": 1080676320
+    },
+    "batch_matmul_15x50x241x64_f32": {
+      "calls": 8,
+      "instructions": 865266720
+    },
+    "reduction_1024x768_f32": {
+      "calls": 108,
+      "instructions": 815477344
+    },
+    "elementwise_3615x241_f32": {
+      "calls": 14,
+      "instructions": 716346516
+    },
+    "elementwise_1024x768_f32": {
+      "calls": 75,
+      "instructions": 685018176
+    },
+    "matmul_1024x768x3072_i8xi8xi32": {
+      "calls": 36,
+      "instructions": 645153792
+    },
+    "elementwise_1024x8_f32": {
+      "calls": 3930,
+      "instructions": 631475932
+    },
+    "elementwise_241x2560_f32xf32xi8": {
+      "calls": 15,
+      "instructions": 604650000
+    },
+    "elementwise_241x960_f32xf32xi8": {
+      "calls": 39,
+      "instructions": 581050830
+    },
+    "elementwise_broadcast_48000_f32": {
+      "calls": 8,
+      "instructions": 571368000
+    },
+    "elementwise_8192_f32": {
+      "calls": 1020,
+      "instructions": 453801944
+    },
+    "slow_memcpy": {
+      "calls": 7437,
+      "instructions": 319434292
+    },
+    "transpose_512x12x64_f32": {
+      "calls": 144,
+      "instructions": 207495168
+    },
+    "matmul_241x960x960_i8xi8xi32": {
+      "calls": 31,
+      "instructions": 203394360
+    },
+    "elementwise_750x241_f32": {
+      "calls": 16,
+      "instructions": 182400768
+    },
+    "matmul_50x2048x720_i8xi8xi32": {
+      "calls": 32,
+      "instructions": 158028800
+    },
+    "elementwise_transpose_8x8x12288_f32xf32xi8": {
+      "calls": 3,
+      "instructions": 154071360
+    },
+    "matmul_241x960x2560_i8xi8xi32": {
+      "calls": 15,
+      "instructions": 116388540
+    },
+    "reduction_241x960_f32": {
+      "calls": 46,
+      "instructions": 113219631
+    },
+    "elementwise_50x2048_f32xf32xi8": {
+      "calls": 16,
+      "instructions": 105488384
+    },
+    "transpose_256x12x64_f32": {
+      "calls": 144,
+      "instructions": 103984768
+    },
+    "elementwise_transpose_241x15x64_f32xf32xi8": {
+      "calls": 7,
+      "instructions": 103982060
+    },
+    "transpose_12x1024x64_f32": {
+      "calls": 36,
+      "instructions": 103760448
+    },
+    "reduction_241x2560_f32": {
+      "calls": 15,
+      "instructions": 97590540
+    },
+    "elementwise_50x720_f32xf32xi8": {
+      "calls": 34,
+      "instructions": 85225816
+    },
+    "elementwise_broadcast_4365_f32": {
+      "calls": 8,
+      "instructions": 81908352
+    },
+    "elementwise_241x320_f32xf32xi8": {
+      "calls": 16,
+      "instructions": 80252560
+    },
+    "matmul_241x320x960_i8xi8xi32": {
+      "calls": 32,
+      "instructions": 62814240
+    },
+    "elementwise_broadcast_5x3x64x241_f32": {
+      "calls": 16,
+      "instructions": 58414176
+    },
+    "elementwise_broadcast_3615_f32": {
+      "calls": 8,
+      "instructions": 56266752
+    },
+    "elementwise_241x960_f32": {
+      "calls": 30,
+      "instructions": 54557640
+    },
+    "elementwise_3072x8_f32": {
+      "calls": 288,
+      "instructions": 47053512
+    },
+    "elementwise_12x256_f32": {
+      "calls": 144,
+      "instructions": 45815824
+    },
+    "matmul_241x320x320_i8xi8xi32": {
+      "calls": 16,
+      "instructions": 31084180
+    },
+    "elementwise_broadcast_5x3x64x291_f32": {
+      "calls": 8,
+      "instructions": 28292675
+    },
+    "elementwise_transpose_50x15x64_f32xf32xi8": {
+      "calls": 8,
+      "instructions": 26780040
+    },
+    "elementwise_50x960_f32xf32xi8": {
+      "calls": 8,
+      "instructions": 26610072
+    },
+    "elementwise_1x291x15x32_f32": {
+      "calls": 16,
+      "instructions": 24884225
+    },
+    "elementwise_15x291x16_f32": {
+      "calls": 8,
+      "instructions": 24444368
+    },
+    "reduction_64x12288_f32": {
+      "calls": 3,
+      "instructions": 23577792
+    },
+    "elementwise_241x15x32_f32": {
+      "calls": 16,
+      "instructions": 21218816
+    },
+    "elementwise_1024_f32": {
+      "calls": 375,
+      "instructions": 18829504
+    },
+    "elementwise_3072x4_f32": {
+      "calls": 288,
+      "instructions": 16893828
+    },
+    "elementwise_1x241x8_f32": {
+      "calls": 210,
+      "instructions": 16650416
+    },
+    "elementwise_transpose_1024x768_f32": {
+      "calls": 3,
+      "instructions": 16413696
+    },
+    "matmul_50x960x720_i8xi8xi32": {
+      "calls": 16,
+      "instructions": 16117500
+    },
+    "reduction_50x2048_f32": {
+      "calls": 16,
+      "instructions": 16030000
+    },
+    "matmul_50x720x960_i8xi8xi32": {
+      "calls": 16,
+      "instructions": 15835500
+    },
+    "matmul_50x720x2048_i8xi8xi32": {
+      "calls": 16,
+      "instructions": 15816375
+    },
+    "elementwise_15x241x16_f32": {
+      "calls": 7,
+      "instructions": 14937664
+    },
+    "elementwise_3072x2_f32": {
+      "calls": 288,
+      "instructions": 14214496
+    },
+    "reduction_241x320_f32": {
+      "calls": 16,
+      "instructions": 13444426
+    },
+    "reduction_50x720_f32": {
+      "calls": 34,
+      "instructions": 12206425
+    },
+    "elementwise_broadcast_750_f32": {
+      "calls": 8,
+      "instructions": 11691600
+    },
+    "elementwise_50x720_f32": {
+      "calls": 33,
+      "instructions": 10191804
+    },
+    "elementwise_broadcast_5x3x241x64_f32": {
+      "calls": 15,
+      "instructions": 9675162
+    },
+    "elementwise_1x291x5x32_f32": {
+      "calls": 16,
+      "instructions": 9330426
+    },
+    "transpose_8x8x12288_f32": {
+      "calls": 3,
+      "instructions": 8769024
+    },
+    "transpose_32x8x3072_f32": {
+      "calls": 3,
+      "instructions": 8728416
+    },
+    "transpose_15x291x64_f32": {
+      "calls": 8,
+      "instructions": 8398992
+    },
+    "transpose_291x15x64_f32": {
+      "calls": 8,
+      "instructions": 8293985
+    },
+    "elementwise_241x5x32_f32": {
+      "calls": 16,
+      "instructions": 7109760
+    },
+    "transpose_241x15x64_f32": {
+      "calls": 8,
+      "instructions": 6984672
+    },
+    "reduction_50x960_f32": {
+      "calls": 16,
+      "instructions": 6880950
+    },
+    "matmul_50x720x1440_i8xi8xi32": {
+      "calls": 1,
+      "instructions": 6448500
+    },
+    "elementwise_broadcast_291x32_i64xf32": {
+      "calls": 32,
+      "instructions": 6433802
+    },
+    "elementwise_broadcast_5x3x291x64_f32": {
+      "calls": 8,
+      "instructions": 6181791
+    },
+    "transpose_15x241x64_f32": {
+      "calls": 7,
+      "instructions": 6152601
+    },
+    "matmul_50x320x720_i8xi8xi32": {
+      "calls": 16,
+      "instructions": 5368500
+    },
+    "elementwise_50x15x32_f32": {
+      "calls": 16,
+      "instructions": 5304868
+    },
+    "elementwise_50x1440_f32xf32xi8": {
+      "calls": 1,
+      "instructions": 4709520
+    },
+    "elementwise_broadcast_241x32_i64xf32": {
+      "calls": 32,
+      "instructions": 4283136
+    },
+    "elementwise_3072_f32": {
+      "calls": 144,
+      "instructions": 3772936
+    },
+    "elementwise_15x50x16_f32": {
+      "calls": 8,
+      "instructions": 3334848
+    },
+    "elementwise_231360_f32": {
+      "calls": 1,
+      "instructions": 3274422
+    },
+    "matmul_64x960x12288_i8xi8xi32": {
+      "calls": 3,
+      "instructions": 3181200
+    },
+    "elementwise_1x50x8_f32": {
+      "calls": 231,
+      "instructions": 3004886
+    },
+    "elementwise_broadcast_291x291_f32xf32xi1xi1xi1": {
+      "calls": 1,
+      "instructions": 2528265
+    },
+    "elementwise_1x241x960_f32": {
+      "calls": 1,
+      "instructions": 2284290
+    },
+    "elementwise_1x15x291x8_f32": {
+      "calls": 8,
+      "instructions": 2193128
+    },
+    "elementwise_15x291_f32": {
+      "calls": 8,
+      "instructions": 2100984
+    },
+    "elementwise_broadcast_48x960_i64xf32": {
+      "calls": 1,
+      "instructions": 1897600
+    },
+    "transpose_50x15x64_f32": {
+      "calls": 8,
+      "instructions": 1577072
+    },
+    "elementwise_15x241_f32": {
+      "calls": 7,
+      "instructions": 1523354
+    },
+    "transpose_15x50x64_f32": {
+      "calls": 8,
+      "instructions": 1507072
+    },
+    "elementwise_1x15x241x8_f32": {
+      "calls": 7,
+      "instructions": 1432480
+    },
+    "matmul_50x720x720_i8xi8xi32": {
+      "calls": 1,
+      "instructions": 1003500
+    },
+    "elementwise_15x291x4_f32": {
+      "calls": 8,
+      "instructions": 884576
+    },
+    "matmul_50x720x32_i8xi8xi32": {
+      "calls": 1,
+      "instructions": 856125
+    },
+    "reduction_50x1440_f32": {
+      "calls": 1,
+      "instructions": 632900
+    },
+    "elementwise_241x8_f32": {
+      "calls": 7,
+      "instructions": 555020
+    },
+    "elementwise_15x241x4_f32": {
+      "calls": 7,
+      "instructions": 541184
+    },
+    "elementwise_1x15x291x2_f32": {
+      "calls": 8,
+      "instructions": 511616
+    },
+    "elementwise_broadcast_50x32_i64xf32": {
+      "calls": 16,
+      "instructions": 418333
+    },
+    "elementwise_1x15x50x8_f32": {
+      "calls": 8,
+      "instructions": 320072
+    },
+    "elementwise_1x15x241x2_f32": {
+      "calls": 7,
+      "instructions": 280056
+    },
+    "elementwise_15x50_f32": {
+      "calls": 8,
+      "instructions": 232592
+    },
+    "elementwise_15x50x4_f32": {
+      "calls": 8,
+      "instructions": 115824
+    },
+    "elementwise_50x32_f32xf32xi8": {
+      "calls": 1,
+      "instructions": 101563
+    },
+    "elementwise_broadcast_50x720_f32": {
+      "calls": 1,
+      "instructions": 93294
+    },
+    "elementwise_1x15x50x2_f32": {
+      "calls": 8,
+      "instructions": 67824
+    },
+    "matmul_50x32x720_i8xi8xi32": {
+      "calls": 1,
+      "instructions": 37400
+    },
+    "elementwise_360_f64xf32xf64xf64": {
+      "calls": 1,
+      "instructions": 29757
+    },
+    "elementwise_360_f64": {
+      "calls": 1,
+      "instructions": 28867
+    },
+    "matmul_1x960x32_i8xi8xi32": {
+      "calls": 1,
+      "instructions": 25800
+    },
+    "reduction_50x32_f32": {
+      "calls": 1,
+      "instructions": 16325
+    },
+    "scan_1x291xi64_dispatch_tensor_store": {
+      "calls": 1,
+      "instructions": 5487
+    },
+    "elementwise_720_f64xf32": {
+      "calls": 1,
+      "instructions": 3329
+    },
+    "elementwise_291_i64": {
+      "calls": 1,
+      "instructions": 2714
+    },
+    "elementwise_32_f32xf32xi8": {
+      "calls": 1,
+      "instructions": 2036
+    },
+    "elementwise_241_i64": {
+      "calls": 1,
+      "instructions": 1537
+    },
+    "elementwise_broadcast_64_i1": {
+      "calls": 3,
+      "instructions": 843
+    },
+    "elementwise_50_i64": {
+      "calls": 1,
+      "instructions": 445
+    },
+    "reduction_32_f32": {
+      "calls": 1,
+      "instructions": 377
+    },
+    "reduction_50_i64": {
+      "calls": 1,
+      "instructions": 298
+    },
+    "elementwise": {
+      "calls": 1,
+      "instructions": 96
+    }
+  },
+  "limitations": "Altered WG0-only computation; metadata workgroups retained. Approximate scaling, edge/data/trace overhead differences; not numerical acceptance."
+}

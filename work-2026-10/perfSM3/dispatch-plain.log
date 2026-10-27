@@ -1,0 +1,4 @@
+fpga region: us-east-1 (manager i-<redacted>)
+uploaded /home/loren/work/runs/perfSM3/full-runtime/build-plain/smolvla.elf (sha256 355673e836cc8d50...) -> firesim-elfs/zSM3-smolvla-plain.elf
+run zSM3-smolvla-plain dispatched (ssm command 14dc0617-3f13-4b5f-b139-0b0814ecd661); this takes ~10-20 min + your workload
+[22:38:09] InProgress

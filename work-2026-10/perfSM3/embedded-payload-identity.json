@@ -1,0 +1,16 @@
+[
+  {
+    "mode": "plain",
+    "elf": "/home/loren/work/runs/perfSM3/full-runtime/build-plain/smolvla.elf",
+    "elf_sha256": "355673e836cc8d50300df611d7ff38ed481492a514e4620a90283a8ca9358fee",
+    "embedded_vmfb_bytes": 557989519,
+    "embedded_vmfb_sha256": "e078de2049f71da0c2e1132500cbd2078ffb2434336217d131b8f2710aab7615"
+  },
+  {
+    "mode": "trace",
+    "elf": "/home/loren/work/runs/perfSM3/full-runtime/build-trace/smolvla.elf",
+    "elf_sha256": "a8eaf980d9244195fa1b12ca364e356489267d5deedae818912d190b1d798c8c",
+    "embedded_vmfb_bytes": 557989519,
+    "embedded_vmfb_sha256": "e078de2049f71da0c2e1132500cbd2078ffb2434336217d131b8f2710aab7615"
+  }
+]

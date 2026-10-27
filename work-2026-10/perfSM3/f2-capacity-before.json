@@ -1,0 +1,364 @@
+{
+  "checked_utc": "2026-10-27T22:37:57.893220+00:00",
+  "physical_f2_before": [
+    {
+      "Architecture": "x86_64",
+      "BlockDeviceMappings": [
+        {
+          "DeviceName": "/dev/sda1",
+          "Ebs": {
+            "AttachTime": "2026-10-27T21:39:12+00:00",
+            "DeleteOnTermination": true,
+            "Status": "attached",
+            "VolumeId": "vol-<redacted>",
+            "EbsCardIndex": 0
+          }
+        },
+        {
+          "DeviceName": "/dev/sdm",
+          "Ebs": {
+            "AttachTime": "2026-10-27T21:39:11.563000+00:00",
+            "DeleteOnTermination": true,
+            "Status": "attached",
+            "VolumeId": "vol-<redacted>",
+            "EbsCardIndex": 0
+          }
+        }
+      ],
+      "ClientToken": "7bf48e4e-c14c-4115-8782-bd53d14e1f49",
+      "EbsOptimized": true,
+      "EnaSupport": true,
+      "Hypervisor": "xen",
+      "NetworkInterfaces": [
+        {
+          "Association": {
+            "IpOwnerId": "amazon",
+            "PublicDnsName": "",
+            "PublicIp": "<public-ip>"
+          },
+          "Attachment": {
+            "AttachTime": "2026-10-27T21:39:11+00:00",
+            "AttachmentId": "eni-attach-036adc28d495ebf58",
+            "DeleteOnTermination": true,
+            "DeviceIndex": 0,
+            "Status": "attached",
+            "NetworkCardIndex": 0
+          },
+          "Description": "",
+          "Groups": [
+            {
+              "GroupId": "sg-<redacted>",
+              "GroupName": "for-farms-only-firesim"
+            }
+          ],
+          "Ipv6Addresses": [],
+          "MacAddress": "0e:ff:ea:de:b0:99",
+          "NetworkInterfaceId": "eni-<redacted>",
+          "OwnerId": "<AWS_ACCOUNT_ID>",
+          "PrivateIpAddress": "192.168.3.225",
+          "PrivateIpAddresses": [
+            {
+              "Association": {
+                "IpOwnerId": "amazon",
+                "PublicDnsName": "",
+                "PublicIp": "<public-ip>"
+              },
+              "Primary": true,
+              "PrivateIpAddress": "192.168.3.225"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Status": "in-use",
+          "SubnetId": "subnet-<redacted>",
+          "VpcId": "vpc-<redacted>",
+          "InterfaceType": "interface",
+          "Operator": {
+            "Managed": false
+          }
+        }
+      ],
+      "RootDeviceName": "/dev/sda1",
+      "RootDeviceType": "ebs",
+      "SecurityGroups": [
+        {
+          "GroupId": "sg-<redacted>",
+          "GroupName": "for-farms-only-firesim"
+        }
+      ],
+      "SourceDestCheck": true,
+      "Tags": [
+        {
+          "Key": "fsimcluster",
+          "Value": "fsimdispatch-zTL-tinyllama-trace"
+        },
+        {
+          "Key": "fsim-max-hours",
+          "Value": "6"
+        },
+        {
+          "Key": "fsim-run-id",
+          "Value": "zTL-tinyllama-trace"
+        }
+      ],
+      "VirtualizationType": "hvm",
+      "CpuOptions": {
+        "CoreCount": 12,
+        "ThreadsPerCore": 2
+      },
+      "CapacityReservationSpecification": {
+        "CapacityReservationPreference": "open"
+      },
+      "HibernationOptions": {
+        "Configured": false
+      },
+      "MetadataOptions": {
+        "State": "applied",
+        "HttpTokens": "required",
+        "HttpPutResponseHopLimit": 2,
+        "HttpEndpoint": "enabled",
+        "HttpProtocolIpv6": "disabled",
+        "InstanceMetadataTags": "disabled"
+      },
+      "EnclaveOptions": {
+        "Enabled": false
+      },
+      "BootMode": "uefi-preferred",
+      "PlatformDetails": "Linux/UNIX",
+      "UsageOperation": "RunInstances",
+      "UsageOperationUpdateTime": "2026-10-27T21:39:11+00:00",
+      "PrivateDnsNameOptions": {
+        "HostnameType": "ip-name",
+        "EnableResourceNameDnsARecord": false,
+        "EnableResourceNameDnsAAAARecord": false
+      },
+      "MaintenanceOptions": {
+        "AutoRecovery": "default",
+        "RebootMigration": "default"
+      },
+      "CurrentInstanceBootMode": "uefi",
+      "NetworkPerformanceOptions": {
+        "BandwidthWeighting": "default"
+      },
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "SecondaryInterfaces": [],
+      "InstanceId": "i-<redacted>",
+      "ImageId": "ami-<redacted>",
+      "State": {
+        "Code": 16,
+        "Name": "running"
+      },
+      "PrivateDnsName": "ip-192-168-3-225.ec2.internal",
+      "PublicDnsName": "",
+      "StateTransitionReason": "",
+      "KeyName": "firesim",
+      "AmiLaunchIndex": 0,
+      "ProductCodes": [
+        {
+          "ProductCodeId": "e4txuxx6uz6371b7tgmotozac",
+          "ProductCodeType": "marketplace"
+        }
+      ],
+      "InstanceType": "f2.6xlarge",
+      "LaunchTime": "2026-10-27T21:39:11+00:00",
+      "Placement": {
+        "AvailabilityZoneId": "use1-az6",
+        "GroupName": "",
+        "Tenancy": "default",
+        "AvailabilityZone": "us-east-1d"
+      },
+      "Monitoring": {
+        "State": "disabled"
+      },
+      "SubnetId": "subnet-<redacted>",
+      "VpcId": "vpc-<redacted>",
+      "PrivateIpAddress": "192.168.3.225",
+      "PublicIpAddress": "<public-ip>"
+    },
+    {
+      "Architecture": "x86_64",
+      "BlockDeviceMappings": [
+        {
+          "DeviceName": "/dev/sda1",
+          "Ebs": {
+            "AttachTime": "2026-10-27T21:39:12+00:00",
+            "DeleteOnTermination": true,
+            "Status": "attached",
+            "VolumeId": "vol-<redacted>",
+            "EbsCardIndex": 0
+          }
+        },
+        {
+          "DeviceName": "/dev/sdm",
+          "Ebs": {
+            "AttachTime": "2026-10-27T21:39:11.473000+00:00",
+            "DeleteOnTermination": true,
+            "Status": "attached",
+            "VolumeId": "vol-<redacted>",
+            "EbsCardIndex": 0
+          }
+        }
+      ],
+      "ClientToken": "5c621c20-e2c0-4e2e-94fd-401a37bc8834",
+      "EbsOptimized": true,
+      "EnaSupport": true,
+      "Hypervisor": "xen",
+      "NetworkInterfaces": [
+        {
+          "Association": {
+            "IpOwnerId": "amazon",
+            "PublicDnsName": "",
+            "PublicIp": "<public-ip>"
+          },
+          "Attachment": {
+            "AttachTime": "2026-10-27T21:39:11+00:00",
+            "AttachmentId": "eni-attach-0a3c5834c803f9a70",
+            "DeleteOnTermination": true,
+            "DeviceIndex": 0,
+            "Status": "attached",
+            "NetworkCardIndex": 0
+          },
+          "Description": "",
+          "Groups": [
+            {
+              "GroupId": "sg-<redacted>",
+              "GroupName": "for-farms-only-firesim"
+            }
+          ],
+          "Ipv6Addresses": [],
+          "MacAddress": "0e:ff:d1:50:80:db",
+          "NetworkInterfaceId": "eni-<redacted>",
+          "OwnerId": "<AWS_ACCOUNT_ID>",
+          "PrivateIpAddress": "192.168.3.77",
+          "PrivateIpAddresses": [
+            {
+              "Association": {
+                "IpOwnerId": "amazon",
+                "PublicDnsName": "",
+                "PublicIp": "<public-ip>"
+              },
+              "Primary": true,
+              "PrivateIpAddress": "192.168.3.77"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Status": "in-use",
+          "SubnetId": "subnet-<redacted>",
+          "VpcId": "vpc-<redacted>",
+          "InterfaceType": "interface",
+          "Operator": {
+            "Managed": false
+          }
+        }
+      ],
+      "RootDeviceName": "/dev/sda1",
+      "RootDeviceType": "ebs",
+      "SecurityGroups": [
+        {
+          "GroupId": "sg-<redacted>",
+          "GroupName": "for-farms-only-firesim"
+        }
+      ],
+      "SourceDestCheck": true,
+      "Tags": [
+        {
+          "Key": "fsimcluster",
+          "Value": "fsimdispatch-zTL-tinyllama-plain"
+        },
+        {
+          "Key": "fsim-run-id",
+          "Value": "zTL-tinyllama-plain"
+        },
+        {
+          "Key": "fsim-max-hours",
+          "Value": "6"
+        }
+      ],
+      "VirtualizationType": "hvm",
+      "CpuOptions": {
+        "CoreCount": 12,
+        "ThreadsPerCore": 2
+      },
+      "CapacityReservationSpecification": {
+        "CapacityReservationPreference": "open"
+      },
+      "HibernationOptions": {
+        "Configured": false
+      },
+      "MetadataOptions": {
+        "State": "applied",
+        "HttpTokens": "required",
+        "HttpPutResponseHopLimit": 2,
+        "HttpEndpoint": "enabled",
+        "HttpProtocolIpv6": "disabled",
+        "InstanceMetadataTags": "disabled"
+      },
+      "EnclaveOptions": {
+        "Enabled": false
+      },
+      "BootMode": "uefi-preferred",
+      "PlatformDetails": "Linux/UNIX",
+      "UsageOperation": "RunInstances",
+      "UsageOperationUpdateTime": "2026-10-27T21:39:11+00:00",
+      "PrivateDnsNameOptions": {
+        "HostnameType": "ip-name",
+        "EnableResourceNameDnsARecord": false,
+        "EnableResourceNameDnsAAAARecord": false
+      },
+      "MaintenanceOptions": {
+        "AutoRecovery": "default",
+        "RebootMigration": "default"
+      },
+      "CurrentInstanceBootMode": "uefi",
+      "NetworkPerformanceOptions": {
+        "BandwidthWeighting": "default"
+      },
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "SecondaryInterfaces": [],
+      "InstanceId": "i-<redacted>",
+      "ImageId": "ami-<redacted>",
+      "State": {
+        "Code": 16,
+        "Name": "running"
+      },
+      "PrivateDnsName": "ip-192-168-3-77.ec2.internal",
+      "PublicDnsName": "",
+      "StateTransitionReason": "",
+      "KeyName": "firesim",
+      "AmiLaunchIndex": 0,
+      "ProductCodes": [
+        {
+          "ProductCodeId": "e4txuxx6uz6371b7tgmotozac",
+          "ProductCodeType": "marketplace"
+        }
+      ],
+      "InstanceType": "f2.6xlarge",
+      "LaunchTime": "2026-10-27T21:39:11+00:00",
+      "Placement": {
+        "AvailabilityZoneId": "use1-az6",
+        "GroupName": "",
+        "Tenancy": "default",
+        "AvailabilityZone": "us-east-1d"
+      },
+      "Monitoring": {
+        "State": "disabled"
+      },
+      "SubnetId": "subnet-<redacted>",
+      "VpcId": "vpc-<redacted>",
+      "PrivateIpAddress": "192.168.3.77",
+      "PublicIpAddress": "<public-ip>"
+    }
+  ],
+  "f2_run_ids_before": [
+    "zTL-tinyllama-plain",
+    "zTL-tinyllama-trace"
+  ],
+  "retry1_pending_or_running": [],
+  "stale_registry_note": "fpga-status lists terminated legacy zSM runs; exact EC2 inventory contains only the two TinyLlama F2s",
+  "max_concurrent_after_pair": 4
+}

@@ -1,0 +1,8 @@
+Spike: Spike RISC-V ISA Simulator 1.1.1-dev
+ISA/extension: rv64gc_zicntr + Gemmini
+Compiler tool for reused VMFB: iree-compile, version unknown, LLVM 23.0.0git, optimized with assertions (fixW/build-numerics)
+ELF compiler: Clang 23.0.0git
+CMake: 4.4.4
+Ninja: 1.13.2.git.kitware.jobserver-pipe-1
+RISC-V GCC: GCC 16.1.0 (reported by smB/tool-hashes.txt and environment-linked version command)
+Python used by local scripts: Python 3.12.3
