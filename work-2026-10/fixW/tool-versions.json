@@ -1,0 +1,58 @@
+[
+  {
+    "command": [
+      "/usr/bin/python3",
+      "--version"
+    ],
+    "exit": 0,
+    "output": "Python 3.12.3\n"
+  },
+  {
+    "command": [
+      "/home/loren/work/runs/fixC/toolchain/bin/clang++",
+      "--version"
+    ],
+    "exit": 0,
+    "output": "Ubuntu clang version 18.1.3 (1ubuntu1)\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /home/loren/work/runs/fixC/toolchain/bin\n"
+  },
+  {
+    "command": [
+      "/home/loren/work/runs/fixC/tools-env/bin/cmake",
+      "--version"
+    ],
+    "exit": 0,
+    "output": "cmake version 4.4.4\n\nCMake suite maintained and supported by Kitware (kitware.com/cmake).\n"
+  },
+  {
+    "command": [
+      "/home/loren/work/runs/fixC/tools-env/bin/ninja",
+      "--version"
+    ],
+    "exit": 0,
+    "output": "1.13.2.git.kitware.jobserver-pipe-1\n"
+  },
+  {
+    "command": [
+      "/home/loren/work/runs/fixW/resnet/clang/bin/clang",
+      "--version"
+    ],
+    "exit": 0,
+    "output": "clang version 23.0.0git\nTarget: x86_64-unknown-linux-gnu\nThread model: posix\nInstalledDir: /home/loren/work/iree-latest/prebuilt/bin\nBuild config: +assertions\n"
+  },
+  {
+    "command": [
+      "/home/loren/work/chipyard/.conda-env/riscv-tools/bin/riscv64-unknown-elf-gcc",
+      "--version"
+    ],
+    "exit": 0,
+    "output": "riscv64-unknown-elf-gcc (g6afcc4f6d-dirty) 16.1.0\nCopyright (C) 2026 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n"
+  },
+  {
+    "command": [
+      "/home/loren/work/chipyard/.conda-env/riscv-tools/bin/spike",
+      "--help"
+    ],
+    "exit": 0,
+    "output": "Spike RISC-V ISA Simulator 1.1.1-dev\n\nusage: spike [host options] <target program> [target options]\nHost Options:\n  -p<n>                 Simulate <n> processors [default 1]\n  -m<n>                 Provide <n> MiB of target memory [default 2048]\n  -m<a:m,b:n,...>       Provide memory regions of size m and n bytes\n                          at base addresses a and b (with 4 KiB alignment)\n  -d                    Interactive debug mode\n  -g                    Track histogram of PCs\n  -l                    Generate a log of execution\n  -h, --help            Print this help message\n  --halted              Start halted, allowing a debugger to connect\n  --log=<name>          File name for option -l\n  --debug-cmd=<name>    Read commands from file (use with -d)\n  --isa=<name>          RISC-V ISA string [default rv64imafdc_zicntr_zihpm]\n  --pmpregions=<n>      Number of PMP regions [default 16]\n  --pmpgranularity=<n>  PMP Granularity in bytes [default 4]\n  --priv=<m|mu|msu>     RISC-V privilege modes supported [default MSU]\n  --pc=<address>        Override ELF entry point\n  --hartids=<a,b,...>   Explicitly specify hartids, default is 0,1,...\n  --ic=<S>:<W>:<B>      Instantiate a cache model with S sets,\n  --dc=<S>:<W>:<B>        W ways, and B-byte blocks (with S and\n  --l2=<S>:<W>:<B>        B both powers of 2).\n  --big-endian          Use a big-endian memory system.\n  --misaligned          Support misaligned memory accesses\n  --device=<name>       Attach MMIO plugin device from an --extlib library,\n                          specify --device=<name>,<args> to pass down extra args.\n  --log-cache-miss      Generate a log of cache miss\n  --log-commits         Generate a log of commits info\n  --extension=<name>    Specify RoCC Extension\n                          This flag can be used multiple times.\n  --extlib=<name>       Shared library to load\n                        This flag can be used multiple times.\n  --rbb-port=<port>     Listen on <port> for remote bitbang connection\n  --dump-dts            Print device tree string and exit\n  --dtb=<path>          Use specified device tree blob [default: auto-generate]\n  --disable-dtb         Don't write the device tree blob into memory\n  --kernel=<path>       Load kernel flat image into memory\n  --initrd=<path>       Load kernel initrd into memory\n  --bootargs=<args>     Provide custom bootargs for kernel [default: console=ttyS0 earlycon]\n  --real-time-clint     Increment clint time at real-time rate\n  --triggers=<n>        Number of supported triggers [default 4]\n  --dm-progsize=<words> Progsize for the debug module [default 2]\n  --dm-sba=<bits>       Debug system bus access supports up to <bits> wide accesses [default 0]\n  --dm-auth             Debug module requires debugger to authenticate\n  --dmi-rti=<n>         Number of Run-Test/Idle cycles required for a DMI access [default 0]\n  --dm-abstract-rti=<n> Number of Run-Test/Idle cycles required for an abstract command to execute [default 0]\n  --dm-no-hasel         Debug module won't support hasel\n  --dm-no-abstract-csr  Debug module won't support abstract CSR access\n  --dm-no-abstract-fpr  Debug module won't support abstract FPR access\n  --dm-no-halt-groups   Debug module won't support halt groups\n  --dm-no-impebreak     Debug module won't support implicit ebreak in program buffer\n  --blocksz=<size>      Cache block size (B) for CMO operations(powers of 2) [default 64]\n  --instructions=<n>    Stop after n instructions\n"
+  }
+]

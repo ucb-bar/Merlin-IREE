@@ -1,0 +1,15 @@
+{
+  "elements": 512000,
+  "failed": 0,
+  "finite": 512000,
+  "pass_gate": true,
+  "max_abs": 2.288818359375e-05,
+  "rmse": 2.1938664308687575e-06,
+  "atol": 0.001,
+  "rtol": 0.001,
+  "reference": "tinyllama2/int8/reference.npy",
+  "cycles": 4751658908,
+  "cpu_golden_pass": true,
+  "argmax_matches_pytorch": 16,
+  "bit_equal_cpu_golden": true
+}

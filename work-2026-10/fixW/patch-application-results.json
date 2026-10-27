@@ -1,0 +1,26 @@
+[
+  {
+    "command": [
+      "git",
+      "-C",
+      "/home/loren/work/runs/fixK/src",
+      "apply",
+      "--check",
+      "/home/loren/work/runs/fixW/gemmini-address-fix.patch"
+    ],
+    "exit": 0,
+    "output": ""
+  },
+  {
+    "command": [
+      "git",
+      "-C",
+      "/home/loren/work/iree-latest/source/Merlin-IREE",
+      "apply",
+      "--check",
+      "/home/loren/work/runs/fixW/merged-compiler-fixes.patch"
+    ],
+    "exit": 0,
+    "output": ""
+  }
+]

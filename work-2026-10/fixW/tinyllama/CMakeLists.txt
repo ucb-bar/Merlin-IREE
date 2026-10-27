@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.26)
+project(fixW_tinyllama C CXX ASM)
+include(CheckCSourceCompiles)
+set(IREE_BUILD_COMPILER OFF CACHE BOOL "" FORCE)
+set(IREE_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+set(IREE_BUILD_SAMPLES OFF CACHE BOOL "" FORCE)
+set(IREE_BUILD_TOOLS OFF CACHE BOOL "" FORCE)
+add_subdirectory(/home/loren/work/runs/fixW/src/third_party/iree_bar iree)
+add_executable(tinyllama.elf runner.c libc_safe.c embed.S)
+target_link_libraries(tinyllama.elf PRIVATE iree::base iree::hal iree::hal::drivers::local_sync::sync_driver iree::hal::local iree::hal::local::loaders::embedded_elf_loader iree::modules::hal iree::vm iree::vm::bytecode::module "-Wl,--defsym=__merlin_heap_size=1073741824" "-Wl,--defsym=__merlin_stack_size_min=8388608")
+
+add_executable(tinyllama-numerics.elf runner.c libc_safe.c embed-numerics.S)
+target_link_libraries(tinyllama-numerics.elf PRIVATE iree::base iree::hal iree::hal::drivers::local_sync::sync_driver iree::hal::local iree::hal::local::loaders::embedded_elf_loader iree::modules::hal iree::vm iree::vm::bytecode::module "-Wl,--defsym=__merlin_heap_size=1073741824" "-Wl,--defsym=__merlin_stack_size_min=8388608")
+
+add_executable(tinyllama-numerics-buffered.elf runner-buffered.c libc_safe.c embed-numerics.S)
+target_link_libraries(tinyllama-numerics-buffered.elf PRIVATE iree::base iree::hal iree::hal::drivers::local_sync::sync_driver iree::hal::local iree::hal::local::loaders::embedded_elf_loader iree::modules::hal iree::vm iree::vm::bytecode::module "-Wl,--defsym=__merlin_heap_size=1073741824" "-Wl,--defsym=__merlin_stack_size_min=8388608")

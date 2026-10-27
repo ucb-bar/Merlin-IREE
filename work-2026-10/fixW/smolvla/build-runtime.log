@@ -1,0 +1,470 @@
+-- The C compiler identification is Clang 23.0.0
+-- The CXX compiler identification is Clang 23.0.0
+-- The ASM compiler identification is Clang with GNU-like command-line
+-- Found assembler: /home/loren/work/runs/fixW/smolvla/tools/bin/clang
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/loren/work/runs/fixW/smolvla/tools/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/loren/work/runs/fixW/smolvla/tools/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Could not find `nvcc` executable in any searched paths, please set CUDAToolkit_ROOT
+-- IREE HAL drivers:
+--   - local-sync
+-- IREE HAL local executable library loaders:
+--   - embedded-elf
+--   - vmvx-module
+-- IREE HAL local executable plugin mechanisms:
+--   - embedded-elf
+-- Looking for dlopen
+-- Looking for dlopen - not found
+-- Performing Test IREE_SUPPORTS_VISIBILITY_DEFAULT
+-- Performing Test IREE_SUPPORTS_VISIBILITY_DEFAULT - Success
+-- Found Git: /usr/bin/git (found version "2.43.0")
+fatal: not a git repository (or any of the parent directories): .git
+-- Not adding LLVM/MLIR because the configuration does not require it
+CMake Warning (author) at /home/loren/work/runs/fixW/src/third_party/iree_bar/build_tools/cmake/iree_import_binary.cmake:56 (file):
+  Given path:
+
+    /home/loren/work/iree-latest/prebuilt/bin/not
+
+  does not refer to an existing path on disk.
+Call Stack (most recent call first):
+  /home/loren/work/runs/fixW/src/third_party/iree_bar/tools/CMakeLists.txt:49 (iree_import_binary)
+This warning is for project developers.  Use -Wno-author to suppress it.
+
+CMake Warning at /home/loren/work/runs/fixW/src/third_party/iree_bar/build_tools/cmake/iree_import_binary.cmake:61 (message):
+  Could not find optional 'not' under
+  '/home/loren/work/iree-latest/prebuilt/bin'.  Features that depend on it
+  may fail to build.
+Call Stack (most recent call first):
+  /home/loren/work/runs/fixW/src/third_party/iree_bar/tools/CMakeLists.txt:49 (iree_import_binary)
+
+
+CMake Warning (author) at /home/loren/work/runs/fixW/src/third_party/iree_bar/build_tools/cmake/iree_import_binary.cmake:56 (file):
+  Given path:
+
+    /home/loren/work/iree-latest/prebuilt/bin/clang
+
+  does not refer to an existing path on disk.
+Call Stack (most recent call first):
+  /home/loren/work/runs/fixW/src/third_party/iree_bar/tools/CMakeLists.txt:50 (iree_import_binary)
+This warning is for project developers.  Use -Wno-author to suppress it.
+
+CMake Warning at /home/loren/work/runs/fixW/src/third_party/iree_bar/build_tools/cmake/iree_import_binary.cmake:61 (message):
+  Could not find optional 'clang' under
+  '/home/loren/work/iree-latest/prebuilt/bin'.  Features that depend on it
+  may fail to build.
+Call Stack (most recent call first):
+  /home/loren/work/runs/fixW/src/third_party/iree_bar/tools/CMakeLists.txt:50 (iree_import_binary)
+
+
+-- Disabling compiler loader (platform does not support library loading)
+-- Configuring IREE runtime plugins
+-- Runtime tracing disabled
+-- iree_allocator_system() using `IREE_ALLOCATOR_LIBC_*`
+-- Performing Test IREE_UK_BUILD_RISCV_64_V
+-- Performing Test IREE_UK_BUILD_RISCV_64_V - Success
+-- Performing Test IREE_UK_BUILD_RISCV_64_ZVFH
+-- Performing Test IREE_UK_BUILD_RISCV_64_ZVFH - Success
+-- Performing Test IREE_UK_BUILD_RISCV_64_ZVFHMIN
+-- Performing Test IREE_UK_BUILD_RISCV_64_ZVFHMIN - Success
+-- Configuring done (1.1s)
+-- Generating done (1.4s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    IREE_BUILD_TOOLS
+
+
+-- Build files have been written to: /home/loren/work/runs/fixW/smolvla/build
+ninja: Entering directory `/home/loren/work/runs/fixW/smolvla/build'
+[0/2] Re-checking globbed directories...
+[1/185] Building C object iree/runtime/src/iree/base/internal/CMakeFiles/iree_base_internal_time.objects.dir/time.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[2/185] Linking C static library iree/runtime/src/iree/base/internal/libiree_base_internal_time.a
+[3/185] Building C object iree/runtime/src/iree/base/internal/CMakeFiles/iree_base_internal_sysfs.objects.dir/sysfs.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[4/185] Building C object iree/runtime/src/iree/base/CMakeFiles/iree_base_base.objects.dir/time.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[5/185] Building C object iree/runtime/src/iree/base/threading/CMakeFiles/iree_base_threading_threading.objects.dir/numa_linux.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[6/185] Building C object iree/runtime/src/iree/base/threading/CMakeFiles/iree_base_threading_threading.objects.dir/numa_win32.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[7/185] Building C object iree/runtime/src/iree/base/CMakeFiles/iree_base_base.objects.dir/wait_source.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[8/185] Building C object iree/runtime/src/iree/base/threading/CMakeFiles/iree_base_threading_threading.objects.dir/affinity.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[9/185] Building C object iree/runtime/src/iree/base/threading/CMakeFiles/iree_base_threading_threading.objects.dir/mutex.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[10/185] Building C object iree/runtime/src/iree/base/CMakeFiles/iree_base_base.objects.dir/allocator_libc.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[11/185] Building C object iree/runtime/src/iree/base/internal/CMakeFiles/iree_base_internal_memory.objects.dir/memory.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[12/185] Building C object iree/runtime/src/iree/base/threading/CMakeFiles/iree_base_threading_threading.objects.dir/notification.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[13/185] Building C object iree/runtime/src/iree/base/threading/CMakeFiles/iree_base_threading_threading.objects.dir/numa_fallback.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[14/185] Building C object iree/runtime/src/iree/base/CMakeFiles/iree_base_base.objects.dir/status_stack_trace.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[15/185] Building C object iree/runtime/src/iree/base/CMakeFiles/iree_base_base.objects.dir/bitfield.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[16/185] Building C object iree/runtime/src/iree/async/CMakeFiles/iree_async_async.objects.dir/address_generic.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[17/185] Building C object iree/runtime/src/iree/async/CMakeFiles/iree_async_async.objects.dir/address_posix.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[18/185] Building C object iree/runtime/src/iree/base/CMakeFiles/iree_base_base.objects.dir/allocator.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[19/185] Building C object iree/runtime/src/iree/base/CMakeFiles/iree_base_base.objects.dir/string_builder.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[20/185] Building C object iree/runtime/src/iree/base/CMakeFiles/iree_base_base.objects.dir/bitmap.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[21/185] Building C object iree/runtime/src/iree/async/CMakeFiles/iree_async_async.objects.dir/file.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[22/185] Building C object iree/runtime/src/iree/async/CMakeFiles/iree_async_async.objects.dir/region.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[23/185] Building C object iree/runtime/src/iree/async/CMakeFiles/iree_async_async.objects.dir/operation.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[24/185] Building C object iree/runtime/src/iree/async/CMakeFiles/iree_async_async.objects.dir/socket.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[25/185] Building C object iree/runtime/src/iree/async/CMakeFiles/iree_async_async.objects.dir/slab.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[26/185] Building C object iree/runtime/src/iree/async/CMakeFiles/iree_async_async.objects.dir/frontier.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[27/185] Building C object iree/runtime/src/iree/async/CMakeFiles/iree_async_async.objects.dir/address_win32.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[28/185] Building C object iree/runtime/src/iree/hal/utils/CMakeFiles/iree_hal_utils_platform_topology.objects.dir/platform_topology.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[29/185] Building C object iree/runtime/src/iree/hal/utils/CMakeFiles/iree_hal_utils_platform_topology.objects.dir/platform_topology_sysfs.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[30/185] Building C object iree/runtime/src/iree/async/CMakeFiles/iree_async_async.objects.dir/buffer_pool.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[31/185] Building C object iree/runtime/src/iree/async/CMakeFiles/iree_async_async.objects.dir/event.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[32/185] Building C object iree/runtime/src/iree/async/CMakeFiles/iree_async_async.objects.dir/primitive.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[33/185] Building C object iree/runtime/src/iree/hal/utils/CMakeFiles/iree_hal_utils_platform_topology.objects.dir/platform_topology_fallback.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[34/185] Building C object iree/runtime/src/iree/hal/utils/CMakeFiles/iree_hal_utils_platform_topology.objects.dir/platform_topology_darwin.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[35/185] Building C object iree/runtime/src/iree/base/CMakeFiles/iree_base_base.objects.dir/status.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[36/185] Building C object iree/runtime/src/iree/async/CMakeFiles/iree_async_async.objects.dir/frontier_tracker.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[37/185] Building C object iree/runtime/src/iree/async/CMakeFiles/iree_async_async.objects.dir/notification.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[38/185] Building C object iree/runtime/src/iree/async/CMakeFiles/iree_async_async.objects.dir/proactor.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[39/185] Building C object iree/runtime/src/iree/hal/utils/CMakeFiles/iree_hal_utils_platform_topology.objects.dir/platform_topology_win32.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[40/185] Building C object iree/runtime/src/iree/base/CMakeFiles/iree_base_base.objects.dir/string_view.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[41/185] Building C object iree/runtime/src/iree/io/CMakeFiles/iree_io_file_handle.objects.dir/file_contents.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[42/185] Building C object iree/runtime/src/iree/async/CMakeFiles/iree_async_async.objects.dir/address.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[43/185] Building C object iree/runtime/src/iree/base/internal/CMakeFiles/iree_base_internal_atomic_slist.objects.dir/atomic_slist.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[44/185] Building C object iree/runtime/src/iree/base/threading/CMakeFiles/iree_base_threading_thread.objects.dir/thread_darwin.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[45/185] Building C object iree/runtime/src/iree/base/threading/CMakeFiles/iree_base_threading_thread.objects.dir/thread_pthreads.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[46/185] Building C object iree/runtime/src/iree/base/internal/CMakeFiles/iree_base_internal_cpu.objects.dir/cpu.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[47/185] Building C object iree/runtime/src/iree/base/threading/CMakeFiles/iree_base_threading_thread.objects.dir/thread_win32.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[48/185] Building C object iree/runtime/src/iree/base/internal/CMakeFiles/iree_base_internal_path.objects.dir/path.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[49/185] Building C object iree/runtime/src/iree/io/CMakeFiles/iree_io_file_handle.objects.dir/file_handle.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[50/185] Building C object iree/runtime/src/iree/base/threading/CMakeFiles/iree_base_threading_thread.objects.dir/thread.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[51/185] Building C object iree/runtime/src/iree/hal/CMakeFiles/iree_hal_hal.objects.dir/channel_provider.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[52/185] Building C object iree/runtime/src/iree/hal/CMakeFiles/iree_hal_hal.objects.dir/allocator_heap.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[53/185] Building C object iree/runtime/src/iree/hal/CMakeFiles/iree_hal_hal.objects.dir/buffer_heap.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[54/185] Building C object iree/runtime/src/iree/hal/CMakeFiles/iree_hal_hal.objects.dir/channel.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[55/185] Building C object iree/runtime/src/iree/hal/CMakeFiles/iree_hal_hal.objects.dir/allocator.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[56/185] Building C object iree/runtime/src/iree/async/CMakeFiles/iree_async_async.objects.dir/semaphore.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[57/185] Building C object iree/runtime/src/iree/hal/CMakeFiles/iree_hal_hal.objects.dir/executable.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[58/185] Building C object iree/runtime/src/iree/hal/CMakeFiles/iree_hal_hal.objects.dir/buffer_transfer.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[59/185] Building C object iree/runtime/src/iree/hal/CMakeFiles/iree_hal_hal.objects.dir/event.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[60/185] Building C object iree/runtime/src/iree/hal/CMakeFiles/iree_hal_hal.objects.dir/buffer_view.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[61/185] Building C object iree/runtime/src/iree/hal/CMakeFiles/iree_hal_hal.objects.dir/executable_cache.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[62/185] Building C object iree/runtime/src/iree/hal/CMakeFiles/iree_hal_hal.objects.dir/file.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[63/185] Building C object iree/runtime/src/iree/hal/CMakeFiles/iree_hal_hal.objects.dir/topology.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[64/185] Building C object iree/runtime/src/iree/hal/CMakeFiles/iree_hal_hal.objects.dir/buffer_view_util.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[65/185] Building C object iree/runtime/src/iree/hal/CMakeFiles/iree_hal_hal.objects.dir/device.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[66/185] Building C object iree/runtime/src/iree/hal/CMakeFiles/iree_hal_hal.objects.dir/driver_registry.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[67/185] Building C object iree/runtime/src/iree/hal/CMakeFiles/iree_hal_hal.objects.dir/command_buffer.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[68/185] Building C object iree/runtime/src/iree/hal/CMakeFiles/iree_hal_hal.objects.dir/command_buffer_validation.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[69/185] Building C object iree/runtime/src/iree/hal/CMakeFiles/iree_hal_hal.objects.dir/fence.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[70/185] Building C object iree/runtime/src/iree/hal/local/CMakeFiles/iree_hal_local_executable_environment.objects.dir/executable_environment.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[71/185] Building C object iree/runtime/src/iree/hal/CMakeFiles/iree_hal_hal.objects.dir/buffer.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[72/185] Building C object iree/runtime/src/iree/async/util/CMakeFiles/iree_async_util_proactor_thread.objects.dir/proactor_thread.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[73/185] Building C object iree/runtime/src/iree/hal/CMakeFiles/iree_hal_hal.objects.dir/semaphore.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[74/185] Building C object iree/runtime/src/iree/hal/CMakeFiles/iree_hal_hal.objects.dir/device_group.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[75/185] Building C object iree/runtime/src/iree/base/internal/CMakeFiles/iree_base_internal_arena.objects.dir/arena.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[76/185] Generating dummy_reader.h, dummy_builder.h, dummy_verifier.h, dummy_json_printer.h, dummy_json_parser.h
+[77/185] Building C object iree/runtime/src/iree/hal/CMakeFiles/iree_hal_hal.objects.dir/driver.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[78/185] Building C object iree/runtime/src/iree/vm/CMakeFiles/iree_vm_impl.objects.dir/loop.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[79/185] Building C object iree/runtime/src/iree/vm/CMakeFiles/iree_vm_impl.objects.dir/instance.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[80/185] Building C object iree/runtime/src/iree/hal/CMakeFiles/iree_hal_hal.objects.dir/topology_builder.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[81/185] Building C object iree/runtime/src/iree/base/internal/CMakeFiles/iree_base_internal_fpu_state.objects.dir/fpu_state.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[82/185] Building C object iree/runtime/src/iree/vm/CMakeFiles/iree_vm_impl.objects.dir/ref.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[83/185] Building C object iree/runtime/src/iree/vm/CMakeFiles/iree_vm_impl.objects.dir/loop_inline.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[84/185] Building C object iree/runtime/src/iree/hal/local/elf/CMakeFiles/iree_hal_local_elf_arch.objects.dir/arch/arm_32.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[85/185] Building C object iree/runtime/src/iree/vm/CMakeFiles/iree_vm_impl.objects.dir/buffer.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[86/185] Building C object iree/runtime/src/iree/base/CMakeFiles/iree_base_base.objects.dir/printf.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[87/185] Building C object iree/runtime/src/iree/hal/local/elf/CMakeFiles/iree_hal_local_elf_arch.objects.dir/arch/arm_64.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[88/185] Building C object iree/runtime/src/iree/async/util/CMakeFiles/iree_async_util_proactor_thread_runner.objects.dir/proactor_thread_runner.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[89/185] Linking C static library iree/runtime/src/iree/base/libiree_base_base.a
+[90/185] Building C object iree/runtime/src/iree/vm/CMakeFiles/iree_vm_impl.objects.dir/module.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[91/185] Linking C static library iree/runtime/src/iree/base/internal/libiree_base_internal_memory.a
+[92/185] Building C object iree/runtime/src/iree/vm/CMakeFiles/iree_vm_impl.objects.dir/native_module.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[93/185] Building C object iree/runtime/src/iree/hal/local/elf/CMakeFiles/iree_hal_local_elf_arch.objects.dir/arch/x86_32.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[94/185] Linking C static library iree/runtime/src/iree/base/internal/libiree_base_internal_sysfs.a
+[95/185] Linking C static library iree/runtime/src/iree/base/threading/libiree_base_threading_threading.a
+[96/185] Linking C static library iree/runtime/src/iree/base/internal/libiree_base_internal_path.a
+[97/185] Linking C static library iree/runtime/src/iree/io/libiree_io_file_handle.a
+[98/185] Building C object iree/runtime/src/iree/hal/local/elf/CMakeFiles/iree_hal_local_elf_arch.objects.dir/arch/riscv.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[99/185] Linking C static library iree/runtime/src/iree/hal/utils/libiree_hal_utils_platform_topology.a
+[100/185] Generating bytecode_module_def_reader.h, bytecode_module_def_builder.h, bytecode_module_def_verifier.h, bytecode_module_def_json_printer.h, bytecode_module_def_json_parser.h
+[101/185] Building C object iree/runtime/src/iree/hal/local/CMakeFiles/iree_hal_local_executable_loader.objects.dir/local_executable.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[102/185] Building C object iree/runtime/src/iree/hal/local/elf/CMakeFiles/iree_hal_local_elf_arch.objects.dir/arch/x86_64.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[103/185] Linking C static library iree/runtime/src/iree/async/libiree_async_async.a
+[104/185] Linking C static library iree/runtime/src/iree/base/internal/libiree_base_internal_atomic_slist.a
+[105/185] Linking C static library iree/runtime/src/iree/base/internal/libiree_base_internal_cpu.a
+[106/185] Building C object iree/runtime/src/iree/vm/CMakeFiles/iree_vm_impl.objects.dir/context.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[107/185] Building C object iree/runtime/src/iree/hal/local/CMakeFiles/iree_hal_local_executable_loader.objects.dir/executable_loader.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[108/185] Building C object iree/runtime/src/iree/hal/local/elf/CMakeFiles/iree_hal_local_elf_platform.objects.dir/platform/apple.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[109/185] Linking C static library iree/runtime/src/iree/base/threading/libiree_base_threading_thread.a
+[110/185] Building C object iree/runtime/src/iree/hal/local/elf/CMakeFiles/iree_hal_local_elf_platform.objects.dir/platform/linux.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[111/185] Building C object iree/runtime/src/iree/hal/local/elf/CMakeFiles/iree_hal_local_elf_platform.objects.dir/platform/windows.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[112/185] Linking C static library iree/runtime/src/iree/base/internal/libiree_base_internal_fpu_state.a
+[113/185] Building C object iree/runtime/src/iree/hal/local/elf/CMakeFiles/iree_hal_local_elf_platform.objects.dir/platform/generic.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[114/185] Building C object iree/runtime/src/iree/vm/CMakeFiles/iree_vm_impl.objects.dir/invocation.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[115/185] Linking C static library iree/runtime/src/iree/async/util/libiree_async_util_proactor_thread.a
+[116/185] Linking C static library iree/runtime/src/iree/hal/local/elf/libiree_hal_local_elf_arch.a
+[117/185] Linking C static library iree/runtime/src/iree/base/internal/libiree_base_internal_arena.a
+[118/185] Building C object iree/runtime/src/iree/async/CMakeFiles/iree_async_platform.objects.dir/proactor_platform.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[119/185] Linking C static library iree/runtime/src/iree/async/util/libiree_async_util_proactor_thread_runner.a
+[120/185] Linking C static library iree/runtime/src/iree/hal/local/elf/libiree_hal_local_elf_platform.a
+[121/185] Building C object iree/runtime/src/iree/hal/CMakeFiles/iree_hal_hal.objects.dir/string_util.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[122/185] Linking C static library iree/runtime/src/iree/async/libiree_async_platform.a
+[123/185] Building C object iree/runtime/src/iree/vm/CMakeFiles/iree_vm_impl.objects.dir/stack.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[124/185] Building C object iree/runtime/src/iree/hal/utils/CMakeFiles/iree_hal_utils_resource_set.objects.dir/resource_set.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[125/185] Linking C static library iree/runtime/src/iree/hal/libiree_hal_hal.a
+[126/185] Linking C static library iree/runtime/src/iree/hal/local/libiree_hal_local_executable_environment.a
+[127/185] Building C object iree/runtime/src/iree/hal/local/elf/CMakeFiles/iree_hal_local_elf_elf_module.objects.dir/fatelf.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[128/185] Building C object iree/runtime/src/iree/hal/utils/CMakeFiles/iree_hal_utils_files.objects.dir/fd_file.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[129/185] Linking C static library iree/runtime/src/iree/hal/local/libiree_hal_local_executable_loader.a
+[130/185] Building C object iree/runtime/src/iree/hal/local/CMakeFiles/iree_hal_local_local.objects.dir/local_executable_cache.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[131/185] Building C object iree/runtime/src/iree/vm/CMakeFiles/iree_vm_impl.objects.dir/list.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[132/185] Building C object iree/runtime/src/iree/hal/utils/CMakeFiles/iree_hal_utils_files.objects.dir/file_registry.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[133/185] Linking C static library iree/runtime/src/iree/hal/utils/libiree_hal_utils_resource_set.a
+[134/185] Building C object iree/runtime/src/iree/async/util/CMakeFiles/iree_async_util_proactor_pool.objects.dir/proactor_pool.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[135/185] Building C object iree/runtime/src/iree/hal/utils/CMakeFiles/iree_hal_utils_queue_emulation.objects.dir/queue_emulation.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[136/185] Building C object iree/runtime/src/iree/hal/local/CMakeFiles/iree_hal_local_executable_library_util.objects.dir/executable_library_util.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[137/185] Linking C static library iree/runtime/src/iree/hal/utils/libiree_hal_utils_queue_emulation.a
+[138/185] Building C object iree/runtime/src/iree/hal/local/CMakeFiles/iree_hal_local_local.objects.dir/inline_command_buffer.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[139/185] Building C object iree/runtime/src/iree/hal/utils/CMakeFiles/iree_hal_utils_files.objects.dir/memory_file.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[140/185] Linking C static library iree/runtime/src/iree/hal/local/libiree_hal_local_executable_library_util.a
+[141/185] Linking C static library iree/runtime/src/iree/async/util/libiree_async_util_proactor_pool.a
+[142/185] Building C object iree/runtime/src/iree/hal/local/CMakeFiles/iree_hal_local_executable_plugin_manager.objects.dir/executable_plugin_manager.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[143/185] Building C object iree/runtime/src/iree/modules/hal/CMakeFiles/iree_modules_hal_debugging.objects.dir/debugging.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[144/185] Linking C static library iree/runtime/src/iree/hal/utils/libiree_hal_utils_files.a
+[145/185] Linking C static library iree/runtime/src/iree/hal/local/libiree_hal_local_local.a
+[146/185] Linking C static library iree/runtime/src/iree/hal/local/libiree_hal_local_executable_plugin_manager.a
+[147/185] Building C object iree/runtime/src/iree/hal/local/elf/CMakeFiles/iree_hal_local_elf_elf_module.objects.dir/elf_module.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[148/185] Linking C static library iree/runtime/src/iree/hal/local/elf/libiree_hal_local_elf_elf_module.a
+[149/185] Building C object iree/build_tools/third_party/flatcc/CMakeFiles/flatcc_parsing.dir/home/loren/work/runs/fixW/src/third_party/iree_bar/third_party/flatcc/src/runtime/verifier.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[150/185] Building C object iree/runtime/src/iree/hal/local/CMakeFiles/iree_hal_local_executable_format.objects.dir/executable_format.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[151/185] Linking C static library iree/build_tools/third_party/flatcc/libflatcc_parsing.a
+[152/185] Building C object iree/runtime/src/iree/hal/utils/CMakeFiles/iree_hal_utils_file_transfer.objects.dir/file_transfer.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[153/185] Linking C static library iree/runtime/src/iree/hal/local/libiree_hal_local_executable_format.a
+[154/185] Building C object iree/runtime/src/iree/hal/drivers/local_sync/CMakeFiles/iree_hal_drivers_local_sync_sync_driver.objects.dir/sync_event.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[155/185] Linking C static library iree/runtime/src/iree/hal/utils/libiree_hal_utils_file_transfer.a
+[156/185] Building C object iree/runtime/src/iree/modules/hal/utils/CMakeFiles/iree_modules_hal_utils_buffer_diagnostics.objects.dir/buffer_diagnostics.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[157/185] Building C object iree/runtime/src/iree/modules/hal/CMakeFiles/iree_modules_hal_types.objects.dir/types.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[158/185] Building C object iree/runtime/src/iree/hal/drivers/local_sync/CMakeFiles/iree_hal_drivers_local_sync_sync_driver.objects.dir/sync_semaphore.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[159/185] Building C object iree/runtime/src/iree/hal/drivers/local_sync/CMakeFiles/iree_hal_drivers_local_sync_sync_driver.objects.dir/sync_driver.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[160/185] Building C object iree/runtime/src/iree/hal/utils/CMakeFiles/iree_hal_utils_deferred_command_buffer.objects.dir/deferred_command_buffer.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[161/185] Linking C static library iree/runtime/src/iree/hal/utils/libiree_hal_utils_deferred_command_buffer.a
+[162/185] Building C object iree/runtime/src/iree/hal/local/loaders/CMakeFiles/iree_hal_local_loaders_embedded_elf_loader.objects.dir/embedded_elf_loader.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[163/185] Linking C static library iree/runtime/src/iree/hal/local/loaders/libiree_hal_local_loaders_embedded_elf_loader.a
+[164/185] Building C object iree/runtime/src/iree/vm/CMakeFiles/iree_vm_impl.objects.dir/shims.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[165/185] Linking C static library iree/runtime/src/iree/vm/libiree_vm_impl.a
+[166/185] Linking C static library iree/runtime/src/iree/modules/hal/libiree_modules_hal_debugging.a
+[167/185] Linking C static library iree/runtime/src/iree/modules/hal/libiree_modules_hal_types.a
+[168/185] Linking C static library iree/runtime/src/iree/modules/hal/utils/libiree_modules_hal_utils_buffer_diagnostics.a
+[169/185] Building C object iree/runtime/src/iree/hal/drivers/local_sync/CMakeFiles/iree_hal_drivers_local_sync_sync_driver.objects.dir/sync_device.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[170/185] Linking C static library iree/runtime/src/iree/hal/drivers/local_sync/libiree_hal_drivers_local_sync_sync_driver.a
+[171/185] Building C object CMakeFiles/smolvla-gemmini.elf.dir/runner.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+In file included from /home/loren/work/runs/fixW/smolvla/runner.c:10:
+In file included from /home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/async/util/proactor_pool.h:62:
+In file included from /home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/async/proactor.h:35:
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/async/region.h:212:3: warning: passing 'volatile iree_atomic_uint32_t *' (aka 'volatile unsigned int *') to parameter of type 'volatile iree_atomic_int32_t *' (aka 'volatile int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+  212 |   iree_atomic_ref_count_inc(&region->ref_count);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/base/internal/atomics.h:119:5: note: expanded from macro 'iree_atomic_ref_count_inc'
+  119 |     iree_atomic_fetch_add((count_ptr), 1, iree_memory_order_relaxed); \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/base/internal/atomics_disabled.h:130:16: note: expanded from macro 'iree_atomic_fetch_add'
+  130 |                (volatile iree_atomic_uint32_t*)(object), (uint32_t)(operand)), \
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/base/internal/atomics_disabled.h:215:35: note: passing argument to parameter 'object' here
+  215 |     volatile iree_atomic_int32_t* object, uint32_t operand) {
+      |                                   ^
+In file included from /home/loren/work/runs/fixW/smolvla/runner.c:10:
+In file included from /home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/async/util/proactor_pool.h:62:
+In file included from /home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/async/proactor.h:37:
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/async/slab.h:207:3: warning: passing 'volatile iree_atomic_uint32_t *' (aka 'volatile unsigned int *') to parameter of type 'volatile iree_atomic_int32_t *' (aka 'volatile int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+  207 |   iree_atomic_ref_count_inc(&slab->ref_count);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/base/internal/atomics.h:119:5: note: expanded from macro 'iree_atomic_ref_count_inc'
+  119 |     iree_atomic_fetch_add((count_ptr), 1, iree_memory_order_relaxed); \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/base/internal/atomics_disabled.h:130:16: note: expanded from macro 'iree_atomic_fetch_add'
+  130 |                (volatile iree_atomic_uint32_t*)(object), (uint32_t)(operand)), \
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/base/internal/atomics_disabled.h:215:35: note: passing argument to parameter 'object' here
+  215 |     volatile iree_atomic_int32_t* object, uint32_t operand) {
+      |                                   ^
+In file included from /home/loren/work/runs/fixW/smolvla/runner.c:10:
+In file included from /home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/async/util/proactor_pool.h:62:
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/async/proactor.h:726:3: warning: passing 'volatile iree_atomic_uint32_t *' (aka 'volatile unsigned int *') to parameter of type 'volatile iree_atomic_int32_t *' (aka 'volatile int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+  726 |   iree_atomic_ref_count_inc(&proactor->ref_count);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/base/internal/atomics.h:119:5: note: expanded from macro 'iree_atomic_ref_count_inc'
+  119 |     iree_atomic_fetch_add((count_ptr), 1, iree_memory_order_relaxed); \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/base/internal/atomics_disabled.h:130:16: note: expanded from macro 'iree_atomic_fetch_add'
+  130 |                (volatile iree_atomic_uint32_t*)(object), (uint32_t)(operand)), \
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/base/internal/atomics_disabled.h:215:35: note: passing argument to parameter 'object' here
+  215 |     volatile iree_atomic_int32_t* object, uint32_t operand) {
+      |                                   ^
+In file included from /home/loren/work/runs/fixW/smolvla/runner.c:13:
+In file included from /home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/hal/api.h:12:
+In file included from /home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/hal/allocator.h:14:
+In file included from /home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/hal/buffer.h:15:
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/hal/resource.h:78:5: warning: passing 'volatile iree_atomic_uint32_t *' (aka 'volatile unsigned int *') to parameter of type 'volatile iree_atomic_int32_t *' (aka 'volatile int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+   78 |     iree_atomic_ref_count_inc(&resource->ref_count);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/base/internal/atomics.h:119:5: note: expanded from macro 'iree_atomic_ref_count_inc'
+  119 |     iree_atomic_fetch_add((count_ptr), 1, iree_memory_order_relaxed); \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/base/internal/atomics_disabled.h:130:16: note: expanded from macro 'iree_atomic_fetch_add'
+  130 |                (volatile iree_atomic_uint32_t*)(object), (uint32_t)(operand)), \
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/base/internal/atomics_disabled.h:215:35: note: passing argument to parameter 'object' here
+  215 |     volatile iree_atomic_int32_t* object, uint32_t operand) {
+      |                                   ^
+4 warnings generated.
+[172/185] Building C object iree/runtime/src/iree/vm/bytecode/utils/CMakeFiles/iree_vm_bytecode_utils_utils.objects.dir/features.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[173/185] Building C object iree/runtime/src/iree/vm/bytecode/utils/CMakeFiles/iree_vm_bytecode_utils_utils.objects.dir/block_list.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[174/185] Linking C static library iree/runtime/src/iree/vm/bytecode/utils/libiree_vm_bytecode_utils_utils.a
+[175/185] Building C object iree/runtime/src/iree/vm/bytecode/CMakeFiles/iree_vm_bytecode_module.objects.dir/archive.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[176/185] Building C object iree/runtime/src/iree/modules/hal/CMakeFiles/iree_modules_hal_hal.objects.dir/module.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[177/185] Linking C static library iree/runtime/src/iree/modules/hal/libiree_modules_hal_hal.a
+[178/185] Building C object iree/runtime/src/iree/vm/bytecode/CMakeFiles/iree_vm_bytecode_module.objects.dir/module.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[179/185] Building ASM object CMakeFiles/smolvla-gemmini.elf.dir/embed.S.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[180/185] Building C object iree/runtime/src/iree/vm/bytecode/CMakeFiles/iree_vm_bytecode_module.objects.dir/dispatch.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[181/185] Building C object iree/runtime/src/iree/vm/bytecode/CMakeFiles/iree_vm_bytecode_module.objects.dir/verifier.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[182/185] Building C object iree/runtime/src/iree/vm/bytecode/CMakeFiles/iree_vm_bytecode_module.objects.dir/disassembler.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[183/185] Linking C static library iree/runtime/src/iree/vm/bytecode/libiree_vm_bytecode_module.a
+[184/185] Linking C executable smolvla-gemmini.elf
+/home/loren/work/chipyard/.conda-env/riscv-tools/riscv64-unknown-elf/bin/ld: warning: smolvla-gemmini.elf has a LOAD segment with RWX permissions

@@ -1,0 +1,110 @@
+{
+  "per_token": {
+    "scale_max_abs": 0.0,
+    "scale_pass": true,
+    "zero_exact": true,
+    "quant_exact": true,
+    "quant_mismatches": 0,
+    "pass": true
+  },
+  "zeros_epsilon": {
+    "scale_max_abs": 0.0,
+    "scale_pass": true,
+    "zero_exact": true,
+    "quant_exact": true,
+    "quant_mismatches": 0,
+    "pass": true
+  },
+  "partial_blocks": {
+    "scale_max_abs": 0.0,
+    "scale_pass": true,
+    "zero_exact": true,
+    "quant_exact": true,
+    "quant_mismatches": 0,
+    "pass": true
+  },
+  "dynamic_per_token": {
+    "scale_max_abs": 0.0,
+    "scale_pass": true,
+    "zero_exact": true,
+    "quant_exact": true,
+    "quant_mismatches": 0,
+    "pass": true
+  },
+  "per_channel": {
+    "scale_max_abs": 0.0,
+    "scale_pass": true,
+    "zero_exact": true,
+    "quant_exact": true,
+    "quant_mismatches": 0,
+    "pass": true
+  },
+  "keepdim": {
+    "scale_max_abs": 0.0,
+    "scale_pass": true,
+    "zero_exact": true,
+    "quant_exact": true,
+    "quant_mismatches": 0,
+    "pass": true
+  },
+  "all_axes": {
+    "scale_max_abs": 0.0,
+    "scale_pass": true,
+    "zero_exact": true,
+    "quant_exact": true,
+    "quant_mismatches": 0,
+    "pass": true
+  },
+  "ties_saturation": {
+    "scale_max_abs": 0.0,
+    "scale_pass": true,
+    "zero_exact": true,
+    "quant_exact": true,
+    "quant_mismatches": 0,
+    "pass": true
+  },
+  "integer_zp": {
+    "scale_max_abs": 0.0,
+    "scale_pass": true,
+    "zero_exact": true,
+    "quant_exact": true,
+    "quant_mismatches": 0,
+    "pass": true
+  },
+  "unsigned_zp": {
+    "scale_max_abs": 0.0,
+    "scale_pass": true,
+    "zero_exact": true,
+    "quant_exact": true,
+    "quant_mismatches": 0,
+    "pass": true
+  },
+  "unsigned_choose": {
+    "scale_max_abs": 0.0,
+    "scale_pass": true,
+    "zero_exact": true,
+    "quant_exact": true,
+    "quant_mismatches": 0,
+    "pass": true
+  },
+  "requested_f64_qparams": {
+    "scale_max_abs": 0.0,
+    "zero_exact": true,
+    "quant_exact": true,
+    "pass": true
+  },
+  "bf16_qparams": {
+    "scale_max_abs": 0.0,
+    "zero_exact": true,
+    "quant_exact": true,
+    "pass": true
+  },
+  "gelu": {
+    "max_abs": 5.816109478473663e-07,
+    "pass": true
+  },
+  "unsupported_mapping": {
+    "compile_exit": 1,
+    "pass": true
+  }
+}

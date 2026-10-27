@@ -1,0 +1,70 @@
+-- Could not find `nvcc` executable in any searched paths, please set CUDAToolkit_ROOT
+-- IREE HAL drivers:
+--   - local-sync
+-- IREE HAL local executable library loaders:
+--   - embedded-elf
+--   - vmvx-module
+-- IREE HAL local executable plugin mechanisms:
+--   - embedded-elf
+fatal: not a git repository (or any of the parent directories): .git
+-- Not adding LLVM/MLIR because the configuration does not require it
+CMake Warning (author) at build_tools/cmake/iree_import_binary.cmake:56 (file):
+  Given path:
+
+    /home/loren/work/iree-latest/prebuilt/bin/not
+
+  does not refer to an existing path on disk.
+Call Stack (most recent call first):
+  tools/CMakeLists.txt:49 (iree_import_binary)
+This warning is for project developers.  Use -Wno-author to suppress it.
+
+CMake Warning at build_tools/cmake/iree_import_binary.cmake:61 (message):
+  Could not find optional 'not' under
+  '/home/loren/work/iree-latest/prebuilt/bin'.  Features that depend on it
+  may fail to build.
+Call Stack (most recent call first):
+  tools/CMakeLists.txt:49 (iree_import_binary)
+
+
+CMake Warning (author) at build_tools/cmake/iree_import_binary.cmake:56 (file):
+  Given path:
+
+    /home/loren/work/iree-latest/prebuilt/bin/clang
+
+  does not refer to an existing path on disk.
+Call Stack (most recent call first):
+  tools/CMakeLists.txt:50 (iree_import_binary)
+This warning is for project developers.  Use -Wno-author to suppress it.
+
+CMake Warning at build_tools/cmake/iree_import_binary.cmake:61 (message):
+  Could not find optional 'clang' under
+  '/home/loren/work/iree-latest/prebuilt/bin'.  Features that depend on it
+  may fail to build.
+Call Stack (most recent call first):
+  tools/CMakeLists.txt:50 (iree_import_binary)
+
+
+-- Disabling compiler loader (platform does not support library loading)
+-- Configuring IREE runtime plugins
+-- Runtime tracing disabled
+-- iree_allocator_system() using `IREE_ALLOCATOR_LIBC_*`
+-- Configuring done (0.3s)
+-- Generating done (1.4s)
+-- Build files have been written to: /home/loren/work/runs/fixW/repro-i32/build
+ninja: Entering directory `build'
+[0/2] Re-checking globbed directories...
+[1/4] Building ASM object runtime/plugins/CMakeFiles/iree_.._.._.._repro-i32_resnet.dir/home/loren/work/runs/fixW/repro-i32/embed.S.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[2/4] Building C object runtime/plugins/CMakeFiles/iree_.._.._.._repro-i32_resnet.dir/home/loren/work/runs/fixW/repro-i32/runner.c.obj
+FAILED: [code=1] runtime/plugins/CMakeFiles/iree_.._.._.._repro-i32_resnet.dir/home/loren/work/runs/fixW/repro-i32/runner.c.obj 
+/home/loren/work/runs/fixW/repro-i32/clang/bin/clang --sysroot=/home/loren/work/chipyard/.conda-env/riscv-tools/riscv64-unknown-elf -DIREE_ALLOCATOR_SYSTEM_CTL=iree_allocator_libc_ctl -DIREE_HAVE_HAL_EXECUTABLE_LOADER_EMBEDDED_ELF=1 -DMERLIN_PROFILE_CYCLES=1 -I/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src -I/home/loren/work/runs/fixW/repro-i32/build/runtime/src -I/home/loren/work/runs/fixW/repro-i32/build/runtime/src/iree/base/internal/flatcc -I/home/loren/work/runs/fixW/repro-i32/build/runtime/src/iree/schemas -isystem /home/loren/work/runs/fixW/src/third_party/iree_bar -isystem /home/loren/work/runs/fixW/repro-i32/build -isystem /home/loren/work/runs/fixW/src/third_party/iree_bar/third_party/flatcc/include --target=riscv64-unknown-elf --sysroot=/home/loren/work/chipyard/.conda-env/riscv-tools/riscv64-unknown-elf -I/home/loren/work/chipyard/.conda-env/riscv-tools/riscv64-unknown-elf/include/c++/16.1.0 -I/home/loren/work/chipyard/.conda-env/riscv-tools/riscv64-unknown-elf/include/c++/16.1.0/riscv64-unknown-elf -I/home/loren/work/chipyard/.conda-env/riscv-tools/riscv64-unknown-elf/include -march=rv64imafdc -mabi=lp64d -mcmodel=medany -mstrict-align -fno-pic -fno-plt -fno-common -fno-builtin-printf -Wno-error=unused-command-line-argument -Wno-error=unused-parameter -Wno-error=sign-compare -Wno-error=missing-field-initializers -Wno-error=pointer-sign -Wno-error=char-subscripts -Wno-error=type-limits -Daligned_alloc=memalign -DIREE_DEVICE_SIZE_T=uint64_t -DPRIdsz=PRIu64 -DIREE_MEMORY_ACCESS_ALIGNMENT_REQUIRED -DIREE_BARE_METAL_CPU_DATA0=0 -DIREE_PLATFORM_GENERIC=1 -DIREE_SYNCHRONIZATION_DISABLE_UNSAFE=1 -DIREE_FILE_IO_ENABLE=0 -DIREE_ASYNC_HAVE_FD=1 -DIREE_TIME_NOW_FN="{ return 0; }" -DIREE_WAIT_UNTIL_FN=sizeof -isystem /home/loren/work/runs/fixW/repro-i32/toolchain/zephyr_stubs -std=gnu11 -O2 -O3 -DNDEBUG -fPIE -fvisibility=hidden -Werror -Wall -Wno-error=deprecated-declarations -Wno-extern-c-compat -Wno-invalid-offsetof -Wno-unused-const-variable -Wno-unused-function -Wno-unused-lambda-capture -Wno-unused-private-field -Wno-pointer-sign -Wno-char-subscripts -Wctad-maybe-unsupported -Wfloat-overflow-conversion -Wfloat-zero-conversion -Wfor-loop-analysis -Wformat-security -Wgnu-redeclared-enum -Wimplicit-fallthrough -Winfinite-recursion -Wliteral-conversion -Wlogical-op-parentheses -Wnon-virtual-dtor -Woverloaded-virtual -Wpointer-arith -Wself-assign -Wstring-conversion -Wtautological-overlap-compare -Wthread-safety -Wthread-safety-beta -Wunused-comparison -Wvla -fno-lax-vector-conversions -fmacro-prefix-map=/home/loren/work/runs/fixW/src/third_party/iree_bar=iree_bar -I/home/loren/work/runs/fixW/src/third_party/iree_bar/third_party/flatcc/include/ -I/home/loren/work/runs/fixW/src/third_party/iree_bar/third_party/flatcc/include/flatcc/reflection/ -MD -MT runtime/plugins/CMakeFiles/iree_.._.._.._repro-i32_resnet.dir/home/loren/work/runs/fixW/repro-i32/runner.c.obj -MF runtime/plugins/CMakeFiles/iree_.._.._.._repro-i32_resnet.dir/home/loren/work/runs/fixW/repro-i32/runner.c.obj.d -o runtime/plugins/CMakeFiles/iree_.._.._.._repro-i32_resnet.dir/home/loren/work/runs/fixW/repro-i32/runner.c.obj -c /home/loren/work/runs/fixW/repro-i32/runner.c
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+/home/loren/work/runs/fixW/repro-i32/runner.c:186:19: error: using floating point absolute value function 'fabsf' when argument is of integer type [-Werror,-Wabsolute-value]
+  186 |     float error = fabsf(result[i] - golden[i]);
+      |                   ^
+/home/loren/work/runs/fixW/repro-i32/runner.c:186:19: note: use function 'abs' instead
+  186 |     float error = fabsf(result[i] - golden[i]);
+      |                   ^~~~~
+      |                   abs
+1 error generated.
+ninja: build stopped: subcommand failed.

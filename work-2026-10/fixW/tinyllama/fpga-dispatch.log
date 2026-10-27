@@ -1,0 +1,4 @@
+fpga region: us-east-1 (manager i-<redacted>)
+uploaded /home/loren/work/runs/fixW/tinyllama/build/tinyllama-numerics.elf (sha256 a10e03a1ef4ac24a...) -> firesim-elfs/gemW-tinyllama-20261027-a1.elf
+run gemW-tinyllama-20261027-a1 dispatched (ssm command 5bb14c67-1b91-4054-bd55-e81cae9bd571); this takes ~10-20 min + your workload
+[17:49:54] InProgress

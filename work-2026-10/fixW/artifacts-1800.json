@@ -1,0 +1,90 @@
+{
+  "smolvla/numerics.vmfb": {
+    "sha256": "faef4fc909924fd1da36e180929e617e28e04a2e894b5bee8407f04c857e3d89",
+    "size": 553275071
+  },
+  "smolvla/build/smolvla-gemmini-numerics.elf": {
+    "sha256": "e8c99916dc89fd5a4460cb9eaf7212bcb82cf6517f9bfd4f0b511838d5e17ae9",
+    "size": 558666032
+  },
+  "smolvla/model.vmfb": {
+    "sha256": "459c40ff352c25824acc877c8ed7832e202397fa5e542b3a558181a9e15eb573",
+    "size": 545427663
+  },
+  "smolvla/build/smolvla-gemmini.elf": {
+    "sha256": "13d285b9b1d9af599921c40902abbe5d6e903cada18575a4ff6725e156c36d6d",
+    "size": 550818616
+  },
+  "smolvla/cpu-golden.f32": {
+    "sha256": "74c9c6c5a16b91f6a918f11146813366eb39c65dabd59c62b01620c982d14a7b",
+    "size": 6400
+  },
+  "smolvla/pytorch-golden.f32": {
+    "sha256": "74c9c6c5a16b91f6a918f11146813366eb39c65dabd59c62b01620c982d14a7b",
+    "size": 6400
+  },
+  "resnet/fpga-output.f32": {
+    "sha256": "fcb0277b9209a28fab23e40c7df5a275aefa81ed51197b831be6a7cb5dd0a925",
+    "size": 4000
+  },
+  "resnet/spike-output.f32": {
+    "sha256": "fcb0277b9209a28fab23e40c7df5a275aefa81ed51197b831be6a7cb5dd0a925",
+    "size": 4000
+  },
+  "tinyllama/spike-numerics.output.bin": {
+    "sha256": "bdbd364bbf947b0d52bdd0c8be9a1740bab2a46d1db3d3ef456f986431877a39",
+    "size": 2048000
+  },
+  "tinyllama/golden.bin": {
+    "sha256": "bdbd364bbf947b0d52bdd0c8be9a1740bab2a46d1db3d3ef456f986431877a39",
+    "size": 2048000
+  },
+  "resnet/golden.f32": {
+    "sha256": "fcb0277b9209a28fab23e40c7df5a275aefa81ed51197b831be6a7cb5dd0a925",
+    "size": 4000
+  },
+  "smolvla/inputs/input10.bin": {
+    "sha256": "d99e58435243d9fef9c88273b8d553b4fba4d0baf8009d29eae74fa99e0d9f57",
+    "size": 4
+  },
+  "smolvla/inputs/input9.bin": {
+    "sha256": "40e98956ce6bb3845b4b46c3ab66f9d21d99cc1f15289c1812ebd44137bc8783",
+    "size": 6400
+  },
+  "smolvla/inputs/input1.bin": {
+    "sha256": "090f4eebd5b26db6856a238d749a1623b14534e9c716258bcc99cb24efa075b1",
+    "size": 1572864
+  },
+  "smolvla/inputs/input3.bin": {
+    "sha256": "4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a",
+    "size": 1
+  },
+  "smolvla/inputs/input0.bin": {
+    "sha256": "f56ce8b52335e32ee79f8bb2119051e11285e79839175e3771e3098460b30fb7",
+    "size": 1572864
+  },
+  "smolvla/inputs/input5.bin": {
+    "sha256": "4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a",
+    "size": 1
+  },
+  "smolvla/inputs/input7.bin": {
+    "sha256": "8371aeeb4f4b622304b7c13eb8f248790f7efd82bf50f097ff67078be348acc0",
+    "size": 48
+  },
+  "smolvla/inputs/input8.bin": {
+    "sha256": "cb3c83e4981906150d3bdeab90244aab5d25099fcd417148e7faa086f4cec695",
+    "size": 128
+  },
+  "smolvla/inputs/input6.bin": {
+    "sha256": "2896544afd0927daf2475e07a5cbcd7d7a18f7d48308f5d4dfb8ba095395dc94",
+    "size": 384
+  },
+  "smolvla/inputs/input2.bin": {
+    "sha256": "8e1b3cc2cb2acb482dea389d07e34b62cd795fdf8d11b3e8c442f51e773c8d86",
+    "size": 1572864
+  },
+  "smolvla/inputs/input4.bin": {
+    "sha256": "4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a",
+    "size": 1
+  }
+}

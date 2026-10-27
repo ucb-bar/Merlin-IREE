@@ -1,0 +1,46 @@
+{
+  "build/tools/iree-compile": {
+    "sha256": "bb2646cd06eb1b3778f6b823c04249be3b45d2e38be826b1265130b92c1d6287",
+    "size": 6288
+  },
+  "build/lib/libIREECompiler.so": {
+    "sha256": "7de57c36a700854ce9d413637940ff87187290935526a2fc90fbacc7a7ce7340",
+    "size": 365085376
+  },
+  "build-numerics/tools/iree-compile": {
+    "sha256": "6394f9d7889cf24f1d6a5de8a835ed3cc7d3e19696c84b1e019163e2ded766ad",
+    "size": 6272
+  },
+  "build-numerics/tools/iree-opt": {
+    "sha256": "3e11f5583c330737364b98ba40b682b17a15a8316b017ea5dac2b486b8ef1b14",
+    "size": 6264
+  },
+  "build-numerics/lib/libIREECompiler.so": {
+    "sha256": "c3c2aba41b05a556e3c656c0827971bf0ad9de32706a051b96c140c8aeeb7ea0",
+    "size": 366408880
+  },
+  "gemmini-address-fix.patch": {
+    "sha256": "b4f69d1c5e97eff58fe0d5ac99e280e437ea7b69ad5d28853e4cc1010b7d5f84",
+    "size": 14878
+  },
+  "merged-compiler-fixes.patch": {
+    "sha256": "ccc766b39e22b2bd5abf3aac334c3c814344fa247c007a4516e31d05614bc5bc",
+    "size": 1426807
+  },
+  "tinyllama/numerics.vmfb": {
+    "sha256": "9d1f37329ae888b4849a6b99b3160c9bae0dd351d93982de8900bb50f04a018b",
+    "size": 1496722351
+  },
+  "tinyllama/build/tinyllama-numerics.elf": {
+    "sha256": "a10e03a1ef4ac24aaa3107dba604dd497dd8a5c58ccc1b4e2ae366fb28ecd50d",
+    "size": 1499429552
+  },
+  "resnet/resnet.vmfb": {
+    "sha256": "f3cf567c9463dc58a5328bfd35814b7185a59a9df7b546bdb5e6d4d5d79b5292",
+    "size": 25816456
+  },
+  "resnet/resnet50-gemR.elf": {
+    "sha256": "9f5abc49744ee912e36fb8940fb92cf7932a0e76340710ee3680d391a971e146",
+    "size": 27078384
+  }
+}

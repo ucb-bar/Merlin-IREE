@@ -1,0 +1,8 @@
+{
+  "elf": "/home/loren/work/runs/fixW/tinyllama/build/tinyllama-numerics-buffered.elf",
+  "elf_sha256": "c3be9b179f15217adbd3e265993e7f8d9b6488571b69bad984762e5496f406a3",
+  "bytes": 1499429728,
+  "vmfb_sha256": "9d1f37329ae888b4849a6b99b3160c9bae0dd351d93982de8900bb50f04a018b",
+  "spike_output_bit_equal_original_spike": true,
+  "fpga_dispatched": false
+}

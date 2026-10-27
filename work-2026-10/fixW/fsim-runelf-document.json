@@ -1,0 +1,42 @@
+{
+ "schemaVersion": "2.2",
+ "description": "Run an uploaded target ELF (s3 firesim-elfs/) on one F2 (locked).",
+ "parameters": {
+  "elfKey": {
+   "type": "String",
+   "allowedPattern": "^firesim-elfs/[A-Za-z0-9._-]{1,128}$"
+  },
+  "maxHours": {
+   "type": "String",
+   "default": "6",
+   "allowedPattern": "^([1-9]|1[0-9]|2[0-4])$",
+   "description": "Guardrail kill limit for the F2 (1-24h)"
+  },
+  "runId": {
+   "type": "String",
+   "allowedPattern": "^[A-Za-z0-9._-]{1,80}$",
+   "description": "Result prefix under firesim-runs/"
+  },
+  "wait": {
+   "type": "String",
+   "default": "yes",
+   "allowedValues": [
+    "yes",
+    "no"
+   ],
+   "description": "Wait for the FPGA if another job holds it"
+  }
+ },
+ "mainSteps": [
+  {
+   "action": "aws:runShellScript",
+   "name": "run",
+   "inputs": {
+    "timeoutSeconds": "108000",
+    "runCommand": [
+     "runuser -l ubuntu -c \"/home/ubuntu/fsim/fsim-run.sh elf '{{elfKey}}' '{{maxHours}}' '{{runId}}' '{{wait}}'\""
+    ]
+   }
+  }
+ ]
+}

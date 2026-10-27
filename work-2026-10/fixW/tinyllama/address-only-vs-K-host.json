@@ -1,0 +1,7 @@
+{
+  "reference": "fixK/models/tinyllama-int8/output.npy",
+  "failed_1e3_gate": 0,
+  "unequal_bits": 0,
+  "max_abs": 0.0,
+  "rmse": 0.0
+}

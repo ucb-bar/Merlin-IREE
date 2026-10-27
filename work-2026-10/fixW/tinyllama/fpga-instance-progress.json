@@ -1,0 +1,22 @@
+[
+    {
+        "Id": "i-<redacted>",
+        "State": "running",
+        "LaunchTime": "2026-10-27T17:50:15+00:00",
+        "Type": "f2.6xlarge",
+        "Tags": [
+            {
+                "Key": "fsim-max-hours",
+                "Value": "12"
+            },
+            {
+                "Key": "fsim-run-id",
+                "Value": "gemW-tinyllama-20261027-a1"
+            },
+            {
+                "Key": "fsimcluster",
+                "Value": "fsimdispatch-gemW-tinyllama-20261027-a1"
+            }
+        ]
+    }
+]

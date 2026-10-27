@@ -1,0 +1,50 @@
+{
+  "build/tools/iree-compile": {
+    "sha256": "bb2646cd06eb1b3778f6b823c04249be3b45d2e38be826b1265130b92c1d6287",
+    "size": 6288
+  },
+  "build/tools/iree-opt": {
+    "sha256": "f78f2ebe13e7b1adab00e4fe7295fcf06e771155f9bf13d8a6f0dde8a8d91328",
+    "size": 6264
+  },
+  "build/lib/libIREECompiler.so": {
+    "sha256": "7de57c36a700854ce9d413637940ff87187290935526a2fc90fbacc7a7ce7340",
+    "size": 365085376
+  },
+  "gemmini-address-fix.patch": {
+    "sha256": "13480dbdcba85148bc17c053b4ecf2d83286860c2ed8c0e3024a48f5638fd9ba",
+    "size": 13576
+  },
+  "resnet/resnet.vmfb": {
+    "sha256": "f3cf567c9463dc58a5328bfd35814b7185a59a9df7b546bdb5e6d4d5d79b5292",
+    "size": 25816456
+  },
+  "resnet/resnet50-gemR.elf": {
+    "sha256": "9f5abc49744ee912e36fb8940fb92cf7932a0e76340710ee3680d391a971e146",
+    "size": 27078384
+  },
+  "resnet/golden.f32": {
+    "sha256": "fcb0277b9209a28fab23e40c7df5a275aefa81ed51197b831be6a7cb5dd0a925",
+    "size": 4000
+  },
+  "resnet/spike-output.f32": {
+    "sha256": "fcb0277b9209a28fab23e40c7df5a275aefa81ed51197b831be6a7cb5dd0a925",
+    "size": 4000
+  },
+  "repro/model.mlir": {
+    "sha256": "5279240c3aa9d5f6bc71a3a3128ba180b61903fd4edb307e3ef0318b6585b832",
+    "size": 4187
+  },
+  "repro/fixed.vmfb": {
+    "sha256": "a197bc1cb71f332d872411696679662e20e65ef3ea5d0ae637814eb231a8ff4e",
+    "size": 11525
+  },
+  "repro/input.bin": {
+    "sha256": "689f289b6aad7457b58abf895c8cdbbf1b5a6ac49708ff5b4dd6889e8261020b",
+    "size": 768
+  },
+  "repro/golden.f32": {
+    "sha256": "bd7d2b617b39fe3e18683a77fcd8f6a425616b6baf78c3ad67626c78803cf710",
+    "size": 5120
+  }
+}

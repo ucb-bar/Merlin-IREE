@@ -1,0 +1,122 @@
+-- Could not find `nvcc` executable in any searched paths, please set CUDAToolkit_ROOT
+-- IREE HAL drivers:
+--   - local-sync
+-- IREE HAL local executable library loaders:
+--   - embedded-elf
+--   - vmvx-module
+-- IREE HAL local executable plugin mechanisms:
+--   - embedded-elf
+fatal: not a git repository (or any of the parent directories): .git
+-- Not adding LLVM/MLIR because the configuration does not require it
+CMake Warning (author) at /home/loren/work/runs/fixW/src/third_party/iree_bar/build_tools/cmake/iree_import_binary.cmake:56 (file):
+  Given path:
+
+    /home/loren/work/iree-latest/prebuilt/bin/not
+
+  does not refer to an existing path on disk.
+Call Stack (most recent call first):
+  /home/loren/work/runs/fixW/src/third_party/iree_bar/tools/CMakeLists.txt:49 (iree_import_binary)
+This warning is for project developers.  Use -Wno-author to suppress it.
+
+CMake Warning at /home/loren/work/runs/fixW/src/third_party/iree_bar/build_tools/cmake/iree_import_binary.cmake:61 (message):
+  Could not find optional 'not' under
+  '/home/loren/work/iree-latest/prebuilt/bin'.  Features that depend on it
+  may fail to build.
+Call Stack (most recent call first):
+  /home/loren/work/runs/fixW/src/third_party/iree_bar/tools/CMakeLists.txt:49 (iree_import_binary)
+
+
+CMake Warning (author) at /home/loren/work/runs/fixW/src/third_party/iree_bar/build_tools/cmake/iree_import_binary.cmake:56 (file):
+  Given path:
+
+    /home/loren/work/iree-latest/prebuilt/bin/clang
+
+  does not refer to an existing path on disk.
+Call Stack (most recent call first):
+  /home/loren/work/runs/fixW/src/third_party/iree_bar/tools/CMakeLists.txt:50 (iree_import_binary)
+This warning is for project developers.  Use -Wno-author to suppress it.
+
+CMake Warning at /home/loren/work/runs/fixW/src/third_party/iree_bar/build_tools/cmake/iree_import_binary.cmake:61 (message):
+  Could not find optional 'clang' under
+  '/home/loren/work/iree-latest/prebuilt/bin'.  Features that depend on it
+  may fail to build.
+Call Stack (most recent call first):
+  /home/loren/work/runs/fixW/src/third_party/iree_bar/tools/CMakeLists.txt:50 (iree_import_binary)
+
+
+-- Disabling compiler loader (platform does not support library loading)
+-- Configuring IREE runtime plugins
+-- Runtime tracing disabled
+-- iree_allocator_system() using `IREE_ALLOCATOR_LIBC_*`
+-- Configuring done (0.3s)
+-- Generating done (1.4s)
+-- Build files have been written to: /home/loren/work/runs/fixW/smolvla/build
+ninja: Entering directory `/home/loren/work/runs/fixW/smolvla/build'
+[0/2] Re-checking globbed directories...
+[1/4] Building C object CMakeFiles/smolvla-gemmini-numerics.elf.dir/runner.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+In file included from /home/loren/work/runs/fixW/smolvla/runner.c:10:
+In file included from /home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/async/util/proactor_pool.h:62:
+In file included from /home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/async/proactor.h:35:
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/async/region.h:212:3: warning: passing 'volatile iree_atomic_uint32_t *' (aka 'volatile unsigned int *') to parameter of type 'volatile iree_atomic_int32_t *' (aka 'volatile int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+  212 |   iree_atomic_ref_count_inc(&region->ref_count);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/base/internal/atomics.h:119:5: note: expanded from macro 'iree_atomic_ref_count_inc'
+  119 |     iree_atomic_fetch_add((count_ptr), 1, iree_memory_order_relaxed); \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/base/internal/atomics_disabled.h:130:16: note: expanded from macro 'iree_atomic_fetch_add'
+  130 |                (volatile iree_atomic_uint32_t*)(object), (uint32_t)(operand)), \
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/base/internal/atomics_disabled.h:215:35: note: passing argument to parameter 'object' here
+  215 |     volatile iree_atomic_int32_t* object, uint32_t operand) {
+      |                                   ^
+In file included from /home/loren/work/runs/fixW/smolvla/runner.c:10:
+In file included from /home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/async/util/proactor_pool.h:62:
+In file included from /home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/async/proactor.h:37:
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/async/slab.h:207:3: warning: passing 'volatile iree_atomic_uint32_t *' (aka 'volatile unsigned int *') to parameter of type 'volatile iree_atomic_int32_t *' (aka 'volatile int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+  207 |   iree_atomic_ref_count_inc(&slab->ref_count);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/base/internal/atomics.h:119:5: note: expanded from macro 'iree_atomic_ref_count_inc'
+  119 |     iree_atomic_fetch_add((count_ptr), 1, iree_memory_order_relaxed); \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/base/internal/atomics_disabled.h:130:16: note: expanded from macro 'iree_atomic_fetch_add'
+  130 |                (volatile iree_atomic_uint32_t*)(object), (uint32_t)(operand)), \
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/base/internal/atomics_disabled.h:215:35: note: passing argument to parameter 'object' here
+  215 |     volatile iree_atomic_int32_t* object, uint32_t operand) {
+      |                                   ^
+In file included from /home/loren/work/runs/fixW/smolvla/runner.c:10:
+In file included from /home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/async/util/proactor_pool.h:62:
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/async/proactor.h:726:3: warning: passing 'volatile iree_atomic_uint32_t *' (aka 'volatile unsigned int *') to parameter of type 'volatile iree_atomic_int32_t *' (aka 'volatile int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+  726 |   iree_atomic_ref_count_inc(&proactor->ref_count);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/base/internal/atomics.h:119:5: note: expanded from macro 'iree_atomic_ref_count_inc'
+  119 |     iree_atomic_fetch_add((count_ptr), 1, iree_memory_order_relaxed); \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/base/internal/atomics_disabled.h:130:16: note: expanded from macro 'iree_atomic_fetch_add'
+  130 |                (volatile iree_atomic_uint32_t*)(object), (uint32_t)(operand)), \
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/base/internal/atomics_disabled.h:215:35: note: passing argument to parameter 'object' here
+  215 |     volatile iree_atomic_int32_t* object, uint32_t operand) {
+      |                                   ^
+In file included from /home/loren/work/runs/fixW/smolvla/runner.c:13:
+In file included from /home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/hal/api.h:12:
+In file included from /home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/hal/allocator.h:14:
+In file included from /home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/hal/buffer.h:15:
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/hal/resource.h:78:5: warning: passing 'volatile iree_atomic_uint32_t *' (aka 'volatile unsigned int *') to parameter of type 'volatile iree_atomic_int32_t *' (aka 'volatile int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+   78 |     iree_atomic_ref_count_inc(&resource->ref_count);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/base/internal/atomics.h:119:5: note: expanded from macro 'iree_atomic_ref_count_inc'
+  119 |     iree_atomic_fetch_add((count_ptr), 1, iree_memory_order_relaxed); \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/base/internal/atomics_disabled.h:130:16: note: expanded from macro 'iree_atomic_fetch_add'
+  130 |                (volatile iree_atomic_uint32_t*)(object), (uint32_t)(operand)), \
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/loren/work/runs/fixW/src/third_party/iree_bar/runtime/src/iree/base/internal/atomics_disabled.h:215:35: note: passing argument to parameter 'object' here
+  215 |     volatile iree_atomic_int32_t* object, uint32_t operand) {
+      |                                   ^
+4 warnings generated.
+[2/4] Building ASM object CMakeFiles/smolvla-gemmini-numerics.elf.dir/embed-numerics.S.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[3/4] Linking C executable smolvla-gemmini-numerics.elf
+/home/loren/work/chipyard/.conda-env/riscv-tools/riscv64-unknown-elf/bin/ld: warning: smolvla-gemmini-numerics.elf has a LOAD segment with RWX permissions

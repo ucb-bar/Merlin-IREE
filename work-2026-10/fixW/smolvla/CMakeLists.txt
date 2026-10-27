@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.26)
+project(fixW_smolvla C CXX ASM)
+include(CheckCSourceCompiles)
+add_subdirectory(/home/loren/work/runs/fixW/src/third_party/iree_bar iree)
+add_executable(smolvla-gemmini.elf runner.c embed.S)
+target_link_libraries(smolvla-gemmini.elf PRIVATE iree::base iree::hal iree::hal::drivers::local_sync::sync_driver iree::hal::local::loaders::embedded_elf_loader iree::modules::hal iree::vm iree::vm::bytecode::module m)
+target_link_options(smolvla-gemmini.elf PRIVATE -Wl,--gc-sections)
+
+add_executable(smolvla-gemmini-numerics.elf runner.c embed-numerics.S)
+target_link_libraries(smolvla-gemmini-numerics.elf PRIVATE iree::base iree::hal iree::hal::drivers::local_sync::sync_driver iree::hal::local::loaders::embedded_elf_loader iree::modules::hal iree::vm iree::vm::bytecode::module m)
+target_link_options(smolvla-gemmini-numerics.elf PRIVATE -Wl,--gc-sections)

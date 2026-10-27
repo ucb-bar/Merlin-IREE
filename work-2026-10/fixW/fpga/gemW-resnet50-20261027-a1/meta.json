@@ -1,0 +1,3 @@
+{"runId":"gemW-resnet50-20261027-a1","mode":"elf","arg":"firesim-elfs/gemW-resnet50-20261027-a1.elf","elf_sha256":"9f5abc49744ee912e36fb8940fb92cf7932a0e76340710ee3680d391a971e146","hw_config":"f2_gemmini_rocket_ddr3llc_60mhz","agfi":"agfi-02410ef1a8461b435",
+ "chipyard":"157dd69e49b9866be2bf8db390ee78bc38cd4438","firesim":"e1bdea8bb042b900995436ecc3d7c44100eb9da0",
+ "started":"2026-10-27T17:41:06+00:00","finished":"2026-10-27T17:57:03+00:00","exit_status":0,"results_dir":"results-workload/2026-10-27--17-46-17-dispatch-gemW-resnet50-20261027-a1"}
