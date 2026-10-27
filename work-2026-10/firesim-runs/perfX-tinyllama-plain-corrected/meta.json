@@ -1,0 +1,3 @@
+{"runId":"perfX-tinyllama-plain-corrected","mode":"elf","arg":"firesim-elfs/perfX-tinyllama-plain-corrected.elf","elf_sha256":"5bb710443f566b2f674dbd1f967945c44618b1d27c748e4d10303d9253d7b748","hw_config":"f2_gemmini_rocket_ddr3llc_60mhz","agfi":"agfi-02410ef1a8461b435",
+ "chipyard":"157dd69e49b9866be2bf8db390ee78bc38cd4438","firesim":"e1bdea8bb042b900995436ecc3d7c44100eb9da0",
+ "started":"2026-10-27T18:02:34+00:00","finished":"2026-10-27T21:17:40+00:00","exit_status":1,"results_dir":"results-workload/2026-10-27--18-06-55-dispatch-perfX-tinyllama-plain-corrected"}
