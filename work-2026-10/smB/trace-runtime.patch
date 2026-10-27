@@ -1,0 +1,20 @@
+--- a/runtime/src/iree/hal/local/local_executable.c
++++ b/runtime/src/iree/hal/local/local_executable.c
+@@ -11,7 +11,7 @@
+ 
+ #if defined(PERFX_TRACE) && PERFX_TRACE
+ #include <stdio.h>
+-#define PERFX_CAP 32768
++#define PERFX_CAP 65536
+ static struct {
+   uint64_t begin, end;
+   iree_hal_local_executable_t *executable;
+@@ -136,7 +136,7 @@
+     uint32_t i=perfx_count++;
+     perfx_records[i].begin=perfx_begin; perfx_records[i].end=perfx_end;
+     perfx_records[i].executable=executable; perfx_records[i].ordinal=ordinal;
+-    perfx_records[i].x=workgroup_count_x; perfx_records[i].y=workgroup_count_y; perfx_records[i].z=workgroup_count_z;
++    perfx_records[i].x=((volatile const iree_hal_executable_dispatch_state_v0_t*)dispatch_state)->workgroup_count_x; perfx_records[i].y=((volatile const iree_hal_executable_dispatch_state_v0_t*)dispatch_state)->workgroup_count_y; perfx_records[i].z=((volatile const iree_hal_executable_dispatch_state_v0_t*)dispatch_state)->workgroup_count_z;
+   } else ++perfx_dropped;
+ #endif
+   IREE_TRACE_ZONE_END(z0);

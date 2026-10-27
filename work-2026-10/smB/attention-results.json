@@ -1,0 +1,14 @@
+{
+  "attention": {
+    "cycles": 361843462,
+    "unchanged_gate_failures": 0,
+    "sha256": "b42702701af173ad060a3913bdcbf244d9d368afc22429de7eeb3086450ddc2d"
+  },
+  "attention-barrier": {
+    "cycles": 33717402,
+    "unchanged_gate_failures": 0,
+    "sha256": "b42702701af173ad060a3913bdcbf244d9d368afc22429de7eeb3086450ddc2d"
+  },
+  "bitwise_equal_before_after": true,
+  "speedup": 10.731653108979156
+}

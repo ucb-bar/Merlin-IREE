@@ -1,0 +1,59 @@
+-- Could not find `nvcc` executable in any searched paths, please set CUDAToolkit_ROOT
+-- IREE HAL drivers:
+--   - local-sync
+-- IREE HAL local executable library loaders:
+--   - embedded-elf
+--   - vmvx-module
+-- IREE HAL local executable plugin mechanisms:
+--   - embedded-elf
+fatal: not a git repository (or any of the parent directories): .git
+-- Not adding LLVM/MLIR because the configuration does not require it
+CMake Warning (author) at build_tools/cmake/iree_import_binary.cmake:56 (file):
+  Given path:
+
+    /home/loren/work/iree-latest/prebuilt/bin/not
+
+  does not refer to an existing path on disk.
+Call Stack (most recent call first):
+  tools/CMakeLists.txt:49 (iree_import_binary)
+This warning is for project developers.  Use -Wno-author to suppress it.
+
+CMake Warning at build_tools/cmake/iree_import_binary.cmake:61 (message):
+  Could not find optional 'not' under
+  '/home/loren/work/iree-latest/prebuilt/bin'.  Features that depend on it
+  may fail to build.
+Call Stack (most recent call first):
+  tools/CMakeLists.txt:49 (iree_import_binary)
+
+
+CMake Warning (author) at build_tools/cmake/iree_import_binary.cmake:56 (file):
+  Given path:
+
+    /home/loren/work/iree-latest/prebuilt/bin/clang
+
+  does not refer to an existing path on disk.
+Call Stack (most recent call first):
+  tools/CMakeLists.txt:50 (iree_import_binary)
+This warning is for project developers.  Use -Wno-author to suppress it.
+
+CMake Warning at build_tools/cmake/iree_import_binary.cmake:61 (message):
+  Could not find optional 'clang' under
+  '/home/loren/work/iree-latest/prebuilt/bin'.  Features that depend on it
+  may fail to build.
+Call Stack (most recent call first):
+  tools/CMakeLists.txt:50 (iree_import_binary)
+
+
+-- Disabling compiler loader (platform does not support library loading)
+-- Configuring IREE runtime plugins
+-- Runtime tracing disabled
+-- iree_allocator_system() using `IREE_ALLOCATOR_LIBC_*`
+-- Configuring done (0.3s)
+-- Generating done (1.4s)
+-- Build files have been written to: /home/loren/work/runs/smB/runtime/build
+ninja: Entering directory `build'
+[0/2] Re-checking globbed directories...
+[1/3] Building ASM object runtime/plugins/CMakeFiles/iree_.._.._.._.._smB_runtime_resnet.dir/home/loren/work/runs/smB/runtime/embed.S.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[2/3] Linking C executable runtime/plugins/resnet
+/home/loren/work/chipyard/.conda-env/riscv-tools/riscv64-unknown-elf/bin/ld: warning: runtime/plugins/resnet has a LOAD segment with RWX permissions

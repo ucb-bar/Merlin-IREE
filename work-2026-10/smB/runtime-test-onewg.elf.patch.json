@@ -1,0 +1,31 @@
+{
+  "source": "runs/smB/full-runtime/build-trace/smolvla.elf",
+  "source_sha256": "b3d154c061ce1f8ff912a329f9fc74cfca360dd4e0775c9052b0c918d22a4e4a",
+  "changes": [
+    {
+      "va": "0x80043762",
+      "offset": 280418,
+      "old": "0xc62c03",
+      "new": "0x100c13",
+      "register": "s8",
+      "dispatch_state_offset": 12
+    },
+    {
+      "va": "0x80043766",
+      "offset": 280422,
+      "old": "0x1062b03",
+      "new": "0x100b13",
+      "register": "s6",
+      "dispatch_state_offset": 16
+    },
+    {
+      "va": "0x8004376a",
+      "offset": 280426,
+      "old": "0x1465a83",
+      "new": "0x100a93",
+      "register": "s5",
+      "dispatch_state_offset": 20
+    }
+  ],
+  "meaning": "DIAGNOSTIC ONLY WG0 loop bound clamp; true launch metadata unchanged; not numerical inference"
+}

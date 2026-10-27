@@ -1,0 +1,21 @@
+[
+  "taskset",
+  "-c",
+  "24-47",
+  "/home/loren/work/iree-latest/bin/iree-run-module",
+  "--module=/home/loren/work/runs/smB/full-barrier-host.vmfb",
+  "--device=local-task",
+  "--task_topology_group_count=24",
+  "--input=1x3x512x512xbf16=@/home/loren/work/runs/smolvla/fp32/smolVLA.q.int8.mlir.reference/input0.bin",
+  "--input=1x3x512x512xbf16=@/home/loren/work/runs/smolvla/fp32/smolVLA.q.int8.mlir.reference/input1.bin",
+  "--input=1x3x512x512xbf16=@/home/loren/work/runs/smolvla/fp32/smolVLA.q.int8.mlir.reference/input2.bin",
+  "--input=1xi1=@/home/loren/work/runs/smolvla/fp32/smolVLA.q.int8.mlir.reference/input3.bin",
+  "--input=1xi1=@/home/loren/work/runs/smolvla/fp32/smolVLA.q.int8.mlir.reference/input4.bin",
+  "--input=1xi1=@/home/loren/work/runs/smolvla/fp32/smolVLA.q.int8.mlir.reference/input5.bin",
+  "--input=1x48xi64=@/home/loren/work/runs/smolvla/fp32/smolVLA.q.int8.mlir.reference/input6.bin",
+  "--input=1x48xi1=@/home/loren/work/runs/smolvla/fp32/smolVLA.q.int8.mlir.reference/input7.bin",
+  "--input=1x32xf32=@/home/loren/work/runs/smolvla/fp32/smolVLA.q.int8.mlir.reference/input8.bin",
+  "--input=1x50x32xf32=@/home/loren/work/runs/smolvla/fp32/smolVLA.q.int8.mlir.reference/input9.bin",
+  "--input=1xf32=@/home/loren/work/runs/smolvla/fp32/smolVLA.q.int8.mlir.reference/input10.bin",
+  "--output=@/home/loren/work/runs/smB/full-barrier-host-output.bin"
+]
