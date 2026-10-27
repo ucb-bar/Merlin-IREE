@@ -1,0 +1,327 @@
+[
+  {
+    "path": "/home/loren/work/runs/gemR/resnet50-gemR.elf",
+    "bytes": 27075568,
+    "sha256": "28c7afcf83f71018de20a8ed2af0ca2918b15241b6a26fe2da81d83e9ab4d4a6"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/resnet.vmfb",
+    "bytes": 25813680,
+    "sha256": "06112df3be073d8f601e12b5c35cf54a40e01b6cf26729a5b93d3c7ed6968950"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/golden.f32",
+    "bytes": 4000,
+    "sha256": "fcb0277b9209a28fab23e40c7df5a275aefa81ed51197b831be6a7cb5dd0a925"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/runner.c",
+    "bytes": 9469,
+    "sha256": "9a9e4487bc168a2fd1c04036d0ef8b72d5fe9aca31c527e8d76bfe901586b7bb"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/libc_strict.c",
+    "bytes": 906,
+    "sha256": "8083f4c272576bac53a2378ed8215ee66b411534ca2e25ac485c9c80468365ab"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/embed.S",
+    "bytes": 741,
+    "sha256": "9786a98ae37ed8221cb78724ed82435b71700e204eaf692a2fcf9829aac704b8"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/compile.sh",
+    "bytes": 887,
+    "sha256": "3a916bc9d55998bd58a0a98daa988df7be710deb9f9edd709ce9dd96e5121cea"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/compile_model.sh",
+    "bytes": 625,
+    "sha256": "ea611ce585c58688b394cc7776276709f93dc609111771c5dac93e1f9d7a88b4"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/build_runtime.sh",
+    "bytes": 939,
+    "sha256": "bf5dcb50bbd28f4d04b578d295f37c0f09355bed60c6bb6fb3f00588fa888204"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/run_spike.sh",
+    "bytes": 411,
+    "sha256": "f0cb042ea173af8d7ee8b934aabba968358a74d85823f22dd5dd1b4a76fa2ea4"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/dispatch_fpga.sh",
+    "bytes": 231,
+    "sha256": "86a566e35c4cb0d10bc64779b705afb8122f51fd31b5c104383e92d52cbb9cee"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/analyze.py",
+    "bytes": 1312,
+    "sha256": "6cee273ec8a10e502f031eb4af9b9b9dacd9988e2499081ed8808e7d45ded47c"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/audit.json",
+    "bytes": 138,
+    "sha256": "292bc534db3d5ba2a1e373ca80d228e346e3828be4bc9a451e99f597e4727c41"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/readelf.txt",
+    "bytes": 1206,
+    "sha256": "313ce3f225189a284284b53566d4c085023fe9b7b81bc0705d52b417f0aad53e"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/timed-region.txt",
+    "bytes": 20021,
+    "sha256": "dbf1ea25f18d5b7770cd7c73a35c51a8acce95c8b7e16936fe751152d0a8e082"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/spike.log",
+    "bytes": 20156,
+    "sha256": "ef813e34c11f10022715800b1f8fff4ff55b41e00dad6cbd166d2b4bb0b274ca"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/spike-result.json",
+    "bytes": 424,
+    "sha256": "5ce5be2b220c326af9c6ab4a88d97f60bb4f493aa50783970c176cbf4e606e7f"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/spike-output.f32",
+    "bytes": 4000,
+    "sha256": "30048da58c0fbec7786104fb4b56a9000286f31449e74840040dcdabd1da4fe3"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/compiler-version.txt",
+    "bytes": 118,
+    "sha256": "15e536503d89880b30e93bb4f59e04c2c90367ff48fc4473cc1fc21fc8377e9c"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/clang-version.txt",
+    "bytes": 159,
+    "sha256": "66a5929f5b3ce6bda67043a48806a627beaf967491c63f520c35a830d1734f01"
+  },
+  {
+    "path": "/home/loren/work/runs/resnet50/artifacts/resnet50.q.int8.mlir",
+    "bytes": 51411072,
+    "sha256": "4e2e1e88bd63fdd7b14b47ea4a73e09aa490700c756f94a8ffce9c228ce3a092"
+  },
+  {
+    "path": "/home/loren/work/runs/resnet50/artifacts/resnet50.q.int8.onnx",
+    "bytes": 25757190,
+    "sha256": "e33b0ce0b9a8f76558deb59cecad2076a624fc2704eafba7392b84574e41dd8d"
+  },
+  {
+    "path": "/home/loren/work/runs/resnet50/artifacts/resnet50_input.f32",
+    "bytes": 602112,
+    "sha256": "cf96680f3b1abed9505b1ed766a48c06572794a28c48e157a8569c3cc3b27233"
+  },
+  {
+    "path": "/home/loren/work/runs/fixK/models/resnet/output.npy",
+    "bytes": 4128,
+    "sha256": "b912596391e7e3865ab4538ada01a40cabe3a1f64821761c9b43a2e0229f5666"
+  },
+  {
+    "path": "/home/loren/work/runs/fixK/build/tools/iree-compile",
+    "bytes": 6288,
+    "sha256": "406954b5618dfb70b3e0ed23b8565b19b1b25f69c51385b3ff40d3a057fcb1c7"
+  },
+  {
+    "path": "/home/loren/work/runs/fixK/build/lib/libIREECompiler.so",
+    "bytes": 365082760,
+    "sha256": "9280a9e954e745d7d6c9c83db2c2e5005bdf86e1de4b3cf5af2841c5e07b249a"
+  },
+  {
+    "path": "/home/loren/work/chipyard/generators/gemmini/software/libgemmini/libgemmini.so",
+    "bytes": 80528,
+    "sha256": "68ce84237c2033e698a0e5875b4df53cefcb0ea2e7b08c1973d371a90fb2dcf0"
+  },
+  {
+    "path": "/home/loren/work/chipyard/.conda-env/riscv-tools/bin/spike",
+    "bytes": 179411672,
+    "sha256": "3fb4904c57c96aca23f96f7968cd6d9e7239c3d281e4f12d7dfe21ca82d3d4ef"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/toolchain/setup_toolchain.sh",
+    "bytes": 2708,
+    "sha256": "88dabf05e0754c586b5df0f81c27af47f1f7bed5ec3a24e3e41ca99cb807126f"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/toolchain/htif.ld",
+    "bytes": 4267,
+    "sha256": "5ce35bea855ffb1c1860c3b24b29a9eda84104a9d27afbe876028eb6b11ae764"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/toolchain/htif_large_model.ld",
+    "bytes": 4525,
+    "sha256": "bef43821d841527693bf8ac2cea9be7b4f031a83a773891a4c4b494fa9716853"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/toolchain/spike.cfg",
+    "bytes": 239,
+    "sha256": "9aa85fef885c87a88e38836ddbb27e84d6ba17012f6ff51c2350ebcdc70206c0"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/toolchain/htif-nano.spec",
+    "bytes": 644,
+    "sha256": "f87d21b70085ff3cc1bd65da1a4e12e03b7f368aa0bf65831f36e6fc12b44cd0"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/toolchain/riscv_firesim.toolchain.cmake",
+    "bytes": 12185,
+    "sha256": "a8b9d1a0054d94d5dd735ad351782134c1b017358254fd3ba106c9d02481ed0b"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/toolchain/clear_dl_libs.cmake",
+    "bytes": 263,
+    "sha256": "da4ab948f11b265d6b3f49555b4ff4a4cb5b635b146ae301b9ff3e63cff950ee"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/toolchain/zephyr_stubs/pthread.h",
+    "bytes": 3131,
+    "sha256": "cc5d482081670499242c5e3590e4057fb7a535c2a0a75dd383c72012091dc72c"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/toolchain/zephyr_stubs/memory.h",
+    "bytes": 579,
+    "sha256": "dc78496539338b1efcdb7a955a9d5ebc2f8a383a78da71f41d5e016fec847946"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/toolchain/zephyr_stubs/alloca.h",
+    "bytes": 418,
+    "sha256": "6a5c1f3a337e7b8edc3b3bed59261fca59d98c86a787e78597ded12856a29179"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/toolchain/zephyr_stubs/sys/socket.h",
+    "bytes": 4121,
+    "sha256": "c65cb21c1be62782420d7f31eaabd3503bd4daa935f02923a795d2aa20bd1e24"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/result-manifest.json",
+    "bytes": 2258,
+    "sha256": "738e2a0b6590662b75739214e1c448696aea6ebbba5c9b1ebe0c91972dbc57a4"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/oracle-exact.f32",
+    "bytes": 4000,
+    "sha256": "41dc5867e09c0c2747b145c392926053d34d9867566bdeb8b566d2e7c02d2b3b"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/oracle-result.log",
+    "bytes": 322,
+    "sha256": "8f9fa94d5925395aa20a2a631cdd298efd68e92dc808df06b210bca36057e538"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/oracle-vs-cpu.json",
+    "bytes": 85,
+    "sha256": "fc3c2bf2d8e66ca586fe3c3e7b08fe6357820934ad6bdc27202f40744661f23e"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/oracle-versions.json",
+    "bytes": 138,
+    "sha256": "3d855531e13bcfc07931e3f80a19772ead1ae952693e9c2d575fa3b5ce271f96"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/oracle_optimize.py",
+    "bytes": 426,
+    "sha256": "557513a55d875d6dd0aed1642138ebb1a9b19a709cc0d06fc88e6c154eac2e09"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/generate_portable_int8_golden.py",
+    "bytes": 3360,
+    "sha256": "bfc139c946431c8eb9706d1a8cfde1c3a7e0b52dfb0b4779ea5eb69f10f367d5"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/defuse_ort_qlinear.py",
+    "bytes": 15587,
+    "sha256": "41bd7a6c4329aac35ee2177e1b57169a31178cbc5f0a213a1b9f30ab85a2d1fd"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/classifier-lowering.ll",
+    "bytes": 5961,
+    "sha256": "77abe88d5521e798eab288c9e2f57275ff03660c8fdab8747f35270003846ee5"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/iree_runtime_plugin.cmake",
+    "bytes": 488,
+    "sha256": "d2e27b692fd748ca99cc280d4bf187ca7f44afe9795a6510877b9259a0aff248"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/libiconv-1.18.tar.gz",
+    "bytes": 5822590,
+    "sha256": "3b08f5f4f9b4eb82f151a7040bfd6fe6c6fb922efe4b1659c66ea933276965e8"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/README.md",
+    "bytes": 1139,
+    "sha256": "4cba32eccb5762907062cfefef4db920ff7ce7bcf0c8798f62f7d849521602e8"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/fpga/gemR-resnet50-20261027-a1/meta.json",
+    "bytes": 553,
+    "sha256": "95ea759b56e45dd78532e968091fa9f2af18ecd9891eef3f48fa0e7e53a44e49"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/fpga/gemR-resnet50-20261027-a1/run.log",
+    "bytes": 116367,
+    "sha256": "2f9e4795b66e2e19918d8504402c4977a3dda54afd6bfeb31132620a3d396a2c"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/fpga/gemR-resnet50-20261027-a1/dispatch-gemR-resnet50-20261027-a10/sim-run.sh",
+    "bytes": 623,
+    "sha256": "ce1a14d6ff64425a1b3cb43de2fc0385e81cb792d5a4ad1ed2ad1d3d785c1545"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/fpga/gemR-resnet50-20261027-a1/dispatch-gemR-resnet50-20261027-a10/uartlog",
+    "bytes": 22550,
+    "sha256": "5ce0e3c3d1b039682f930de860cf324a8cb72dfc64f942fdd6c40152694c29e5"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/fpga/gemR-resnet50-20261027-a1/dispatch-gemR-resnet50-20261027-a10/memory_stats0.csv",
+    "bytes": 744,
+    "sha256": "539b01542da72d3e045970dc5aa324a8a60831c2a2a3cc52213eccf6026e7f73"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/fpga/gemR-resnet50-20261027-a1/dispatch-gemR-resnet50-20261027-a10/HW_CFG_SUMMARY",
+    "bytes": 166,
+    "sha256": "af783436c2c43c6fb2318130c2a9208e71a7ceba49a1268efdc11a8b2cd5675a"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/fpga/gemR-resnet50-20261027-a1/.monitoring-dir/dispatch-gemR-resnet50-20261027-a10",
+    "bytes": 5,
+    "sha256": "eff2906dc8f6d10da753f78c53bbb4c2fc0a1b4bc925c1ec535b5f42902a240a"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/REPORT.md",
+    "bytes": 9639,
+    "sha256": "c81eeeea30a775e7b0f11d3fa48806cf67633009bd8f20c8320206df61524836"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/fpga-result.json",
+    "bytes": 815,
+    "sha256": "fa206fc973e2d86b5d36bb66009aefb5b6a30819f70556f27d558a122f66999f"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/fpga-output.f32",
+    "bytes": 4000,
+    "sha256": "30048da58c0fbec7786104fb4b56a9000286f31449e74840040dcdabd1da4fe3"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/fpga-uart-normalized.log",
+    "bytes": 21510,
+    "sha256": "d6b6d18ff149287c27699c61505061602531cffea6721551cd74ea0fa528b97f"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/fpga-dispatch-a1.log",
+    "bytes": 1145,
+    "sha256": "433e423d133dbb51eb43f72d70175a3d44bda53b73e94a6c40215456ec1f50a5"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/fpga-status-final.log",
+    "bytes": 602,
+    "sha256": "0adb8f1db2877b3f8797bedd1a4973c1d44aab8cccad6c3c8cba196c7ae0e317"
+  },
+  {
+    "path": "/home/loren/work/runs/gemR/ec2-final.json",
+    "bytes": 132,
+    "sha256": "6e8e2f1b35c0ee7dae6ff20e4c50e24928919a060c8fba9fb09d12f441977dc7"
+  }
+]

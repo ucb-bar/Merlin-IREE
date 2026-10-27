@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/loren/work/runs/gemR/defuse_ort_qlinear.py", line 391, in <module>
+    onnx.checker.check_model(model)
+  File "/home/loren/work/runs/locked-env/.venv/lib/python3.11/site-packages/onnx/checker.py", line 164, in check_model
+    C.check_model(
+onnx.onnx_cpp2py_export.checker.ValidationError: Unrecognized attribute: channels_last for operator ConvInteger
+
+==> Context: Bad node spec for node. Name: /conv1/Conv_token_214__conv_integer OpType: ConvInteger

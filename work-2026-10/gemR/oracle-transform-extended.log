@@ -1,0 +1,1 @@
+wrote /home/loren/work/runs/gemR/resnet50.q.int8.ort_convinteger_qdq.onnx with replacements {'QLinearConv': 33, 'QLinearAdd': 4, 'QLinearGlobalAveragePool': 1, 'QGemm': 1}

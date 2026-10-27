@@ -1,0 +1,26 @@
+
+Elf file type is EXEC (Executable file)
+Entry point 0x80000000
+There are 3 program headers, starting at offset 64
+
+Program Headers:
+  Type           Offset             VirtAddr           PhysAddr
+                 FileSiz            MemSiz              Flags  Align
+  RISCV_ATTRIBUT 0x00000000019a5629 0x0000000000000000 0x0000000000000000
+                 0x0000000000000078 0x0000000000000000  R      0x1
+  LOAD           0x0000000000001000 0x0000000080000000 0x0000000080000000
+                 0x00000000019a45e0 0x00000000019dacb0  RWE    0x1000
+  GNU_STACK      0x0000000000000000 0x0000000000000000 0x0000000000000000
+                 0x0000000000000000 0x0000000000000000  RW     0x10
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .riscv.attributes 
+   01     .text .rodata .eh_frame .init_array .htif .data .got .got.plt .data.rel.ro .data.__malloc_av_ .data.__sglue .data.__global_locale .data._impure_data .sdata .bss 
+   02     
+Attribute Section: riscv
+File Attributes
+  Tag_RISCV_stack_align: 16-bytes
+  Tag_RISCV_arch: "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0_zaamo1p0_zalrsc1p0_zca1p0_zcd1p0"
+  Tag_RISCV_priv_spec: 1
+  Tag_RISCV_priv_spec_minor: 11

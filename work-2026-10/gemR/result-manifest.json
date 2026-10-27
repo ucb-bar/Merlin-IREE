@@ -1,0 +1,83 @@
+{
+  "model": "ResNet-50 INT8 public torchvision V2 synthetic seed0",
+  "entry": "module.main_graph",
+  "golden": "/home/loren/work/runs/fixK/models/resnet/output.npy",
+  "gate": {
+    "atol": 0.8,
+    "rtol": 0.1,
+    "top1": 21,
+    "all_logits": 1000,
+    "finite_required": true
+  },
+  "hardware": {
+    "dim": 16,
+    "element_bits": 8,
+    "accumulator_bits": 32,
+    "address_bits": 32,
+    "banks": 4,
+    "bank_rows": 2048,
+    "accumulator_rows": 512,
+    "dataflow": "LOOP_WS",
+    "isa": "RV64GC"
+  },
+  "compiler_allocation_limit": 32768,
+  "runner_heap": 134217728,
+  "runner_stack": 8388608,
+  "fpga": {
+    "run_id": "gemR-resnet50-20261027-a1",
+    "region": "us-east-1",
+    "hw_config": "f2_gemmini_rocket_ddr3llc_60mhz",
+    "max_hours": 2,
+    "cycles": 1760982669,
+    "total": 1000,
+    "finite": 1000,
+    "failed": 302,
+    "max_abs": 5.857609152793884,
+    "rmse": 0.9929053925767465,
+    "atol": 0.8,
+    "rtol": 0.1,
+    "top1": 0,
+    "golden_top1": 21,
+    "pass_gate": false,
+    "bit_equal_cpu": false,
+    "output_sha256": "30048da58c0fbec7786104fb4b56a9000286f31449e74840040dcdabd1da4fe3",
+    "historical_cycles": 939242971,
+    "cycle_ratio_vs_historical": 1.874895765389763,
+    "bit_equal_spike": true,
+    "fmr": 1.01,
+    "emulation_wall_seconds": 617.0,
+    "effective_target_mhz": 59.395,
+    "fpga_frequency_mhz": 60,
+    "target_total_cycles": 36647104202,
+    "timed_invoke_seconds_at_60mhz": 29.34971115,
+    "dispatch_wall_seconds": 1087,
+    "infrastructure_success": true,
+    "workload_exit_code": 1,
+    "infrastructure_retries": 0
+  },
+  "acceptance": "FAIL_NUMERICS_ON_SPIKE_AND_FPGA",
+  "spike": {
+    "cycles": 864621908,
+    "total": 1000,
+    "finite": 1000,
+    "failed": 302,
+    "max_abs": 5.857609152793884,
+    "rmse": 0.9929053925767465,
+    "atol": 0.8,
+    "rtol": 0.1,
+    "top1": 0,
+    "golden_top1": 21,
+    "pass_gate": false,
+    "bit_equal_cpu": false,
+    "output_sha256": "30048da58c0fbec7786104fb4b56a9000286f31449e74840040dcdabd1da4fe3",
+    "historical_cycles": 939242971,
+    "cycle_ratio_vs_historical": 0.9205519069037569
+  },
+  "instance_cleanup": [
+    {
+      "Id": "i-<redacted>",
+      "State": "shutting-down",
+      "RunId": "gemR-resnet50-20261027-a1"
+    }
+  ]
+}
