@@ -1,0 +1,3 @@
+Snapshot audit maps Gemmini matching, DIM/tile choices, QDQ, and ISA/runtime emission to Merlin; dispatch/fusion, im2col, and fallback CPU lowering live in third_party/iree_bar.
+Ranked sinks classify ResNet epilogues/packing as M+O/U fallback, TinyLlama FP32 lm_head as O+H with U fallback, and smolVLA projections/attention as estimated O+M+H; full smolVLA cycles are not measured.
+Scope stayed inside the snapshot and local reports: no web/newer-upstream comparison, compiler build, or runtime experiment; prior external comparison/citation material was removed.

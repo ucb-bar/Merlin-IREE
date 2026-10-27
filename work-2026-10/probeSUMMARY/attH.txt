@@ -1,0 +1,3 @@
+attH first result: ResNet-50 FireSim trace measured 2,088,249,127 invoke cycles; reported 4,089,184,256 Gemmini MACs imply a 15,973,377-cycle 256-MAC/cycle compute floor (0.765% overall utilization).
+TinyLlama and SmolVLA currently lack completed FireSim model-cycle measurements in available result artifacts; TinyLlama Spike cycles and SmolVLA WG0-only scaling are not hardware cycle results.
+The DDR3 model identity is confirmed as f2_gemmini_rocket_ddr3llc_60mhz, but per-run DRAM bytes/bandwidth evidence is not yet present in collected stats; data-movement and Rocket-FPU floors remain estimates pending exact timing/config evidence.

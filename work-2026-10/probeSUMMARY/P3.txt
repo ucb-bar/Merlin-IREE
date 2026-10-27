@@ -1,0 +1,1 @@
+P3 COMPLETE: 9 Gemmini/RV64 Spike probes (time/state/action-time/first joint attention/full first expert layer/MLP/cross-attention/output/final residual+RMSNorm+projection),1351920 returned values BITWISE PASS vs identical-input host AND PyTorch; final[1,50,32]1600 exact;0 gate failures;no defect/patch;teacher cuts,not full-model proof. /home/loren/work/runs/probeP3/REPORT.md

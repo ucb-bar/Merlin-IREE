@@ -1,0 +1,3 @@
+ResNet trace confirms scalar FP requantization/rounding inside Gemmini dispatches is the dominant measured sink (57.75%); exact per-instruction cycle split is not available.
+The current perfX recipe already includes Jack's preprocessing pipeline; tile flags 32/32/64 compile byte-identically to defaults, while the current gcd distribution patch yields one M row for M=49.
+No-img2col compilation fails the unchanged 32 KiB stack gate; maxpool and packing remain primarily Merlin lowering/our recipe issues, with FireSim/DDR3 attribution unresolved without hardware counters.

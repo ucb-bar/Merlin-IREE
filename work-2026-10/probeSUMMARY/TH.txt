@@ -1,0 +1,1 @@
+TinyLlama INT8 lm_head variant: host direct fixJ+PyTorch numerics PASS 8/8 bitwise; Gemmini Spike PASS 512k/512k exact at 893,918,722 cycles (-81.19% vs shipped), 100% of 16.55 GMAC INT8 matmuls Gemmini; fixed accuracy gate FAIL (greedy 7/8 shipped, 5/8 FP32; argmax 13.375/16; min cosine 0.97938).

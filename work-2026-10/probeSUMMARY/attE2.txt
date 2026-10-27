@@ -1,0 +1,3 @@
+Measured existing evidence: fixE/fixG/fixB show which op recipes change numerical behavior; P2 has original Spike wrapper cycle totals, but no matched exact-recipe Spike instruction counts.
+Therefore no valid per-element cost delta or whole-model exactness-tax estimate can be reported; cycles include runtime/setup and are not op instruction counts.
+All fixed numerical gates remain unchanged; details and source artifact paths are recorded in runs/attE2/REPORT.md.

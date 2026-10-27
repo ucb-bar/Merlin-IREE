@@ -1,0 +1,3 @@
+Merlin `merlin compile --quantized` selects quantized compilation for an already-quantized input; it does not quantize a model (SmolVLA exporter applies TorchAO only to nn.Linear layers).
+Upstream IREE has lowering/canonicalization for existing quantized matmul, batch_matmul, and conv IR, not a pass that calibrates or quantizes FP32 SDPA/bmm/conv.
+The Gemmini admission gate is Merlin's plugin: its matcher requires rank-2 i8*i8->i32 matmul (or optional FP8), so FP32 score matmuls and rank-3 batch_matmul do not match.

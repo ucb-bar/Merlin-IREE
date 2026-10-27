@@ -1,0 +1,1 @@
+SMF 2026-10-27T22:30:21.821543+00:00: buffered delivery harness READY/guard checked,8cores; smA430.216G/smB430.335G exceed200G; smC382.598G+fullhostNaNs REJECT; smD projection only/unintegrated. No F2/new fullSpike; five-minute monitor active.

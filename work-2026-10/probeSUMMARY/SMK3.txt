@@ -1,0 +1,5 @@
+RETRY1 GONE
+
+2026-10-27 UTC. Target zSM-smolvla-plain-retry1 only. Dispatch log runs/perfSM/dispatch-plain-retry1.log identified SSM command 30637d3a-ec63-4b86-8e34-093b6a4c2862 on manager i-<redacted>, region us-east-1. `aws ssm cancel-command --command-id 30637d3a-ec63-4b86-8e34-093b6a4c2862 --region us-east-1` exited 0. `aws ssm get-command-invocation ...` reported Status=Cancelled, ResponseCode=137; manager output reports terminaterunfarm and instances terminated. `FSIM_REGION=us-east-1 fpga-status` reports 4 active runs: the retry1 entry is stale. Exact EC2 filter for fsim-run-id=zSM-smolvla-plain-retry1 and state pending,running returned `[]`.
+
+Only requested follow-up sessions were inspected/targeted: `tmux kill-session -t perfSM2` reported no such session (already absent); no other session was killed. `perfSM3` already existed (created 22:33:39 UTC) and was processing the delivery job in `/home/loren/work/codex-perfSM3.log`; left it running and did not dispatch a duplicate.
