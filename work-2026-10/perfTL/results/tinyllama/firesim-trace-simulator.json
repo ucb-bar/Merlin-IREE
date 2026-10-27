@@ -1,0 +1,17 @@
+[
+  {
+    "file": "/home/loren/work/runs/perfTL/fpga/zTL-tinyllama-trace/dispatch-zTL-tinyllama-trace0/uartlog",
+    "metric": "target_cycles_emulated",
+    "value": 248460550277.0
+  },
+  {
+    "file": "/home/loren/work/runs/perfTL/fpga/zTL-tinyllama-trace/dispatch-zTL-tinyllama-trace0/uartlog",
+    "metric": "fmr",
+    "value": 1.04
+  },
+  {
+    "file": "/home/loren/work/runs/perfTL/fpga/zTL-tinyllama-trace/dispatch-zTL-tinyllama-trace0/uartlog",
+    "metric": "wallclock_seconds",
+    "value": 4315.9
+  }
+]

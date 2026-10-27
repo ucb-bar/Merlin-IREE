@@ -1,0 +1,1458 @@
+sequence,begin,end,cycles,ordinal,workgroups_x,workgroups_y,workgroups_z,name,device,op_class,macs
+0,4428900,5465344,1036444,154,8,1,1,main$async_dispatch_0_elementwise_broadcast_16x2048_i64xf32xf32,Rocket scalar,elementwise/other,0
+1,5469380,5474243,4863,155,1,1,1,main$async_dispatch_1_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+2,5476308,5481141,4833,156,1,1,1,main$async_dispatch_2_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+3,5483133,5488334,5201,157,1,1,1,main$async_dispatch_3_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+4,5490099,5494718,4619,158,1,1,1,main$async_dispatch_4_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+5,5496724,5515330,18606,159,1,1,1,main$async_dispatch_5_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+6,5517780,5537764,19984,160,1,1,1,main$async_dispatch_6_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+7,5539913,5555582,15669,161,1,1,1,main$async_dispatch_7_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+8,5557677,5568890,11213,162,1,1,1,main$async_dispatch_8_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+9,5570753,5580587,9834,163,1,1,1,main$async_dispatch_9_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+10,5582849,5594484,11635,164,1,1,1,main$async_dispatch_10_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+11,5596268,5606078,9810,165,1,1,1,main$async_dispatch_11_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+12,5608224,5621217,12993,166,1,1,1,main$async_dispatch_12_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+13,5623215,5634425,11210,167,1,1,1,main$async_dispatch_13_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+14,5636465,5647550,11085,168,1,1,1,main$async_dispatch_14_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+15,5649511,5659493,9982,169,1,1,1,main$async_dispatch_15_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+16,5661803,5686170,24367,170,1,1,1,main$async_dispatch_16_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+17,5689029,6179678,490649,171,8,1,1,main$async_dispatch_17_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+18,6182877,6742005,559128,172,16,1,1,main$async_dispatch_18_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+19,6744359,10015793,3271434,173,8,1,1,main$async_dispatch_19_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+20,10019250,14272486,4253236,174,128,1,1,main$async_dispatch_20_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+21,14276757,14687236,410479,175,8,1,1,main$async_dispatch_21_elementwise_transpose_32x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+22,14690648,15014024,323376,176,16,1,1,main$async_dispatch_22_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+23,15017390,15062239,44849,177,1,1,1,main$async_dispatch_23_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+24,15065035,15367733,302698,178,16,1,1,main$async_dispatch_24_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+25,15371154,15411317,40163,179,1,1,1,main$async_dispatch_25_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+26,15413998,16718232,1304234,180,8,1,1,main$async_dispatch_26_elementwise_32x1024_f32,Rocket scalar,elementwise/other,0
+27,16721348,16878292,156944,181,1,1,1,main$async_dispatch_27_elementwise_4x1024_f32,Rocket scalar,elementwise/other,0
+28,16880722,17026978,146256,182,8,1,1,main$async_dispatch_28_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+29,17029831,17199725,169894,183,8,1,1,main$async_dispatch_29_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+30,17203175,22026702,4823527,184,32,1,1,main$async_dispatch_30_batch_matmul_32x16x16x64_f32,Rocket scalar,matmul,524288
+31,22030467,23517452,1486985,185,32,1,1,main$async_dispatch_31_reduction_512x16_f32,Rocket scalar,elementwise/other,0
+32,23520552,23570568,50016,186,1,1,1,main$async_dispatch_32_elementwise_1x32x16x8_f32,Rocket scalar,elementwise/other,0
+33,23573106,23593768,20662,187,1,1,1,main$async_dispatch_33_elementwise_32x16x4_f32,Rocket scalar,elementwise/other,0
+34,23596074,23605854,9780,188,1,1,1,main$async_dispatch_34_elementwise_1x32x16x2_f32,Rocket scalar,elementwise/other,0
+35,23607894,23636492,28598,189,1,1,1,main$async_dispatch_35_elementwise_32x16_f32,Rocket scalar,elementwise/other,0
+36,23638816,23706828,68012,190,2,1,1,main$async_dispatch_36_elementwise_512x16_f32,Rocket scalar,elementwise/other,0
+37,23709331,28958093,5248762,191,32,1,1,main$async_dispatch_37_batch_matmul_32x16x64x16_f32,Rocket scalar,matmul,524288
+38,28961459,29249915,288456,192,8,1,1,main$async_dispatch_38_transpose_32x16x64_f32,Rocket scalar,elementwise/other,0
+39,29252624,29810704,558080,193,16,1,1,main$async_dispatch_39_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+40,29813138,33021594,3208456,194,8,1,1,main$async_dispatch_40_elementwise_transpose_16x32x64_f32xf32xi8,Rocket scalar,elementwise/other,0
+41,33025977,38200830,5174853,195,128,1,1,main$async_dispatch_41_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+42,38205079,38212174,7095,196,1,1,1,main$async_dispatch_42_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+43,38213915,38218404,4489,197,1,1,1,main$async_dispatch_43_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+44,38220185,38225546,5361,198,1,1,1,main$async_dispatch_44_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+45,38227287,38231560,4273,199,1,1,1,main$async_dispatch_45_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+46,38233719,38259574,25855,200,1,1,1,main$async_dispatch_46_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+47,38261602,38282563,20961,201,1,1,1,main$async_dispatch_47_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+48,38284664,38299828,15164,202,1,1,1,main$async_dispatch_48_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+49,38301772,38316880,15108,203,1,1,1,main$async_dispatch_49_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+50,38318824,38328930,10106,204,1,1,1,main$async_dispatch_50_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+51,38330813,38343527,12714,205,1,1,1,main$async_dispatch_51_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+52,38345373,38355230,9857,206,1,1,1,main$async_dispatch_52_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+53,38357162,38371013,13851,207,1,1,1,main$async_dispatch_53_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+54,38373065,38383700,10635,208,1,1,1,main$async_dispatch_54_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+55,38385553,38397595,12042,209,1,1,1,main$async_dispatch_55_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+56,38399560,38408889,9329,210,1,1,1,main$async_dispatch_56_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+57,38410986,38437756,26770,211,1,1,1,main$async_dispatch_57_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+58,38440710,38979360,538650,212,8,1,1,main$async_dispatch_58_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+59,38982096,39543642,561546,213,16,1,1,main$async_dispatch_59_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+60,39546159,42837775,3291616,214,8,1,1,main$async_dispatch_60_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+61,42841193,51428402,8587209,215,352,1,1,main$async_dispatch_61_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+62,51433332,89480532,38047200,216,352,1,1,main$async_dispatch_62_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+63,89484271,91127650,1643379,217,16,1,1,main$async_dispatch_63_reduction_16x5632_f32,Rocket scalar,elementwise/other,0
+64,91130418,100172574,9042156,218,22,1,1,main$async_dispatch_64_elementwise_16x5632_f32xf32xi8,Rocket scalar,elementwise/other,0
+65,100177515,116068363,15890848,219,128,1,1,main$async_dispatch_65_matmul_16x2048x5632_i8xi8xi32,Gemmini,matmul,184549376
+66,116072351,116079790,7439,220,1,1,1,main$async_dispatch_66_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+67,116081500,116085855,4355,221,1,1,1,main$async_dispatch_67_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+68,116087608,116093576,5968,222,1,1,1,main$async_dispatch_68_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+69,116095451,116099490,4039,223,1,1,1,main$async_dispatch_69_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+70,116101403,116127411,26008,224,1,1,1,main$async_dispatch_70_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+71,116129450,116150394,20944,225,1,1,1,main$async_dispatch_71_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+72,116152847,116168647,15800,226,1,1,1,main$async_dispatch_72_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+73,116170857,116185608,14751,227,1,1,1,main$async_dispatch_73_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+74,116187457,116197164,9707,228,1,1,1,main$async_dispatch_74_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+75,116198928,116210803,11875,229,1,1,1,main$async_dispatch_75_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+76,116212729,116222398,9669,230,1,1,1,main$async_dispatch_76_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+77,116224243,116238519,14276,231,1,1,1,main$async_dispatch_77_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+78,116240407,116251333,10926,232,1,1,1,main$async_dispatch_78_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+79,116253087,116264212,11125,233,1,1,1,main$async_dispatch_79_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+80,116266250,116275525,9275,234,1,1,1,main$async_dispatch_80_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+81,116277566,116302289,24723,235,1,1,1,main$async_dispatch_81_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+82,116305220,116815988,510768,236,8,1,1,main$async_dispatch_82_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+83,116818757,117380376,561619,237,16,1,1,main$async_dispatch_83_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+84,117382949,120697002,3314053,238,8,1,1,main$async_dispatch_84_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+85,120700622,124497970,3797348,239,128,1,1,main$async_dispatch_85_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+86,124502390,124916634,414244,240,8,1,1,main$async_dispatch_86_elementwise_transpose_32x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+87,124919996,125237196,317200,241,16,1,1,main$async_dispatch_87_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+88,125240987,125287197,46210,242,1,1,1,main$async_dispatch_88_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+89,125290241,125591747,301506,243,16,1,1,main$async_dispatch_89_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+90,125595260,125642905,47645,244,1,1,1,main$async_dispatch_90_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+91,125645666,126919817,1274151,245,8,1,1,main$async_dispatch_91_elementwise_32x1024_f32,Rocket scalar,elementwise/other,0
+92,126923074,127084576,161502,246,1,1,1,main$async_dispatch_92_elementwise_4x1024_f32,Rocket scalar,elementwise/other,0
+93,127087287,127228193,140906,247,8,1,1,main$async_dispatch_93_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+94,127231125,127434406,203281,248,8,1,1,main$async_dispatch_94_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+95,127437795,132211526,4773731,249,32,1,1,main$async_dispatch_95_batch_matmul_32x16x16x64_f32,Rocket scalar,matmul,524288
+96,132214602,133688406,1473804,250,32,1,1,main$async_dispatch_96_reduction_512x16_f32,Rocket scalar,elementwise/other,0
+97,133691705,133745971,54266,251,1,1,1,main$async_dispatch_97_elementwise_1x32x16x8_f32,Rocket scalar,elementwise/other,0
+98,133748580,133769788,21208,252,1,1,1,main$async_dispatch_98_elementwise_32x16x4_f32,Rocket scalar,elementwise/other,0
+99,133772199,133782928,10729,253,1,1,1,main$async_dispatch_99_elementwise_1x32x16x2_f32,Rocket scalar,elementwise/other,0
+100,133785012,133813267,28255,254,1,1,1,main$async_dispatch_100_elementwise_32x16_f32,Rocket scalar,elementwise/other,0
+101,133815223,133886102,70879,255,2,1,1,main$async_dispatch_101_elementwise_512x16_f32,Rocket scalar,elementwise/other,0
+102,133888730,139107860,5219130,256,32,1,1,main$async_dispatch_102_batch_matmul_32x16x64x16_f32,Rocket scalar,matmul,524288
+103,139111523,139434118,322595,257,8,1,1,main$async_dispatch_103_transpose_32x16x64_f32,Rocket scalar,elementwise/other,0
+104,139436996,139995663,558667,258,16,1,1,main$async_dispatch_104_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+105,139998059,143227099,3229040,259,8,1,1,main$async_dispatch_105_elementwise_transpose_16x32x64_f32xf32xi8,Rocket scalar,elementwise/other,0
+106,143231715,148434640,5202925,260,128,1,1,main$async_dispatch_106_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+107,148438446,148445704,7258,261,1,1,1,main$async_dispatch_107_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+108,148447587,148451748,4161,262,1,1,1,main$async_dispatch_108_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+109,148453572,148459593,6021,263,1,1,1,main$async_dispatch_109_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+110,148461344,148465571,4227,264,1,1,1,main$async_dispatch_110_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+111,148467521,148493068,25547,265,1,1,1,main$async_dispatch_111_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+112,148495142,148515785,20643,266,1,1,1,main$async_dispatch_112_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+113,148517720,148533126,15406,267,1,1,1,main$async_dispatch_113_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+114,148535060,148549428,14368,268,1,1,1,main$async_dispatch_114_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+115,148551248,148561006,9758,269,1,1,1,main$async_dispatch_115_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+116,148562854,148574933,12079,270,1,1,1,main$async_dispatch_116_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+117,148576769,148586439,9670,271,1,1,1,main$async_dispatch_117_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+118,148588357,148601435,13078,272,1,1,1,main$async_dispatch_118_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+119,148603279,148613758,10479,273,1,1,1,main$async_dispatch_119_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+120,148615782,148627219,11437,274,1,1,1,main$async_dispatch_120_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+121,148629119,148638406,9287,275,1,1,1,main$async_dispatch_121_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+122,148640689,148667879,27190,276,1,1,1,main$async_dispatch_122_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+123,148670731,149203070,532339,277,8,1,1,main$async_dispatch_123_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+124,149205905,149769743,563838,278,16,1,1,main$async_dispatch_124_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+125,149772260,153045378,3273118,279,8,1,1,main$async_dispatch_125_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+126,153048564,161634831,8586267,280,352,1,1,main$async_dispatch_126_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+127,161639690,199692170,38052480,281,352,1,1,main$async_dispatch_127_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+128,199695918,201341625,1645707,282,16,1,1,main$async_dispatch_128_reduction_16x5632_f32,Rocket scalar,elementwise/other,0
+129,201344345,210371390,9027045,283,22,1,1,main$async_dispatch_129_elementwise_16x5632_f32xf32xi8,Rocket scalar,elementwise/other,0
+130,210376290,226228435,15852145,284,128,1,1,main$async_dispatch_130_matmul_16x2048x5632_i8xi8xi32,Gemmini,matmul,184549376
+131,226232684,226240350,7666,285,1,1,1,main$async_dispatch_131_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+132,226242180,226246495,4315,286,1,1,1,main$async_dispatch_132_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+133,226248275,226253630,5355,287,1,1,1,main$async_dispatch_133_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+134,226255378,226259721,4343,288,1,1,1,main$async_dispatch_134_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+135,226261618,226288559,26941,289,1,1,1,main$async_dispatch_135_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+136,226290812,226311613,20801,290,1,1,1,main$async_dispatch_136_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+137,226313704,226329078,15374,291,1,1,1,main$async_dispatch_137_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+138,226331145,226346691,15546,292,1,1,1,main$async_dispatch_138_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+139,226348457,226358170,9713,293,1,1,1,main$async_dispatch_139_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+140,226360102,226373055,12953,294,1,1,1,main$async_dispatch_140_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+141,226374932,226384488,9556,295,1,1,1,main$async_dispatch_141_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+142,226386435,226400473,14038,296,1,1,1,main$async_dispatch_142_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+143,226402482,226413088,10606,297,1,1,1,main$async_dispatch_143_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+144,226414969,226426772,11803,298,1,1,1,main$async_dispatch_144_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+145,226428509,226437790,9281,299,1,1,1,main$async_dispatch_145_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+146,226439883,226464958,25075,300,1,1,1,main$async_dispatch_146_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+147,226467728,226994118,526390,301,8,1,1,main$async_dispatch_147_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+148,226996986,227558096,561110,302,16,1,1,main$async_dispatch_148_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+149,227560508,230867049,3306541,303,8,1,1,main$async_dispatch_149_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+150,230870466,234663235,3792769,304,128,1,1,main$async_dispatch_150_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+151,234667644,235083416,415772,305,8,1,1,main$async_dispatch_151_elementwise_transpose_32x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+152,235086915,235403412,316497,306,16,1,1,main$async_dispatch_152_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+153,235407018,235453006,45988,307,1,1,1,main$async_dispatch_153_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+154,235456050,235758331,302281,308,16,1,1,main$async_dispatch_154_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+155,235761983,235807682,45699,309,1,1,1,main$async_dispatch_155_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+156,235810463,237102129,1291666,310,8,1,1,main$async_dispatch_156_elementwise_32x1024_f32,Rocket scalar,elementwise/other,0
+157,237105534,237259668,154134,311,1,1,1,main$async_dispatch_157_elementwise_4x1024_f32,Rocket scalar,elementwise/other,0
+158,237262207,237411672,149465,312,8,1,1,main$async_dispatch_158_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+159,237414469,237618150,203681,313,8,1,1,main$async_dispatch_159_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+160,237621550,242401152,4779602,314,32,1,1,main$async_dispatch_160_batch_matmul_32x16x16x64_f32,Rocket scalar,matmul,524288
+161,242404449,243875183,1470734,315,32,1,1,main$async_dispatch_161_reduction_512x16_f32,Rocket scalar,elementwise/other,0
+162,243878537,243928949,50412,316,1,1,1,main$async_dispatch_162_elementwise_1x32x16x8_f32,Rocket scalar,elementwise/other,0
+163,243931657,243954099,22442,317,1,1,1,main$async_dispatch_163_elementwise_32x16x4_f32,Rocket scalar,elementwise/other,0
+164,243956459,243966333,9874,318,1,1,1,main$async_dispatch_164_elementwise_1x32x16x2_f32,Rocket scalar,elementwise/other,0
+165,243968367,243996592,28225,319,1,1,1,main$async_dispatch_165_elementwise_32x16_f32,Rocket scalar,elementwise/other,0
+166,243998614,244067695,69081,320,2,1,1,main$async_dispatch_166_elementwise_512x16_f32,Rocket scalar,elementwise/other,0
+167,244070172,249286196,5216024,321,32,1,1,main$async_dispatch_167_batch_matmul_32x16x64x16_f32,Rocket scalar,matmul,524288
+168,249290306,249608662,318356,322,8,1,1,main$async_dispatch_168_transpose_32x16x64_f32,Rocket scalar,elementwise/other,0
+169,249611421,250169969,558548,323,16,1,1,main$async_dispatch_169_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+170,250172687,253402184,3229497,324,8,1,1,main$async_dispatch_170_elementwise_transpose_16x32x64_f32xf32xi8,Rocket scalar,elementwise/other,0
+171,253406499,258611708,5205209,325,128,1,1,main$async_dispatch_171_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+172,258616115,258623201,7086,326,1,1,1,main$async_dispatch_172_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+173,258625021,258629293,4272,327,1,1,1,main$async_dispatch_173_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+174,258631211,258636906,5695,328,1,1,1,main$async_dispatch_174_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+175,258638734,258643263,4529,329,1,1,1,main$async_dispatch_175_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+176,258645273,258670538,25265,330,1,1,1,main$async_dispatch_176_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+177,258672473,258693538,21065,331,1,1,1,main$async_dispatch_177_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+178,258695673,258710726,15053,332,1,1,1,main$async_dispatch_178_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+179,258712626,258727722,15096,333,1,1,1,main$async_dispatch_179_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+180,258729576,258739463,9887,334,1,1,1,main$async_dispatch_180_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+181,258741329,258753780,12451,335,1,1,1,main$async_dispatch_181_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+182,258755708,258765564,9856,336,1,1,1,main$async_dispatch_182_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+183,258767568,258781092,13524,337,1,1,1,main$async_dispatch_183_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+184,258783121,258793896,10775,338,1,1,1,main$async_dispatch_184_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+185,258795750,258807228,11478,339,1,1,1,main$async_dispatch_185_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+186,258809076,258818546,9470,340,1,1,1,main$async_dispatch_186_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+187,258820440,258847631,27191,341,1,1,1,main$async_dispatch_187_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+188,258850696,259377861,527165,342,8,1,1,main$async_dispatch_188_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+189,259380650,259944657,564007,343,16,1,1,main$async_dispatch_189_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+190,259947461,263220210,3272749,344,8,1,1,main$async_dispatch_190_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+191,263223452,271808716,8585264,345,352,1,1,main$async_dispatch_191_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+192,271813613,309855615,38042002,346,352,1,1,main$async_dispatch_192_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+193,309859691,311504533,1644842,347,16,1,1,main$async_dispatch_193_reduction_16x5632_f32,Rocket scalar,elementwise/other,0
+194,311507395,320535643,9028248,348,22,1,1,main$async_dispatch_194_elementwise_16x5632_f32xf32xi8,Rocket scalar,elementwise/other,0
+195,320540211,336394534,15854323,349,128,1,1,main$async_dispatch_195_matmul_16x2048x5632_i8xi8xi32,Gemmini,matmul,184549376
+196,336398715,336406291,7576,350,1,1,1,main$async_dispatch_196_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+197,336408211,336412803,4592,351,1,1,1,main$async_dispatch_197_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+198,336414562,336419768,5206,352,1,1,1,main$async_dispatch_198_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+199,336421431,336425594,4163,353,1,1,1,main$async_dispatch_199_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+200,336427663,336454161,26498,354,1,1,1,main$async_dispatch_200_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+201,336456134,336476698,20564,355,1,1,1,main$async_dispatch_201_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+202,336478890,336494025,15135,356,1,1,1,main$async_dispatch_202_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+203,336495893,336511405,15512,357,1,1,1,main$async_dispatch_203_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+204,336513389,336522835,9446,358,1,1,1,main$async_dispatch_204_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+205,336524698,336537305,12607,359,1,1,1,main$async_dispatch_205_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+206,336539225,336548695,9470,360,1,1,1,main$async_dispatch_206_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+207,336550471,336564114,13643,361,1,1,1,main$async_dispatch_207_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+208,336566170,336576584,10414,362,1,1,1,main$async_dispatch_208_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+209,336578407,336590526,12119,363,1,1,1,main$async_dispatch_209_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+210,336592395,336601769,9374,364,1,1,1,main$async_dispatch_210_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+211,336603658,336628829,25171,365,1,1,1,main$async_dispatch_211_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+212,336631974,337158712,526738,366,8,1,1,main$async_dispatch_212_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+213,337161402,337722595,561193,367,16,1,1,main$async_dispatch_213_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+214,337725209,341031296,3306087,368,8,1,1,main$async_dispatch_214_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+215,341034596,344822602,3788006,369,128,1,1,main$async_dispatch_215_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+216,344826768,345242787,416019,370,8,1,1,main$async_dispatch_216_elementwise_transpose_32x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+217,345246174,345563389,317215,371,16,1,1,main$async_dispatch_217_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+218,345566968,345613374,46406,372,1,1,1,main$async_dispatch_218_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+219,345616133,345917703,301570,373,16,1,1,main$async_dispatch_219_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+220,345921249,345965721,44472,374,1,1,1,main$async_dispatch_220_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+221,345968639,347262067,1293428,375,8,1,1,main$async_dispatch_221_elementwise_32x1024_f32,Rocket scalar,elementwise/other,0
+222,347265468,347419242,153774,376,1,1,1,main$async_dispatch_222_elementwise_4x1024_f32,Rocket scalar,elementwise/other,0
+223,347421820,347570424,148604,377,8,1,1,main$async_dispatch_223_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+224,347573382,347777463,204081,378,8,1,1,main$async_dispatch_224_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+225,347780832,352560976,4780144,379,32,1,1,main$async_dispatch_225_batch_matmul_32x16x16x64_f32,Rocket scalar,matmul,524288
+226,352564884,354034661,1469777,380,32,1,1,main$async_dispatch_226_reduction_512x16_f32,Rocket scalar,elementwise/other,0
+227,354037455,354087500,50045,381,1,1,1,main$async_dispatch_227_elementwise_1x32x16x8_f32,Rocket scalar,elementwise/other,0
+228,354090112,354112229,22117,382,1,1,1,main$async_dispatch_228_elementwise_32x16x4_f32,Rocket scalar,elementwise/other,0
+229,354114531,354124285,9754,383,1,1,1,main$async_dispatch_229_elementwise_1x32x16x2_f32,Rocket scalar,elementwise/other,0
+230,354126386,354154124,27738,384,1,1,1,main$async_dispatch_230_elementwise_32x16_f32,Rocket scalar,elementwise/other,0
+231,354156035,354224785,68750,385,2,1,1,main$async_dispatch_231_elementwise_512x16_f32,Rocket scalar,elementwise/other,0
+232,354227485,359443007,5215522,386,32,1,1,main$async_dispatch_232_batch_matmul_32x16x64x16_f32,Rocket scalar,matmul,524288
+233,359446091,359763175,317084,387,8,1,1,main$async_dispatch_233_transpose_32x16x64_f32,Rocket scalar,elementwise/other,0
+234,359765883,360324796,558913,388,16,1,1,main$async_dispatch_234_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+235,360327222,363556033,3228811,389,8,1,1,main$async_dispatch_235_elementwise_transpose_16x32x64_f32xf32xi8,Rocket scalar,elementwise/other,0
+236,363560439,368695665,5135226,390,128,1,1,main$async_dispatch_236_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+237,368700138,368707386,7248,391,1,1,1,main$async_dispatch_237_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+238,368709216,368713609,4393,392,1,1,1,main$async_dispatch_238_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+239,368715437,368721107,5670,393,1,1,1,main$async_dispatch_239_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+240,368723070,368727384,4314,394,1,1,1,main$async_dispatch_240_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+241,368729318,368754857,25539,395,1,1,1,main$async_dispatch_241_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+242,368756944,368777886,20942,396,1,1,1,main$async_dispatch_242_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+243,368780212,368795552,15340,397,1,1,1,main$async_dispatch_243_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+244,368797752,368812389,14637,398,1,1,1,main$async_dispatch_244_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+245,368814300,368823839,9539,399,1,1,1,main$async_dispatch_245_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+246,368825863,368838153,12290,400,1,1,1,main$async_dispatch_246_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+247,368840050,368849711,9661,401,1,1,1,main$async_dispatch_247_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+248,368851647,368864968,13321,402,1,1,1,main$async_dispatch_248_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+249,368866836,368877517,10681,403,1,1,1,main$async_dispatch_249_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+250,368879438,368890726,11288,404,1,1,1,main$async_dispatch_250_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+251,368892541,368901796,9255,405,1,1,1,main$async_dispatch_251_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+252,368903836,368930750,26914,406,1,1,1,main$async_dispatch_252_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+253,368934069,369444983,510914,407,8,1,1,main$async_dispatch_253_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+254,369447786,370011321,563535,408,16,1,1,main$async_dispatch_254_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+255,370013817,373286225,3272408,409,8,1,1,main$async_dispatch_255_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+256,373289508,381791780,8502272,410,352,1,1,main$async_dispatch_256_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+257,381796604,419936310,38139706,411,352,1,1,main$async_dispatch_257_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+258,419940626,421583964,1643338,412,16,1,1,main$async_dispatch_258_reduction_16x5632_f32,Rocket scalar,elementwise/other,0
+259,421586738,430615150,9028412,413,22,1,1,main$async_dispatch_259_elementwise_16x5632_f32xf32xi8,Rocket scalar,elementwise/other,0
+260,430620040,446464005,15843965,414,128,1,1,main$async_dispatch_260_matmul_16x2048x5632_i8xi8xi32,Gemmini,matmul,184549376
+261,446467796,446475255,7459,415,1,1,1,main$async_dispatch_261_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+262,446477076,446481479,4403,416,1,1,1,main$async_dispatch_262_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+263,446483218,446488690,5472,417,1,1,1,main$async_dispatch_263_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+264,446490483,446494810,4327,418,1,1,1,main$async_dispatch_264_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+265,446496769,446522902,26133,419,1,1,1,main$async_dispatch_265_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+266,446524887,446545446,20559,420,1,1,1,main$async_dispatch_266_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+267,446547365,446562586,15221,421,1,1,1,main$async_dispatch_267_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+268,446564631,446579980,15349,422,1,1,1,main$async_dispatch_268_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+269,446582024,446591471,9447,423,1,1,1,main$async_dispatch_269_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+270,446593257,446606041,12784,424,1,1,1,main$async_dispatch_270_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+271,446607795,446617279,9484,425,1,1,1,main$async_dispatch_271_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+272,446619263,446633344,14081,426,1,1,1,main$async_dispatch_272_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+273,446635287,446645735,10448,427,1,1,1,main$async_dispatch_273_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+274,446647633,446659958,12325,428,1,1,1,main$async_dispatch_274_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+275,446661712,446671256,9544,429,1,1,1,main$async_dispatch_275_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+276,446673291,446698159,24868,430,1,1,1,main$async_dispatch_276_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+277,446701079,447214290,513211,431,8,1,1,main$async_dispatch_277_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+278,447217374,447778985,561611,432,16,1,1,main$async_dispatch_278_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+279,447781510,451088382,3306872,433,8,1,1,main$async_dispatch_279_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+280,451091791,454853373,3761582,434,128,1,1,main$async_dispatch_280_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+281,454857970,455262878,404908,435,8,1,1,main$async_dispatch_281_elementwise_transpose_32x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+282,455266388,455586922,320534,436,16,1,1,main$async_dispatch_282_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+283,455590498,455637920,47422,437,1,1,1,main$async_dispatch_283_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+284,455640779,455937778,296999,438,16,1,1,main$async_dispatch_284_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+285,455941704,455986165,44461,439,1,1,1,main$async_dispatch_285_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+286,455989005,457280965,1291960,440,8,1,1,main$async_dispatch_286_elementwise_32x1024_f32,Rocket scalar,elementwise/other,0
+287,457284187,457437492,153305,441,1,1,1,main$async_dispatch_287_elementwise_4x1024_f32,Rocket scalar,elementwise/other,0
+288,457440095,457588473,148378,442,8,1,1,main$async_dispatch_288_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+289,457591333,457796070,204737,443,8,1,1,main$async_dispatch_289_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+290,457799530,462578095,4778565,444,32,1,1,main$async_dispatch_290_batch_matmul_32x16x16x64_f32,Rocket scalar,matmul,524288
+291,462580949,464051474,1470525,445,32,1,1,main$async_dispatch_291_reduction_512x16_f32,Rocket scalar,elementwise/other,0
+292,464054641,464104504,49863,446,1,1,1,main$async_dispatch_292_elementwise_1x32x16x8_f32,Rocket scalar,elementwise/other,0
+293,464107150,464129685,22535,447,1,1,1,main$async_dispatch_293_elementwise_32x16x4_f32,Rocket scalar,elementwise/other,0
+294,464132125,464141974,9849,448,1,1,1,main$async_dispatch_294_elementwise_1x32x16x2_f32,Rocket scalar,elementwise/other,0
+295,464143999,464171869,27870,449,1,1,1,main$async_dispatch_295_elementwise_32x16_f32,Rocket scalar,elementwise/other,0
+296,464173966,464242949,68983,450,2,1,1,main$async_dispatch_296_elementwise_512x16_f32,Rocket scalar,elementwise/other,0
+297,464245445,469459121,5213676,451,32,1,1,main$async_dispatch_297_batch_matmul_32x16x64x16_f32,Rocket scalar,matmul,524288
+298,469462650,469779894,317244,452,8,1,1,main$async_dispatch_298_transpose_32x16x64_f32,Rocket scalar,elementwise/other,0
+299,469782459,470341001,558542,453,16,1,1,main$async_dispatch_299_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+300,470343484,473571894,3228410,454,8,1,1,main$async_dispatch_300_elementwise_transpose_16x32x64_f32xf32xi8,Rocket scalar,elementwise/other,0
+301,473576124,478717578,5141454,455,128,1,1,main$async_dispatch_301_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+302,478722081,478729234,7153,456,1,1,1,main$async_dispatch_302_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+303,478730977,478735237,4260,457,1,1,1,main$async_dispatch_303_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+304,478737135,478742723,5588,458,1,1,1,main$async_dispatch_304_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+305,478744544,478748728,4184,459,1,1,1,main$async_dispatch_305_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+306,478750979,478776302,25323,460,1,1,1,main$async_dispatch_306_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+307,478778254,478799215,20961,461,1,1,1,main$async_dispatch_307_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+308,478801207,478816601,15394,462,1,1,1,main$async_dispatch_308_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+309,478818603,478833209,14606,463,1,1,1,main$async_dispatch_309_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+310,478835038,478844557,9519,464,1,1,1,main$async_dispatch_310_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+311,478846360,478858568,12208,465,1,1,1,main$async_dispatch_311_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+312,478860534,478870118,9584,466,1,1,1,main$async_dispatch_312_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+313,478871996,478885415,13419,467,1,1,1,main$async_dispatch_313_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+314,478887300,478897999,10699,468,1,1,1,main$async_dispatch_314_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+315,478899820,478911691,11871,469,1,1,1,main$async_dispatch_315_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+316,478913573,478922858,9285,470,1,1,1,main$async_dispatch_316_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+317,478924996,478951646,26650,471,1,1,1,main$async_dispatch_317_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+318,478954457,479463547,509090,472,8,1,1,main$async_dispatch_318_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+319,479466266,480029700,563434,473,16,1,1,main$async_dispatch_319_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+320,480032230,483304429,3272199,474,8,1,1,main$async_dispatch_320_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+321,483308073,491807230,8499157,475,352,1,1,main$async_dispatch_321_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+322,491812430,529955080,38142650,476,352,1,1,main$async_dispatch_322_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+323,529959067,531602557,1643490,477,16,1,1,main$async_dispatch_323_reduction_16x5632_f32,Rocket scalar,elementwise/other,0
+324,531605434,540632389,9026955,478,22,1,1,main$async_dispatch_324_elementwise_16x5632_f32xf32xi8,Rocket scalar,elementwise/other,0
+325,540637121,556490184,15853063,479,128,1,1,main$async_dispatch_325_matmul_16x2048x5632_i8xi8xi32,Gemmini,matmul,184549376
+326,556493967,556501210,7243,480,1,1,1,main$async_dispatch_326_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+327,556503306,556507440,4134,481,1,1,1,main$async_dispatch_327_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+328,556509232,556514541,5309,482,1,1,1,main$async_dispatch_328_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+329,556516217,556520585,4368,483,1,1,1,main$async_dispatch_329_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+330,556522557,556548877,26320,484,1,1,1,main$async_dispatch_330_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+331,556550868,556571540,20672,485,1,1,1,main$async_dispatch_331_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+332,556573615,556588789,15174,486,1,1,1,main$async_dispatch_332_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+333,556590950,556606123,15173,487,1,1,1,main$async_dispatch_333_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+334,556607978,556617286,9308,488,1,1,1,main$async_dispatch_334_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+335,556619071,556631622,12551,489,1,1,1,main$async_dispatch_335_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+336,556633573,556643095,9522,490,1,1,1,main$async_dispatch_336_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+337,556645026,556658733,13707,491,1,1,1,main$async_dispatch_337_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+338,556660708,556671158,10450,492,1,1,1,main$async_dispatch_338_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+339,556672972,556685429,12457,493,1,1,1,main$async_dispatch_339_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+340,556687353,556696676,9323,494,1,1,1,main$async_dispatch_340_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+341,556698874,556723961,25087,495,1,1,1,main$async_dispatch_341_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+342,556726848,557238537,511689,496,8,1,1,main$async_dispatch_342_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+343,557241142,557802385,561243,497,16,1,1,main$async_dispatch_343_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+344,557805100,561112524,3307424,498,8,1,1,main$async_dispatch_344_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+345,561115999,564870591,3754592,499,128,1,1,main$async_dispatch_345_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+346,564875241,565278969,403728,500,8,1,1,main$async_dispatch_346_elementwise_transpose_32x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+347,565282187,565603910,321723,501,16,1,1,main$async_dispatch_347_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+348,565607581,565654893,47312,502,1,1,1,main$async_dispatch_348_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+349,565657740,565954490,296750,503,16,1,1,main$async_dispatch_349_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+350,565958105,566003757,45652,504,1,1,1,main$async_dispatch_350_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+351,566006683,567299419,1292736,505,8,1,1,main$async_dispatch_351_elementwise_32x1024_f32,Rocket scalar,elementwise/other,0
+352,567302617,567456555,153938,506,1,1,1,main$async_dispatch_352_elementwise_4x1024_f32,Rocket scalar,elementwise/other,0
+353,567459018,567607633,148615,507,8,1,1,main$async_dispatch_353_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+354,567610733,567814553,203820,508,8,1,1,main$async_dispatch_354_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+355,567817772,572598012,4780240,509,32,1,1,main$async_dispatch_355_batch_matmul_32x16x16x64_f32,Rocket scalar,matmul,524288
+356,572601369,574072024,1470655,510,32,1,1,main$async_dispatch_356_reduction_512x16_f32,Rocket scalar,elementwise/other,0
+357,574074861,574124949,50088,511,1,1,1,main$async_dispatch_357_elementwise_1x32x16x8_f32,Rocket scalar,elementwise/other,0
+358,574127441,574149844,22403,512,1,1,1,main$async_dispatch_358_elementwise_32x16x4_f32,Rocket scalar,elementwise/other,0
+359,574152090,574161887,9797,513,1,1,1,main$async_dispatch_359_elementwise_1x32x16x2_f32,Rocket scalar,elementwise/other,0
+360,574163910,574191882,27972,514,1,1,1,main$async_dispatch_360_elementwise_32x16_f32,Rocket scalar,elementwise/other,0
+361,574193810,574262935,69125,515,2,1,1,main$async_dispatch_361_elementwise_512x16_f32,Rocket scalar,elementwise/other,0
+362,574265643,579481459,5215816,516,32,1,1,main$async_dispatch_362_batch_matmul_32x16x64x16_f32,Rocket scalar,matmul,524288
+363,579484447,579801935,317488,517,8,1,1,main$async_dispatch_363_transpose_32x16x64_f32,Rocket scalar,elementwise/other,0
+364,579804665,580363376,558711,518,16,1,1,main$async_dispatch_364_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+365,580365775,583595113,3229338,519,8,1,1,main$async_dispatch_365_elementwise_transpose_16x32x64_f32xf32xi8,Rocket scalar,elementwise/other,0
+366,583599367,588800808,5201441,520,128,1,1,main$async_dispatch_366_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+367,588804618,588811734,7116,521,1,1,1,main$async_dispatch_367_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+368,588813538,588817930,4392,522,1,1,1,main$async_dispatch_368_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+369,588819674,588825189,5515,523,1,1,1,main$async_dispatch_369_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+370,588827007,588831388,4381,524,1,1,1,main$async_dispatch_370_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+371,588833324,588858881,25557,525,1,1,1,main$async_dispatch_371_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+372,588860971,588881592,20621,526,1,1,1,main$async_dispatch_372_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+373,588883677,588898868,15191,527,1,1,1,main$async_dispatch_373_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+374,588900868,588915181,14313,528,1,1,1,main$async_dispatch_374_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+375,588916924,588926524,9600,529,1,1,1,main$async_dispatch_375_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+376,588928442,588940928,12486,530,1,1,1,main$async_dispatch_376_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+377,588942889,588952672,9783,531,1,1,1,main$async_dispatch_377_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+378,588954706,588968151,13445,532,1,1,1,main$async_dispatch_378_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+379,588970306,588980912,10606,533,1,1,1,main$async_dispatch_379_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+380,588982719,588994477,11758,534,1,1,1,main$async_dispatch_380_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+381,588996341,589005640,9299,535,1,1,1,main$async_dispatch_381_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+382,589007607,589034162,26555,536,1,1,1,main$async_dispatch_382_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+383,589037169,589562968,525799,537,8,1,1,main$async_dispatch_383_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+384,589565823,590129592,563769,538,16,1,1,main$async_dispatch_384_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+385,590132116,593404245,3272129,539,8,1,1,main$async_dispatch_385_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+386,593407668,601988892,8581224,540,352,1,1,main$async_dispatch_386_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+387,601993860,640037429,38043569,541,352,1,1,main$async_dispatch_387_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+388,640041323,641683069,1641746,542,16,1,1,main$async_dispatch_388_reduction_16x5632_f32,Rocket scalar,elementwise/other,0
+389,641685843,650712075,9026232,543,22,1,1,main$async_dispatch_389_elementwise_16x5632_f32xf32xi8,Rocket scalar,elementwise/other,0
+390,650716922,666569793,15852871,544,128,1,1,main$async_dispatch_390_matmul_16x2048x5632_i8xi8xi32,Gemmini,matmul,184549376
+391,666573778,666581183,7405,545,1,1,1,main$async_dispatch_391_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+392,666583176,666587581,4405,546,1,1,1,main$async_dispatch_392_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+393,666589285,666594601,5316,547,1,1,1,main$async_dispatch_393_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+394,666596380,666600832,4452,548,1,1,1,main$async_dispatch_394_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+395,666602732,666629115,26383,549,1,1,1,main$async_dispatch_395_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+396,666631178,666651795,20617,550,1,1,1,main$async_dispatch_396_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+397,666653944,666669009,15065,551,1,1,1,main$async_dispatch_397_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+398,666670965,666686346,15381,552,1,1,1,main$async_dispatch_398_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+399,666688266,666697565,9299,553,1,1,1,main$async_dispatch_399_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+400,666699474,666712174,12700,554,1,1,1,main$async_dispatch_400_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+401,666714153,666723785,9632,555,1,1,1,main$async_dispatch_401_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+402,666725950,666739849,13899,556,1,1,1,main$async_dispatch_402_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+403,666741650,666752180,10530,557,1,1,1,main$async_dispatch_403_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+404,666754060,666765932,11872,558,1,1,1,main$async_dispatch_404_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+405,666767707,666777198,9491,559,1,1,1,main$async_dispatch_405_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+406,666779359,666804315,24956,560,1,1,1,main$async_dispatch_406_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+407,666807467,667334345,526878,561,8,1,1,main$async_dispatch_407_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+408,667337300,667899225,561925,562,16,1,1,main$async_dispatch_408_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+409,667901709,671207301,3305592,563,8,1,1,main$async_dispatch_409_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+410,671210671,674996728,3786057,564,128,1,1,main$async_dispatch_410_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+411,675001195,675417050,415855,565,8,1,1,main$async_dispatch_411_elementwise_transpose_32x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+412,675420565,675736944,316379,566,16,1,1,main$async_dispatch_412_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+413,675740728,675786804,46076,567,1,1,1,main$async_dispatch_413_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+414,675789703,676091138,301435,568,16,1,1,main$async_dispatch_414_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+415,676094603,676140123,45520,569,1,1,1,main$async_dispatch_415_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+416,676142918,677435752,1292834,570,8,1,1,main$async_dispatch_416_elementwise_32x1024_f32,Rocket scalar,elementwise/other,0
+417,677438893,677593112,154219,571,1,1,1,main$async_dispatch_417_elementwise_4x1024_f32,Rocket scalar,elementwise/other,0
+418,677595558,677743724,148166,572,8,1,1,main$async_dispatch_418_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+419,677746678,677952383,205705,573,8,1,1,main$async_dispatch_419_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+420,677955883,682733229,4777346,574,32,1,1,main$async_dispatch_420_batch_matmul_32x16x16x64_f32,Rocket scalar,matmul,524288
+421,682736505,684206784,1470279,575,32,1,1,main$async_dispatch_421_reduction_512x16_f32,Rocket scalar,elementwise/other,0
+422,684209613,684259918,50305,576,1,1,1,main$async_dispatch_422_elementwise_1x32x16x8_f32,Rocket scalar,elementwise/other,0
+423,684262373,684284275,21902,577,1,1,1,main$async_dispatch_423_elementwise_32x16x4_f32,Rocket scalar,elementwise/other,0
+424,684286645,684296259,9614,578,1,1,1,main$async_dispatch_424_elementwise_1x32x16x2_f32,Rocket scalar,elementwise/other,0
+425,684298366,684326329,27963,579,1,1,1,main$async_dispatch_425_elementwise_32x16_f32,Rocket scalar,elementwise/other,0
+426,684328344,684397676,69332,580,2,1,1,main$async_dispatch_426_elementwise_512x16_f32,Rocket scalar,elementwise/other,0
+427,684400193,689616237,5216044,581,32,1,1,main$async_dispatch_427_batch_matmul_32x16x64x16_f32,Rocket scalar,matmul,524288
+428,689619569,689936311,316742,582,8,1,1,main$async_dispatch_428_transpose_32x16x64_f32,Rocket scalar,elementwise/other,0
+429,689938960,690497670,558710,583,16,1,1,main$async_dispatch_429_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+430,690500261,693729303,3229042,584,8,1,1,main$async_dispatch_430_elementwise_transpose_16x32x64_f32xf32xi8,Rocket scalar,elementwise/other,0
+431,693733702,698937147,5203445,585,128,1,1,main$async_dispatch_431_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+432,698941360,698948231,6871,586,1,1,1,main$async_dispatch_432_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+433,698950147,698954480,4333,587,1,1,1,main$async_dispatch_433_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+434,698956487,698961973,5486,588,1,1,1,main$async_dispatch_434_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+435,698963733,698968392,4659,589,1,1,1,main$async_dispatch_435_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+436,698970440,698996258,25818,590,1,1,1,main$async_dispatch_436_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+437,698998338,699019269,20931,591,1,1,1,main$async_dispatch_437_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+438,699021533,699036785,15252,592,1,1,1,main$async_dispatch_438_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+439,699038665,699053371,14706,593,1,1,1,main$async_dispatch_439_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+440,699055306,699065016,9710,594,1,1,1,main$async_dispatch_440_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+441,699066868,699079174,12306,595,1,1,1,main$async_dispatch_441_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+442,699081199,699091011,9812,596,1,1,1,main$async_dispatch_442_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+443,699092879,699106145,13266,597,1,1,1,main$async_dispatch_443_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+444,699108065,699118589,10524,598,1,1,1,main$async_dispatch_444_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+445,699120555,699132188,11633,599,1,1,1,main$async_dispatch_445_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+446,699134067,699143516,9449,600,1,1,1,main$async_dispatch_446_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+447,699145404,699172383,26979,601,1,1,1,main$async_dispatch_447_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+448,699175420,699701879,526459,602,8,1,1,main$async_dispatch_448_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+449,699704618,700267930,563312,603,16,1,1,main$async_dispatch_449_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+450,700270420,703543036,3272616,604,8,1,1,main$async_dispatch_450_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+451,703546186,712133371,8587185,605,352,1,1,main$async_dispatch_451_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+452,712138165,750186710,38048545,606,352,1,1,main$async_dispatch_452_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+453,750190531,751833655,1643124,607,16,1,1,main$async_dispatch_453_reduction_16x5632_f32,Rocket scalar,elementwise/other,0
+454,751836368,760863951,9027583,608,22,1,1,main$async_dispatch_454_elementwise_16x5632_f32xf32xi8,Rocket scalar,elementwise/other,0
+455,760868644,776711536,15842892,609,128,1,1,main$async_dispatch_455_matmul_16x2048x5632_i8xi8xi32,Gemmini,matmul,184549376
+456,776715236,776722675,7439,610,1,1,1,main$async_dispatch_456_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+457,776724562,776728836,4274,611,1,1,1,main$async_dispatch_457_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+458,776730622,776735959,5337,612,1,1,1,main$async_dispatch_458_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+459,776737617,776742289,4672,613,1,1,1,main$async_dispatch_459_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+460,776744240,776770713,26473,614,1,1,1,main$async_dispatch_460_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+461,776772888,776793641,20753,615,1,1,1,main$async_dispatch_461_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+462,776795711,776811000,15289,616,1,1,1,main$async_dispatch_462_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+463,776812887,776828079,15192,617,1,1,1,main$async_dispatch_463_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+464,776830025,776839389,9364,618,1,1,1,main$async_dispatch_464_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+465,776841163,776853727,12564,619,1,1,1,main$async_dispatch_465_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+466,776855677,776865238,9561,620,1,1,1,main$async_dispatch_466_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+467,776866999,776880750,13751,621,1,1,1,main$async_dispatch_467_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+468,776882874,776893404,10530,622,1,1,1,main$async_dispatch_468_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+469,776895356,776907561,12205,623,1,1,1,main$async_dispatch_469_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+470,776909329,776918714,9385,624,1,1,1,main$async_dispatch_470_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+471,776920824,776945832,25008,625,1,1,1,main$async_dispatch_471_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+472,776948861,777476631,527770,626,8,1,1,main$async_dispatch_472_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+473,777479428,778040558,561130,627,16,1,1,main$async_dispatch_473_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+474,778043079,781349402,3306323,628,8,1,1,main$async_dispatch_474_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+475,781352824,785135988,3783164,629,128,1,1,main$async_dispatch_475_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+476,785140266,785555413,415147,630,8,1,1,main$async_dispatch_476_elementwise_transpose_32x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+477,785558834,785876129,317295,631,16,1,1,main$async_dispatch_477_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+478,785879706,785925506,45800,632,1,1,1,main$async_dispatch_478_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+479,785928267,786231967,303700,633,16,1,1,main$async_dispatch_479_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+480,786235605,786280140,44535,634,1,1,1,main$async_dispatch_480_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+481,786282776,787576229,1293453,635,8,1,1,main$async_dispatch_481_elementwise_32x1024_f32,Rocket scalar,elementwise/other,0
+482,787579432,787733659,154227,636,1,1,1,main$async_dispatch_482_elementwise_4x1024_f32,Rocket scalar,elementwise/other,0
+483,787736057,787884875,148818,637,8,1,1,main$async_dispatch_483_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+484,787887807,788090413,202606,638,8,1,1,main$async_dispatch_484_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+485,788093802,792872519,4778717,639,32,1,1,main$async_dispatch_485_batch_matmul_32x16x16x64_f32,Rocket scalar,matmul,524288
+486,792876052,794346964,1470912,640,32,1,1,main$async_dispatch_486_reduction_512x16_f32,Rocket scalar,elementwise/other,0
+487,794349814,794399766,49952,641,1,1,1,main$async_dispatch_487_elementwise_1x32x16x8_f32,Rocket scalar,elementwise/other,0
+488,794402316,794424758,22442,642,1,1,1,main$async_dispatch_488_elementwise_32x16x4_f32,Rocket scalar,elementwise/other,0
+489,794426950,794437050,10100,643,1,1,1,main$async_dispatch_489_elementwise_1x32x16x2_f32,Rocket scalar,elementwise/other,0
+490,794439087,794467091,28004,644,1,1,1,main$async_dispatch_490_elementwise_32x16_f32,Rocket scalar,elementwise/other,0
+491,794468961,794537873,68912,645,2,1,1,main$async_dispatch_491_elementwise_512x16_f32,Rocket scalar,elementwise/other,0
+492,794540387,799755663,5215276,646,32,1,1,main$async_dispatch_492_batch_matmul_32x16x64x16_f32,Rocket scalar,matmul,524288
+493,799759147,800077243,318096,647,8,1,1,main$async_dispatch_493_transpose_32x16x64_f32,Rocket scalar,elementwise/other,0
+494,800080058,800638619,558561,648,16,1,1,main$async_dispatch_494_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+495,800640997,803870732,3229735,649,8,1,1,main$async_dispatch_495_elementwise_transpose_16x32x64_f32xf32xi8,Rocket scalar,elementwise/other,0
+496,803875066,809020459,5145393,650,128,1,1,main$async_dispatch_496_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+497,809024437,809031700,7263,651,1,1,1,main$async_dispatch_497_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+498,809033589,809037955,4366,652,1,1,1,main$async_dispatch_498_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+499,809039850,809045547,5697,653,1,1,1,main$async_dispatch_499_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+500,809047355,809051717,4362,654,1,1,1,main$async_dispatch_500_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+501,809053677,809079410,25733,655,1,1,1,main$async_dispatch_501_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+502,809081501,809102471,20970,656,1,1,1,main$async_dispatch_502_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+503,809104693,809119751,15058,657,1,1,1,main$async_dispatch_503_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+504,809122149,809136640,14491,658,1,1,1,main$async_dispatch_504_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+505,809138458,809148236,9778,659,1,1,1,main$async_dispatch_505_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+506,809150142,809162521,12379,660,1,1,1,main$async_dispatch_506_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+507,809164379,809174188,9809,661,1,1,1,main$async_dispatch_507_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+508,809176065,809189519,13454,662,1,1,1,main$async_dispatch_508_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+509,809191555,809202138,10583,663,1,1,1,main$async_dispatch_509_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+510,809204034,809215659,11625,664,1,1,1,main$async_dispatch_510_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+511,809217440,809226713,9273,665,1,1,1,main$async_dispatch_511_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+512,809228807,809255722,26915,666,1,1,1,main$async_dispatch_512_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+513,809258789,809769896,511107,667,8,1,1,main$async_dispatch_513_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+514,809772759,810336036,563277,668,16,1,1,main$async_dispatch_514_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+515,810338482,813610222,3271740,669,8,1,1,main$async_dispatch_515_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+516,813613708,822113204,8499496,670,352,1,1,main$async_dispatch_516_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+517,822118346,860261814,38143468,671,352,1,1,main$async_dispatch_517_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+518,860265682,861907840,1642158,672,16,1,1,main$async_dispatch_518_reduction_16x5632_f32,Rocket scalar,elementwise/other,0
+519,861910512,870937724,9027212,673,22,1,1,main$async_dispatch_519_elementwise_16x5632_f32xf32xi8,Rocket scalar,elementwise/other,0
+520,870942445,886802072,15859627,674,128,1,1,main$async_dispatch_520_matmul_16x2048x5632_i8xi8xi32,Gemmini,matmul,184549376
+521,886806165,886813728,7563,675,1,1,1,main$async_dispatch_521_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+522,886815703,886820085,4382,676,1,1,1,main$async_dispatch_522_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+523,886821754,886827494,5740,677,1,1,1,main$async_dispatch_523_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+524,886829284,886833529,4245,678,1,1,1,main$async_dispatch_524_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+525,886835396,886861901,26505,679,1,1,1,main$async_dispatch_525_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+526,886864068,886884905,20837,680,1,1,1,main$async_dispatch_526_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+527,886886867,886902232,15365,681,1,1,1,main$async_dispatch_527_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+528,886904229,886919441,15212,682,1,1,1,main$async_dispatch_528_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+529,886921375,886930694,9319,683,1,1,1,main$async_dispatch_529_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+530,886932577,886945287,12710,684,1,1,1,main$async_dispatch_530_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+531,886947154,886957004,9850,685,1,1,1,main$async_dispatch_531_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+532,886958909,886972256,13347,686,1,1,1,main$async_dispatch_532_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+533,886974283,886984754,10471,687,1,1,1,main$async_dispatch_533_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+534,886986597,886998695,12098,688,1,1,1,main$async_dispatch_534_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+535,887000621,887009934,9313,689,1,1,1,main$async_dispatch_535_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+536,887011952,887037852,25900,690,1,1,1,main$async_dispatch_536_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+537,887041041,887553323,512282,691,8,1,1,main$async_dispatch_537_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+538,887556197,888117846,561649,692,16,1,1,main$async_dispatch_538_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+539,888120237,891426723,3306486,693,8,1,1,main$async_dispatch_539_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+540,891429950,895183148,3753198,694,128,1,1,main$async_dispatch_540_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+541,895187361,895589653,402292,695,8,1,1,main$async_dispatch_541_elementwise_transpose_32x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+542,895592973,895914082,321109,696,16,1,1,main$async_dispatch_542_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+543,895917549,895964826,47277,697,1,1,1,main$async_dispatch_543_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+544,895967876,896265340,297464,698,16,1,1,main$async_dispatch_544_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+545,896268982,896313159,44177,699,1,1,1,main$async_dispatch_545_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+546,896316284,897609949,1293665,700,8,1,1,main$async_dispatch_546_elementwise_32x1024_f32,Rocket scalar,elementwise/other,0
+547,897613212,897767312,154100,701,1,1,1,main$async_dispatch_547_elementwise_4x1024_f32,Rocket scalar,elementwise/other,0
+548,897769922,897918347,148425,702,8,1,1,main$async_dispatch_548_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+549,897921221,898124767,203546,703,8,1,1,main$async_dispatch_549_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+550,898128142,902908263,4780121,704,32,1,1,main$async_dispatch_550_batch_matmul_32x16x16x64_f32,Rocket scalar,matmul,524288
+551,902911468,904380822,1469354,705,32,1,1,main$async_dispatch_551_reduction_512x16_f32,Rocket scalar,elementwise/other,0
+552,904383750,904433805,50055,706,1,1,1,main$async_dispatch_552_elementwise_1x32x16x8_f32,Rocket scalar,elementwise/other,0
+553,904436368,904458545,22177,707,1,1,1,main$async_dispatch_553_elementwise_32x16x4_f32,Rocket scalar,elementwise/other,0
+554,904460926,904470811,9885,708,1,1,1,main$async_dispatch_554_elementwise_1x32x16x2_f32,Rocket scalar,elementwise/other,0
+555,904472797,904501166,28369,709,1,1,1,main$async_dispatch_555_elementwise_32x16_f32,Rocket scalar,elementwise/other,0
+556,904503096,904572272,69176,710,2,1,1,main$async_dispatch_556_elementwise_512x16_f32,Rocket scalar,elementwise/other,0
+557,904574819,909789797,5214978,711,32,1,1,main$async_dispatch_557_batch_matmul_32x16x64x16_f32,Rocket scalar,matmul,524288
+558,909793065,910110278,317213,712,8,1,1,main$async_dispatch_558_transpose_32x16x64_f32,Rocket scalar,elementwise/other,0
+559,910112885,910671401,558516,713,16,1,1,main$async_dispatch_559_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+560,910673875,913902709,3228834,714,8,1,1,main$async_dispatch_560_elementwise_transpose_16x32x64_f32xf32xi8,Rocket scalar,elementwise/other,0
+561,913906815,919053397,5146582,715,128,1,1,main$async_dispatch_561_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+562,919057566,919064768,7202,716,1,1,1,main$async_dispatch_562_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+563,919066508,919071022,4514,717,1,1,1,main$async_dispatch_563_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+564,919072850,919078318,5468,718,1,1,1,main$async_dispatch_564_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+565,919080065,919084391,4326,719,1,1,1,main$async_dispatch_565_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+566,919086497,919112032,25535,720,1,1,1,main$async_dispatch_566_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+567,919114038,919134827,20789,721,1,1,1,main$async_dispatch_567_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+568,919136925,919152097,15172,722,1,1,1,main$async_dispatch_568_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+569,919154105,919168872,14767,723,1,1,1,main$async_dispatch_569_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+570,919170793,919181045,10252,724,1,1,1,main$async_dispatch_570_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+571,919182829,919195232,12403,725,1,1,1,main$async_dispatch_571_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+572,919197174,919206917,9743,726,1,1,1,main$async_dispatch_572_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+573,919208824,919222210,13386,727,1,1,1,main$async_dispatch_573_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+574,919224158,919234475,10317,728,1,1,1,main$async_dispatch_574_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+575,919236226,919247923,11697,729,1,1,1,main$async_dispatch_575_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+576,919250042,919259384,9342,730,1,1,1,main$async_dispatch_576_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+577,919261354,919288368,27014,731,1,1,1,main$async_dispatch_577_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+578,919291529,919801294,509765,732,8,1,1,main$async_dispatch_578_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+579,919804198,920368531,564333,733,16,1,1,main$async_dispatch_579_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+580,920371034,923643262,3272228,734,8,1,1,main$async_dispatch_580_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+581,923646547,932145948,8499401,735,352,1,1,main$async_dispatch_581_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+582,932151014,970293195,38142181,736,352,1,1,main$async_dispatch_582_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+583,970296853,971940699,1643846,737,16,1,1,main$async_dispatch_583_reduction_16x5632_f32,Rocket scalar,elementwise/other,0
+584,971943453,980969231,9025778,738,22,1,1,main$async_dispatch_584_elementwise_16x5632_f32xf32xi8,Rocket scalar,elementwise/other,0
+585,980974228,996838807,15864579,739,128,1,1,main$async_dispatch_585_matmul_16x2048x5632_i8xi8xi32,Gemmini,matmul,184549376
+586,996842682,996850277,7595,740,1,1,1,main$async_dispatch_586_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+587,996852310,996856718,4408,741,1,1,1,main$async_dispatch_587_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+588,996858441,996863738,5297,742,1,1,1,main$async_dispatch_588_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+589,996865534,996869758,4224,743,1,1,1,main$async_dispatch_589_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+590,996871636,996898177,26541,744,1,1,1,main$async_dispatch_590_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+591,996900213,996920901,20688,745,1,1,1,main$async_dispatch_591_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+592,996923081,996938445,15364,746,1,1,1,main$async_dispatch_592_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+593,996940399,996955759,15360,747,1,1,1,main$async_dispatch_593_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+594,996957657,996966830,9173,748,1,1,1,main$async_dispatch_594_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+595,996968531,996981523,12992,749,1,1,1,main$async_dispatch_595_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+596,996983577,996992712,9135,750,1,1,1,main$async_dispatch_596_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+597,996994719,997008379,13660,751,1,1,1,main$async_dispatch_597_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+598,997010249,997020757,10508,752,1,1,1,main$async_dispatch_598_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+599,997022577,997034442,11865,753,1,1,1,main$async_dispatch_599_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+600,997036394,997045713,9319,754,1,1,1,main$async_dispatch_600_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+601,997047772,997073291,25519,755,1,1,1,main$async_dispatch_601_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+602,997076238,997588537,512299,756,8,1,1,main$async_dispatch_602_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+603,997591191,998152952,561761,757,16,1,1,main$async_dispatch_603_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+604,998155379,1001461755,3306376,758,8,1,1,main$async_dispatch_604_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+605,1001465000,1005229087,3764087,759,128,1,1,main$async_dispatch_605_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+606,1005233655,1005637146,403491,760,8,1,1,main$async_dispatch_606_elementwise_transpose_32x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+607,1005640587,1005963162,322575,761,16,1,1,main$async_dispatch_607_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+608,1005966742,1006014533,47791,762,1,1,1,main$async_dispatch_608_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+609,1006017403,1006313324,295921,763,16,1,1,main$async_dispatch_609_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+610,1006317027,1006362579,45552,764,1,1,1,main$async_dispatch_610_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+611,1006365186,1007658159,1292973,765,8,1,1,main$async_dispatch_611_elementwise_32x1024_f32,Rocket scalar,elementwise/other,0
+612,1007661291,1007815225,153934,766,1,1,1,main$async_dispatch_612_elementwise_4x1024_f32,Rocket scalar,elementwise/other,0
+613,1007817841,1007966112,148271,767,8,1,1,main$async_dispatch_613_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+614,1007969120,1008174744,205624,768,8,1,1,main$async_dispatch_614_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+615,1008178159,1012958695,4780536,769,32,1,1,main$async_dispatch_615_batch_matmul_32x16x16x64_f32,Rocket scalar,matmul,524288
+616,1012962390,1014432615,1470225,770,32,1,1,main$async_dispatch_616_reduction_512x16_f32,Rocket scalar,elementwise/other,0
+617,1014435558,1014485392,49834,771,1,1,1,main$async_dispatch_617_elementwise_1x32x16x8_f32,Rocket scalar,elementwise/other,0
+618,1014487818,1014510209,22391,772,1,1,1,main$async_dispatch_618_elementwise_32x16x4_f32,Rocket scalar,elementwise/other,0
+619,1014512543,1014522451,9908,773,1,1,1,main$async_dispatch_619_elementwise_1x32x16x2_f32,Rocket scalar,elementwise/other,0
+620,1014524477,1014552906,28429,774,1,1,1,main$async_dispatch_620_elementwise_32x16_f32,Rocket scalar,elementwise/other,0
+621,1014554811,1014623874,69063,775,2,1,1,main$async_dispatch_621_elementwise_512x16_f32,Rocket scalar,elementwise/other,0
+622,1014626525,1019841471,5214946,776,32,1,1,main$async_dispatch_622_batch_matmul_32x16x64x16_f32,Rocket scalar,matmul,524288
+623,1019844903,1020162502,317599,777,8,1,1,main$async_dispatch_623_transpose_32x16x64_f32,Rocket scalar,elementwise/other,0
+624,1020165196,1020724110,558914,778,16,1,1,main$async_dispatch_624_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+625,1020726636,1023955560,3228924,779,8,1,1,main$async_dispatch_625_elementwise_transpose_16x32x64_f32xf32xi8,Rocket scalar,elementwise/other,0
+626,1023959871,1029174317,5214446,780,128,1,1,main$async_dispatch_626_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+627,1029178611,1029185882,7271,781,1,1,1,main$async_dispatch_627_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+628,1029187888,1029192234,4346,782,1,1,1,main$async_dispatch_628_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+629,1029194132,1029199640,5508,783,1,1,1,main$async_dispatch_629_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+630,1029201413,1029205589,4176,784,1,1,1,main$async_dispatch_630_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+631,1029207465,1029232825,25360,785,1,1,1,main$async_dispatch_631_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+632,1029234909,1029255828,20919,786,1,1,1,main$async_dispatch_632_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+633,1029257969,1029273140,15171,787,1,1,1,main$async_dispatch_633_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+634,1029275448,1029290186,14738,788,1,1,1,main$async_dispatch_634_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+635,1029292009,1029301880,9871,789,1,1,1,main$async_dispatch_635_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+636,1029303754,1029316310,12556,790,1,1,1,main$async_dispatch_636_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+637,1029318360,1029328125,9765,791,1,1,1,main$async_dispatch_637_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+638,1029330161,1029343692,13531,792,1,1,1,main$async_dispatch_638_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+639,1029345763,1029356169,10406,793,1,1,1,main$async_dispatch_639_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+640,1029358136,1029369706,11570,794,1,1,1,main$async_dispatch_640_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+641,1029371501,1029380795,9294,795,1,1,1,main$async_dispatch_641_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+642,1029382878,1029409787,26909,796,1,1,1,main$async_dispatch_642_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+643,1029412773,1029937685,524912,797,8,1,1,main$async_dispatch_643_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+644,1029940538,1030503854,563316,798,16,1,1,main$async_dispatch_644_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+645,1030506350,1033779082,3272732,799,8,1,1,main$async_dispatch_645_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+646,1033782277,1042373921,8591644,800,352,1,1,main$async_dispatch_646_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+647,1042378826,1080432574,38053748,801,352,1,1,main$async_dispatch_647_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+648,1080436264,1082080183,1643919,802,16,1,1,main$async_dispatch_648_reduction_16x5632_f32,Rocket scalar,elementwise/other,0
+649,1082082858,1091110920,9028062,803,22,1,1,main$async_dispatch_649_elementwise_16x5632_f32xf32xi8,Rocket scalar,elementwise/other,0
+650,1091115617,1106966949,15851332,804,128,1,1,main$async_dispatch_650_matmul_16x2048x5632_i8xi8xi32,Gemmini,matmul,184549376
+651,1106971227,1106978787,7560,805,1,1,1,main$async_dispatch_651_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+652,1106980766,1106985026,4260,806,1,1,1,main$async_dispatch_652_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+653,1106986793,1106992265,5472,807,1,1,1,main$async_dispatch_653_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+654,1106994057,1106998471,4414,808,1,1,1,main$async_dispatch_654_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+655,1107000350,1107026367,26017,809,1,1,1,main$async_dispatch_655_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+656,1107028369,1107049338,20969,810,1,1,1,main$async_dispatch_656_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+657,1107051424,1107066649,15225,811,1,1,1,main$async_dispatch_657_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+658,1107068619,1107083882,15263,812,1,1,1,main$async_dispatch_658_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+659,1107085773,1107095204,9431,813,1,1,1,main$async_dispatch_659_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+660,1107096971,1107109730,12759,814,1,1,1,main$async_dispatch_660_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+661,1107111640,1107120947,9307,815,1,1,1,main$async_dispatch_661_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+662,1107122846,1107136464,13618,816,1,1,1,main$async_dispatch_662_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+663,1107138326,1107148789,10463,817,1,1,1,main$async_dispatch_663_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+664,1107150694,1107162735,12041,818,1,1,1,main$async_dispatch_664_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+665,1107164572,1107173927,9355,819,1,1,1,main$async_dispatch_665_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+666,1107176031,1107201096,25065,820,1,1,1,main$async_dispatch_666_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+667,1107203975,1107730984,527009,821,8,1,1,main$async_dispatch_667_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+668,1107733938,1108295486,561548,822,16,1,1,main$async_dispatch_668_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+669,1108297948,1111604694,3306746,823,8,1,1,main$async_dispatch_669_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+670,1111608144,1115395857,3787713,824,128,1,1,main$async_dispatch_670_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+671,1115400377,1115816168,415791,825,8,1,1,main$async_dispatch_671_elementwise_transpose_32x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+672,1115819675,1116136025,316350,826,16,1,1,main$async_dispatch_672_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+673,1116139568,1116185768,46200,827,1,1,1,main$async_dispatch_673_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+674,1116188798,1116490239,301441,828,16,1,1,main$async_dispatch_674_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+675,1116493693,1116539516,45823,829,1,1,1,main$async_dispatch_675_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+676,1116542192,1117836354,1294162,830,8,1,1,main$async_dispatch_676_elementwise_32x1024_f32,Rocket scalar,elementwise/other,0
+677,1117839727,1117993882,154155,831,1,1,1,main$async_dispatch_677_elementwise_4x1024_f32,Rocket scalar,elementwise/other,0
+678,1117996704,1118144429,147725,832,8,1,1,main$async_dispatch_678_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+679,1118147218,1118353550,206332,833,8,1,1,main$async_dispatch_679_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+680,1118356996,1123137744,4780748,834,32,1,1,main$async_dispatch_680_batch_matmul_32x16x16x64_f32,Rocket scalar,matmul,524288
+681,1123140872,1124611024,1470152,835,32,1,1,main$async_dispatch_681_reduction_512x16_f32,Rocket scalar,elementwise/other,0
+682,1124614085,1124664441,50356,836,1,1,1,main$async_dispatch_682_elementwise_1x32x16x8_f32,Rocket scalar,elementwise/other,0
+683,1124666816,1124689230,22414,837,1,1,1,main$async_dispatch_683_elementwise_32x16x4_f32,Rocket scalar,elementwise/other,0
+684,1124691771,1124701602,9831,838,1,1,1,main$async_dispatch_684_elementwise_1x32x16x2_f32,Rocket scalar,elementwise/other,0
+685,1124703667,1124731805,28138,839,1,1,1,main$async_dispatch_685_elementwise_32x16_f32,Rocket scalar,elementwise/other,0
+686,1124733866,1124802898,69032,840,2,1,1,main$async_dispatch_686_elementwise_512x16_f32,Rocket scalar,elementwise/other,0
+687,1124805497,1130020364,5214867,841,32,1,1,main$async_dispatch_687_batch_matmul_32x16x64x16_f32,Rocket scalar,matmul,524288
+688,1130024021,1130341301,317280,842,8,1,1,main$async_dispatch_688_transpose_32x16x64_f32,Rocket scalar,elementwise/other,0
+689,1130343944,1130902544,558600,843,16,1,1,main$async_dispatch_689_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+690,1130904990,1134133960,3228970,844,8,1,1,main$async_dispatch_690_elementwise_transpose_16x32x64_f32xf32xi8,Rocket scalar,elementwise/other,0
+691,1134138373,1139345031,5206658,845,128,1,1,main$async_dispatch_691_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+692,1139349211,1139356455,7244,846,1,1,1,main$async_dispatch_692_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+693,1139358428,1139362867,4439,847,1,1,1,main$async_dispatch_693_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+694,1139364600,1139370132,5532,848,1,1,1,main$async_dispatch_694_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+695,1139371836,1139376094,4258,849,1,1,1,main$async_dispatch_695_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+696,1139378321,1139403574,25253,850,1,1,1,main$async_dispatch_696_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+697,1139405670,1139426490,20820,851,1,1,1,main$async_dispatch_697_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+698,1139428622,1139443833,15211,852,1,1,1,main$async_dispatch_698_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+699,1139445741,1139460404,14663,853,1,1,1,main$async_dispatch_699_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+700,1139462401,1139471854,9453,854,1,1,1,main$async_dispatch_700_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+701,1139473661,1139485905,12244,855,1,1,1,main$async_dispatch_701_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+702,1139487820,1139497561,9741,856,1,1,1,main$async_dispatch_702_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+703,1139499504,1139513037,13533,857,1,1,1,main$async_dispatch_703_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+704,1139515027,1139525507,10480,858,1,1,1,main$async_dispatch_704_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+705,1139527497,1139539194,11697,859,1,1,1,main$async_dispatch_705_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+706,1139541334,1139550571,9237,860,1,1,1,main$async_dispatch_706_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+707,1139552699,1139580044,27345,861,1,1,1,main$async_dispatch_707_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+708,1139583124,1140110793,527669,862,8,1,1,main$async_dispatch_708_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+709,1140113796,1140677898,564102,863,16,1,1,main$async_dispatch_709_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+710,1140680486,1143953385,3272899,864,8,1,1,main$async_dispatch_710_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+711,1143956501,1152544992,8588491,865,352,1,1,main$async_dispatch_711_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+712,1152549792,1190597734,38047942,866,352,1,1,main$async_dispatch_712_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+713,1190601731,1192245514,1643783,867,16,1,1,main$async_dispatch_713_reduction_16x5632_f32,Rocket scalar,elementwise/other,0
+714,1192248536,1201275907,9027371,868,22,1,1,main$async_dispatch_714_elementwise_16x5632_f32xf32xi8,Rocket scalar,elementwise/other,0
+715,1201280642,1217135232,15854590,869,128,1,1,main$async_dispatch_715_matmul_16x2048x5632_i8xi8xi32,Gemmini,matmul,184549376
+716,1217139154,1217146623,7469,870,1,1,1,main$async_dispatch_716_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+717,1217148502,1217152699,4197,871,1,1,1,main$async_dispatch_717_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+718,1217154394,1217159855,5461,872,1,1,1,main$async_dispatch_718_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+719,1217161544,1217165950,4406,873,1,1,1,main$async_dispatch_719_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+720,1217167922,1217194411,26489,874,1,1,1,main$async_dispatch_720_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+721,1217196445,1217217122,20677,875,1,1,1,main$async_dispatch_721_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+722,1217219172,1217234455,15283,876,1,1,1,main$async_dispatch_722_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+723,1217236390,1217251982,15592,877,1,1,1,main$async_dispatch_723_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+724,1217253918,1217263382,9464,878,1,1,1,main$async_dispatch_724_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+725,1217265168,1217277727,12559,879,1,1,1,main$async_dispatch_725_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+726,1217279698,1217289024,9326,880,1,1,1,main$async_dispatch_726_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+727,1217290917,1217304907,13990,881,1,1,1,main$async_dispatch_727_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+728,1217306847,1217317302,10455,882,1,1,1,main$async_dispatch_728_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+729,1217319054,1217331052,11998,883,1,1,1,main$async_dispatch_729_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+730,1217332874,1217342226,9352,884,1,1,1,main$async_dispatch_730_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+731,1217344188,1217369707,25519,885,1,1,1,main$async_dispatch_731_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+732,1217372693,1217899629,526936,886,8,1,1,main$async_dispatch_732_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+733,1217902314,1218464002,561688,887,16,1,1,main$async_dispatch_733_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+734,1218466428,1221773384,3306956,888,8,1,1,main$async_dispatch_734_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+735,1221776700,1225565822,3789122,889,128,1,1,main$async_dispatch_735_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+736,1225570336,1225986730,416394,890,8,1,1,main$async_dispatch_736_elementwise_transpose_32x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+737,1225990224,1226306603,316379,891,16,1,1,main$async_dispatch_737_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+738,1226310525,1226356661,46136,892,1,1,1,main$async_dispatch_738_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+739,1226359479,1226661229,301750,893,16,1,1,main$async_dispatch_739_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+740,1226665129,1226708911,43782,894,1,1,1,main$async_dispatch_740_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+741,1226711789,1228005472,1293683,895,8,1,1,main$async_dispatch_741_elementwise_32x1024_f32,Rocket scalar,elementwise/other,0
+742,1228008755,1228163218,154463,896,1,1,1,main$async_dispatch_742_elementwise_4x1024_f32,Rocket scalar,elementwise/other,0
+743,1228165697,1228313787,148090,897,8,1,1,main$async_dispatch_743_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+744,1228316810,1228522751,205941,898,8,1,1,main$async_dispatch_744_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+745,1228526555,1233305898,4779343,899,32,1,1,main$async_dispatch_745_batch_matmul_32x16x16x64_f32,Rocket scalar,matmul,524288
+746,1233309286,1234779091,1469805,900,32,1,1,main$async_dispatch_746_reduction_512x16_f32,Rocket scalar,elementwise/other,0
+747,1234782182,1234832665,50483,901,1,1,1,main$async_dispatch_747_elementwise_1x32x16x8_f32,Rocket scalar,elementwise/other,0
+748,1234835190,1234857912,22722,902,1,1,1,main$async_dispatch_748_elementwise_32x16x4_f32,Rocket scalar,elementwise/other,0
+749,1234860423,1234870057,9634,903,1,1,1,main$async_dispatch_749_elementwise_1x32x16x2_f32,Rocket scalar,elementwise/other,0
+750,1234872164,1234900662,28498,904,1,1,1,main$async_dispatch_750_elementwise_32x16_f32,Rocket scalar,elementwise/other,0
+751,1234902595,1234971525,68930,905,2,1,1,main$async_dispatch_751_elementwise_512x16_f32,Rocket scalar,elementwise/other,0
+752,1234974187,1240188796,5214609,906,32,1,1,main$async_dispatch_752_batch_matmul_32x16x64x16_f32,Rocket scalar,matmul,524288
+753,1240192500,1240509618,317118,907,8,1,1,main$async_dispatch_753_transpose_32x16x64_f32,Rocket scalar,elementwise/other,0
+754,1240512596,1241071064,558468,908,16,1,1,main$async_dispatch_754_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+755,1241073470,1244302796,3229326,909,8,1,1,main$async_dispatch_755_elementwise_transpose_16x32x64_f32xf32xi8,Rocket scalar,elementwise/other,0
+756,1244307158,1249447026,5139868,910,128,1,1,main$async_dispatch_756_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+757,1249451287,1249458233,6946,911,1,1,1,main$async_dispatch_757_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+758,1249460167,1249464381,4214,912,1,1,1,main$async_dispatch_758_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+759,1249466316,1249471839,5523,913,1,1,1,main$async_dispatch_759_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+760,1249473985,1249478227,4242,914,1,1,1,main$async_dispatch_760_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+761,1249480160,1249505542,25382,915,1,1,1,main$async_dispatch_761_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+762,1249507738,1249528676,20938,916,1,1,1,main$async_dispatch_762_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+763,1249530790,1249546102,15312,917,1,1,1,main$async_dispatch_763_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+764,1249548264,1249562815,14551,918,1,1,1,main$async_dispatch_764_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+765,1249564595,1249574121,9526,919,1,1,1,main$async_dispatch_765_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+766,1249575968,1249588525,12557,920,1,1,1,main$async_dispatch_766_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+767,1249590386,1249600231,9845,921,1,1,1,main$async_dispatch_767_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+768,1249602096,1249615533,13437,922,1,1,1,main$async_dispatch_768_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+769,1249617424,1249627952,10528,923,1,1,1,main$async_dispatch_769_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+770,1249630236,1249641628,11392,924,1,1,1,main$async_dispatch_770_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+771,1249643369,1249652857,9488,925,1,1,1,main$async_dispatch_771_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+772,1249654901,1249681882,26981,926,1,1,1,main$async_dispatch_772_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+773,1249684830,1250195087,510257,927,8,1,1,main$async_dispatch_773_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+774,1250197897,1250761540,563643,928,16,1,1,main$async_dispatch_774_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+775,1250763985,1254035766,3271781,929,8,1,1,main$async_dispatch_775_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+776,1254038973,1262537624,8498651,930,352,1,1,main$async_dispatch_776_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+777,1262542823,1300681283,38138460,931,352,1,1,main$async_dispatch_777_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+778,1300685257,1302329377,1644120,932,16,1,1,main$async_dispatch_778_reduction_16x5632_f32,Rocket scalar,elementwise/other,0
+779,1302332071,1311357754,9025683,933,22,1,1,main$async_dispatch_779_elementwise_16x5632_f32xf32xi8,Rocket scalar,elementwise/other,0
+780,1311362298,1327219119,15856821,934,128,1,1,main$async_dispatch_780_matmul_16x2048x5632_i8xi8xi32,Gemmini,matmul,184549376
+781,1327222960,1327230344,7384,935,1,1,1,main$async_dispatch_781_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+782,1327232219,1327236544,4325,936,1,1,1,main$async_dispatch_782_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+783,1327238258,1327243689,5431,937,1,1,1,main$async_dispatch_783_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+784,1327245455,1327249918,4463,938,1,1,1,main$async_dispatch_784_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+785,1327251792,1327278329,26537,939,1,1,1,main$async_dispatch_785_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+786,1327280384,1327301111,20727,940,1,1,1,main$async_dispatch_786_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+787,1327303098,1327318366,15268,941,1,1,1,main$async_dispatch_787_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+788,1327320319,1327335841,15522,942,1,1,1,main$async_dispatch_788_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+789,1327337673,1327347149,9476,943,1,1,1,main$async_dispatch_789_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+790,1327348961,1327361655,12694,944,1,1,1,main$async_dispatch_790_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+791,1327363659,1327373289,9630,945,1,1,1,main$async_dispatch_791_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+792,1327375225,1327388732,13507,946,1,1,1,main$async_dispatch_792_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+793,1327390632,1327401124,10492,947,1,1,1,main$async_dispatch_793_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+794,1327402994,1327414914,11920,948,1,1,1,main$async_dispatch_794_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+795,1327416788,1327426082,9294,949,1,1,1,main$async_dispatch_795_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+796,1327428107,1327452910,24803,950,1,1,1,main$async_dispatch_796_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+797,1327455887,1327967149,511262,951,8,1,1,main$async_dispatch_797_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+798,1327969938,1328531792,561854,952,16,1,1,main$async_dispatch_798_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+799,1328534319,1331840373,3306054,953,8,1,1,main$async_dispatch_799_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+800,1331843649,1335600663,3757014,954,128,1,1,main$async_dispatch_800_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+801,1335604984,1336009362,404378,955,8,1,1,main$async_dispatch_801_elementwise_transpose_32x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+802,1336012856,1336332458,319602,956,16,1,1,main$async_dispatch_802_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+803,1336335999,1336383826,47827,957,1,1,1,main$async_dispatch_803_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+804,1336386706,1336683968,297262,958,16,1,1,main$async_dispatch_804_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+805,1336687770,1336731772,44002,959,1,1,1,main$async_dispatch_805_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+806,1336734622,1338026903,1292281,960,8,1,1,main$async_dispatch_806_elementwise_32x1024_f32,Rocket scalar,elementwise/other,0
+807,1338030212,1338184452,154240,961,1,1,1,main$async_dispatch_807_elementwise_4x1024_f32,Rocket scalar,elementwise/other,0
+808,1338187243,1338335749,148506,962,8,1,1,main$async_dispatch_808_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+809,1338338587,1338543302,204715,963,8,1,1,main$async_dispatch_809_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+810,1338546804,1343326843,4780039,964,32,1,1,main$async_dispatch_810_batch_matmul_32x16x16x64_f32,Rocket scalar,matmul,524288
+811,1343330070,1344799671,1469601,965,32,1,1,main$async_dispatch_811_reduction_512x16_f32,Rocket scalar,elementwise/other,0
+812,1344802418,1344852570,50152,966,1,1,1,main$async_dispatch_812_elementwise_1x32x16x8_f32,Rocket scalar,elementwise/other,0
+813,1344855131,1344877838,22707,967,1,1,1,main$async_dispatch_813_elementwise_32x16x4_f32,Rocket scalar,elementwise/other,0
+814,1344880127,1344890158,10031,968,1,1,1,main$async_dispatch_814_elementwise_1x32x16x2_f32,Rocket scalar,elementwise/other,0
+815,1344892210,1344920590,28380,969,1,1,1,main$async_dispatch_815_elementwise_32x16_f32,Rocket scalar,elementwise/other,0
+816,1344922588,1344991782,69194,970,2,1,1,main$async_dispatch_816_elementwise_512x16_f32,Rocket scalar,elementwise/other,0
+817,1344994439,1350208072,5213633,971,32,1,1,main$async_dispatch_817_batch_matmul_32x16x64x16_f32,Rocket scalar,matmul,524288
+818,1350211430,1350529052,317622,972,8,1,1,main$async_dispatch_818_transpose_32x16x64_f32,Rocket scalar,elementwise/other,0
+819,1350531770,1351090630,558860,973,16,1,1,main$async_dispatch_819_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+820,1351093054,1354321748,3228694,974,8,1,1,main$async_dispatch_820_elementwise_transpose_16x32x64_f32xf32xi8,Rocket scalar,elementwise/other,0
+821,1354325967,1359464039,5138072,975,128,1,1,main$async_dispatch_821_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+822,1359468286,1359475363,7077,976,1,1,1,main$async_dispatch_822_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+823,1359477109,1359481336,4227,977,1,1,1,main$async_dispatch_823_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+824,1359483273,1359488867,5594,978,1,1,1,main$async_dispatch_824_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+825,1359490715,1359495172,4457,979,1,1,1,main$async_dispatch_825_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+826,1359497162,1359522876,25714,980,1,1,1,main$async_dispatch_826_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+827,1359524815,1359545672,20857,981,1,1,1,main$async_dispatch_827_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+828,1359547824,1359563136,15312,982,1,1,1,main$async_dispatch_828_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+829,1359565212,1359579430,14218,983,1,1,1,main$async_dispatch_829_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+830,1359581313,1359590933,9620,984,1,1,1,main$async_dispatch_830_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+831,1359592848,1359605189,12341,985,1,1,1,main$async_dispatch_831_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+832,1359607268,1359616903,9635,986,1,1,1,main$async_dispatch_832_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+833,1359618689,1359632120,13431,987,1,1,1,main$async_dispatch_833_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+834,1359633998,1359644499,10501,988,1,1,1,main$async_dispatch_834_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+835,1359646447,1359658067,11620,989,1,1,1,main$async_dispatch_835_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+836,1359659900,1359669139,9239,990,1,1,1,main$async_dispatch_836_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+837,1359671218,1359698468,27250,991,1,1,1,main$async_dispatch_837_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+838,1359701521,1360212322,510801,992,8,1,1,main$async_dispatch_838_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+839,1360215534,1360779377,563843,993,16,1,1,main$async_dispatch_839_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+840,1360781834,1364054489,3272655,994,8,1,1,main$async_dispatch_840_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+841,1364057675,1372559838,8502163,995,352,1,1,main$async_dispatch_841_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+842,1372564704,1410708509,38143805,996,352,1,1,main$async_dispatch_842_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+843,1410712645,1412356457,1643812,997,16,1,1,main$async_dispatch_843_reduction_16x5632_f32,Rocket scalar,elementwise/other,0
+844,1412359300,1421385382,9026082,998,22,1,1,main$async_dispatch_844_elementwise_16x5632_f32xf32xi8,Rocket scalar,elementwise/other,0
+845,1421390284,1437245450,15855166,999,128,1,1,main$async_dispatch_845_matmul_16x2048x5632_i8xi8xi32,Gemmini,matmul,184549376
+846,1437249256,1437256539,7283,1000,1,1,1,main$async_dispatch_846_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+847,1437258474,1437262821,4347,1001,1,1,1,main$async_dispatch_847_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+848,1437264633,1437269993,5360,1002,1,1,1,main$async_dispatch_848_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+849,1437271801,1437276030,4229,1003,1,1,1,main$async_dispatch_849_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+850,1437277943,1437304240,26297,1004,1,1,1,main$async_dispatch_850_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+851,1437306250,1437327117,20867,1005,1,1,1,main$async_dispatch_851_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+852,1437329274,1437344469,15195,1006,1,1,1,main$async_dispatch_852_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+853,1437346446,1437361701,15255,1007,1,1,1,main$async_dispatch_853_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+854,1437363592,1437372953,9361,1008,1,1,1,main$async_dispatch_854_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+855,1437374684,1437387326,12642,1009,1,1,1,main$async_dispatch_855_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+856,1437389270,1437398650,9380,1010,1,1,1,main$async_dispatch_856_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+857,1437400589,1437414525,13936,1011,1,1,1,main$async_dispatch_857_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+858,1437416477,1437427024,10547,1012,1,1,1,main$async_dispatch_858_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+859,1437428861,1437440897,12036,1013,1,1,1,main$async_dispatch_859_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+860,1437442688,1437452189,9501,1014,1,1,1,main$async_dispatch_860_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+861,1437454427,1437479656,25229,1015,1,1,1,main$async_dispatch_861_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+862,1437482750,1437995467,512717,1016,8,1,1,main$async_dispatch_862_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+863,1437998171,1438559513,561342,1017,16,1,1,main$async_dispatch_863_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+864,1438562005,1441869321,3307316,1018,8,1,1,main$async_dispatch_864_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+865,1441872613,1445635134,3762521,1019,128,1,1,main$async_dispatch_865_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+866,1445640159,1446043711,403552,1020,8,1,1,main$async_dispatch_866_elementwise_transpose_32x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+867,1446047187,1446370094,322907,1021,16,1,1,main$async_dispatch_867_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+868,1446373665,1446421117,47452,1022,1,1,1,main$async_dispatch_868_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+869,1446423840,1446721149,297309,1023,16,1,1,main$async_dispatch_869_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+870,1446724693,1446770587,45894,1024,1,1,1,main$async_dispatch_870_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+871,1446773300,1448065896,1292596,1025,8,1,1,main$async_dispatch_871_elementwise_32x1024_f32,Rocket scalar,elementwise/other,0
+872,1448069013,1448223014,154001,1026,1,1,1,main$async_dispatch_872_elementwise_4x1024_f32,Rocket scalar,elementwise/other,0
+873,1448225603,1448374107,148504,1027,8,1,1,main$async_dispatch_873_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+874,1448377396,1448582051,204655,1028,8,1,1,main$async_dispatch_874_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+875,1448585605,1453362081,4776476,1029,32,1,1,main$async_dispatch_875_batch_matmul_32x16x16x64_f32,Rocket scalar,matmul,524288
+876,1453365629,1454834559,1468930,1030,32,1,1,main$async_dispatch_876_reduction_512x16_f32,Rocket scalar,elementwise/other,0
+877,1454837817,1454888041,50224,1031,1,1,1,main$async_dispatch_877_elementwise_1x32x16x8_f32,Rocket scalar,elementwise/other,0
+878,1454890494,1454912468,21974,1032,1,1,1,main$async_dispatch_878_elementwise_32x16x4_f32,Rocket scalar,elementwise/other,0
+879,1454914700,1454924521,9821,1033,1,1,1,main$async_dispatch_879_elementwise_1x32x16x2_f32,Rocket scalar,elementwise/other,0
+880,1454926652,1454954506,27854,1034,1,1,1,main$async_dispatch_880_elementwise_32x16_f32,Rocket scalar,elementwise/other,0
+881,1454956439,1455024449,68010,1035,2,1,1,main$async_dispatch_881_elementwise_512x16_f32,Rocket scalar,elementwise/other,0
+882,1455027210,1460240025,5212815,1036,32,1,1,main$async_dispatch_882_batch_matmul_32x16x64x16_f32,Rocket scalar,matmul,524288
+883,1460243495,1460559285,315790,1037,8,1,1,main$async_dispatch_883_transpose_32x16x64_f32,Rocket scalar,elementwise/other,0
+884,1460562264,1461119695,557431,1038,16,1,1,main$async_dispatch_884_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+885,1461122128,1464350284,3228156,1039,8,1,1,main$async_dispatch_885_elementwise_transpose_16x32x64_f32xf32xi8,Rocket scalar,elementwise/other,0
+886,1464354951,1469559361,5204410,1040,128,1,1,main$async_dispatch_886_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+887,1469563623,1469570728,7105,1041,1,1,1,main$async_dispatch_887_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+888,1469572703,1469577119,4416,1042,1,1,1,main$async_dispatch_888_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+889,1469579261,1469584722,5461,1043,1,1,1,main$async_dispatch_889_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+890,1469586501,1469590903,4402,1044,1,1,1,main$async_dispatch_890_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+891,1469592886,1469618564,25678,1045,1,1,1,main$async_dispatch_891_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+892,1469620657,1469641398,20741,1046,1,1,1,main$async_dispatch_892_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+893,1469643556,1469658699,15143,1047,1,1,1,main$async_dispatch_893_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+894,1469660703,1469675062,14359,1048,1,1,1,main$async_dispatch_894_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+895,1469676842,1469686492,9650,1049,1,1,1,main$async_dispatch_895_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+896,1469688409,1469700701,12292,1050,1,1,1,main$async_dispatch_896_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+897,1469702624,1469712352,9728,1051,1,1,1,main$async_dispatch_897_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+898,1469714538,1469728121,13583,1052,1,1,1,main$async_dispatch_898_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+899,1469729966,1469740230,10264,1053,1,1,1,main$async_dispatch_899_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+900,1469742221,1469753757,11536,1054,1,1,1,main$async_dispatch_900_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+901,1469755618,1469764698,9080,1055,1,1,1,main$async_dispatch_901_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+902,1469766909,1469793454,26545,1056,1,1,1,main$async_dispatch_902_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+903,1469796303,1470321023,524720,1057,8,1,1,main$async_dispatch_903_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+904,1470323803,1470887174,563371,1058,16,1,1,main$async_dispatch_904_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+905,1470889817,1474162174,3272357,1059,8,1,1,main$async_dispatch_905_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+906,1474165443,1482734906,8569463,1060,352,1,1,main$async_dispatch_906_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+907,1482740034,1520768382,38028348,1061,352,1,1,main$async_dispatch_907_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+908,1520772576,1522413438,1640862,1062,16,1,1,main$async_dispatch_908_reduction_16x5632_f32,Rocket scalar,elementwise/other,0
+909,1522416200,1531440847,9024647,1063,22,1,1,main$async_dispatch_909_elementwise_16x5632_f32xf32xi8,Rocket scalar,elementwise/other,0
+910,1531445352,1547294101,15848749,1064,128,1,1,main$async_dispatch_910_matmul_16x2048x5632_i8xi8xi32,Gemmini,matmul,184549376
+911,1547298159,1547305485,7326,1065,1,1,1,main$async_dispatch_911_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+912,1547307417,1547311692,4275,1066,1,1,1,main$async_dispatch_912_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+913,1547313426,1547318608,5182,1067,1,1,1,main$async_dispatch_913_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+914,1547320374,1547324650,4276,1068,1,1,1,main$async_dispatch_914_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+915,1547326550,1547352362,25812,1069,1,1,1,main$async_dispatch_915_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+916,1547354391,1547375127,20736,1070,1,1,1,main$async_dispatch_916_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+917,1547377238,1547392238,15000,1071,1,1,1,main$async_dispatch_917_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+918,1547394550,1547409519,14969,1072,1,1,1,main$async_dispatch_918_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+919,1547411298,1547420508,9210,1073,1,1,1,main$async_dispatch_919_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+920,1547422425,1547435250,12825,1074,1,1,1,main$async_dispatch_920_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+921,1547437125,1547446746,9621,1075,1,1,1,main$async_dispatch_921_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+922,1547448748,1547462375,13627,1076,1,1,1,main$async_dispatch_922_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+923,1547464332,1547474889,10557,1077,1,1,1,main$async_dispatch_923_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+924,1547476790,1547488817,12027,1078,1,1,1,main$async_dispatch_924_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+925,1547490639,1547500020,9381,1079,1,1,1,main$async_dispatch_925_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+926,1547502135,1547527197,25062,1080,1,1,1,main$async_dispatch_926_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+927,1547530146,1548055015,524869,1081,8,1,1,main$async_dispatch_927_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+928,1548057894,1548618797,560903,1082,16,1,1,main$async_dispatch_928_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+929,1548621434,1551927198,3305764,1083,8,1,1,main$async_dispatch_929_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+930,1551930516,1555714460,3783944,1084,128,1,1,main$async_dispatch_930_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+931,1555718914,1556132393,413479,1085,8,1,1,main$async_dispatch_931_elementwise_transpose_32x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+932,1556135850,1556449148,313298,1086,16,1,1,main$async_dispatch_932_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+933,1556452778,1556498479,45701,1087,1,1,1,main$async_dispatch_933_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+934,1556501332,1556804029,302697,1088,16,1,1,main$async_dispatch_934_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+935,1556807597,1556852878,45281,1089,1,1,1,main$async_dispatch_935_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+936,1556855733,1558147998,1292265,1090,8,1,1,main$async_dispatch_936_elementwise_32x1024_f32,Rocket scalar,elementwise/other,0
+937,1558151243,1558305195,153952,1091,1,1,1,main$async_dispatch_937_elementwise_4x1024_f32,Rocket scalar,elementwise/other,0
+938,1558308076,1558456334,148258,1092,8,1,1,main$async_dispatch_938_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+939,1558459258,1558665551,206293,1093,8,1,1,main$async_dispatch_939_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+940,1558669127,1563445589,4776462,1094,32,1,1,main$async_dispatch_940_batch_matmul_32x16x16x64_f32,Rocket scalar,matmul,524288
+941,1563449123,1564917566,1468443,1095,32,1,1,main$async_dispatch_941_reduction_512x16_f32,Rocket scalar,elementwise/other,0
+942,1564920662,1564970641,49979,1096,1,1,1,main$async_dispatch_942_elementwise_1x32x16x8_f32,Rocket scalar,elementwise/other,0
+943,1564972990,1564995503,22513,1097,1,1,1,main$async_dispatch_943_elementwise_32x16x4_f32,Rocket scalar,elementwise/other,0
+944,1564998002,1565007817,9815,1098,1,1,1,main$async_dispatch_944_elementwise_1x32x16x2_f32,Rocket scalar,elementwise/other,0
+945,1565009966,1565038342,28376,1099,1,1,1,main$async_dispatch_945_elementwise_32x16_f32,Rocket scalar,elementwise/other,0
+946,1565040634,1565108683,68049,1100,2,1,1,main$async_dispatch_946_elementwise_512x16_f32,Rocket scalar,elementwise/other,0
+947,1565111310,1570324568,5213258,1101,32,1,1,main$async_dispatch_947_batch_matmul_32x16x64x16_f32,Rocket scalar,matmul,524288
+948,1570328242,1570644742,316500,1102,8,1,1,main$async_dispatch_948_transpose_32x16x64_f32,Rocket scalar,elementwise/other,0
+949,1570647550,1571205384,557834,1103,16,1,1,main$async_dispatch_949_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+950,1571207927,1574436949,3229022,1104,8,1,1,main$async_dispatch_950_elementwise_transpose_16x32x64_f32xf32xi8,Rocket scalar,elementwise/other,0
+951,1574441463,1579639235,5197772,1105,128,1,1,main$async_dispatch_951_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+952,1579643591,1579650462,6871,1106,1,1,1,main$async_dispatch_952_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+953,1579652168,1579656403,4235,1107,1,1,1,main$async_dispatch_953_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+954,1579658346,1579663885,5539,1108,1,1,1,main$async_dispatch_954_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+955,1579665584,1579669833,4249,1109,1,1,1,main$async_dispatch_955_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+956,1579671736,1579697186,25450,1110,1,1,1,main$async_dispatch_956_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+957,1579699336,1579720065,20729,1111,1,1,1,main$async_dispatch_957_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+958,1579722075,1579737159,15084,1112,1,1,1,main$async_dispatch_958_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+959,1579739108,1579753626,14518,1113,1,1,1,main$async_dispatch_959_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+960,1579755523,1579765186,9663,1114,1,1,1,main$async_dispatch_960_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+961,1579766960,1579779347,12387,1115,1,1,1,main$async_dispatch_961_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+962,1579781379,1579791124,9745,1116,1,1,1,main$async_dispatch_962_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+963,1579793007,1579806203,13196,1117,1,1,1,main$async_dispatch_963_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+964,1579808187,1579818450,10263,1118,1,1,1,main$async_dispatch_964_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+965,1579820310,1579831635,11325,1119,1,1,1,main$async_dispatch_965_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+966,1579833512,1579842523,9011,1120,1,1,1,main$async_dispatch_966_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+967,1579844499,1579871146,26647,1121,1,1,1,main$async_dispatch_967_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+968,1579874182,1580397802,523620,1122,8,1,1,main$async_dispatch_968_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+969,1580400599,1580963613,563014,1123,16,1,1,main$async_dispatch_969_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+970,1580966169,1584237870,3271701,1124,8,1,1,main$async_dispatch_970_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+971,1584241105,1592815600,8574495,1125,352,1,1,main$async_dispatch_971_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+972,1592820774,1630848168,38027394,1126,352,1,1,main$async_dispatch_972_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+973,1630852228,1632494189,1641961,1127,16,1,1,main$async_dispatch_973_reduction_16x5632_f32,Rocket scalar,elementwise/other,0
+974,1632496850,1641520818,9023968,1128,22,1,1,main$async_dispatch_974_elementwise_16x5632_f32xf32xi8,Rocket scalar,elementwise/other,0
+975,1641525283,1657361701,15836418,1129,128,1,1,main$async_dispatch_975_matmul_16x2048x5632_i8xi8xi32,Gemmini,matmul,184549376
+976,1657365811,1657373185,7374,1130,1,1,1,main$async_dispatch_976_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+977,1657374963,1657379187,4224,1131,1,1,1,main$async_dispatch_977_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+978,1657380985,1657386386,5401,1132,1,1,1,main$async_dispatch_978_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+979,1657388181,1657392275,4094,1133,1,1,1,main$async_dispatch_979_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+980,1657394369,1657420737,26368,1134,1,1,1,main$async_dispatch_980_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+981,1657422874,1657443137,20263,1135,1,1,1,main$async_dispatch_981_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+982,1657445366,1657460548,15182,1136,1,1,1,main$async_dispatch_982_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+983,1657462648,1657477993,15345,1137,1,1,1,main$async_dispatch_983_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+984,1657479965,1657489417,9452,1138,1,1,1,main$async_dispatch_984_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+985,1657491180,1657503928,12748,1139,1,1,1,main$async_dispatch_985_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+986,1657505987,1657515416,9429,1140,1,1,1,main$async_dispatch_986_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+987,1657517294,1657531075,13781,1141,1,1,1,main$async_dispatch_987_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+988,1657533047,1657543473,10426,1142,1,1,1,main$async_dispatch_988_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+989,1657545382,1657557276,11894,1143,1,1,1,main$async_dispatch_989_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+990,1657559099,1657568343,9244,1144,1,1,1,main$async_dispatch_990_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+991,1657570415,1657595288,24873,1145,1,1,1,main$async_dispatch_991_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+992,1657598326,1658125675,527349,1146,8,1,1,main$async_dispatch_992_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+993,1658128391,1658689238,560847,1147,16,1,1,main$async_dispatch_993_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+994,1658691768,1661997878,3306110,1148,8,1,1,main$async_dispatch_994_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+995,1662001147,1665780079,3778932,1149,128,1,1,main$async_dispatch_995_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+996,1665784534,1666199496,414962,1150,8,1,1,main$async_dispatch_996_elementwise_transpose_32x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+997,1666203097,1666520307,317210,1151,16,1,1,main$async_dispatch_997_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+998,1666523943,1666570037,46094,1152,1,1,1,main$async_dispatch_998_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+999,1666572925,1666872622,299697,1153,16,1,1,main$async_dispatch_999_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+1000,1666876330,1666920208,43878,1154,1,1,1,main$async_dispatch_1000_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+1001,1666922905,1668215920,1293015,1155,8,1,1,main$async_dispatch_1001_elementwise_32x1024_f32,Rocket scalar,elementwise/other,0
+1002,1668219191,1668373405,154214,1156,1,1,1,main$async_dispatch_1002_elementwise_4x1024_f32,Rocket scalar,elementwise/other,0
+1003,1668375809,1668523394,147585,1157,8,1,1,main$async_dispatch_1003_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+1004,1668526382,1668731030,204648,1158,8,1,1,main$async_dispatch_1004_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+1005,1668734337,1673510230,4775893,1159,32,1,1,main$async_dispatch_1005_batch_matmul_32x16x16x64_f32,Rocket scalar,matmul,524288
+1006,1673513594,1674984816,1471222,1160,32,1,1,main$async_dispatch_1006_reduction_512x16_f32,Rocket scalar,elementwise/other,0
+1007,1674987826,1675037565,49739,1161,1,1,1,main$async_dispatch_1007_elementwise_1x32x16x8_f32,Rocket scalar,elementwise/other,0
+1008,1675040128,1675062494,22366,1162,1,1,1,main$async_dispatch_1008_elementwise_32x16x4_f32,Rocket scalar,elementwise/other,0
+1009,1675064682,1675074419,9737,1163,1,1,1,main$async_dispatch_1009_elementwise_1x32x16x2_f32,Rocket scalar,elementwise/other,0
+1010,1675076512,1675104983,28471,1164,1,1,1,main$async_dispatch_1010_elementwise_32x16_f32,Rocket scalar,elementwise/other,0
+1011,1675106930,1675175701,68771,1165,2,1,1,main$async_dispatch_1011_elementwise_512x16_f32,Rocket scalar,elementwise/other,0
+1012,1675178337,1680390895,5212558,1166,32,1,1,main$async_dispatch_1012_batch_matmul_32x16x64x16_f32,Rocket scalar,matmul,524288
+1013,1680394163,1680710350,316187,1167,8,1,1,main$async_dispatch_1013_transpose_32x16x64_f32,Rocket scalar,elementwise/other,0
+1014,1680713104,1681270817,557713,1168,16,1,1,main$async_dispatch_1014_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+1015,1681273220,1684501783,3228563,1169,8,1,1,main$async_dispatch_1015_elementwise_transpose_16x32x64_f32xf32xi8,Rocket scalar,elementwise/other,0
+1016,1684506177,1689641346,5135169,1170,128,1,1,main$async_dispatch_1016_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+1017,1689645816,1689652905,7089,1171,1,1,1,main$async_dispatch_1017_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1018,1689654817,1689659071,4254,1172,1,1,1,main$async_dispatch_1018_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1019,1689661005,1689666363,5358,1173,1,1,1,main$async_dispatch_1019_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1020,1689668160,1689672436,4276,1174,1,1,1,main$async_dispatch_1020_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1021,1689674472,1689699817,25345,1175,1,1,1,main$async_dispatch_1021_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1022,1689701837,1689722468,20631,1176,1,1,1,main$async_dispatch_1022_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1023,1689724462,1689739476,15014,1177,1,1,1,main$async_dispatch_1023_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1024,1689741549,1689755647,14098,1178,1,1,1,main$async_dispatch_1024_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1025,1689757456,1689766941,9485,1179,1,1,1,main$async_dispatch_1025_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1026,1689768757,1689780904,12147,1180,1,1,1,main$async_dispatch_1026_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1027,1689782742,1689792360,9618,1181,1,1,1,main$async_dispatch_1027_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1028,1689794444,1689807756,13312,1182,1,1,1,main$async_dispatch_1028_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1029,1689809752,1689820192,10440,1183,1,1,1,main$async_dispatch_1029_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1030,1689822122,1689833538,11416,1184,1,1,1,main$async_dispatch_1030_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1031,1689835332,1689844597,9265,1185,1,1,1,main$async_dispatch_1031_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1032,1689846640,1689873313,26673,1186,1,1,1,main$async_dispatch_1032_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1033,1689876177,1690385929,509752,1187,8,1,1,main$async_dispatch_1033_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+1034,1690388773,1690951728,562955,1188,16,1,1,main$async_dispatch_1034_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+1035,1690954234,1694225594,3271360,1189,8,1,1,main$async_dispatch_1035_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+1036,1694228796,1702713604,8484808,1190,352,1,1,main$async_dispatch_1036_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+1037,1702718430,1740838937,38120507,1191,352,1,1,main$async_dispatch_1037_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+1038,1740842761,1742484962,1642201,1192,16,1,1,main$async_dispatch_1038_reduction_16x5632_f32,Rocket scalar,elementwise/other,0
+1039,1742487728,1751515388,9027660,1193,22,1,1,main$async_dispatch_1039_elementwise_16x5632_f32xf32xi8,Rocket scalar,elementwise/other,0
+1040,1751520068,1767364007,15843939,1194,128,1,1,main$async_dispatch_1040_matmul_16x2048x5632_i8xi8xi32,Gemmini,matmul,184549376
+1041,1767367863,1767375231,7368,1195,1,1,1,main$async_dispatch_1041_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1042,1767377049,1767381377,4328,1196,1,1,1,main$async_dispatch_1042_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1043,1767383096,1767388338,5242,1197,1,1,1,main$async_dispatch_1043_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1044,1767390198,1767394460,4262,1198,1,1,1,main$async_dispatch_1044_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1045,1767396310,1767422670,26360,1199,1,1,1,main$async_dispatch_1045_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1046,1767424607,1767444994,20387,1200,1,1,1,main$async_dispatch_1046_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1047,1767447317,1767462435,15118,1201,1,1,1,main$async_dispatch_1047_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1048,1767464555,1767479719,15164,1202,1,1,1,main$async_dispatch_1048_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1049,1767481489,1767491002,9513,1203,1,1,1,main$async_dispatch_1049_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1050,1767492819,1767505671,12852,1204,1,1,1,main$async_dispatch_1050_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1051,1767507612,1767517054,9442,1205,1,1,1,main$async_dispatch_1051_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1052,1767518927,1767532557,13630,1206,1,1,1,main$async_dispatch_1052_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1053,1767534587,1767545055,10468,1207,1,1,1,main$async_dispatch_1053_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1054,1767546861,1767558763,11902,1208,1,1,1,main$async_dispatch_1054_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1055,1767560624,1767569784,9160,1209,1,1,1,main$async_dispatch_1055_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1056,1767571909,1767596674,24765,1210,1,1,1,main$async_dispatch_1056_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1057,1767599533,1768110368,510835,1211,8,1,1,main$async_dispatch_1057_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+1058,1768113428,1768673947,560519,1212,16,1,1,main$async_dispatch_1058_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+1059,1768676468,1771981867,3305399,1213,8,1,1,main$async_dispatch_1059_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+1060,1771985374,1775741129,3755755,1214,128,1,1,main$async_dispatch_1060_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+1061,1775745614,1776148943,403329,1215,8,1,1,main$async_dispatch_1061_elementwise_transpose_32x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+1062,1776152344,1776469698,317354,1216,16,1,1,main$async_dispatch_1062_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+1063,1776473148,1776520457,47309,1217,1,1,1,main$async_dispatch_1063_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+1064,1776523481,1776818139,294658,1218,16,1,1,main$async_dispatch_1064_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+1065,1776821635,1776865393,43758,1219,1,1,1,main$async_dispatch_1065_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+1066,1776868111,1778160457,1292346,1220,8,1,1,main$async_dispatch_1066_elementwise_32x1024_f32,Rocket scalar,elementwise/other,0
+1067,1778163706,1778317802,154096,1221,1,1,1,main$async_dispatch_1067_elementwise_4x1024_f32,Rocket scalar,elementwise/other,0
+1068,1778320318,1778467432,147114,1222,8,1,1,main$async_dispatch_1068_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+1069,1778470396,1778676523,206127,1223,8,1,1,main$async_dispatch_1069_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+1070,1778679903,1783456497,4776594,1224,32,1,1,main$async_dispatch_1070_batch_matmul_32x16x16x64_f32,Rocket scalar,matmul,524288
+1071,1783459876,1784932099,1472223,1225,32,1,1,main$async_dispatch_1071_reduction_512x16_f32,Rocket scalar,elementwise/other,0
+1072,1784935083,1784985582,50499,1226,1,1,1,main$async_dispatch_1072_elementwise_1x32x16x8_f32,Rocket scalar,elementwise/other,0
+1073,1784988188,1785010197,22009,1227,1,1,1,main$async_dispatch_1073_elementwise_32x16x4_f32,Rocket scalar,elementwise/other,0
+1074,1785012796,1785022383,9587,1228,1,1,1,main$async_dispatch_1074_elementwise_1x32x16x2_f32,Rocket scalar,elementwise/other,0
+1075,1785024359,1785052725,28366,1229,1,1,1,main$async_dispatch_1075_elementwise_32x16_f32,Rocket scalar,elementwise/other,0
+1076,1785054779,1785123083,68304,1230,2,1,1,main$async_dispatch_1076_elementwise_512x16_f32,Rocket scalar,elementwise/other,0
+1077,1785125742,1790340429,5214687,1231,32,1,1,main$async_dispatch_1077_batch_matmul_32x16x64x16_f32,Rocket scalar,matmul,524288
+1078,1790343784,1790659458,315674,1232,8,1,1,main$async_dispatch_1078_transpose_32x16x64_f32,Rocket scalar,elementwise/other,0
+1079,1790662054,1791219511,557457,1233,16,1,1,main$async_dispatch_1079_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+1080,1791222038,1794450001,3227963,1234,8,1,1,main$async_dispatch_1080_elementwise_transpose_16x32x64_f32xf32xi8,Rocket scalar,elementwise/other,0
+1081,1794454172,1799588410,5134238,1235,128,1,1,main$async_dispatch_1081_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+1082,1799592829,1799599883,7054,1236,1,1,1,main$async_dispatch_1082_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1083,1799601738,1799606161,4423,1237,1,1,1,main$async_dispatch_1083_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1084,1799608116,1799613727,5611,1238,1,1,1,main$async_dispatch_1084_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1085,1799615563,1799619766,4203,1239,1,1,1,main$async_dispatch_1085_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1086,1799621683,1799646760,25077,1240,1,1,1,main$async_dispatch_1086_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1087,1799648658,1799669565,20907,1241,1,1,1,main$async_dispatch_1087_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1088,1799671648,1799686830,15182,1242,1,1,1,main$async_dispatch_1088_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1089,1799688813,1799703122,14309,1243,1,1,1,main$async_dispatch_1089_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1090,1799704983,1799714584,9601,1244,1,1,1,main$async_dispatch_1090_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1091,1799716305,1799728378,12073,1245,1,1,1,main$async_dispatch_1091_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1092,1799730318,1799740186,9868,1246,1,1,1,main$async_dispatch_1092_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1093,1799742059,1799755370,13311,1247,1,1,1,main$async_dispatch_1093_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1094,1799757426,1799767869,10443,1248,1,1,1,main$async_dispatch_1094_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1095,1799769675,1799781273,11598,1249,1,1,1,main$async_dispatch_1095_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1096,1799783174,1799792452,9278,1250,1,1,1,main$async_dispatch_1096_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1097,1799794483,1799821154,26671,1251,1,1,1,main$async_dispatch_1097_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1098,1799824227,1800335647,511420,1252,8,1,1,main$async_dispatch_1098_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+1099,1800338280,1800901047,562767,1253,16,1,1,main$async_dispatch_1099_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+1100,1800903683,1804175279,3271596,1254,8,1,1,main$async_dispatch_1100_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+1101,1804178491,1812661965,8483474,1255,352,1,1,main$async_dispatch_1101_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+1102,1812666840,1850785330,38118490,1256,352,1,1,main$async_dispatch_1102_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+1103,1850789066,1852431065,1641999,1257,16,1,1,main$async_dispatch_1103_reduction_16x5632_f32,Rocket scalar,elementwise/other,0
+1104,1852433923,1861460782,9026859,1258,22,1,1,main$async_dispatch_1104_elementwise_16x5632_f32xf32xi8,Rocket scalar,elementwise/other,0
+1105,1861465526,1877310182,15844656,1259,128,1,1,main$async_dispatch_1105_matmul_16x2048x5632_i8xi8xi32,Gemmini,matmul,184549376
+1106,1877314209,1877321607,7398,1260,1,1,1,main$async_dispatch_1106_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1107,1877323368,1877327676,4308,1261,1,1,1,main$async_dispatch_1107_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1108,1877329584,1877334823,5239,1262,1,1,1,main$async_dispatch_1108_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1109,1877336558,1877340661,4103,1263,1,1,1,main$async_dispatch_1109_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1110,1877342579,1877369122,26543,1264,1,1,1,main$async_dispatch_1110_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1111,1877371122,1877391895,20773,1265,1,1,1,main$async_dispatch_1111_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1112,1877394096,1877409367,15271,1266,1,1,1,main$async_dispatch_1112_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1113,1877411426,1877426575,15149,1267,1,1,1,main$async_dispatch_1113_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1114,1877428498,1877437731,9233,1268,1,1,1,main$async_dispatch_1114_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1115,1877439796,1877452382,12586,1269,1,1,1,main$async_dispatch_1115_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1116,1877454241,1877463762,9521,1270,1,1,1,main$async_dispatch_1116_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1117,1877465723,1877479310,13587,1271,1,1,1,main$async_dispatch_1117_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1118,1877481274,1877491651,10377,1272,1,1,1,main$async_dispatch_1118_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1119,1877493435,1877505477,12042,1273,1,1,1,main$async_dispatch_1119_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1120,1877507328,1877516768,9440,1274,1,1,1,main$async_dispatch_1120_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1121,1877518940,1877543976,25036,1275,1,1,1,main$async_dispatch_1121_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1122,1877546932,1878057309,510377,1276,8,1,1,main$async_dispatch_1122_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+1123,1878060171,1878620701,560530,1277,16,1,1,main$async_dispatch_1123_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+1124,1878623337,1881929586,3306249,1278,8,1,1,main$async_dispatch_1124_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+1125,1881932892,1885692286,3759394,1279,128,1,1,main$async_dispatch_1125_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+1126,1885696837,1886100503,403666,1280,8,1,1,main$async_dispatch_1126_elementwise_transpose_32x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+1127,1886103847,1886422199,318352,1281,16,1,1,main$async_dispatch_1127_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+1128,1886425922,1886473094,47172,1282,1,1,1,main$async_dispatch_1128_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+1129,1886475931,1886771153,295222,1283,16,1,1,main$async_dispatch_1129_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+1130,1886774694,1886820278,45584,1284,1,1,1,main$async_dispatch_1130_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+1131,1886823017,1888114262,1291245,1285,8,1,1,main$async_dispatch_1131_elementwise_32x1024_f32,Rocket scalar,elementwise/other,0
+1132,1888117679,1888271343,153664,1286,1,1,1,main$async_dispatch_1132_elementwise_4x1024_f32,Rocket scalar,elementwise/other,0
+1133,1888273964,1888421750,147786,1287,8,1,1,main$async_dispatch_1133_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+1134,1888424561,1888629852,205291,1288,8,1,1,main$async_dispatch_1134_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+1135,1888633205,1893410029,4776824,1289,32,1,1,main$async_dispatch_1135_batch_matmul_32x16x16x64_f32,Rocket scalar,matmul,524288
+1136,1893413449,1894881388,1467939,1290,32,1,1,main$async_dispatch_1136_reduction_512x16_f32,Rocket scalar,elementwise/other,0
+1137,1894884217,1894934088,49871,1291,1,1,1,main$async_dispatch_1137_elementwise_1x32x16x8_f32,Rocket scalar,elementwise/other,0
+1138,1894936924,1894959139,22215,1292,1,1,1,main$async_dispatch_1138_elementwise_32x16x4_f32,Rocket scalar,elementwise/other,0
+1139,1894961349,1894971103,9754,1293,1,1,1,main$async_dispatch_1139_elementwise_1x32x16x2_f32,Rocket scalar,elementwise/other,0
+1140,1894973149,1895001560,28411,1294,1,1,1,main$async_dispatch_1140_elementwise_32x16_f32,Rocket scalar,elementwise/other,0
+1141,1895003553,1895072072,68519,1295,2,1,1,main$async_dispatch_1141_elementwise_512x16_f32,Rocket scalar,elementwise/other,0
+1142,1895074727,1900287669,5212942,1296,32,1,1,main$async_dispatch_1142_batch_matmul_32x16x64x16_f32,Rocket scalar,matmul,524288
+1143,1900291312,1900607192,315880,1297,8,1,1,main$async_dispatch_1143_transpose_32x16x64_f32,Rocket scalar,elementwise/other,0
+1144,1900610056,1901167621,557565,1298,16,1,1,main$async_dispatch_1144_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+1145,1901170010,1904398111,3228101,1299,8,1,1,main$async_dispatch_1145_elementwise_transpose_16x32x64_f32xf32xi8,Rocket scalar,elementwise/other,0
+1146,1904402455,1909606774,5204319,1300,128,1,1,main$async_dispatch_1146_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+1147,1909611136,1909618057,6921,1301,1,1,1,main$async_dispatch_1147_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1148,1909619957,1909624189,4232,1302,1,1,1,main$async_dispatch_1148_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1149,1909626089,1909631600,5511,1303,1,1,1,main$async_dispatch_1149_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1150,1909633587,1909637804,4217,1304,1,1,1,main$async_dispatch_1150_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1151,1909639652,1909665137,25485,1305,1,1,1,main$async_dispatch_1151_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1152,1909667143,1909687742,20599,1306,1,1,1,main$async_dispatch_1152_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1153,1909689781,1909704974,15193,1307,1,1,1,main$async_dispatch_1153_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1154,1909707136,1909721695,14559,1308,1,1,1,main$async_dispatch_1154_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1155,1909723561,1909733109,9548,1309,1,1,1,main$async_dispatch_1155_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1156,1909735007,1909747189,12182,1310,1,1,1,main$async_dispatch_1156_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1157,1909749129,1909758804,9675,1311,1,1,1,main$async_dispatch_1157_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1158,1909760799,1909773986,13187,1312,1,1,1,main$async_dispatch_1158_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1159,1909775933,1909786236,10303,1313,1,1,1,main$async_dispatch_1159_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1160,1909788176,1909799524,11348,1314,1,1,1,main$async_dispatch_1160_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1161,1909801357,1909810676,9319,1315,1,1,1,main$async_dispatch_1161_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1162,1909812961,1909840085,27124,1316,1,1,1,main$async_dispatch_1162_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1163,1909843018,1910367181,524163,1317,8,1,1,main$async_dispatch_1163_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+1164,1910369888,1910932405,562517,1318,16,1,1,main$async_dispatch_1164_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+1165,1910935022,1914207026,3272004,1319,8,1,1,main$async_dispatch_1165_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+1166,1914210406,1922787163,8576757,1320,352,1,1,main$async_dispatch_1166_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+1167,1922791910,1960816473,38024563,1321,352,1,1,main$async_dispatch_1167_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+1168,1960820489,1962463469,1642980,1322,16,1,1,main$async_dispatch_1168_reduction_16x5632_f32,Rocket scalar,elementwise/other,0
+1169,1962466210,1971493692,9027482,1323,22,1,1,main$async_dispatch_1169_elementwise_16x5632_f32xf32xi8,Rocket scalar,elementwise/other,0
+1170,1971498457,1987345470,15847013,1324,128,1,1,main$async_dispatch_1170_matmul_16x2048x5632_i8xi8xi32,Gemmini,matmul,184549376
+1171,1987349423,1987356772,7349,1325,1,1,1,main$async_dispatch_1171_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1172,1987358694,1987362815,4121,1326,1,1,1,main$async_dispatch_1172_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1173,1987364559,1987369768,5209,1327,1,1,1,main$async_dispatch_1173_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1174,1987371521,1987375687,4166,1328,1,1,1,main$async_dispatch_1174_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1175,1987377500,1987403637,26137,1329,1,1,1,main$async_dispatch_1175_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1176,1987405678,1987426311,20633,1330,1,1,1,main$async_dispatch_1176_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1177,1987428442,1987443641,15199,1331,1,1,1,main$async_dispatch_1177_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1178,1987445639,1987460944,15305,1332,1,1,1,main$async_dispatch_1178_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1179,1987462700,1987471981,9281,1333,1,1,1,main$async_dispatch_1179_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1180,1987473812,1987486563,12751,1334,1,1,1,main$async_dispatch_1180_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1181,1987488540,1987497958,9418,1335,1,1,1,main$async_dispatch_1181_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1182,1987499943,1987513670,13727,1336,1,1,1,main$async_dispatch_1182_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1183,1987515605,1987526146,10541,1337,1,1,1,main$async_dispatch_1183_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1184,1987528061,1987540249,12188,1338,1,1,1,main$async_dispatch_1184_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1185,1987542191,1987551579,9388,1339,1,1,1,main$async_dispatch_1185_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1186,1987553671,1987578811,25140,1340,1,1,1,main$async_dispatch_1186_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1187,1987581833,1988107713,525880,1341,8,1,1,main$async_dispatch_1187_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+1188,1988110718,1988671217,560499,1342,16,1,1,main$async_dispatch_1188_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+1189,1988673824,1991980056,3306232,1343,8,1,1,main$async_dispatch_1189_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+1190,1991983236,1995767241,3784005,1344,128,1,1,main$async_dispatch_1190_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+1191,1995771709,1996186185,414476,1345,8,1,1,main$async_dispatch_1191_elementwise_transpose_32x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+1192,1996189890,1996503213,313323,1346,16,1,1,main$async_dispatch_1192_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+1193,1996506895,1996552604,45709,1347,1,1,1,main$async_dispatch_1193_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+1194,1996555452,1996857068,301616,1348,16,1,1,main$async_dispatch_1194_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+1195,1996860452,1996905621,45169,1349,1,1,1,main$async_dispatch_1195_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+1196,1996908506,1998199945,1291439,1350,8,1,1,main$async_dispatch_1196_elementwise_32x1024_f32,Rocket scalar,elementwise/other,0
+1197,1998203241,1998356841,153600,1351,1,1,1,main$async_dispatch_1197_elementwise_4x1024_f32,Rocket scalar,elementwise/other,0
+1198,1998359550,1998508391,148841,1352,8,1,1,main$async_dispatch_1198_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+1199,1998511336,1998714806,203470,1353,8,1,1,main$async_dispatch_1199_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+1200,1998718203,2003495001,4776798,1354,32,1,1,main$async_dispatch_1200_batch_matmul_32x16x16x64_f32,Rocket scalar,matmul,524288
+1201,2003497976,2004966691,1468715,1355,32,1,1,main$async_dispatch_1201_reduction_512x16_f32,Rocket scalar,elementwise/other,0
+1202,2004969840,2005019785,49945,1356,1,1,1,main$async_dispatch_1202_elementwise_1x32x16x8_f32,Rocket scalar,elementwise/other,0
+1203,2005022224,2005044556,22332,1357,1,1,1,main$async_dispatch_1203_elementwise_32x16x4_f32,Rocket scalar,elementwise/other,0
+1204,2005047088,2005056333,9245,1358,1,1,1,main$async_dispatch_1204_elementwise_1x32x16x2_f32,Rocket scalar,elementwise/other,0
+1205,2005058311,2005086540,28229,1359,1,1,1,main$async_dispatch_1205_elementwise_32x16_f32,Rocket scalar,elementwise/other,0
+1206,2005088481,2005156983,68502,1360,2,1,1,main$async_dispatch_1206_elementwise_512x16_f32,Rocket scalar,elementwise/other,0
+1207,2005159545,2010372085,5212540,1361,32,1,1,main$async_dispatch_1207_batch_matmul_32x16x64x16_f32,Rocket scalar,matmul,524288
+1208,2010375695,2010691719,316024,1362,8,1,1,main$async_dispatch_1208_transpose_32x16x64_f32,Rocket scalar,elementwise/other,0
+1209,2010694421,2011251615,557194,1363,16,1,1,main$async_dispatch_1209_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+1210,2011254049,2014482516,3228467,1364,8,1,1,main$async_dispatch_1210_elementwise_transpose_16x32x64_f32xf32xi8,Rocket scalar,elementwise/other,0
+1211,2014486959,2019692019,5205060,1365,128,1,1,main$async_dispatch_1211_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+1212,2019696061,2019703026,6965,1366,1,1,1,main$async_dispatch_1212_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1213,2019704878,2019708990,4112,1367,1,1,1,main$async_dispatch_1213_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1214,2019710719,2019716175,5456,1368,1,1,1,main$async_dispatch_1214_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1215,2019717905,2019722045,4140,1369,1,1,1,main$async_dispatch_1215_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1216,2019724026,2019749084,25058,1370,1,1,1,main$async_dispatch_1216_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1217,2019751107,2019771996,20889,1371,1,1,1,main$async_dispatch_1217_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1218,2019774281,2019789533,15252,1372,1,1,1,main$async_dispatch_1218_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1219,2019791500,2019805846,14346,1373,1,1,1,main$async_dispatch_1219_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1220,2019807836,2019817324,9488,1374,1,1,1,main$async_dispatch_1220_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1221,2019819183,2019831473,12290,1375,1,1,1,main$async_dispatch_1221_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1222,2019833376,2019843031,9655,1376,1,1,1,main$async_dispatch_1222_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1223,2019844856,2019858105,13249,1377,1,1,1,main$async_dispatch_1223_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1224,2019860300,2019870689,10389,1378,1,1,1,main$async_dispatch_1224_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1225,2019872692,2019884428,11736,1379,1,1,1,main$async_dispatch_1225_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1226,2019886275,2019895475,9200,1380,1,1,1,main$async_dispatch_1226_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1227,2019897500,2019924283,26783,1381,1,1,1,main$async_dispatch_1227_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1228,2019927376,2020451982,524606,1382,8,1,1,main$async_dispatch_1228_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+1229,2020454905,2021018056,563151,1383,16,1,1,main$async_dispatch_1229_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+1230,2021020545,2024291834,3271289,1384,8,1,1,main$async_dispatch_1230_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+1231,2024295069,2032866640,8571571,1385,352,1,1,main$async_dispatch_1231_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+1232,2032871729,2070901043,38029314,1386,352,1,1,main$async_dispatch_1232_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+1233,2070905083,2072547013,1641930,1387,16,1,1,main$async_dispatch_1233_reduction_16x5632_f32,Rocket scalar,elementwise/other,0
+1234,2072549806,2081575706,9025900,1388,22,1,1,main$async_dispatch_1234_elementwise_16x5632_f32xf32xi8,Rocket scalar,elementwise/other,0
+1235,2081580514,2097444858,15864344,1389,128,1,1,main$async_dispatch_1235_matmul_16x2048x5632_i8xi8xi32,Gemmini,matmul,184549376
+1236,2097448701,2097456106,7405,1390,1,1,1,main$async_dispatch_1236_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1237,2097457961,2097462356,4395,1391,1,1,1,main$async_dispatch_1237_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1238,2097464262,2097469453,5191,1392,1,1,1,main$async_dispatch_1238_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1239,2097471099,2097475164,4065,1393,1,1,1,main$async_dispatch_1239_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1240,2097477108,2097503290,26182,1394,1,1,1,main$async_dispatch_1240_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1241,2097505286,2097525866,20580,1395,1,1,1,main$async_dispatch_1241_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1242,2097527952,2097543208,15256,1396,1,1,1,main$async_dispatch_1242_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1243,2097545085,2097560288,15203,1397,1,1,1,main$async_dispatch_1243_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1244,2097562116,2097571771,9655,1398,1,1,1,main$async_dispatch_1244_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1245,2097573593,2097586455,12862,1399,1,1,1,main$async_dispatch_1245_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1246,2097588371,2097598118,9747,1400,1,1,1,main$async_dispatch_1246_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1247,2097600135,2097613779,13644,1401,1,1,1,main$async_dispatch_1247_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1248,2097615668,2097625963,10295,1402,1,1,1,main$async_dispatch_1248_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1249,2097627851,2097639883,12032,1403,1,1,1,main$async_dispatch_1249_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1250,2097641800,2097651051,9251,1404,1,1,1,main$async_dispatch_1250_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1251,2097652998,2097677960,24962,1405,1,1,1,main$async_dispatch_1251_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1252,2097680957,2098206755,525798,1406,8,1,1,main$async_dispatch_1252_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+1253,2098209575,2098768907,559332,1407,16,1,1,main$async_dispatch_1253_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+1254,2098771548,2102077706,3306158,1408,8,1,1,main$async_dispatch_1254_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+1255,2102081013,2105867416,3786403,1409,128,1,1,main$async_dispatch_1255_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+1256,2105871776,2106286300,414524,1410,8,1,1,main$async_dispatch_1256_elementwise_transpose_32x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+1257,2106289589,2106604376,314787,1411,16,1,1,main$async_dispatch_1257_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+1258,2106608085,2106653933,45848,1412,1,1,1,main$async_dispatch_1258_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+1259,2106656765,2106954889,298124,1413,16,1,1,main$async_dispatch_1259_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+1260,2106958432,2107002361,43929,1414,1,1,1,main$async_dispatch_1260_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+1261,2107005035,2108297475,1292440,1415,8,1,1,main$async_dispatch_1261_elementwise_32x1024_f32,Rocket scalar,elementwise/other,0
+1262,2108300653,2108454746,154093,1416,1,1,1,main$async_dispatch_1262_elementwise_4x1024_f32,Rocket scalar,elementwise/other,0
+1263,2108457150,2108605444,148294,1417,8,1,1,main$async_dispatch_1263_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+1264,2108608260,2108812528,204268,1418,8,1,1,main$async_dispatch_1264_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+1265,2108815923,2113591945,4776022,1419,32,1,1,main$async_dispatch_1265_batch_matmul_32x16x16x64_f32,Rocket scalar,matmul,524288
+1266,2113595196,2115063809,1468613,1420,32,1,1,main$async_dispatch_1266_reduction_512x16_f32,Rocket scalar,elementwise/other,0
+1267,2115066579,2115116842,50263,1421,1,1,1,main$async_dispatch_1267_elementwise_1x32x16x8_f32,Rocket scalar,elementwise/other,0
+1268,2115119480,2115142034,22554,1422,1,1,1,main$async_dispatch_1268_elementwise_32x16x4_f32,Rocket scalar,elementwise/other,0
+1269,2115144276,2115153834,9558,1423,1,1,1,main$async_dispatch_1269_elementwise_1x32x16x2_f32,Rocket scalar,elementwise/other,0
+1270,2115155828,2115183532,27704,1424,1,1,1,main$async_dispatch_1270_elementwise_32x16_f32,Rocket scalar,elementwise/other,0
+1271,2115185400,2115253948,68548,1425,2,1,1,main$async_dispatch_1271_elementwise_512x16_f32,Rocket scalar,elementwise/other,0
+1272,2115256625,2120471425,5214800,1426,32,1,1,main$async_dispatch_1272_batch_matmul_32x16x64x16_f32,Rocket scalar,matmul,524288
+1273,2120475306,2120790591,315285,1427,8,1,1,main$async_dispatch_1273_transpose_32x16x64_f32,Rocket scalar,elementwise/other,0
+1274,2120793386,2121351341,557955,1428,16,1,1,main$async_dispatch_1274_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+1275,2121353740,2124581712,3227972,1429,8,1,1,main$async_dispatch_1275_elementwise_transpose_16x32x64_f32xf32xi8,Rocket scalar,elementwise/other,0
+1276,2124585852,2129718378,5132526,1430,128,1,1,main$async_dispatch_1276_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+1277,2129722549,2129729212,6663,1431,1,1,1,main$async_dispatch_1277_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1278,2129731143,2129735326,4183,1432,1,1,1,main$async_dispatch_1278_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1279,2129737055,2129742788,5733,1433,1,1,1,main$async_dispatch_1279_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1280,2129744607,2129748927,4320,1434,1,1,1,main$async_dispatch_1280_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1281,2129750828,2129775802,24974,1435,1,1,1,main$async_dispatch_1281_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1282,2129777844,2129798738,20894,1436,1,1,1,main$async_dispatch_1282_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1283,2129800828,2129815965,15137,1437,1,1,1,main$async_dispatch_1283_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1284,2129818030,2129832597,14567,1438,1,1,1,main$async_dispatch_1284_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1285,2129834486,2129843990,9504,1439,1,1,1,main$async_dispatch_1285_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1286,2129845806,2129857860,12054,1440,1,1,1,main$async_dispatch_1286_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1287,2129859726,2129869374,9648,1441,1,1,1,main$async_dispatch_1287_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1288,2129871413,2129884883,13470,1442,1,1,1,main$async_dispatch_1288_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1289,2129886867,2129897415,10548,1443,1,1,1,main$async_dispatch_1289_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1290,2129899443,2129911110,11667,1444,1,1,1,main$async_dispatch_1290_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1291,2129912921,2129922084,9163,1445,1,1,1,main$async_dispatch_1291_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1292,2129924052,2129951045,26993,1446,1,1,1,main$async_dispatch_1292_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1293,2129953973,2130464747,510774,1447,8,1,1,main$async_dispatch_1293_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+1294,2130467518,2131029865,562347,1448,16,1,1,main$async_dispatch_1294_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+1295,2131032351,2134304395,3272044,1449,8,1,1,main$async_dispatch_1295_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+1296,2134307646,2142790373,8482727,1450,352,1,1,main$async_dispatch_1296_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+1297,2142795205,2180911779,38116574,1451,352,1,1,main$async_dispatch_1297_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+1298,2180915950,2182556231,1640281,1452,16,1,1,main$async_dispatch_1298_reduction_16x5632_f32,Rocket scalar,elementwise/other,0
+1299,2182559099,2191583144,9024045,1453,22,1,1,main$async_dispatch_1299_elementwise_16x5632_f32xf32xi8,Rocket scalar,elementwise/other,0
+1300,2191587914,2207436972,15849058,1454,128,1,1,main$async_dispatch_1300_matmul_16x2048x5632_i8xi8xi32,Gemmini,matmul,184549376
+1301,2207440795,2207448097,7302,1455,1,1,1,main$async_dispatch_1301_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1302,2207449951,2207454292,4341,1456,1,1,1,main$async_dispatch_1302_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1303,2207455940,2207461162,5222,1457,1,1,1,main$async_dispatch_1303_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1304,2207462935,2207467037,4102,1458,1,1,1,main$async_dispatch_1304_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1305,2207468939,2207494927,25988,1459,1,1,1,main$async_dispatch_1305_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1306,2207496929,2207517925,20996,1460,1,1,1,main$async_dispatch_1306_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1307,2207519885,2207535182,15297,1461,1,1,1,main$async_dispatch_1307_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1308,2207537209,2207552111,14902,1462,1,1,1,main$async_dispatch_1308_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1309,2207554217,2207563453,9236,1463,1,1,1,main$async_dispatch_1309_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1310,2207565318,2207578047,12729,1464,1,1,1,main$async_dispatch_1310_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1311,2207579929,2207589270,9341,1465,1,1,1,main$async_dispatch_1311_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1312,2207591245,2207604690,13445,1466,1,1,1,main$async_dispatch_1312_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1313,2207606700,2207617336,10636,1467,1,1,1,main$async_dispatch_1313_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1314,2207619251,2207631426,12175,1468,1,1,1,main$async_dispatch_1314_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1315,2207633245,2207642515,9270,1469,1,1,1,main$async_dispatch_1315_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1316,2207644693,2207670088,25395,1470,1,1,1,main$async_dispatch_1316_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1317,2207673022,2208184076,511054,1471,8,1,1,main$async_dispatch_1317_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+1318,2208186765,2208747534,560769,1472,16,1,1,main$async_dispatch_1318_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+1319,2208750129,2212055847,3305718,1473,8,1,1,main$async_dispatch_1319_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+1320,2212059031,2215819413,3760382,1474,128,1,1,main$async_dispatch_1320_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+1321,2215824193,2216226344,402151,1475,8,1,1,main$async_dispatch_1321_elementwise_transpose_32x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+1322,2216229743,2216550605,320862,1476,16,1,1,main$async_dispatch_1322_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+1323,2216554020,2216601392,47372,1477,1,1,1,main$async_dispatch_1323_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+1324,2216604261,2216901932,297671,1478,16,1,1,main$async_dispatch_1324_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+1325,2216905628,2216949619,43991,1479,1,1,1,main$async_dispatch_1325_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+1326,2216952580,2218243543,1290963,1480,8,1,1,main$async_dispatch_1326_elementwise_32x1024_f32,Rocket scalar,elementwise/other,0
+1327,2218246844,2218400623,153779,1481,1,1,1,main$async_dispatch_1327_elementwise_4x1024_f32,Rocket scalar,elementwise/other,0
+1328,2218403260,2218552658,149398,1482,8,1,1,main$async_dispatch_1328_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+1329,2218555614,2218760043,204429,1483,8,1,1,main$async_dispatch_1329_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+1330,2218763386,2223539067,4775681,1484,32,1,1,main$async_dispatch_1330_batch_matmul_32x16x16x64_f32,Rocket scalar,matmul,524288
+1331,2223542043,2225010823,1468780,1485,32,1,1,main$async_dispatch_1331_reduction_512x16_f32,Rocket scalar,elementwise/other,0
+1332,2225013733,2225063594,49861,1486,1,1,1,main$async_dispatch_1332_elementwise_1x32x16x8_f32,Rocket scalar,elementwise/other,0
+1333,2225066148,2225088188,22040,1487,1,1,1,main$async_dispatch_1333_elementwise_32x16x4_f32,Rocket scalar,elementwise/other,0
+1334,2225090690,2225100373,9683,1488,1,1,1,main$async_dispatch_1334_elementwise_1x32x16x2_f32,Rocket scalar,elementwise/other,0
+1335,2225102333,2225130410,28077,1489,1,1,1,main$async_dispatch_1335_elementwise_32x16_f32,Rocket scalar,elementwise/other,0
+1336,2225132441,2225200991,68550,1490,2,1,1,main$async_dispatch_1336_elementwise_512x16_f32,Rocket scalar,elementwise/other,0
+1337,2225203596,2230417050,5213454,1491,32,1,1,main$async_dispatch_1337_batch_matmul_32x16x64x16_f32,Rocket scalar,matmul,524288
+1338,2230420698,2230737137,316439,1492,8,1,1,main$async_dispatch_1338_transpose_32x16x64_f32,Rocket scalar,elementwise/other,0
+1339,2230739872,2231297459,557587,1493,16,1,1,main$async_dispatch_1339_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+1340,2231299915,2234528603,3228688,1494,8,1,1,main$async_dispatch_1340_elementwise_transpose_16x32x64_f32xf32xi8,Rocket scalar,elementwise/other,0
+1341,2234532881,2239670597,5137716,1495,128,1,1,main$async_dispatch_1341_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+1342,2239674914,2239681557,6643,1496,1,1,1,main$async_dispatch_1342_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1343,2239683418,2239687594,4176,1497,1,1,1,main$async_dispatch_1343_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1344,2239689526,2239694959,5433,1498,1,1,1,main$async_dispatch_1344_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1345,2239696670,2239700955,4285,1499,1,1,1,main$async_dispatch_1345_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1346,2239703012,2239728154,25142,1500,1,1,1,main$async_dispatch_1346_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1347,2239730067,2239750991,20924,1501,1,1,1,main$async_dispatch_1347_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1348,2239753050,2239768249,15199,1502,1,1,1,main$async_dispatch_1348_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1349,2239770294,2239784602,14308,1503,1,1,1,main$async_dispatch_1349_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1350,2239786489,2239795949,9460,1504,1,1,1,main$async_dispatch_1350_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1351,2239797757,2239810183,12426,1505,1,1,1,main$async_dispatch_1351_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1352,2239812208,2239821715,9507,1506,1,1,1,main$async_dispatch_1352_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1353,2239823620,2239836725,13105,1507,1,1,1,main$async_dispatch_1353_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1354,2239838653,2239849164,10511,1508,1,1,1,main$async_dispatch_1354_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1355,2239850970,2239862562,11592,1509,1,1,1,main$async_dispatch_1355_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1356,2239864527,2239873885,9358,1510,1,1,1,main$async_dispatch_1356_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1357,2239876049,2239902623,26574,1511,1,1,1,main$async_dispatch_1357_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1358,2239905585,2240415757,510172,1512,8,1,1,main$async_dispatch_1358_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+1359,2240418608,2240982180,563572,1513,16,1,1,main$async_dispatch_1359_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+1360,2240984825,2244256908,3272083,1514,8,1,1,main$async_dispatch_1360_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+1361,2244260123,2252745274,8485151,1515,352,1,1,main$async_dispatch_1361_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+1362,2252750180,2290869946,38119766,1516,352,1,1,main$async_dispatch_1362_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+1363,2290873447,2292515865,1642418,1517,16,1,1,main$async_dispatch_1363_reduction_16x5632_f32,Rocket scalar,elementwise/other,0
+1364,2292518643,2301544846,9026203,1518,22,1,1,main$async_dispatch_1364_elementwise_16x5632_f32xf32xi8,Rocket scalar,elementwise/other,0
+1365,2301549496,2317393101,15843605,1519,128,1,1,main$async_dispatch_1365_matmul_16x2048x5632_i8xi8xi32,Gemmini,matmul,184549376
+1366,2317396939,2317404245,7306,1520,1,1,1,main$async_dispatch_1366_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1367,2317405952,2317410120,4168,1521,1,1,1,main$async_dispatch_1367_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1368,2317411954,2317417178,5224,1522,1,1,1,main$async_dispatch_1368_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1369,2317418916,2317423065,4149,1523,1,1,1,main$async_dispatch_1369_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1370,2317424947,2317451298,26351,1524,1,1,1,main$async_dispatch_1370_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1371,2317453440,2317473838,20398,1525,1,1,1,main$async_dispatch_1371_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1372,2317476057,2317491052,14995,1526,1,1,1,main$async_dispatch_1372_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1373,2317493313,2317508519,15206,1527,1,1,1,main$async_dispatch_1373_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1374,2317510345,2317519709,9364,1528,1,1,1,main$async_dispatch_1374_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1375,2317521504,2317533845,12341,1529,1,1,1,main$async_dispatch_1375_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1376,2317535812,2317545028,9216,1530,1,1,1,main$async_dispatch_1376_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1377,2317546973,2317560676,13703,1531,1,1,1,main$async_dispatch_1377_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1378,2317562664,2317573106,10442,1532,1,1,1,main$async_dispatch_1378_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1379,2317574955,2317587098,12143,1533,1,1,1,main$async_dispatch_1379_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1380,2317588887,2317598249,9362,1534,1,1,1,main$async_dispatch_1380_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1381,2317600219,2317625509,25290,1535,1,1,1,main$async_dispatch_1381_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1382,2317628355,2318139588,511233,1536,8,1,1,main$async_dispatch_1382_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+1383,2318142569,2318702777,560208,1537,16,1,1,main$async_dispatch_1383_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+1384,2318705409,2322011168,3305759,1538,8,1,1,main$async_dispatch_1384_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+1385,2322014407,2325770870,3756463,1539,128,1,1,main$async_dispatch_1385_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+1386,2325775178,2326178702,403524,1540,8,1,1,main$async_dispatch_1386_elementwise_transpose_32x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+1387,2326182181,2326502605,320424,1541,16,1,1,main$async_dispatch_1387_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+1388,2326506234,2326553629,47395,1542,1,1,1,main$async_dispatch_1388_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+1389,2326556593,2326853114,296521,1543,16,1,1,main$async_dispatch_1389_matmul_16x256x2048_i8xi8xi32,Gemmini,matmul,8388608
+1390,2326856751,2326901898,45147,1544,1,1,1,main$async_dispatch_1390_elementwise_transpose_4x16x64_i32xf32xf32xf32,Rocket scalar,elementwise/other,0
+1391,2326904533,2328195789,1291256,1545,8,1,1,main$async_dispatch_1391_elementwise_32x1024_f32,Rocket scalar,elementwise/other,0
+1392,2328198980,2328353126,154146,1546,1,1,1,main$async_dispatch_1392_elementwise_4x1024_f32,Rocket scalar,elementwise/other,0
+1393,2328355633,2328502378,146745,1547,8,1,1,main$async_dispatch_1393_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+1394,2328505317,2328708642,203325,1548,8,1,1,main$async_dispatch_1394_elementwise_broadcast_4x8x1024_f32,Rocket scalar,elementwise/other,0
+1395,2328711971,2333487433,4775462,1549,32,1,1,main$async_dispatch_1395_batch_matmul_32x16x16x64_f32,Rocket scalar,matmul,524288
+1396,2333490772,2334959096,1468324,1550,32,1,1,main$async_dispatch_1396_reduction_512x16_f32,Rocket scalar,elementwise/other,0
+1397,2334962121,2335011963,49842,1551,1,1,1,main$async_dispatch_1397_elementwise_1x32x16x8_f32,Rocket scalar,elementwise/other,0
+1398,2335014501,2335037007,22506,1552,1,1,1,main$async_dispatch_1398_elementwise_32x16x4_f32,Rocket scalar,elementwise/other,0
+1399,2335039328,2335049093,9765,1553,1,1,1,main$async_dispatch_1399_elementwise_1x32x16x2_f32,Rocket scalar,elementwise/other,0
+1400,2335051387,2335079294,27907,1554,1,1,1,main$async_dispatch_1400_elementwise_32x16_f32,Rocket scalar,elementwise/other,0
+1401,2335081157,2335149380,68223,1555,2,1,1,main$async_dispatch_1401_elementwise_512x16_f32,Rocket scalar,elementwise/other,0
+1402,2335152321,2340364032,5211711,1556,32,1,1,main$async_dispatch_1402_batch_matmul_32x16x64x16_f32,Rocket scalar,matmul,524288
+1403,2340367210,2340683173,315963,1557,8,1,1,main$async_dispatch_1403_transpose_32x16x64_f32,Rocket scalar,elementwise/other,0
+1404,2340686000,2341243812,557812,1558,16,1,1,main$async_dispatch_1404_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+1405,2341246302,2344475105,3228803,1559,8,1,1,main$async_dispatch_1405_elementwise_transpose_16x32x64_f32xf32xi8,Rocket scalar,elementwise/other,0
+1406,2344479674,2349692382,5212708,1560,128,1,1,main$async_dispatch_1406_matmul_16x2048x2048_i8xi8xi32,Gemmini,matmul,67108864
+1407,2349696914,2349704021,7107,1561,1,1,1,main$async_dispatch_1407_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1408,2349706018,2349710325,4307,1562,1,1,1,main$async_dispatch_1408_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1409,2349712175,2349717577,5402,1563,1,1,1,main$async_dispatch_1409_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1410,2349719469,2349723890,4421,1564,1,1,1,main$async_dispatch_1410_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1411,2349725777,2349751448,25671,1565,1,1,1,main$async_dispatch_1411_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1412,2349753742,2349774478,20736,1566,1,1,1,main$async_dispatch_1412_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1413,2349776793,2349791852,15059,1567,1,1,1,main$async_dispatch_1413_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1414,2349793951,2349808310,14359,1568,1,1,1,main$async_dispatch_1414_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1415,2349810087,2349819527,9440,1569,1,1,1,main$async_dispatch_1415_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1416,2349821343,2349833608,12265,1570,1,1,1,main$async_dispatch_1416_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1417,2349835497,2349845142,9645,1571,1,1,1,main$async_dispatch_1417_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1418,2349847086,2349860581,13495,1572,1,1,1,main$async_dispatch_1418_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1419,2349862564,2349872927,10363,1573,1,1,1,main$async_dispatch_1419_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1420,2349874800,2349886229,11429,1574,1,1,1,main$async_dispatch_1420_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1421,2349888022,2349897385,9363,1575,1,1,1,main$async_dispatch_1421_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1422,2349899584,2349926436,26852,1576,1,1,1,main$async_dispatch_1422_elementwise_1x16x8_f32,Rocket scalar,elementwise/other,0
+1423,2349929644,2350454269,524625,1577,8,1,1,main$async_dispatch_1423_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+1424,2350457016,2351019759,562743,1578,16,1,1,main$async_dispatch_1424_reduction_16x2048_f32,Rocket scalar,elementwise/other,0
+1425,2351022165,2354294212,3272047,1579,8,1,1,main$async_dispatch_1425_elementwise_16x2048_f32xf32xi8,Rocket scalar,elementwise/other,0
+1426,2354297901,2362869936,8572035,1580,352,1,1,main$async_dispatch_1426_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+1427,2362874845,2400899676,38024831,1581,352,1,1,main$async_dispatch_1427_matmul_16x5632x2048_i8xi8xi32,Gemmini,matmul,184549376
+1428,2400903623,2402543563,1639940,1582,16,1,1,main$async_dispatch_1428_reduction_16x5632_f32,Rocket scalar,elementwise/other,0
+1429,2402546406,2411570547,9024141,1583,22,1,1,main$async_dispatch_1429_elementwise_16x5632_f32xf32xi8,Rocket scalar,elementwise/other,0
+1430,2411575443,2427432613,15857170,1584,128,1,1,main$async_dispatch_1430_matmul_16x2048x5632_i8xi8xi32,Gemmini,matmul,184549376
+1431,2427436233,2427443397,7164,1585,1,1,1,main$async_dispatch_1431_elementwise_16x8_f32,Rocket scalar,elementwise/other,0
+1432,2427445354,2427449485,4131,1586,1,1,1,main$async_dispatch_1432_elementwise_16x8_f32,Rocket scalar,elementwise/other,0
+1433,2427451218,2427456455,5237,1587,1,1,1,main$async_dispatch_1433_elementwise_16x8_f32,Rocket scalar,elementwise/other,0
+1434,2427458223,2427462417,4194,1588,1,1,1,main$async_dispatch_1434_elementwise_16x8_f32,Rocket scalar,elementwise/other,0
+1435,2427464336,2427490586,26250,1589,1,1,1,main$async_dispatch_1435_elementwise_16x8_f32,Rocket scalar,elementwise/other,0
+1436,2427492622,2427513233,20611,1590,1,1,1,main$async_dispatch_1436_elementwise_16x8_f32,Rocket scalar,elementwise/other,0
+1437,2427515404,2427530277,14873,1591,1,1,1,main$async_dispatch_1437_elementwise_16x8_f32,Rocket scalar,elementwise/other,0
+1438,2427532217,2427547323,15106,1592,1,1,1,main$async_dispatch_1438_elementwise_16x8_f32,Rocket scalar,elementwise/other,0
+1439,2427549113,2427558531,9418,1593,1,1,1,main$async_dispatch_1439_elementwise_16x8_f32,Rocket scalar,elementwise/other,0
+1440,2427560387,2427572857,12470,1594,1,1,1,main$async_dispatch_1440_elementwise_16x8_f32,Rocket scalar,elementwise/other,0
+1441,2427574760,2427583966,9206,1595,1,1,1,main$async_dispatch_1441_elementwise_16x8_f32,Rocket scalar,elementwise/other,0
+1442,2427585959,2427599423,13464,1596,1,1,1,main$async_dispatch_1442_elementwise_16x8_f32,Rocket scalar,elementwise/other,0
+1443,2427601232,2427611776,10544,1597,1,1,1,main$async_dispatch_1443_elementwise_16x8_f32,Rocket scalar,elementwise/other,0
+1444,2427613647,2427625809,12162,1598,1,1,1,main$async_dispatch_1444_elementwise_16x8_f32,Rocket scalar,elementwise/other,0
+1445,2427627659,2427636881,9222,1599,1,1,1,main$async_dispatch_1445_elementwise_16x8_f32,Rocket scalar,elementwise/other,0
+1446,2427638842,2427663840,24998,1600,1,1,1,main$async_dispatch_1446_elementwise_16x8_f32,Rocket scalar,elementwise/other,0
+1447,2427666107,2427666864,757,1601,1,1,1,main$async_dispatch_1447_slow_memcpy,Rocket scalar,elementwise/other,0
+1448,2427668632,2427669341,709,1602,1,1,1,main$async_dispatch_1448_slow_memcpy,Rocket scalar,elementwise/other,0
+1449,2427671000,2427671660,660,1603,1,1,1,main$async_dispatch_1449_slow_memcpy,Rocket scalar,elementwise/other,0
+1450,2427673349,2427674078,729,1604,1,1,1,main$async_dispatch_1450_slow_memcpy,Rocket scalar,elementwise/other,0
+1451,2427675718,2427676395,677,1605,1,1,1,main$async_dispatch_1451_slow_memcpy,Rocket scalar,elementwise/other,0
+1452,2427678039,2427678677,638,1606,1,1,1,main$async_dispatch_1452_slow_memcpy,Rocket scalar,elementwise/other,0
+1453,2427680370,2427681012,642,1607,1,1,1,main$async_dispatch_1453_slow_memcpy,Rocket scalar,elementwise/other,0
+1454,2427682727,2427683455,728,1608,1,1,1,main$async_dispatch_1454_slow_memcpy,Rocket scalar,elementwise/other,0
+1455,2427685904,2428190168,504264,1609,8,1,1,main$async_dispatch_1455_elementwise_16x2048_f32,Rocket scalar,elementwise/other,0
+1456,2428193725,13360109939,10931916214,1610,500,1,1,main$async_dispatch_1456_batch_matmul_1x16x32000x2048_f32,Rocket scalar,matmul,1048576000
