@@ -1,0 +1,50 @@
+LLVM ERROR: Loading a dialect (gemmini) while in a multi-threaded execution context (maybe the PassManager): this can indicate a missing `dependentDialects` in a pass for example.
+Please report issues to https://github.com/iree-org/iree/issues and include the crash backtrace.
+Stack dump:
+0.	Program arguments: /home/loren/work/runs/fixW/build-numerics/tools/iree-compile --iree-hal-target-backends=llvm-cpu --iree-llvmcpu-target-cpu=host --iree-llvmcpu-number-of-threads=24 --mlir-disable-threading --iree-llvmcpu-enable-ukernels=none --iree-llvmcpu-link-ukernel-bitcode=false --torch-pytorch-cpu-numerics --torch-pytorch-cpu-reference-threads=24 --torch-pytorch-cpu-constant-math-library=/home/loren/work/runs/smolvla/venv/lib/python3.12/site-packages/torch/lib/libtorch_cpu.so --iree-opt-numeric-precision-reduction=false --iree-llvmcpu-reassociate-fp-reductions=false --iree-llvmcpu-skip-intermediate-roundings=false --iree-input-demote-f64-to-f32=false --iree-opt-const-eval=false /home/loren/work/runs/smA/host/barrier.mlir --compile-from=global-optimization -o /home/loren/work/runs/smA/host/model.vmfb
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  libIREECompiler.so 0x0000746ffb0b5cce
+1  libIREECompiler.so 0x0000746ffb0b2d39
+2  libIREECompiler.so 0x0000746ffb0b6b67
+3  libc.so.6          0x0000746ff5645330
+4  libc.so.6          0x0000746ff569ec0c pthread_kill + 284
+5  libc.so.6          0x0000746ff564527e gsignal + 30
+6  libc.so.6          0x0000746ff56288ff abort + 223
+7  libIREECompiler.so 0x0000746ffb032fcd
+8  libIREECompiler.so 0x0000746ffb1a7ec9
+9  libIREECompiler.so 0x0000746ffd2aff62
+10 libIREECompiler.so 0x0000746ffb97d82e
+11 libIREECompiler.so 0x0000746ffb97e82c
+12 libIREECompiler.so 0x0000746ffb987a55
+13 libIREECompiler.so 0x0000746ffdb6c36e
+14 libIREECompiler.so 0x0000746ffb97d82e
+15 libIREECompiler.so 0x0000746ffb97e82c
+16 libIREECompiler.so 0x0000746ffb987a55
+17 libIREECompiler.so 0x0000746ffb2a3b71
+18 libIREECompiler.so 0x0000746ffb97d82e
+19 libIREECompiler.so 0x0000746ffb97e82c
+20 libIREECompiler.so 0x0000746ffb981b5f
+21 libIREECompiler.so 0x0000746ffb97dcb9
+22 libIREECompiler.so 0x0000746ffb97e82c
+23 libIREECompiler.so 0x0000746ffb987a55
+24 libIREECompiler.so 0x0000746ffdca2dfa
+25 libIREECompiler.so 0x0000746ffb97d82e
+26 libIREECompiler.so 0x0000746ffb97e82c
+27 libIREECompiler.so 0x0000746ffb981b5f
+28 libIREECompiler.so 0x0000746ffb97dcb9
+29 libIREECompiler.so 0x0000746ffb97e82c
+30 libIREECompiler.so 0x0000746ffb987a55
+31 libIREECompiler.so 0x0000746ffdca3fe2
+32 libIREECompiler.so 0x0000746ffb97d82e
+33 libIREECompiler.so 0x0000746ffb97e82c
+34 libIREECompiler.so 0x0000746ffb981b5f
+35 libIREECompiler.so 0x0000746ffb97dcb9
+36 libIREECompiler.so 0x0000746ffb97e82c
+37 libIREECompiler.so 0x0000746ffb985c59
+38 libIREECompiler.so 0x0000746ffb9852b6
+39 libIREECompiler.so 0x0000746ffafb2e62 ireeCompilerInvocationPipeline + 3314
+40 libIREECompiler.so 0x0000746ffb8f922f
+41 libIREECompiler.so 0x0000746ffb8f8a44
+42 libc.so.6          0x0000746ff562a1ca
+43 libc.so.6          0x0000746ff562a28b __libc_start_main + 139
+44 iree-compile       0x0000594fddfe26c5

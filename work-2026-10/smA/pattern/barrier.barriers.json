@@ -1,0 +1,10 @@
+[
+  {
+    "result": "%5",
+    "type": "tensor<12x256xf32>"
+  },
+  {
+    "result": "%6",
+    "type": "tensor<12x256xf32>"
+  }
+]

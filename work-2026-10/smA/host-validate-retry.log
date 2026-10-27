@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/loren/work/runs/smA/host_validate.py", line 18, in <module>
+    seconds=run(base+[str(D/'barrier.mlir'),'--compile-from=global-optimization','-o',str(D/'model.vmfb')],'compile.log')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/loren/work/runs/smA/host_validate.py", line 10, in run
+    if p.returncode:raise RuntimeError((log,p.returncode))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ('compile.log', -6)

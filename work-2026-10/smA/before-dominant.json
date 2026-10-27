@@ -1,0 +1,101 @@
+{
+  "patterns": [
+    [
+      "elementwise_1572864_f32",
+      [
+        288,
+        2802397741056
+      ]
+    ],
+    [
+      "elementwise_broadcast_3072x64_f32",
+      [
+        144,
+        408577175808
+      ]
+    ],
+    [
+      "batch_matmul_12x256x512x64_f32",
+      [
+        288,
+        102483099648
+      ]
+    ],
+    [
+      "elementwise_786432_f32",
+      [
+        3,
+        61687431168
+      ]
+    ],
+    [
+      "elementwise_1270215_f32",
+      [
+        8,
+        24461847515
+      ]
+    ],
+    [
+      "matmul_1024x3072x768_i8xi8xi32",
+      [
+        36,
+        19526025216
+      ]
+    ],
+    [
+      "elementwise_871215_f32",
+      [
+        7,
+        12271818328
+      ]
+    ],
+    [
+      "elementwise_1024x3072_f32xf32xi8",
+      [
+        36,
+        7328954880
+      ]
+    ],
+    [
+      "batch_matmul_15x291x291x64_f32",
+      [
+        8,
+        7086456000
+      ]
+    ],
+    [
+      "elementwise_broadcast_279360_f32",
+      [
+        8,
+        4015660320
+      ]
+    ],
+    [
+      "batch_matmul_15x241x241x64_f32",
+      [
+        7,
+        3936913680
+      ]
+    ],
+    [
+      "elementwise_12x256_f32",
+      [
+        144,
+        3648380256
+      ]
+    ]
+  ],
+  "dispatch1093": [
+    {
+      "name": "main$async_dispatch_1093_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263613,
+      "scaled_instructions": 12957106176,
+      "category": "other_scalar"
+    }
+  ]
+}

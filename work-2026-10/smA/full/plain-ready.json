@@ -1,0 +1,6 @@
+{
+  "elf": "/home/loren/work/runs/smA/full/smolvla.elf",
+  "trace": "/home/loren/work/runs/smA/full/smolvla-trace.elf",
+  "diagnostic": "/home/loren/work/runs/smA/full/onewg.elf",
+  "trace_enabled": false
+}

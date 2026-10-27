@@ -1,0 +1,29 @@
+{
+  "command": [
+    "taskset",
+    "-c",
+    "26",
+    "timeout",
+    "600",
+    "/home/loren/work/chipyard/.conda-env/riscv-tools/bin/spike",
+    "--isa=rv64gc_zicntr",
+    "--extension=gemmini",
+    "-m2048",
+    "/home/loren/work/runs/smA/attention-unroll/probe.elf"
+  ],
+  "exit": 0,
+  "wall": 36.22208523750305,
+  "outputs": [
+    {
+      "elements": 231360,
+      "vs_prior_rv_different_bits": 0,
+      "vs_pytorch_different_bits": 0
+    },
+    {
+      "elements": 231360,
+      "vs_prior_rv_different_bits": 0,
+      "vs_pytorch_different_bits": 0
+    }
+  ],
+  "cycles": 1537507261
+}

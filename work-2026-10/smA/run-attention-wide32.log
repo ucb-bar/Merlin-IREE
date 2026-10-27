@@ -1,0 +1,3 @@
+2 materialization barriers
+4 4 1851993
+{'command': ['taskset', '-c', '26', 'timeout', '600', '/home/loren/work/chipyard/.conda-env/riscv-tools/bin/spike', '--isa=rv64gc_zicntr', '--extension=gemmini', '-m2048', '/home/loren/work/runs/smA/attention-wide32/probe.elf'], 'exit': 0, 'wall': 39.26632046699524, 'outputs': [{'elements': 231360, 'vs_prior_rv_different_bits': 0, 'vs_pytorch_different_bits': 0}, {'elements': 231360, 'vs_prior_rv_different_bits': 0, 'vs_pytorch_different_bits': 0}], 'cycles': 1680082005}

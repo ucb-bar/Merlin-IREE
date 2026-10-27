@@ -1,0 +1,1 @@
+{"cmd": ["taskset", "-c", "24-47", "bash", "/home/loren/work/runs/smA/runtime/build_runtime.sh"], "exit": 0, "seconds": 2.2009823322296143}

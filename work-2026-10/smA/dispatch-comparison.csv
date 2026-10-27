@@ -1,0 +1,6 @@
+correspondence,before_instructions,after_instructions,notes
+two-key-chunk attention region1086..1099,23059483628,2094443036,same QK ranks22/23; block is stronger correspondence than isolated consumer
+dispatch1093 hidden max+exp,12957106176,71581336,new1151+1152+1153; first max already shared from first chunk
+dispatch1099 PV+combine,2837361024,1224528576,new1149+1159+1160
+QK shape aggregate,102483099648,102543077376,"288 calls, same workgroups; overhead/edge scaling approximation"
+all invocation dispatches,3488170271254,430215723925,17586->18343 calls; workgroup0 extrapolation; excludes VM/startup/output

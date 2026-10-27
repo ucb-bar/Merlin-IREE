@@ -1,0 +1,34 @@
+{
+  "inputs": [
+    {
+      "shape": [
+        12,
+        256,
+        512
+      ],
+      "dtype": "f32",
+      "path": "/home/loren/work/runs/smA/pattern/input0.bin"
+    },
+    {
+      "shape": [
+        12,
+        256,
+        512
+      ],
+      "dtype": "f32",
+      "path": "/home/loren/work/runs/smA/pattern/input1.bin"
+    }
+  ],
+  "outputs": [
+    {
+      "shape": [
+        12,
+        256,
+        512
+      ],
+      "dtype": "f32",
+      "ssa": "%out",
+      "reference": ""
+    }
+  ]
+}

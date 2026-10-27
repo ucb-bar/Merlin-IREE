@@ -1,0 +1,248 @@
+{
+  "dispatches": 18343,
+  "estimated_instructions": 430215723925,
+  "before_estimated_instructions": 3488170271254,
+  "limitations": "WG0 scaling, excludes startup/VM/output; edge/data-dependent work can differ; partial diagnostic output is NOT numerics evidence",
+  "largest_after": [
+    {
+      "index": 0,
+      "name": "main$async_dispatch_0_elementwise_broadcast_786432_f32",
+      "ordinal": 308,
+      "original_xyz": [
+        24576,
+        1,
+        1
+      ],
+      "onewg_instructions": 836681,
+      "scaled_instructions": 20562272256
+    },
+    {
+      "index": 5498,
+      "name": "main$async_dispatch_5498_elementwise_broadcast_786432_f32",
+      "ordinal": 3415,
+      "original_xyz": [
+        24576,
+        1,
+        1
+      ],
+      "onewg_instructions": 836655,
+      "scaled_instructions": 20561633280
+    },
+    {
+      "index": 10996,
+      "name": "main$async_dispatch_10996_elementwise_broadcast_786432_f32",
+      "ordinal": 6411,
+      "original_xyz": [
+        24576,
+        1,
+        1
+      ],
+      "onewg_instructions": 836653,
+      "scaled_instructions": 20561584128
+    },
+    {
+      "index": 16557,
+      "name": "main$async_dispatch_16557_batch_matmul_15x291x291x64_f32",
+      "ordinal": 9470,
+      "original_xyz": [
+        375,
+        1,
+        1
+      ],
+      "onewg_instructions": 2362153,
+      "scaled_instructions": 885807375
+    },
+    {
+      "index": 16792,
+      "name": "main$async_dispatch_16792_batch_matmul_15x291x291x64_f32",
+      "ordinal": 9677,
+      "original_xyz": [
+        375,
+        1,
+        1
+      ],
+      "onewg_instructions": 2362153,
+      "scaled_instructions": 885807375
+    },
+    {
+      "index": 17024,
+      "name": "main$async_dispatch_17024_batch_matmul_15x291x291x64_f32",
+      "ordinal": 9864,
+      "original_xyz": [
+        375,
+        1,
+        1
+      ],
+      "onewg_instructions": 2362153,
+      "scaled_instructions": 885807375
+    },
+    {
+      "index": 17256,
+      "name": "main$async_dispatch_17256_batch_matmul_15x291x291x64_f32",
+      "ordinal": 10051,
+      "original_xyz": [
+        375,
+        1,
+        1
+      ],
+      "onewg_instructions": 2362153,
+      "scaled_instructions": 885807375
+    },
+    {
+      "index": 17488,
+      "name": "main$async_dispatch_17488_batch_matmul_15x291x291x64_f32",
+      "ordinal": 10238,
+      "original_xyz": [
+        375,
+        1,
+        1
+      ],
+      "onewg_instructions": 2362153,
+      "scaled_instructions": 885807375
+    },
+    {
+      "index": 17720,
+      "name": "main$async_dispatch_17720_batch_matmul_15x291x291x64_f32",
+      "ordinal": 10425,
+      "original_xyz": [
+        375,
+        1,
+        1
+      ],
+      "onewg_instructions": 2362153,
+      "scaled_instructions": 885807375
+    },
+    {
+      "index": 17952,
+      "name": "main$async_dispatch_17952_batch_matmul_15x291x291x64_f32",
+      "ordinal": 10612,
+      "original_xyz": [
+        375,
+        1,
+        1
+      ],
+      "onewg_instructions": 2362153,
+      "scaled_instructions": 885807375
+    },
+    {
+      "index": 18184,
+      "name": "main$async_dispatch_18184_batch_matmul_15x291x291x64_f32",
+      "ordinal": 10799,
+      "original_xyz": [
+        375,
+        1,
+        1
+      ],
+      "onewg_instructions": 2362153,
+      "scaled_instructions": 885807375
+    },
+    {
+      "index": 185,
+      "name": "main$async_dispatch_185_elementwise_broadcast_196608_f32",
+      "ordinal": 493,
+      "original_xyz": [
+        6144,
+        1,
+        1
+      ],
+      "onewg_instructions": 99629,
+      "scaled_instructions": 612120576
+    },
+    {
+      "index": 636,
+      "name": "main$async_dispatch_636_elementwise_broadcast_196608_f32",
+      "ordinal": 743,
+      "original_xyz": [
+        6144,
+        1,
+        1
+      ],
+      "onewg_instructions": 99629,
+      "scaled_instructions": 612120576
+    },
+    {
+      "index": 1087,
+      "name": "main$async_dispatch_1087_elementwise_broadcast_196608_f32",
+      "ordinal": 986,
+      "original_xyz": [
+        6144,
+        1,
+        1
+      ],
+      "onewg_instructions": 99629,
+      "scaled_instructions": 612120576
+    },
+    {
+      "index": 207,
+      "name": "main$async_dispatch_207_elementwise_broadcast_196608_f32",
+      "ordinal": 515,
+      "original_xyz": [
+        6144,
+        1,
+        1
+      ],
+      "onewg_instructions": 99628,
+      "scaled_instructions": 612114432
+    },
+    {
+      "index": 227,
+      "name": "main$async_dispatch_227_elementwise_broadcast_196608_f32",
+      "ordinal": 535,
+      "original_xyz": [
+        6144,
+        1,
+        1
+      ],
+      "onewg_instructions": 99628,
+      "scaled_instructions": 612114432
+    },
+    {
+      "index": 247,
+      "name": "main$async_dispatch_247_elementwise_broadcast_196608_f32",
+      "ordinal": 555,
+      "original_xyz": [
+        6144,
+        1,
+        1
+      ],
+      "onewg_instructions": 99628,
+      "scaled_instructions": 612114432
+    },
+    {
+      "index": 658,
+      "name": "main$async_dispatch_658_elementwise_broadcast_196608_f32",
+      "ordinal": 765,
+      "original_xyz": [
+        6144,
+        1,
+        1
+      ],
+      "onewg_instructions": 99628,
+      "scaled_instructions": 612114432
+    },
+    {
+      "index": 678,
+      "name": "main$async_dispatch_678_elementwise_broadcast_196608_f32",
+      "ordinal": 785,
+      "original_xyz": [
+        6144,
+        1,
+        1
+      ],
+      "onewg_instructions": 99628,
+      "scaled_instructions": 612114432
+    },
+    {
+      "index": 698,
+      "name": "main$async_dispatch_698_elementwise_broadcast_196608_f32",
+      "ordinal": 805,
+      "original_xyz": [
+        6144,
+        1,
+        1
+      ],
+      "onewg_instructions": 99628,
+      "scaled_instructions": 612114432
+    }
+  ]
+}

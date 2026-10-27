@@ -1,0 +1,1 @@
+{'barriers_added': 914, 'renames': 914, 'reversing_only_added_barriers_and_result_names_recovers_original_global_IR_byte_for_byte': True, 'global_ir_sha256': 'ed413a54b336afc3693f564e2df737f5a06a1326c402c4c9203d43c4598c790a', 'resource_block_sha256': 'd761a7a065f700e9258d2dd794aa5d1151468ed9a57c9caa0f704d77045db944', 'resource_block_matches_original_byte_for_byte': True}

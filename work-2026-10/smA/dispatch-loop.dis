@@ -1,0 +1,117 @@
+
+runs/smA/pattern/baseline/probe.elf:     file format elf64-littleriscv
+
+
+Disassembly of section .text:
+
+00000000800003a8 <iree_hal_local_executable_issue_dispatch_inline>:
+    800003a8:	7131                	addi	sp,sp,-192
+    800003aa:	fd06                	sd	ra,184(sp)
+    800003ac:	f922                	sd	s0,176(sp)
+    800003ae:	f526                	sd	s1,168(sp)
+    800003b0:	f14a                	sd	s2,160(sp)
+    800003b2:	ed4e                	sd	s3,152(sp)
+    800003b4:	e952                	sd	s4,144(sp)
+    800003b6:	e556                	sd	s5,136(sp)
+    800003b8:	e15a                	sd	s6,128(sp)
+    800003ba:	fcde                	sd	s7,120(sp)
+    800003bc:	f8e2                	sd	s8,112(sp)
+    800003be:	f4e6                	sd	s9,104(sp)
+    800003c0:	f0ea                	sd	s10,96(sp)
+    800003c2:	ecee                	sd	s11,88(sp)
+    800003c4:	0180                	addi	s0,sp,192
+    800003c6:	fc017113          	andi	sp,sp,-64
+    800003ca:	892e                	mv	s2,a1
+    800003cc:	00c62a03          	lw	s4,12(a2)
+    800003d0:	01062a83          	lw	s5,16(a2)
+    800003d4:	01465b03          	lhu	s6,20(a2)
+    800003d8:	e002                	sd	zero,0(sp)
+    800003da:	c402                	sw	zero,8(sp)
+    800003dc:	c636                	sw	a3,12(sp)
+    800003de:	e83a                	sd	a4,16(sp)
+    800003e0:	cc3e                	sw	a5,24(sp)
+    800003e2:	ce02                	sw	zero,28(sp)
+    800003e4:	c0002bf3          	rdcycle	s7
+    800003e8:	8d2a                	mv	s10,a0
+    800003ea:	040b0863          	beqz	s6,8000043a <iree_hal_local_executable_issue_dispatch_inline+0x92>
+    800003ee:	040a8863          	beqz	s5,8000043e <iree_hal_local_executable_issue_dispatch_inline+0x96>
+    800003f2:	040a0c63          	beqz	s4,8000044a <iree_hal_local_executable_issue_dispatch_inline+0xa2>
+    800003f6:	89b2                	mv	s3,a2
+    800003f8:	4c01                	li	s8,0
+    800003fa:	fffa0c9b          	addiw	s9,s4,-1
+    800003fe:	a021                	j	80000406 <iree_hal_local_executable_issue_dispatch_inline+0x5e>
+    80000400:	2c05                	addiw	s8,s8,1
+    80000402:	056c0c63          	beq	s8,s6,8000045a <iree_hal_local_executable_issue_dispatch_inline+0xb2>
+    80000406:	4d81                	li	s11,0
+    80000408:	01811423          	sh	s8,8(sp)
+    8000040c:	a021                	j	80000414 <iree_hal_local_executable_issue_dispatch_inline+0x6c>
+    8000040e:	2d85                	addiw	s11,s11,1
+    80000410:	ff5d88e3          	beq	s11,s5,80000400 <iree_hal_local_executable_issue_dispatch_inline+0x58>
+    80000414:	4581                	li	a1,0
+    80000416:	c26e                	sw	s11,4(sp)
+    80000418:	008d3503          	ld	a0,8(s10)
+    8000041c:	751c                	ld	a5,40(a0)
+    8000041e:	84ae                	mv	s1,a1
+    80000420:	c02e                	sw	a1,0(sp)
+    80000422:	868a                	mv	a3,sp
+    80000424:	856a                	mv	a0,s10
+    80000426:	85ca                	mv	a1,s2
+    80000428:	864e                	mv	a2,s3
+    8000042a:	4701                	li	a4,0
+    8000042c:	9782                	jalr	a5
+    8000042e:	f165                	bnez	a0,8000040e <iree_hal_local_executable_issue_dispatch_inline+0x66>
+    80000430:	0014859b          	addiw	a1,s1,1
+    80000434:	fe9c92e3          	bne	s9,s1,80000418 <iree_hal_local_executable_issue_dispatch_inline+0x70>
+    80000438:	bfd9                	j	8000040e <iree_hal_local_executable_issue_dispatch_inline+0x66>
+    8000043a:	4501                	li	a0,0
+    8000043c:	a839                	j	8000045a <iree_hal_local_executable_issue_dispatch_inline+0xb2>
+    8000043e:	4501                	li	a0,0
+    80000440:	fffb0593          	addi	a1,s6,-1
+    80000444:	00b11423          	sh	a1,8(sp)
+    80000448:	a809                	j	8000045a <iree_hal_local_executable_issue_dispatch_inline+0xb2>
+    8000044a:	4501                	li	a0,0
+    8000044c:	fffa8593          	addi	a1,s5,-1
+    80000450:	fffb0613          	addi	a2,s6,-1
+    80000454:	c22e                	sw	a1,4(sp)
+    80000456:	00c11423          	sh	a2,8(sp)
+    8000045a:	c00025f3          	rdcycle	a1
+    8000045e:	00df5617          	auipc	a2,0xdf5
+    80000462:	96a60613          	addi	a2,a2,-1686 # 80df4dc8 <perfx_count>
+    80000466:	4214                	lw	a3,0(a2)
+    80000468:	00f6d71b          	srliw	a4,a3,0xf
+    8000046c:	eb1d                	bnez	a4,800004a2 <iree_hal_local_executable_issue_dispatch_inline+0xfa>
+    8000046e:	00168713          	addi	a4,a3,1
+    80000472:	c218                	sw	a4,0(a2)
+    80000474:	00469613          	slli	a2,a3,0x4
+    80000478:	0696                	slli	a3,a3,0x5
+    8000047a:	00c75717          	auipc	a4,0xc75
+    8000047e:	9636                	add	a2,a2,a3
+    80000480:	94e70693          	addi	a3,a4,-1714 # 80c74dc8 <perfx_records>
+    80000484:	9636                	add	a2,a2,a3
+    80000486:	01763023          	sd	s7,0(a2)
+    8000048a:	e60c                	sd	a1,8(a2)
+    8000048c:	01a63823          	sd	s10,16(a2)
+    80000490:	01263c23          	sd	s2,24(a2)
+    80000494:	03462023          	sw	s4,32(a2)
+    80000498:	03562223          	sw	s5,36(a2)
+    8000049c:	03662423          	sw	s6,40(a2)
+    800004a0:	a021                	j	800004a8 <iree_hal_local_executable_issue_dispatch_inline+0x100>
+    800004a2:	424c                	lw	a1,4(a2)
+    800004a4:	0585                	addi	a1,a1,1
+    800004a6:	c24c                	sw	a1,4(a2)
+    800004a8:	f4040113          	addi	sp,s0,-192
+    800004ac:	70ea                	ld	ra,184(sp)
+    800004ae:	744a                	ld	s0,176(sp)
+    800004b0:	74aa                	ld	s1,168(sp)
+    800004b2:	790a                	ld	s2,160(sp)
+    800004b4:	69ea                	ld	s3,152(sp)
+    800004b6:	6a4a                	ld	s4,144(sp)
+    800004b8:	6aaa                	ld	s5,136(sp)
+    800004ba:	6b0a                	ld	s6,128(sp)
+    800004bc:	7be6                	ld	s7,120(sp)
+    800004be:	7c46                	ld	s8,112(sp)
+    800004c0:	7ca6                	ld	s9,104(sp)
+    800004c2:	7d06                	ld	s10,96(sp)
+    800004c4:	6de6                	ld	s11,88(sp)
+    800004c6:	6129                	addi	sp,sp,192
+    800004c8:	8082                	ret

@@ -1,0 +1,3 @@
+First threaded host resume failed (subprocess returncode -11), before any output numerical result. Observed stderr:
+LLVM ERROR: Loading a dialect (gemmini) while in a multi-threaded execution context (maybe the PassManager): this can indicate a missing `dependentDialects` in a pass for example.
+Retry uses --mlir-disable-threading, with identical input arithmetic/target/gates.

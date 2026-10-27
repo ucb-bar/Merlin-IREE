@@ -1,0 +1,22 @@
+{
+  "source": "/home/loren/work/runs/smA/full/smolvla-trace.elf",
+  "source_sha256": "59187fbf2e8e0e2b0bddedf1c7eb1e3e1fbf249ef051e381f5b3dc827921c588",
+  "changes": [
+    {
+      "offset": 5068,
+      "before": "0xc62a03",
+      "after": "0x100a13"
+    },
+    {
+      "offset": 5072,
+      "before": "0x1062a83",
+      "after": "0x100a93"
+    },
+    {
+      "offset": 5076,
+      "before": "0x1465b03",
+      "after": "0x100b13"
+    }
+  ],
+  "meaning": "DIAGNOSTIC ONLY altered computation; not numerical inference; scale intervals using original VM bytecode counts"
+}

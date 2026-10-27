@@ -1,0 +1,10 @@
+[
+  {
+    "result": "%71",
+    "type": "tensor<15x291xf32>"
+  },
+  {
+    "result": "%104",
+    "type": "tensor<1x291x15x64xf32>"
+  }
+]

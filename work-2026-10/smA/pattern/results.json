@@ -1,0 +1,79 @@
+[
+  {
+    "name": "baseline",
+    "command": [
+      "taskset",
+      "-c",
+      "24",
+      "timeout",
+      "600",
+      "/home/loren/work/chipyard/.conda-env/riscv-tools/bin/spike",
+      "--isa=rv64gc_zicntr",
+      "--extension=gemmini",
+      "-m2048",
+      "/home/loren/work/runs/smA/pattern/baseline/probe.elf"
+    ],
+    "exit": 0,
+    "wall": 101.30350661277771,
+    "cycles": 13069466085,
+    "dispatches": [
+      {
+        "name": "main$async_dispatch_0_elementwise_1572864_f32",
+        "instructions": 13068600344,
+        "xyz": [
+          49152,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "name": "barrier",
+    "command": [
+      "taskset",
+      "-c",
+      "24",
+      "timeout",
+      "600",
+      "/home/loren/work/chipyard/.conda-env/riscv-tools/bin/spike",
+      "--isa=rv64gc_zicntr",
+      "--extension=gemmini",
+      "-m2048",
+      "/home/loren/work/runs/smA/pattern/barrier/probe.elf"
+    ],
+    "exit": 0,
+    "wall": 2.2560009956359863,
+    "cycles": 180306252,
+    "dispatches": [
+      {
+        "name": "main$async_dispatch_0_elementwise_broadcast_3072_f32",
+        "instructions": 12682650,
+        "xyz": [
+          96,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "main$async_dispatch_1_elementwise_broadcast_3072_f32",
+        "instructions": 12683225,
+        "xyz": [
+          96,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "main$async_dispatch_2_elementwise_3072x512_f32",
+        "instructions": 154044073,
+        "xyz": [
+          384,
+          1,
+          1
+        ]
+      }
+    ],
+    "different_bits": 0
+  }
+]
