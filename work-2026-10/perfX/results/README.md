@@ -1,0 +1,53 @@
+# FireSim single-invoke measurements
+
+Status: integration in progress. Missing numbers are PENDING, never inferred from Spike or another model.
+
+Target: f2_gemmini_rocket_ddr3llc_60mhz, Rocket + DIM16 Gemmini, 60 MHz, FASED FR-FCFS DDR3 + 4 MB LLC. ResNet-50 INT8 uses public replacement weights/input from the existing experiment. TinyLlama is batch1 sequence16 complete forward, no KV cache. smolVLA is INT8 with FP32 scalar computation, one denoising step, all11 inputs and1600 outputs.
+
+`summary.md`, `summary.csv`, `summary.json` give plain single-invoke rdcycle totals, instrumented totals and overhead `(trace/plain-1)*100`, functional Spike totals, software device occupancy, shape-based MAC estimates, dispatch counts and gate status. Only FireSim logs generate Gantt plots. Plain and instrumented ELFs use the same runner/model data and independent runtime builds; plain has PERFX_TRACE disabled. The reported overhead is the observed difference of one plain and one instrumented run; it includes instrumentation, altered code/data layout and any run variation, with no repeated-run confidence interval. There is no warmup. Model initialization occurs before the measured invoke. Trace buffers are dumped after its closing rdcycle, before output validation/printing.
+
+Each model directory contains normalized UART, complete raw output, trace CSV/JSON, and Gantt PNG/SVG when hardware results exist. The trace CSV includes sequence, begin/end target cycles relative to timed-invoke start, ordinal, workgroup counts, export name, assembly-based device/op class and algorithmic MACs. Intervals cover all workgroups in one HAL dispatch, not individual workgroups. Runtime metadata queried only during post-timing dump. The parser rejects incomplete output, missing exact assembly names, dropped records and overlapping/out-of-range intervals.
+
+Device lanes mean:
+- Rocket scalar: synchronous dispatches whose compiled function has no Gemmini LOOP_WS/mvin/mvout/compute/preload instruction. Rocket also issues commands and runs VM/runtime outside these bars.
+- Gemmini accelerator: synchronous dispatch wall time for compiled functions containing those instructions; includes Rocket issue, synchronization, command/DMA waiting, and any scalar epilogue. This is a software occupancy estimate, not true measured accelerator/controller busy time.
+- Gaps: runtime work outside dispatches, recorder overhead and metadata preparation. No DMA/mvin, execute or mvout sublanes are fabricated.
+
+Gemmini dispatch busy % = sum(Gemmini dispatch wall cycles)/instrumented invoke cycles. MAC utilization estimate = algorithmic shape MACs/(256 * Gemmini dispatch wall cycles); overall uses whole instrumented invoke cycles. One MAC means one multiply-accumulate, not two operations. Counts include repeated executed dispatches, all their workgroups as one full shape, exclude initialization and scalar contractions; no multiplication by workgroup count. These are useful-work estimates: padding and internal hardware tiles are not counted. Algorithmic MACs are useful-work counts from dispatch shapes, rather than counted accelerator instructions.
+
+Counter limitation: snapshot software contains optional Gemmini counter helpers, but synthesized availability in this bitstream is unconfirmed. Hardware recipe S3 access was denied; local Chipyard lacks hardware sources. No controller counters are enabled or reported as measurements. No TracerV, synthesized printf, ILA or memory_stats CSV is treated as an instruction/device trace. UART output has the software timestamps; memory_stats is retained as auxiliary raw evidence only.
+
+Numerical gates never change: ResNet all1000 finite values abs(error)<=0.8+0.1*abs(frozen CPU golden), top1 agreement; TinyLlama all512000 finite logits atol=rtol=.001 vs protected tinyllama2/int8/reference.npy quantized PyTorch reference (copied locally); runner also checks the frozen passing fixN CPU reference; smolVLA all1600 finite outputs atol=rtol=.001 against SPEC's exact quantized PyTorch reference (copied gemV PyTorch payload). Original reports document reference provenance. Compiler/host equivalence and quantization error are separate from hardware acceptance. TinyLlama and smolVLA are dispatched exclusively by perfTL and perfSM under their authorized admission rules; the integrator copies finalized results and reports failures without relaxing gates. A runner exit1 from a failed numerical gate is not an infrastructure retry reason.
+
+Reproduction: see ../REPORT.md, ../setup.py, ../instrument.py, ../build.sh, ../run_spike.sh, ../analyze.py, ../summarize.py and dispatch records. All files were written under perfX. Protected snapshot/model/agent directories remained read-only. Current integrator budget is 12 cores; collection, plotting and summaries use CPU32 with BLAS/OMP one thread. Historical build commands and their earlier budgets remain recorded in REPORT.md. No deployed service or external message was created.
+
+ResNet operation color mapping: 53 ConvInteger/im2col matmul dispatches are conv; final 1x1000x2048 fully connected dispatch is matmul. TinyLlama/smolVLA use the emitted dispatch operation names. `check_dispatch_gate.py` re-parses full output, requires model gate/top1 agreement and runner PASS before any new F2 submission.
+
+<!-- INTEGRATION -->
+
+Updated 2026-10-27T22:58:08.686816+00:00; WAITING FOR HANDOFFS.
+
+| Model | FireSim plain cycles | Instrumented cycles | Spike cycles | Spike gate | Gemmini occupancy %¹ | Gemmini MAC utilization %¹ | Overall MAC utilization %¹ | Gemmini dispatches | Rocket dispatches | Plain gate | Trace gate |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| resnet | 2,088,237,773 | 2,088,249,127 | 866,737,584 | PASS | 79.18699 | 0.96596 | 0.76492 | 54 | 52 | PASS | PASS |
+| tinyllama | 13,362,634,591 | 13,360,147,904 | 4,751,658,908 | PASS | 11.86645 | 3.81962 | 0.45325 | 154 | 1,303 | PASS | PASS |
+| smolvla | not yet measured | not yet measured | not yet measured | PENDING | not yet measured | not yet measured | not yet measured | not yet measured | not yet measured | PENDING | PENDING |
+
+¹ Software dispatch occupancy and useful MAC estimates, not hardware busy counters. Spike cycles are functional simulator counts. Missing hardware measurements remain explicit.
+
+| Model | Observed instrumentation overhead % | Plain/trace output bitwise equal |
+| --- | --- | --- |
+| resnet | 0.00054 | True |
+| tinyllama | -0.01861 | True |
+| smolvla | not yet measured | not yet measured |
+
+All runners set a 16 MiB static full stdout buffer before inference; the complete raw-word text is preserved and explicitly flushed after dumping. Trace records are buffered as well. Pre-invoke header flush and the invoke timer are unchanged. Numerical gates and references are unchanged.
+
+| Model/mode | Whole cycles before | Whole cycles buffered | Invoke before | Invoke buffered | Simulator wall before/after (s) |
+| --- | --- | --- | --- | --- | --- |
+| resnet/plain | 36,745,337,687 | 3,275,786,012 | 2,088,208,536 | 2,088,237,773 | 627 / 71 |
+| resnet/trace | 40,608,519,842 | 3,630,629,417 | 2,088,660,305 | 2,088,249,127 | 692 / 77 |
+
+Whole-emulation counters include initialization, validation and I/O; only the invoke counters are inference headline measurements. The original TinyLlama F2 commands were terminated by the coordinator during the readback investigation and supply no completed before measurement. No numerical result or cycles are inferred from those terminated commands.
+
+Handoffs: tinyllama: PASS plain / PASS trace; smolvla: PENDING handoff. Source report snapshots are retained in each model directory.

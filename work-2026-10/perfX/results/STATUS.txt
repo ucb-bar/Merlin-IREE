@@ -1,0 +1,2 @@
+INTEGRATION-PENDING
+{"tinyllama": "PASS plain / PASS trace", "smolvla": "PENDING handoff"}

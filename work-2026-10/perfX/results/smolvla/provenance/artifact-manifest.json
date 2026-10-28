@@ -1,0 +1,165 @@
+{
+  "utc": "2026-10-27T21:35:03.445013+00:00",
+  "files": {
+    "smolvla/runner.c": {
+      "bytes": 15927,
+      "sha256": "fd292a6438ec2afc9eadbd47f1c7d66e7197e0270228549537786092e0893746"
+    },
+    "smolvla/embed.S": {
+      "bytes": 2672,
+      "sha256": "6815d190952247139b2ea1b40618a20ee8ae5669463fb9c5d15bc7ffc9271ac3"
+    },
+    "smolvla/payload-cpu-golden.f32": {
+      "bytes": 6400,
+      "sha256": "74c9c6c5a16b91f6a918f11146813366eb39c65dabd59c62b01620c982d14a7b"
+    },
+    "smolvla/payload-input0.bin": {
+      "bytes": 1572864,
+      "sha256": "f56ce8b52335e32ee79f8bb2119051e11285e79839175e3771e3098460b30fb7"
+    },
+    "smolvla/payload-input1.bin": {
+      "bytes": 1572864,
+      "sha256": "090f4eebd5b26db6856a238d749a1623b14534e9c716258bcc99cb24efa075b1"
+    },
+    "smolvla/payload-input10.bin": {
+      "bytes": 4,
+      "sha256": "d99e58435243d9fef9c88273b8d553b4fba4d0baf8009d29eae74fa99e0d9f57"
+    },
+    "smolvla/payload-input2.bin": {
+      "bytes": 1572864,
+      "sha256": "8e1b3cc2cb2acb482dea389d07e34b62cd795fdf8d11b3e8c442f51e773c8d86"
+    },
+    "smolvla/payload-input3.bin": {
+      "bytes": 1,
+      "sha256": "4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a"
+    },
+    "smolvla/payload-input4.bin": {
+      "bytes": 1,
+      "sha256": "4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a"
+    },
+    "smolvla/payload-input5.bin": {
+      "bytes": 1,
+      "sha256": "4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a"
+    },
+    "smolvla/payload-input6.bin": {
+      "bytes": 384,
+      "sha256": "2896544afd0927daf2475e07a5cbcd7d7a18f7d48308f5d4dfb8ba095395dc94"
+    },
+    "smolvla/payload-input7.bin": {
+      "bytes": 48,
+      "sha256": "8371aeeb4f4b622304b7c13eb8f248790f7efd82bf50f097ff67078be348acc0"
+    },
+    "smolvla/payload-input8.bin": {
+      "bytes": 128,
+      "sha256": "cb3c83e4981906150d3bdeab90244aab5d25099fcd417148e7faa086f4cec695"
+    },
+    "smolvla/payload-input9.bin": {
+      "bytes": 6400,
+      "sha256": "40e98956ce6bb3845b4b46c3ab66f9d21d99cc1f15289c1812ebd44137bc8783"
+    },
+    "smolvla/payload-model.vmfb": {
+      "bytes": 553275071,
+      "sha256": "faef4fc909924fd1da36e180929e617e28e04a2e894b5bee8407f04c857e3d89"
+    },
+    "smolvla/payload-pytorch-golden.f32": {
+      "bytes": 6400,
+      "sha256": "74c9c6c5a16b91f6a918f11146813366eb39c65dabd59c62b01620c982d14a7b"
+    },
+    "build.sh": {
+      "bytes": 921,
+      "sha256": "523b1fc63d2ccf48b1f5ac6834bc14648503ff046c45c333633bc4163bf7dd9c"
+    },
+    "CMakeLists.txt": {
+      "bytes": 741,
+      "sha256": "49844cbe6f45f7327c8eb934cfd6d387b3e25ad2ad6f39989f2b4538d2bb7c12"
+    },
+    "iree/runtime/src/iree/hal/local/local_executable.c": {
+      "bytes": 5656,
+      "sha256": "00c0a901e5abaa46f07f2b62b056caf50048792bdb574756753cec337f4228a2"
+    },
+    "toolchain/clear_dl_libs.cmake": {
+      "bytes": 233,
+      "sha256": "809dfb498c5a4222a2c35cde7bfab8ac0297cf86e3258967dbf1803ecfc6a5e6"
+    },
+    "toolchain/htif-nano.spec": {
+      "bytes": 644,
+      "sha256": "f87d21b70085ff3cc1bd65da1a4e12e03b7f368aa0bf65831f36e6fc12b44cd0"
+    },
+    "toolchain/htif.ld": {
+      "bytes": 4267,
+      "sha256": "5ce35bea855ffb1c1860c3b24b29a9eda84104a9d27afbe876028eb6b11ae764"
+    },
+    "toolchain/htif_large_model.ld": {
+      "bytes": 4525,
+      "sha256": "bef43821d841527693bf8ac2cea9be7b4f031a83a773891a4c4b494fa9716853"
+    },
+    "toolchain/riscv_firesim.toolchain.cmake": {
+      "bytes": 12185,
+      "sha256": "a8b9d1a0054d94d5dd735ad351782134c1b017358254fd3ba106c9d02481ed0b"
+    },
+    "toolchain/setup_toolchain.sh": {
+      "bytes": 2708,
+      "sha256": "88dabf05e0754c586b5df0f81c27af47f1f7bed5ec3a24e3e41ca99cb807126f"
+    },
+    "toolchain/spike.cfg": {
+      "bytes": 239,
+      "sha256": "9aa85fef885c87a88e38836ddbb27e84d6ba17012f6ff51c2350ebcdc70206c0"
+    },
+    "toolchain/zephyr_stubs/alloca.h": {
+      "bytes": 418,
+      "sha256": "6a5c1f3a337e7b8edc3b3bed59261fca59d98c86a787e78597ded12856a29179"
+    },
+    "toolchain/zephyr_stubs/memory.h": {
+      "bytes": 579,
+      "sha256": "dc78496539338b1efcdb7a955a9d5ebc2f8a383a78da71f41d5e016fec847946"
+    },
+    "toolchain/zephyr_stubs/pthread.h": {
+      "bytes": 3131,
+      "sha256": "cc5d482081670499242c5e3590e4057fb7a535c2a0a75dd383c72012091dc72c"
+    },
+    "toolchain/zephyr_stubs/sys/socket.h": {
+      "bytes": 4121,
+      "sha256": "c65cb21c1be62782420d7f31eaabd3503bd4daa935f02923a795d2aa20bd1e24"
+    },
+    "assembly/smolvla/module_module_linked_embedded_elf_riscv_64.s": {
+      "bytes": 100568521,
+      "sha256": "896f9b01db08eb909ab19ae19112a69c622dd367ad5d6065713a63623b9b959e"
+    },
+    "build-plain/smolvla.elf": {
+      "bytes": 558673984,
+      "sha256": "81951de158c4572ecbebdde9c963ba1e90f75cbdfc5366bccf2bfb05e72c6d30"
+    },
+    "build-trace/smolvla.elf": {
+      "bytes": 558674264,
+      "sha256": "a3eb92ae5e4f79c4835c95422de23f1e4910bd44710f91208e3bf276c276f795"
+    },
+    "finalize.py": {
+      "bytes": 1737,
+      "sha256": "73c4fe49197a9b40bc426aeef295cd2b44b9006e0f932899e695b0f2b04c8d39"
+    },
+    "analyze.py": {
+      "bytes": 7705,
+      "sha256": "46e4999eaf84afaff689f898013f801929eca50df124cda4ef81db18ac07c82a"
+    },
+    "summarize.py": {
+      "bytes": 3016,
+      "sha256": "795c277dc984b85276441b96936d90fcf5b81155fa7eb2fd1d58a0886b6e8409"
+    },
+    "dispatch.py": {
+      "bytes": 1906,
+      "sha256": "5ae28fb7c4dcdc7da6c0469b6d51882f90c3fc33313f6fd78d96db9d20326613"
+    },
+    "watch.py": {
+      "bytes": 2932,
+      "sha256": "3efb474d2d195042fc7ae8103a98d04a4fc43383fb68948c0cb0eb9c6c287222"
+    },
+    "compile_numerics_model.sh": {
+      "bytes": 730,
+      "sha256": "233efbc2d8215ad1c9f453970a7775300585266756fefbb456ebb37350fe33ec"
+    },
+    "compile_numerics.sh": {
+      "bytes": 1002,
+      "sha256": "5033615b68bc36d474d0c536cf2547889e7e1f3558d1b1562a59389c17c8e167"
+    }
+  }
+}

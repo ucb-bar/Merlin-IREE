@@ -1,0 +1,18 @@
+{
+  "remote": {
+    "runId": "zTL-tinyllama-trace",
+    "mode": "elf",
+    "arg": "firesim-elfs/zTL-tinyllama-trace.elf",
+    "elf_sha256": "12066117a3eca14a6f23b928cecf6b96a87a47b7bd0b6dd8def349c9504c9ac7",
+    "hw_config": "f2_gemmini_rocket_ddr3llc_60mhz",
+    "agfi": "agfi-02410ef1a8461b435",
+    "chipyard": "157dd69e49b9866be2bf8db390ee78bc38cd4438",
+    "firesim": "e1bdea8bb042b900995436ecc3d7c44100eb9da0",
+    "started": "2026-10-27T21:38:52+00:00",
+    "finished": "2026-10-27T22:56:22+00:00",
+    "exit_status": 0,
+    "results_dir": "results-workload/2026-10-27--21-44-03-dispatch-zTL-tinyllama-trace"
+  },
+  "local_elf": "/home/loren/work/runs/perfTL/build-trace/tinyllama.elf",
+  "verified_sha256": "12066117a3eca14a6f23b928cecf6b96a87a47b7bd0b6dd8def349c9504c9ac7"
+}

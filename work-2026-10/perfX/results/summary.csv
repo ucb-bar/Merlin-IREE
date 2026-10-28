@@ -1,0 +1,4 @@
+model,Spike_numerics,Spike_trace_numerics,FireSim_plain_cycles,FireSim_instrumented_cycles,instrumentation_overhead_percent,Spike_plain_cycles,Spike_instrumented_cycles,Gemmini_dispatch_busy_percent,Rocket_scalar_dispatch_percent,Gemmini_MAC_utilization_percent_estimate,overall_MAC_utilization_percent_estimate,Gemmini_dispatches,Rocket_scalar_dispatches,plain_trace_outputs_bitwise_equal,build_label,numerics,trace_numerics
+resnet,PASS,PASS,2088237773,2088249127,0.0005437120306428511,866737584,866740347,79.1869858159888,19.42326505758908,0.965963227595596,0.7649171640237923,54,52,True,NUMERICS PASS,PASS,PASS
+tinyllama,PASS,PASS,13362634591,13360147904,-0.018609256902635263,4751658908,4751696797,11.866454274247532,88.07170360349927,3.819615664359291,0.4532529462631913,154,1303,True,NUMERICS PASS,PASS,PASS
+smolvla,PASS,PASS,1228473542136,,,432737383371,432737868024,,,,,,,,NUMERICS PASS,PASS,NOT RUN

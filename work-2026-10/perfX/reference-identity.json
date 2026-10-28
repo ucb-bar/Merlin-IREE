@@ -1,0 +1,18 @@
+[
+  {
+    "model": "smolvla",
+    "protected": "/home/loren/work/runs/smolvla/fp32/smolVLA.q.int8.mlir.reference/pytorch.npy",
+    "local": "/home/loren/work/runs/perfX/smolvla/payload-pytorch-golden.f32",
+    "payload_bytes": 6400,
+    "sha256": "74c9c6c5a16b91f6a918f11146813366eb39c65dabd59c62b01620c982d14a7b",
+    "bitwise_equal": true
+  },
+  {
+    "model": "tinyllama",
+    "protected": "/home/loren/work/runs/tinyllama2/int8/reference.npy",
+    "local": "/home/loren/work/runs/perfX/tinyllama/pytorch-reference.npy",
+    "payload_bytes": 2048000,
+    "sha256": "9a5f10d060b9836a2682e8aae3041472bf9aea6c4be1fc46b1fea30b06731008",
+    "bitwise_equal": true
+  }
+]

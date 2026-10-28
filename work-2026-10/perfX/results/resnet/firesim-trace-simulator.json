@@ -1,0 +1,17 @@
+[
+  {
+    "file": "/home/loren/work/runs/perfX/fpga/zF2-resnet-trace-buffered-20261027/dispatch-zF2-resnet-trace-buffered-202610270/uartlog",
+    "metric": "target_cycles_emulated",
+    "value": 3630629417.0
+  },
+  {
+    "file": "/home/loren/work/runs/perfX/fpga/zF2-resnet-trace-buffered-20261027/dispatch-zF2-resnet-trace-buffered-202610270/uartlog",
+    "metric": "fmr",
+    "value": 1.27
+  },
+  {
+    "file": "/home/loren/work/runs/perfX/fpga/zF2-resnet-trace-buffered-20261027/dispatch-zF2-resnet-trace-buffered-202610270/uartlog",
+    "metric": "wallclock_seconds",
+    "value": 76.8
+  }
+]

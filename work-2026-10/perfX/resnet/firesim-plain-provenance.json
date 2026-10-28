@@ -1,0 +1,18 @@
+{
+  "remote": {
+    "runId": "perfX-resnet-plain-corrected",
+    "mode": "elf",
+    "arg": "firesim-elfs/perfX-resnet-plain-corrected.elf",
+    "elf_sha256": "e0e697cf9e22dad752603884c95ad02a15a07f06fe23c53e18a666ba6bb35a7f",
+    "hw_config": "f2_gemmini_rocket_ddr3llc_60mhz",
+    "agfi": "agfi-02410ef1a8461b435",
+    "chipyard": "157dd69e49b9866be2bf8db390ee78bc38cd4438",
+    "firesim": "e1bdea8bb042b900995436ecc3d7c44100eb9da0",
+    "started": "2026-10-27T17:40:56+00:00",
+    "finished": "2026-10-27T17:56:07+00:00",
+    "exit_status": 0,
+    "results_dir": "results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected"
+  },
+  "local_elf": "/home/loren/work/runs/perfX/build-plain/resnet.elf",
+  "verified_sha256": "e0e697cf9e22dad752603884c95ad02a15a07f06fe23c53e18a666ba6bb35a7f"
+}

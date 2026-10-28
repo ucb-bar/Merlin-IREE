@@ -1,0 +1,30 @@
+{
+  "summary": {
+    "model": "tinyllama",
+    "kind": "spike-plain",
+    "source": "runs/perfX/tinyllama/spike-plain.log",
+    "cycles": 4751659274,
+    "seconds_60MHz": null,
+    "numerics": "PASS",
+    "failed_elements": 0,
+    "finite_elements": 512000,
+    "max_abs": 2.288818359375e-05,
+    "rmse": 2.1938664308687575e-06,
+    "atol": 0.001,
+    "rtol": 0.001,
+    "reference": "/home/loren/work/runs/perfX/tinyllama/pytorch-reference.npy",
+    "output_sha256": "bdbd364bbf947b0d52bdd0c8be9a1740bab2a46d1db3d3ef456f986431877a39",
+    "dispatch_count": 0,
+    "gemmini_dispatches": 0,
+    "scalar_dispatches": 0,
+    "gemmini_dispatch_cycles": 0,
+    "scalar_dispatch_cycles": 0,
+    "unattributed_cycles": 4751659274,
+    "gemmini_busy_percent_estimate": 0.0,
+    "scalar_dispatch_percent": 0.0,
+    "gemmini_algorithmic_macs": 0,
+    "gemmini_mac_util_percent_estimate": null,
+    "overall_mac_util_percent_estimate": null
+  },
+  "dispatches": []
+}

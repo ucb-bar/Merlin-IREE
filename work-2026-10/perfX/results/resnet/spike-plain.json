@@ -1,0 +1,32 @@
+{
+  "summary": {
+    "model": "resnet",
+    "kind": "spike-plain",
+    "top1_matches": 1,
+    "top1_total": 1,
+    "source": "/home/loren/work/runs/perfX/resnet/spike-plain-buffered.log",
+    "cycles": 866737584,
+    "seconds_60MHz": null,
+    "numerics": "PASS",
+    "failed_elements": 0,
+    "finite_elements": 1000,
+    "max_abs": 0.0,
+    "rmse": 0.0,
+    "atol": 0.8,
+    "rtol": 0.1,
+    "reference": "/home/loren/work/runs/perfX/resnet/payload-golden.f32",
+    "output_sha256": "fcb0277b9209a28fab23e40c7df5a275aefa81ed51197b831be6a7cb5dd0a925",
+    "dispatch_count": null,
+    "gemmini_dispatches": null,
+    "scalar_dispatches": null,
+    "gemmini_dispatch_cycles": null,
+    "scalar_dispatch_cycles": null,
+    "unattributed_cycles": null,
+    "gemmini_busy_percent_estimate": null,
+    "scalar_dispatch_percent": null,
+    "gemmini_algorithmic_macs": null,
+    "gemmini_mac_util_percent_estimate": null,
+    "overall_mac_util_percent_estimate": null
+  },
+  "dispatches": []
+}

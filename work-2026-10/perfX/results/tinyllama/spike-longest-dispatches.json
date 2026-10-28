@@ -1,0 +1,72 @@
+[
+  {
+    "sequence": 1456,
+    "begin": 883407804,
+    "end": 4751687323,
+    "cycles": 3868279519,
+    "ordinal": 1610,
+    "workgroups_x": 500,
+    "workgroups_y": 1,
+    "workgroups_z": 1,
+    "name": "main$async_dispatch_1456_batch_matmul_1x16x32000x2048_f32",
+    "device": "Rocket scalar",
+    "op_class": "matmul",
+    "macs": 1048576000
+  },
+  {
+    "sequence": 62,
+    "begin": 16750560,
+    "end": 33785337,
+    "cycles": 17034777,
+    "ordinal": 216,
+    "workgroups_x": 352,
+    "workgroups_y": 1,
+    "workgroups_z": 1,
+    "name": "main$async_dispatch_62_matmul_16x5632x2048_i8xi8xi32",
+    "device": "Gemmini",
+    "op_class": "matmul",
+    "macs": 184549376
+  },
+  {
+    "sequence": 127,
+    "begin": 56849928,
+    "end": 73884705,
+    "cycles": 17034777,
+    "ordinal": 281,
+    "workgroups_x": 352,
+    "workgroups_y": 1,
+    "workgroups_z": 1,
+    "name": "main$async_dispatch_127_matmul_16x5632x2048_i8xi8xi32",
+    "device": "Gemmini",
+    "op_class": "matmul",
+    "macs": 184549376
+  },
+  {
+    "sequence": 192,
+    "begin": 96950316,
+    "end": 113985093,
+    "cycles": 17034777,
+    "ordinal": 346,
+    "workgroups_x": 352,
+    "workgroups_y": 1,
+    "workgroups_z": 1,
+    "name": "main$async_dispatch_192_matmul_16x5632x2048_i8xi8xi32",
+    "device": "Gemmini",
+    "op_class": "matmul",
+    "macs": 184549376
+  },
+  {
+    "sequence": 257,
+    "begin": 137050700,
+    "end": 154085477,
+    "cycles": 17034777,
+    "ordinal": 411,
+    "workgroups_x": 352,
+    "workgroups_y": 1,
+    "workgroups_z": 1,
+    "name": "main$async_dispatch_257_matmul_16x5632x2048_i8xi8xi32",
+    "device": "Gemmini",
+    "op_class": "matmul",
+    "macs": 184549376
+  }
+]
