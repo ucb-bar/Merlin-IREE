@@ -1,0 +1,906 @@
+{
+ "spike": {
+  "att_qk_prefill_F": [
+   {
+    "rep": 0,
+    "cycles": 1668241,
+    "instructions": 1668243
+   },
+   {
+    "rep": 1,
+    "cycles": 1668298,
+    "instructions": 1668300
+   },
+   {
+    "rep": 2,
+    "cycles": 1668298,
+    "instructions": 1668300
+   },
+   {
+    "rep": 3,
+    "cycles": 1668298,
+    "instructions": 1668300
+   },
+   {
+    "rep": 4,
+    "cycles": 1668298,
+    "instructions": 1668300
+   },
+   {
+    "rep": 5,
+    "cycles": 1668298,
+    "instructions": 1668300
+   }
+  ],
+  "att_pv_prefill_F": [
+   {
+    "rep": 0,
+    "cycles": 1972374,
+    "instructions": 1972376
+   },
+   {
+    "rep": 1,
+    "cycles": 1972515,
+    "instructions": 1972517
+   },
+   {
+    "rep": 2,
+    "cycles": 1972515,
+    "instructions": 1972517
+   },
+   {
+    "rep": 3,
+    "cycles": 1972515,
+    "instructions": 1972517
+   },
+   {
+    "rep": 4,
+    "cycles": 1972515,
+    "instructions": 1972517
+   },
+   {
+    "rep": 5,
+    "cycles": 1972515,
+    "instructions": 1972517
+   }
+  ],
+  "att_qk_decode_F": [
+   {
+    "rep": 0,
+    "cycles": 408782,
+    "instructions": 408784
+   },
+   {
+    "rep": 1,
+    "cycles": 408838,
+    "instructions": 408840
+   },
+   {
+    "rep": 2,
+    "cycles": 408838,
+    "instructions": 408840
+   },
+   {
+    "rep": 3,
+    "cycles": 408838,
+    "instructions": 408840
+   },
+   {
+    "rep": 4,
+    "cycles": 408838,
+    "instructions": 408840
+   },
+   {
+    "rep": 5,
+    "cycles": 408838,
+    "instructions": 408840
+   }
+  ],
+  "att_pv_decode_F": [
+   {
+    "rep": 0,
+    "cycles": 408784,
+    "instructions": 408786
+   },
+   {
+    "rep": 1,
+    "cycles": 408842,
+    "instructions": 408844
+   },
+   {
+    "rep": 2,
+    "cycles": 408842,
+    "instructions": 408844
+   },
+   {
+    "rep": 3,
+    "cycles": 408842,
+    "instructions": 408844
+   },
+   {
+    "rep": 4,
+    "cycles": 408842,
+    "instructions": 408844
+   },
+   {
+    "rep": 5,
+    "cycles": 408842,
+    "instructions": 408844
+   }
+  ],
+  "mm_lm_fp32_shipped_F": [
+   {
+    "rep": 0,
+    "cycles": 184504824,
+    "instructions": 184504826
+   },
+   {
+    "rep": 1,
+    "cycles": 184504963,
+    "instructions": 184504965
+   },
+   {
+    "rep": 2,
+    "cycles": 184504963,
+    "instructions": 184504965
+   },
+   {
+    "rep": 3,
+    "cycles": 184504963,
+    "instructions": 184504965
+   },
+   {
+    "rep": 4,
+    "cycles": 184504963,
+    "instructions": 184504965
+   },
+   {
+    "rep": 5,
+    "cycles": 184504963,
+    "instructions": 184504965
+   }
+  ],
+  "att_qk_decode_chain_F": [
+   {
+    "rep": 0,
+    "cycles": 3418254,
+    "instructions": 3418256
+   },
+   {
+    "rep": 1,
+    "cycles": 3418329,
+    "instructions": 3418331
+   },
+   {
+    "rep": 2,
+    "cycles": 3418329,
+    "instructions": 3418331
+   },
+   {
+    "rep": 3,
+    "cycles": 3418329,
+    "instructions": 3418331
+   },
+   {
+    "rep": 4,
+    "cycles": 3418329,
+    "instructions": 3418331
+   },
+   {
+    "rep": 5,
+    "cycles": 3418329,
+    "instructions": 3418331
+   }
+  ],
+  "att_pv_decode_chain_F": [
+   {
+    "rep": 0,
+    "cycles": 927197,
+    "instructions": 927199
+   },
+   {
+    "rep": 1,
+    "cycles": 927240,
+    "instructions": 927242
+   },
+   {
+    "rep": 2,
+    "cycles": 927240,
+    "instructions": 927242
+   },
+   {
+    "rep": 3,
+    "cycles": 927240,
+    "instructions": 927242
+   },
+   {
+    "rep": 4,
+    "cycles": 927240,
+    "instructions": 927242
+   },
+   {
+    "rep": 5,
+    "cycles": 927240,
+    "instructions": 927242
+   }
+  ]
+ },
+ "spike_trace": {
+  "att_qk_prefill_F": [
+   {
+    "rep": 0,
+    "cycles": 1668267,
+    "instructions": 1668269
+   },
+   {
+    "rep": 1,
+    "cycles": 1668324,
+    "instructions": 1668326
+   },
+   {
+    "rep": 2,
+    "cycles": 1668324,
+    "instructions": 1668326
+   },
+   {
+    "rep": 3,
+    "cycles": 1668324,
+    "instructions": 1668326
+   },
+   {
+    "rep": 4,
+    "cycles": 1668324,
+    "instructions": 1668326
+   },
+   {
+    "rep": 5,
+    "cycles": 1668324,
+    "instructions": 1668326
+   }
+  ],
+  "att_pv_prefill_F": [
+   {
+    "rep": 0,
+    "cycles": 1972400,
+    "instructions": 1972402
+   },
+   {
+    "rep": 1,
+    "cycles": 1972541,
+    "instructions": 1972543
+   },
+   {
+    "rep": 2,
+    "cycles": 1972541,
+    "instructions": 1972543
+   },
+   {
+    "rep": 3,
+    "cycles": 1972541,
+    "instructions": 1972543
+   },
+   {
+    "rep": 4,
+    "cycles": 1972541,
+    "instructions": 1972543
+   },
+   {
+    "rep": 5,
+    "cycles": 1972541,
+    "instructions": 1972543
+   }
+  ],
+  "att_qk_decode_F": [
+   {
+    "rep": 0,
+    "cycles": 408808,
+    "instructions": 408810
+   },
+   {
+    "rep": 1,
+    "cycles": 408864,
+    "instructions": 408866
+   },
+   {
+    "rep": 2,
+    "cycles": 408864,
+    "instructions": 408866
+   },
+   {
+    "rep": 3,
+    "cycles": 408864,
+    "instructions": 408866
+   },
+   {
+    "rep": 4,
+    "cycles": 408864,
+    "instructions": 408866
+   },
+   {
+    "rep": 5,
+    "cycles": 408864,
+    "instructions": 408866
+   }
+  ],
+  "att_pv_decode_F": [
+   {
+    "rep": 0,
+    "cycles": 408810,
+    "instructions": 408812
+   },
+   {
+    "rep": 1,
+    "cycles": 408868,
+    "instructions": 408870
+   },
+   {
+    "rep": 2,
+    "cycles": 408868,
+    "instructions": 408870
+   },
+   {
+    "rep": 3,
+    "cycles": 408868,
+    "instructions": 408870
+   },
+   {
+    "rep": 4,
+    "cycles": 408868,
+    "instructions": 408870
+   },
+   {
+    "rep": 5,
+    "cycles": 408868,
+    "instructions": 408870
+   }
+  ],
+  "mm_lm_fp32_shipped_F": [
+   {
+    "rep": 0,
+    "cycles": 184504850,
+    "instructions": 184504852
+   },
+   {
+    "rep": 1,
+    "cycles": 184505072,
+    "instructions": 184505074
+   },
+   {
+    "rep": 2,
+    "cycles": 184504989,
+    "instructions": 184504991
+   },
+   {
+    "rep": 3,
+    "cycles": 184504989,
+    "instructions": 184504991
+   },
+   {
+    "rep": 4,
+    "cycles": 184504989,
+    "instructions": 184504991
+   },
+   {
+    "rep": 5,
+    "cycles": 184504989,
+    "instructions": 184504991
+   }
+  ],
+  "att_qk_decode_chain_F": [
+   {
+    "rep": 0,
+    "cycles": 3418384,
+    "instructions": 3418386
+   },
+   {
+    "rep": 1,
+    "cycles": 3418459,
+    "instructions": 3418461
+   },
+   {
+    "rep": 2,
+    "cycles": 3418459,
+    "instructions": 3418461
+   },
+   {
+    "rep": 3,
+    "cycles": 3418459,
+    "instructions": 3418461
+   },
+   {
+    "rep": 4,
+    "cycles": 3418459,
+    "instructions": 3418461
+   },
+   {
+    "rep": 5,
+    "cycles": 3418459,
+    "instructions": 3418461
+   }
+  ],
+  "att_pv_decode_chain_F": [
+   {
+    "rep": 0,
+    "cycles": 927275,
+    "instructions": 927277
+   },
+   {
+    "rep": 1,
+    "cycles": 927318,
+    "instructions": 927320
+   },
+   {
+    "rep": 2,
+    "cycles": 927318,
+    "instructions": 927320
+   },
+   {
+    "rep": 3,
+    "cycles": 927318,
+    "instructions": 927320
+   },
+   {
+    "rep": 4,
+    "cycles": 927318,
+    "instructions": 927320
+   },
+   {
+    "rep": 5,
+    "cycles": 927318,
+    "instructions": 927320
+   }
+  ]
+ },
+ "firesim": {
+  "att_qk_prefill_F": [
+   {
+    "rep": 0,
+    "cycles": 4682758,
+    "instructions": 1668243
+   },
+   {
+    "rep": 1,
+    "cycles": 4601278,
+    "instructions": 1668300
+   },
+   {
+    "rep": 2,
+    "cycles": 4578625,
+    "instructions": 1668300
+   },
+   {
+    "rep": 3,
+    "cycles": 4568636,
+    "instructions": 1668300
+   },
+   {
+    "rep": 4,
+    "cycles": 4566306,
+    "instructions": 1668300
+   },
+   {
+    "rep": 5,
+    "cycles": 4564407,
+    "instructions": 1668300
+   }
+  ],
+  "att_pv_prefill_F": [
+   {
+    "rep": 0,
+    "cycles": 5387660,
+    "instructions": 1972376
+   },
+   {
+    "rep": 1,
+    "cycles": 5408924,
+    "instructions": 1972517
+   },
+   {
+    "rep": 2,
+    "cycles": 5366982,
+    "instructions": 1972517
+   },
+   {
+    "rep": 3,
+    "cycles": 5354157,
+    "instructions": 1972517
+   },
+   {
+    "rep": 4,
+    "cycles": 5349645,
+    "instructions": 1972517
+   },
+   {
+    "rep": 5,
+    "cycles": 5347481,
+    "instructions": 1972517
+   }
+  ],
+  "att_qk_decode_F": [
+   {
+    "rep": 0,
+    "cycles": 917530,
+    "instructions": 408784
+   },
+   {
+    "rep": 1,
+    "cycles": 858258,
+    "instructions": 408840
+   },
+   {
+    "rep": 2,
+    "cycles": 833105,
+    "instructions": 408840
+   },
+   {
+    "rep": 3,
+    "cycles": 823105,
+    "instructions": 408840
+   },
+   {
+    "rep": 4,
+    "cycles": 816506,
+    "instructions": 408840
+   },
+   {
+    "rep": 5,
+    "cycles": 812081,
+    "instructions": 408840
+   }
+  ],
+  "att_pv_decode_F": [
+   {
+    "rep": 0,
+    "cycles": 900574,
+    "instructions": 408786
+   },
+   {
+    "rep": 1,
+    "cycles": 852380,
+    "instructions": 408844
+   },
+   {
+    "rep": 2,
+    "cycles": 829993,
+    "instructions": 408844
+   },
+   {
+    "rep": 3,
+    "cycles": 820780,
+    "instructions": 408844
+   },
+   {
+    "rep": 4,
+    "cycles": 814820,
+    "instructions": 408844
+   },
+   {
+    "rep": 5,
+    "cycles": 810968,
+    "instructions": 408844
+   }
+  ],
+  "mm_lm_fp32_shipped_F": [
+   {
+    "rep": 0,
+    "cycles": 502812114,
+    "instructions": 184504826
+   },
+   {
+    "rep": 1,
+    "cycles": 501442103,
+    "instructions": 184504965
+   },
+   {
+    "rep": 2,
+    "cycles": 501377438,
+    "instructions": 184504965
+   },
+   {
+    "rep": 3,
+    "cycles": 501379916,
+    "instructions": 184504965
+   },
+   {
+    "rep": 4,
+    "cycles": 501386283,
+    "instructions": 184504965
+   },
+   {
+    "rep": 5,
+    "cycles": 501369252,
+    "instructions": 184504965
+   }
+  ],
+  "att_qk_decode_chain_F": [
+   {
+    "rep": 0,
+    "cycles": 6640205,
+    "instructions": 3418256
+   },
+   {
+    "rep": 1,
+    "cycles": 6340897,
+    "instructions": 3418331
+   },
+   {
+    "rep": 2,
+    "cycles": 6319055,
+    "instructions": 3418331
+   },
+   {
+    "rep": 3,
+    "cycles": 6340505,
+    "instructions": 3418331
+   },
+   {
+    "rep": 4,
+    "cycles": 6322846,
+    "instructions": 3418331
+   },
+   {
+    "rep": 5,
+    "cycles": 6307384,
+    "instructions": 3418331
+   }
+  ],
+  "att_pv_decode_chain_F": [
+   {
+    "rep": 0,
+    "cycles": 2156506,
+    "instructions": 927199
+   },
+   {
+    "rep": 1,
+    "cycles": 2040895,
+    "instructions": 927242
+   },
+   {
+    "rep": 2,
+    "cycles": 2037023,
+    "instructions": 927242
+   },
+   {
+    "rep": 3,
+    "cycles": 2031589,
+    "instructions": 927242
+   },
+   {
+    "rep": 4,
+    "cycles": 2031701,
+    "instructions": 927242
+   },
+   {
+    "rep": 5,
+    "cycles": 2032252,
+    "instructions": 927242
+   }
+  ]
+ },
+ "firesim_trace": {
+  "att_qk_prefill_F": [
+   {
+    "rep": 0,
+    "cycles": 4682302,
+    "instructions": 1668269
+   },
+   {
+    "rep": 1,
+    "cycles": 4604234,
+    "instructions": 1668326
+   },
+   {
+    "rep": 2,
+    "cycles": 4578074,
+    "instructions": 1668326
+   },
+   {
+    "rep": 3,
+    "cycles": 4571055,
+    "instructions": 1668326
+   },
+   {
+    "rep": 4,
+    "cycles": 4567011,
+    "instructions": 1668326
+   },
+   {
+    "rep": 5,
+    "cycles": 4566193,
+    "instructions": 1668326
+   }
+  ],
+  "att_pv_prefill_F": [
+   {
+    "rep": 0,
+    "cycles": 5387488,
+    "instructions": 1972402
+   },
+   {
+    "rep": 1,
+    "cycles": 5411071,
+    "instructions": 1972543
+   },
+   {
+    "rep": 2,
+    "cycles": 5366300,
+    "instructions": 1972543
+   },
+   {
+    "rep": 3,
+    "cycles": 5354603,
+    "instructions": 1972543
+   },
+   {
+    "rep": 4,
+    "cycles": 5350742,
+    "instructions": 1972543
+   },
+   {
+    "rep": 5,
+    "cycles": 5348994,
+    "instructions": 1972543
+   }
+  ],
+  "att_qk_decode_F": [
+   {
+    "rep": 0,
+    "cycles": 915712,
+    "instructions": 408810
+   },
+   {
+    "rep": 1,
+    "cycles": 859636,
+    "instructions": 408866
+   },
+   {
+    "rep": 2,
+    "cycles": 834315,
+    "instructions": 408866
+   },
+   {
+    "rep": 3,
+    "cycles": 821898,
+    "instructions": 408866
+   },
+   {
+    "rep": 4,
+    "cycles": 817979,
+    "instructions": 408866
+   },
+   {
+    "rep": 5,
+    "cycles": 813591,
+    "instructions": 408866
+   }
+  ],
+  "att_pv_decode_F": [
+   {
+    "rep": 0,
+    "cycles": 899415,
+    "instructions": 408812
+   },
+   {
+    "rep": 1,
+    "cycles": 856073,
+    "instructions": 408870
+   },
+   {
+    "rep": 2,
+    "cycles": 833561,
+    "instructions": 408870
+   },
+   {
+    "rep": 3,
+    "cycles": 822322,
+    "instructions": 408870
+   },
+   {
+    "rep": 4,
+    "cycles": 817295,
+    "instructions": 408870
+   },
+   {
+    "rep": 5,
+    "cycles": 813349,
+    "instructions": 408870
+   }
+  ],
+  "mm_lm_fp32_shipped_F": [
+   {
+    "rep": 0,
+    "cycles": 515757668,
+    "instructions": 184504852
+   },
+   {
+    "rep": 1,
+    "cycles": 514344863,
+    "instructions": 184505074
+   },
+   {
+    "rep": 2,
+    "cycles": 514308029,
+    "instructions": 184504991
+   },
+   {
+    "rep": 3,
+    "cycles": 514298046,
+    "instructions": 184504991
+   },
+   {
+    "rep": 4,
+    "cycles": 514278396,
+    "instructions": 184504991
+   },
+   {
+    "rep": 5,
+    "cycles": 514335869,
+    "instructions": 184504991
+   }
+  ],
+  "att_qk_decode_chain_F": [
+   {
+    "rep": 0,
+    "cycles": 6630137,
+    "instructions": 3418386
+   },
+   {
+    "rep": 1,
+    "cycles": 6339692,
+    "instructions": 3418461
+   },
+   {
+    "rep": 2,
+    "cycles": 6342161,
+    "instructions": 3418461
+   },
+   {
+    "rep": 3,
+    "cycles": 6323407,
+    "instructions": 3418461
+   },
+   {
+    "rep": 4,
+    "cycles": 6344127,
+    "instructions": 3418461
+   },
+   {
+    "rep": 5,
+    "cycles": 6331377,
+    "instructions": 3418461
+   }
+  ],
+  "att_pv_decode_chain_F": [
+   {
+    "rep": 0,
+    "cycles": 2159458,
+    "instructions": 927277
+   },
+   {
+    "rep": 1,
+    "cycles": 2042523,
+    "instructions": 927320
+   },
+   {
+    "rep": 2,
+    "cycles": 2035913,
+    "instructions": 927320
+   },
+   {
+    "rep": 3,
+    "cycles": 2038050,
+    "instructions": 927320
+   },
+   {
+    "rep": 4,
+    "cycles": 2036449,
+    "instructions": 927320
+   },
+   {
+    "rep": 5,
+    "cycles": 2035064,
+    "instructions": 927320
+   }
+  ]
+ }
+}
