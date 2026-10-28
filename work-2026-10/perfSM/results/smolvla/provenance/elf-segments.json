@@ -1,0 +1,10 @@
+{
+  "plain": {
+    "segments": "\nElf file type is EXEC (Executable file)\nEntry point 0x80000000\nThere are 4 program headers, starting at offset 64\n\nProgram Headers:\n  Type           Offset   VirtAddr           PhysAddr           FileSiz  MemSiz   Flg Align\n  RISCV_ATTRIBUT 0x2149df08 0x0000000000000000 0x0000000000000000 0x000078 0x000000 R   0x1\n  LOAD           0x001000 0x0000000080000000 0x0000000080000000 0x4f7630 0x152dcf0 RWE 0x1000\n  LOAD           0x4f9000 0x00000000c952e000 0x00000000c952e000 0x20fa4ebf 0x20fa4ebf R   0x1000\n  GNU_STACK      0x000000 0x0000000000000000 0x0000000000000000 0x000000 0x000000 RW  0x10\n\n Section to Segment mapping:\n  Segment Sections...\n   00     .riscv.attributes \n   01     .text .rodata .eh_frame .init_array .htif .data .got .got.plt .data.rel.ro .data.__malloc_av_ .data.__sglue .data.__global_locale .data._impure_data .sdata .bss \n   02     .vmfb_data \n   03     \n",
+    "elf_bytes": 558673984
+  },
+  "trace": {
+    "segments": "\nElf file type is EXEC (Executable file)\nEntry point 0x80000000\nThere are 4 program headers, starting at offset 64\n\nProgram Headers:\n  Type           Offset   VirtAddr           PhysAddr           FileSiz  MemSiz   Flg Align\n  RISCV_ATTRIBUT 0x2149df08 0x0000000000000000 0x0000000000000000 0x000078 0x000000 R   0x1\n  LOAD           0x001000 0x0000000080000000 0x0000000080000000 0x4f77f0 0x16adeb0 RWE 0x1000\n  LOAD           0x4f9000 0x00000000c96ae000 0x00000000c96ae000 0x20fa4ebf 0x20fa4ebf R   0x1000\n  GNU_STACK      0x000000 0x0000000000000000 0x0000000000000000 0x000000 0x000000 RW  0x10\n\n Section to Segment mapping:\n  Segment Sections...\n   00     .riscv.attributes \n   01     .text .rodata .eh_frame .init_array .htif .data .got .got.plt .data.rel.ro .data.__malloc_av_ .data.__sglue .data.__global_locale .data._impure_data .sdata .bss \n   02     .vmfb_data \n   03     \n",
+    "elf_bytes": 558674264
+  }
+}
