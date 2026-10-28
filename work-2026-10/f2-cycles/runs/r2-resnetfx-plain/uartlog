@@ -1,0 +1,6 @@
+MODEL_BEGIN resnet50_int8_fixwflags entry=module.main_graph vmfb=25816448 inputs=1 invokes=2 load_cycles=333882989
+INVOKE 0 cycles=2088696169 instret=866737786
+CHECK 0 out=0 n=1000 errors=0 max_abs=0.2092 argmax=21 ref_argmax=21 fnv=68c6eade4411e8c4
+INVOKE 1 cycles=2086032980 instret=866737280
+CHECK 1 out=0 n=1000 errors=0 max_abs=0.2092 argmax=21 ref_argmax=21 fnv=68c6eade4411e8c4
+MODEL_DONE 0

@@ -1,0 +1,1556 @@
+KPROF_BEGIN cases=24 warm=5 vmfb=532654
+CASE_BEGIN gemm_512_512_512
+CASE gemm_512_512_512 0 5086702 1242851
+TRACE_BEGIN gemm_512_512_512 0
+PERFX_TRACE count=1 dropped=0 origin=88211838
+PERFX,0,1400022,5063543,0,1024,1,1,gemm_512_512_512_dispatch_0_matmul_512x512x512_i8xi8xi32
+PERFX_END
+CASE gemm_512_512_512 1 4414073 1242973
+TRACE_BEGIN gemm_512_512_512 1
+PERFX_TRACE count=1 dropped=0 origin=258619250
+PERFX,0,790074,4397623,0,1024,1,1,gemm_512_512_512_dispatch_0_matmul_512x512x512_i8xi8xi32
+PERFX_END
+CASE gemm_512_512_512 2 4402932 1242973
+TRACE_BEGIN gemm_512_512_512 2
+PERFX_TRACE count=1 dropped=0 origin=429023462
+PERFX,0,780760,4387844,0,1024,1,1,gemm_512_512_512_dispatch_0_matmul_512x512x512_i8xi8xi32
+PERFX_END
+CASE gemm_512_512_512 3 4403851 1242973
+TRACE_BEGIN gemm_512_512_512 3
+PERFX_TRACE count=1 dropped=0 origin=599428287
+PERFX,0,779886,4388598,0,1024,1,1,gemm_512_512_512_dispatch_0_matmul_512x512x512_i8xi8xi32
+PERFX_END
+CASE gemm_512_512_512 4 4399448 1242973
+TRACE_BEGIN gemm_512_512_512 4
+PERFX_TRACE count=1 dropped=0 origin=769833221
+PERFX,0,778743,4384458,0,1024,1,1,gemm_512_512_512_dispatch_0_matmul_512x512x512_i8xi8xi32
+PERFX_END
+CASE gemm_512_512_512 5 4399909 1242973
+TRACE_BEGIN gemm_512_512_512 5
+PERFX_TRACE count=1 dropped=0 origin=940238196
+PERFX,0,779601,4384760,0,1024,1,1,gemm_512_512_512_dispatch_0_matmul_512x512x512_i8xi8xi32
+PERFX_END
+CHECK gemm_512_512_512 0 16480980735
+CASE_BEGIN gemm_12544_256_64
+CASE gemm_12544_256_64 0 16145857 3694461
+TRACE_BEGIN gemm_12544_256_64 0
+PERFX_TRACE count=1 dropped=0 origin=1311118948
+PERFX,0,4777981,16119290,1,3136,1,1,gemm_12544_256_64_dispatch_0_matmul_12544x64x256_i8xi8xi32
+PERFX_END
+CASE gemm_12544_256_64 1 14285587 3694485
+TRACE_BEGIN gemm_12544_256_64 1
+PERFX_TRACE count=1 dropped=0 origin=1479522700
+PERFX,0,3391490,14259240,1,3136,1,1,gemm_12544_256_64_dispatch_0_matmul_12544x64x256_i8xi8xi32
+PERFX_END
+CASE gemm_12544_256_64 2 14106662 3694573
+TRACE_BEGIN gemm_12544_256_64 2
+PERFX_TRACE count=1 dropped=0 origin=1647922524
+PERFX,0,3279430,14084061,1,3136,1,1,gemm_12544_256_64_dispatch_0_matmul_12544x64x256_i8xi8xi32
+PERFX_END
+CASE gemm_12544_256_64 3 14076689 3694573
+TRACE_BEGIN gemm_12544_256_64 3
+PERFX_TRACE count=1 dropped=0 origin=1816323237
+PERFX,0,3265218,14052312,1,3136,1,1,gemm_12544_256_64_dispatch_0_matmul_12544x64x256_i8xi8xi32
+PERFX_END
+CASE gemm_12544_256_64 4 14061299 3694573
+TRACE_BEGIN gemm_12544_256_64 4
+PERFX_TRACE count=1 dropped=0 origin=1984722953
+PERFX,0,3256259,14036177,1,3136,1,1,gemm_12544_256_64_dispatch_0_matmul_12544x64x256_i8xi8xi32
+PERFX_END
+CASE gemm_12544_256_64 5 14068287 3694573
+TRACE_BEGIN gemm_12544_256_64 5
+PERFX_TRACE count=1 dropped=0 origin=2153122899
+PERFX,0,3261241,14044592,1,3136,1,1,gemm_12544_256_64_dispatch_0_matmul_12544x64x256_i8xi8xi32
+PERFX_END
+CHECK gemm_12544_256_64 0 10260143072
+CASE_BEGIN gemm_12544_64_256
+CASE gemm_12544_64_256 0 61534847 14692465
+TRACE_BEGIN gemm_12544_64_256 0
+PERFX_TRACE count=1 dropped=0 origin=2433787210
+PERFX,0,20245987,61500208,2,12544,1,1,gemm_12544_64_256_dispatch_0_matmul_12544x256x64_i8xi8xi32
+PERFX_END
+CASE gemm_12544_64_256 1 62227309 14692489
+TRACE_BEGIN gemm_12544_64_256 1
+PERFX_TRACE count=1 dropped=0 origin=2646297213
+PERFX,0,20947382,62193653,2,12544,1,1,gemm_12544_64_256_dispatch_0_matmul_12544x256x64_i8xi8xi32
+PERFX_END
+CASE gemm_12544_64_256 2 62262208 14692577
+TRACE_BEGIN gemm_12544_64_256 2
+PERFX_TRACE count=1 dropped=0 origin=2858802149
+PERFX,0,20967170,62228228,2,12544,1,1,gemm_12544_64_256_dispatch_0_matmul_12544x256x64_i8xi8xi32
+PERFX_END
+CASE gemm_12544_64_256 3 62249416 14692577
+TRACE_BEGIN gemm_12544_64_256 3
+PERFX_TRACE count=1 dropped=0 origin=3071307946
+PERFX,0,20952932,62216653,2,12544,1,1,gemm_12544_64_256_dispatch_0_matmul_12544x256x64_i8xi8xi32
+PERFX_END
+CASE gemm_12544_64_256 4 62266378 14692577
+TRACE_BEGIN gemm_12544_64_256 4
+PERFX_TRACE count=1 dropped=0 origin=3283812156
+PERFX,0,20962940,62232909,2,12544,1,1,gemm_12544_64_256_dispatch_0_matmul_12544x256x64_i8xi8xi32
+PERFX_END
+CASE gemm_12544_64_256 5 62247932 14692577
+TRACE_BEGIN gemm_12544_64_256 5
+PERFX_TRACE count=1 dropped=0 origin=3496317259
+PERFX,0,20948432,62213613,2,12544,1,1,gemm_12544_64_256_dispatch_0_matmul_12544x256x64_i8xi8xi32
+PERFX_END
+CHECK gemm_12544_64_256 0 18446744047433531057
+CASE_BEGIN gemm_3136_512_128
+CASE gemm_3136_512_128 0 8598665 1861467
+TRACE_BEGIN gemm_3136_512_128 0
+PERFX_TRACE count=1 dropped=0 origin=3975451330
+PERFX,0,2301190,8574298,3,1568,1,1,gemm_3136_512_128_dispatch_0_matmul_3136x128x512_i8xi8xi32
+PERFX_END
+CASE gemm_3136_512_128 1 7340286 1861495
+TRACE_BEGIN gemm_3136_512_128 1
+PERFX_TRACE count=1 dropped=0 origin=4143855047
+PERFX,0,1288816,7321313,3,1568,1,1,gemm_3136_512_128_dispatch_0_matmul_3136x128x512_i8xi8xi32
+PERFX_END
+CASE gemm_3136_512_128 2 7210431 1861583
+TRACE_BEGIN gemm_3136_512_128 2
+PERFX_TRACE count=1 dropped=0 origin=4312253843
+PERFX,0,1220219,7192749,3,1568,1,1,gemm_3136_512_128_dispatch_0_matmul_3136x128x512_i8xi8xi32
+PERFX_END
+CASE gemm_3136_512_128 3 7167054 1861583
+TRACE_BEGIN gemm_3136_512_128 3
+PERFX_TRACE count=1 dropped=0 origin=4480654089
+PERFX,0,1200512,7149823,3,1568,1,1,gemm_3136_512_128_dispatch_0_matmul_3136x128x512_i8xi8xi32
+PERFX_END
+CASE gemm_3136_512_128 4 7147897 1861583
+TRACE_BEGIN gemm_3136_512_128 4
+PERFX_TRACE count=1 dropped=0 origin=4649053976
+PERFX,0,1190705,7131633,3,1568,1,1,gemm_3136_512_128_dispatch_0_matmul_3136x128x512_i8xi8xi32
+PERFX_END
+CASE gemm_3136_512_128 5 7141522 1861583
+TRACE_BEGIN gemm_3136_512_128 5
+PERFX_TRACE count=1 dropped=0 origin=4817453900
+PERFX,0,1187312,7124974,3,1568,1,1,gemm_3136_512_128_dispatch_0_matmul_3136x128x512_i8xi8xi32
+PERFX_END
+CHECK gemm_3136_512_128 0 46165574602
+CASE_BEGIN gemm_3136_128_512
+CASE gemm_3136_128_512 0 29177356 7479681
+TRACE_BEGIN gemm_3136_128_512 0
+PERFX_TRACE count=1 dropped=0 origin=5054014440
+PERFX,0,8847286,29146447,4,6272,1,1,gemm_3136_128_512_dispatch_0_matmul_3136x512x128_i8xi8xi32
+PERFX_END
+CASE gemm_3136_128_512 1 29077515 7479688
+TRACE_BEGIN gemm_3136_128_512 1
+PERFX_TRACE count=1 dropped=0 origin=5244472718
+PERFX,0,8830713,29045108,4,6272,1,1,gemm_3136_128_512_dispatch_0_matmul_3136x512x128_i8xi8xi32
+PERFX_END
+CASE gemm_3136_128_512 2 29031222 7479776
+TRACE_BEGIN gemm_3136_128_512 2
+PERFX_TRACE count=1 dropped=0 origin=5434924635
+PERFX,0,8800144,29000910,4,6272,1,1,gemm_3136_128_512_dispatch_0_matmul_3136x512x128_i8xi8xi32
+PERFX_END
+CASE gemm_3136_128_512 3 29003855 7479776
+TRACE_BEGIN gemm_3136_128_512 3
+PERFX_TRACE count=1 dropped=0 origin=5625377814
+PERFX,0,8768789,28973736,4,6272,1,1,gemm_3136_128_512_dispatch_0_matmul_3136x512x128_i8xi8xi32
+PERFX_END
+CASE gemm_3136_128_512 4 29023043 7479776
+TRACE_BEGIN gemm_3136_128_512 4
+PERFX_TRACE count=1 dropped=0 origin=5815830114
+PERFX,0,8783452,28991905,4,6272,1,1,gemm_3136_128_512_dispatch_0_matmul_3136x512x128_i8xi8xi32
+PERFX_END
+CASE gemm_3136_128_512 5 29000380 7479776
+TRACE_BEGIN gemm_3136_128_512 5
+PERFX_TRACE count=1 dropped=0 origin=6006282523
+PERFX,0,8785596,28970067,4,6272,1,1,gemm_3136_128_512_dispatch_0_matmul_3136x512x128_i8xi8xi32
+PERFX_END
+CHECK gemm_3136_128_512 0 18446744054442439719
+CASE_BEGIN gemm_784_256_1024
+CASE gemm_784_256_1024 0 14738541 3707235
+TRACE_BEGIN gemm_784_256_1024 0
+PERFX_TRACE count=1 dropped=0 origin=6331050382
+PERFX,0,4220178,14711917,5,3136,1,1,gemm_784_256_1024_dispatch_0_matmul_784x1024x256_i8xi8xi32
+PERFX_END
+CASE gemm_784_256_1024 1 12643047 3707358
+TRACE_BEGIN gemm_784_256_1024 1
+PERFX_TRACE count=1 dropped=0 origin=6499453754
+PERFX,0,2809179,12620829,5,3136,1,1,gemm_784_256_1024_dispatch_0_matmul_784x1024x256_i8xi8xi32
+PERFX_END
+CASE gemm_784_256_1024 2 12202424 3707358
+TRACE_BEGIN gemm_784_256_1024 2
+PERFX_TRACE count=1 dropped=0 origin=6667853371
+PERFX,0,2518404,12184034,5,3136,1,1,gemm_784_256_1024_dispatch_0_matmul_784x1024x256_i8xi8xi32
+PERFX_END
+CASE gemm_784_256_1024 3 12052084 3707358
+TRACE_BEGIN gemm_784_256_1024 3
+PERFX_TRACE count=1 dropped=0 origin=6836253596
+PERFX,0,2420398,12033257,5,3136,1,1,gemm_784_256_1024_dispatch_0_matmul_784x1024x256_i8xi8xi32
+PERFX_END
+CASE gemm_784_256_1024 4 11979102 3707358
+TRACE_BEGIN gemm_784_256_1024 4
+PERFX_TRACE count=1 dropped=0 origin=7004653523
+PERFX,0,2379356,11961503,5,3136,1,1,gemm_784_256_1024_dispatch_0_matmul_784x1024x256_i8xi8xi32
+PERFX_END
+CASE gemm_784_256_1024 5 11950376 3707358
+TRACE_BEGIN gemm_784_256_1024 5
+PERFX_TRACE count=1 dropped=0 origin=7173053443
+PERFX,0,2365170,11933100,5,3136,1,1,gemm_784_256_1024_dispatch_0_matmul_784x1024x256_i8xi8xi32
+PERFX_END
+CHECK gemm_784_256_1024 0 18446743980110449403
+CASE_BEGIN conv_56_64
+CASE conv_56_64 0 122742910 60742268
+TRACE_BEGIN conv_56_64 0
+PERFX_TRACE count=3 dropped=0 origin=7453718310
+PERFX,0,18558200,23503378,6,16,1,1,conv_56_64_dispatch_0_slow_memcpy
+PERFX,1,23508221,107114827,7,16,1,1,conv_56_64_dispatch_1_generic_4x56x56x3x3x64_i8
+PERFX,2,107122153,122705393,8,3136,1,1,conv_56_64_dispatch_2_matmul_12544x64x576_i8xi8xi32
+PERFX_END
+CASE conv_56_64 1 121694570 60742408
+TRACE_BEGIN conv_56_64 1
+PERFX_TRACE count=3 dropped=0 origin=7804555192
+PERFX,0,17504456,22472545,6,16,1,1,conv_56_64_dispatch_0_slow_memcpy
+PERFX,1,22477719,106069714,7,16,1,1,conv_56_64_dispatch_1_generic_4x56x56x3x3x64_i8
+PERFX,2,106077313,121657611,8,3136,1,1,conv_56_64_dispatch_2_matmul_12544x64x576_i8xi8xi32
+PERFX_END
+CASE conv_56_64 2 121689133 60742496
+TRACE_BEGIN conv_56_64 2
+PERFX_TRACE count=3 dropped=0 origin=8155389688
+PERFX,0,17497072,22468021,6,16,1,1,conv_56_64_dispatch_0_slow_memcpy
+PERFX,1,22473011,106057977,7,16,1,1,conv_56_64_dispatch_1_generic_4x56x56x3x3x64_i8
+PERFX,2,106065079,121651671,8,3136,1,1,conv_56_64_dispatch_2_matmul_12544x64x576_i8xi8xi32
+PERFX_END
+CASE conv_56_64 3 121674083 60742496
+TRACE_BEGIN conv_56_64 3
+PERFX_TRACE count=3 dropped=0 origin=8506222929
+PERFX,0,17504068,22482955,6,16,1,1,conv_56_64_dispatch_0_slow_memcpy
+PERFX,1,22487907,106064271,7,16,1,1,conv_56_64_dispatch_1_generic_4x56x56x3x3x64_i8
+PERFX,2,106071650,121637094,8,3136,1,1,conv_56_64_dispatch_2_matmul_12544x64x576_i8xi8xi32
+PERFX_END
+CASE conv_56_64 4 121691005 60742496
+TRACE_BEGIN conv_56_64 4
+PERFX_TRACE count=3 dropped=0 origin=8857056673
+PERFX,0,17489556,22465240,6,16,1,1,conv_56_64_dispatch_0_slow_memcpy
+PERFX,1,22470597,106074082,7,16,1,1,conv_56_64_dispatch_1_generic_4x56x56x3x3x64_i8
+PERFX,2,106081489,121654208,8,3136,1,1,conv_56_64_dispatch_2_matmul_12544x64x576_i8xi8xi32
+PERFX_END
+CASE conv_56_64 5 121667982 60742496
+TRACE_BEGIN conv_56_64 5
+PERFX_TRACE count=3 dropped=0 origin=9207891480
+PERFX,0,17498955,22477459,6,16,1,1,conv_56_64_dispatch_0_slow_memcpy
+PERFX,1,22482584,106040749,7,16,1,1,conv_56_64_dispatch_1_generic_4x56x56x3x3x64_i8
+PERFX,2,106048613,121630406,8,3136,1,1,conv_56_64_dispatch_2_matmul_12544x64x576_i8xi8xi32
+PERFX_END
+CHECK conv_56_64 0 18446743991584043538
+CASE_BEGIN conv_28_128
+CASE conv_28_128 0 66357183 27672014
+TRACE_BEGIN conv_28_128 0
+PERFX_TRACE count=3 dropped=0 origin=9668983600
+PERFX,0,8446825,10806249,9,16,1,1,conv_28_128_dispatch_0_slow_memcpy
+PERFX,1,10810687,55823476,10,16,1,1,conv_28_128_dispatch_1_generic_4x28x28x3x3x128_i8
+PERFX,2,55830113,66315117,11,1568,1,1,conv_28_128_dispatch_2_matmul_3136x128x1152_i8xi8xi32
+PERFX_END
+CASE conv_28_128 1 64809981 27672214
+TRACE_BEGIN conv_28_128 1
+PERFX_TRACE count=3 dropped=0 origin=9975716619
+PERFX,0,7076118,9505929,9,16,1,1,conv_28_128_dispatch_0_slow_memcpy
+PERFX,1,9509616,54359025,10,16,1,1,conv_28_128_dispatch_1_generic_4x28x28x3x3x128_i8
+PERFX,2,54364845,64770607,11,1568,1,1,conv_28_128_dispatch_2_matmul_3136x128x1152_i8xi8xi32
+PERFX_END
+CASE conv_28_128 2 64710277 27672214
+TRACE_BEGIN conv_28_128 2
+PERFX_TRACE count=3 dropped=0 origin=10260393019
+PERFX,0,7018102,9440308,9,16,1,1,conv_28_128_dispatch_0_slow_memcpy
+PERFX,1,9444150,54256343,10,16,1,1,conv_28_128_dispatch_1_generic_4x28x28x3x3x128_i8
+PERFX,2,54262608,64670222,11,1568,1,1,conv_28_128_dispatch_2_matmul_3136x128x1152_i8xi8xi32
+PERFX_END
+CASE conv_28_128 3 64707969 27672214
+TRACE_BEGIN conv_28_128 3
+PERFX_TRACE count=3 dropped=0 origin=10547074390
+PERFX,0,7008982,9447136,9,16,1,1,conv_28_128_dispatch_0_slow_memcpy
+PERFX,1,9451771,54260972,10,16,1,1,conv_28_128_dispatch_1_generic_4x28x28x3x3x128_i8
+PERFX,2,54266784,64667812,11,1568,1,1,conv_28_128_dispatch_2_matmul_3136x128x1152_i8xi8xi32
+PERFX_END
+CASE conv_28_128 4 64707394 27672214
+TRACE_BEGIN conv_28_128 4
+PERFX_TRACE count=3 dropped=0 origin=10833755683
+PERFX,0,7002649,9438386,9,16,1,1,conv_28_128_dispatch_0_slow_memcpy
+PERFX,1,9442273,54251647,10,16,1,1,conv_28_128_dispatch_1_generic_4x28x28x3x3x128_i8
+PERFX,2,54257703,64667373,11,1568,1,1,conv_28_128_dispatch_2_matmul_3136x128x1152_i8xi8xi32
+PERFX_END
+CASE conv_28_128 5 64696115 27672214
+TRACE_BEGIN conv_28_128 5
+PERFX_TRACE count=3 dropped=0 origin=11120437109
+PERFX,0,7005993,9440264,9,16,1,1,conv_28_128_dispatch_0_slow_memcpy
+PERFX,1,9444597,54241862,10,16,1,1,conv_28_128_dispatch_1_generic_4x28x28x3x3x128_i8
+PERFX,2,54247736,64655733,11,1568,1,1,conv_28_128_dispatch_2_matmul_3136x128x1152_i8xi8xi32
+PERFX_END
+CHECK conv_28_128 0 18446744002741214078
+CASE_BEGIN conv_14_256
+CASE conv_14_256 0 35937737 15235053
+TRACE_BEGIN conv_14_256 0
+PERFX_TRACE count=3 dropped=0 origin=11497330142
+PERFX,0,3410153,4501897,12,16,1,1,conv_14_256_dispatch_0_slow_memcpy
+PERFX,1,4505467,24506662,13,16,1,1,conv_14_256_dispatch_1_generic_4x14x14x3x3x256_i8
+PERFX,2,24511500,35901706,14,784,1,1,conv_14_256_dispatch_2_matmul_784x256x2304_i8xi8xi32
+PERFX_END
+CASE conv_14_256 1 34689845 15235296
+TRACE_BEGIN conv_14_256 1
+PERFX_TRACE count=3 dropped=0 origin=11761961290
+PERFX,0,2538881,3616982,12,16,1,1,conv_14_256_dispatch_0_slow_memcpy
+PERFX,1,3620341,23493155,13,16,1,1,conv_14_256_dispatch_1_generic_4x14x14x3x3x256_i8
+PERFX,2,23497012,34657974,14,784,1,1,conv_14_256_dispatch_2_matmul_784x256x2304_i8xi8xi32
+PERFX_END
+CASE conv_14_256 2 34425923 15235296
+TRACE_BEGIN conv_14_256 2
+PERFX_TRACE count=3 dropped=0 origin=12026589285
+PERFX,0,2383002,3438330,12,16,1,1,conv_14_256_dispatch_0_slow_memcpy
+PERFX,1,3441356,23289695,13,16,1,1,conv_14_256_dispatch_1_generic_4x14x14x3x3x256_i8
+PERFX,2,23293662,34398797,14,784,1,1,conv_14_256_dispatch_2_matmul_784x256x2304_i8xi8xi32
+PERFX_END
+CASE conv_14_256 3 34329534 15235296
+TRACE_BEGIN conv_14_256 3
+PERFX_TRACE count=3 dropped=0 origin=12291218564
+PERFX,0,2330903,3375195,12,16,1,1,conv_14_256_dispatch_0_slow_memcpy
+PERFX,1,3378481,23217384,13,16,1,1,conv_14_256_dispatch_1_generic_4x14x14x3x3x256_i8
+PERFX,2,23221330,34302167,14,784,1,1,conv_14_256_dispatch_2_matmul_784x256x2304_i8xi8xi32
+PERFX_END
+CASE conv_14_256 4 34284823 15235296
+TRACE_BEGIN conv_14_256 4
+PERFX_TRACE count=3 dropped=0 origin=12555846832
+PERFX,0,2309654,3347902,12,16,1,1,conv_14_256_dispatch_0_slow_memcpy
+PERFX,1,3350804,23185413,13,16,1,1,conv_14_256_dispatch_1_generic_4x14x14x3x3x256_i8
+PERFX,2,23189303,34258685,14,784,1,1,conv_14_256_dispatch_2_matmul_784x256x2304_i8xi8xi32
+PERFX_END
+CASE conv_14_256 5 34263676 15235296
+TRACE_BEGIN conv_14_256 5
+PERFX_TRACE count=3 dropped=0 origin=12820475982
+PERFX,0,2301773,3335492,12,16,1,1,conv_14_256_dispatch_0_slow_memcpy
+PERFX,1,3338343,23175465,13,16,1,1,conv_14_256_dispatch_1_generic_4x14x14x3x3x256_i8
+PERFX,2,23179339,34239398,14,784,1,1,conv_14_256_dispatch_2_matmul_784x256x2304_i8xi8xi32
+PERFX_END
+CHECK conv_14_256 0 18446744044574339466
+CASE_BEGIN att_qk_perhead
+CASE att_qk_perhead 0 269792 118681
+TRACE_BEGIN att_qk_perhead 0
+PERFX_TRACE count=32 dropped=0 origin=13153265003
+PERFX,0,100493,103955,15,1,1,1,att_qk_perhead_dispatch_0_matmul_16x16x64_i8xi8xi32
+PERFX,1,106927,109194,16,1,1,1,att_qk_perhead_dispatch_1_matmul_16x16x64_i8xi8xi32
+PERFX,2,111630,113916,17,1,1,1,att_qk_perhead_dispatch_2_matmul_16x16x64_i8xi8xi32
+PERFX,3,116172,118901,18,1,1,1,att_qk_perhead_dispatch_3_matmul_16x16x64_i8xi8xi32
+PERFX,4,121318,123648,19,1,1,1,att_qk_perhead_dispatch_4_matmul_16x16x64_i8xi8xi32
+PERFX,5,125865,128058,20,1,1,1,att_qk_perhead_dispatch_5_matmul_16x16x64_i8xi8xi32
+PERFX,6,130461,133205,21,1,1,1,att_qk_perhead_dispatch_6_matmul_16x16x64_i8xi8xi32
+PERFX,7,135648,137948,22,1,1,1,att_qk_perhead_dispatch_7_matmul_16x16x64_i8xi8xi32
+PERFX,8,140499,143345,23,1,1,1,att_qk_perhead_dispatch_8_matmul_16x16x64_i8xi8xi32
+PERFX,9,145702,148148,24,1,1,1,att_qk_perhead_dispatch_9_matmul_16x16x64_i8xi8xi32
+PERFX,10,150705,152956,25,1,1,1,att_qk_perhead_dispatch_10_matmul_16x16x64_i8xi8xi32
+PERFX,11,155383,158014,26,1,1,1,att_qk_perhead_dispatch_11_matmul_16x16x64_i8xi8xi32
+PERFX,12,160468,162713,27,1,1,1,att_qk_perhead_dispatch_12_matmul_16x16x64_i8xi8xi32
+PERFX,13,165066,167197,28,1,1,1,att_qk_perhead_dispatch_13_matmul_16x16x64_i8xi8xi32
+PERFX,14,169508,172423,29,1,1,1,att_qk_perhead_dispatch_14_matmul_16x16x64_i8xi8xi32
+PERFX,15,174653,176944,30,1,1,1,att_qk_perhead_dispatch_15_matmul_16x16x64_i8xi8xi32
+PERFX,16,179395,181925,31,1,1,1,att_qk_perhead_dispatch_16_matmul_16x16x64_i8xi8xi32
+PERFX,17,184104,186468,32,1,1,1,att_qk_perhead_dispatch_17_matmul_16x16x64_i8xi8xi32
+PERFX,18,189171,191596,33,1,1,1,att_qk_perhead_dispatch_18_matmul_16x16x64_i8xi8xi32
+PERFX,19,193731,196382,34,1,1,1,att_qk_perhead_dispatch_19_matmul_16x16x64_i8xi8xi32
+PERFX,20,199163,201190,35,1,1,1,att_qk_perhead_dispatch_20_matmul_16x16x64_i8xi8xi32
+PERFX,21,203550,205801,36,1,1,1,att_qk_perhead_dispatch_21_matmul_16x16x64_i8xi8xi32
+PERFX,22,208180,210818,37,1,1,1,att_qk_perhead_dispatch_22_matmul_16x16x64_i8xi8xi32
+PERFX,23,213112,215426,38,1,1,1,att_qk_perhead_dispatch_23_matmul_16x16x64_i8xi8xi32
+PERFX,24,218001,220418,39,1,1,1,att_qk_perhead_dispatch_24_matmul_16x16x64_i8xi8xi32
+PERFX,25,222735,225244,40,1,1,1,att_qk_perhead_dispatch_25_matmul_16x16x64_i8xi8xi32
+PERFX,26,227789,230101,41,1,1,1,att_qk_perhead_dispatch_26_matmul_16x16x64_i8xi8xi32
+PERFX,27,232383,235145,42,1,1,1,att_qk_perhead_dispatch_27_matmul_16x16x64_i8xi8xi32
+PERFX,28,237748,239844,43,1,1,1,att_qk_perhead_dispatch_28_matmul_16x16x64_i8xi8xi32
+PERFX,29,242135,244376,44,1,1,1,att_qk_perhead_dispatch_29_matmul_16x16x64_i8xi8xi32
+PERFX,30,246773,249610,45,1,1,1,att_qk_perhead_dispatch_30_matmul_16x16x64_i8xi8xi32
+PERFX,31,251859,254011,46,1,1,1,att_qk_perhead_dispatch_31_matmul_16x16x64_i8xi8xi32
+PERFX_END
+CASE att_qk_perhead 1 200715 118535
+TRACE_BEGIN att_qk_perhead 1
+PERFX_TRACE count=32 dropped=0 origin=14444334833
+PERFX,0,57120,59704,15,1,1,1,att_qk_perhead_dispatch_0_matmul_16x16x64_i8xi8xi32
+PERFX,1,62082,64086,16,1,1,1,att_qk_perhead_dispatch_1_matmul_16x16x64_i8xi8xi32
+PERFX,2,66244,68377,17,1,1,1,att_qk_perhead_dispatch_2_matmul_16x16x64_i8xi8xi32
+PERFX,3,70404,72637,18,1,1,1,att_qk_perhead_dispatch_3_matmul_16x16x64_i8xi8xi32
+PERFX,4,74665,76650,19,1,1,1,att_qk_perhead_dispatch_4_matmul_16x16x64_i8xi8xi32
+PERFX,5,78676,80576,20,1,1,1,att_qk_perhead_dispatch_5_matmul_16x16x64_i8xi8xi32
+PERFX,6,82596,84849,21,1,1,1,att_qk_perhead_dispatch_6_matmul_16x16x64_i8xi8xi32
+PERFX,7,86928,88962,22,1,1,1,att_qk_perhead_dispatch_7_matmul_16x16x64_i8xi8xi32
+PERFX,8,91009,93107,23,1,1,1,att_qk_perhead_dispatch_8_matmul_16x16x64_i8xi8xi32
+PERFX,9,95161,97369,24,1,1,1,att_qk_perhead_dispatch_9_matmul_16x16x64_i8xi8xi32
+PERFX,10,99436,101391,25,1,1,1,att_qk_perhead_dispatch_10_matmul_16x16x64_i8xi8xi32
+PERFX,11,103514,105783,26,1,1,1,att_qk_perhead_dispatch_11_matmul_16x16x64_i8xi8xi32
+PERFX,12,107854,109841,27,1,1,1,att_qk_perhead_dispatch_12_matmul_16x16x64_i8xi8xi32
+PERFX,13,111869,113844,28,1,1,1,att_qk_perhead_dispatch_13_matmul_16x16x64_i8xi8xi32
+PERFX,14,115890,118140,29,1,1,1,att_qk_perhead_dispatch_14_matmul_16x16x64_i8xi8xi32
+PERFX,15,120183,122148,30,1,1,1,att_qk_perhead_dispatch_15_matmul_16x16x64_i8xi8xi32
+PERFX,16,124241,126306,31,1,1,1,att_qk_perhead_dispatch_16_matmul_16x16x64_i8xi8xi32
+PERFX,17,128286,130377,32,1,1,1,att_qk_perhead_dispatch_17_matmul_16x16x64_i8xi8xi32
+PERFX,18,132346,134398,33,1,1,1,att_qk_perhead_dispatch_18_matmul_16x16x64_i8xi8xi32
+PERFX,19,136385,138580,34,1,1,1,att_qk_perhead_dispatch_19_matmul_16x16x64_i8xi8xi32
+PERFX,20,140556,142419,35,1,1,1,att_qk_perhead_dispatch_20_matmul_16x16x64_i8xi8xi32
+PERFX,21,144410,146374,36,1,1,1,att_qk_perhead_dispatch_21_matmul_16x16x64_i8xi8xi32
+PERFX,22,148374,150690,37,1,1,1,att_qk_perhead_dispatch_22_matmul_16x16x64_i8xi8xi32
+PERFX,23,152813,154820,38,1,1,1,att_qk_perhead_dispatch_23_matmul_16x16x64_i8xi8xi32
+PERFX,24,156828,158991,39,1,1,1,att_qk_perhead_dispatch_24_matmul_16x16x64_i8xi8xi32
+PERFX,25,160953,163062,40,1,1,1,att_qk_perhead_dispatch_25_matmul_16x16x64_i8xi8xi32
+PERFX,26,165017,167003,41,1,1,1,att_qk_perhead_dispatch_26_matmul_16x16x64_i8xi8xi32
+PERFX,27,169000,171113,42,1,1,1,att_qk_perhead_dispatch_27_matmul_16x16x64_i8xi8xi32
+PERFX,28,173255,175158,43,1,1,1,att_qk_perhead_dispatch_28_matmul_16x16x64_i8xi8xi32
+PERFX,29,177094,178966,44,1,1,1,att_qk_perhead_dispatch_29_matmul_16x16x64_i8xi8xi32
+PERFX,30,180952,183216,45,1,1,1,att_qk_perhead_dispatch_30_matmul_16x16x64_i8xi8xi32
+PERFX,31,185240,187188,46,1,1,1,att_qk_perhead_dispatch_31_matmul_16x16x64_i8xi8xi32
+PERFX_END
+CASE att_qk_perhead 2 197097 118535
+TRACE_BEGIN att_qk_perhead 2
+PERFX_TRACE count=32 dropped=0 origin=15735403397
+PERFX,0,54792,57343,15,1,1,1,att_qk_perhead_dispatch_0_matmul_16x16x64_i8xi8xi32
+PERFX,1,59642,61626,16,1,1,1,att_qk_perhead_dispatch_1_matmul_16x16x64_i8xi8xi32
+PERFX,2,63768,65720,17,1,1,1,att_qk_perhead_dispatch_2_matmul_16x16x64_i8xi8xi32
+PERFX,3,67783,70056,18,1,1,1,att_qk_perhead_dispatch_3_matmul_16x16x64_i8xi8xi32
+PERFX,4,72097,73982,19,1,1,1,att_qk_perhead_dispatch_4_matmul_16x16x64_i8xi8xi32
+PERFX,5,76044,77966,20,1,1,1,att_qk_perhead_dispatch_5_matmul_16x16x64_i8xi8xi32
+PERFX,6,80026,82325,21,1,1,1,att_qk_perhead_dispatch_6_matmul_16x16x64_i8xi8xi32
+PERFX,7,84333,86251,22,1,1,1,att_qk_perhead_dispatch_7_matmul_16x16x64_i8xi8xi32
+PERFX,8,88337,90533,23,1,1,1,att_qk_perhead_dispatch_8_matmul_16x16x64_i8xi8xi32
+PERFX,9,92594,94776,24,1,1,1,att_qk_perhead_dispatch_9_matmul_16x16x64_i8xi8xi32
+PERFX,10,96803,99067,25,1,1,1,att_qk_perhead_dispatch_10_matmul_16x16x64_i8xi8xi32
+PERFX,11,101086,103215,26,1,1,1,att_qk_perhead_dispatch_11_matmul_16x16x64_i8xi8xi32
+PERFX,12,105283,107235,27,1,1,1,att_qk_perhead_dispatch_12_matmul_16x16x64_i8xi8xi32
+PERFX,13,109244,111077,28,1,1,1,att_qk_perhead_dispatch_13_matmul_16x16x64_i8xi8xi32
+PERFX,14,113064,115407,29,1,1,1,att_qk_perhead_dispatch_14_matmul_16x16x64_i8xi8xi32
+PERFX,15,117421,119366,30,1,1,1,att_qk_perhead_dispatch_15_matmul_16x16x64_i8xi8xi32
+PERFX,16,121391,123562,31,1,1,1,att_qk_perhead_dispatch_16_matmul_16x16x64_i8xi8xi32
+PERFX,17,125551,127661,32,1,1,1,att_qk_perhead_dispatch_17_matmul_16x16x64_i8xi8xi32
+PERFX,18,129643,131601,33,1,1,1,att_qk_perhead_dispatch_18_matmul_16x16x64_i8xi8xi32
+PERFX,19,133656,135883,34,1,1,1,att_qk_perhead_dispatch_19_matmul_16x16x64_i8xi8xi32
+PERFX,20,137921,139920,35,1,1,1,att_qk_perhead_dispatch_20_matmul_16x16x64_i8xi8xi32
+PERFX,21,141904,143862,36,1,1,1,att_qk_perhead_dispatch_21_matmul_16x16x64_i8xi8xi32
+PERFX,22,145870,148097,37,1,1,1,att_qk_perhead_dispatch_22_matmul_16x16x64_i8xi8xi32
+PERFX,23,150048,151981,38,1,1,1,att_qk_perhead_dispatch_23_matmul_16x16x64_i8xi8xi32
+PERFX,24,153982,156074,39,1,1,1,att_qk_perhead_dispatch_24_matmul_16x16x64_i8xi8xi32
+PERFX,25,158066,160172,40,1,1,1,att_qk_perhead_dispatch_25_matmul_16x16x64_i8xi8xi32
+PERFX,26,162144,164146,41,1,1,1,att_qk_perhead_dispatch_26_matmul_16x16x64_i8xi8xi32
+PERFX,27,166173,168359,42,1,1,1,att_qk_perhead_dispatch_27_matmul_16x16x64_i8xi8xi32
+PERFX,28,170432,172304,43,1,1,1,att_qk_perhead_dispatch_28_matmul_16x16x64_i8xi8xi32
+PERFX,29,174347,176226,44,1,1,1,att_qk_perhead_dispatch_29_matmul_16x16x64_i8xi8xi32
+PERFX,30,178182,180429,45,1,1,1,att_qk_perhead_dispatch_30_matmul_16x16x64_i8xi8xi32
+PERFX,31,182402,184304,46,1,1,1,att_qk_perhead_dispatch_31_matmul_16x16x64_i8xi8xi32
+PERFX_END
+CASE att_qk_perhead 3 194372 118535
+TRACE_BEGIN att_qk_perhead 3
+PERFX_TRACE count=32 dropped=0 origin=17026471742
+PERFX,0,52821,55337,15,1,1,1,att_qk_perhead_dispatch_0_matmul_16x16x64_i8xi8xi32
+PERFX,1,57610,59632,16,1,1,1,att_qk_perhead_dispatch_1_matmul_16x16x64_i8xi8xi32
+PERFX,2,61750,63746,17,1,1,1,att_qk_perhead_dispatch_2_matmul_16x16x64_i8xi8xi32
+PERFX,3,65777,68082,18,1,1,1,att_qk_perhead_dispatch_3_matmul_16x16x64_i8xi8xi32
+PERFX,4,70161,72004,19,1,1,1,att_qk_perhead_dispatch_4_matmul_16x16x64_i8xi8xi32
+PERFX,5,73961,75972,20,1,1,1,att_qk_perhead_dispatch_5_matmul_16x16x64_i8xi8xi32
+PERFX,6,77955,80151,21,1,1,1,att_qk_perhead_dispatch_6_matmul_16x16x64_i8xi8xi32
+PERFX,7,82125,84119,22,1,1,1,att_qk_perhead_dispatch_7_matmul_16x16x64_i8xi8xi32
+PERFX,8,86131,88256,23,1,1,1,att_qk_perhead_dispatch_8_matmul_16x16x64_i8xi8xi32
+PERFX,9,90248,92437,24,1,1,1,att_qk_perhead_dispatch_9_matmul_16x16x64_i8xi8xi32
+PERFX,10,94461,96534,25,1,1,1,att_qk_perhead_dispatch_10_matmul_16x16x64_i8xi8xi32
+PERFX,11,98580,100698,26,1,1,1,att_qk_perhead_dispatch_11_matmul_16x16x64_i8xi8xi32
+PERFX,12,102686,104615,27,1,1,1,att_qk_perhead_dispatch_12_matmul_16x16x64_i8xi8xi32
+PERFX,13,106635,108510,28,1,1,1,att_qk_perhead_dispatch_13_matmul_16x16x64_i8xi8xi32
+PERFX,14,110571,112775,29,1,1,1,att_qk_perhead_dispatch_14_matmul_16x16x64_i8xi8xi32
+PERFX,15,114759,116778,30,1,1,1,att_qk_perhead_dispatch_15_matmul_16x16x64_i8xi8xi32
+PERFX,16,118820,120987,31,1,1,1,att_qk_perhead_dispatch_16_matmul_16x16x64_i8xi8xi32
+PERFX,17,123001,125183,32,1,1,1,att_qk_perhead_dispatch_17_matmul_16x16x64_i8xi8xi32
+PERFX,18,127204,129086,33,1,1,1,att_qk_perhead_dispatch_18_matmul_16x16x64_i8xi8xi32
+PERFX,19,131072,133318,34,1,1,1,att_qk_perhead_dispatch_19_matmul_16x16x64_i8xi8xi32
+PERFX,20,135330,137188,35,1,1,1,att_qk_perhead_dispatch_20_matmul_16x16x64_i8xi8xi32
+PERFX,21,139239,141205,36,1,1,1,att_qk_perhead_dispatch_21_matmul_16x16x64_i8xi8xi32
+PERFX,22,143265,145556,37,1,1,1,att_qk_perhead_dispatch_22_matmul_16x16x64_i8xi8xi32
+PERFX,23,147614,149551,38,1,1,1,att_qk_perhead_dispatch_23_matmul_16x16x64_i8xi8xi32
+PERFX,24,151577,153653,39,1,1,1,att_qk_perhead_dispatch_24_matmul_16x16x64_i8xi8xi32
+PERFX,25,155636,157704,40,1,1,1,att_qk_perhead_dispatch_25_matmul_16x16x64_i8xi8xi32
+PERFX,26,159714,161687,41,1,1,1,att_qk_perhead_dispatch_26_matmul_16x16x64_i8xi8xi32
+PERFX,27,163721,165909,42,1,1,1,att_qk_perhead_dispatch_27_matmul_16x16x64_i8xi8xi32
+PERFX,28,167947,169788,43,1,1,1,att_qk_perhead_dispatch_28_matmul_16x16x64_i8xi8xi32
+PERFX,29,171820,173790,44,1,1,1,att_qk_perhead_dispatch_29_matmul_16x16x64_i8xi8xi32
+PERFX,30,175820,178044,45,1,1,1,att_qk_perhead_dispatch_30_matmul_16x16x64_i8xi8xi32
+PERFX,31,180044,181972,46,1,1,1,att_qk_perhead_dispatch_31_matmul_16x16x64_i8xi8xi32
+PERFX_END
+CASE att_qk_perhead 4 194917 118535
+TRACE_BEGIN att_qk_perhead 4
+PERFX_TRACE count=32 dropped=0 origin=18317540702
+PERFX,0,52869,55230,15,1,1,1,att_qk_perhead_dispatch_0_matmul_16x16x64_i8xi8xi32
+PERFX,1,57631,59773,16,1,1,1,att_qk_perhead_dispatch_1_matmul_16x16x64_i8xi8xi32
+PERFX,2,61887,63834,17,1,1,1,att_qk_perhead_dispatch_2_matmul_16x16x64_i8xi8xi32
+PERFX,3,65889,68100,18,1,1,1,att_qk_perhead_dispatch_3_matmul_16x16x64_i8xi8xi32
+PERFX,4,70105,72093,19,1,1,1,att_qk_perhead_dispatch_4_matmul_16x16x64_i8xi8xi32
+PERFX,5,74133,76100,20,1,1,1,att_qk_perhead_dispatch_5_matmul_16x16x64_i8xi8xi32
+PERFX,6,78259,80591,21,1,1,1,att_qk_perhead_dispatch_6_matmul_16x16x64_i8xi8xi32
+PERFX,7,82665,84655,22,1,1,1,att_qk_perhead_dispatch_7_matmul_16x16x64_i8xi8xi32
+PERFX,8,86769,88931,23,1,1,1,att_qk_perhead_dispatch_8_matmul_16x16x64_i8xi8xi32
+PERFX,9,90964,93152,24,1,1,1,att_qk_perhead_dispatch_9_matmul_16x16x64_i8xi8xi32
+PERFX,10,95193,97167,25,1,1,1,att_qk_perhead_dispatch_10_matmul_16x16x64_i8xi8xi32
+PERFX,11,99206,101425,26,1,1,1,att_qk_perhead_dispatch_11_matmul_16x16x64_i8xi8xi32
+PERFX,12,103529,105455,27,1,1,1,att_qk_perhead_dispatch_12_matmul_16x16x64_i8xi8xi32
+PERFX,13,107474,109377,28,1,1,1,att_qk_perhead_dispatch_13_matmul_16x16x64_i8xi8xi32
+PERFX,14,111382,113577,29,1,1,1,att_qk_perhead_dispatch_14_matmul_16x16x64_i8xi8xi32
+PERFX,15,115568,117483,30,1,1,1,att_qk_perhead_dispatch_15_matmul_16x16x64_i8xi8xi32
+PERFX,16,119456,121571,31,1,1,1,att_qk_perhead_dispatch_16_matmul_16x16x64_i8xi8xi32
+PERFX,17,123584,125668,32,1,1,1,att_qk_perhead_dispatch_17_matmul_16x16x64_i8xi8xi32
+PERFX,18,127663,129538,33,1,1,1,att_qk_perhead_dispatch_18_matmul_16x16x64_i8xi8xi32
+PERFX,19,131575,133825,34,1,1,1,att_qk_perhead_dispatch_19_matmul_16x16x64_i8xi8xi32
+PERFX,20,135852,137812,35,1,1,1,att_qk_perhead_dispatch_20_matmul_16x16x64_i8xi8xi32
+PERFX,21,139890,141776,36,1,1,1,att_qk_perhead_dispatch_21_matmul_16x16x64_i8xi8xi32
+PERFX,22,143807,146095,37,1,1,1,att_qk_perhead_dispatch_22_matmul_16x16x64_i8xi8xi32
+PERFX,23,148193,150186,38,1,1,1,att_qk_perhead_dispatch_23_matmul_16x16x64_i8xi8xi32
+PERFX,24,152212,154340,39,1,1,1,att_qk_perhead_dispatch_24_matmul_16x16x64_i8xi8xi32
+PERFX,25,156315,158467,40,1,1,1,att_qk_perhead_dispatch_25_matmul_16x16x64_i8xi8xi32
+PERFX,26,160442,162386,41,1,1,1,att_qk_perhead_dispatch_26_matmul_16x16x64_i8xi8xi32
+PERFX,27,164425,166534,42,1,1,1,att_qk_perhead_dispatch_27_matmul_16x16x64_i8xi8xi32
+PERFX,28,168587,170489,43,1,1,1,att_qk_perhead_dispatch_28_matmul_16x16x64_i8xi8xi32
+PERFX,29,172515,174423,44,1,1,1,att_qk_perhead_dispatch_29_matmul_16x16x64_i8xi8xi32
+PERFX,30,176395,178552,45,1,1,1,att_qk_perhead_dispatch_30_matmul_16x16x64_i8xi8xi32
+PERFX,31,180510,182438,46,1,1,1,att_qk_perhead_dispatch_31_matmul_16x16x64_i8xi8xi32
+PERFX_END
+CASE att_qk_perhead 5 194283 118535
+TRACE_BEGIN att_qk_perhead 5
+PERFX_TRACE count=32 dropped=0 origin=19608609156
+PERFX,0,52556,54920,15,1,1,1,att_qk_perhead_dispatch_0_matmul_16x16x64_i8xi8xi32
+PERFX,1,57287,59229,16,1,1,1,att_qk_perhead_dispatch_1_matmul_16x16x64_i8xi8xi32
+PERFX,2,61300,63289,17,1,1,1,att_qk_perhead_dispatch_2_matmul_16x16x64_i8xi8xi32
+PERFX,3,65350,67577,18,1,1,1,att_qk_perhead_dispatch_3_matmul_16x16x64_i8xi8xi32
+PERFX,4,69682,71543,19,1,1,1,att_qk_perhead_dispatch_4_matmul_16x16x64_i8xi8xi32
+PERFX,5,73641,75615,20,1,1,1,att_qk_perhead_dispatch_5_matmul_16x16x64_i8xi8xi32
+PERFX,6,77654,79943,21,1,1,1,att_qk_perhead_dispatch_6_matmul_16x16x64_i8xi8xi32
+PERFX,7,82022,84085,22,1,1,1,att_qk_perhead_dispatch_7_matmul_16x16x64_i8xi8xi32
+PERFX,8,86133,88304,23,1,1,1,att_qk_perhead_dispatch_8_matmul_16x16x64_i8xi8xi32
+PERFX,9,90346,92522,24,1,1,1,att_qk_perhead_dispatch_9_matmul_16x16x64_i8xi8xi32
+PERFX,10,94526,96488,25,1,1,1,att_qk_perhead_dispatch_10_matmul_16x16x64_i8xi8xi32
+PERFX,11,98582,100808,26,1,1,1,att_qk_perhead_dispatch_11_matmul_16x16x64_i8xi8xi32
+PERFX,12,102856,104761,27,1,1,1,att_qk_perhead_dispatch_12_matmul_16x16x64_i8xi8xi32
+PERFX,13,106760,108688,28,1,1,1,att_qk_perhead_dispatch_13_matmul_16x16x64_i8xi8xi32
+PERFX,14,110662,112864,29,1,1,1,att_qk_perhead_dispatch_14_matmul_16x16x64_i8xi8xi32
+PERFX,15,114902,116857,30,1,1,1,att_qk_perhead_dispatch_15_matmul_16x16x64_i8xi8xi32
+PERFX,16,118949,121074,31,1,1,1,att_qk_perhead_dispatch_16_matmul_16x16x64_i8xi8xi32
+PERFX,17,123072,125159,32,1,1,1,att_qk_perhead_dispatch_17_matmul_16x16x64_i8xi8xi32
+PERFX,18,127244,129197,33,1,1,1,att_qk_perhead_dispatch_18_matmul_16x16x64_i8xi8xi32
+PERFX,19,131214,133437,34,1,1,1,att_qk_perhead_dispatch_19_matmul_16x16x64_i8xi8xi32
+PERFX,20,135461,137370,35,1,1,1,att_qk_perhead_dispatch_20_matmul_16x16x64_i8xi8xi32
+PERFX,21,139369,141313,36,1,1,1,att_qk_perhead_dispatch_21_matmul_16x16x64_i8xi8xi32
+PERFX,22,143291,145524,37,1,1,1,att_qk_perhead_dispatch_22_matmul_16x16x64_i8xi8xi32
+PERFX,23,147572,149512,38,1,1,1,att_qk_perhead_dispatch_23_matmul_16x16x64_i8xi8xi32
+PERFX,24,151539,153699,39,1,1,1,att_qk_perhead_dispatch_24_matmul_16x16x64_i8xi8xi32
+PERFX,25,155652,157802,40,1,1,1,att_qk_perhead_dispatch_25_matmul_16x16x64_i8xi8xi32
+PERFX,26,159800,161717,41,1,1,1,att_qk_perhead_dispatch_26_matmul_16x16x64_i8xi8xi32
+PERFX,27,163707,165855,42,1,1,1,att_qk_perhead_dispatch_27_matmul_16x16x64_i8xi8xi32
+PERFX,28,167872,169733,43,1,1,1,att_qk_perhead_dispatch_28_matmul_16x16x64_i8xi8xi32
+PERFX,29,171711,173640,44,1,1,1,att_qk_perhead_dispatch_29_matmul_16x16x64_i8xi8xi32
+PERFX,30,175691,177922,45,1,1,1,att_qk_perhead_dispatch_30_matmul_16x16x64_i8xi8xi32
+PERFX,31,179945,181889,46,1,1,1,att_qk_perhead_dispatch_31_matmul_16x16x64_i8xi8xi32
+PERFX_END
+CHECK att_qk_perhead 0 599744169
+CASE_BEGIN att_pv_perhead
+CASE att_pv_perhead 0 492644 230572
+TRACE_BEGIN att_pv_perhead 0
+PERFX_TRACE count=32 dropped=0 origin=20967838903
+PERFX,0,144291,152722,47,4,1,1,att_pv_perhead_dispatch_0_matmul_16x64x16_i8xi8xi32
+PERFX,1,155445,164345,48,4,1,1,att_pv_perhead_dispatch_1_matmul_16x64x16_i8xi8xi32
+PERFX,2,166912,174735,49,4,1,1,att_pv_perhead_dispatch_2_matmul_16x64x16_i8xi8xi32
+PERFX,3,177254,184939,50,4,1,1,att_pv_perhead_dispatch_3_matmul_16x64x16_i8xi8xi32
+PERFX,4,187399,196117,51,4,1,1,att_pv_perhead_dispatch_4_matmul_16x64x16_i8xi8xi32
+PERFX,5,198602,206403,52,4,1,1,att_pv_perhead_dispatch_5_matmul_16x64x16_i8xi8xi32
+PERFX,6,208928,216929,53,4,1,1,att_pv_perhead_dispatch_6_matmul_16x64x16_i8xi8xi32
+PERFX,7,219323,227042,54,4,1,1,att_pv_perhead_dispatch_7_matmul_16x64x16_i8xi8xi32
+PERFX,8,229466,237137,55,4,1,1,att_pv_perhead_dispatch_8_matmul_16x64x16_i8xi8xi32
+PERFX,9,239606,247212,56,4,1,1,att_pv_perhead_dispatch_9_matmul_16x64x16_i8xi8xi32
+PERFX,10,249680,257302,57,4,1,1,att_pv_perhead_dispatch_10_matmul_16x64x16_i8xi8xi32
+PERFX,11,259575,267189,58,4,1,1,att_pv_perhead_dispatch_11_matmul_16x64x16_i8xi8xi32
+PERFX,12,269671,277312,59,4,1,1,att_pv_perhead_dispatch_12_matmul_16x64x16_i8xi8xi32
+PERFX,13,279725,288224,60,4,1,1,att_pv_perhead_dispatch_13_matmul_16x64x16_i8xi8xi32
+PERFX,14,290666,299653,61,4,1,1,att_pv_perhead_dispatch_14_matmul_16x64x16_i8xi8xi32
+PERFX,15,302059,310670,62,4,1,1,att_pv_perhead_dispatch_15_matmul_16x64x16_i8xi8xi32
+PERFX,16,313021,321208,63,4,1,1,att_pv_perhead_dispatch_16_matmul_16x64x16_i8xi8xi32
+PERFX,17,323727,331081,64,4,1,1,att_pv_perhead_dispatch_17_matmul_16x64x16_i8xi8xi32
+PERFX,18,333439,342155,65,4,1,1,att_pv_perhead_dispatch_18_matmul_16x64x16_i8xi8xi32
+PERFX,19,344504,352213,66,4,1,1,att_pv_perhead_dispatch_19_matmul_16x64x16_i8xi8xi32
+PERFX,20,354718,363276,67,4,1,1,att_pv_perhead_dispatch_20_matmul_16x64x16_i8xi8xi32
+PERFX,21,365586,373983,68,4,1,1,att_pv_perhead_dispatch_21_matmul_16x64x16_i8xi8xi32
+PERFX,22,376494,384096,69,4,1,1,att_pv_perhead_dispatch_22_matmul_16x64x16_i8xi8xi32
+PERFX,23,386555,394969,70,4,1,1,att_pv_perhead_dispatch_23_matmul_16x64x16_i8xi8xi32
+PERFX,24,397263,404753,71,4,1,1,att_pv_perhead_dispatch_24_matmul_16x64x16_i8xi8xi32
+PERFX,25,407139,414531,72,4,1,1,att_pv_perhead_dispatch_25_matmul_16x64x16_i8xi8xi32
+PERFX,26,416951,425380,73,4,1,1,att_pv_perhead_dispatch_26_matmul_16x64x16_i8xi8xi32
+PERFX,27,427790,435376,74,4,1,1,att_pv_perhead_dispatch_27_matmul_16x64x16_i8xi8xi32
+PERFX,28,437777,446216,75,4,1,1,att_pv_perhead_dispatch_28_matmul_16x64x16_i8xi8xi32
+PERFX,29,448467,456772,76,4,1,1,att_pv_perhead_dispatch_29_matmul_16x64x16_i8xi8xi32
+PERFX,30,459211,467348,77,4,1,1,att_pv_perhead_dispatch_30_matmul_16x64x16_i8xi8xi32
+PERFX,31,469741,478304,78,4,1,1,att_pv_perhead_dispatch_31_matmul_16x64x16_i8xi8xi32
+PERFX_END
+CASE att_pv_perhead 1 430864 230509
+TRACE_BEGIN att_pv_perhead 1
+PERFX_TRACE count=32 dropped=0 origin=22258908966
+PERFX,0,107491,115375,47,4,1,1,att_pv_perhead_dispatch_0_matmul_16x64x16_i8xi8xi32
+PERFX,1,117964,126525,48,4,1,1,att_pv_perhead_dispatch_1_matmul_16x64x16_i8xi8xi32
+PERFX,2,128759,136223,49,4,1,1,att_pv_perhead_dispatch_2_matmul_16x64x16_i8xi8xi32
+PERFX,3,138392,145737,50,4,1,1,att_pv_perhead_dispatch_3_matmul_16x64x16_i8xi8xi32
+PERFX,4,147943,156380,51,4,1,1,att_pv_perhead_dispatch_4_matmul_16x64x16_i8xi8xi32
+PERFX,5,158520,165805,52,4,1,1,att_pv_perhead_dispatch_5_matmul_16x64x16_i8xi8xi32
+PERFX,6,167947,175223,53,4,1,1,att_pv_perhead_dispatch_6_matmul_16x64x16_i8xi8xi32
+PERFX,7,177462,184812,54,4,1,1,att_pv_perhead_dispatch_7_matmul_16x64x16_i8xi8xi32
+PERFX,8,187002,194340,55,4,1,1,att_pv_perhead_dispatch_8_matmul_16x64x16_i8xi8xi32
+PERFX,9,196504,203664,56,4,1,1,att_pv_perhead_dispatch_9_matmul_16x64x16_i8xi8xi32
+PERFX,10,205825,212911,57,4,1,1,att_pv_perhead_dispatch_10_matmul_16x64x16_i8xi8xi32
+PERFX,11,214961,222122,58,4,1,1,att_pv_perhead_dispatch_11_matmul_16x64x16_i8xi8xi32
+PERFX,12,224371,231594,59,4,1,1,att_pv_perhead_dispatch_12_matmul_16x64x16_i8xi8xi32
+PERFX,13,233712,241715,60,4,1,1,att_pv_perhead_dispatch_13_matmul_16x64x16_i8xi8xi32
+PERFX,14,243797,252018,61,4,1,1,att_pv_perhead_dispatch_14_matmul_16x64x16_i8xi8xi32
+PERFX,15,254063,262097,62,4,1,1,att_pv_perhead_dispatch_15_matmul_16x64x16_i8xi8xi32
+PERFX,16,264231,272259,63,4,1,1,att_pv_perhead_dispatch_16_matmul_16x64x16_i8xi8xi32
+PERFX,17,274333,281421,64,4,1,1,att_pv_perhead_dispatch_17_matmul_16x64x16_i8xi8xi32
+PERFX,18,283547,291561,65,4,1,1,att_pv_perhead_dispatch_18_matmul_16x64x16_i8xi8xi32
+PERFX,19,293611,300678,66,4,1,1,att_pv_perhead_dispatch_19_matmul_16x64x16_i8xi8xi32
+PERFX,20,302744,310803,67,4,1,1,att_pv_perhead_dispatch_20_matmul_16x64x16_i8xi8xi32
+PERFX,21,312925,320930,68,4,1,1,att_pv_perhead_dispatch_21_matmul_16x64x16_i8xi8xi32
+PERFX,22,323008,330053,69,4,1,1,att_pv_perhead_dispatch_22_matmul_16x64x16_i8xi8xi32
+PERFX,23,332140,340167,70,4,1,1,att_pv_perhead_dispatch_23_matmul_16x64x16_i8xi8xi32
+PERFX,24,342210,349236,71,4,1,1,att_pv_perhead_dispatch_24_matmul_16x64x16_i8xi8xi32
+PERFX,25,351346,358410,72,4,1,1,att_pv_perhead_dispatch_25_matmul_16x64x16_i8xi8xi32
+PERFX,26,360622,368587,73,4,1,1,att_pv_perhead_dispatch_26_matmul_16x64x16_i8xi8xi32
+PERFX,27,370715,377724,74,4,1,1,att_pv_perhead_dispatch_27_matmul_16x64x16_i8xi8xi32
+PERFX,28,379802,387755,75,4,1,1,att_pv_perhead_dispatch_28_matmul_16x64x16_i8xi8xi32
+PERFX,29,389828,397890,76,4,1,1,att_pv_perhead_dispatch_29_matmul_16x64x16_i8xi8xi32
+PERFX,30,400017,407141,77,4,1,1,att_pv_perhead_dispatch_30_matmul_16x64x16_i8xi8xi32
+PERFX,31,409225,417412,78,4,1,1,att_pv_perhead_dispatch_31_matmul_16x64x16_i8xi8xi32
+PERFX_END
+CASE att_pv_perhead 2 424996 230509
+TRACE_BEGIN att_pv_perhead 2
+PERFX_TRACE count=32 dropped=0 origin=23549977644
+PERFX,0,103394,111259,47,4,1,1,att_pv_perhead_dispatch_0_matmul_16x64x16_i8xi8xi32
+PERFX,1,113690,122149,48,4,1,1,att_pv_perhead_dispatch_1_matmul_16x64x16_i8xi8xi32
+PERFX,2,124316,131747,49,4,1,1,att_pv_perhead_dispatch_2_matmul_16x64x16_i8xi8xi32
+PERFX,3,134002,141515,50,4,1,1,att_pv_perhead_dispatch_3_matmul_16x64x16_i8xi8xi32
+PERFX,4,143673,151932,51,4,1,1,att_pv_perhead_dispatch_4_matmul_16x64x16_i8xi8xi32
+PERFX,5,154055,161230,52,4,1,1,att_pv_perhead_dispatch_5_matmul_16x64x16_i8xi8xi32
+PERFX,6,163422,170731,53,4,1,1,att_pv_perhead_dispatch_6_matmul_16x64x16_i8xi8xi32
+PERFX,7,172844,180074,54,4,1,1,att_pv_perhead_dispatch_7_matmul_16x64x16_i8xi8xi32
+PERFX,8,182253,189400,55,4,1,1,att_pv_perhead_dispatch_8_matmul_16x64x16_i8xi8xi32
+PERFX,9,191530,198679,56,4,1,1,att_pv_perhead_dispatch_9_matmul_16x64x16_i8xi8xi32
+PERFX,10,200970,208073,57,4,1,1,att_pv_perhead_dispatch_10_matmul_16x64x16_i8xi8xi32
+PERFX,11,210165,217183,58,4,1,1,att_pv_perhead_dispatch_11_matmul_16x64x16_i8xi8xi32
+PERFX,12,219297,226424,59,4,1,1,att_pv_perhead_dispatch_12_matmul_16x64x16_i8xi8xi32
+PERFX,13,228603,236629,60,4,1,1,att_pv_perhead_dispatch_13_matmul_16x64x16_i8xi8xi32
+PERFX,14,238733,246802,61,4,1,1,att_pv_perhead_dispatch_14_matmul_16x64x16_i8xi8xi32
+PERFX,15,248916,257014,62,4,1,1,att_pv_perhead_dispatch_15_matmul_16x64x16_i8xi8xi32
+PERFX,16,259123,267186,63,4,1,1,att_pv_perhead_dispatch_16_matmul_16x64x16_i8xi8xi32
+PERFX,17,269216,276277,64,4,1,1,att_pv_perhead_dispatch_17_matmul_16x64x16_i8xi8xi32
+PERFX,18,278324,286359,65,4,1,1,att_pv_perhead_dispatch_18_matmul_16x64x16_i8xi8xi32
+PERFX,19,288432,295378,66,4,1,1,att_pv_perhead_dispatch_19_matmul_16x64x16_i8xi8xi32
+PERFX,20,297376,305355,67,4,1,1,att_pv_perhead_dispatch_20_matmul_16x64x16_i8xi8xi32
+PERFX,21,307474,315483,68,4,1,1,att_pv_perhead_dispatch_21_matmul_16x64x16_i8xi8xi32
+PERFX,22,317704,324816,69,4,1,1,att_pv_perhead_dispatch_22_matmul_16x64x16_i8xi8xi32
+PERFX,23,326951,335012,70,4,1,1,att_pv_perhead_dispatch_23_matmul_16x64x16_i8xi8xi32
+PERFX,24,337060,344073,71,4,1,1,att_pv_perhead_dispatch_24_matmul_16x64x16_i8xi8xi32
+PERFX,25,346240,353265,72,4,1,1,att_pv_perhead_dispatch_25_matmul_16x64x16_i8xi8xi32
+PERFX,26,355441,363405,73,4,1,1,att_pv_perhead_dispatch_26_matmul_16x64x16_i8xi8xi32
+PERFX,27,365486,372463,74,4,1,1,att_pv_perhead_dispatch_27_matmul_16x64x16_i8xi8xi32
+PERFX,28,374542,382568,75,4,1,1,att_pv_perhead_dispatch_28_matmul_16x64x16_i8xi8xi32
+PERFX,29,384658,392643,76,4,1,1,att_pv_perhead_dispatch_29_matmul_16x64x16_i8xi8xi32
+PERFX,30,394727,401757,77,4,1,1,att_pv_perhead_dispatch_30_matmul_16x64x16_i8xi8xi32
+PERFX,31,403807,411987,78,4,1,1,att_pv_perhead_dispatch_31_matmul_16x64x16_i8xi8xi32
+PERFX_END
+CASE att_pv_perhead 3 424226 230509
+TRACE_BEGIN att_pv_perhead 3
+PERFX_TRACE count=32 dropped=0 origin=24841045972
+PERFX,0,103421,111280,47,4,1,1,att_pv_perhead_dispatch_0_matmul_16x64x16_i8xi8xi32
+PERFX,1,113704,122137,48,4,1,1,att_pv_perhead_dispatch_1_matmul_16x64x16_i8xi8xi32
+PERFX,2,124279,131685,49,4,1,1,att_pv_perhead_dispatch_2_matmul_16x64x16_i8xi8xi32
+PERFX,3,133950,141317,50,4,1,1,att_pv_perhead_dispatch_3_matmul_16x64x16_i8xi8xi32
+PERFX,4,143428,151636,51,4,1,1,att_pv_perhead_dispatch_4_matmul_16x64x16_i8xi8xi32
+PERFX,5,153868,161146,52,4,1,1,att_pv_perhead_dispatch_5_matmul_16x64x16_i8xi8xi32
+PERFX,6,163288,170585,53,4,1,1,att_pv_perhead_dispatch_6_matmul_16x64x16_i8xi8xi32
+PERFX,7,172738,179979,54,4,1,1,att_pv_perhead_dispatch_7_matmul_16x64x16_i8xi8xi32
+PERFX,8,182147,189309,55,4,1,1,att_pv_perhead_dispatch_8_matmul_16x64x16_i8xi8xi32
+PERFX,9,191519,198613,56,4,1,1,att_pv_perhead_dispatch_9_matmul_16x64x16_i8xi8xi32
+PERFX,10,200728,207972,57,4,1,1,att_pv_perhead_dispatch_10_matmul_16x64x16_i8xi8xi32
+PERFX,11,210051,217159,58,4,1,1,att_pv_perhead_dispatch_11_matmul_16x64x16_i8xi8xi32
+PERFX,12,219237,226238,59,4,1,1,att_pv_perhead_dispatch_12_matmul_16x64x16_i8xi8xi32
+PERFX,13,228368,236366,60,4,1,1,att_pv_perhead_dispatch_13_matmul_16x64x16_i8xi8xi32
+PERFX,14,238495,246567,61,4,1,1,att_pv_perhead_dispatch_14_matmul_16x64x16_i8xi8xi32
+PERFX,15,248590,256694,62,4,1,1,att_pv_perhead_dispatch_15_matmul_16x64x16_i8xi8xi32
+PERFX,16,258789,266857,63,4,1,1,att_pv_perhead_dispatch_16_matmul_16x64x16_i8xi8xi32
+PERFX,17,268914,276006,64,4,1,1,att_pv_perhead_dispatch_17_matmul_16x64x16_i8xi8xi32
+PERFX,18,278116,286076,65,4,1,1,att_pv_perhead_dispatch_18_matmul_16x64x16_i8xi8xi32
+PERFX,19,288127,295178,66,4,1,1,att_pv_perhead_dispatch_19_matmul_16x64x16_i8xi8xi32
+PERFX,20,297239,305149,67,4,1,1,att_pv_perhead_dispatch_20_matmul_16x64x16_i8xi8xi32
+PERFX,21,307135,315263,68,4,1,1,att_pv_perhead_dispatch_21_matmul_16x64x16_i8xi8xi32
+PERFX,22,317362,324424,69,4,1,1,att_pv_perhead_dispatch_22_matmul_16x64x16_i8xi8xi32
+PERFX,23,326498,334483,70,4,1,1,att_pv_perhead_dispatch_23_matmul_16x64x16_i8xi8xi32
+PERFX,24,336682,343679,71,4,1,1,att_pv_perhead_dispatch_24_matmul_16x64x16_i8xi8xi32
+PERFX,25,345714,352652,72,4,1,1,att_pv_perhead_dispatch_25_matmul_16x64x16_i8xi8xi32
+PERFX,26,354640,362588,73,4,1,1,att_pv_perhead_dispatch_26_matmul_16x64x16_i8xi8xi32
+PERFX,27,364666,371681,74,4,1,1,att_pv_perhead_dispatch_27_matmul_16x64x16_i8xi8xi32
+PERFX,28,373830,381848,75,4,1,1,att_pv_perhead_dispatch_28_matmul_16x64x16_i8xi8xi32
+PERFX,29,383939,391967,76,4,1,1,att_pv_perhead_dispatch_29_matmul_16x64x16_i8xi8xi32
+PERFX,30,394119,401161,77,4,1,1,att_pv_perhead_dispatch_30_matmul_16x64x16_i8xi8xi32
+PERFX,31,403205,411302,78,4,1,1,att_pv_perhead_dispatch_31_matmul_16x64x16_i8xi8xi32
+PERFX_END
+CASE att_pv_perhead 4 424619 230509
+TRACE_BEGIN att_pv_perhead 4
+PERFX_TRACE count=32 dropped=0 origin=26132114828
+PERFX,0,103427,111334,47,4,1,1,att_pv_perhead_dispatch_0_matmul_16x64x16_i8xi8xi32
+PERFX,1,113971,122553,48,4,1,1,att_pv_perhead_dispatch_1_matmul_16x64x16_i8xi8xi32
+PERFX,2,124851,132285,49,4,1,1,att_pv_perhead_dispatch_2_matmul_16x64x16_i8xi8xi32
+PERFX,3,134580,141873,50,4,1,1,att_pv_perhead_dispatch_3_matmul_16x64x16_i8xi8xi32
+PERFX,4,144045,152306,51,4,1,1,att_pv_perhead_dispatch_4_matmul_16x64x16_i8xi8xi32
+PERFX,5,154468,161676,52,4,1,1,att_pv_perhead_dispatch_5_matmul_16x64x16_i8xi8xi32
+PERFX,6,163811,171146,53,4,1,1,att_pv_perhead_dispatch_6_matmul_16x64x16_i8xi8xi32
+PERFX,7,173230,180368,54,4,1,1,att_pv_perhead_dispatch_7_matmul_16x64x16_i8xi8xi32
+PERFX,8,182420,189596,55,4,1,1,att_pv_perhead_dispatch_8_matmul_16x64x16_i8xi8xi32
+PERFX,9,191733,198833,56,4,1,1,att_pv_perhead_dispatch_9_matmul_16x64x16_i8xi8xi32
+PERFX,10,200982,208228,57,4,1,1,att_pv_perhead_dispatch_10_matmul_16x64x16_i8xi8xi32
+PERFX,11,210246,217370,58,4,1,1,att_pv_perhead_dispatch_11_matmul_16x64x16_i8xi8xi32
+PERFX,12,219467,226520,59,4,1,1,att_pv_perhead_dispatch_12_matmul_16x64x16_i8xi8xi32
+PERFX,13,228665,236704,60,4,1,1,att_pv_perhead_dispatch_13_matmul_16x64x16_i8xi8xi32
+PERFX,14,238847,246914,61,4,1,1,att_pv_perhead_dispatch_14_matmul_16x64x16_i8xi8xi32
+PERFX,15,249027,257111,62,4,1,1,att_pv_perhead_dispatch_15_matmul_16x64x16_i8xi8xi32
+PERFX,16,259235,267296,63,4,1,1,att_pv_perhead_dispatch_16_matmul_16x64x16_i8xi8xi32
+PERFX,17,269465,276504,64,4,1,1,att_pv_perhead_dispatch_17_matmul_16x64x16_i8xi8xi32
+PERFX,18,278575,286538,65,4,1,1,att_pv_perhead_dispatch_18_matmul_16x64x16_i8xi8xi32
+PERFX,19,288666,295630,66,4,1,1,att_pv_perhead_dispatch_19_matmul_16x64x16_i8xi8xi32
+PERFX,20,297719,305751,67,4,1,1,att_pv_perhead_dispatch_20_matmul_16x64x16_i8xi8xi32
+PERFX,21,307799,315884,68,4,1,1,att_pv_perhead_dispatch_21_matmul_16x64x16_i8xi8xi32
+PERFX,22,318014,325058,69,4,1,1,att_pv_perhead_dispatch_22_matmul_16x64x16_i8xi8xi32
+PERFX,23,327151,335203,70,4,1,1,att_pv_perhead_dispatch_23_matmul_16x64x16_i8xi8xi32
+PERFX,24,337240,344264,71,4,1,1,att_pv_perhead_dispatch_24_matmul_16x64x16_i8xi8xi32
+PERFX,25,346338,353295,72,4,1,1,att_pv_perhead_dispatch_25_matmul_16x64x16_i8xi8xi32
+PERFX,26,355374,363324,73,4,1,1,att_pv_perhead_dispatch_26_matmul_16x64x16_i8xi8xi32
+PERFX,27,365421,372407,74,4,1,1,att_pv_perhead_dispatch_27_matmul_16x64x16_i8xi8xi32
+PERFX,28,374405,382428,75,4,1,1,att_pv_perhead_dispatch_28_matmul_16x64x16_i8xi8xi32
+PERFX,29,384507,392463,76,4,1,1,att_pv_perhead_dispatch_29_matmul_16x64x16_i8xi8xi32
+PERFX,30,394487,401583,77,4,1,1,att_pv_perhead_dispatch_30_matmul_16x64x16_i8xi8xi32
+PERFX,31,403646,411695,78,4,1,1,att_pv_perhead_dispatch_31_matmul_16x64x16_i8xi8xi32
+PERFX_END
+CASE att_pv_perhead 5 424457 230509
+TRACE_BEGIN att_pv_perhead 5
+PERFX_TRACE count=32 dropped=0 origin=27423183433
+PERFX,0,103407,111273,47,4,1,1,att_pv_perhead_dispatch_0_matmul_16x64x16_i8xi8xi32
+PERFX,1,113608,122110,48,4,1,1,att_pv_perhead_dispatch_1_matmul_16x64x16_i8xi8xi32
+PERFX,2,124232,131659,49,4,1,1,att_pv_perhead_dispatch_2_matmul_16x64x16_i8xi8xi32
+PERFX,3,133763,141020,50,4,1,1,att_pv_perhead_dispatch_3_matmul_16x64x16_i8xi8xi32
+PERFX,4,143255,151566,51,4,1,1,att_pv_perhead_dispatch_4_matmul_16x64x16_i8xi8xi32
+PERFX,5,153740,161000,52,4,1,1,att_pv_perhead_dispatch_5_matmul_16x64x16_i8xi8xi32
+PERFX,6,163192,170439,53,4,1,1,att_pv_perhead_dispatch_6_matmul_16x64x16_i8xi8xi32
+PERFX,7,172617,179866,54,4,1,1,att_pv_perhead_dispatch_7_matmul_16x64x16_i8xi8xi32
+PERFX,8,181997,189235,55,4,1,1,att_pv_perhead_dispatch_8_matmul_16x64x16_i8xi8xi32
+PERFX,9,191347,198614,56,4,1,1,att_pv_perhead_dispatch_9_matmul_16x64x16_i8xi8xi32
+PERFX,10,200747,207835,57,4,1,1,att_pv_perhead_dispatch_10_matmul_16x64x16_i8xi8xi32
+PERFX,11,210189,217293,58,4,1,1,att_pv_perhead_dispatch_11_matmul_16x64x16_i8xi8xi32
+PERFX,12,219361,226312,59,4,1,1,att_pv_perhead_dispatch_12_matmul_16x64x16_i8xi8xi32
+PERFX,13,228439,236391,60,4,1,1,att_pv_perhead_dispatch_13_matmul_16x64x16_i8xi8xi32
+PERFX,14,238485,246641,61,4,1,1,att_pv_perhead_dispatch_14_matmul_16x64x16_i8xi8xi32
+PERFX,15,248806,256912,62,4,1,1,att_pv_perhead_dispatch_15_matmul_16x64x16_i8xi8xi32
+PERFX,16,259007,267019,63,4,1,1,att_pv_perhead_dispatch_16_matmul_16x64x16_i8xi8xi32
+PERFX,17,269145,276152,64,4,1,1,att_pv_perhead_dispatch_17_matmul_16x64x16_i8xi8xi32
+PERFX,18,278250,286233,65,4,1,1,att_pv_perhead_dispatch_18_matmul_16x64x16_i8xi8xi32
+PERFX,19,288211,295228,66,4,1,1,att_pv_perhead_dispatch_19_matmul_16x64x16_i8xi8xi32
+PERFX,20,297305,305306,67,4,1,1,att_pv_perhead_dispatch_20_matmul_16x64x16_i8xi8xi32
+PERFX,21,307341,315391,68,4,1,1,att_pv_perhead_dispatch_21_matmul_16x64x16_i8xi8xi32
+PERFX,22,317553,324627,69,4,1,1,att_pv_perhead_dispatch_22_matmul_16x64x16_i8xi8xi32
+PERFX,23,326791,334834,70,4,1,1,att_pv_perhead_dispatch_23_matmul_16x64x16_i8xi8xi32
+PERFX,24,336928,343955,71,4,1,1,att_pv_perhead_dispatch_24_matmul_16x64x16_i8xi8xi32
+PERFX,25,345990,353014,72,4,1,1,att_pv_perhead_dispatch_25_matmul_16x64x16_i8xi8xi32
+PERFX,26,355070,363001,73,4,1,1,att_pv_perhead_dispatch_26_matmul_16x64x16_i8xi8xi32
+PERFX,27,365091,372093,74,4,1,1,att_pv_perhead_dispatch_27_matmul_16x64x16_i8xi8xi32
+PERFX,28,374188,382106,75,4,1,1,att_pv_perhead_dispatch_28_matmul_16x64x16_i8xi8xi32
+PERFX,29,384181,392209,76,4,1,1,att_pv_perhead_dispatch_29_matmul_16x64x16_i8xi8xi32
+PERFX,30,394312,401355,77,4,1,1,att_pv_perhead_dispatch_30_matmul_16x64x16_i8xi8xi32
+PERFX,31,403441,411575,78,4,1,1,att_pv_perhead_dispatch_31_matmul_16x64x16_i8xi8xi32
+PERFX_END
+CHECK att_pv_perhead 0 74330510
+CASE_BEGIN att_qk_bmm
+CASE att_qk_bmm 0 7207992 3240072
+TRACE_BEGIN att_qk_bmm 0
+PERFX_TRACE count=1 dropped=0 origin=28780408200
+PERFX,0,63063,7193134,79,32,1,1,att_qk_bmm_dispatch_0_batch_matmul_32x16x16x64_i8xi8xi32
+PERFX_END
+CASE att_qk_bmm 1 7188273 3240112
+TRACE_BEGIN att_qk_bmm 1
+PERFX_TRACE count=1 dropped=0 origin=28952818918
+PERFX,0,53913,7174978,79,32,1,1,att_qk_bmm_dispatch_0_batch_matmul_32x16x16x64_i8xi8xi32
+PERFX_END
+CASE att_qk_bmm 2 7187003 3240112
+TRACE_BEGIN att_qk_bmm 2
+PERFX_TRACE count=1 dropped=0 origin=29125228654
+PERFX,0,53200,7173462,79,32,1,1,att_qk_bmm_dispatch_0_batch_matmul_32x16x16x64_i8xi8xi32
+PERFX_END
+CASE att_qk_bmm 3 7186352 3240112
+TRACE_BEGIN att_qk_bmm 3
+PERFX_TRACE count=1 dropped=0 origin=29297638448
+PERFX,0,52703,7173136,79,32,1,1,att_qk_bmm_dispatch_0_batch_matmul_32x16x16x64_i8xi8xi32
+PERFX_END
+CASE att_qk_bmm 4 7186185 3240112
+TRACE_BEGIN att_qk_bmm 4
+PERFX_TRACE count=1 dropped=0 origin=29470048251
+PERFX,0,52678,7172954,79,32,1,1,att_qk_bmm_dispatch_0_batch_matmul_32x16x16x64_i8xi8xi32
+PERFX_END
+CASE att_qk_bmm 5 7186086 3240112
+TRACE_BEGIN att_qk_bmm 5
+PERFX_TRACE count=1 dropped=0 origin=29642457977
+PERFX,0,52435,7172918,79,32,1,1,att_qk_bmm_dispatch_0_batch_matmul_32x16x16x64_i8xi8xi32
+PERFX_END
+CHECK att_qk_bmm 0 189947007
+CASE_BEGIN att_pv_bmm
+CASE att_pv_bmm 0 10002953 6096262
+TRACE_BEGIN att_pv_bmm 0
+PERFX_TRACE count=1 dropped=0 origin=29883028729
+PERFX,0,111152,9987122,80,32,1,1,att_pv_bmm_dispatch_0_batch_matmul_32x16x64x16_i8xi8xi32
+PERFX_END
+CASE att_pv_bmm 1 9978149 6096385
+TRACE_BEGIN att_pv_bmm 1
+PERFX_TRACE count=1 dropped=0 origin=30055440305
+PERFX,0,108082,9963085,80,32,1,1,att_pv_bmm_dispatch_0_batch_matmul_32x16x64x16_i8xi8xi32
+PERFX_END
+CASE att_pv_bmm 2 9976513 6096385
+TRACE_BEGIN att_pv_bmm 2
+PERFX_TRACE count=1 dropped=0 origin=30227849865
+PERFX,0,106778,9961714,80,32,1,1,att_pv_bmm_dispatch_0_batch_matmul_32x16x64x16_i8xi8xi32
+PERFX_END
+CASE att_pv_bmm 3 9976352 6096385
+TRACE_BEGIN att_pv_bmm 3
+PERFX_TRACE count=1 dropped=0 origin=30400259691
+PERFX,0,105746,9961538,80,32,1,1,att_pv_bmm_dispatch_0_batch_matmul_32x16x64x16_i8xi8xi32
+PERFX_END
+CASE att_pv_bmm 4 9974901 6096385
+TRACE_BEGIN att_pv_bmm 4
+PERFX_TRACE count=1 dropped=0 origin=30572669586
+PERFX,0,105693,9960026,80,32,1,1,att_pv_bmm_dispatch_0_batch_matmul_32x16x64x16_i8xi8xi32
+PERFX_END
+CASE att_pv_bmm 5 9975475 6096385
+TRACE_BEGIN att_pv_bmm 5
+PERFX_TRACE count=1 dropped=0 origin=30745079295
+PERFX,0,106265,9960900,80,32,1,1,att_pv_bmm_dispatch_0_batch_matmul_32x16x64x16_i8xi8xi32
+PERFX_END
+CHECK att_pv_bmm 0 724252261
+CASE_BEGIN att_qk_f32_perhead
+CASE att_qk_f32_perhead 0 4906229 1715828
+TRACE_BEGIN att_qk_f32_perhead 0
+PERFX_TRACE count=32 dropped=0 origin=30985649715
+PERFX,0,60199,206140,81,2,1,1,att_qk_f32_perhead_dispatch_0_matmul_16x16x64_f32
+PERFX,1,208950,354143,82,2,1,1,att_qk_f32_perhead_dispatch_1_matmul_16x16x64_f32
+PERFX,2,356895,503434,83,2,1,1,att_qk_f32_perhead_dispatch_2_matmul_16x16x64_f32
+PERFX,3,506082,652826,84,2,1,1,att_qk_f32_perhead_dispatch_3_matmul_16x16x64_f32
+PERFX,4,655645,803576,85,2,1,1,att_qk_f32_perhead_dispatch_4_matmul_16x16x64_f32
+PERFX,5,806013,953913,86,2,1,1,att_qk_f32_perhead_dispatch_5_matmul_16x16x64_f32
+PERFX,6,956743,1105280,87,2,1,1,att_qk_f32_perhead_dispatch_6_matmul_16x16x64_f32
+PERFX,7,1108027,1255993,88,2,1,1,att_qk_f32_perhead_dispatch_7_matmul_16x16x64_f32
+PERFX,8,1259053,1407976,89,2,1,1,att_qk_f32_perhead_dispatch_8_matmul_16x16x64_f32
+PERFX,9,1410433,1559433,90,2,1,1,att_qk_f32_perhead_dispatch_9_matmul_16x16x64_f32
+PERFX,10,1562308,1710594,91,2,1,1,att_qk_f32_perhead_dispatch_10_matmul_16x16x64_f32
+PERFX,11,1713208,1861624,92,2,1,1,att_qk_f32_perhead_dispatch_11_matmul_16x16x64_f32
+PERFX,12,1864437,2012617,93,2,1,1,att_qk_f32_perhead_dispatch_12_matmul_16x16x64_f32
+PERFX,13,2015357,2163386,94,2,1,1,att_qk_f32_perhead_dispatch_13_matmul_16x16x64_f32
+PERFX,14,2166354,2315071,95,2,1,1,att_qk_f32_perhead_dispatch_14_matmul_16x16x64_f32
+PERFX,15,2317776,2465685,96,2,1,1,att_qk_f32_perhead_dispatch_15_matmul_16x16x64_f32
+PERFX,16,2468507,2617061,97,2,1,1,att_qk_f32_perhead_dispatch_16_matmul_16x16x64_f32
+PERFX,17,2619795,2768057,98,2,1,1,att_qk_f32_perhead_dispatch_17_matmul_16x16x64_f32
+PERFX,18,2770716,2918294,99,2,1,1,att_qk_f32_perhead_dispatch_18_matmul_16x16x64_f32
+PERFX,19,2921162,3069273,100,2,1,1,att_qk_f32_perhead_dispatch_19_matmul_16x16x64_f32
+PERFX,20,3072165,3220237,101,2,1,1,att_qk_f32_perhead_dispatch_20_matmul_16x16x64_f32
+PERFX,21,3222824,3371183,102,2,1,1,att_qk_f32_perhead_dispatch_21_matmul_16x16x64_f32
+PERFX,22,3373998,3523129,103,2,1,1,att_qk_f32_perhead_dispatch_22_matmul_16x16x64_f32
+PERFX,23,3525847,3674399,104,2,1,1,att_qk_f32_perhead_dispatch_23_matmul_16x16x64_f32
+PERFX,24,3677184,3827089,105,2,1,1,att_qk_f32_perhead_dispatch_24_matmul_16x16x64_f32
+PERFX,25,3829652,3979018,106,2,1,1,att_qk_f32_perhead_dispatch_25_matmul_16x16x64_f32
+PERFX,26,3982022,4130378,107,2,1,1,att_qk_f32_perhead_dispatch_26_matmul_16x16x64_f32
+PERFX,27,4133035,4281761,108,2,1,1,att_qk_f32_perhead_dispatch_27_matmul_16x16x64_f32
+PERFX,28,4284506,4433456,109,2,1,1,att_qk_f32_perhead_dispatch_28_matmul_16x16x64_f32
+PERFX,29,4436185,4584840,110,2,1,1,att_qk_f32_perhead_dispatch_29_matmul_16x16x64_f32
+PERFX,30,4587664,4736400,111,2,1,1,att_qk_f32_perhead_dispatch_30_matmul_16x16x64_f32
+PERFX,31,4739211,4887734,112,2,1,1,att_qk_f32_perhead_dispatch_31_matmul_16x16x64_f32
+PERFX_END
+CASE att_qk_f32_perhead 1 4780541 1715636
+TRACE_BEGIN att_qk_f32_perhead 1
+PERFX_TRACE count=32 dropped=0 origin=32274715002
+PERFX,0,59295,202608,81,2,1,1,att_qk_f32_perhead_dispatch_0_matmul_16x16x64_f32
+PERFX,1,205215,347836,82,2,1,1,att_qk_f32_perhead_dispatch_1_matmul_16x16x64_f32
+PERFX,2,350290,493817,83,2,1,1,att_qk_f32_perhead_dispatch_2_matmul_16x16x64_f32
+PERFX,3,496188,639979,84,2,1,1,att_qk_f32_perhead_dispatch_3_matmul_16x16x64_f32
+PERFX,4,642355,787171,85,2,1,1,att_qk_f32_perhead_dispatch_4_matmul_16x16x64_f32
+PERFX,5,789670,934632,86,2,1,1,att_qk_f32_perhead_dispatch_5_matmul_16x16x64_f32
+PERFX,6,937131,1082930,87,2,1,1,att_qk_f32_perhead_dispatch_6_matmul_16x16x64_f32
+PERFX,7,1085398,1230127,88,2,1,1,att_qk_f32_perhead_dispatch_7_matmul_16x16x64_f32
+PERFX,8,1232547,1377873,89,2,1,1,att_qk_f32_perhead_dispatch_8_matmul_16x16x64_f32
+PERFX,9,1380411,1525685,90,2,1,1,att_qk_f32_perhead_dispatch_9_matmul_16x16x64_f32
+PERFX,10,1528083,1672779,91,2,1,1,att_qk_f32_perhead_dispatch_10_matmul_16x16x64_f32
+PERFX,11,1675149,1820013,92,2,1,1,att_qk_f32_perhead_dispatch_11_matmul_16x16x64_f32
+PERFX,12,1822397,1966891,93,2,1,1,att_qk_f32_perhead_dispatch_12_matmul_16x16x64_f32
+PERFX,13,1969024,2113938,94,2,1,1,att_qk_f32_perhead_dispatch_13_matmul_16x16x64_f32
+PERFX,14,2116215,2260821,95,2,1,1,att_qk_f32_perhead_dispatch_14_matmul_16x16x64_f32
+PERFX,15,2263176,2407502,96,2,1,1,att_qk_f32_perhead_dispatch_15_matmul_16x16x64_f32
+PERFX,16,2409923,2554615,97,2,1,1,att_qk_f32_perhead_dispatch_16_matmul_16x16x64_f32
+PERFX,17,2557083,2701720,98,2,1,1,att_qk_f32_perhead_dispatch_17_matmul_16x16x64_f32
+PERFX,18,2704172,2848382,99,2,1,1,att_qk_f32_perhead_dispatch_18_matmul_16x16x64_f32
+PERFX,19,2850848,2995636,100,2,1,1,att_qk_f32_perhead_dispatch_19_matmul_16x16x64_f32
+PERFX,20,2997934,3142566,101,2,1,1,att_qk_f32_perhead_dispatch_20_matmul_16x16x64_f32
+PERFX,21,3144900,3289939,102,2,1,1,att_qk_f32_perhead_dispatch_21_matmul_16x16x64_f32
+PERFX,22,3292318,3437833,103,2,1,1,att_qk_f32_perhead_dispatch_22_matmul_16x16x64_f32
+PERFX,23,3440343,3585318,104,2,1,1,att_qk_f32_perhead_dispatch_23_matmul_16x16x64_f32
+PERFX,24,3587707,3733241,105,2,1,1,att_qk_f32_perhead_dispatch_24_matmul_16x16x64_f32
+PERFX,25,3735640,3880891,106,2,1,1,att_qk_f32_perhead_dispatch_25_matmul_16x16x64_f32
+PERFX,26,3883221,4028063,107,2,1,1,att_qk_f32_perhead_dispatch_26_matmul_16x16x64_f32
+PERFX,27,4030320,4175494,108,2,1,1,att_qk_f32_perhead_dispatch_27_matmul_16x16x64_f32
+PERFX,28,4177830,4322121,109,2,1,1,att_qk_f32_perhead_dispatch_28_matmul_16x16x64_f32
+PERFX,29,4324559,4469395,110,2,1,1,att_qk_f32_perhead_dispatch_29_matmul_16x16x64_f32
+PERFX,30,4471884,4616725,111,2,1,1,att_qk_f32_perhead_dispatch_30_matmul_16x16x64_f32
+PERFX,31,4619081,4763788,112,2,1,1,att_qk_f32_perhead_dispatch_31_matmul_16x16x64_f32
+PERFX_END
+CASE att_qk_f32_perhead 2 4764719 1715636
+TRACE_BEGIN att_qk_f32_perhead 2
+PERFX_TRACE count=32 dropped=0 origin=33563778877
+PERFX,0,56519,199137,81,2,1,1,att_qk_f32_perhead_dispatch_0_matmul_16x16x64_f32
+PERFX,1,201695,343779,82,2,1,1,att_qk_f32_perhead_dispatch_1_matmul_16x16x64_f32
+PERFX,2,346388,489596,83,2,1,1,att_qk_f32_perhead_dispatch_2_matmul_16x16x64_f32
+PERFX,3,492046,635488,84,2,1,1,att_qk_f32_perhead_dispatch_3_matmul_16x16x64_f32
+PERFX,4,637912,782429,85,2,1,1,att_qk_f32_perhead_dispatch_4_matmul_16x16x64_f32
+PERFX,5,784821,929110,86,2,1,1,att_qk_f32_perhead_dispatch_5_matmul_16x16x64_f32
+PERFX,6,931641,1076989,87,2,1,1,att_qk_f32_perhead_dispatch_6_matmul_16x16x64_f32
+PERFX,7,1079605,1224188,88,2,1,1,att_qk_f32_perhead_dispatch_7_matmul_16x16x64_f32
+PERFX,8,1226511,1371891,89,2,1,1,att_qk_f32_perhead_dispatch_8_matmul_16x16x64_f32
+PERFX,9,1374307,1519255,90,2,1,1,att_qk_f32_perhead_dispatch_9_matmul_16x16x64_f32
+PERFX,10,1521699,1665740,91,2,1,1,att_qk_f32_perhead_dispatch_10_matmul_16x16x64_f32
+PERFX,11,1668010,1812598,92,2,1,1,att_qk_f32_perhead_dispatch_11_matmul_16x16x64_f32
+PERFX,12,1815078,1959113,93,2,1,1,att_qk_f32_perhead_dispatch_12_matmul_16x16x64_f32
+PERFX,13,1961355,2105396,94,2,1,1,att_qk_f32_perhead_dispatch_13_matmul_16x16x64_f32
+PERFX,14,2107686,2252151,95,2,1,1,att_qk_f32_perhead_dispatch_14_matmul_16x16x64_f32
+PERFX,15,2254595,2398346,96,2,1,1,att_qk_f32_perhead_dispatch_15_matmul_16x16x64_f32
+PERFX,16,2400788,2545179,97,2,1,1,att_qk_f32_perhead_dispatch_16_matmul_16x16x64_f32
+PERFX,17,2547469,2691993,98,2,1,1,att_qk_f32_perhead_dispatch_17_matmul_16x16x64_f32
+PERFX,18,2694331,2838420,99,2,1,1,att_qk_f32_perhead_dispatch_18_matmul_16x16x64_f32
+PERFX,19,2840776,2985270,100,2,1,1,att_qk_f32_perhead_dispatch_19_matmul_16x16x64_f32
+PERFX,20,2987637,3131696,101,2,1,1,att_qk_f32_perhead_dispatch_20_matmul_16x16x64_f32
+PERFX,21,3134117,3278624,102,2,1,1,att_qk_f32_perhead_dispatch_21_matmul_16x16x64_f32
+PERFX,22,3280946,3426494,103,2,1,1,att_qk_f32_perhead_dispatch_22_matmul_16x16x64_f32
+PERFX,23,3429023,3573125,104,2,1,1,att_qk_f32_perhead_dispatch_23_matmul_16x16x64_f32
+PERFX,24,3575400,3720371,105,2,1,1,att_qk_f32_perhead_dispatch_24_matmul_16x16x64_f32
+PERFX,25,3722860,3867560,106,2,1,1,att_qk_f32_perhead_dispatch_25_matmul_16x16x64_f32
+PERFX,26,3870071,4014300,107,2,1,1,att_qk_f32_perhead_dispatch_26_matmul_16x16x64_f32
+PERFX,27,4016567,4161578,108,2,1,1,att_qk_f32_perhead_dispatch_27_matmul_16x16x64_f32
+PERFX,28,4163995,4308041,109,2,1,1,att_qk_f32_perhead_dispatch_28_matmul_16x16x64_f32
+PERFX,29,4310409,4454530,110,2,1,1,att_qk_f32_perhead_dispatch_29_matmul_16x16x64_f32
+PERFX,30,4456916,4601381,111,2,1,1,att_qk_f32_perhead_dispatch_30_matmul_16x16x64_f32
+PERFX,31,4603695,4748119,112,2,1,1,att_qk_f32_perhead_dispatch_31_matmul_16x16x64_f32
+PERFX_END
+CASE att_qk_f32_perhead 3 4760041 1715636
+TRACE_BEGIN att_qk_f32_perhead 3
+PERFX_TRACE count=32 dropped=0 origin=34852842664
+PERFX,0,56289,199046,81,2,1,1,att_qk_f32_perhead_dispatch_0_matmul_16x16x64_f32
+PERFX,1,201648,343739,82,2,1,1,att_qk_f32_perhead_dispatch_1_matmul_16x16x64_f32
+PERFX,2,346311,489577,83,2,1,1,att_qk_f32_perhead_dispatch_2_matmul_16x16x64_f32
+PERFX,3,492046,635579,84,2,1,1,att_qk_f32_perhead_dispatch_3_matmul_16x16x64_f32
+PERFX,4,638183,782260,85,2,1,1,att_qk_f32_perhead_dispatch_4_matmul_16x16x64_f32
+PERFX,5,784717,929211,86,2,1,1,att_qk_f32_perhead_dispatch_5_matmul_16x16x64_f32
+PERFX,6,931698,1076719,87,2,1,1,att_qk_f32_perhead_dispatch_6_matmul_16x16x64_f32
+PERFX,7,1079143,1223412,88,2,1,1,att_qk_f32_perhead_dispatch_7_matmul_16x16x64_f32
+PERFX,8,1225848,1370502,89,2,1,1,att_qk_f32_perhead_dispatch_8_matmul_16x16x64_f32
+PERFX,9,1372744,1517439,90,2,1,1,att_qk_f32_perhead_dispatch_9_matmul_16x16x64_f32
+PERFX,10,1519904,1663955,91,2,1,1,att_qk_f32_perhead_dispatch_10_matmul_16x16x64_f32
+PERFX,11,1666334,1810838,92,2,1,1,att_qk_f32_perhead_dispatch_11_matmul_16x16x64_f32
+PERFX,12,1812985,1956791,93,2,1,1,att_qk_f32_perhead_dispatch_12_matmul_16x16x64_f32
+PERFX,13,1959315,2103249,94,2,1,1,att_qk_f32_perhead_dispatch_13_matmul_16x16x64_f32
+PERFX,14,2105633,2250000,95,2,1,1,att_qk_f32_perhead_dispatch_14_matmul_16x16x64_f32
+PERFX,15,2252357,2396014,96,2,1,1,att_qk_f32_perhead_dispatch_15_matmul_16x16x64_f32
+PERFX,16,2398368,2542654,97,2,1,1,att_qk_f32_perhead_dispatch_16_matmul_16x16x64_f32
+PERFX,17,2545074,2689423,98,2,1,1,att_qk_f32_perhead_dispatch_17_matmul_16x16x64_f32
+PERFX,18,2691838,2835609,99,2,1,1,att_qk_f32_perhead_dispatch_18_matmul_16x16x64_f32
+PERFX,19,2838151,2982393,100,2,1,1,att_qk_f32_perhead_dispatch_19_matmul_16x16x64_f32
+PERFX,20,2984913,3128822,101,2,1,1,att_qk_f32_perhead_dispatch_20_matmul_16x16x64_f32
+PERFX,21,3131211,3275269,102,2,1,1,att_qk_f32_perhead_dispatch_21_matmul_16x16x64_f32
+PERFX,22,3277733,3422838,103,2,1,1,att_qk_f32_perhead_dispatch_22_matmul_16x16x64_f32
+PERFX,23,3425239,3569592,104,2,1,1,att_qk_f32_perhead_dispatch_23_matmul_16x16x64_f32
+PERFX,24,3572215,3717173,105,2,1,1,att_qk_f32_perhead_dispatch_24_matmul_16x16x64_f32
+PERFX,25,3719599,3864199,106,2,1,1,att_qk_f32_perhead_dispatch_25_matmul_16x16x64_f32
+PERFX,26,3866515,4010649,107,2,1,1,att_qk_f32_perhead_dispatch_26_matmul_16x16x64_f32
+PERFX,27,4012938,4157536,108,2,1,1,att_qk_f32_perhead_dispatch_27_matmul_16x16x64_f32
+PERFX,28,4159962,4303676,109,2,1,1,att_qk_f32_perhead_dispatch_28_matmul_16x16x64_f32
+PERFX,29,4306141,4450100,110,2,1,1,att_qk_f32_perhead_dispatch_29_matmul_16x16x64_f32
+PERFX,30,4452569,4597134,111,2,1,1,att_qk_f32_perhead_dispatch_30_matmul_16x16x64_f32
+PERFX,31,4599465,4743797,112,2,1,1,att_qk_f32_perhead_dispatch_31_matmul_16x16x64_f32
+PERFX_END
+CASE att_qk_f32_perhead 4 4754489 1715636
+TRACE_BEGIN att_qk_f32_perhead 4
+PERFX_TRACE count=32 dropped=0 origin=36141906608
+PERFX,0,55311,197900,81,2,1,1,att_qk_f32_perhead_dispatch_0_matmul_16x16x64_f32
+PERFX,1,200477,342298,82,2,1,1,att_qk_f32_perhead_dispatch_1_matmul_16x16x64_f32
+PERFX,2,344703,487808,83,2,1,1,att_qk_f32_perhead_dispatch_2_matmul_16x16x64_f32
+PERFX,3,490285,633410,84,2,1,1,att_qk_f32_perhead_dispatch_3_matmul_16x16x64_f32
+PERFX,4,636019,780086,85,2,1,1,att_qk_f32_perhead_dispatch_4_matmul_16x16x64_f32
+PERFX,5,782493,926518,86,2,1,1,att_qk_f32_perhead_dispatch_5_matmul_16x16x64_f32
+PERFX,6,928901,1073800,87,2,1,1,att_qk_f32_perhead_dispatch_6_matmul_16x16x64_f32
+PERFX,7,1076388,1220646,88,2,1,1,att_qk_f32_perhead_dispatch_7_matmul_16x16x64_f32
+PERFX,8,1223054,1367668,89,2,1,1,att_qk_f32_perhead_dispatch_8_matmul_16x16x64_f32
+PERFX,9,1369964,1514525,90,2,1,1,att_qk_f32_perhead_dispatch_9_matmul_16x16x64_f32
+PERFX,10,1516967,1660939,91,2,1,1,att_qk_f32_perhead_dispatch_10_matmul_16x16x64_f32
+PERFX,11,1663344,1807524,92,2,1,1,att_qk_f32_perhead_dispatch_11_matmul_16x16x64_f32
+PERFX,12,1809876,1953738,93,2,1,1,att_qk_f32_perhead_dispatch_12_matmul_16x16x64_f32
+PERFX,13,1956014,2099887,94,2,1,1,att_qk_f32_perhead_dispatch_13_matmul_16x16x64_f32
+PERFX,14,2102246,2246412,95,2,1,1,att_qk_f32_perhead_dispatch_14_matmul_16x16x64_f32
+PERFX,15,2248784,2392436,96,2,1,1,att_qk_f32_perhead_dispatch_15_matmul_16x16x64_f32
+PERFX,16,2394984,2539087,97,2,1,1,att_qk_f32_perhead_dispatch_16_matmul_16x16x64_f32
+PERFX,17,2541435,2685800,98,2,1,1,att_qk_f32_perhead_dispatch_17_matmul_16x16x64_f32
+PERFX,18,2688022,2831779,99,2,1,1,att_qk_f32_perhead_dispatch_18_matmul_16x16x64_f32
+PERFX,19,2834073,2978379,100,2,1,1,att_qk_f32_perhead_dispatch_19_matmul_16x16x64_f32
+PERFX,20,2980812,3124724,101,2,1,1,att_qk_f32_perhead_dispatch_20_matmul_16x16x64_f32
+PERFX,21,3127197,3271167,102,2,1,1,att_qk_f32_perhead_dispatch_21_matmul_16x16x64_f32
+PERFX,22,3273612,3418601,103,2,1,1,att_qk_f32_perhead_dispatch_22_matmul_16x16x64_f32
+PERFX,23,3421046,3565223,104,2,1,1,att_qk_f32_perhead_dispatch_23_matmul_16x16x64_f32
+PERFX,24,3567701,3712833,105,2,1,1,att_qk_f32_perhead_dispatch_24_matmul_16x16x64_f32
+PERFX,25,3715289,3859729,106,2,1,1,att_qk_f32_perhead_dispatch_25_matmul_16x16x64_f32
+PERFX,26,3862094,4005964,107,2,1,1,att_qk_f32_perhead_dispatch_26_matmul_16x16x64_f32
+PERFX,27,4008383,4152910,108,2,1,1,att_qk_f32_perhead_dispatch_27_matmul_16x16x64_f32
+PERFX,28,4155350,4299242,109,2,1,1,att_qk_f32_perhead_dispatch_28_matmul_16x16x64_f32
+PERFX,29,4301679,4445314,110,2,1,1,att_qk_f32_perhead_dispatch_29_matmul_16x16x64_f32
+PERFX,30,4447593,4591823,111,2,1,1,att_qk_f32_perhead_dispatch_30_matmul_16x16x64_f32
+PERFX,31,4594183,4738356,112,2,1,1,att_qk_f32_perhead_dispatch_31_matmul_16x16x64_f32
+PERFX_END
+CASE att_qk_f32_perhead 5 4752022 1715636
+TRACE_BEGIN att_qk_f32_perhead 5
+PERFX_TRACE count=32 dropped=0 origin=37430970419
+PERFX,0,55355,197900,81,2,1,1,att_qk_f32_perhead_dispatch_0_matmul_16x16x64_f32
+PERFX,1,200597,342764,82,2,1,1,att_qk_f32_perhead_dispatch_1_matmul_16x16x64_f32
+PERFX,2,345482,488447,83,2,1,1,att_qk_f32_perhead_dispatch_2_matmul_16x16x64_f32
+PERFX,3,490846,633966,84,2,1,1,att_qk_f32_perhead_dispatch_3_matmul_16x16x64_f32
+PERFX,4,636401,780298,85,2,1,1,att_qk_f32_perhead_dispatch_4_matmul_16x16x64_f32
+PERFX,5,782575,926774,86,2,1,1,att_qk_f32_perhead_dispatch_5_matmul_16x16x64_f32
+PERFX,6,929276,1074069,87,2,1,1,att_qk_f32_perhead_dispatch_6_matmul_16x16x64_f32
+PERFX,7,1076434,1220502,88,2,1,1,att_qk_f32_perhead_dispatch_7_matmul_16x16x64_f32
+PERFX,8,1222931,1367644,89,2,1,1,att_qk_f32_perhead_dispatch_8_matmul_16x16x64_f32
+PERFX,9,1370043,1514286,90,2,1,1,att_qk_f32_perhead_dispatch_9_matmul_16x16x64_f32
+PERFX,10,1516643,1660433,91,2,1,1,att_qk_f32_perhead_dispatch_10_matmul_16x16x64_f32
+PERFX,11,1662824,1807133,92,2,1,1,att_qk_f32_perhead_dispatch_11_matmul_16x16x64_f32
+PERFX,12,1809467,1953255,93,2,1,1,att_qk_f32_perhead_dispatch_12_matmul_16x16x64_f32
+PERFX,13,1955510,2099266,94,2,1,1,att_qk_f32_perhead_dispatch_13_matmul_16x16x64_f32
+PERFX,14,2101538,2245747,95,2,1,1,att_qk_f32_perhead_dispatch_14_matmul_16x16x64_f32
+PERFX,15,2247991,2391580,96,2,1,1,att_qk_f32_perhead_dispatch_15_matmul_16x16x64_f32
+PERFX,16,2393963,2538222,97,2,1,1,att_qk_f32_perhead_dispatch_16_matmul_16x16x64_f32
+PERFX,17,2540631,2684947,98,2,1,1,att_qk_f32_perhead_dispatch_17_matmul_16x16x64_f32
+PERFX,18,2687389,2830901,99,2,1,1,att_qk_f32_perhead_dispatch_18_matmul_16x16x64_f32
+PERFX,19,2833150,2977311,100,2,1,1,att_qk_f32_perhead_dispatch_19_matmul_16x16x64_f32
+PERFX,20,2979833,3123570,101,2,1,1,att_qk_f32_perhead_dispatch_20_matmul_16x16x64_f32
+PERFX,21,3125811,3269816,102,2,1,1,att_qk_f32_perhead_dispatch_21_matmul_16x16x64_f32
+PERFX,22,3272208,3417155,103,2,1,1,att_qk_f32_perhead_dispatch_22_matmul_16x16x64_f32
+PERFX,23,3419505,3563506,104,2,1,1,att_qk_f32_perhead_dispatch_23_matmul_16x16x64_f32
+PERFX,24,3565889,3710725,105,2,1,1,att_qk_f32_perhead_dispatch_24_matmul_16x16x64_f32
+PERFX,25,3713129,3857777,106,2,1,1,att_qk_f32_perhead_dispatch_25_matmul_16x16x64_f32
+PERFX,26,3860116,4004039,107,2,1,1,att_qk_f32_perhead_dispatch_26_matmul_16x16x64_f32
+PERFX,27,4006356,4150798,108,2,1,1,att_qk_f32_perhead_dispatch_27_matmul_16x16x64_f32
+PERFX,28,4153101,4296843,109,2,1,1,att_qk_f32_perhead_dispatch_28_matmul_16x16x64_f32
+PERFX,29,4299110,4442871,110,2,1,1,att_qk_f32_perhead_dispatch_29_matmul_16x16x64_f32
+PERFX,30,4445222,4589427,111,2,1,1,att_qk_f32_perhead_dispatch_30_matmul_16x16x64_f32
+PERFX,31,4591767,4735870,112,2,1,1,att_qk_f32_perhead_dispatch_31_matmul_16x16x64_f32
+PERFX_END
+CHECK att_qk_f32_perhead 0 74137757497241600
+CASE_BEGIN att_pv_f32_perhead
+CASE att_pv_f32_perhead 0 6244633 2185367
+TRACE_BEGIN att_pv_f32_perhead 0
+PERFX_TRACE count=32 dropped=0 origin=38788194964
+PERFX,0,156435,341913,113,4,1,1,att_pv_f32_perhead_dispatch_0_matmul_16x64x16_f32
+PERFX,1,345140,533700,114,4,1,1,att_pv_f32_perhead_dispatch_1_matmul_16x64x16_f32
+PERFX,2,536708,722403,115,4,1,1,att_pv_f32_perhead_dispatch_2_matmul_16x64x16_f32
+PERFX,3,725388,913353,116,4,1,1,att_pv_f32_perhead_dispatch_3_matmul_16x64x16_f32
+PERFX,4,916429,1104657,117,4,1,1,att_pv_f32_perhead_dispatch_4_matmul_16x64x16_f32
+PERFX,5,1107429,1292195,118,4,1,1,att_pv_f32_perhead_dispatch_5_matmul_16x64x16_f32
+PERFX,6,1295428,1483622,119,4,1,1,att_pv_f32_perhead_dispatch_6_matmul_16x64x16_f32
+PERFX,7,1486477,1671299,120,4,1,1,att_pv_f32_perhead_dispatch_7_matmul_16x64x16_f32
+PERFX,8,1674306,1859599,121,4,1,1,att_pv_f32_perhead_dispatch_8_matmul_16x64x16_f32
+PERFX,9,1862760,2050052,122,4,1,1,att_pv_f32_perhead_dispatch_9_matmul_16x64x16_f32
+PERFX,10,2053173,2238459,123,4,1,1,att_pv_f32_perhead_dispatch_10_matmul_16x64x16_f32
+PERFX,11,2241203,2428743,124,4,1,1,att_pv_f32_perhead_dispatch_11_matmul_16x64x16_f32
+PERFX,12,2431688,2619972,125,4,1,1,att_pv_f32_perhead_dispatch_12_matmul_16x64x16_f32
+PERFX,13,2623172,2808065,126,4,1,1,att_pv_f32_perhead_dispatch_13_matmul_16x64x16_f32
+PERFX,14,2810853,2998567,127,4,1,1,att_pv_f32_perhead_dispatch_14_matmul_16x64x16_f32
+PERFX,15,3001334,3186826,128,4,1,1,att_pv_f32_perhead_dispatch_15_matmul_16x64x16_f32
+PERFX,16,3190011,3375611,129,4,1,1,att_pv_f32_perhead_dispatch_16_matmul_16x64x16_f32
+PERFX,17,3378701,3566686,130,4,1,1,att_pv_f32_perhead_dispatch_17_matmul_16x64x16_f32
+PERFX,18,3569665,3754964,131,4,1,1,att_pv_f32_perhead_dispatch_18_matmul_16x64x16_f32
+PERFX,19,3757735,3945797,132,4,1,1,att_pv_f32_perhead_dispatch_19_matmul_16x64x16_f32
+PERFX,20,3948800,4137368,133,4,1,1,att_pv_f32_perhead_dispatch_20_matmul_16x64x16_f32
+PERFX,21,4140445,4325331,134,4,1,1,att_pv_f32_perhead_dispatch_21_matmul_16x64x16_f32
+PERFX,22,4328403,4516661,135,4,1,1,att_pv_f32_perhead_dispatch_22_matmul_16x64x16_f32
+PERFX,23,4519729,4704952,136,4,1,1,att_pv_f32_perhead_dispatch_23_matmul_16x64x16_f32
+PERFX,24,4707907,4894150,137,4,1,1,att_pv_f32_perhead_dispatch_24_matmul_16x64x16_f32
+PERFX,25,4897016,5085526,138,4,1,1,att_pv_f32_perhead_dispatch_25_matmul_16x64x16_f32
+PERFX,26,5088720,5274210,139,4,1,1,att_pv_f32_perhead_dispatch_26_matmul_16x64x16_f32
+PERFX,27,5276919,5465139,140,4,1,1,att_pv_f32_perhead_dispatch_27_matmul_16x64x16_f32
+PERFX,28,5467936,5657322,141,4,1,1,att_pv_f32_perhead_dispatch_28_matmul_16x64x16_f32
+PERFX,29,5660435,5845496,142,4,1,1,att_pv_f32_perhead_dispatch_29_matmul_16x64x16_f32
+PERFX,30,5848341,6035755,143,4,1,1,att_pv_f32_perhead_dispatch_30_matmul_16x64x16_f32
+PERFX,31,6038506,6223995,144,4,1,1,att_pv_f32_perhead_dispatch_31_matmul_16x64x16_f32
+PERFX_END
+CASE att_pv_f32_perhead 1 5974733 2185304
+TRACE_BEGIN att_pv_f32_perhead 1
+PERFX_TRACE count=32 dropped=0 origin=40079265809
+PERFX,0,123279,301914,113,4,1,1,att_pv_f32_perhead_dispatch_0_matmul_16x64x16_f32
+PERFX,1,304857,486055,114,4,1,1,att_pv_f32_perhead_dispatch_1_matmul_16x64x16_f32
+PERFX,2,488879,667341,115,4,1,1,att_pv_f32_perhead_dispatch_2_matmul_16x64x16_f32
+PERFX,3,670032,851196,116,4,1,1,att_pv_f32_perhead_dispatch_3_matmul_16x64x16_f32
+PERFX,4,853942,1035103,117,4,1,1,att_pv_f32_perhead_dispatch_4_matmul_16x64x16_f32
+PERFX,5,1037870,1216845,118,4,1,1,att_pv_f32_perhead_dispatch_5_matmul_16x64x16_f32
+PERFX,6,1219783,1400819,119,4,1,1,att_pv_f32_perhead_dispatch_6_matmul_16x64x16_f32
+PERFX,7,1403389,1581151,120,4,1,1,att_pv_f32_perhead_dispatch_7_matmul_16x64x16_f32
+PERFX,8,1583953,1762529,121,4,1,1,att_pv_f32_perhead_dispatch_8_matmul_16x64x16_f32
+PERFX,9,1765172,1946114,122,4,1,1,att_pv_f32_perhead_dispatch_9_matmul_16x64x16_f32
+PERFX,10,1948838,2127373,123,4,1,1,att_pv_f32_perhead_dispatch_10_matmul_16x64x16_f32
+PERFX,11,2130059,2311120,124,4,1,1,att_pv_f32_perhead_dispatch_11_matmul_16x64x16_f32
+PERFX,12,2313776,2494672,125,4,1,1,att_pv_f32_perhead_dispatch_12_matmul_16x64x16_f32
+PERFX,13,2497439,2675309,126,4,1,1,att_pv_f32_perhead_dispatch_13_matmul_16x64x16_f32
+PERFX,14,2678022,2859091,127,4,1,1,att_pv_f32_perhead_dispatch_14_matmul_16x64x16_f32
+PERFX,15,2861500,3039894,128,4,1,1,att_pv_f32_perhead_dispatch_15_matmul_16x64x16_f32
+PERFX,16,3042733,3220655,129,4,1,1,att_pv_f32_perhead_dispatch_16_matmul_16x64x16_f32
+PERFX,17,3223285,3404474,130,4,1,1,att_pv_f32_perhead_dispatch_17_matmul_16x64x16_f32
+PERFX,18,3407156,3585537,131,4,1,1,att_pv_f32_perhead_dispatch_18_matmul_16x64x16_f32
+PERFX,19,3587998,3769162,132,4,1,1,att_pv_f32_perhead_dispatch_19_matmul_16x64x16_f32
+PERFX,20,3771780,3952706,133,4,1,1,att_pv_f32_perhead_dispatch_20_matmul_16x64x16_f32
+PERFX,21,3955477,4133776,134,4,1,1,att_pv_f32_perhead_dispatch_21_matmul_16x64x16_f32
+PERFX,22,4136588,4317452,135,4,1,1,att_pv_f32_perhead_dispatch_22_matmul_16x64x16_f32
+PERFX,23,4320219,4498685,136,4,1,1,att_pv_f32_perhead_dispatch_23_matmul_16x64x16_f32
+PERFX,24,4501507,4679982,137,4,1,1,att_pv_f32_perhead_dispatch_24_matmul_16x64x16_f32
+PERFX,25,4682809,4863553,138,4,1,1,att_pv_f32_perhead_dispatch_25_matmul_16x64x16_f32
+PERFX,26,4866287,5044424,139,4,1,1,att_pv_f32_perhead_dispatch_26_matmul_16x64x16_f32
+PERFX,27,5046970,5227849,140,4,1,1,att_pv_f32_perhead_dispatch_27_matmul_16x64x16_f32
+PERFX,28,5230432,5411380,141,4,1,1,att_pv_f32_perhead_dispatch_28_matmul_16x64x16_f32
+PERFX,29,5414156,5592198,142,4,1,1,att_pv_f32_perhead_dispatch_29_matmul_16x64x16_f32
+PERFX,30,5594671,5775158,143,4,1,1,att_pv_f32_perhead_dispatch_30_matmul_16x64x16_f32
+PERFX,31,5777841,5956061,144,4,1,1,att_pv_f32_perhead_dispatch_31_matmul_16x64x16_f32
+PERFX_END
+CASE att_pv_f32_perhead 2 5951806 2185304
+TRACE_BEGIN att_pv_f32_perhead 2
+PERFX_TRACE count=32 dropped=0 origin=41370334270
+PERFX,0,116734,295011,113,4,1,1,att_pv_f32_perhead_dispatch_0_matmul_16x64x16_f32
+PERFX,1,297745,478745,114,4,1,1,att_pv_f32_perhead_dispatch_1_matmul_16x64x16_f32
+PERFX,2,481428,659575,115,4,1,1,att_pv_f32_perhead_dispatch_2_matmul_16x64x16_f32
+PERFX,3,662256,842602,116,4,1,1,att_pv_f32_perhead_dispatch_3_matmul_16x64x16_f32
+PERFX,4,845242,1025966,117,4,1,1,att_pv_f32_perhead_dispatch_4_matmul_16x64x16_f32
+PERFX,5,1028891,1206755,118,4,1,1,att_pv_f32_perhead_dispatch_5_matmul_16x64x16_f32
+PERFX,6,1209666,1390192,119,4,1,1,att_pv_f32_perhead_dispatch_6_matmul_16x64x16_f32
+PERFX,7,1392693,1570123,120,4,1,1,att_pv_f32_perhead_dispatch_7_matmul_16x64x16_f32
+PERFX,8,1572884,1750871,121,4,1,1,att_pv_f32_perhead_dispatch_8_matmul_16x64x16_f32
+PERFX,9,1753750,1934443,122,4,1,1,att_pv_f32_perhead_dispatch_9_matmul_16x64x16_f32
+PERFX,10,1937182,2115002,123,4,1,1,att_pv_f32_perhead_dispatch_10_matmul_16x64x16_f32
+PERFX,11,2117602,2298235,124,4,1,1,att_pv_f32_perhead_dispatch_11_matmul_16x64x16_f32
+PERFX,12,2300700,2480907,125,4,1,1,att_pv_f32_perhead_dispatch_12_matmul_16x64x16_f32
+PERFX,13,2483545,2661128,126,4,1,1,att_pv_f32_perhead_dispatch_13_matmul_16x64x16_f32
+PERFX,14,2663934,2844391,127,4,1,1,att_pv_f32_perhead_dispatch_14_matmul_16x64x16_f32
+PERFX,15,2846821,3024871,128,4,1,1,att_pv_f32_perhead_dispatch_15_matmul_16x64x16_f32
+PERFX,16,3027522,3205307,129,4,1,1,att_pv_f32_perhead_dispatch_16_matmul_16x64x16_f32
+PERFX,17,3208009,3388271,130,4,1,1,att_pv_f32_perhead_dispatch_17_matmul_16x64x16_f32
+PERFX,18,3390906,3568794,131,4,1,1,att_pv_f32_perhead_dispatch_18_matmul_16x64x16_f32
+PERFX,19,3571470,3751901,132,4,1,1,att_pv_f32_perhead_dispatch_19_matmul_16x64x16_f32
+PERFX,20,3754660,3934920,133,4,1,1,att_pv_f32_perhead_dispatch_20_matmul_16x64x16_f32
+PERFX,21,3937700,4114996,134,4,1,1,att_pv_f32_perhead_dispatch_21_matmul_16x64x16_f32
+PERFX,22,4117693,4298370,135,4,1,1,att_pv_f32_perhead_dispatch_22_matmul_16x64x16_f32
+PERFX,23,4300866,4478635,136,4,1,1,att_pv_f32_perhead_dispatch_23_matmul_16x64x16_f32
+PERFX,24,4481336,4659492,137,4,1,1,att_pv_f32_perhead_dispatch_24_matmul_16x64x16_f32
+PERFX,25,4662382,4843143,138,4,1,1,att_pv_f32_perhead_dispatch_25_matmul_16x64x16_f32
+PERFX,26,4845722,5024075,139,4,1,1,att_pv_f32_perhead_dispatch_26_matmul_16x64x16_f32
+PERFX,27,5026703,5207195,140,4,1,1,att_pv_f32_perhead_dispatch_27_matmul_16x64x16_f32
+PERFX,28,5209741,5390333,141,4,1,1,att_pv_f32_perhead_dispatch_28_matmul_16x64x16_f32
+PERFX,29,5392857,5570586,142,4,1,1,att_pv_f32_perhead_dispatch_29_matmul_16x64x16_f32
+PERFX,30,5573069,5753337,143,4,1,1,att_pv_f32_perhead_dispatch_30_matmul_16x64x16_f32
+PERFX,31,5755866,5933469,144,4,1,1,att_pv_f32_perhead_dispatch_31_matmul_16x64x16_f32
+PERFX_END
+CASE att_pv_f32_perhead 3 5945817 2185304
+TRACE_BEGIN att_pv_f32_perhead 3
+PERFX_TRACE count=32 dropped=0 origin=42661402898
+PERFX,0,115034,293148,113,4,1,1,att_pv_f32_perhead_dispatch_0_matmul_16x64x16_f32
+PERFX,1,295962,476765,114,4,1,1,att_pv_f32_perhead_dispatch_1_matmul_16x64x16_f32
+PERFX,2,479568,657511,115,4,1,1,att_pv_f32_perhead_dispatch_2_matmul_16x64x16_f32
+PERFX,3,660121,840712,116,4,1,1,att_pv_f32_perhead_dispatch_3_matmul_16x64x16_f32
+PERFX,4,843324,1023862,117,4,1,1,att_pv_f32_perhead_dispatch_4_matmul_16x64x16_f32
+PERFX,5,1026618,1204506,118,4,1,1,att_pv_f32_perhead_dispatch_5_matmul_16x64x16_f32
+PERFX,6,1207190,1387888,119,4,1,1,att_pv_f32_perhead_dispatch_6_matmul_16x64x16_f32
+PERFX,7,1390445,1568204,120,4,1,1,att_pv_f32_perhead_dispatch_7_matmul_16x64x16_f32
+PERFX,8,1570879,1748311,121,4,1,1,att_pv_f32_perhead_dispatch_8_matmul_16x64x16_f32
+PERFX,9,1750981,1931128,122,4,1,1,att_pv_f32_perhead_dispatch_9_matmul_16x64x16_f32
+PERFX,10,1933921,2111701,123,4,1,1,att_pv_f32_perhead_dispatch_10_matmul_16x64x16_f32
+PERFX,11,2114170,2294512,124,4,1,1,att_pv_f32_perhead_dispatch_11_matmul_16x64x16_f32
+PERFX,12,2297148,2477196,125,4,1,1,att_pv_f32_perhead_dispatch_12_matmul_16x64x16_f32
+PERFX,13,2479771,2656589,126,4,1,1,att_pv_f32_perhead_dispatch_13_matmul_16x64x16_f32
+PERFX,14,2659158,2839708,127,4,1,1,att_pv_f32_perhead_dispatch_14_matmul_16x64x16_f32
+PERFX,15,2842188,3020075,128,4,1,1,att_pv_f32_perhead_dispatch_15_matmul_16x64x16_f32
+PERFX,16,3022815,3200519,129,4,1,1,att_pv_f32_perhead_dispatch_16_matmul_16x64x16_f32
+PERFX,17,3203262,3383696,130,4,1,1,att_pv_f32_perhead_dispatch_17_matmul_16x64x16_f32
+PERFX,18,3386539,3564209,131,4,1,1,att_pv_f32_perhead_dispatch_18_matmul_16x64x16_f32
+PERFX,19,3566794,3747007,132,4,1,1,att_pv_f32_perhead_dispatch_19_matmul_16x64x16_f32
+PERFX,20,3749663,3929914,133,4,1,1,att_pv_f32_perhead_dispatch_20_matmul_16x64x16_f32
+PERFX,21,3932751,4110292,134,4,1,1,att_pv_f32_perhead_dispatch_21_matmul_16x64x16_f32
+PERFX,22,4112816,4293392,135,4,1,1,att_pv_f32_perhead_dispatch_22_matmul_16x64x16_f32
+PERFX,23,4295888,4473563,136,4,1,1,att_pv_f32_perhead_dispatch_23_matmul_16x64x16_f32
+PERFX,24,4476189,4654723,137,4,1,1,att_pv_f32_perhead_dispatch_24_matmul_16x64x16_f32
+PERFX,25,4657460,4838540,138,4,1,1,att_pv_f32_perhead_dispatch_25_matmul_16x64x16_f32
+PERFX,26,4841277,5018939,139,4,1,1,att_pv_f32_perhead_dispatch_26_matmul_16x64x16_f32
+PERFX,27,5021496,5201660,140,4,1,1,att_pv_f32_perhead_dispatch_27_matmul_16x64x16_f32
+PERFX,28,5204416,5384572,141,4,1,1,att_pv_f32_perhead_dispatch_28_matmul_16x64x16_f32
+PERFX,29,5387150,5564495,142,4,1,1,att_pv_f32_perhead_dispatch_29_matmul_16x64x16_f32
+PERFX,30,5567212,5747457,143,4,1,1,att_pv_f32_perhead_dispatch_30_matmul_16x64x16_f32
+PERFX,31,5750103,5927784,144,4,1,1,att_pv_f32_perhead_dispatch_31_matmul_16x64x16_f32
+PERFX_END
+CASE att_pv_f32_perhead 4 5937663 2185304
+TRACE_BEGIN att_pv_f32_perhead 4
+PERFX_TRACE count=32 dropped=0 origin=43952471642
+PERFX,0,114318,291986,113,4,1,1,att_pv_f32_perhead_dispatch_0_matmul_16x64x16_f32
+PERFX,1,294668,475005,114,4,1,1,att_pv_f32_perhead_dispatch_1_matmul_16x64x16_f32
+PERFX,2,477760,655477,115,4,1,1,att_pv_f32_perhead_dispatch_2_matmul_16x64x16_f32
+PERFX,3,657895,838254,116,4,1,1,att_pv_f32_perhead_dispatch_3_matmul_16x64x16_f32
+PERFX,4,840865,1021383,117,4,1,1,att_pv_f32_perhead_dispatch_4_matmul_16x64x16_f32
+PERFX,5,1024007,1201406,118,4,1,1,att_pv_f32_perhead_dispatch_5_matmul_16x64x16_f32
+PERFX,6,1204000,1384194,119,4,1,1,att_pv_f32_perhead_dispatch_6_matmul_16x64x16_f32
+PERFX,7,1386653,1564167,120,4,1,1,att_pv_f32_perhead_dispatch_7_matmul_16x64x16_f32
+PERFX,8,1566648,1744413,121,4,1,1,att_pv_f32_perhead_dispatch_8_matmul_16x64x16_f32
+PERFX,9,1747251,1927585,122,4,1,1,att_pv_f32_perhead_dispatch_9_matmul_16x64x16_f32
+PERFX,10,1930343,2107694,123,4,1,1,att_pv_f32_perhead_dispatch_10_matmul_16x64x16_f32
+PERFX,11,2110274,2290550,124,4,1,1,att_pv_f32_perhead_dispatch_11_matmul_16x64x16_f32
+PERFX,12,2293270,2473498,125,4,1,1,att_pv_f32_perhead_dispatch_12_matmul_16x64x16_f32
+PERFX,13,2476214,2653782,126,4,1,1,att_pv_f32_perhead_dispatch_13_matmul_16x64x16_f32
+PERFX,14,2656339,2836516,127,4,1,1,att_pv_f32_perhead_dispatch_14_matmul_16x64x16_f32
+PERFX,15,2838818,3016431,128,4,1,1,att_pv_f32_perhead_dispatch_15_matmul_16x64x16_f32
+PERFX,16,3019346,3196309,129,4,1,1,att_pv_f32_perhead_dispatch_16_matmul_16x64x16_f32
+PERFX,17,3198940,3379148,130,4,1,1,att_pv_f32_perhead_dispatch_17_matmul_16x64x16_f32
+PERFX,18,3381925,3559621,131,4,1,1,att_pv_f32_perhead_dispatch_18_matmul_16x64x16_f32
+PERFX,19,3562215,3742538,132,4,1,1,att_pv_f32_perhead_dispatch_19_matmul_16x64x16_f32
+PERFX,20,3745189,3925261,133,4,1,1,att_pv_f32_perhead_dispatch_20_matmul_16x64x16_f32
+PERFX,21,3927857,4105043,134,4,1,1,att_pv_f32_perhead_dispatch_21_matmul_16x64x16_f32
+PERFX,22,4107638,4287708,135,4,1,1,att_pv_f32_perhead_dispatch_22_matmul_16x64x16_f32
+PERFX,23,4290327,4468011,136,4,1,1,att_pv_f32_perhead_dispatch_23_matmul_16x64x16_f32
+PERFX,24,4470658,4648448,137,4,1,1,att_pv_f32_perhead_dispatch_24_matmul_16x64x16_f32
+PERFX,25,4651238,4831381,138,4,1,1,att_pv_f32_perhead_dispatch_25_matmul_16x64x16_f32
+PERFX,26,4834054,5011373,139,4,1,1,att_pv_f32_perhead_dispatch_26_matmul_16x64x16_f32
+PERFX,27,5013998,5194128,140,4,1,1,att_pv_f32_perhead_dispatch_27_matmul_16x64x16_f32
+PERFX,28,5196762,5377272,141,4,1,1,att_pv_f32_perhead_dispatch_28_matmul_16x64x16_f32
+PERFX,29,5379956,5557202,142,4,1,1,att_pv_f32_perhead_dispatch_29_matmul_16x64x16_f32
+PERFX,30,5559704,5739629,143,4,1,1,att_pv_f32_perhead_dispatch_30_matmul_16x64x16_f32
+PERFX,31,5742176,5919616,144,4,1,1,att_pv_f32_perhead_dispatch_31_matmul_16x64x16_f32
+PERFX_END
+CASE att_pv_f32_perhead 5 5938526 2185304
+TRACE_BEGIN att_pv_f32_perhead 5
+PERFX_TRACE count=32 dropped=0 origin=45243540243
+PERFX,0,114324,291892,113,4,1,1,att_pv_f32_perhead_dispatch_0_matmul_16x64x16_f32
+PERFX,1,294788,475328,114,4,1,1,att_pv_f32_perhead_dispatch_1_matmul_16x64x16_f32
+PERFX,2,477964,655673,115,4,1,1,att_pv_f32_perhead_dispatch_2_matmul_16x64x16_f32
+PERFX,3,658214,838747,116,4,1,1,att_pv_f32_perhead_dispatch_3_matmul_16x64x16_f32
+PERFX,4,841481,1021775,117,4,1,1,att_pv_f32_perhead_dispatch_4_matmul_16x64x16_f32
+PERFX,5,1024466,1202095,118,4,1,1,att_pv_f32_perhead_dispatch_5_matmul_16x64x16_f32
+PERFX,6,1204653,1385132,119,4,1,1,att_pv_f32_perhead_dispatch_6_matmul_16x64x16_f32
+PERFX,7,1387722,1565102,120,4,1,1,att_pv_f32_perhead_dispatch_7_matmul_16x64x16_f32
+PERFX,8,1567642,1745199,121,4,1,1,att_pv_f32_perhead_dispatch_8_matmul_16x64x16_f32
+PERFX,9,1747845,1928064,122,4,1,1,att_pv_f32_perhead_dispatch_9_matmul_16x64x16_f32
+PERFX,10,1930871,2108464,123,4,1,1,att_pv_f32_perhead_dispatch_10_matmul_16x64x16_f32
+PERFX,11,2110977,2291264,124,4,1,1,att_pv_f32_perhead_dispatch_11_matmul_16x64x16_f32
+PERFX,12,2293967,2474046,125,4,1,1,att_pv_f32_perhead_dispatch_12_matmul_16x64x16_f32
+PERFX,13,2476762,2653987,126,4,1,1,att_pv_f32_perhead_dispatch_13_matmul_16x64x16_f32
+PERFX,14,2656511,2836900,127,4,1,1,att_pv_f32_perhead_dispatch_14_matmul_16x64x16_f32
+PERFX,15,2839382,3016901,128,4,1,1,att_pv_f32_perhead_dispatch_15_matmul_16x64x16_f32
+PERFX,16,3019659,3196993,129,4,1,1,att_pv_f32_perhead_dispatch_16_matmul_16x64x16_f32
+PERFX,17,3199625,3379493,130,4,1,1,att_pv_f32_perhead_dispatch_17_matmul_16x64x16_f32
+PERFX,18,3382063,3559490,131,4,1,1,att_pv_f32_perhead_dispatch_18_matmul_16x64x16_f32
+PERFX,19,3561869,3741846,132,4,1,1,att_pv_f32_perhead_dispatch_19_matmul_16x64x16_f32
+PERFX,20,3744637,3925121,133,4,1,1,att_pv_f32_perhead_dispatch_20_matmul_16x64x16_f32
+PERFX,21,3927965,4104992,134,4,1,1,att_pv_f32_perhead_dispatch_21_matmul_16x64x16_f32
+PERFX,22,4107411,4287467,135,4,1,1,att_pv_f32_perhead_dispatch_22_matmul_16x64x16_f32
+PERFX,23,4290202,4467537,136,4,1,1,att_pv_f32_perhead_dispatch_23_matmul_16x64x16_f32
+PERFX,24,4470482,4648170,137,4,1,1,att_pv_f32_perhead_dispatch_24_matmul_16x64x16_f32
+PERFX,25,4651086,4831485,138,4,1,1,att_pv_f32_perhead_dispatch_25_matmul_16x64x16_f32
+PERFX,26,4834091,5011680,139,4,1,1,att_pv_f32_perhead_dispatch_26_matmul_16x64x16_f32
+PERFX,27,5014199,5194269,140,4,1,1,att_pv_f32_perhead_dispatch_27_matmul_16x64x16_f32
+PERFX,28,5197033,5377378,141,4,1,1,att_pv_f32_perhead_dispatch_28_matmul_16x64x16_f32
+PERFX,29,5380081,5557337,142,4,1,1,att_pv_f32_perhead_dispatch_29_matmul_16x64x16_f32
+PERFX,30,5559984,5739864,143,4,1,1,att_pv_f32_perhead_dispatch_30_matmul_16x64x16_f32
+PERFX,31,5742492,5920452,144,4,1,1,att_pv_f32_perhead_dispatch_31_matmul_16x64x16_f32
+PERFX_END
+CHECK att_pv_f32_perhead 0 1174446012942262272
+CASE_BEGIN att_qk_f32_bmm
+CASE att_qk_f32_bmm 0 4585187 1666780
+TRACE_BEGIN att_qk_f32_bmm 0
+PERFX_TRACE count=1 dropped=0 origin=46602769065
+PERFX,0,64360,4569388,145,32,1,1,att_qk_f32_bmm_dispatch_0_batch_matmul_32x16x16x64_f32
+PERFX_END
+CASE att_qk_f32_bmm 1 4561523 1666774
+TRACE_BEGIN att_qk_f32_bmm 1
+PERFX_TRACE count=1 dropped=0 origin=46773175562
+PERFX,0,53985,4548028,145,32,1,1,att_qk_f32_bmm_dispatch_0_batch_matmul_32x16x16x64_f32
+PERFX_END
+CASE att_qk_f32_bmm 2 4555688 1666774
+TRACE_BEGIN att_qk_f32_bmm 2
+PERFX_TRACE count=1 dropped=0 origin=46943580243
+PERFX,0,52791,4542431,145,32,1,1,att_qk_f32_bmm_dispatch_0_batch_matmul_32x16x16x64_f32
+PERFX_END
+CASE att_qk_f32_bmm 3 4554953 1666774
+TRACE_BEGIN att_qk_f32_bmm 3
+PERFX_TRACE count=1 dropped=0 origin=47113985285
+PERFX,0,52528,4541536,145,32,1,1,att_qk_f32_bmm_dispatch_0_batch_matmul_32x16x16x64_f32
+PERFX_END
+CASE att_qk_f32_bmm 4 4553220 1666774
+TRACE_BEGIN att_qk_f32_bmm 4
+PERFX_TRACE count=1 dropped=0 origin=47284390229
+PERFX,0,51750,4540204,145,32,1,1,att_qk_f32_bmm_dispatch_0_batch_matmul_32x16x16x64_f32
+PERFX_END
+CASE att_qk_f32_bmm 5 4551787 1666774
+TRACE_BEGIN att_qk_f32_bmm 5
+PERFX_TRACE count=1 dropped=0 origin=47454795287
+PERFX,0,51524,4538776,145,32,1,1,att_qk_f32_bmm_dispatch_0_batch_matmul_32x16x16x64_f32
+PERFX_END
+CHECK att_qk_f32_bmm 0 74905288600166400
+CASE_BEGIN att_pv_f32_bmm
+CASE att_pv_f32_bmm 0 5345293 1971001
+TRACE_BEGIN att_pv_f32_bmm 0
+PERFX_TRACE count=1 dropped=0 origin=47693360964
+PERFX,0,120618,5330306,146,32,1,1,att_pv_f32_bmm_dispatch_0_batch_matmul_32x16x64x16_f32
+PERFX_END
+CASE att_pv_f32_bmm 1 5317825 1971124
+TRACE_BEGIN att_pv_f32_bmm 1
+PERFX_TRACE count=1 dropped=0 origin=47865772360
+PERFX,0,108088,5303603,146,32,1,1,att_pv_f32_bmm_dispatch_0_batch_matmul_32x16x64x16_f32
+PERFX_END
+CASE att_pv_f32_bmm 2 5312177 1971124
+TRACE_BEGIN att_pv_f32_bmm 2
+PERFX_TRACE count=1 dropped=0 origin=48038182034
+PERFX,0,106528,5297990,146,32,1,1,att_pv_f32_bmm_dispatch_0_batch_matmul_32x16x64x16_f32
+PERFX_END
+CASE att_pv_f32_bmm 3 5310452 1971124
+TRACE_BEGIN att_pv_f32_bmm 3
+PERFX_TRACE count=1 dropped=0 origin=48210591895
+PERFX,0,105561,5296604,146,32,1,1,att_pv_f32_bmm_dispatch_0_batch_matmul_32x16x64x16_f32
+PERFX_END
+CASE att_pv_f32_bmm 4 5308632 1971124
+TRACE_BEGIN att_pv_f32_bmm 4
+PERFX_TRACE count=1 dropped=0 origin=48383001686
+PERFX,0,104836,5294937,146,32,1,1,att_pv_f32_bmm_dispatch_0_batch_matmul_32x16x64x16_f32
+PERFX_END
+CASE att_pv_f32_bmm 5 5308975 1971124
+TRACE_BEGIN att_pv_f32_bmm 5
+PERFX_TRACE count=1 dropped=0 origin=48555411385
+PERFX,0,104583,5295156,146,32,1,1,att_pv_f32_bmm_dispatch_0_batch_matmul_32x16x64x16_f32
+PERFX_END
+CHECK att_pv_f32_bmm 0 1178004064975691776
+CASE_BEGIN mm_down
+CASE mm_down 0 14967610 179741
+TRACE_BEGIN mm_down 0
+PERFX_TRACE count=1 dropped=0 origin=49347294383
+PERFX,0,251037,14947650,147,128,1,1,mm_down_dispatch_0_matmul_16x2048x5632_i8xi8xi32
+PERFX_END
+CASE mm_down 1 14426005 179636
+TRACE_BEGIN mm_down 1
+PERFX_TRACE count=1 dropped=0 origin=49519704880
+PERFX,0,140543,14406037,147,128,1,1,mm_down_dispatch_0_matmul_16x2048x5632_i8xi8xi32
+PERFX_END
+CASE mm_down 2 14428803 179636
+TRACE_BEGIN mm_down 2
+PERFX_TRACE count=1 dropped=0 origin=49692114466
+PERFX,0,138900,14409452,147,128,1,1,mm_down_dispatch_0_matmul_16x2048x5632_i8xi8xi32
+PERFX_END
+CASE mm_down 3 14420459 179636
+TRACE_BEGIN mm_down 3
+PERFX_TRACE count=1 dropped=0 origin=49864524198
+PERFX,0,138833,14400721,147,128,1,1,mm_down_dispatch_0_matmul_16x2048x5632_i8xi8xi32
+PERFX_END
+CASE mm_down 4 14419285 179636
+TRACE_BEGIN mm_down 4
+PERFX_TRACE count=1 dropped=0 origin=50036933909
+PERFX,0,137070,14399432,147,128,1,1,mm_down_dispatch_0_matmul_16x2048x5632_i8xi8xi32
+PERFX_END
+CASE mm_down 5 14441477 179636
+TRACE_BEGIN mm_down 5
+PERFX_TRACE count=1 dropped=0 origin=50209343985
+PERFX,0,138706,14421127,147,128,1,1,mm_down_dispatch_0_matmul_16x2048x5632_i8xi8xi32
+PERFX_END
+CHECK mm_down 0 20410393553
+CASE_BEGIN mm_gu
+CASE mm_gu 0 9342793 437677
+TRACE_BEGIN mm_gu 0
+PERFX_TRACE count=1 dropped=0 origin=51001225482
+PERFX,0,548307,9322665,148,352,1,1,mm_gu_dispatch_0_matmul_16x5632x2048_i8xi8xi32
+PERFX_END
+CASE mm_gu 1 8870139 437590
+TRACE_BEGIN mm_gu 1
+PERFX_TRACE count=1 dropped=0 origin=51173636278
+PERFX,0,343391,8851004,148,352,1,1,mm_gu_dispatch_0_matmul_16x5632x2048_i8xi8xi32
+PERFX_END
+CASE mm_gu 2 8862781 437590
+TRACE_BEGIN mm_gu 2
+PERFX_TRACE count=1 dropped=0 origin=51346045789
+PERFX,0,337891,8843519,148,352,1,1,mm_gu_dispatch_0_matmul_16x5632x2048_i8xi8xi32
+PERFX_END
+CASE mm_gu 3 8858281 437590
+TRACE_BEGIN mm_gu 3
+PERFX_TRACE count=1 dropped=0 origin=51518455132
+PERFX,0,337376,8839061,148,352,1,1,mm_gu_dispatch_0_matmul_16x5632x2048_i8xi8xi32
+PERFX_END
+CASE mm_gu 4 8857898 437590
+TRACE_BEGIN mm_gu 4
+PERFX_TRACE count=1 dropped=0 origin=51690865151
+PERFX,0,338331,8838091,148,352,1,1,mm_gu_dispatch_0_matmul_16x5632x2048_i8xi8xi32
+PERFX_END
+CASE mm_gu 5 8861324 437590
+TRACE_BEGIN mm_gu 5
+PERFX_TRACE count=1 dropped=0 origin=51863275177
+PERFX,0,338425,8841576,148,352,1,1,mm_gu_dispatch_0_matmul_16x5632x2048_i8xi8xi32
+PERFX_END
+CHECK mm_gu 0 18446744069222053286
+CASE_BEGIN mm_gu_pair
+CASE mm_gu_pair 0 18568341 857107
+TRACE_BEGIN mm_gu_pair 0
+PERFX_TRACE count=2 dropped=0 origin=53206466505
+PERFX,0,1036732,9949197,149,352,1,1,mm_gu_pair_dispatch_0_matmul_16x5632x2048_i8xi8xi32
+PERFX,1,9954472,18544516,150,352,1,1,mm_gu_pair_dispatch_1_matmul_16x5632x2048_i8xi8xi32
+PERFX_END
+CASE mm_gu_pair 1 17979384 857010
+TRACE_BEGIN mm_gu_pair 1
+PERFX_TRACE count=2 dropped=0 origin=53412959086
+PERFX,0,686389,9364404,149,352,1,1,mm_gu_pair_dispatch_0_matmul_16x5632x2048_i8xi8xi32
+PERFX,1,9369409,17954918,150,352,1,1,mm_gu_pair_dispatch_1_matmul_16x5632x2048_i8xi8xi32
+PERFX_END
+CASE mm_gu_pair 2 17973934 857010
+TRACE_BEGIN mm_gu_pair 2
+PERFX_TRACE count=2 dropped=0 origin=53621454671
+PERFX,0,683360,9363868,149,352,1,1,mm_gu_pair_dispatch_0_matmul_16x5632x2048_i8xi8xi32
+PERFX,1,9368677,17950366,150,352,1,1,mm_gu_pair_dispatch_1_matmul_16x5632x2048_i8xi8xi32
+PERFX_END
+CASE mm_gu_pair 3 17975107 857010
+TRACE_BEGIN mm_gu_pair 3
+PERFX_TRACE count=2 dropped=0 origin=53829950253
+PERFX,0,682375,9359076,149,352,1,1,mm_gu_pair_dispatch_0_matmul_16x5632x2048_i8xi8xi32
+PERFX,1,9364084,17950980,150,352,1,1,mm_gu_pair_dispatch_1_matmul_16x5632x2048_i8xi8xi32
+PERFX_END
+CASE mm_gu_pair 4 17981526 857010
+TRACE_BEGIN mm_gu_pair 4
+PERFX_TRACE count=2 dropped=0 origin=54038445805
+PERFX,0,686009,9370068,149,352,1,1,mm_gu_pair_dispatch_0_matmul_16x5632x2048_i8xi8xi32
+PERFX,1,9374648,17956901,150,352,1,1,mm_gu_pair_dispatch_1_matmul_16x5632x2048_i8xi8xi32
+PERFX_END
+CASE mm_gu_pair 5 17974818 857010
+TRACE_BEGIN mm_gu_pair 5
+PERFX_TRACE count=2 dropped=0 origin=54246941433
+PERFX,0,684417,9359808,149,352,1,1,mm_gu_pair_dispatch_0_matmul_16x5632x2048_i8xi8xi32
+PERFX,1,9364647,17950619,150,352,1,1,mm_gu_pair_dispatch_1_matmul_16x5632x2048_i8xi8xi32
+PERFX_END
+CHECK mm_gu_pair 1 18446744039503880050 18446744046248520962
+CASE_BEGIN mm_o
+CASE mm_o 0 4023281 176749
+TRACE_BEGIN mm_o 0
+PERFX_TRACE count=1 dropped=0 origin=54720064699
+PERFX,0,240751,4001766,151,128,1,1,mm_o_dispatch_0_matmul_16x2048x2048_i8xi8xi32
+PERFX_END
+CASE mm_o 1 3235783 176648
+TRACE_BEGIN mm_o 1
+PERFX_TRACE count=1 dropped=0 origin=54892475242
+PERFX,0,137959,3216342,151,128,1,1,mm_o_dispatch_0_matmul_16x2048x2048_i8xi8xi32
+PERFX_END
+CASE mm_o 2 3197323 176648
+TRACE_BEGIN mm_o 2
+PERFX_TRACE count=1 dropped=0 origin=55064884653
+PERFX,0,134838,3177616,151,128,1,1,mm_o_dispatch_0_matmul_16x2048x2048_i8xi8xi32
+PERFX_END
+CASE mm_o 3 3195999 176648
+TRACE_BEGIN mm_o 3
+PERFX_TRACE count=1 dropped=0 origin=55237294598
+PERFX,0,133951,3175394,151,128,1,1,mm_o_dispatch_0_matmul_16x2048x2048_i8xi8xi32
+PERFX_END
+CASE mm_o 4 3189855 176648
+TRACE_BEGIN mm_o 4
+PERFX_TRACE count=1 dropped=0 origin=55409704075
+PERFX,0,132893,3171074,151,128,1,1,mm_o_dispatch_0_matmul_16x2048x2048_i8xi8xi32
+PERFX_END
+CASE mm_o 5 3187887 176648
+TRACE_BEGIN mm_o 5
+PERFX_TRACE count=1 dropped=0 origin=55582114078
+PERFX,0,133615,3168404,151,128,1,1,mm_o_dispatch_0_matmul_16x2048x2048_i8xi8xi32
+PERFX_END
+CHECK mm_o 0 18446744048789288870
+CASE_BEGIN mm_qkv
+CASE mm_qkv 0 4209450 219506
+TRACE_BEGIN mm_qkv 0
+PERFX_TRACE count=1 dropped=0 origin=56065261334
+PERFX,0,282196,4187553,152,160,1,1,mm_qkv_dispatch_0_matmul_16x2560x2048_i8xi8xi32
+PERFX_END
+CASE mm_qkv 1 3828066 219412
+TRACE_BEGIN mm_qkv 1
+PERFX_TRACE count=1 dropped=0 origin=56237672346
+PERFX,0,176891,3808079,152,160,1,1,mm_qkv_dispatch_0_matmul_16x2560x2048_i8xi8xi32
+PERFX_END
+CASE mm_qkv 2 3748445 219412
+TRACE_BEGIN mm_qkv 2
+PERFX_TRACE count=1 dropped=0 origin=56410081724
+PERFX,0,166814,3729867,152,160,1,1,mm_qkv_dispatch_0_matmul_16x2560x2048_i8xi8xi32
+PERFX_END
+CASE mm_qkv 3 3719201 219412
+TRACE_BEGIN mm_qkv 3
+PERFX_TRACE count=1 dropped=0 origin=56582491184
+PERFX,0,165854,3701275,152,160,1,1,mm_qkv_dispatch_0_matmul_16x2560x2048_i8xi8xi32
+PERFX_END
+CASE mm_qkv 4 3708454 219412
+TRACE_BEGIN mm_qkv 4
+PERFX_TRACE count=1 dropped=0 origin=56754901061
+PERFX,0,164672,3690298,152,160,1,1,mm_qkv_dispatch_0_matmul_16x2560x2048_i8xi8xi32
+PERFX_END
+CASE mm_qkv 5 3707284 219412
+TRACE_BEGIN mm_qkv 5
+PERFX_TRACE count=1 dropped=0 origin=56927311046
+PERFX,0,164012,3689379,152,160,1,1,mm_qkv_dispatch_0_matmul_16x2560x2048_i8xi8xi32
+PERFX_END
+CHECK mm_qkv 0 20110687849
+CASE_BEGIN mm_lm
+CASE mm_lm 0 29307227 431351
+TRACE_BEGIN mm_lm 0
+PERFX_TRACE count=1 dropped=0 origin=60299324479
+PERFX,0,242827,29286873,153,2000,1,1,mm_lm_dispatch_0_matmul_1x32000x2048_i8xi8xi32
+PERFX_END
+CASE mm_lm 1 29047848 431165
+TRACE_BEGIN mm_lm 1
+PERFX_TRACE count=1 dropped=0 origin=60493788702
+PERFX,0,156749,29027683,153,2000,1,1,mm_lm_dispatch_0_matmul_1x32000x2048_i8xi8xi32
+PERFX_END
+CASE mm_lm 2 29033083 431165
+TRACE_BEGIN mm_lm 2
+PERFX_TRACE count=1 dropped=0 origin=60688250554
+PERFX,0,156684,29012973,153,2000,1,1,mm_lm_dispatch_0_matmul_1x32000x2048_i8xi8xi32
+PERFX_END
+CASE mm_lm 3 29049374 431165
+TRACE_BEGIN mm_lm 3
+PERFX_TRACE count=1 dropped=0 origin=60882712600
+PERFX,0,156552,29029767,153,2000,1,1,mm_lm_dispatch_0_matmul_1x32000x2048_i8xi8xi32
+PERFX_END
+CASE mm_lm 4 29031732 431165
+TRACE_BEGIN mm_lm 4
+PERFX_TRACE count=1 dropped=0 origin=61077174792
+PERFX,0,156389,29011976,153,2000,1,1,mm_lm_dispatch_0_matmul_1x32000x2048_i8xi8xi32
+PERFX_END
+CASE mm_lm 5 29036652 431165
+TRACE_BEGIN mm_lm 5
+PERFX_TRACE count=1 dropped=0 origin=61271636793
+PERFX,0,155695,29016638,153,2000,1,1,mm_lm_dispatch_0_matmul_1x32000x2048_i8xi8xi32
+PERFX_END
+CHECK mm_lm 0 18446744071348847902
+CASE_BEGIN mm_lm_f32
+CASE mm_lm_f32 0 503385041 184503270
+TRACE_BEGIN mm_lm_f32 0
+PERFX_TRACE count=1 dropped=0 origin=66077057565
+PERFX,0,243442,503364001,154,500,1,1,mm_lm_f32_dispatch_0_matmul_1x32000x2048_f32
+PERFX_END
+CASE mm_lm_f32 1 501953609 184503171
+TRACE_BEGIN mm_lm_f32 1
+PERFX_TRACE count=1 dropped=0 origin=66732617533
+PERFX,0,170900,501932130,154,500,1,1,mm_lm_f32_dispatch_0_matmul_1x32000x2048_f32
+PERFX_END
+CASE mm_lm_f32 2 501905760 184503171
+TRACE_BEGIN mm_lm_f32 2
+PERFX_TRACE count=1 dropped=0 origin=67388175486
+PERFX,0,171021,501884872,154,500,1,1,mm_lm_f32_dispatch_0_matmul_1x32000x2048_f32
+PERFX_END
+CASE mm_lm_f32 3 501908088 184503171
+TRACE_BEGIN mm_lm_f32 3
+PERFX_TRACE count=1 dropped=0 origin=68043733591
+PERFX,0,169607,501886808,154,500,1,1,mm_lm_f32_dispatch_0_matmul_1x32000x2048_f32
+PERFX_END
+CASE mm_lm_f32 4 501901092 184503171
+TRACE_BEGIN mm_lm_f32 4
+PERFX_TRACE count=1 dropped=0 origin=68699291787
+PERFX,0,171157,501880000,154,500,1,1,mm_lm_f32_dispatch_0_matmul_1x32000x2048_f32
+PERFX_END
+CASE mm_lm_f32 5 501893302 184503171
+TRACE_BEGIN mm_lm_f32 5
+PERFX_TRACE count=1 dropped=0 origin=69354850131
+PERFX,0,169359,501872338,154,500,1,1,mm_lm_f32_dispatch_0_matmul_1x32000x2048_f32
+PERFX_END
+CHECK mm_lm_f32 0 1146293848370709504
+KPROF_DONE 1

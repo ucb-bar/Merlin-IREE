@@ -1,0 +1,6 @@
+MODEL_BEGIN resnet50_int8 entry=module.main_graph vmfb=25848800 inputs=1 invokes=2 load_cycles=333463998
+INVOKE 0 cycles=3871089221 instret=1795404562
+CHECK 0 out=0 n=1000 errors=0 max_abs=0.2092 argmax=21 ref_argmax=21 fnv=5234877edf041522
+INVOKE 1 cycles=3868901745 instret=1795404371
+CHECK 1 out=0 n=1000 errors=0 max_abs=0.2092 argmax=21 ref_argmax=21 fnv=5234877edf041522
+MODEL_DONE 0

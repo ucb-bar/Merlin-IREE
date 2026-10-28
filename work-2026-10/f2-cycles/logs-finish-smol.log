@@ -1,0 +1,7 @@
+RC 0 END 2026-10-28T11:27:48Z
+dcd6273ae215fd49f212c77a128f36286c6ef667bc9a48851da36099128c781a  apps/smol/model.vmfb
+ok apps/smol
+10178 dispatches; 443 Gemmini
+ninja: Entering directory `/scratch/loren/f2cyc/build-plain'
+[0/2] Re-checking globbed directories...
+ninja: error: unknown target 'smol.elf'

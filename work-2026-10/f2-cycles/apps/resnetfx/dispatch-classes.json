@@ -1,0 +1,706 @@
+{
+ "_initializer_0_dispatch_0_transpose_64x64_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_1_dispatch_0_transpose_64x256_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_2_dispatch_0_transpose_64x256_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_3_dispatch_0_transpose_256x64_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_4_dispatch_0_transpose_64x256_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_5_dispatch_0_transpose_256x64_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_6_dispatch_0_transpose_64x256_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_7_dispatch_0_transpose_256x128_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_8_dispatch_0_transpose_256x512_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_9_dispatch_0_transpose_128x512_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_10_dispatch_0_transpose_512x128_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_11_dispatch_0_transpose_128x512_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_12_dispatch_0_transpose_512x128_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_13_dispatch_0_transpose_128x512_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_14_dispatch_0_transpose_512x128_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_15_dispatch_0_transpose_128x512_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_16_dispatch_0_transpose_512x256_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_17_dispatch_0_transpose_512x1024_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_18_dispatch_0_transpose_256x1024_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_19_dispatch_0_transpose_1024x256_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_20_dispatch_0_transpose_256x1024_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_21_dispatch_0_transpose_1024x256_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_22_dispatch_0_transpose_256x1024_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_23_dispatch_0_transpose_1024x256_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_24_dispatch_0_transpose_256x1024_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_25_dispatch_0_transpose_1024x256_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_26_dispatch_0_transpose_256x1024_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_27_dispatch_0_transpose_1024x256_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_28_dispatch_0_transpose_256x1024_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_29_dispatch_0_transpose_1024x512_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_30_dispatch_0_transpose_1024x2048_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_31_dispatch_0_transpose_512x2048_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_32_dispatch_0_transpose_2048x512_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_33_dispatch_0_transpose_512x2048_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_34_dispatch_0_transpose_2048x512_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_35_dispatch_0_transpose_512x2048_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_36_dispatch_0_transpose_2048x1000_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_37_dispatch_0_elementwise_broadcast_3136x64_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_38_dispatch_0_elementwise_broadcast_3136x64_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_39_dispatch_0_elementwise_broadcast_3136x64_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_40_dispatch_0_elementwise_broadcast_3136x64_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_41_dispatch_0_elementwise_broadcast_3136x64_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_42_dispatch_0_elementwise_broadcast_3136x64_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_43_dispatch_0_elementwise_broadcast_784x128_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_44_dispatch_0_elementwise_broadcast_784x128_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_45_dispatch_0_elementwise_broadcast_784x128_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_46_dispatch_0_elementwise_broadcast_784x128_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_47_dispatch_0_elementwise_broadcast_784x128_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_48_dispatch_0_elementwise_broadcast_784x128_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_49_dispatch_0_elementwise_broadcast_784x128_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_50_dispatch_0_elementwise_broadcast_784x256_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_51_dispatch_0_elementwise_broadcast_196x1024_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_52_dispatch_0_elementwise_broadcast_196x256_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_53_dispatch_0_elementwise_broadcast_196x1024_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_54_dispatch_0_elementwise_broadcast_196x256_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_55_dispatch_0_elementwise_broadcast_196x256_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_56_dispatch_0_elementwise_broadcast_196x1024_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_57_dispatch_0_elementwise_broadcast_196x256_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_58_dispatch_0_elementwise_broadcast_196x256_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_59_dispatch_0_elementwise_broadcast_196x1024_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_60_dispatch_0_elementwise_broadcast_196x256_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_61_dispatch_0_elementwise_broadcast_196x256_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_62_dispatch_0_elementwise_broadcast_196x1024_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_63_dispatch_0_elementwise_broadcast_196x256_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_64_dispatch_0_elementwise_broadcast_196x256_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_65_dispatch_0_elementwise_broadcast_196x1024_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_66_dispatch_0_elementwise_broadcast_196x256_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_67_dispatch_0_elementwise_broadcast_196x256_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_68_dispatch_0_elementwise_broadcast_196x1024_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_69_dispatch_0_elementwise_broadcast_196x512_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_70_dispatch_0_elementwise_broadcast_49x2048_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_71_dispatch_0_elementwise_broadcast_49x512_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_72_dispatch_0_elementwise_broadcast_49x2048_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_73_dispatch_0_elementwise_broadcast_49x512_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_74_dispatch_0_elementwise_broadcast_49x512_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_75_dispatch_0_elementwise_broadcast_49x2048_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_76_dispatch_0_elementwise_broadcast_49x512_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_77_dispatch_0_elementwise_broadcast_49x512_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "_initializer_78_dispatch_0_elementwise_broadcast_49x2048_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_0_elementwise_transpose_3x224x224_f32xi8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_1_elementwise_broadcast_12544x64_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_2_generic_112x112x7x7x3_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_3_matmul_12544x64x147_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_4_slow_memcpy": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_5_conv_64x56x56x3x3_f32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_6_matmul_3136x64x64_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_7_elementwise_broadcast_3136x256_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_8_slow_memcpy": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_9_generic_56x56x3x3x64_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_10_matmul_3136x64x576_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_11_elementwise_broadcast_3136x256_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_12_matmul_3136x256x64_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_13_matmul_3136x256x64_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_14_matmul_3136x64x256_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_16_generic_56x56x3x3x64_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_17_matmul_3136x64x576_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_18_elementwise_broadcast_3136x256_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_19_matmul_3136x256x64_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_20_matmul_3136x64x256_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_22_generic_56x56x3x3x64_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_23_matmul_3136x64x576_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_24_elementwise_broadcast_3136x256_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_25_matmul_3136x256x64_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_26_elementwise_broadcast_3136x128_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_27_matmul_3136x128x256_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_28_elementwise_broadcast_784x512_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_29_generic_28x28x256_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_30_slow_memcpy": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_31_generic_28x28x3x3x128_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_32_matmul_784x128x1152_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_33_elementwise_broadcast_784x512_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_34_matmul_784x512x128_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_35_matmul_784x512x256_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_36_matmul_784x128x512_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_37_slow_memcpy": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_38_generic_28x28x3x3x128_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_39_matmul_784x128x1152_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_40_elementwise_broadcast_784x512_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_41_matmul_784x512x128_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_42_matmul_784x128x512_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_44_generic_28x28x3x3x128_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_45_matmul_784x128x1152_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_46_elementwise_broadcast_784x512_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_47_matmul_784x512x128_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_48_matmul_784x128x512_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_50_generic_28x28x3x3x128_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_51_matmul_784x128x1152_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_52_elementwise_broadcast_784x512_i32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_53_matmul_784x512x128_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_54_matmul_784x256x512_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_55_generic_14x14x512_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_56_slow_memcpy": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_57_generic_14x14x3x3x256_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_58_matmul_196x256x2304_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 19
+ },
+ "main_graph$async_dispatch_59_matmul_196x1024x256_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_60_matmul_196x1024x512_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_61_matmul_196x256x1024_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_62_slow_memcpy": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_63_generic_14x14x3x3x256_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_64_matmul_196x256x2304_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 19
+ },
+ "main_graph$async_dispatch_65_matmul_196x1024x256_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_66_matmul_196x256x1024_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_68_generic_14x14x3x3x256_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_69_matmul_196x256x2304_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 19
+ },
+ "main_graph$async_dispatch_70_matmul_196x1024x256_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_71_matmul_196x256x1024_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_73_generic_14x14x3x3x256_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_74_matmul_196x256x2304_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 19
+ },
+ "main_graph$async_dispatch_75_matmul_196x1024x256_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_76_matmul_196x256x1024_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_78_generic_14x14x3x3x256_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_79_matmul_196x256x2304_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 19
+ },
+ "main_graph$async_dispatch_80_matmul_196x1024x256_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_81_matmul_196x256x1024_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_83_generic_14x14x3x3x256_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_84_matmul_196x256x2304_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 19
+ },
+ "main_graph$async_dispatch_85_matmul_196x1024x256_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_86_matmul_196x512x1024_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_87_generic_7x7x1024_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_88_slow_memcpy": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_89_generic_7x7x3x3x512_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_90_matmul_49x512x4608_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 25
+ },
+ "main_graph$async_dispatch_91_matmul_49x2048x512_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_92_matmul_49x2048x1024_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_93_matmul_49x512x2048_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_94_slow_memcpy": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_95_generic_7x7x3x3x512_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_96_matmul_49x512x4608_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 25
+ },
+ "main_graph$async_dispatch_97_matmul_49x2048x512_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_98_matmul_49x512x2048_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_100_generic_7x7x3x3x512_i8": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_101_matmul_49x512x4608_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 25
+ },
+ "main_graph$async_dispatch_102_matmul_49x2048x512_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_103_reduction_2048x49_i8xi8xf32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ },
+ "main_graph$async_dispatch_104_matmul_1x1000x2048_i8xi8xi32": {
+  "placement": "Gemmini",
+  "gemmini_insns_static": 13
+ },
+ "main_graph$async_dispatch_105_elementwise_1000_i8xf32": {
+  "placement": "Rocket",
+  "gemmini_insns_static": 0
+ }
+}

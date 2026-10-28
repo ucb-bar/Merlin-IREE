@@ -1,0 +1,1 @@
+MODEL_BEGIN smolvla_int8 entry=module.main vmfb=553271895 inputs=11 invokes=2 load_cycles=5265934231

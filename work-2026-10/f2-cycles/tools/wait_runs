@@ -1,0 +1,11 @@
+#!/bin/bash
+# wait_runs HOST:RUN ... : block until every listed run has an rc file on its F2 host.
+export SSH_AUTH_SOCK=/home/loren/.ssh/agent/sock
+while :; do
+  left=0
+  for hr in "$@"; do h=${hr%%:*}; r=${hr#*:}
+    timeout 60 ssh -A -F /scratch2/loren/aws/ssh/config merlin-compute-1 "ssh -o BatchMode=yes -o ConnectTimeout=8 ubuntu@$h test -f /var/tmp/f2cyc/$r/rc" 2>/dev/null || left=$((left+1))
+  done
+  [ $left = 0 ] && break; sleep 120
+done
+echo "all done: $*"

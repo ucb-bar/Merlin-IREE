@@ -1,0 +1,161 @@
+-- Could not find nvcc, please set CUDAToolkit_ROOT.
+-- IREE HAL drivers:
+--   - local-sync
+-- IREE HAL local executable library loaders:
+--   - embedded-elf
+--   - vmvx-module
+-- IREE HAL local executable plugin mechanisms:
+--   - embedded-elf
+fatal: not a git repository (or any of the parent directories): .git
+-- Not adding LLVM/MLIR because the configuration does not require it
+CMake Warning at /scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/build_tools/cmake/iree_import_binary.cmake:61 (message):
+  Could not find optional 'iree-tblgen' under
+  '/scratch/loren/f2cyc/iree-latest/prebuilt/bin'.  Features that depend on
+  it may fail to build.
+Call Stack (most recent call first):
+  /scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/tools/CMakeLists.txt:43 (iree_import_binary)
+
+
+CMake Warning at /scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/build_tools/cmake/iree_import_binary.cmake:61 (message):
+  Could not find optional 'iree-compile' under
+  '/scratch/loren/f2cyc/iree-latest/prebuilt/bin'.  Features that depend on
+  it may fail to build.
+Call Stack (most recent call first):
+  /scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/tools/CMakeLists.txt:44 (iree_import_binary)
+
+
+CMake Warning at /scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/build_tools/cmake/iree_import_binary.cmake:61 (message):
+  Could not find optional 'iree-link' under
+  '/scratch/loren/f2cyc/iree-latest/prebuilt/bin'.  Features that depend on
+  it may fail to build.
+Call Stack (most recent call first):
+  /scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/tools/CMakeLists.txt:45 (iree_import_binary)
+
+
+CMake Warning at /scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/build_tools/cmake/iree_import_binary.cmake:61 (message):
+  Could not find optional 'iree-opt' under
+  '/scratch/loren/f2cyc/iree-latest/prebuilt/bin'.  Features that depend on
+  it may fail to build.
+Call Stack (most recent call first):
+  /scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/tools/CMakeLists.txt:46 (iree_import_binary)
+
+
+CMake Warning at /scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/build_tools/cmake/iree_import_binary.cmake:61 (message):
+  Could not find optional 'iree-run-mlir' under
+  '/scratch/loren/f2cyc/iree-latest/prebuilt/bin'.  Features that depend on
+  it may fail to build.
+Call Stack (most recent call first):
+  /scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/tools/CMakeLists.txt:47 (iree_import_binary)
+
+
+CMake Warning at /scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/build_tools/cmake/iree_import_binary.cmake:61 (message):
+  Could not find optional 'FileCheck' under
+  '/scratch/loren/f2cyc/iree-latest/prebuilt/bin'.  Features that depend on
+  it may fail to build.
+Call Stack (most recent call first):
+  /scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/tools/CMakeLists.txt:48 (iree_import_binary)
+
+
+CMake Warning at /scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/build_tools/cmake/iree_import_binary.cmake:61 (message):
+  Could not find optional 'not' under
+  '/scratch/loren/f2cyc/iree-latest/prebuilt/bin'.  Features that depend on
+  it may fail to build.
+Call Stack (most recent call first):
+  /scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/tools/CMakeLists.txt:49 (iree_import_binary)
+
+
+CMake Warning at /scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/build_tools/cmake/iree_import_binary.cmake:61 (message):
+  Could not find optional 'clang' under
+  '/scratch/loren/f2cyc/iree-latest/prebuilt/bin'.  Features that depend on
+  it may fail to build.
+Call Stack (most recent call first):
+  /scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/tools/CMakeLists.txt:50 (iree_import_binary)
+
+
+CMake Warning at /scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/build_tools/cmake/iree_import_binary.cmake:61 (message):
+  Could not find optional 'llvm-link' under
+  '/scratch/loren/f2cyc/iree-latest/prebuilt/bin'.  Features that depend on
+  it may fail to build.
+Call Stack (most recent call first):
+  /scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/tools/CMakeLists.txt:51 (iree_import_binary)
+
+
+-- Disabling compiler loader (platform does not support library loading)
+-- Configuring IREE runtime plugins
+-- Runtime tracing disabled
+-- iree_allocator_system() using `IREE_ALLOCATOR_LIBC_*`
+-- Configuring done (0.5s)
+-- Generating done (0.5s)
+-- Build files have been written to: /scratch/loren/f2cyc/build-plain
+ninja: Entering directory `/scratch/loren/f2cyc/build-plain'
+[0/2] Re-checking globbed directories...
+[1/4] Building C object CMakeFiles/resnetfx.elf.dir/libc_strict.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[2/4] Building ASM object CMakeFiles/resnetfx.elf.dir/scratch/loren/f2cyc/apps/resnetfx/embed.S.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[3/4] Building C object CMakeFiles/resnetfx.elf.dir/scratch/loren/f2cyc/apps/resnetfx/runner.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+In file included from /scratch/loren/f2cyc/apps/resnetfx/runner.c:14:
+In file included from /scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/runtime/src/iree/async/util/proactor_pool.h:62:
+In file included from /scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/runtime/src/iree/async/proactor.h:35:
+/scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/runtime/src/iree/async/region.h:212:3: warning: passing 'volatile iree_atomic_uint32_t *' (aka 'volatile unsigned int *') to parameter of type 'volatile iree_atomic_int32_t *' (aka 'volatile int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+  212 |   iree_atomic_ref_count_inc(&region->ref_count);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/runtime/src/iree/base/internal/atomics.h:119:5: note: expanded from macro 'iree_atomic_ref_count_inc'
+  119 |     iree_atomic_fetch_add((count_ptr), 1, iree_memory_order_relaxed); \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/runtime/src/iree/base/internal/atomics_disabled.h:130:16: note: expanded from macro 'iree_atomic_fetch_add'
+  130 |                (volatile iree_atomic_uint32_t*)(object), (uint32_t)(operand)), \
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/runtime/src/iree/base/internal/atomics_disabled.h:215:35: note: passing argument to parameter 'object' here
+  215 |     volatile iree_atomic_int32_t* object, uint32_t operand) {
+      |                                   ^
+In file included from /scratch/loren/f2cyc/apps/resnetfx/runner.c:14:
+In file included from /scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/runtime/src/iree/async/util/proactor_pool.h:62:
+In file included from /scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/runtime/src/iree/async/proactor.h:37:
+/scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/runtime/src/iree/async/slab.h:207:3: warning: passing 'volatile iree_atomic_uint32_t *' (aka 'volatile unsigned int *') to parameter of type 'volatile iree_atomic_int32_t *' (aka 'volatile int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+  207 |   iree_atomic_ref_count_inc(&slab->ref_count);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/runtime/src/iree/base/internal/atomics.h:119:5: note: expanded from macro 'iree_atomic_ref_count_inc'
+  119 |     iree_atomic_fetch_add((count_ptr), 1, iree_memory_order_relaxed); \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/runtime/src/iree/base/internal/atomics_disabled.h:130:16: note: expanded from macro 'iree_atomic_fetch_add'
+  130 |                (volatile iree_atomic_uint32_t*)(object), (uint32_t)(operand)), \
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/runtime/src/iree/base/internal/atomics_disabled.h:215:35: note: passing argument to parameter 'object' here
+  215 |     volatile iree_atomic_int32_t* object, uint32_t operand) {
+      |                                   ^
+In file included from /scratch/loren/f2cyc/apps/resnetfx/runner.c:14:
+In file included from /scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/runtime/src/iree/async/util/proactor_pool.h:62:
+/scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/runtime/src/iree/async/proactor.h:726:3: warning: passing 'volatile iree_atomic_uint32_t *' (aka 'volatile unsigned int *') to parameter of type 'volatile iree_atomic_int32_t *' (aka 'volatile int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+  726 |   iree_atomic_ref_count_inc(&proactor->ref_count);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/runtime/src/iree/base/internal/atomics.h:119:5: note: expanded from macro 'iree_atomic_ref_count_inc'
+  119 |     iree_atomic_fetch_add((count_ptr), 1, iree_memory_order_relaxed); \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/runtime/src/iree/base/internal/atomics_disabled.h:130:16: note: expanded from macro 'iree_atomic_fetch_add'
+  130 |                (volatile iree_atomic_uint32_t*)(object), (uint32_t)(operand)), \
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/runtime/src/iree/base/internal/atomics_disabled.h:215:35: note: passing argument to parameter 'object' here
+  215 |     volatile iree_atomic_int32_t* object, uint32_t operand) {
+      |                                   ^
+In file included from /scratch/loren/f2cyc/apps/resnetfx/runner.c:17:
+In file included from /scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/runtime/src/iree/hal/api.h:12:
+In file included from /scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/runtime/src/iree/hal/allocator.h:14:
+In file included from /scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/runtime/src/iree/hal/buffer.h:15:
+/scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/runtime/src/iree/hal/resource.h:78:5: warning: passing 'volatile iree_atomic_uint32_t *' (aka 'volatile unsigned int *') to parameter of type 'volatile iree_atomic_int32_t *' (aka 'volatile int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+   78 |     iree_atomic_ref_count_inc(&resource->ref_count);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/runtime/src/iree/base/internal/atomics.h:119:5: note: expanded from macro 'iree_atomic_ref_count_inc'
+  119 |     iree_atomic_fetch_add((count_ptr), 1, iree_memory_order_relaxed); \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/runtime/src/iree/base/internal/atomics_disabled.h:130:16: note: expanded from macro 'iree_atomic_fetch_add'
+  130 |                (volatile iree_atomic_uint32_t*)(object), (uint32_t)(operand)), \
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/scratch/loren/f2cyc/iree-latest/source/Merlin-IREE/third_party/iree_bar/runtime/src/iree/base/internal/atomics_disabled.h:215:35: note: passing argument to parameter 'object' here
+  215 |     volatile iree_atomic_int32_t* object, uint32_t operand) {
+      |                                   ^
+4 warnings generated.
+[4/4] Linking C executable resnetfx.elf
+/scratch/loren/core-aten-snap/phase1-prep/toolchain/.conda-env/riscv-tools/riscv64-unknown-elf/bin/ld: warning: resnetfx.elf has a LOAD segment with RWX permissions
+aedc56b6cd09c019e77627ccb84c8265a2b4d2e3e19f0d3841247f150fc8d06d  /scratch/loren/f2cyc/build-plain/resnetfx.elf

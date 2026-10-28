@@ -1,0 +1,6 @@
+MODEL_BEGIN tinyllama_int8 entry=module.main vmfb=1496726823 inputs=1 invokes=2 load_cycles=21714040538
+INVOKE 0 cycles=13360733021 instret=4750114220
+CHECK 0 out=0 n=512000 errors=0 max_abs=2.28882e-05 argmax=224359 ref_argmax=224359 fnv=1809009594b0e21a
+INVOKE 1 cycles=13359530387 instret=4750108572
+CHECK 1 out=0 n=512000 errors=0 max_abs=2.28882e-05 argmax=224359 ref_argmax=224359 fnv=1809009594b0e21a
+MODEL_DONE 0
