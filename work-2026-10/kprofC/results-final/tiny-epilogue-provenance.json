@@ -1,0 +1,67 @@
+{
+  "mm_down_B": {
+    "row_scale": 0.0625,
+    "channel_scales": "first-layer original TinyLlama resources",
+    "source_keys": [
+      "__auto.constant_2048_torch.float32$1",
+      "__auto.constant_2048_torch.float32$2",
+      "__auto.constant_5632_torch.float32",
+      "__auto.constant_2048_torch.float32$4",
+      "torch_tensor_256_torch.float32",
+      "torch_tensor_256_torch.float32_1"
+    ],
+    "pattern_source": "tinyllama2/int8/model.mlir choose_qparams_affine + quantize_affine"
+  },
+  "mm_gu_B": {
+    "row_scale": 0.0625,
+    "channel_scales": "first-layer original TinyLlama resources",
+    "source_keys": [
+      "__auto.constant_2048_torch.float32$1",
+      "__auto.constant_2048_torch.float32$2",
+      "__auto.constant_5632_torch.float32",
+      "__auto.constant_2048_torch.float32$4",
+      "torch_tensor_256_torch.float32",
+      "torch_tensor_256_torch.float32_1"
+    ],
+    "pattern_source": "tinyllama2/int8/model.mlir choose_qparams_affine + quantize_affine"
+  },
+  "mm_o_B": {
+    "row_scale": 0.0625,
+    "channel_scales": "first-layer original TinyLlama resources",
+    "source_keys": [
+      "__auto.constant_2048_torch.float32$1",
+      "__auto.constant_2048_torch.float32$2",
+      "__auto.constant_5632_torch.float32",
+      "__auto.constant_2048_torch.float32$4",
+      "torch_tensor_256_torch.float32",
+      "torch_tensor_256_torch.float32_1"
+    ],
+    "pattern_source": "tinyllama2/int8/model.mlir choose_qparams_affine + quantize_affine"
+  },
+  "mm_qkv_B": {
+    "row_scale": 0.0625,
+    "channel_scales": "first-layer original TinyLlama resources",
+    "source_keys": [
+      "__auto.constant_2048_torch.float32$1",
+      "__auto.constant_2048_torch.float32$2",
+      "__auto.constant_5632_torch.float32",
+      "__auto.constant_2048_torch.float32$4",
+      "torch_tensor_256_torch.float32",
+      "torch_tensor_256_torch.float32_1"
+    ],
+    "pattern_source": "tinyllama2/int8/model.mlir choose_qparams_affine + quantize_affine"
+  },
+  "mm_lm_int8_not_shipped_B": {
+    "row_scale": 0.0625,
+    "channel_scales": "unit (non-shipped INT8 lm_head)",
+    "source_keys": [
+      "__auto.constant_2048_torch.float32$1",
+      "__auto.constant_2048_torch.float32$2",
+      "__auto.constant_5632_torch.float32",
+      "__auto.constant_2048_torch.float32$4",
+      "torch_tensor_256_torch.float32",
+      "torch_tensor_256_torch.float32_1"
+    ],
+    "pattern_source": "tinyllama2/int8/model.mlir choose_qparams_affine + quantize_affine"
+  }
+}

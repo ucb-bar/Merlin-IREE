@@ -1,0 +1,222 @@
+[
+  {
+    "id": "gemm_512_512_512_A",
+    "pass_": true,
+    "elements": 262144,
+    "max_abs": 0.0
+  },
+  {
+    "id": "gemm_512_512_512_B",
+    "pass_": true,
+    "elements": 262144,
+    "max_abs": 0.0
+  },
+  {
+    "id": "gemm_12544_256_64_A",
+    "pass_": true,
+    "elements": 802816,
+    "max_abs": 0.0
+  },
+  {
+    "id": "gemm_12544_256_64_B",
+    "pass_": true,
+    "elements": 802816,
+    "max_abs": 0.0
+  },
+  {
+    "id": "gemm_12544_64_256_A",
+    "pass_": true,
+    "elements": 3211264,
+    "max_abs": 0.0
+  },
+  {
+    "id": "gemm_12544_64_256_B",
+    "pass_": true,
+    "elements": 3211264,
+    "max_abs": 0.0
+  },
+  {
+    "id": "gemm_3136_512_128_A",
+    "pass_": true,
+    "elements": 401408,
+    "max_abs": 0.0
+  },
+  {
+    "id": "gemm_3136_512_128_B",
+    "pass_": true,
+    "elements": 401408,
+    "max_abs": 0.0
+  },
+  {
+    "id": "gemm_3136_128_512_A",
+    "pass_": true,
+    "elements": 1605632,
+    "max_abs": 0.0
+  },
+  {
+    "id": "gemm_3136_128_512_B",
+    "pass_": true,
+    "elements": 1605632,
+    "max_abs": 0.0
+  },
+  {
+    "id": "gemm_784_256_1024_A",
+    "pass_": true,
+    "elements": 802816,
+    "max_abs": 0.0
+  },
+  {
+    "id": "gemm_784_256_1024_B",
+    "pass_": true,
+    "elements": 802816,
+    "max_abs": 0.0
+  },
+  {
+    "id": "conv_56_64_A",
+    "pass_": true,
+    "elements": 802816,
+    "max_abs": 0.0
+  },
+  {
+    "id": "conv_56_64_B",
+    "pass_": true,
+    "elements": 802816,
+    "max_abs": 0.0
+  },
+  {
+    "id": "conv_28_128_A",
+    "pass_": true,
+    "elements": 401408,
+    "max_abs": 0.0
+  },
+  {
+    "id": "conv_28_128_B",
+    "pass_": true,
+    "elements": 401408,
+    "max_abs": 0.0
+  },
+  {
+    "id": "conv_14_256_A",
+    "pass_": true,
+    "elements": 200704,
+    "max_abs": 0.0
+  },
+  {
+    "id": "conv_14_256_B",
+    "pass_": true,
+    "elements": 200704,
+    "max_abs": 0.0
+  },
+  {
+    "id": "mm_down_A",
+    "pass_": true,
+    "elements": 32768,
+    "max_abs": 0.0
+  },
+  {
+    "id": "mm_down_B",
+    "pass_": true,
+    "elements": 32768,
+    "max_abs": 0.0,
+    "epilogue": "TinyLlama TorchAO SYMMETRIC per-token dynamic choose_qparams_affine/quantize_affine, qmin=-127 qmax=127 eps=1e-5"
+  },
+  {
+    "id": "mm_gu_A",
+    "pass_": true,
+    "elements": 90112,
+    "max_abs": 0.0
+  },
+  {
+    "id": "mm_gu_B",
+    "pass_": true,
+    "elements": 90112,
+    "max_abs": 0.0,
+    "epilogue": "TinyLlama TorchAO SYMMETRIC per-token dynamic choose_qparams_affine/quantize_affine, qmin=-127 qmax=127 eps=1e-5"
+  },
+  {
+    "id": "mm_o_A",
+    "pass_": true,
+    "elements": 32768,
+    "max_abs": 0.0
+  },
+  {
+    "id": "mm_o_B",
+    "pass_": true,
+    "elements": 32768,
+    "max_abs": 0.0,
+    "epilogue": "TinyLlama TorchAO SYMMETRIC per-token dynamic choose_qparams_affine/quantize_affine, qmin=-127 qmax=127 eps=1e-5"
+  },
+  {
+    "id": "mm_qkv_A",
+    "pass_": true,
+    "elements": 40960,
+    "max_abs": 0.0
+  },
+  {
+    "id": "mm_qkv_B",
+    "pass_": true,
+    "elements": 40960,
+    "max_abs": 0.0,
+    "epilogue": "TinyLlama TorchAO SYMMETRIC per-token dynamic choose_qparams_affine/quantize_affine, qmin=-127 qmax=127 eps=1e-5"
+  },
+  {
+    "id": "mm_lm_A",
+    "pass_": true,
+    "elements": 32000,
+    "max_abs": 0
+  },
+  {
+    "id": "mm_lm_B",
+    "pass_": true,
+    "elements": 32000,
+    "max_abs": 0
+  },
+  {
+    "id": "att_qk_prefill_A",
+    "pass_": true,
+    "elements": 8192,
+    "max_abs": 0
+  },
+  {
+    "id": "att_qk_prefill_B",
+    "pass_": true,
+    "elements": 8192,
+    "max_abs": 0
+  },
+  {
+    "id": "att_pv_prefill_A",
+    "pass_": true,
+    "elements": 32768,
+    "max_abs": 0
+  },
+  {
+    "id": "att_pv_prefill_B",
+    "pass_": true,
+    "elements": 32768,
+    "max_abs": 0
+  },
+  {
+    "id": "att_qk_decode_A",
+    "pass_": true,
+    "elements": 2048,
+    "max_abs": 0
+  },
+  {
+    "id": "att_qk_decode_B",
+    "pass_": true,
+    "elements": 2048,
+    "max_abs": 0
+  },
+  {
+    "id": "att_pv_decode_A",
+    "pass_": true,
+    "elements": 2048,
+    "max_abs": 0
+  },
+  {
+    "id": "att_pv_decode_B",
+    "pass_": true,
+    "elements": 2048,
+    "max_abs": 0
+  }
+]

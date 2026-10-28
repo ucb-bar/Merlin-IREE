@@ -1,0 +1,14 @@
+[
+  {
+    "id": "mm_lm_A",
+    "pass_": true,
+    "elements": 32000,
+    "max_abs": 0
+  },
+  {
+    "id": "mm_lm_B",
+    "pass_": true,
+    "elements": 32000,
+    "max_abs": 0
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "att_qk_prefill_A",
+    "pass_": true,
+    "elements": 8192,
+    "max_abs": 0
+  },
+  {
+    "id": "att_qk_prefill_B",
+    "pass_": true,
+    "elements": 8192,
+    "max_abs": 0
+  },
+  {
+    "id": "att_pv_prefill_A",
+    "pass_": true,
+    "elements": 32768,
+    "max_abs": 0
+  },
+  {
+    "id": "att_pv_prefill_B",
+    "pass_": true,
+    "elements": 32768,
+    "max_abs": 0
+  },
+  {
+    "id": "att_qk_decode_A",
+    "pass_": true,
+    "elements": 2048,
+    "max_abs": 0
+  },
+  {
+    "id": "att_qk_decode_B",
+    "pass_": true,
+    "elements": 2048,
+    "max_abs": 0
+  },
+  {
+    "id": "att_pv_decode_A",
+    "pass_": true,
+    "elements": 2048,
+    "max_abs": 0
+  },
+  {
+    "id": "att_pv_decode_B",
+    "pass_": true,
+    "elements": 2048,
+    "max_abs": 0
+  }
+]

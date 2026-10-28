@@ -1,0 +1,4622 @@
+{
+  "spike": {
+    "gemm_512_512_512_A": [
+      {
+        "rep": 0,
+        "cycles": 1243999,
+        "instructions": 1244001
+      },
+      {
+        "rep": 1,
+        "cycles": 1244139,
+        "instructions": 1244141
+      },
+      {
+        "rep": 2,
+        "cycles": 1244139,
+        "instructions": 1244141
+      },
+      {
+        "rep": 3,
+        "cycles": 1244139,
+        "instructions": 1244141
+      },
+      {
+        "rep": 4,
+        "cycles": 1244139,
+        "instructions": 1244141
+      },
+      {
+        "rep": 5,
+        "cycles": 1244139,
+        "instructions": 1244141
+      }
+    ],
+    "gemm_512_512_512_B": [
+      {
+        "rep": 0,
+        "cycles": 208655,
+        "instructions": 208657
+      },
+      {
+        "rep": 1,
+        "cycles": 208796,
+        "instructions": 208798
+      },
+      {
+        "rep": 2,
+        "cycles": 208796,
+        "instructions": 208798
+      },
+      {
+        "rep": 3,
+        "cycles": 208796,
+        "instructions": 208798
+      },
+      {
+        "rep": 4,
+        "cycles": 208796,
+        "instructions": 208798
+      },
+      {
+        "rep": 5,
+        "cycles": 208796,
+        "instructions": 208798
+      }
+    ],
+    "gemm_12544_256_64_A": [
+      {
+        "rep": 0,
+        "cycles": 3695618,
+        "instructions": 3695620
+      },
+      {
+        "rep": 1,
+        "cycles": 3695757,
+        "instructions": 3695759
+      },
+      {
+        "rep": 2,
+        "cycles": 3695757,
+        "instructions": 3695759
+      },
+      {
+        "rep": 3,
+        "cycles": 3695757,
+        "instructions": 3695759
+      },
+      {
+        "rep": 4,
+        "cycles": 3695757,
+        "instructions": 3695759
+      },
+      {
+        "rep": 5,
+        "cycles": 3695757,
+        "instructions": 3695759
+      }
+    ],
+    "gemm_12544_256_64_B": [
+      {
+        "rep": 0,
+        "cycles": 587857,
+        "instructions": 587859
+      },
+      {
+        "rep": 1,
+        "cycles": 587998,
+        "instructions": 588000
+      },
+      {
+        "rep": 2,
+        "cycles": 587998,
+        "instructions": 588000
+      },
+      {
+        "rep": 3,
+        "cycles": 587998,
+        "instructions": 588000
+      },
+      {
+        "rep": 4,
+        "cycles": 587998,
+        "instructions": 588000
+      },
+      {
+        "rep": 5,
+        "cycles": 587998,
+        "instructions": 588000
+      }
+    ],
+    "gemm_12544_64_256_A": [
+      {
+        "rep": 0,
+        "cycles": 14693620,
+        "instructions": 14693622
+      },
+      {
+        "rep": 1,
+        "cycles": 14693759,
+        "instructions": 14693761
+      },
+      {
+        "rep": 2,
+        "cycles": 14693759,
+        "instructions": 14693761
+      },
+      {
+        "rep": 3,
+        "cycles": 14693759,
+        "instructions": 14693761
+      },
+      {
+        "rep": 4,
+        "cycles": 14693759,
+        "instructions": 14693761
+      },
+      {
+        "rep": 5,
+        "cycles": 14693759,
+        "instructions": 14693761
+      }
+    ],
+    "gemm_12544_64_256_B": [
+      {
+        "rep": 0,
+        "cycles": 2237393,
+        "instructions": 2237395
+      },
+      {
+        "rep": 1,
+        "cycles": 2237534,
+        "instructions": 2237536
+      },
+      {
+        "rep": 2,
+        "cycles": 2237534,
+        "instructions": 2237536
+      },
+      {
+        "rep": 3,
+        "cycles": 2237534,
+        "instructions": 2237536
+      },
+      {
+        "rep": 4,
+        "cycles": 2237534,
+        "instructions": 2237536
+      },
+      {
+        "rep": 5,
+        "cycles": 2237534,
+        "instructions": 2237536
+      }
+    ],
+    "gemm_3136_512_128_A": [
+      {
+        "rep": 0,
+        "cycles": 1862623,
+        "instructions": 1862625
+      },
+      {
+        "rep": 1,
+        "cycles": 1862764,
+        "instructions": 1862766
+      },
+      {
+        "rep": 2,
+        "cycles": 1862764,
+        "instructions": 1862766
+      },
+      {
+        "rep": 3,
+        "cycles": 1862764,
+        "instructions": 1862766
+      },
+      {
+        "rep": 4,
+        "cycles": 1862764,
+        "instructions": 1862766
+      },
+      {
+        "rep": 5,
+        "cycles": 1862764,
+        "instructions": 1862766
+      }
+    ],
+    "gemm_3136_512_128_B": [
+      {
+        "rep": 0,
+        "cycles": 308755,
+        "instructions": 308757
+      },
+      {
+        "rep": 1,
+        "cycles": 308896,
+        "instructions": 308898
+      },
+      {
+        "rep": 2,
+        "cycles": 308896,
+        "instructions": 308898
+      },
+      {
+        "rep": 3,
+        "cycles": 308896,
+        "instructions": 308898
+      },
+      {
+        "rep": 4,
+        "cycles": 308896,
+        "instructions": 308898
+      },
+      {
+        "rep": 5,
+        "cycles": 308896,
+        "instructions": 308898
+      }
+    ],
+    "gemm_3136_128_512_A": [
+      {
+        "rep": 0,
+        "cycles": 7480817,
+        "instructions": 7480819
+      },
+      {
+        "rep": 1,
+        "cycles": 7480958,
+        "instructions": 7480960
+      },
+      {
+        "rep": 2,
+        "cycles": 7480958,
+        "instructions": 7480960
+      },
+      {
+        "rep": 3,
+        "cycles": 7480958,
+        "instructions": 7480960
+      },
+      {
+        "rep": 4,
+        "cycles": 7480958,
+        "instructions": 7480960
+      },
+      {
+        "rep": 5,
+        "cycles": 7480958,
+        "instructions": 7480960
+      }
+    ],
+    "gemm_3136_128_512_B": [
+      {
+        "rep": 0,
+        "cycles": 1146065,
+        "instructions": 1146067
+      },
+      {
+        "rep": 1,
+        "cycles": 1146206,
+        "instructions": 1146208
+      },
+      {
+        "rep": 2,
+        "cycles": 1146206,
+        "instructions": 1146208
+      },
+      {
+        "rep": 3,
+        "cycles": 1146206,
+        "instructions": 1146208
+      },
+      {
+        "rep": 4,
+        "cycles": 1146206,
+        "instructions": 1146208
+      },
+      {
+        "rep": 5,
+        "cycles": 1146206,
+        "instructions": 1146208
+      }
+    ],
+    "gemm_784_256_1024_A": [
+      {
+        "rep": 0,
+        "cycles": 3708209,
+        "instructions": 3708211
+      },
+      {
+        "rep": 1,
+        "cycles": 3708350,
+        "instructions": 3708352
+      },
+      {
+        "rep": 2,
+        "cycles": 3708350,
+        "instructions": 3708352
+      },
+      {
+        "rep": 3,
+        "cycles": 3708350,
+        "instructions": 3708352
+      },
+      {
+        "rep": 4,
+        "cycles": 3708350,
+        "instructions": 3708352
+      },
+      {
+        "rep": 5,
+        "cycles": 3708350,
+        "instructions": 3708352
+      }
+    ],
+    "gemm_784_256_1024_B": [
+      {
+        "rep": 0,
+        "cycles": 587857,
+        "instructions": 587859
+      },
+      {
+        "rep": 1,
+        "cycles": 587998,
+        "instructions": 588000
+      },
+      {
+        "rep": 2,
+        "cycles": 587998,
+        "instructions": 588000
+      },
+      {
+        "rep": 3,
+        "cycles": 587998,
+        "instructions": 588000
+      },
+      {
+        "rep": 4,
+        "cycles": 587998,
+        "instructions": 588000
+      },
+      {
+        "rep": 5,
+        "cycles": 587998,
+        "instructions": 588000
+      }
+    ],
+    "conv_56_64_A": [
+      {
+        "rep": 0,
+        "cycles": 60714788,
+        "instructions": 60714790
+      },
+      {
+        "rep": 1,
+        "cycles": 60714922,
+        "instructions": 60714924
+      },
+      {
+        "rep": 2,
+        "cycles": 60714922,
+        "instructions": 60714924
+      },
+      {
+        "rep": 3,
+        "cycles": 60714922,
+        "instructions": 60714924
+      },
+      {
+        "rep": 4,
+        "cycles": 60714922,
+        "instructions": 60714924
+      },
+      {
+        "rep": 5,
+        "cycles": 60714922,
+        "instructions": 60714924
+      }
+    ],
+    "conv_56_64_B": [
+      {
+        "rep": 0,
+        "cycles": 112229015,
+        "instructions": 112229017
+      },
+      {
+        "rep": 1,
+        "cycles": 112229105,
+        "instructions": 112229107
+      },
+      {
+        "rep": 2,
+        "cycles": 112229105,
+        "instructions": 112229107
+      },
+      {
+        "rep": 3,
+        "cycles": 112229105,
+        "instructions": 112229107
+      },
+      {
+        "rep": 4,
+        "cycles": 112229105,
+        "instructions": 112229107
+      },
+      {
+        "rep": 5,
+        "cycles": 112229105,
+        "instructions": 112229107
+      }
+    ],
+    "conv_28_128_A": [
+      {
+        "rep": 0,
+        "cycles": 27666672,
+        "instructions": 27666674
+      },
+      {
+        "rep": 1,
+        "cycles": 27666762,
+        "instructions": 27666764
+      },
+      {
+        "rep": 2,
+        "cycles": 27666762,
+        "instructions": 27666764
+      },
+      {
+        "rep": 3,
+        "cycles": 27666762,
+        "instructions": 27666764
+      },
+      {
+        "rep": 4,
+        "cycles": 27666762,
+        "instructions": 27666764
+      },
+      {
+        "rep": 5,
+        "cycles": 27666762,
+        "instructions": 27666764
+      }
+    ],
+    "conv_28_128_B": [
+      {
+        "rep": 0,
+        "cycles": 53425869,
+        "instructions": 53425871
+      },
+      {
+        "rep": 1,
+        "cycles": 53425959,
+        "instructions": 53425961
+      },
+      {
+        "rep": 2,
+        "cycles": 53425959,
+        "instructions": 53425961
+      },
+      {
+        "rep": 3,
+        "cycles": 53425959,
+        "instructions": 53425961
+      },
+      {
+        "rep": 4,
+        "cycles": 53425959,
+        "instructions": 53425961
+      },
+      {
+        "rep": 5,
+        "cycles": 53425959,
+        "instructions": 53425961
+      }
+    ],
+    "conv_14_256_A": [
+      {
+        "rep": 0,
+        "cycles": 14301600,
+        "instructions": 14301602
+      },
+      {
+        "rep": 1,
+        "cycles": 14301690,
+        "instructions": 14301692
+      },
+      {
+        "rep": 2,
+        "cycles": 14301690,
+        "instructions": 14301692
+      },
+      {
+        "rep": 3,
+        "cycles": 14301690,
+        "instructions": 14301692
+      },
+      {
+        "rep": 4,
+        "cycles": 14301690,
+        "instructions": 14301692
+      },
+      {
+        "rep": 5,
+        "cycles": 14301690,
+        "instructions": 14301692
+      }
+    ],
+    "conv_14_256_B": [
+      {
+        "rep": 0,
+        "cycles": 27181098,
+        "instructions": 27181100
+      },
+      {
+        "rep": 1,
+        "cycles": 27181188,
+        "instructions": 27181190
+      },
+      {
+        "rep": 2,
+        "cycles": 27181188,
+        "instructions": 27181190
+      },
+      {
+        "rep": 3,
+        "cycles": 27181188,
+        "instructions": 27181190
+      },
+      {
+        "rep": 4,
+        "cycles": 27181188,
+        "instructions": 27181190
+      },
+      {
+        "rep": 5,
+        "cycles": 27181188,
+        "instructions": 27181190
+      }
+    ],
+    "mm_down_A": [
+      {
+        "rep": 0,
+        "cycles": 181149,
+        "instructions": 181151
+      },
+      {
+        "rep": 1,
+        "cycles": 181246,
+        "instructions": 181248
+      },
+      {
+        "rep": 2,
+        "cycles": 181246,
+        "instructions": 181248
+      },
+      {
+        "rep": 3,
+        "cycles": 181246,
+        "instructions": 181248
+      },
+      {
+        "rep": 4,
+        "cycles": 181246,
+        "instructions": 181248
+      },
+      {
+        "rep": 5,
+        "cycles": 181246,
+        "instructions": 181248
+      }
+    ],
+    "mm_down_B": [
+      {
+        "rep": 0,
+        "cycles": 2810438,
+        "instructions": 2810440
+      },
+      {
+        "rep": 1,
+        "cycles": 2810531,
+        "instructions": 2810533
+      },
+      {
+        "rep": 2,
+        "cycles": 2810531,
+        "instructions": 2810533
+      },
+      {
+        "rep": 3,
+        "cycles": 2810531,
+        "instructions": 2810533
+      },
+      {
+        "rep": 4,
+        "cycles": 2810531,
+        "instructions": 2810533
+      },
+      {
+        "rep": 5,
+        "cycles": 2810531,
+        "instructions": 2810533
+      }
+    ],
+    "mm_gu_A": [
+      {
+        "rep": 0,
+        "cycles": 439103,
+        "instructions": 439105
+      },
+      {
+        "rep": 1,
+        "cycles": 439200,
+        "instructions": 439202
+      },
+      {
+        "rep": 2,
+        "cycles": 439200,
+        "instructions": 439202
+      },
+      {
+        "rep": 3,
+        "cycles": 439200,
+        "instructions": 439202
+      },
+      {
+        "rep": 4,
+        "cycles": 439200,
+        "instructions": 439202
+      },
+      {
+        "rep": 5,
+        "cycles": 439200,
+        "instructions": 439202
+      }
+    ],
+    "mm_gu_B": [
+      {
+        "rep": 0,
+        "cycles": 7644428,
+        "instructions": 7644430
+      },
+      {
+        "rep": 1,
+        "cycles": 7644604,
+        "instructions": 7644606
+      },
+      {
+        "rep": 2,
+        "cycles": 7644521,
+        "instructions": 7644523
+      },
+      {
+        "rep": 3,
+        "cycles": 7644521,
+        "instructions": 7644523
+      },
+      {
+        "rep": 4,
+        "cycles": 7644521,
+        "instructions": 7644523
+      },
+      {
+        "rep": 5,
+        "cycles": 7644521,
+        "instructions": 7644523
+      }
+    ],
+    "mm_o_A": [
+      {
+        "rep": 0,
+        "cycles": 178155,
+        "instructions": 178157
+      },
+      {
+        "rep": 1,
+        "cycles": 178252,
+        "instructions": 178254
+      },
+      {
+        "rep": 2,
+        "cycles": 178252,
+        "instructions": 178254
+      },
+      {
+        "rep": 3,
+        "cycles": 178252,
+        "instructions": 178254
+      },
+      {
+        "rep": 4,
+        "cycles": 178252,
+        "instructions": 178254
+      },
+      {
+        "rep": 5,
+        "cycles": 178252,
+        "instructions": 178254
+      }
+    ],
+    "mm_o_B": [
+      {
+        "rep": 0,
+        "cycles": 2807267,
+        "instructions": 2807269
+      },
+      {
+        "rep": 1,
+        "cycles": 2807360,
+        "instructions": 2807362
+      },
+      {
+        "rep": 2,
+        "cycles": 2807360,
+        "instructions": 2807362
+      },
+      {
+        "rep": 3,
+        "cycles": 2807360,
+        "instructions": 2807362
+      },
+      {
+        "rep": 4,
+        "cycles": 2807360,
+        "instructions": 2807362
+      },
+      {
+        "rep": 5,
+        "cycles": 2807360,
+        "instructions": 2807362
+      }
+    ],
+    "mm_qkv_A": [
+      {
+        "rep": 0,
+        "cycles": 220925,
+        "instructions": 220927
+      },
+      {
+        "rep": 1,
+        "cycles": 221022,
+        "instructions": 221024
+      },
+      {
+        "rep": 2,
+        "cycles": 221022,
+        "instructions": 221024
+      },
+      {
+        "rep": 3,
+        "cycles": 221022,
+        "instructions": 221024
+      },
+      {
+        "rep": 4,
+        "cycles": 221022,
+        "instructions": 221024
+      },
+      {
+        "rep": 5,
+        "cycles": 221022,
+        "instructions": 221024
+      }
+    ],
+    "mm_qkv_B": [
+      {
+        "rep": 0,
+        "cycles": 3498940,
+        "instructions": 3498942
+      },
+      {
+        "rep": 1,
+        "cycles": 3499033,
+        "instructions": 3499035
+      },
+      {
+        "rep": 2,
+        "cycles": 3499033,
+        "instructions": 3499035
+      },
+      {
+        "rep": 3,
+        "cycles": 3499033,
+        "instructions": 3499035
+      },
+      {
+        "rep": 4,
+        "cycles": 3499033,
+        "instructions": 3499035
+      },
+      {
+        "rep": 5,
+        "cycles": 3499033,
+        "instructions": 3499035
+      }
+    ],
+    "mm_lm_A": [
+      {
+        "rep": 0,
+        "cycles": 432678,
+        "instructions": 432680
+      },
+      {
+        "rep": 1,
+        "cycles": 432690,
+        "instructions": 432692
+      },
+      {
+        "rep": 2,
+        "cycles": 432690,
+        "instructions": 432692
+      },
+      {
+        "rep": 3,
+        "cycles": 432690,
+        "instructions": 432692
+      },
+      {
+        "rep": 4,
+        "cycles": 432690,
+        "instructions": 432692
+      },
+      {
+        "rep": 5,
+        "cycles": 432690,
+        "instructions": 432692
+      }
+    ],
+    "mm_lm_B": [
+      {
+        "rep": 0,
+        "cycles": 2985273,
+        "instructions": 2985275
+      },
+      {
+        "rep": 1,
+        "cycles": 2985360,
+        "instructions": 2985362
+      },
+      {
+        "rep": 2,
+        "cycles": 2985360,
+        "instructions": 2985362
+      },
+      {
+        "rep": 3,
+        "cycles": 2985360,
+        "instructions": 2985362
+      },
+      {
+        "rep": 4,
+        "cycles": 2985360,
+        "instructions": 2985362
+      },
+      {
+        "rep": 5,
+        "cycles": 2985360,
+        "instructions": 2985362
+      }
+    ],
+    "att_qk_prefill_A": [
+      {
+        "rep": 0,
+        "cycles": 124271,
+        "instructions": 124273
+      },
+      {
+        "rep": 1,
+        "cycles": 124099,
+        "instructions": 124101
+      },
+      {
+        "rep": 2,
+        "cycles": 124099,
+        "instructions": 124101
+      },
+      {
+        "rep": 3,
+        "cycles": 124099,
+        "instructions": 124101
+      },
+      {
+        "rep": 4,
+        "cycles": 124099,
+        "instructions": 124101
+      },
+      {
+        "rep": 5,
+        "cycles": 124099,
+        "instructions": 124101
+      }
+    ],
+    "att_qk_prefill_B": [
+      {
+        "rep": 0,
+        "cycles": 661510,
+        "instructions": 661512
+      },
+      {
+        "rep": 1,
+        "cycles": 661334,
+        "instructions": 661336
+      },
+      {
+        "rep": 2,
+        "cycles": 661334,
+        "instructions": 661336
+      },
+      {
+        "rep": 3,
+        "cycles": 661334,
+        "instructions": 661336
+      },
+      {
+        "rep": 4,
+        "cycles": 661334,
+        "instructions": 661336
+      },
+      {
+        "rep": 5,
+        "cycles": 661334,
+        "instructions": 661336
+      }
+    ],
+    "att_pv_prefill_A": [
+      {
+        "rep": 0,
+        "cycles": 249252,
+        "instructions": 249254
+      },
+      {
+        "rep": 1,
+        "cycles": 249163,
+        "instructions": 249165
+      },
+      {
+        "rep": 2,
+        "cycles": 249163,
+        "instructions": 249165
+      },
+      {
+        "rep": 3,
+        "cycles": 249163,
+        "instructions": 249165
+      },
+      {
+        "rep": 4,
+        "cycles": 249163,
+        "instructions": 249165
+      },
+      {
+        "rep": 5,
+        "cycles": 249163,
+        "instructions": 249165
+      }
+    ],
+    "att_pv_prefill_B": [
+      {
+        "rep": 0,
+        "cycles": 2363467,
+        "instructions": 2363469
+      },
+      {
+        "rep": 1,
+        "cycles": 2363374,
+        "instructions": 2363376
+      },
+      {
+        "rep": 2,
+        "cycles": 2363374,
+        "instructions": 2363376
+      },
+      {
+        "rep": 3,
+        "cycles": 2363374,
+        "instructions": 2363376
+      },
+      {
+        "rep": 4,
+        "cycles": 2363374,
+        "instructions": 2363376
+      },
+      {
+        "rep": 5,
+        "cycles": 2363374,
+        "instructions": 2363376
+      }
+    ],
+    "att_qk_decode_A": [
+      {
+        "rep": 0,
+        "cycles": 109485,
+        "instructions": 109487
+      },
+      {
+        "rep": 1,
+        "cycles": 109396,
+        "instructions": 109398
+      },
+      {
+        "rep": 2,
+        "cycles": 109396,
+        "instructions": 109398
+      },
+      {
+        "rep": 3,
+        "cycles": 109396,
+        "instructions": 109398
+      },
+      {
+        "rep": 4,
+        "cycles": 109396,
+        "instructions": 109398
+      },
+      {
+        "rep": 5,
+        "cycles": 109396,
+        "instructions": 109398
+      }
+    ],
+    "att_qk_decode_B": [
+      {
+        "rep": 0,
+        "cycles": 252509,
+        "instructions": 252511
+      },
+      {
+        "rep": 1,
+        "cycles": 252416,
+        "instructions": 252418
+      },
+      {
+        "rep": 2,
+        "cycles": 252416,
+        "instructions": 252418
+      },
+      {
+        "rep": 3,
+        "cycles": 252416,
+        "instructions": 252418
+      },
+      {
+        "rep": 4,
+        "cycles": 252416,
+        "instructions": 252418
+      },
+      {
+        "rep": 5,
+        "cycles": 252416,
+        "instructions": 252418
+      }
+    ],
+    "att_pv_decode_A": [
+      {
+        "rep": 0,
+        "cycles": 109568,
+        "instructions": 109570
+      },
+      {
+        "rep": 1,
+        "cycles": 109396,
+        "instructions": 109398
+      },
+      {
+        "rep": 2,
+        "cycles": 109396,
+        "instructions": 109398
+      },
+      {
+        "rep": 3,
+        "cycles": 109396,
+        "instructions": 109398
+      },
+      {
+        "rep": 4,
+        "cycles": 109396,
+        "instructions": 109398
+      },
+      {
+        "rep": 5,
+        "cycles": 109396,
+        "instructions": 109398
+      }
+    ],
+    "att_pv_decode_B": [
+      {
+        "rep": 0,
+        "cycles": 252509,
+        "instructions": 252511
+      },
+      {
+        "rep": 1,
+        "cycles": 252416,
+        "instructions": 252418
+      },
+      {
+        "rep": 2,
+        "cycles": 252416,
+        "instructions": 252418
+      },
+      {
+        "rep": 3,
+        "cycles": 252416,
+        "instructions": 252418
+      },
+      {
+        "rep": 4,
+        "cycles": 252416,
+        "instructions": 252418
+      },
+      {
+        "rep": 5,
+        "cycles": 252416,
+        "instructions": 252418
+      }
+    ]
+  },
+  "spike_trace": {
+    "gemm_512_512_512_A": [
+      {
+        "rep": 0,
+        "cycles": 1244025,
+        "instructions": 1244027
+      },
+      {
+        "rep": 1,
+        "cycles": 1244165,
+        "instructions": 1244167
+      },
+      {
+        "rep": 2,
+        "cycles": 1244165,
+        "instructions": 1244167
+      },
+      {
+        "rep": 3,
+        "cycles": 1244165,
+        "instructions": 1244167
+      },
+      {
+        "rep": 4,
+        "cycles": 1244165,
+        "instructions": 1244167
+      },
+      {
+        "rep": 5,
+        "cycles": 1244165,
+        "instructions": 1244167
+      }
+    ],
+    "gemm_512_512_512_B": [
+      {
+        "rep": 0,
+        "cycles": 208681,
+        "instructions": 208683
+      },
+      {
+        "rep": 1,
+        "cycles": 208822,
+        "instructions": 208824
+      },
+      {
+        "rep": 2,
+        "cycles": 208822,
+        "instructions": 208824
+      },
+      {
+        "rep": 3,
+        "cycles": 208822,
+        "instructions": 208824
+      },
+      {
+        "rep": 4,
+        "cycles": 208822,
+        "instructions": 208824
+      },
+      {
+        "rep": 5,
+        "cycles": 208822,
+        "instructions": 208824
+      }
+    ],
+    "gemm_12544_256_64_A": [
+      {
+        "rep": 0,
+        "cycles": 3695644,
+        "instructions": 3695646
+      },
+      {
+        "rep": 1,
+        "cycles": 3695783,
+        "instructions": 3695785
+      },
+      {
+        "rep": 2,
+        "cycles": 3695783,
+        "instructions": 3695785
+      },
+      {
+        "rep": 3,
+        "cycles": 3695783,
+        "instructions": 3695785
+      },
+      {
+        "rep": 4,
+        "cycles": 3695783,
+        "instructions": 3695785
+      },
+      {
+        "rep": 5,
+        "cycles": 3695783,
+        "instructions": 3695785
+      }
+    ],
+    "gemm_12544_256_64_B": [
+      {
+        "rep": 0,
+        "cycles": 587883,
+        "instructions": 587885
+      },
+      {
+        "rep": 1,
+        "cycles": 588024,
+        "instructions": 588026
+      },
+      {
+        "rep": 2,
+        "cycles": 588024,
+        "instructions": 588026
+      },
+      {
+        "rep": 3,
+        "cycles": 588024,
+        "instructions": 588026
+      },
+      {
+        "rep": 4,
+        "cycles": 588024,
+        "instructions": 588026
+      },
+      {
+        "rep": 5,
+        "cycles": 588024,
+        "instructions": 588026
+      }
+    ],
+    "gemm_12544_64_256_A": [
+      {
+        "rep": 0,
+        "cycles": 14693646,
+        "instructions": 14693648
+      },
+      {
+        "rep": 1,
+        "cycles": 14693785,
+        "instructions": 14693787
+      },
+      {
+        "rep": 2,
+        "cycles": 14693785,
+        "instructions": 14693787
+      },
+      {
+        "rep": 3,
+        "cycles": 14693785,
+        "instructions": 14693787
+      },
+      {
+        "rep": 4,
+        "cycles": 14693785,
+        "instructions": 14693787
+      },
+      {
+        "rep": 5,
+        "cycles": 14693785,
+        "instructions": 14693787
+      }
+    ],
+    "gemm_12544_64_256_B": [
+      {
+        "rep": 0,
+        "cycles": 2237419,
+        "instructions": 2237421
+      },
+      {
+        "rep": 1,
+        "cycles": 2237560,
+        "instructions": 2237562
+      },
+      {
+        "rep": 2,
+        "cycles": 2237560,
+        "instructions": 2237562
+      },
+      {
+        "rep": 3,
+        "cycles": 2237560,
+        "instructions": 2237562
+      },
+      {
+        "rep": 4,
+        "cycles": 2237560,
+        "instructions": 2237562
+      },
+      {
+        "rep": 5,
+        "cycles": 2237560,
+        "instructions": 2237562
+      }
+    ],
+    "gemm_3136_512_128_A": [
+      {
+        "rep": 0,
+        "cycles": 1862649,
+        "instructions": 1862651
+      },
+      {
+        "rep": 1,
+        "cycles": 1862790,
+        "instructions": 1862792
+      },
+      {
+        "rep": 2,
+        "cycles": 1862790,
+        "instructions": 1862792
+      },
+      {
+        "rep": 3,
+        "cycles": 1862790,
+        "instructions": 1862792
+      },
+      {
+        "rep": 4,
+        "cycles": 1862790,
+        "instructions": 1862792
+      },
+      {
+        "rep": 5,
+        "cycles": 1862790,
+        "instructions": 1862792
+      }
+    ],
+    "gemm_3136_512_128_B": [
+      {
+        "rep": 0,
+        "cycles": 308781,
+        "instructions": 308783
+      },
+      {
+        "rep": 1,
+        "cycles": 308922,
+        "instructions": 308924
+      },
+      {
+        "rep": 2,
+        "cycles": 308922,
+        "instructions": 308924
+      },
+      {
+        "rep": 3,
+        "cycles": 308922,
+        "instructions": 308924
+      },
+      {
+        "rep": 4,
+        "cycles": 308922,
+        "instructions": 308924
+      },
+      {
+        "rep": 5,
+        "cycles": 308922,
+        "instructions": 308924
+      }
+    ],
+    "gemm_3136_128_512_A": [
+      {
+        "rep": 0,
+        "cycles": 7480843,
+        "instructions": 7480845
+      },
+      {
+        "rep": 1,
+        "cycles": 7480984,
+        "instructions": 7480986
+      },
+      {
+        "rep": 2,
+        "cycles": 7480984,
+        "instructions": 7480986
+      },
+      {
+        "rep": 3,
+        "cycles": 7480984,
+        "instructions": 7480986
+      },
+      {
+        "rep": 4,
+        "cycles": 7480984,
+        "instructions": 7480986
+      },
+      {
+        "rep": 5,
+        "cycles": 7480984,
+        "instructions": 7480986
+      }
+    ],
+    "gemm_3136_128_512_B": [
+      {
+        "rep": 0,
+        "cycles": 1146091,
+        "instructions": 1146093
+      },
+      {
+        "rep": 1,
+        "cycles": 1146232,
+        "instructions": 1146234
+      },
+      {
+        "rep": 2,
+        "cycles": 1146232,
+        "instructions": 1146234
+      },
+      {
+        "rep": 3,
+        "cycles": 1146232,
+        "instructions": 1146234
+      },
+      {
+        "rep": 4,
+        "cycles": 1146232,
+        "instructions": 1146234
+      },
+      {
+        "rep": 5,
+        "cycles": 1146232,
+        "instructions": 1146234
+      }
+    ],
+    "gemm_784_256_1024_A": [
+      {
+        "rep": 0,
+        "cycles": 3708235,
+        "instructions": 3708237
+      },
+      {
+        "rep": 1,
+        "cycles": 3708376,
+        "instructions": 3708378
+      },
+      {
+        "rep": 2,
+        "cycles": 3708376,
+        "instructions": 3708378
+      },
+      {
+        "rep": 3,
+        "cycles": 3708376,
+        "instructions": 3708378
+      },
+      {
+        "rep": 4,
+        "cycles": 3708376,
+        "instructions": 3708378
+      },
+      {
+        "rep": 5,
+        "cycles": 3708376,
+        "instructions": 3708378
+      }
+    ],
+    "gemm_784_256_1024_B": [
+      {
+        "rep": 0,
+        "cycles": 587883,
+        "instructions": 587885
+      },
+      {
+        "rep": 1,
+        "cycles": 588024,
+        "instructions": 588026
+      },
+      {
+        "rep": 2,
+        "cycles": 588024,
+        "instructions": 588026
+      },
+      {
+        "rep": 3,
+        "cycles": 588024,
+        "instructions": 588026
+      },
+      {
+        "rep": 4,
+        "cycles": 588024,
+        "instructions": 588026
+      },
+      {
+        "rep": 5,
+        "cycles": 588024,
+        "instructions": 588026
+      }
+    ],
+    "conv_56_64_A": [
+      {
+        "rep": 0,
+        "cycles": 60715022,
+        "instructions": 60715024
+      },
+      {
+        "rep": 1,
+        "cycles": 60715156,
+        "instructions": 60715158
+      },
+      {
+        "rep": 2,
+        "cycles": 60715156,
+        "instructions": 60715158
+      },
+      {
+        "rep": 3,
+        "cycles": 60715156,
+        "instructions": 60715158
+      },
+      {
+        "rep": 4,
+        "cycles": 60715156,
+        "instructions": 60715158
+      },
+      {
+        "rep": 5,
+        "cycles": 60715156,
+        "instructions": 60715158
+      }
+    ],
+    "conv_56_64_B": [
+      {
+        "rep": 0,
+        "cycles": 112229275,
+        "instructions": 112229277
+      },
+      {
+        "rep": 1,
+        "cycles": 112229365,
+        "instructions": 112229367
+      },
+      {
+        "rep": 2,
+        "cycles": 112229365,
+        "instructions": 112229367
+      },
+      {
+        "rep": 3,
+        "cycles": 112229365,
+        "instructions": 112229367
+      },
+      {
+        "rep": 4,
+        "cycles": 112229365,
+        "instructions": 112229367
+      },
+      {
+        "rep": 5,
+        "cycles": 112229365,
+        "instructions": 112229367
+      }
+    ],
+    "conv_28_128_A": [
+      {
+        "rep": 0,
+        "cycles": 27666906,
+        "instructions": 27666908
+      },
+      {
+        "rep": 1,
+        "cycles": 27666996,
+        "instructions": 27666998
+      },
+      {
+        "rep": 2,
+        "cycles": 27666996,
+        "instructions": 27666998
+      },
+      {
+        "rep": 3,
+        "cycles": 27666996,
+        "instructions": 27666998
+      },
+      {
+        "rep": 4,
+        "cycles": 27666996,
+        "instructions": 27666998
+      },
+      {
+        "rep": 5,
+        "cycles": 27666996,
+        "instructions": 27666998
+      }
+    ],
+    "conv_28_128_B": [
+      {
+        "rep": 0,
+        "cycles": 53426129,
+        "instructions": 53426131
+      },
+      {
+        "rep": 1,
+        "cycles": 53426219,
+        "instructions": 53426221
+      },
+      {
+        "rep": 2,
+        "cycles": 53426219,
+        "instructions": 53426221
+      },
+      {
+        "rep": 3,
+        "cycles": 53426219,
+        "instructions": 53426221
+      },
+      {
+        "rep": 4,
+        "cycles": 53426219,
+        "instructions": 53426221
+      },
+      {
+        "rep": 5,
+        "cycles": 53426219,
+        "instructions": 53426221
+      }
+    ],
+    "conv_14_256_A": [
+      {
+        "rep": 0,
+        "cycles": 14301834,
+        "instructions": 14301836
+      },
+      {
+        "rep": 1,
+        "cycles": 14301924,
+        "instructions": 14301926
+      },
+      {
+        "rep": 2,
+        "cycles": 14301924,
+        "instructions": 14301926
+      },
+      {
+        "rep": 3,
+        "cycles": 14301924,
+        "instructions": 14301926
+      },
+      {
+        "rep": 4,
+        "cycles": 14301924,
+        "instructions": 14301926
+      },
+      {
+        "rep": 5,
+        "cycles": 14301924,
+        "instructions": 14301926
+      }
+    ],
+    "conv_14_256_B": [
+      {
+        "rep": 0,
+        "cycles": 27181358,
+        "instructions": 27181360
+      },
+      {
+        "rep": 1,
+        "cycles": 27181448,
+        "instructions": 27181450
+      },
+      {
+        "rep": 2,
+        "cycles": 27181448,
+        "instructions": 27181450
+      },
+      {
+        "rep": 3,
+        "cycles": 27181448,
+        "instructions": 27181450
+      },
+      {
+        "rep": 4,
+        "cycles": 27181448,
+        "instructions": 27181450
+      },
+      {
+        "rep": 5,
+        "cycles": 27181448,
+        "instructions": 27181450
+      }
+    ],
+    "mm_down_A": [
+      {
+        "rep": 0,
+        "cycles": 181175,
+        "instructions": 181177
+      },
+      {
+        "rep": 1,
+        "cycles": 181272,
+        "instructions": 181274
+      },
+      {
+        "rep": 2,
+        "cycles": 181272,
+        "instructions": 181274
+      },
+      {
+        "rep": 3,
+        "cycles": 181272,
+        "instructions": 181274
+      },
+      {
+        "rep": 4,
+        "cycles": 181272,
+        "instructions": 181274
+      },
+      {
+        "rep": 5,
+        "cycles": 181272,
+        "instructions": 181274
+      }
+    ],
+    "mm_down_B": [
+      {
+        "rep": 0,
+        "cycles": 2810490,
+        "instructions": 2810492
+      },
+      {
+        "rep": 1,
+        "cycles": 2810583,
+        "instructions": 2810585
+      },
+      {
+        "rep": 2,
+        "cycles": 2810583,
+        "instructions": 2810585
+      },
+      {
+        "rep": 3,
+        "cycles": 2810583,
+        "instructions": 2810585
+      },
+      {
+        "rep": 4,
+        "cycles": 2810583,
+        "instructions": 2810585
+      },
+      {
+        "rep": 5,
+        "cycles": 2810583,
+        "instructions": 2810585
+      }
+    ],
+    "mm_gu_A": [
+      {
+        "rep": 0,
+        "cycles": 439129,
+        "instructions": 439131
+      },
+      {
+        "rep": 1,
+        "cycles": 439226,
+        "instructions": 439228
+      },
+      {
+        "rep": 2,
+        "cycles": 439226,
+        "instructions": 439228
+      },
+      {
+        "rep": 3,
+        "cycles": 439226,
+        "instructions": 439228
+      },
+      {
+        "rep": 4,
+        "cycles": 439226,
+        "instructions": 439228
+      },
+      {
+        "rep": 5,
+        "cycles": 439226,
+        "instructions": 439228
+      }
+    ],
+    "mm_gu_B": [
+      {
+        "rep": 0,
+        "cycles": 7644480,
+        "instructions": 7644482
+      },
+      {
+        "rep": 1,
+        "cycles": 7644656,
+        "instructions": 7644658
+      },
+      {
+        "rep": 2,
+        "cycles": 7644573,
+        "instructions": 7644575
+      },
+      {
+        "rep": 3,
+        "cycles": 7644573,
+        "instructions": 7644575
+      },
+      {
+        "rep": 4,
+        "cycles": 7644573,
+        "instructions": 7644575
+      },
+      {
+        "rep": 5,
+        "cycles": 7644573,
+        "instructions": 7644575
+      }
+    ],
+    "mm_o_A": [
+      {
+        "rep": 0,
+        "cycles": 178181,
+        "instructions": 178183
+      },
+      {
+        "rep": 1,
+        "cycles": 178278,
+        "instructions": 178280
+      },
+      {
+        "rep": 2,
+        "cycles": 178278,
+        "instructions": 178280
+      },
+      {
+        "rep": 3,
+        "cycles": 178278,
+        "instructions": 178280
+      },
+      {
+        "rep": 4,
+        "cycles": 178278,
+        "instructions": 178280
+      },
+      {
+        "rep": 5,
+        "cycles": 178278,
+        "instructions": 178280
+      }
+    ],
+    "mm_o_B": [
+      {
+        "rep": 0,
+        "cycles": 2807319,
+        "instructions": 2807321
+      },
+      {
+        "rep": 1,
+        "cycles": 2807412,
+        "instructions": 2807414
+      },
+      {
+        "rep": 2,
+        "cycles": 2807412,
+        "instructions": 2807414
+      },
+      {
+        "rep": 3,
+        "cycles": 2807412,
+        "instructions": 2807414
+      },
+      {
+        "rep": 4,
+        "cycles": 2807412,
+        "instructions": 2807414
+      },
+      {
+        "rep": 5,
+        "cycles": 2807412,
+        "instructions": 2807414
+      }
+    ],
+    "mm_qkv_A": [
+      {
+        "rep": 0,
+        "cycles": 220951,
+        "instructions": 220953
+      },
+      {
+        "rep": 1,
+        "cycles": 221048,
+        "instructions": 221050
+      },
+      {
+        "rep": 2,
+        "cycles": 221048,
+        "instructions": 221050
+      },
+      {
+        "rep": 3,
+        "cycles": 221048,
+        "instructions": 221050
+      },
+      {
+        "rep": 4,
+        "cycles": 221048,
+        "instructions": 221050
+      },
+      {
+        "rep": 5,
+        "cycles": 221048,
+        "instructions": 221050
+      }
+    ],
+    "mm_qkv_B": [
+      {
+        "rep": 0,
+        "cycles": 3498992,
+        "instructions": 3498994
+      },
+      {
+        "rep": 1,
+        "cycles": 3499085,
+        "instructions": 3499087
+      },
+      {
+        "rep": 2,
+        "cycles": 3499085,
+        "instructions": 3499087
+      },
+      {
+        "rep": 3,
+        "cycles": 3499085,
+        "instructions": 3499087
+      },
+      {
+        "rep": 4,
+        "cycles": 3499085,
+        "instructions": 3499087
+      },
+      {
+        "rep": 5,
+        "cycles": 3499085,
+        "instructions": 3499087
+      }
+    ],
+    "mm_lm_A": [
+      {
+        "rep": 0,
+        "cycles": 432704,
+        "instructions": 432706
+      },
+      {
+        "rep": 1,
+        "cycles": 432882,
+        "instructions": 432884
+      },
+      {
+        "rep": 2,
+        "cycles": 432882,
+        "instructions": 432884
+      },
+      {
+        "rep": 3,
+        "cycles": 432882,
+        "instructions": 432884
+      },
+      {
+        "rep": 4,
+        "cycles": 432882,
+        "instructions": 432884
+      },
+      {
+        "rep": 5,
+        "cycles": 432882,
+        "instructions": 432884
+      }
+    ],
+    "mm_lm_B": [
+      {
+        "rep": 0,
+        "cycles": 2985351,
+        "instructions": 2985353
+      },
+      {
+        "rep": 1,
+        "cycles": 2985438,
+        "instructions": 2985440
+      },
+      {
+        "rep": 2,
+        "cycles": 2985438,
+        "instructions": 2985440
+      },
+      {
+        "rep": 3,
+        "cycles": 2985438,
+        "instructions": 2985440
+      },
+      {
+        "rep": 4,
+        "cycles": 2985438,
+        "instructions": 2985440
+      },
+      {
+        "rep": 5,
+        "cycles": 2985438,
+        "instructions": 2985440
+      }
+    ],
+    "att_qk_prefill_A": [
+      {
+        "rep": 0,
+        "cycles": 125103,
+        "instructions": 125105
+      },
+      {
+        "rep": 1,
+        "cycles": 124931,
+        "instructions": 124933
+      },
+      {
+        "rep": 2,
+        "cycles": 124931,
+        "instructions": 124933
+      },
+      {
+        "rep": 3,
+        "cycles": 124931,
+        "instructions": 124933
+      },
+      {
+        "rep": 4,
+        "cycles": 124931,
+        "instructions": 124933
+      },
+      {
+        "rep": 5,
+        "cycles": 124931,
+        "instructions": 124933
+      }
+    ],
+    "att_qk_prefill_B": [
+      {
+        "rep": 0,
+        "cycles": 662285,
+        "instructions": 662287
+      },
+      {
+        "rep": 1,
+        "cycles": 662192,
+        "instructions": 662194
+      },
+      {
+        "rep": 2,
+        "cycles": 662192,
+        "instructions": 662194
+      },
+      {
+        "rep": 3,
+        "cycles": 662192,
+        "instructions": 662194
+      },
+      {
+        "rep": 4,
+        "cycles": 662192,
+        "instructions": 662194
+      },
+      {
+        "rep": 5,
+        "cycles": 662192,
+        "instructions": 662194
+      }
+    ],
+    "att_pv_prefill_A": [
+      {
+        "rep": 0,
+        "cycles": 250084,
+        "instructions": 250086
+      },
+      {
+        "rep": 1,
+        "cycles": 249995,
+        "instructions": 249997
+      },
+      {
+        "rep": 2,
+        "cycles": 249995,
+        "instructions": 249997
+      },
+      {
+        "rep": 3,
+        "cycles": 249995,
+        "instructions": 249997
+      },
+      {
+        "rep": 4,
+        "cycles": 249995,
+        "instructions": 249997
+      },
+      {
+        "rep": 5,
+        "cycles": 249995,
+        "instructions": 249997
+      }
+    ],
+    "att_pv_prefill_B": [
+      {
+        "rep": 0,
+        "cycles": 2364325,
+        "instructions": 2364327
+      },
+      {
+        "rep": 1,
+        "cycles": 2364232,
+        "instructions": 2364234
+      },
+      {
+        "rep": 2,
+        "cycles": 2364232,
+        "instructions": 2364234
+      },
+      {
+        "rep": 3,
+        "cycles": 2364232,
+        "instructions": 2364234
+      },
+      {
+        "rep": 4,
+        "cycles": 2364232,
+        "instructions": 2364234
+      },
+      {
+        "rep": 5,
+        "cycles": 2364232,
+        "instructions": 2364234
+      }
+    ],
+    "att_qk_decode_A": [
+      {
+        "rep": 0,
+        "cycles": 110317,
+        "instructions": 110319
+      },
+      {
+        "rep": 1,
+        "cycles": 110228,
+        "instructions": 110230
+      },
+      {
+        "rep": 2,
+        "cycles": 110228,
+        "instructions": 110230
+      },
+      {
+        "rep": 3,
+        "cycles": 110228,
+        "instructions": 110230
+      },
+      {
+        "rep": 4,
+        "cycles": 110228,
+        "instructions": 110230
+      },
+      {
+        "rep": 5,
+        "cycles": 110228,
+        "instructions": 110230
+      }
+    ],
+    "att_qk_decode_B": [
+      {
+        "rep": 0,
+        "cycles": 253367,
+        "instructions": 253369
+      },
+      {
+        "rep": 1,
+        "cycles": 253274,
+        "instructions": 253276
+      },
+      {
+        "rep": 2,
+        "cycles": 253274,
+        "instructions": 253276
+      },
+      {
+        "rep": 3,
+        "cycles": 253274,
+        "instructions": 253276
+      },
+      {
+        "rep": 4,
+        "cycles": 253274,
+        "instructions": 253276
+      },
+      {
+        "rep": 5,
+        "cycles": 253274,
+        "instructions": 253276
+      }
+    ],
+    "att_pv_decode_A": [
+      {
+        "rep": 0,
+        "cycles": 110400,
+        "instructions": 110402
+      },
+      {
+        "rep": 1,
+        "cycles": 110228,
+        "instructions": 110230
+      },
+      {
+        "rep": 2,
+        "cycles": 110228,
+        "instructions": 110230
+      },
+      {
+        "rep": 3,
+        "cycles": 110228,
+        "instructions": 110230
+      },
+      {
+        "rep": 4,
+        "cycles": 110228,
+        "instructions": 110230
+      },
+      {
+        "rep": 5,
+        "cycles": 110228,
+        "instructions": 110230
+      }
+    ],
+    "att_pv_decode_B": [
+      {
+        "rep": 0,
+        "cycles": 253367,
+        "instructions": 253369
+      },
+      {
+        "rep": 1,
+        "cycles": 253274,
+        "instructions": 253276
+      },
+      {
+        "rep": 2,
+        "cycles": 253274,
+        "instructions": 253276
+      },
+      {
+        "rep": 3,
+        "cycles": 253274,
+        "instructions": 253276
+      },
+      {
+        "rep": 4,
+        "cycles": 253274,
+        "instructions": 253276
+      },
+      {
+        "rep": 5,
+        "cycles": 253274,
+        "instructions": 253276
+      }
+    ]
+  },
+  "firesim": {
+    "gemm_512_512_512_A": [
+      {
+        "rep": 0,
+        "cycles": 5402616,
+        "instructions": 1244001
+      },
+      {
+        "rep": 1,
+        "cycles": 4824555,
+        "instructions": 1244141
+      },
+      {
+        "rep": 2,
+        "cycles": 4422391,
+        "instructions": 1244141
+      },
+      {
+        "rep": 3,
+        "cycles": 4405589,
+        "instructions": 1244141
+      },
+      {
+        "rep": 4,
+        "cycles": 4402141,
+        "instructions": 1244141
+      },
+      {
+        "rep": 5,
+        "cycles": 4400201,
+        "instructions": 1244141
+      }
+    ],
+    "gemm_512_512_512_B": [
+      {
+        "rep": 0,
+        "cycles": 2221137,
+        "instructions": 208657
+      },
+      {
+        "rep": 1,
+        "cycles": 2215313,
+        "instructions": 208798
+      },
+      {
+        "rep": 2,
+        "cycles": 2134997,
+        "instructions": 208798
+      },
+      {
+        "rep": 3,
+        "cycles": 2131555,
+        "instructions": 208798
+      },
+      {
+        "rep": 4,
+        "cycles": 2131370,
+        "instructions": 208798
+      },
+      {
+        "rep": 5,
+        "cycles": 2130486,
+        "instructions": 208798
+      }
+    ],
+    "gemm_12544_256_64_A": [
+      {
+        "rep": 0,
+        "cycles": 15794763,
+        "instructions": 3695620
+      },
+      {
+        "rep": 1,
+        "cycles": 14950792,
+        "instructions": 3695759
+      },
+      {
+        "rep": 2,
+        "cycles": 14172490,
+        "instructions": 3695759
+      },
+      {
+        "rep": 3,
+        "cycles": 14049518,
+        "instructions": 3695759
+      },
+      {
+        "rep": 4,
+        "cycles": 14008439,
+        "instructions": 3695759
+      },
+      {
+        "rep": 5,
+        "cycles": 14000510,
+        "instructions": 3695759
+      }
+    ],
+    "gemm_12544_256_64_B": [
+      {
+        "rep": 0,
+        "cycles": 5183150,
+        "instructions": 587859
+      },
+      {
+        "rep": 1,
+        "cycles": 4790626,
+        "instructions": 588000
+      },
+      {
+        "rep": 2,
+        "cycles": 4511641,
+        "instructions": 588000
+      },
+      {
+        "rep": 3,
+        "cycles": 4402909,
+        "instructions": 588000
+      },
+      {
+        "rep": 4,
+        "cycles": 4363173,
+        "instructions": 588000
+      },
+      {
+        "rep": 5,
+        "cycles": 4340706,
+        "instructions": 588000
+      }
+    ],
+    "gemm_12544_64_256_A": [
+      {
+        "rep": 0,
+        "cycles": 56615784,
+        "instructions": 14693622
+      },
+      {
+        "rep": 1,
+        "cycles": 56460377,
+        "instructions": 14693761
+      },
+      {
+        "rep": 2,
+        "cycles": 58846207,
+        "instructions": 14693761
+      },
+      {
+        "rep": 3,
+        "cycles": 58860297,
+        "instructions": 14693761
+      },
+      {
+        "rep": 4,
+        "cycles": 58861788,
+        "instructions": 14693761
+      },
+      {
+        "rep": 5,
+        "cycles": 58842444,
+        "instructions": 14693761
+      }
+    ],
+    "gemm_12544_64_256_B": [
+      {
+        "rep": 0,
+        "cycles": 12737685,
+        "instructions": 2237395
+      },
+      {
+        "rep": 1,
+        "cycles": 11524449,
+        "instructions": 2237536
+      },
+      {
+        "rep": 2,
+        "cycles": 10198669,
+        "instructions": 2237536
+      },
+      {
+        "rep": 3,
+        "cycles": 9761813,
+        "instructions": 2237536
+      },
+      {
+        "rep": 4,
+        "cycles": 9583442,
+        "instructions": 2237536
+      },
+      {
+        "rep": 5,
+        "cycles": 9484644,
+        "instructions": 2237536
+      }
+    ],
+    "gemm_3136_512_128_A": [
+      {
+        "rep": 0,
+        "cycles": 7980738,
+        "instructions": 1862625
+      },
+      {
+        "rep": 1,
+        "cycles": 8099785,
+        "instructions": 1862766
+      },
+      {
+        "rep": 2,
+        "cycles": 7385030,
+        "instructions": 1862766
+      },
+      {
+        "rep": 3,
+        "cycles": 7211132,
+        "instructions": 1862766
+      },
+      {
+        "rep": 4,
+        "cycles": 7158300,
+        "instructions": 1862766
+      },
+      {
+        "rep": 5,
+        "cycles": 7137742,
+        "instructions": 1862766
+      }
+    ],
+    "gemm_3136_512_128_B": [
+      {
+        "rep": 0,
+        "cycles": 3556804,
+        "instructions": 308757
+      },
+      {
+        "rep": 1,
+        "cycles": 3461788,
+        "instructions": 308898
+      },
+      {
+        "rep": 2,
+        "cycles": 3353352,
+        "instructions": 308898
+      },
+      {
+        "rep": 3,
+        "cycles": 3337786,
+        "instructions": 308898
+      },
+      {
+        "rep": 4,
+        "cycles": 3335493,
+        "instructions": 308898
+      },
+      {
+        "rep": 5,
+        "cycles": 3334841,
+        "instructions": 308898
+      }
+    ],
+    "gemm_3136_128_512_A": [
+      {
+        "rep": 0,
+        "cycles": 26781807,
+        "instructions": 7480819
+      },
+      {
+        "rep": 1,
+        "cycles": 27005791,
+        "instructions": 7480960
+      },
+      {
+        "rep": 2,
+        "cycles": 27352500,
+        "instructions": 7480960
+      },
+      {
+        "rep": 3,
+        "cycles": 27321078,
+        "instructions": 7480960
+      },
+      {
+        "rep": 4,
+        "cycles": 27303049,
+        "instructions": 7480960
+      },
+      {
+        "rep": 5,
+        "cycles": 27320206,
+        "instructions": 7480960
+      }
+    ],
+    "gemm_3136_128_512_B": [
+      {
+        "rep": 0,
+        "cycles": 7027182,
+        "instructions": 1146067
+      },
+      {
+        "rep": 1,
+        "cycles": 6521284,
+        "instructions": 1146208
+      },
+      {
+        "rep": 2,
+        "cycles": 5845664,
+        "instructions": 1146208
+      },
+      {
+        "rep": 3,
+        "cycles": 5807603,
+        "instructions": 1146208
+      },
+      {
+        "rep": 4,
+        "cycles": 5799478,
+        "instructions": 1146208
+      },
+      {
+        "rep": 5,
+        "cycles": 5800042,
+        "instructions": 1146208
+      }
+    ],
+    "gemm_784_256_1024_A": [
+      {
+        "rep": 0,
+        "cycles": 13399164,
+        "instructions": 3708211
+      },
+      {
+        "rep": 1,
+        "cycles": 14313956,
+        "instructions": 3708352
+      },
+      {
+        "rep": 2,
+        "cycles": 12622684,
+        "instructions": 3708352
+      },
+      {
+        "rep": 3,
+        "cycles": 12119512,
+        "instructions": 3708352
+      },
+      {
+        "rep": 4,
+        "cycles": 11970028,
+        "instructions": 3708352
+      },
+      {
+        "rep": 5,
+        "cycles": 11920562,
+        "instructions": 3708352
+      }
+    ],
+    "gemm_784_256_1024_B": [
+      {
+        "rep": 0,
+        "cycles": 4273650,
+        "instructions": 587859
+      },
+      {
+        "rep": 1,
+        "cycles": 4346261,
+        "instructions": 588000
+      },
+      {
+        "rep": 2,
+        "cycles": 4119388,
+        "instructions": 588000
+      },
+      {
+        "rep": 3,
+        "cycles": 4112854,
+        "instructions": 588000
+      },
+      {
+        "rep": 4,
+        "cycles": 4111758,
+        "instructions": 588000
+      },
+      {
+        "rep": 5,
+        "cycles": 4111891,
+        "instructions": 588000
+      }
+    ],
+    "conv_56_64_A": [
+      {
+        "rep": 0,
+        "cycles": 118039725,
+        "instructions": 60714790
+      },
+      {
+        "rep": 1,
+        "cycles": 117751653,
+        "instructions": 60714924
+      },
+      {
+        "rep": 2,
+        "cycles": 118473495,
+        "instructions": 60714924
+      },
+      {
+        "rep": 3,
+        "cycles": 118462214,
+        "instructions": 60714924
+      },
+      {
+        "rep": 4,
+        "cycles": 118485501,
+        "instructions": 60714924
+      },
+      {
+        "rep": 5,
+        "cycles": 118477987,
+        "instructions": 60714924
+      }
+    ],
+    "conv_56_64_B": [
+      {
+        "rep": 0,
+        "cycles": 227891100,
+        "instructions": 112229017
+      },
+      {
+        "rep": 1,
+        "cycles": 226596858,
+        "instructions": 112229107
+      },
+      {
+        "rep": 2,
+        "cycles": 226844860,
+        "instructions": 112229107
+      },
+      {
+        "rep": 3,
+        "cycles": 226833151,
+        "instructions": 112229107
+      },
+      {
+        "rep": 4,
+        "cycles": 226823563,
+        "instructions": 112229107
+      },
+      {
+        "rep": 5,
+        "cycles": 226814435,
+        "instructions": 112229107
+      }
+    ],
+    "conv_28_128_A": [
+      {
+        "rep": 0,
+        "cycles": 61614469,
+        "instructions": 27666674
+      },
+      {
+        "rep": 1,
+        "cycles": 60366028,
+        "instructions": 27666764
+      },
+      {
+        "rep": 2,
+        "cycles": 58873523,
+        "instructions": 27666764
+      },
+      {
+        "rep": 3,
+        "cycles": 58416545,
+        "instructions": 27666764
+      },
+      {
+        "rep": 4,
+        "cycles": 58261318,
+        "instructions": 27666764
+      },
+      {
+        "rep": 5,
+        "cycles": 58189467,
+        "instructions": 27666764
+      }
+    ],
+    "conv_28_128_B": [
+      {
+        "rep": 0,
+        "cycles": 112435914,
+        "instructions": 53425871
+      },
+      {
+        "rep": 1,
+        "cycles": 112075754,
+        "instructions": 53425961
+      },
+      {
+        "rep": 2,
+        "cycles": 111490887,
+        "instructions": 53425961
+      },
+      {
+        "rep": 3,
+        "cycles": 111344618,
+        "instructions": 53425961
+      },
+      {
+        "rep": 4,
+        "cycles": 111309241,
+        "instructions": 53425961
+      },
+      {
+        "rep": 5,
+        "cycles": 111265521,
+        "instructions": 53425961
+      }
+    ],
+    "conv_14_256_A": [
+      {
+        "rep": 0,
+        "cycles": 52964287,
+        "instructions": 14301602
+      },
+      {
+        "rep": 1,
+        "cycles": 52497343,
+        "instructions": 14301692
+      },
+      {
+        "rep": 2,
+        "cycles": 52021391,
+        "instructions": 14301692
+      },
+      {
+        "rep": 3,
+        "cycles": 52008166,
+        "instructions": 14301692
+      },
+      {
+        "rep": 4,
+        "cycles": 51967140,
+        "instructions": 14301692
+      },
+      {
+        "rep": 5,
+        "cycles": 51958359,
+        "instructions": 14301692
+      }
+    ],
+    "conv_14_256_B": [
+      {
+        "rep": 0,
+        "cycles": 79446001,
+        "instructions": 27181100
+      },
+      {
+        "rep": 1,
+        "cycles": 79037223,
+        "instructions": 27181190
+      },
+      {
+        "rep": 2,
+        "cycles": 78889908,
+        "instructions": 27181190
+      },
+      {
+        "rep": 3,
+        "cycles": 78878171,
+        "instructions": 27181190
+      },
+      {
+        "rep": 4,
+        "cycles": 78865195,
+        "instructions": 27181190
+      },
+      {
+        "rep": 5,
+        "cycles": 78869622,
+        "instructions": 27181190
+      }
+    ],
+    "mm_down_A": [
+      {
+        "rep": 0,
+        "cycles": 15031865,
+        "instructions": 181151
+      },
+      {
+        "rep": 1,
+        "cycles": 14547402,
+        "instructions": 181248
+      },
+      {
+        "rep": 2,
+        "cycles": 14491953,
+        "instructions": 181248
+      },
+      {
+        "rep": 3,
+        "cycles": 14493441,
+        "instructions": 181248
+      },
+      {
+        "rep": 4,
+        "cycles": 14489574,
+        "instructions": 181248
+      },
+      {
+        "rep": 5,
+        "cycles": 14484977,
+        "instructions": 181248
+      }
+    ],
+    "mm_down_B": [
+      {
+        "rep": 0,
+        "cycles": 19416319,
+        "instructions": 2810440
+      },
+      {
+        "rep": 1,
+        "cycles": 18843731,
+        "instructions": 2810533
+      },
+      {
+        "rep": 2,
+        "cycles": 18842433,
+        "instructions": 2810533
+      },
+      {
+        "rep": 3,
+        "cycles": 18834375,
+        "instructions": 2810533
+      },
+      {
+        "rep": 4,
+        "cycles": 18834162,
+        "instructions": 2810533
+      },
+      {
+        "rep": 5,
+        "cycles": 18837512,
+        "instructions": 2810533
+      }
+    ],
+    "mm_gu_A": [
+      {
+        "rep": 0,
+        "cycles": 9257626,
+        "instructions": 439105
+      },
+      {
+        "rep": 1,
+        "cycles": 8831569,
+        "instructions": 439202
+      },
+      {
+        "rep": 2,
+        "cycles": 8756916,
+        "instructions": 439202
+      },
+      {
+        "rep": 3,
+        "cycles": 8754739,
+        "instructions": 439202
+      },
+      {
+        "rep": 4,
+        "cycles": 8760106,
+        "instructions": 439202
+      },
+      {
+        "rep": 5,
+        "cycles": 8761769,
+        "instructions": 439202
+      }
+    ],
+    "mm_gu_B": [
+      {
+        "rep": 0,
+        "cycles": 21416625,
+        "instructions": 7644430
+      },
+      {
+        "rep": 1,
+        "cycles": 20813051,
+        "instructions": 7644606
+      },
+      {
+        "rep": 2,
+        "cycles": 20808572,
+        "instructions": 7644523
+      },
+      {
+        "rep": 3,
+        "cycles": 20806481,
+        "instructions": 7644523
+      },
+      {
+        "rep": 4,
+        "cycles": 20809591,
+        "instructions": 7644523
+      },
+      {
+        "rep": 5,
+        "cycles": 20804026,
+        "instructions": 7644523
+      }
+    ],
+    "mm_o_A": [
+      {
+        "rep": 0,
+        "cycles": 4042475,
+        "instructions": 178157
+      },
+      {
+        "rep": 1,
+        "cycles": 3411166,
+        "instructions": 178254
+      },
+      {
+        "rep": 2,
+        "cycles": 3255479,
+        "instructions": 178254
+      },
+      {
+        "rep": 3,
+        "cycles": 3234294,
+        "instructions": 178254
+      },
+      {
+        "rep": 4,
+        "cycles": 3229813,
+        "instructions": 178254
+      },
+      {
+        "rep": 5,
+        "cycles": 3227859,
+        "instructions": 178254
+      }
+    ],
+    "mm_o_B": [
+      {
+        "rep": 0,
+        "cycles": 8400100,
+        "instructions": 2807269
+      },
+      {
+        "rep": 1,
+        "cycles": 7624629,
+        "instructions": 2807362
+      },
+      {
+        "rep": 2,
+        "cycles": 7578648,
+        "instructions": 2807362
+      },
+      {
+        "rep": 3,
+        "cycles": 7565211,
+        "instructions": 2807362
+      },
+      {
+        "rep": 4,
+        "cycles": 7562346,
+        "instructions": 2807362
+      },
+      {
+        "rep": 5,
+        "cycles": 7563886,
+        "instructions": 2807362
+      }
+    ],
+    "mm_qkv_A": [
+      {
+        "rep": 0,
+        "cycles": 4212049,
+        "instructions": 220927
+      },
+      {
+        "rep": 1,
+        "cycles": 3861134,
+        "instructions": 221024
+      },
+      {
+        "rep": 2,
+        "cycles": 3761682,
+        "instructions": 221024
+      },
+      {
+        "rep": 3,
+        "cycles": 3728595,
+        "instructions": 221024
+      },
+      {
+        "rep": 4,
+        "cycles": 3709085,
+        "instructions": 221024
+      },
+      {
+        "rep": 5,
+        "cycles": 3707280,
+        "instructions": 221024
+      }
+    ],
+    "mm_qkv_B": [
+      {
+        "rep": 0,
+        "cycles": 9773176,
+        "instructions": 3498942
+      },
+      {
+        "rep": 1,
+        "cycles": 9316347,
+        "instructions": 3499035
+      },
+      {
+        "rep": 2,
+        "cycles": 9245558,
+        "instructions": 3499035
+      },
+      {
+        "rep": 3,
+        "cycles": 9207654,
+        "instructions": 3499035
+      },
+      {
+        "rep": 4,
+        "cycles": 9201464,
+        "instructions": 3499035
+      },
+      {
+        "rep": 5,
+        "cycles": 9198723,
+        "instructions": 3499035
+      }
+    ],
+    "mm_lm_A": [
+      {
+        "rep": 0,
+        "cycles": 29345537,
+        "instructions": 432680
+      },
+      {
+        "rep": 1,
+        "cycles": 29048637,
+        "instructions": 432692
+      },
+      {
+        "rep": 2,
+        "cycles": 29070632,
+        "instructions": 432692
+      },
+      {
+        "rep": 3,
+        "cycles": 29056082,
+        "instructions": 432692
+      },
+      {
+        "rep": 4,
+        "cycles": 29065866,
+        "instructions": 432692
+      },
+      {
+        "rep": 5,
+        "cycles": 29060191,
+        "instructions": 432692
+      }
+    ],
+    "mm_lm_B": [
+      {
+        "rep": 0,
+        "cycles": 34527216,
+        "instructions": 2985275
+      },
+      {
+        "rep": 1,
+        "cycles": 34180090,
+        "instructions": 2985362
+      },
+      {
+        "rep": 2,
+        "cycles": 34169533,
+        "instructions": 2985362
+      },
+      {
+        "rep": 3,
+        "cycles": 34173754,
+        "instructions": 2985362
+      },
+      {
+        "rep": 4,
+        "cycles": 34174499,
+        "instructions": 2985362
+      },
+      {
+        "rep": 5,
+        "cycles": 34181074,
+        "instructions": 2985362
+      }
+    ],
+    "att_qk_prefill_A": [
+      {
+        "rep": 0,
+        "cycles": 251127,
+        "instructions": 124273
+      },
+      {
+        "rep": 1,
+        "cycles": 218098,
+        "instructions": 124101
+      },
+      {
+        "rep": 2,
+        "cycles": 208981,
+        "instructions": 124101
+      },
+      {
+        "rep": 3,
+        "cycles": 207164,
+        "instructions": 124101
+      },
+      {
+        "rep": 4,
+        "cycles": 205788,
+        "instructions": 124101
+      },
+      {
+        "rep": 5,
+        "cycles": 207918,
+        "instructions": 124101
+      }
+    ],
+    "att_qk_prefill_B": [
+      {
+        "rep": 0,
+        "cycles": 1302130,
+        "instructions": 661512
+      },
+      {
+        "rep": 1,
+        "cycles": 1288427,
+        "instructions": 661336
+      },
+      {
+        "rep": 2,
+        "cycles": 1286365,
+        "instructions": 661336
+      },
+      {
+        "rep": 3,
+        "cycles": 1285881,
+        "instructions": 661336
+      },
+      {
+        "rep": 4,
+        "cycles": 1285793,
+        "instructions": 661336
+      },
+      {
+        "rep": 5,
+        "cycles": 1285581,
+        "instructions": 661336
+      }
+    ],
+    "att_pv_prefill_A": [
+      {
+        "rep": 0,
+        "cycles": 533362,
+        "instructions": 249254
+      },
+      {
+        "rep": 1,
+        "cycles": 524928,
+        "instructions": 249165
+      },
+      {
+        "rep": 2,
+        "cycles": 498517,
+        "instructions": 249165
+      },
+      {
+        "rep": 3,
+        "cycles": 493089,
+        "instructions": 249165
+      },
+      {
+        "rep": 4,
+        "cycles": 492291,
+        "instructions": 249165
+      },
+      {
+        "rep": 5,
+        "cycles": 491623,
+        "instructions": 249165
+      }
+    ],
+    "att_pv_prefill_B": [
+      {
+        "rep": 0,
+        "cycles": 4783499,
+        "instructions": 2363469
+      },
+      {
+        "rep": 1,
+        "cycles": 4770615,
+        "instructions": 2363376
+      },
+      {
+        "rep": 2,
+        "cycles": 4762108,
+        "instructions": 2363376
+      },
+      {
+        "rep": 3,
+        "cycles": 4760137,
+        "instructions": 2363376
+      },
+      {
+        "rep": 4,
+        "cycles": 4759241,
+        "instructions": 2363376
+      },
+      {
+        "rep": 5,
+        "cycles": 4759142,
+        "instructions": 2363376
+      }
+    ],
+    "att_qk_decode_A": [
+      {
+        "rep": 0,
+        "cycles": 207870,
+        "instructions": 109487
+      },
+      {
+        "rep": 1,
+        "cycles": 186700,
+        "instructions": 109398
+      },
+      {
+        "rep": 2,
+        "cycles": 181585,
+        "instructions": 109398
+      },
+      {
+        "rep": 3,
+        "cycles": 180185,
+        "instructions": 109398
+      },
+      {
+        "rep": 4,
+        "cycles": 181325,
+        "instructions": 109398
+      },
+      {
+        "rep": 5,
+        "cycles": 180221,
+        "instructions": 109398
+      }
+    ],
+    "att_qk_decode_B": [
+      {
+        "rep": 0,
+        "cycles": 478470,
+        "instructions": 252511
+      },
+      {
+        "rep": 1,
+        "cycles": 463849,
+        "instructions": 252418
+      },
+      {
+        "rep": 2,
+        "cycles": 461065,
+        "instructions": 252418
+      },
+      {
+        "rep": 3,
+        "cycles": 460528,
+        "instructions": 252418
+      },
+      {
+        "rep": 4,
+        "cycles": 460565,
+        "instructions": 252418
+      },
+      {
+        "rep": 5,
+        "cycles": 460400,
+        "instructions": 252418
+      }
+    ],
+    "att_pv_decode_A": [
+      {
+        "rep": 0,
+        "cycles": 202574,
+        "instructions": 109570
+      },
+      {
+        "rep": 1,
+        "cycles": 185335,
+        "instructions": 109398
+      },
+      {
+        "rep": 2,
+        "cycles": 182359,
+        "instructions": 109398
+      },
+      {
+        "rep": 3,
+        "cycles": 181202,
+        "instructions": 109398
+      },
+      {
+        "rep": 4,
+        "cycles": 181081,
+        "instructions": 109398
+      },
+      {
+        "rep": 5,
+        "cycles": 180501,
+        "instructions": 109398
+      }
+    ],
+    "att_pv_decode_B": [
+      {
+        "rep": 0,
+        "cycles": 477643,
+        "instructions": 252511
+      },
+      {
+        "rep": 1,
+        "cycles": 462838,
+        "instructions": 252418
+      },
+      {
+        "rep": 2,
+        "cycles": 461830,
+        "instructions": 252418
+      },
+      {
+        "rep": 3,
+        "cycles": 460088,
+        "instructions": 252418
+      },
+      {
+        "rep": 4,
+        "cycles": 459882,
+        "instructions": 252418
+      },
+      {
+        "rep": 5,
+        "cycles": 459721,
+        "instructions": 252418
+      }
+    ]
+  },
+  "firesim_trace": {
+    "gemm_512_512_512_A": [
+      {
+        "rep": 0,
+        "cycles": 5415855,
+        "instructions": 1244027
+      },
+      {
+        "rep": 1,
+        "cycles": 4826752,
+        "instructions": 1244167
+      },
+      {
+        "rep": 2,
+        "cycles": 4428863,
+        "instructions": 1244167
+      },
+      {
+        "rep": 3,
+        "cycles": 4408851,
+        "instructions": 1244167
+      },
+      {
+        "rep": 4,
+        "cycles": 4405021,
+        "instructions": 1244167
+      },
+      {
+        "rep": 5,
+        "cycles": 4407649,
+        "instructions": 1244167
+      }
+    ],
+    "gemm_512_512_512_B": [
+      {
+        "rep": 0,
+        "cycles": 2226167,
+        "instructions": 208683
+      },
+      {
+        "rep": 1,
+        "cycles": 2218286,
+        "instructions": 208824
+      },
+      {
+        "rep": 2,
+        "cycles": 2139279,
+        "instructions": 208824
+      },
+      {
+        "rep": 3,
+        "cycles": 2135336,
+        "instructions": 208824
+      },
+      {
+        "rep": 4,
+        "cycles": 2135656,
+        "instructions": 208824
+      },
+      {
+        "rep": 5,
+        "cycles": 2133117,
+        "instructions": 208824
+      }
+    ],
+    "gemm_12544_256_64_A": [
+      {
+        "rep": 0,
+        "cycles": 15822432,
+        "instructions": 3695646
+      },
+      {
+        "rep": 1,
+        "cycles": 14981945,
+        "instructions": 3695785
+      },
+      {
+        "rep": 2,
+        "cycles": 14208525,
+        "instructions": 3695785
+      },
+      {
+        "rep": 3,
+        "cycles": 14063337,
+        "instructions": 3695785
+      },
+      {
+        "rep": 4,
+        "cycles": 14015955,
+        "instructions": 3695785
+      },
+      {
+        "rep": 5,
+        "cycles": 13997155,
+        "instructions": 3695785
+      }
+    ],
+    "gemm_12544_256_64_B": [
+      {
+        "rep": 0,
+        "cycles": 5203605,
+        "instructions": 587885
+      },
+      {
+        "rep": 1,
+        "cycles": 4800133,
+        "instructions": 588026
+      },
+      {
+        "rep": 2,
+        "cycles": 4520151,
+        "instructions": 588026
+      },
+      {
+        "rep": 3,
+        "cycles": 4422584,
+        "instructions": 588026
+      },
+      {
+        "rep": 4,
+        "cycles": 4372238,
+        "instructions": 588026
+      },
+      {
+        "rep": 5,
+        "cycles": 4351550,
+        "instructions": 588026
+      }
+    ],
+    "gemm_12544_64_256_A": [
+      {
+        "rep": 0,
+        "cycles": 56586441,
+        "instructions": 14693648
+      },
+      {
+        "rep": 1,
+        "cycles": 56455516,
+        "instructions": 14693787
+      },
+      {
+        "rep": 2,
+        "cycles": 58830245,
+        "instructions": 14693787
+      },
+      {
+        "rep": 3,
+        "cycles": 58834257,
+        "instructions": 14693787
+      },
+      {
+        "rep": 4,
+        "cycles": 58833003,
+        "instructions": 14693787
+      },
+      {
+        "rep": 5,
+        "cycles": 58839072,
+        "instructions": 14693787
+      }
+    ],
+    "gemm_12544_64_256_B": [
+      {
+        "rep": 0,
+        "cycles": 12753366,
+        "instructions": 2237421
+      },
+      {
+        "rep": 1,
+        "cycles": 11555104,
+        "instructions": 2237562
+      },
+      {
+        "rep": 2,
+        "cycles": 10245560,
+        "instructions": 2237562
+      },
+      {
+        "rep": 3,
+        "cycles": 9805634,
+        "instructions": 2237562
+      },
+      {
+        "rep": 4,
+        "cycles": 9609079,
+        "instructions": 2237562
+      },
+      {
+        "rep": 5,
+        "cycles": 9514750,
+        "instructions": 2237562
+      }
+    ],
+    "gemm_3136_512_128_A": [
+      {
+        "rep": 0,
+        "cycles": 7992049,
+        "instructions": 1862651
+      },
+      {
+        "rep": 1,
+        "cycles": 8097955,
+        "instructions": 1862792
+      },
+      {
+        "rep": 2,
+        "cycles": 7394840,
+        "instructions": 1862792
+      },
+      {
+        "rep": 3,
+        "cycles": 7229340,
+        "instructions": 1862792
+      },
+      {
+        "rep": 4,
+        "cycles": 7171499,
+        "instructions": 1862792
+      },
+      {
+        "rep": 5,
+        "cycles": 7154430,
+        "instructions": 1862792
+      }
+    ],
+    "gemm_3136_512_128_B": [
+      {
+        "rep": 0,
+        "cycles": 3559082,
+        "instructions": 308783
+      },
+      {
+        "rep": 1,
+        "cycles": 3462520,
+        "instructions": 308924
+      },
+      {
+        "rep": 2,
+        "cycles": 3357552,
+        "instructions": 308924
+      },
+      {
+        "rep": 3,
+        "cycles": 3340702,
+        "instructions": 308924
+      },
+      {
+        "rep": 4,
+        "cycles": 3339853,
+        "instructions": 308924
+      },
+      {
+        "rep": 5,
+        "cycles": 3336695,
+        "instructions": 308924
+      }
+    ],
+    "gemm_3136_128_512_A": [
+      {
+        "rep": 0,
+        "cycles": 26749614,
+        "instructions": 7480845
+      },
+      {
+        "rep": 1,
+        "cycles": 27011001,
+        "instructions": 7480986
+      },
+      {
+        "rep": 2,
+        "cycles": 27340534,
+        "instructions": 7480986
+      },
+      {
+        "rep": 3,
+        "cycles": 27309044,
+        "instructions": 7480986
+      },
+      {
+        "rep": 4,
+        "cycles": 27282932,
+        "instructions": 7480986
+      },
+      {
+        "rep": 5,
+        "cycles": 27276997,
+        "instructions": 7480986
+      }
+    ],
+    "gemm_3136_128_512_B": [
+      {
+        "rep": 0,
+        "cycles": 7040315,
+        "instructions": 1146093
+      },
+      {
+        "rep": 1,
+        "cycles": 6544500,
+        "instructions": 1146234
+      },
+      {
+        "rep": 2,
+        "cycles": 5865375,
+        "instructions": 1146234
+      },
+      {
+        "rep": 3,
+        "cycles": 5815600,
+        "instructions": 1146234
+      },
+      {
+        "rep": 4,
+        "cycles": 5812756,
+        "instructions": 1146234
+      },
+      {
+        "rep": 5,
+        "cycles": 5811905,
+        "instructions": 1146234
+      }
+    ],
+    "gemm_784_256_1024_A": [
+      {
+        "rep": 0,
+        "cycles": 13405390,
+        "instructions": 3708237
+      },
+      {
+        "rep": 1,
+        "cycles": 14326794,
+        "instructions": 3708378
+      },
+      {
+        "rep": 2,
+        "cycles": 12618006,
+        "instructions": 3708378
+      },
+      {
+        "rep": 3,
+        "cycles": 12141759,
+        "instructions": 3708378
+      },
+      {
+        "rep": 4,
+        "cycles": 11980071,
+        "instructions": 3708378
+      },
+      {
+        "rep": 5,
+        "cycles": 11931550,
+        "instructions": 3708378
+      }
+    ],
+    "gemm_784_256_1024_B": [
+      {
+        "rep": 0,
+        "cycles": 4274868,
+        "instructions": 587885
+      },
+      {
+        "rep": 1,
+        "cycles": 4345162,
+        "instructions": 588026
+      },
+      {
+        "rep": 2,
+        "cycles": 4128433,
+        "instructions": 588026
+      },
+      {
+        "rep": 3,
+        "cycles": 4119801,
+        "instructions": 588026
+      },
+      {
+        "rep": 4,
+        "cycles": 4116769,
+        "instructions": 588026
+      },
+      {
+        "rep": 5,
+        "cycles": 4118234,
+        "instructions": 588026
+      }
+    ],
+    "conv_56_64_A": [
+      {
+        "rep": 0,
+        "cycles": 118066934,
+        "instructions": 60715024
+      },
+      {
+        "rep": 1,
+        "cycles": 117754794,
+        "instructions": 60715158
+      },
+      {
+        "rep": 2,
+        "cycles": 118486095,
+        "instructions": 60715158
+      },
+      {
+        "rep": 3,
+        "cycles": 118485446,
+        "instructions": 60715158
+      },
+      {
+        "rep": 4,
+        "cycles": 118447141,
+        "instructions": 60715158
+      },
+      {
+        "rep": 5,
+        "cycles": 118472486,
+        "instructions": 60715158
+      }
+    ],
+    "conv_56_64_B": [
+      {
+        "rep": 0,
+        "cycles": 227891862,
+        "instructions": 112229277
+      },
+      {
+        "rep": 1,
+        "cycles": 226599668,
+        "instructions": 112229367
+      },
+      {
+        "rep": 2,
+        "cycles": 226836800,
+        "instructions": 112229367
+      },
+      {
+        "rep": 3,
+        "cycles": 226878600,
+        "instructions": 112229367
+      },
+      {
+        "rep": 4,
+        "cycles": 226850856,
+        "instructions": 112229367
+      },
+      {
+        "rep": 5,
+        "cycles": 226886230,
+        "instructions": 112229367
+      }
+    ],
+    "conv_28_128_A": [
+      {
+        "rep": 0,
+        "cycles": 61625110,
+        "instructions": 27666908
+      },
+      {
+        "rep": 1,
+        "cycles": 60374950,
+        "instructions": 27666998
+      },
+      {
+        "rep": 2,
+        "cycles": 58879188,
+        "instructions": 27666998
+      },
+      {
+        "rep": 3,
+        "cycles": 58428178,
+        "instructions": 27666998
+      },
+      {
+        "rep": 4,
+        "cycles": 58255270,
+        "instructions": 27666998
+      },
+      {
+        "rep": 5,
+        "cycles": 58204728,
+        "instructions": 27666998
+      }
+    ],
+    "conv_28_128_B": [
+      {
+        "rep": 0,
+        "cycles": 112478193,
+        "instructions": 53426131
+      },
+      {
+        "rep": 1,
+        "cycles": 112084713,
+        "instructions": 53426221
+      },
+      {
+        "rep": 2,
+        "cycles": 111512156,
+        "instructions": 53426221
+      },
+      {
+        "rep": 3,
+        "cycles": 111356169,
+        "instructions": 53426221
+      },
+      {
+        "rep": 4,
+        "cycles": 111323161,
+        "instructions": 53426221
+      },
+      {
+        "rep": 5,
+        "cycles": 111300564,
+        "instructions": 53426221
+      }
+    ],
+    "conv_14_256_A": [
+      {
+        "rep": 0,
+        "cycles": 52964695,
+        "instructions": 14301836
+      },
+      {
+        "rep": 1,
+        "cycles": 52530259,
+        "instructions": 14301926
+      },
+      {
+        "rep": 2,
+        "cycles": 52033042,
+        "instructions": 14301926
+      },
+      {
+        "rep": 3,
+        "cycles": 51984217,
+        "instructions": 14301926
+      },
+      {
+        "rep": 4,
+        "cycles": 51953497,
+        "instructions": 14301926
+      },
+      {
+        "rep": 5,
+        "cycles": 51968733,
+        "instructions": 14301926
+      }
+    ],
+    "conv_14_256_B": [
+      {
+        "rep": 0,
+        "cycles": 79451397,
+        "instructions": 27181360
+      },
+      {
+        "rep": 1,
+        "cycles": 79049028,
+        "instructions": 27181450
+      },
+      {
+        "rep": 2,
+        "cycles": 78908271,
+        "instructions": 27181450
+      },
+      {
+        "rep": 3,
+        "cycles": 78890963,
+        "instructions": 27181450
+      },
+      {
+        "rep": 4,
+        "cycles": 78879508,
+        "instructions": 27181450
+      },
+      {
+        "rep": 5,
+        "cycles": 78868368,
+        "instructions": 27181450
+      }
+    ],
+    "mm_down_A": [
+      {
+        "rep": 0,
+        "cycles": 14987507,
+        "instructions": 181177
+      },
+      {
+        "rep": 1,
+        "cycles": 14495380,
+        "instructions": 181274
+      },
+      {
+        "rep": 2,
+        "cycles": 14429854,
+        "instructions": 181274
+      },
+      {
+        "rep": 3,
+        "cycles": 14437434,
+        "instructions": 181274
+      },
+      {
+        "rep": 4,
+        "cycles": 14423638,
+        "instructions": 181274
+      },
+      {
+        "rep": 5,
+        "cycles": 14428001,
+        "instructions": 181274
+      }
+    ],
+    "mm_down_B": [
+      {
+        "rep": 0,
+        "cycles": 19365110,
+        "instructions": 2810492
+      },
+      {
+        "rep": 1,
+        "cycles": 18792919,
+        "instructions": 2810585
+      },
+      {
+        "rep": 2,
+        "cycles": 18784553,
+        "instructions": 2810585
+      },
+      {
+        "rep": 3,
+        "cycles": 18788330,
+        "instructions": 2810585
+      },
+      {
+        "rep": 4,
+        "cycles": 18780380,
+        "instructions": 2810585
+      },
+      {
+        "rep": 5,
+        "cycles": 18787452,
+        "instructions": 2810585
+      }
+    ],
+    "mm_gu_A": [
+      {
+        "rep": 0,
+        "cycles": 9263282,
+        "instructions": 439131
+      },
+      {
+        "rep": 1,
+        "cycles": 8835646,
+        "instructions": 439228
+      },
+      {
+        "rep": 2,
+        "cycles": 8768468,
+        "instructions": 439228
+      },
+      {
+        "rep": 3,
+        "cycles": 8762348,
+        "instructions": 439228
+      },
+      {
+        "rep": 4,
+        "cycles": 8762752,
+        "instructions": 439228
+      },
+      {
+        "rep": 5,
+        "cycles": 8763077,
+        "instructions": 439228
+      }
+    ],
+    "mm_gu_B": [
+      {
+        "rep": 0,
+        "cycles": 21420734,
+        "instructions": 7644482
+      },
+      {
+        "rep": 1,
+        "cycles": 20813589,
+        "instructions": 7644658
+      },
+      {
+        "rep": 2,
+        "cycles": 20798487,
+        "instructions": 7644575
+      },
+      {
+        "rep": 3,
+        "cycles": 20804693,
+        "instructions": 7644575
+      },
+      {
+        "rep": 4,
+        "cycles": 20800389,
+        "instructions": 7644575
+      },
+      {
+        "rep": 5,
+        "cycles": 20809446,
+        "instructions": 7644575
+      }
+    ],
+    "mm_o_A": [
+      {
+        "rep": 0,
+        "cycles": 4047098,
+        "instructions": 178183
+      },
+      {
+        "rep": 1,
+        "cycles": 3412316,
+        "instructions": 178280
+      },
+      {
+        "rep": 2,
+        "cycles": 3256747,
+        "instructions": 178280
+      },
+      {
+        "rep": 3,
+        "cycles": 3234179,
+        "instructions": 178280
+      },
+      {
+        "rep": 4,
+        "cycles": 3231521,
+        "instructions": 178280
+      },
+      {
+        "rep": 5,
+        "cycles": 3230869,
+        "instructions": 178280
+      }
+    ],
+    "mm_o_B": [
+      {
+        "rep": 0,
+        "cycles": 8404611,
+        "instructions": 2807321
+      },
+      {
+        "rep": 1,
+        "cycles": 7625801,
+        "instructions": 2807414
+      },
+      {
+        "rep": 2,
+        "cycles": 7578383,
+        "instructions": 2807414
+      },
+      {
+        "rep": 3,
+        "cycles": 7568464,
+        "instructions": 2807414
+      },
+      {
+        "rep": 4,
+        "cycles": 7569322,
+        "instructions": 2807414
+      },
+      {
+        "rep": 5,
+        "cycles": 7566503,
+        "instructions": 2807414
+      }
+    ],
+    "mm_qkv_A": [
+      {
+        "rep": 0,
+        "cycles": 4216320,
+        "instructions": 220953
+      },
+      {
+        "rep": 1,
+        "cycles": 3861979,
+        "instructions": 221050
+      },
+      {
+        "rep": 2,
+        "cycles": 3765893,
+        "instructions": 221050
+      },
+      {
+        "rep": 3,
+        "cycles": 3733449,
+        "instructions": 221050
+      },
+      {
+        "rep": 4,
+        "cycles": 3715641,
+        "instructions": 221050
+      },
+      {
+        "rep": 5,
+        "cycles": 3714636,
+        "instructions": 221050
+      }
+    ],
+    "mm_qkv_B": [
+      {
+        "rep": 0,
+        "cycles": 9772557,
+        "instructions": 3498994
+      },
+      {
+        "rep": 1,
+        "cycles": 9325302,
+        "instructions": 3499087
+      },
+      {
+        "rep": 2,
+        "cycles": 9246855,
+        "instructions": 3499087
+      },
+      {
+        "rep": 3,
+        "cycles": 9216491,
+        "instructions": 3499087
+      },
+      {
+        "rep": 4,
+        "cycles": 9202828,
+        "instructions": 3499087
+      },
+      {
+        "rep": 5,
+        "cycles": 9200160,
+        "instructions": 3499087
+      }
+    ],
+    "mm_lm_A": [
+      {
+        "rep": 0,
+        "cycles": 29352322,
+        "instructions": 432706
+      },
+      {
+        "rep": 1,
+        "cycles": 29060222,
+        "instructions": 432884
+      },
+      {
+        "rep": 2,
+        "cycles": 29064358,
+        "instructions": 432884
+      },
+      {
+        "rep": 3,
+        "cycles": 29069512,
+        "instructions": 432884
+      },
+      {
+        "rep": 4,
+        "cycles": 29056981,
+        "instructions": 432884
+      },
+      {
+        "rep": 5,
+        "cycles": 29065883,
+        "instructions": 432884
+      }
+    ],
+    "mm_lm_B": [
+      {
+        "rep": 0,
+        "cycles": 34543422,
+        "instructions": 2985353
+      },
+      {
+        "rep": 1,
+        "cycles": 34191213,
+        "instructions": 2985440
+      },
+      {
+        "rep": 2,
+        "cycles": 34185884,
+        "instructions": 2985440
+      },
+      {
+        "rep": 3,
+        "cycles": 34184115,
+        "instructions": 2985440
+      },
+      {
+        "rep": 4,
+        "cycles": 34191812,
+        "instructions": 2985440
+      },
+      {
+        "rep": 5,
+        "cycles": 34183199,
+        "instructions": 2985440
+      }
+    ],
+    "att_qk_prefill_A": [
+      {
+        "rep": 0,
+        "cycles": 254083,
+        "instructions": 125105
+      },
+      {
+        "rep": 1,
+        "cycles": 219316,
+        "instructions": 124933
+      },
+      {
+        "rep": 2,
+        "cycles": 212559,
+        "instructions": 124933
+      },
+      {
+        "rep": 3,
+        "cycles": 210116,
+        "instructions": 124933
+      },
+      {
+        "rep": 4,
+        "cycles": 209687,
+        "instructions": 124933
+      },
+      {
+        "rep": 5,
+        "cycles": 208969,
+        "instructions": 124933
+      }
+    ],
+    "att_qk_prefill_B": [
+      {
+        "rep": 0,
+        "cycles": 1306901,
+        "instructions": 662287
+      },
+      {
+        "rep": 1,
+        "cycles": 1291954,
+        "instructions": 662194
+      },
+      {
+        "rep": 2,
+        "cycles": 1290490,
+        "instructions": 662194
+      },
+      {
+        "rep": 3,
+        "cycles": 1290361,
+        "instructions": 662194
+      },
+      {
+        "rep": 4,
+        "cycles": 1289721,
+        "instructions": 662194
+      },
+      {
+        "rep": 5,
+        "cycles": 1290048,
+        "instructions": 662194
+      }
+    ],
+    "att_pv_prefill_A": [
+      {
+        "rep": 0,
+        "cycles": 537183,
+        "instructions": 250086
+      },
+      {
+        "rep": 1,
+        "cycles": 526201,
+        "instructions": 249997
+      },
+      {
+        "rep": 2,
+        "cycles": 501967,
+        "instructions": 249997
+      },
+      {
+        "rep": 3,
+        "cycles": 496716,
+        "instructions": 249997
+      },
+      {
+        "rep": 4,
+        "cycles": 495132,
+        "instructions": 249997
+      },
+      {
+        "rep": 5,
+        "cycles": 495085,
+        "instructions": 249997
+      }
+    ],
+    "att_pv_prefill_B": [
+      {
+        "rep": 0,
+        "cycles": 4787487,
+        "instructions": 2364327
+      },
+      {
+        "rep": 1,
+        "cycles": 4772622,
+        "instructions": 2364234
+      },
+      {
+        "rep": 2,
+        "cycles": 4765927,
+        "instructions": 2364234
+      },
+      {
+        "rep": 3,
+        "cycles": 4764165,
+        "instructions": 2364234
+      },
+      {
+        "rep": 4,
+        "cycles": 4764158,
+        "instructions": 2364234
+      },
+      {
+        "rep": 5,
+        "cycles": 4763858,
+        "instructions": 2364234
+      }
+    ],
+    "att_qk_decode_A": [
+      {
+        "rep": 0,
+        "cycles": 208626,
+        "instructions": 110319
+      },
+      {
+        "rep": 1,
+        "cycles": 190504,
+        "instructions": 110230
+      },
+      {
+        "rep": 2,
+        "cycles": 186669,
+        "instructions": 110230
+      },
+      {
+        "rep": 3,
+        "cycles": 185689,
+        "instructions": 110230
+      },
+      {
+        "rep": 4,
+        "cycles": 184920,
+        "instructions": 110230
+      },
+      {
+        "rep": 5,
+        "cycles": 184740,
+        "instructions": 110230
+      }
+    ],
+    "att_qk_decode_B": [
+      {
+        "rep": 0,
+        "cycles": 481817,
+        "instructions": 253369
+      },
+      {
+        "rep": 1,
+        "cycles": 467698,
+        "instructions": 253276
+      },
+      {
+        "rep": 2,
+        "cycles": 465634,
+        "instructions": 253276
+      },
+      {
+        "rep": 3,
+        "cycles": 465986,
+        "instructions": 253276
+      },
+      {
+        "rep": 4,
+        "cycles": 465666,
+        "instructions": 253276
+      },
+      {
+        "rep": 5,
+        "cycles": 466069,
+        "instructions": 253276
+      }
+    ],
+    "att_pv_decode_A": [
+      {
+        "rep": 0,
+        "cycles": 204058,
+        "instructions": 110402
+      },
+      {
+        "rep": 1,
+        "cycles": 189068,
+        "instructions": 110230
+      },
+      {
+        "rep": 2,
+        "cycles": 185815,
+        "instructions": 110230
+      },
+      {
+        "rep": 3,
+        "cycles": 185210,
+        "instructions": 110230
+      },
+      {
+        "rep": 4,
+        "cycles": 184453,
+        "instructions": 110230
+      },
+      {
+        "rep": 5,
+        "cycles": 184367,
+        "instructions": 110230
+      }
+    ],
+    "att_pv_decode_B": [
+      {
+        "rep": 0,
+        "cycles": 483168,
+        "instructions": 253369
+      },
+      {
+        "rep": 1,
+        "cycles": 467546,
+        "instructions": 253276
+      },
+      {
+        "rep": 2,
+        "cycles": 465115,
+        "instructions": 253276
+      },
+      {
+        "rep": 3,
+        "cycles": 466120,
+        "instructions": 253276
+      },
+      {
+        "rep": 4,
+        "cycles": 465482,
+        "instructions": 253276
+      },
+      {
+        "rep": 5,
+        "cycles": 464816,
+        "instructions": 253276
+      }
+    ]
+  },
+  "spike_done": true,
+  "spike_trace_done": true,
+  "firesim_done": true,
+  "firesim_trace_done": true
+}
