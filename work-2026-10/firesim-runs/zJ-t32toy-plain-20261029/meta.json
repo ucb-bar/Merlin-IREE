@@ -1,0 +1,3 @@
+{"runId":"zJ-t32toy-plain-20261029","mode":"elf","arg":"firesim-elfs/zJ-t32toy-plain-20261029.elf","elf_sha256":"0e5b1321dd5dc7ad0e7e269065bc10afaf8ac896db98aee104b6db3ffbf97ce3","hw_config":"f2_gemmini_rocket_ddr3llc_60mhz","agfi":"agfi-02410ef1a8461b435",
+ "chipyard":"157dd69e49b9866be2bf8db390ee78bc38cd4438","firesim":"e1bdea8bb042b900995436ecc3d7c44100eb9da0",
+ "started":"2026-10-29T21:06:33+00:00","finished":"2026-10-29T21:10:29+00:00","exit_status":0,"results_dir":"results-workload/2026-10-29--21-09-54-dispatch-zJ-t32toy-plain-20261029"}
