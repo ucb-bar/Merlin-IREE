@@ -1,0 +1,1744 @@
+{
+  "recorded_utc": "2026-10-26T21:48:16.079850+00:00",
+  "repositories": [
+    {
+      "source": "/scratch/jack/Merlin-IREE",
+      "destination": "source/Merlin-IREE",
+      "commit": "bb64b5d83d3b2275f0da04da63610d0c94744634",
+      "status_sha256": "df93e3281f5bd7b59ec489c1098692183101165bfbcc43013a03443e9752f252",
+      "working_tree_status": " D AGENTS.md\n M build_tools/firesim/htif.ld\n D compiler/AGENTS.md\n M compiler/plugins/target/Gemmini/PluginRegistration.cpp\n M compiler/src/merlin/Dialect/Gemmini/Transforms/AttachCompilationInfo.cpp\n M compiler/src/merlin/Dialect/Gemmini/Transforms/LegalizeForLLVMExport.cpp\n M compiler/src/merlin/Dialect/Gemmini/Transforms/LowerTileToISA.cpp\n M compiler/src/merlin/Dialect/Gemmini/Transforms/Passes.td\n M compiler/src/merlin/Dialect/Gemmini/Transforms/Preprocess.cpp\n M compiler/src/merlin/Dialect/Gemmini/Transforms/tests/lower-tile-to-isa.mlir\n M compiler/src/merlin/Dialect/Gemmini/Transforms/tests/post-global-opt-hook.mlir\n M docs/reference/cli.md\n D kernels/qnn/AGENTS.md\n M mkdocs.yml\n D models/AGENTS.md\n D runtime/AGENTS.md\n D samples/AGENTS.md\n M samples/SaturnOPU/simple_embedding_ukernel/CMakeLists.txt\n D target_specs/AGENTS.md\n M tools/README.md\n D tools/archive/AGENTS.md\n D tools/build/AGENTS.md\n D tools/chipyard/AGENTS.md\n M tools/chipyard/bare_metal.py\n M tools/chipyard/cli.py\n D tools/compile/AGENTS.md\n D tools/mcp_servers/AGENTS.md\n D tools/perf/AGENTS.md\n D tools/run/AGENTS.md\n D tools/targetgen/AGENTS.md\n D tools/verify/AGENTS.md\n"
+    },
+    {
+      "source": "/scratch/jack/Merlin-IREE/third_party/iree_bar",
+      "destination": "source/Merlin-IREE/third_party/iree_bar",
+      "commit": "0f39f82b8364007da5c9dcc7ee2825812f9441ed",
+      "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "working_tree_status": ""
+    },
+    {
+      "source": "/scratch/jack/Merlin-IREE/third_party/iree_bar/third_party/googletest",
+      "destination": "source/Merlin-IREE/third_party/iree_bar/third_party/googletest",
+      "commit": "52204f78f94d7512df1f0f3bea1d47437a2c3a58",
+      "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "working_tree_status": ""
+    },
+    {
+      "source": "/scratch/jack/Merlin-IREE/third_party/iree_bar/third_party/llvm-project",
+      "destination": "source/Merlin-IREE/third_party/iree_bar/third_party/llvm-project",
+      "commit": "b2cd6b90cc5da8ed857bdc302b70f9b3c94b968c",
+      "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "working_tree_status": ""
+    },
+    {
+      "source": "/scratch/jack/Merlin-IREE/third_party/iree_bar/third_party/vulkan_headers",
+      "destination": "source/Merlin-IREE/third_party/iree_bar/third_party/vulkan_headers",
+      "commit": "df60f0316899460eeaaefa06d2dd7e4e300c1604",
+      "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "working_tree_status": ""
+    },
+    {
+      "source": "/scratch/jack/Merlin-IREE/third_party/iree_bar/third_party/benchmark",
+      "destination": "source/Merlin-IREE/third_party/iree_bar/third_party/benchmark",
+      "commit": "192ef10025eb2c4cdd392bc502f0c852196baa48",
+      "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "working_tree_status": ""
+    },
+    {
+      "source": "/scratch/jack/Merlin-IREE/third_party/iree_bar/third_party/tracy",
+      "destination": "source/Merlin-IREE/third_party/iree_bar/third_party/tracy",
+      "commit": "5479a42ef9346b64e6d1b860ae58aa8abdb0c7f6",
+      "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "working_tree_status": ""
+    },
+    {
+      "source": "/scratch/jack/Merlin-IREE/third_party/iree_bar/third_party/flatcc",
+      "destination": "source/Merlin-IREE/third_party/iree_bar/third_party/flatcc",
+      "commit": "9362cd00f0007d8cbee7bff86e90fb4b6b227ff3",
+      "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "working_tree_status": ""
+    },
+    {
+      "source": "/scratch/jack/Merlin-IREE/third_party/iree_bar/third_party/spirv_cross",
+      "destination": "source/Merlin-IREE/third_party/iree_bar/third_party/spirv_cross",
+      "commit": "7affe74d77f93a622bb5002789d5332d32e512ee",
+      "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "working_tree_status": ""
+    },
+    {
+      "source": "/scratch/jack/Merlin-IREE/third_party/iree_bar/third_party/webgpu-headers",
+      "destination": "source/Merlin-IREE/third_party/iree_bar/third_party/webgpu-headers",
+      "commit": "fa1c6ab4927ef1fa5731907b42b62ea93119866c",
+      "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "working_tree_status": ""
+    },
+    {
+      "source": "/scratch/jack/Merlin-IREE/third_party/iree_bar/third_party/musl",
+      "destination": "source/Merlin-IREE/third_party/iree_bar/third_party/musl",
+      "commit": "3f701faace7addc75d16dea8a6cd769fa5b3f260",
+      "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "working_tree_status": ""
+    },
+    {
+      "source": "/scratch/jack/Merlin-IREE/third_party/iree_bar/third_party/stablehlo",
+      "destination": "source/Merlin-IREE/third_party/iree_bar/third_party/stablehlo",
+      "commit": "46af9d3590bc712d1c9e2f8ef408d2ecbb6108a3",
+      "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "working_tree_status": ""
+    },
+    {
+      "source": "/scratch/jack/Merlin-IREE/third_party/iree_bar/third_party/torch-mlir",
+      "destination": "source/Merlin-IREE/third_party/iree_bar/third_party/torch-mlir",
+      "commit": "9e4efd08d0fa5306fe91eec30511aa1a0815c5be",
+      "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "working_tree_status": ""
+    },
+    {
+      "source": "/scratch/jack/Merlin-IREE/third_party/iree_bar/third_party/torch-mlir/externals/stablehlo",
+      "destination": "source/Merlin-IREE/third_party/iree_bar/third_party/torch-mlir/externals/stablehlo",
+      "commit": "e60f552e7ceb0b4aae81c28e2d80183b3453db17",
+      "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "working_tree_status": ""
+    },
+    {
+      "source": "/scratch/jack/Merlin-IREE/third_party/iree_bar/third_party/hip-build-deps",
+      "destination": "source/Merlin-IREE/third_party/iree_bar/third_party/hip-build-deps",
+      "commit": "f7d58d4b1b82896458dd52aebc7328f88eaa5b16",
+      "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "working_tree_status": ""
+    },
+    {
+      "source": "/scratch/jack/Merlin-IREE/third_party/iree_bar/third_party/hsa-runtime-headers",
+      "destination": "source/Merlin-IREE/third_party/iree_bar/third_party/hsa-runtime-headers",
+      "commit": "98297e81ce23bbf302c296aa318fa66fbfd6200f",
+      "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "working_tree_status": ""
+    }
+  ],
+  "prebuilt_files": [
+    {
+      "destination": "prebuilt/bin/FileCheck",
+      "source": "/scratch/jack/Merlin-IREE/build/host-merlin-release/install/bin/FileCheck",
+      "bytes": 1103576,
+      "mtime_utc": "2026-09-06T20:05:51+00:00"
+    },
+    {
+      "destination": "prebuilt/bin/clang-23",
+      "source": "/scratch/jack/Merlin-IREE/build/host-merlin-release/install/bin/clang-23",
+      "bytes": 207066736,
+      "mtime_utc": "2026-09-06T19:53:54+00:00"
+    },
+    {
+      "destination": "prebuilt/bin/iree-benchmark-executable",
+      "source": "/scratch/jack/Merlin-IREE/build/host-merlin-release/tools/iree-benchmark-executable",
+      "bytes": 1885760,
+      "mtime_utc": "2026-09-06T20:05:39.752534+00:00"
+    },
+    {
+      "destination": "prebuilt/bin/iree-benchmark-module",
+      "source": "/scratch/jack/Merlin-IREE/build/host-merlin-release/tools/iree-benchmark-module",
+      "bytes": 2268048,
+      "mtime_utc": "2026-09-06T20:05:39.755534+00:00"
+    },
+    {
+      "destination": "prebuilt/bin/iree-c-embed-data",
+      "source": "/scratch/jack/Merlin-IREE/build/host-merlin-release/tools/iree-c-embed-data",
+      "bytes": 35576,
+      "mtime_utc": "2026-08-31T01:09:37.979389+00:00"
+    },
+    {
+      "destination": "prebuilt/bin/iree-compile",
+      "source": "/scratch/jack/Merlin-IREE/build/host-merlin-release/tools/iree-compile",
+      "bytes": 6504,
+      "mtime_utc": "2026-09-09T18:40:14.158256+00:00"
+    },
+    {
+      "destination": "prebuilt/bin/iree-convert-parameters",
+      "source": "/scratch/jack/Merlin-IREE/build/host-merlin-release/tools/iree-convert-parameters",
+      "bytes": 734208,
+      "mtime_utc": "2026-09-06T20:05:39.738534+00:00"
+    },
+    {
+      "destination": "prebuilt/bin/iree-cpuinfo",
+      "source": "/scratch/jack/Merlin-IREE/build/host-merlin-release/tools/iree-cpuinfo",
+      "bytes": 175856,
+      "mtime_utc": "2026-09-06T20:05:39.744534+00:00"
+    },
+    {
+      "destination": "prebuilt/bin/iree-create-parameters",
+      "source": "/scratch/jack/Merlin-IREE/build/host-merlin-release/tools/iree-create-parameters",
+      "bytes": 254904,
+      "mtime_utc": "2026-09-06T20:05:39.759534+00:00"
+    },
+    {
+      "destination": "prebuilt/bin/iree-dump-instruments",
+      "source": "/scratch/jack/Merlin-IREE/build/host-merlin-release/tools/iree-dump-instruments",
+      "bytes": 190048,
+      "mtime_utc": "2026-09-06T20:05:52.010818+00:00"
+    },
+    {
+      "destination": "prebuilt/bin/iree-dump-module",
+      "source": "/scratch/jack/Merlin-IREE/build/host-merlin-release/tools/iree-dump-module",
+      "bytes": 612184,
+      "mtime_utc": "2026-09-06T20:05:39.870537+00:00"
+    },
+    {
+      "destination": "prebuilt/bin/iree-dump-parameters",
+      "source": "/scratch/jack/Merlin-IREE/build/host-merlin-release/tools/iree-dump-parameters",
+      "bytes": 703680,
+      "mtime_utc": "2026-09-06T20:05:39.857537+00:00"
+    },
+    {
+      "destination": "prebuilt/bin/iree-encode-parameters",
+      "source": "/scratch/jack/Merlin-IREE/build/host-merlin-release/tools/iree-encode-parameters",
+      "bytes": 1680936,
+      "mtime_utc": "2026-09-06T20:05:52.089820+00:00"
+    },
+    {
+      "destination": "prebuilt/bin/iree-fatelf",
+      "source": "/scratch/jack/Merlin-IREE/build/host-merlin-release/tools/iree-fatelf",
+      "bytes": 201968,
+      "mtime_utc": "2026-09-06T20:05:52.006818+00:00"
+    },
+    {
+      "destination": "prebuilt/bin/iree-flatcc-cli",
+      "source": "/scratch/jack/Merlin-IREE/build/host-merlin-release/tools/iree-flatcc-cli",
+      "bytes": 452464,
+      "mtime_utc": "2026-09-08T21:13:28.859329+00:00"
+    },
+    {
+      "destination": "prebuilt/bin/iree-link",
+      "source": "/scratch/jack/Merlin-IREE/build/host-merlin-release/tools/iree-link",
+      "bytes": 6584,
+      "mtime_utc": "2026-09-06T20:07:08.385570+00:00"
+    },
+    {
+      "destination": "prebuilt/bin/iree-lld",
+      "source": "/scratch/jack/Merlin-IREE/build/host-merlin-release/tools/iree-lld",
+      "bytes": 6584,
+      "mtime_utc": "2026-09-06T20:07:08.390570+00:00"
+    },
+    {
+      "destination": "prebuilt/bin/iree-mlir-lsp-server",
+      "source": "/scratch/jack/Merlin-IREE/build/host-merlin-release/tools/iree-mlir-lsp-server",
+      "bytes": 6600,
+      "mtime_utc": "2026-09-06T20:07:08.385570+00:00"
+    },
+    {
+      "destination": "prebuilt/bin/iree-opt",
+      "source": "/scratch/jack/Merlin-IREE/build/host-merlin-release/tools/iree-opt",
+      "bytes": 6472,
+      "mtime_utc": "2026-09-07T08:53:32.787545+00:00"
+    },
+    {
+      "destination": "prebuilt/bin/iree-reduce",
+      "source": "/scratch/jack/Merlin-IREE/build/host-merlin-release/tools/iree-reduce",
+      "bytes": 6584,
+      "mtime_utc": "2026-09-06T20:07:08.385570+00:00"
+    },
+    {
+      "destination": "prebuilt/bin/iree-run-mlir",
+      "source": "/scratch/jack/Merlin-IREE/build/host-merlin-release/tools/iree-run-mlir",
+      "bytes": 1734472,
+      "mtime_utc": "2026-09-06T20:07:08.421571+00:00"
+    },
+    {
+      "destination": "prebuilt/bin/iree-run-module",
+      "source": "/scratch/jack/Merlin-IREE/build/host-merlin-release/tools/iree-run-module",
+      "bytes": 1714312,
+      "mtime_utc": "2026-09-06T20:05:39.945539+00:00"
+    },
+    {
+      "destination": "prebuilt/bin/iree-tblgen",
+      "source": "/scratch/jack/Merlin-IREE/build/host-merlin-release/tools/iree-tblgen",
+      "bytes": 2664528,
+      "mtime_utc": "2026-09-08T21:13:23.818223+00:00"
+    },
+    {
+      "destination": "prebuilt/bin/iree-tokenize",
+      "source": "/scratch/jack/Merlin-IREE/build/host-merlin-release/tools/iree-tokenize",
+      "bytes": 833296,
+      "mtime_utc": "2026-09-06T20:05:52.151822+00:00"
+    },
+    {
+      "destination": "prebuilt/bin/llvm-link",
+      "source": "/scratch/jack/Merlin-IREE/build/host-merlin-release/install/bin/llvm-link",
+      "bytes": 7710312,
+      "mtime_utc": "2026-09-06T19:55:49+00:00"
+    },
+    {
+      "destination": "prebuilt/bin/llvm-objdump",
+      "source": "/scratch/jack/Merlin-IREE/build/host-vanilla-release/llvm-project/bin/llvm-objdump",
+      "bytes": 27249200,
+      "mtime_utc": "2026-08-06T07:01:57.335132+00:00"
+    },
+    {
+      "destination": "prebuilt/bin/mlir-translate",
+      "source": "/scratch/jack/Merlin-IREE/build/host-vanilla-release/llvm-project/bin/mlir-translate",
+      "bytes": 69384008,
+      "mtime_utc": "2026-08-26T00:44:34.170156+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/libIREECompiler.so",
+      "source": "/scratch/jack/Merlin-IREE/build/host-merlin-release/lib/libIREECompiler.so",
+      "bytes": 383578528,
+      "mtime_utc": "2026-09-09T18:40:13.940252+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/libgcc_s.so.1",
+      "source": "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+      "bytes": 183024,
+      "mtime_utc": "2025-12-18T21:36:50+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/libstdc++.so.6",
+      "source": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33",
+      "bytes": 2592224,
+      "mtime_utc": "2025-12-18T21:36:50+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__clang_cuda_builtin_vars.h",
+      "source": "/scratch/jack/clang23_resource/include/__clang_cuda_builtin_vars.h",
+      "bytes": 4892,
+      "mtime_utc": "2026-08-27T06:50:18.552645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__clang_cuda_cmath.h",
+      "source": "/scratch/jack/clang23_resource/include/__clang_cuda_cmath.h",
+      "bytes": 18493,
+      "mtime_utc": "2026-08-27T06:50:18.552645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__clang_cuda_complex_builtins.h",
+      "source": "/scratch/jack/clang23_resource/include/__clang_cuda_complex_builtins.h",
+      "bytes": 9140,
+      "mtime_utc": "2026-08-27T06:50:18.552645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__clang_cuda_device_functions.h",
+      "source": "/scratch/jack/clang23_resource/include/__clang_cuda_device_functions.h",
+      "bytes": 58753,
+      "mtime_utc": "2026-08-27T06:50:18.553645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__clang_cuda_intrinsics.h",
+      "source": "/scratch/jack/clang23_resource/include/__clang_cuda_intrinsics.h",
+      "bytes": 46120,
+      "mtime_utc": "2026-08-27T06:50:18.553645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__clang_cuda_libdevice_declares.h",
+      "source": "/scratch/jack/clang23_resource/include/__clang_cuda_libdevice_declares.h",
+      "bytes": 22414,
+      "mtime_utc": "2026-08-27T06:50:18.553645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__clang_cuda_math.h",
+      "source": "/scratch/jack/clang23_resource/include/__clang_cuda_math.h",
+      "bytes": 16602,
+      "mtime_utc": "2026-08-27T06:50:18.554645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__clang_cuda_math_forward_declares.h",
+      "source": "/scratch/jack/clang23_resource/include/__clang_cuda_math_forward_declares.h",
+      "bytes": 8694,
+      "mtime_utc": "2026-08-27T06:50:18.553645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__clang_cuda_runtime_wrapper.h",
+      "source": "/scratch/jack/clang23_resource/include/__clang_cuda_runtime_wrapper.h",
+      "bytes": 18624,
+      "mtime_utc": "2026-08-27T06:50:18.554645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__clang_cuda_texture_intrinsics.h",
+      "source": "/scratch/jack/clang23_resource/include/__clang_cuda_texture_intrinsics.h",
+      "bytes": 56680,
+      "mtime_utc": "2026-08-27T06:50:18.554645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__clang_hip_cmath.h",
+      "source": "/scratch/jack/clang23_resource/include/__clang_hip_cmath.h",
+      "bytes": 27196,
+      "mtime_utc": "2026-08-27T06:50:18.554645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__clang_hip_libdevice_declares.h",
+      "source": "/scratch/jack/clang23_resource/include/__clang_hip_libdevice_declares.h",
+      "bytes": 20133,
+      "mtime_utc": "2026-08-27T06:50:18.555645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__clang_hip_math.h",
+      "source": "/scratch/jack/clang23_resource/include/__clang_hip_math.h",
+      "bytes": 36682,
+      "mtime_utc": "2026-08-27T06:50:18.555645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__clang_hip_runtime_wrapper.h",
+      "source": "/scratch/jack/clang23_resource/include/__clang_hip_runtime_wrapper.h",
+      "bytes": 5281,
+      "mtime_utc": "2026-08-27T06:50:18.555645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__clang_hip_stdlib.h",
+      "source": "/scratch/jack/clang23_resource/include/__clang_hip_stdlib.h",
+      "bytes": 1223,
+      "mtime_utc": "2026-08-27T06:50:18.555645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__clang_spirv_builtins.h",
+      "source": "/scratch/jack/clang23_resource/include/__clang_spirv_builtins.h",
+      "bytes": 9174,
+      "mtime_utc": "2026-08-27T06:50:18.555645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__float_float.h",
+      "source": "/scratch/jack/clang23_resource/include/__float_float.h",
+      "bytes": 5890,
+      "mtime_utc": "2026-08-27T06:50:18.559645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__float_header_macro.h",
+      "source": "/scratch/jack/clang23_resource/include/__float_header_macro.h",
+      "bytes": 449,
+      "mtime_utc": "2026-08-27T06:50:18.559645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__float_infinity_nan.h",
+      "source": "/scratch/jack/clang23_resource/include/__float_infinity_nan.h",
+      "bytes": 613,
+      "mtime_utc": "2026-08-27T06:50:18.559645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__stdarg___gnuc_va_list.h",
+      "source": "/scratch/jack/clang23_resource/include/__stdarg___gnuc_va_list.h",
+      "bytes": 467,
+      "mtime_utc": "2026-08-27T06:50:18.577646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__stdarg___va_copy.h",
+      "source": "/scratch/jack/clang23_resource/include/__stdarg___va_copy.h",
+      "bytes": 445,
+      "mtime_utc": "2026-08-27T06:50:18.578646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__stdarg_header_macro.h",
+      "source": "/scratch/jack/clang23_resource/include/__stdarg_header_macro.h",
+      "bytes": 417,
+      "mtime_utc": "2026-08-27T06:50:18.578646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__stdarg_va_arg.h",
+      "source": "/scratch/jack/clang23_resource/include/__stdarg_va_arg.h",
+      "bytes": 771,
+      "mtime_utc": "2026-08-27T06:50:18.578646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__stdarg_va_copy.h",
+      "source": "/scratch/jack/clang23_resource/include/__stdarg_va_copy.h",
+      "bytes": 451,
+      "mtime_utc": "2026-08-27T06:50:18.578646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__stdarg_va_list.h",
+      "source": "/scratch/jack/clang23_resource/include/__stdarg_va_list.h",
+      "bytes": 448,
+      "mtime_utc": "2026-08-27T06:50:18.578646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__stddef_header_macro.h",
+      "source": "/scratch/jack/clang23_resource/include/__stddef_header_macro.h",
+      "bytes": 417,
+      "mtime_utc": "2026-08-27T06:50:18.579646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__stddef_max_align_t.h",
+      "source": "/scratch/jack/clang23_resource/include/__stddef_max_align_t.h",
+      "bytes": 857,
+      "mtime_utc": "2026-08-27T06:50:18.579646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__stddef_null.h",
+      "source": "/scratch/jack/clang23_resource/include/__stddef_null.h",
+      "bytes": 875,
+      "mtime_utc": "2026-08-27T06:50:18.579646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__stddef_nullptr_t.h",
+      "source": "/scratch/jack/clang23_resource/include/__stddef_nullptr_t.h",
+      "bytes": 958,
+      "mtime_utc": "2026-08-27T06:50:18.579646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__stddef_offsetof.h",
+      "source": "/scratch/jack/clang23_resource/include/__stddef_offsetof.h",
+      "bytes": 708,
+      "mtime_utc": "2026-08-27T06:50:18.580646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__stddef_ptrdiff_t.h",
+      "source": "/scratch/jack/clang23_resource/include/__stddef_ptrdiff_t.h",
+      "bytes": 717,
+      "mtime_utc": "2026-08-27T06:50:18.580646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__stddef_rsize_t.h",
+      "source": "/scratch/jack/clang23_resource/include/__stddef_rsize_t.h",
+      "bytes": 710,
+      "mtime_utc": "2026-08-27T06:50:18.580646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__stddef_size_t.h",
+      "source": "/scratch/jack/clang23_resource/include/__stddef_size_t.h",
+      "bytes": 708,
+      "mtime_utc": "2026-08-27T06:50:18.580646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__stddef_unreachable.h",
+      "source": "/scratch/jack/clang23_resource/include/__stddef_unreachable.h",
+      "bytes": 735,
+      "mtime_utc": "2026-08-27T06:50:18.580646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__stddef_wchar_t.h",
+      "source": "/scratch/jack/clang23_resource/include/__stddef_wchar_t.h",
+      "bytes": 853,
+      "mtime_utc": "2026-08-27T06:50:18.580646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__stddef_wint_t.h",
+      "source": "/scratch/jack/clang23_resource/include/__stddef_wint_t.h",
+      "bytes": 443,
+      "mtime_utc": "2026-08-27T06:50:18.581646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__wmmintrin_aes.h",
+      "source": "/scratch/jack/clang23_resource/include/__wmmintrin_aes.h",
+      "bytes": 5269,
+      "mtime_utc": "2026-08-27T06:50:18.585646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/__wmmintrin_pclmul.h",
+      "source": "/scratch/jack/clang23_resource/include/__wmmintrin_pclmul.h",
+      "bytes": 2036,
+      "mtime_utc": "2026-08-27T06:50:18.585646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/adcintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/adcintrin.h",
+      "bytes": 5565,
+      "mtime_utc": "2026-08-27T06:50:18.535645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/adxintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/adxintrin.h",
+      "bytes": 3447,
+      "mtime_utc": "2026-08-27T06:50:18.536645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/altivec.h",
+      "source": "/scratch/jack/clang23_resource/include/altivec.h",
+      "bytes": 715031,
+      "mtime_utc": "2026-08-27T06:50:18.537645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/amdgpuintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/amdgpuintrin.h",
+      "bytes": 7357,
+      "mtime_utc": "2026-08-27T06:50:18.538645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/amdhsa_abi.h",
+      "source": "/scratch/jack/clang23_resource/include/amdhsa_abi.h",
+      "bytes": 3688,
+      "mtime_utc": "2026-08-27T06:50:18.538645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/ammintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/ammintrin.h",
+      "bytes": 7739,
+      "mtime_utc": "2026-08-27T06:50:18.538645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/amo.h",
+      "source": "/scratch/jack/clang23_resource/include/amo.h",
+      "bytes": 6669,
+      "mtime_utc": "2026-08-27T06:50:18.538645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/amxavx512intrin.h",
+      "source": "/scratch/jack/clang23_resource/include/amxavx512intrin.h",
+      "bytes": 19744,
+      "mtime_utc": "2026-08-27T06:50:18.539645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/amxcomplexintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/amxcomplexintrin.h",
+      "bytes": 6933,
+      "mtime_utc": "2026-08-27T06:50:18.539645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/amxfp16intrin.h",
+      "source": "/scratch/jack/clang23_resource/include/amxfp16intrin.h",
+      "bytes": 3327,
+      "mtime_utc": "2026-08-27T06:50:18.539645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/amxfp8intrin.h",
+      "source": "/scratch/jack/clang23_resource/include/amxfp8intrin.h",
+      "bytes": 8839,
+      "mtime_utc": "2026-08-27T06:50:18.539645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/amxintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/amxintrin.h",
+      "bytes": 20212,
+      "mtime_utc": "2026-08-27T06:50:18.540645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/amxmovrsintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/amxmovrsintrin.h",
+      "bytes": 2290,
+      "mtime_utc": "2026-08-27T06:50:18.540645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/amxtf32intrin.h",
+      "source": "/scratch/jack/clang23_resource/include/amxtf32intrin.h",
+      "bytes": 3562,
+      "mtime_utc": "2026-08-27T06:50:18.540645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/andes_vector.h",
+      "source": "/scratch/jack/clang23_resource/include/andes_vector.h",
+      "bytes": 518,
+      "mtime_utc": "2026-08-27T06:50:18.540645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/arm64intr.h",
+      "source": "/scratch/jack/clang23_resource/include/arm64intr.h",
+      "bytes": 993,
+      "mtime_utc": "2026-08-27T06:50:18.540645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/arm_acle.h",
+      "source": "/scratch/jack/clang23_resource/include/arm_acle.h",
+      "bytes": 31374,
+      "mtime_utc": "2026-08-27T06:50:18.540645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/arm_cmse.h",
+      "source": "/scratch/jack/clang23_resource/include/arm_cmse.h",
+      "bytes": 6357,
+      "mtime_utc": "2026-08-27T06:50:18.540645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/arm_neon_sve_bridge.h",
+      "source": "/scratch/jack/clang23_resource/include/arm_neon_sve_bridge.h",
+      "bytes": 9708,
+      "mtime_utc": "2026-08-27T06:50:18.540645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/armintr.h",
+      "source": "/scratch/jack/clang23_resource/include/armintr.h",
+      "bytes": 843,
+      "mtime_utc": "2026-08-27T06:50:18.540645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx10_2_512bf16intrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx10_2_512bf16intrin.h",
+      "bytes": 23626,
+      "mtime_utc": "2026-08-27T06:50:18.541645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx10_2_512convertintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx10_2_512convertintrin.h",
+      "bytes": 13192,
+      "mtime_utc": "2026-08-27T06:50:18.541645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx10_2_512minmaxintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx10_2_512minmaxintrin.h",
+      "bytes": 7526,
+      "mtime_utc": "2026-08-27T06:50:18.541645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx10_2_512niintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx10_2_512niintrin.h",
+      "bytes": 14039,
+      "mtime_utc": "2026-08-27T06:50:18.541645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx10_2_512satcvtdsintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx10_2_512satcvtdsintrin.h",
+      "bytes": 13799,
+      "mtime_utc": "2026-08-27T06:50:18.541645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx10_2_512satcvtintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx10_2_512satcvtintrin.h",
+      "bytes": 16999,
+      "mtime_utc": "2026-08-27T06:50:18.541645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx10_2bf16intrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx10_2bf16intrin.h",
+      "bytes": 45094,
+      "mtime_utc": "2026-08-27T06:50:18.541645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx10_2convertintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx10_2convertintrin.h",
+      "bytes": 108821,
+      "mtime_utc": "2026-08-27T06:50:18.541645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx10_2copyintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx10_2copyintrin.h",
+      "bytes": 2410,
+      "mtime_utc": "2026-08-27T06:50:18.542645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx10_2minmaxintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx10_2minmaxintrin.h",
+      "bytes": 13680,
+      "mtime_utc": "2026-08-27T06:50:18.542645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx10_2niintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx10_2niintrin.h",
+      "bytes": 17003,
+      "mtime_utc": "2026-08-27T06:50:18.542645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx10_2satcvtdsintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx10_2satcvtdsintrin.h",
+      "bytes": 15253,
+      "mtime_utc": "2026-08-27T06:50:18.542645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx10_2satcvtintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx10_2satcvtintrin.h",
+      "bytes": 18140,
+      "mtime_utc": "2026-08-27T06:50:18.542645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx2intrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx2intrin.h",
+      "bytes": 194216,
+      "mtime_utc": "2026-08-27T06:50:18.543645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx512bf16intrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx512bf16intrin.h",
+      "bytes": 11211,
+      "mtime_utc": "2026-08-27T06:50:18.543645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx512bitalgintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx512bitalgintrin.h",
+      "bytes": 2718,
+      "mtime_utc": "2026-08-27T06:50:18.543645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx512bwintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx512bwintrin.h",
+      "bytes": 79636,
+      "mtime_utc": "2026-08-27T06:50:18.544645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx512cdintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx512cdintrin.h",
+      "bytes": 4265,
+      "mtime_utc": "2026-08-27T06:50:18.544645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx512dqintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx512dqintrin.h",
+      "bytes": 61199,
+      "mtime_utc": "2026-08-27T06:50:18.544645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx512fintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx512fintrin.h",
+      "bytes": 390814,
+      "mtime_utc": "2026-08-27T06:50:18.545645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx512fp16intrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx512fp16intrin.h",
+      "bytes": 159122,
+      "mtime_utc": "2026-08-27T06:50:18.546645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx512ifmaintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx512ifmaintrin.h",
+      "bytes": 2677,
+      "mtime_utc": "2026-08-27T06:50:18.546645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx512ifmavlintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx512ifmavlintrin.h",
+      "bytes": 6126,
+      "mtime_utc": "2026-08-27T06:50:18.546645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx512vbmi2intrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx512vbmi2intrin.h",
+      "bytes": 14069,
+      "mtime_utc": "2026-08-27T06:50:18.546645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx512vbmiintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx512vbmiintrin.h",
+      "bytes": 4071,
+      "mtime_utc": "2026-08-27T06:50:18.547645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx512vbmivlintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx512vbmivlintrin.h",
+      "bytes": 7890,
+      "mtime_utc": "2026-08-27T06:50:18.547645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx512vlbf16intrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx512vlbf16intrin.h",
+      "bytes": 20315,
+      "mtime_utc": "2026-08-27T06:50:18.547645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx512vlbitalgintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx512vlbitalgintrin.h",
+      "bytes": 5074,
+      "mtime_utc": "2026-08-27T06:50:18.547645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx512vlbwintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx512vlbwintrin.h",
+      "bytes": 127001,
+      "mtime_utc": "2026-08-27T06:50:18.547645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx512vlcdintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx512vlcdintrin.h",
+      "bytes": 8065,
+      "mtime_utc": "2026-08-27T06:50:18.547645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx512vldqintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx512vldqintrin.h",
+      "bytes": 48468,
+      "mtime_utc": "2026-08-27T06:50:18.548645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx512vlfp16intrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx512vlfp16intrin.h",
+      "bytes": 87676,
+      "mtime_utc": "2026-08-27T06:50:18.548645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx512vlintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx512vlintrin.h",
+      "bytes": 327382,
+      "mtime_utc": "2026-08-27T06:50:18.549645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx512vlvbmi2intrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx512vlvbmi2intrin.h",
+      "bytes": 27609,
+      "mtime_utc": "2026-08-27T06:50:18.550645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx512vlvnniintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx512vlvnniintrin.h",
+      "bytes": 14254,
+      "mtime_utc": "2026-08-27T06:50:18.550645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx512vlvp2intersectintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx512vlvp2intersectintrin.h",
+      "bytes": 4782,
+      "mtime_utc": "2026-08-27T06:50:18.550645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx512vnniintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx512vnniintrin.h",
+      "bytes": 4394,
+      "mtime_utc": "2026-08-27T06:50:18.550645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx512vp2intersectintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx512vp2intersectintrin.h",
+      "bytes": 3055,
+      "mtime_utc": "2026-08-27T06:50:18.550645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx512vpopcntdqintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx512vpopcntdqintrin.h",
+      "bytes": 2462,
+      "mtime_utc": "2026-08-27T06:50:18.550645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avx512vpopcntdqvlintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avx512vpopcntdqvlintrin.h",
+      "bytes": 4245,
+      "mtime_utc": "2026-08-27T06:50:18.550645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avxifmaintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avxifmaintrin.h",
+      "bytes": 6731,
+      "mtime_utc": "2026-08-27T06:50:18.550645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avxintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avxintrin.h",
+      "bytes": 203451,
+      "mtime_utc": "2026-08-27T06:50:18.551645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avxneconvertintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avxneconvertintrin.h",
+      "bytes": 14432,
+      "mtime_utc": "2026-08-27T06:50:18.551645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avxvnniint16intrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avxvnniint16intrin.h",
+      "bytes": 16363,
+      "mtime_utc": "2026-08-27T06:50:18.551645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avxvnniint8intrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avxvnniint8intrin.h",
+      "bytes": 17915,
+      "mtime_utc": "2026-08-27T06:50:18.551645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/avxvnniintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/avxvnniintrin.h",
+      "bytes": 11066,
+      "mtime_utc": "2026-08-27T06:50:18.551645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/bmi2intrin.h",
+      "source": "/scratch/jack/clang23_resource/include/bmi2intrin.h",
+      "bytes": 7546,
+      "mtime_utc": "2026-08-27T06:50:18.551645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/bmiintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/bmiintrin.h",
+      "bytes": 20350,
+      "mtime_utc": "2026-08-27T06:50:18.551645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/builtins.h",
+      "source": "/scratch/jack/clang23_resource/include/builtins.h",
+      "bytes": 846,
+      "mtime_utc": "2026-08-27T06:50:18.551645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/cet.h",
+      "source": "/scratch/jack/clang23_resource/include/cet.h",
+      "bytes": 1527,
+      "mtime_utc": "2026-08-27T06:50:18.551645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/cetintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/cetintrin.h",
+      "bytes": 3351,
+      "mtime_utc": "2026-08-27T06:50:18.552645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/cldemoteintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/cldemoteintrin.h",
+      "bytes": 1207,
+      "mtime_utc": "2026-08-27T06:50:18.556645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/clflushoptintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/clflushoptintrin.h",
+      "bytes": 1193,
+      "mtime_utc": "2026-08-27T06:50:18.556645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/clwbintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/clwbintrin.h",
+      "bytes": 1229,
+      "mtime_utc": "2026-08-27T06:50:18.556645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/clzerointrin.h",
+      "source": "/scratch/jack/clang23_resource/include/clzerointrin.h",
+      "bytes": 1220,
+      "mtime_utc": "2026-08-27T06:50:18.556645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/cmpccxaddintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/cmpccxaddintrin.h",
+      "bytes": 2383,
+      "mtime_utc": "2026-08-27T06:50:18.556645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/cpuid.h",
+      "source": "/scratch/jack/clang23_resource/include/cpuid.h",
+      "bytes": 17268,
+      "mtime_utc": "2026-08-27T06:50:18.557645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/crc32intrin.h",
+      "source": "/scratch/jack/clang23_resource/include/crc32intrin.h",
+      "bytes": 3645,
+      "mtime_utc": "2026-08-27T06:50:18.557645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/emmintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/emmintrin.h",
+      "bytes": 198225,
+      "mtime_utc": "2026-08-27T06:50:18.558645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/endian.h",
+      "source": "/scratch/jack/clang23_resource/include/endian.h",
+      "bytes": 3568,
+      "mtime_utc": "2026-08-27T06:50:18.558645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/enqcmdintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/enqcmdintrin.h",
+      "bytes": 2167,
+      "mtime_utc": "2026-08-27T06:50:18.558645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/f16cintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/f16cintrin.h",
+      "bytes": 6357,
+      "mtime_utc": "2026-08-27T06:50:18.558645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/float.h",
+      "source": "/scratch/jack/clang23_resource/include/float.h",
+      "bytes": 1416,
+      "mtime_utc": "2026-08-27T06:50:18.559645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/fma4intrin.h",
+      "source": "/scratch/jack/clang23_resource/include/fma4intrin.h",
+      "bytes": 8267,
+      "mtime_utc": "2026-08-27T06:50:18.559645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/fmaintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/fmaintrin.h",
+      "bytes": 30808,
+      "mtime_utc": "2026-08-27T06:50:18.560645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/fxsrintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/fxsrintrin.h",
+      "bytes": 2890,
+      "mtime_utc": "2026-08-27T06:50:18.560645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/gfniintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/gfniintrin.h",
+      "bytes": 10063,
+      "mtime_utc": "2026-08-27T06:50:18.560645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/gpuintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/gpuintrin.h",
+      "bytes": 13966,
+      "mtime_utc": "2026-08-27T06:50:18.560645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/hexagon_circ_brev_intrinsics.h",
+      "source": "/scratch/jack/clang23_resource/include/hexagon_circ_brev_intrinsics.h",
+      "bytes": 15966,
+      "mtime_utc": "2026-08-27T06:50:18.560645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/hexagon_protos.h",
+      "source": "/scratch/jack/clang23_resource/include/hexagon_protos.h",
+      "bytes": 383410,
+      "mtime_utc": "2026-08-27T06:50:18.562645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/hexagon_types.h",
+      "source": "/scratch/jack/clang23_resource/include/hexagon_types.h",
+      "bytes": 134014,
+      "mtime_utc": "2026-08-27T06:50:18.563645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/hlsl.h",
+      "source": "/scratch/jack/clang23_resource/include/hlsl.h",
+      "bytes": 1149,
+      "mtime_utc": "2026-08-27T06:50:18.563645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/hresetintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/hresetintrin.h",
+      "bytes": 1395,
+      "mtime_utc": "2026-08-27T06:50:18.563645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/htmintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/htmintrin.h",
+      "bytes": 6283,
+      "mtime_utc": "2026-08-27T06:50:18.563645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/htmxlintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/htmxlintrin.h",
+      "bytes": 9225,
+      "mtime_utc": "2026-08-27T06:50:18.563645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/hvx_hexagon_protos.h",
+      "source": "/scratch/jack/clang23_resource/include/hvx_hexagon_protos.h",
+      "bytes": 277560,
+      "mtime_utc": "2026-08-27T06:50:18.564646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/ia32intrin.h",
+      "source": "/scratch/jack/clang23_resource/include/ia32intrin.h",
+      "bytes": 25986,
+      "mtime_utc": "2026-08-27T06:50:18.565645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/immintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/immintrin.h",
+      "bytes": 16410,
+      "mtime_utc": "2026-08-27T06:50:18.565645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/intrin.h",
+      "source": "/scratch/jack/clang23_resource/include/intrin.h",
+      "bytes": 19808,
+      "mtime_utc": "2026-08-27T06:50:18.565645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/intrin0.h",
+      "source": "/scratch/jack/clang23_resource/include/intrin0.h",
+      "bytes": 14093,
+      "mtime_utc": "2026-08-27T06:50:18.565645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/inttypes.h",
+      "source": "/scratch/jack/clang23_resource/include/inttypes.h",
+      "bytes": 2427,
+      "mtime_utc": "2026-08-27T06:50:18.566645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/invpcidintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/invpcidintrin.h",
+      "bytes": 764,
+      "mtime_utc": "2026-08-27T06:50:18.566645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/iso646.h",
+      "source": "/scratch/jack/clang23_resource/include/iso646.h",
+      "bytes": 763,
+      "mtime_utc": "2026-08-27T06:50:18.566645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/keylockerintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/keylockerintrin.h",
+      "bytes": 17973,
+      "mtime_utc": "2026-08-27T06:50:18.566645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/larchintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/larchintrin.h",
+      "bytes": 8740,
+      "mtime_utc": "2026-08-27T06:50:18.567646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/lasxintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/lasxintrin.h",
+      "bytes": 149402,
+      "mtime_utc": "2026-08-27T06:50:18.567646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/limits.h",
+      "source": "/scratch/jack/clang23_resource/include/limits.h",
+      "bytes": 3794,
+      "mtime_utc": "2026-08-27T06:50:18.567646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/lsxintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/lsxintrin.h",
+      "bytes": 137936,
+      "mtime_utc": "2026-08-27T06:50:18.568645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/lwpintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/lwpintrin.h",
+      "bytes": 5115,
+      "mtime_utc": "2026-08-27T06:50:18.569646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/lzcntintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/lzcntintrin.h",
+      "bytes": 3659,
+      "mtime_utc": "2026-08-27T06:50:18.569646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/mm3dnow.h",
+      "source": "/scratch/jack/clang23_resource/include/mm3dnow.h",
+      "bytes": 729,
+      "mtime_utc": "2026-08-27T06:50:18.569646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/mm_malloc.h",
+      "source": "/scratch/jack/clang23_resource/include/mm_malloc.h",
+      "bytes": 1929,
+      "mtime_utc": "2026-08-27T06:50:18.569646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/mmintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/mmintrin.h",
+      "bytes": 62224,
+      "mtime_utc": "2026-08-27T06:50:18.569646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/movdirintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/movdirintrin.h",
+      "bytes": 1612,
+      "mtime_utc": "2026-08-27T06:50:18.570646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/movrs_avx10_2_512intrin.h",
+      "source": "/scratch/jack/clang23_resource/include/movrs_avx10_2_512intrin.h",
+      "bytes": 3939,
+      "mtime_utc": "2026-08-27T06:50:18.570646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/movrs_avx10_2intrin.h",
+      "source": "/scratch/jack/clang23_resource/include/movrs_avx10_2intrin.h",
+      "bytes": 6970,
+      "mtime_utc": "2026-08-27T06:50:18.570646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/movrsintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/movrsintrin.h",
+      "bytes": 2025,
+      "mtime_utc": "2026-08-27T06:50:18.570646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/msa.h",
+      "source": "/scratch/jack/clang23_resource/include/msa.h",
+      "bytes": 25615,
+      "mtime_utc": "2026-08-27T06:50:18.570646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/mwaitxintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/mwaitxintrin.h",
+      "bytes": 2244,
+      "mtime_utc": "2026-08-27T06:50:18.571645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/nmmintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/nmmintrin.h",
+      "bytes": 709,
+      "mtime_utc": "2026-08-27T06:50:18.571645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/nvptxintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/nvptxintrin.h",
+      "bytes": 7786,
+      "mtime_utc": "2026-08-27T06:50:18.571645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/opencl-c-base.h",
+      "source": "/scratch/jack/clang23_resource/include/opencl-c-base.h",
+      "bytes": 28885,
+      "mtime_utc": "2026-08-27T06:50:18.571645+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/opencl-c.h",
+      "source": "/scratch/jack/clang23_resource/include/opencl-c.h",
+      "bytes": 919809,
+      "mtime_utc": "2026-08-27T06:50:18.573646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/pconfigintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/pconfigintrin.h",
+      "bytes": 1216,
+      "mtime_utc": "2026-08-27T06:50:18.573646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/pkuintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/pkuintrin.h",
+      "bytes": 934,
+      "mtime_utc": "2026-08-27T06:50:18.574646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/pmmintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/pmmintrin.h",
+      "bytes": 11277,
+      "mtime_utc": "2026-08-27T06:50:18.574646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/popcntintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/popcntintrin.h",
+      "bytes": 1948,
+      "mtime_utc": "2026-08-27T06:50:18.574646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/prfchiintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/prfchiintrin.h",
+      "bytes": 2073,
+      "mtime_utc": "2026-08-27T06:50:18.574646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/prfchwintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/prfchwintrin.h",
+      "bytes": 1842,
+      "mtime_utc": "2026-08-27T06:50:18.574646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/ptrauth.h",
+      "source": "/scratch/jack/clang23_resource/include/ptrauth.h",
+      "bytes": 21140,
+      "mtime_utc": "2026-08-27T06:50:18.575646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/ptwriteintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/ptwriteintrin.h",
+      "bytes": 1076,
+      "mtime_utc": "2026-08-27T06:50:18.575646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/raointintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/raointintrin.h",
+      "bytes": 6748,
+      "mtime_utc": "2026-08-27T06:50:18.575646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/rdpruintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/rdpruintrin.h",
+      "bytes": 1624,
+      "mtime_utc": "2026-08-27T06:50:18.575646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/rdseedintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/rdseedintrin.h",
+      "bytes": 2919,
+      "mtime_utc": "2026-08-27T06:50:18.576646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/riscv_bitmanip.h",
+      "source": "/scratch/jack/clang23_resource/include/riscv_bitmanip.h",
+      "bytes": 5725,
+      "mtime_utc": "2026-08-27T06:50:18.576646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/riscv_corev_alu.h",
+      "source": "/scratch/jack/clang23_resource/include/riscv_corev_alu.h",
+      "bytes": 4033,
+      "mtime_utc": "2026-08-27T06:50:18.576646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/riscv_crypto.h",
+      "source": "/scratch/jack/clang23_resource/include/riscv_crypto.h",
+      "bytes": 5211,
+      "mtime_utc": "2026-08-27T06:50:18.576646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/riscv_mips.h",
+      "source": "/scratch/jack/clang23_resource/include/riscv_mips.h",
+      "bytes": 991,
+      "mtime_utc": "2026-08-27T06:50:18.576646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/riscv_nds.h",
+      "source": "/scratch/jack/clang23_resource/include/riscv_nds.h",
+      "bytes": 2416,
+      "mtime_utc": "2026-08-27T06:50:18.576646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/riscv_ntlh.h",
+      "source": "/scratch/jack/clang23_resource/include/riscv_ntlh.h",
+      "bytes": 744,
+      "mtime_utc": "2026-08-27T06:50:18.576646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/rtmintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/rtmintrin.h",
+      "bytes": 1280,
+      "mtime_utc": "2026-08-27T06:50:18.576646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/s390intrin.h",
+      "source": "/scratch/jack/clang23_resource/include/s390intrin.h",
+      "bytes": 604,
+      "mtime_utc": "2026-08-27T06:50:18.576646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/serializeintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/serializeintrin.h",
+      "bytes": 881,
+      "mtime_utc": "2026-08-27T06:50:18.576646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/sgxintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/sgxintrin.h",
+      "bytes": 1816,
+      "mtime_utc": "2026-08-27T06:50:18.576646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/sha512intrin.h",
+      "source": "/scratch/jack/clang23_resource/include/sha512intrin.h",
+      "bytes": 6088,
+      "mtime_utc": "2026-08-27T06:50:18.576646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/shaintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/shaintrin.h",
+      "bytes": 7660,
+      "mtime_utc": "2026-08-27T06:50:18.576646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/sifive_vector.h",
+      "source": "/scratch/jack/clang23_resource/include/sifive_vector.h",
+      "bytes": 10625,
+      "mtime_utc": "2026-08-27T06:50:18.576646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/sm3intrin.h",
+      "source": "/scratch/jack/clang23_resource/include/sm3intrin.h",
+      "bytes": 7470,
+      "mtime_utc": "2026-08-27T06:50:18.576646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/sm4evexintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/sm4evexintrin.h",
+      "bytes": 1164,
+      "mtime_utc": "2026-08-27T06:50:18.576646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/sm4intrin.h",
+      "source": "/scratch/jack/clang23_resource/include/sm4intrin.h",
+      "bytes": 8401,
+      "mtime_utc": "2026-08-27T06:50:18.577646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/smmintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/smmintrin.h",
+      "bytes": 100880,
+      "mtime_utc": "2026-08-27T06:50:18.577646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/spirvintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/spirvintrin.h",
+      "bytes": 7400,
+      "mtime_utc": "2026-08-27T06:50:18.577646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/stdalign.h",
+      "source": "/scratch/jack/clang23_resource/include/stdalign.h",
+      "bytes": 756,
+      "mtime_utc": "2026-08-27T06:50:18.577646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/stdarg.h",
+      "source": "/scratch/jack/clang23_resource/include/stdarg.h",
+      "bytes": 2497,
+      "mtime_utc": "2026-08-27T06:50:18.577646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/stdatomic.h",
+      "source": "/scratch/jack/clang23_resource/include/stdatomic.h",
+      "bytes": 8662,
+      "mtime_utc": "2026-08-27T06:50:18.578646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/stdbool.h",
+      "source": "/scratch/jack/clang23_resource/include/stdbool.h",
+      "bytes": 1172,
+      "mtime_utc": "2026-08-27T06:50:18.578646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/stdckdint.h",
+      "source": "/scratch/jack/clang23_resource/include/stdckdint.h",
+      "bytes": 1666,
+      "mtime_utc": "2026-08-27T06:50:18.578646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/stdcountof.h",
+      "source": "/scratch/jack/clang23_resource/include/stdcountof.h",
+      "bytes": 473,
+      "mtime_utc": "2026-08-27T06:50:18.579646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/stddef.h",
+      "source": "/scratch/jack/clang23_resource/include/stddef.h",
+      "bytes": 5053,
+      "mtime_utc": "2026-08-27T06:50:18.579646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/stddefer.h",
+      "source": "/scratch/jack/clang23_resource/include/stddefer.h",
+      "bytes": 610,
+      "mtime_utc": "2026-08-27T06:50:18.579646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/stdint.h",
+      "source": "/scratch/jack/clang23_resource/include/stdint.h",
+      "bytes": 27519,
+      "mtime_utc": "2026-08-27T06:50:18.581646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/stdnoreturn.h",
+      "source": "/scratch/jack/clang23_resource/include/stdnoreturn.h",
+      "bytes": 1316,
+      "mtime_utc": "2026-08-27T06:50:18.581646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/tbmintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/tbmintrin.h",
+      "bytes": 3507,
+      "mtime_utc": "2026-08-27T06:50:18.581646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/tgmath.h",
+      "source": "/scratch/jack/clang23_resource/include/tgmath.h",
+      "bytes": 30389,
+      "mtime_utc": "2026-08-27T06:50:18.581646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/tmmintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/tmmintrin.h",
+      "bytes": 32725,
+      "mtime_utc": "2026-08-27T06:50:18.581646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/tsxldtrkintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/tsxldtrkintrin.h",
+      "bytes": 2015,
+      "mtime_utc": "2026-08-27T06:50:18.581646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/uintrintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/uintrintrin.h",
+      "bytes": 5079,
+      "mtime_utc": "2026-08-27T06:50:18.581646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/unwind.h",
+      "source": "/scratch/jack/clang23_resource/include/unwind.h",
+      "bytes": 11477,
+      "mtime_utc": "2026-08-27T06:50:18.581646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/usermsrintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/usermsrintrin.h",
+      "bytes": 1572,
+      "mtime_utc": "2026-08-27T06:50:18.581646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/vadefs.h",
+      "source": "/scratch/jack/clang23_resource/include/vadefs.h",
+      "bytes": 1420,
+      "mtime_utc": "2026-08-27T06:50:18.581646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/vaesintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/vaesintrin.h",
+      "bytes": 2590,
+      "mtime_utc": "2026-08-27T06:50:18.581646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/varargs.h",
+      "source": "/scratch/jack/clang23_resource/include/varargs.h",
+      "bytes": 584,
+      "mtime_utc": "2026-08-27T06:50:18.581646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/vecintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/vecintrin.h",
+      "bytes": 429293,
+      "mtime_utc": "2026-08-27T06:50:18.583646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/velintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/velintrin.h",
+      "bytes": 2153,
+      "mtime_utc": "2026-08-27T06:50:18.584646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/velintrin_approx.h",
+      "source": "/scratch/jack/clang23_resource/include/velintrin_approx.h",
+      "bytes": 3623,
+      "mtime_utc": "2026-08-27T06:50:18.583646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/velintrin_gen.h",
+      "source": "/scratch/jack/clang23_resource/include/velintrin_gen.h",
+      "bytes": 70721,
+      "mtime_utc": "2026-08-27T06:50:18.584646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/vpclmulqdqintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/vpclmulqdqintrin.h",
+      "bytes": 1086,
+      "mtime_utc": "2026-08-27T06:50:18.584646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/waitpkgintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/waitpkgintrin.h",
+      "bytes": 1357,
+      "mtime_utc": "2026-08-27T06:50:18.584646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/wasm_simd128.h",
+      "source": "/scratch/jack/clang23_resource/include/wasm_simd128.h",
+      "bytes": 83675,
+      "mtime_utc": "2026-08-27T06:50:18.584646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/wbnoinvdintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/wbnoinvdintrin.h",
+      "bytes": 749,
+      "mtime_utc": "2026-08-27T06:50:18.584646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/wmmintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/wmmintrin.h",
+      "bytes": 659,
+      "mtime_utc": "2026-08-27T06:50:18.585646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/x86gprintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/x86gprintrin.h",
+      "bytes": 1727,
+      "mtime_utc": "2026-08-27T06:50:18.585646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/x86intrin.h",
+      "source": "/scratch/jack/clang23_resource/include/x86intrin.h",
+      "bytes": 721,
+      "mtime_utc": "2026-08-27T06:50:18.585646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/xmmintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/xmmintrin.h",
+      "bytes": 120344,
+      "mtime_utc": "2026-08-27T06:50:18.586646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/xopintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/xopintrin.h",
+      "bytes": 20965,
+      "mtime_utc": "2026-08-27T06:50:18.586646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/xsavecintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/xsavecintrin.h",
+      "bytes": 2574,
+      "mtime_utc": "2026-08-27T06:50:18.586646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/xsaveintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/xsaveintrin.h",
+      "bytes": 1678,
+      "mtime_utc": "2026-08-27T06:50:18.586646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/xsaveoptintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/xsaveoptintrin.h",
+      "bytes": 1026,
+      "mtime_utc": "2026-08-27T06:50:18.586646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/xsavesintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/xsavesintrin.h",
+      "bytes": 1268,
+      "mtime_utc": "2026-08-27T06:50:18.586646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/xtestintrin.h",
+      "source": "/scratch/jack/clang23_resource/include/xtestintrin.h",
+      "bytes": 873,
+      "mtime_utc": "2026-08-27T06:50:18.586646+00:00"
+    },
+    {
+      "destination": "prebuilt/lib/clang/23/include/yvals_core.h",
+      "source": "/scratch/jack/clang23_resource/include/yvals_core.h",
+      "bytes": 687,
+      "mtime_utc": "2026-08-27T06:50:18.586646+00:00"
+    }
+  ],
+  "omitted_optional_repositories": [
+    {
+      "path": "/scratch/jack/Merlin-IREE/third_party/iree_bar/third_party/torch-mlir/externals/llvm-project",
+      "reason": "standalone Torch-MLIR LLVM; IREE LLVM is included"
+    },
+    {
+      "path": "/scratch/jack/Merlin-IREE/third_party/KernelBench",
+      "reason": "optional model/vendor repository outside IREE compiler closure"
+    },
+    {
+      "path": "/scratch/jack/Merlin-IREE/models/tinydepth/TinyDepth",
+      "reason": "optional model/vendor repository outside IREE compiler closure"
+    },
+    {
+      "path": "/scratch/jack/Merlin-IREE/models/midas/MiDaS",
+      "reason": "optional model/vendor repository outside IREE compiler closure"
+    },
+    {
+      "path": "/scratch/jack/Merlin-IREE/models/depth_anything_v2/Depth-Anything-V2",
+      "reason": "optional model/vendor repository outside IREE compiler closure"
+    },
+    {
+      "path": "/scratch/jack/Merlin-IREE/third_party/iree-turbine",
+      "reason": "optional model/vendor repository outside IREE compiler closure"
+    },
+    {
+      "path": "/scratch/jack/Merlin-IREE/third_party/gemmini-mx",
+      "reason": "optional model/vendor repository outside IREE compiler closure"
+    },
+    {
+      "path": "/scratch/jack/Merlin-IREE/third_party/saturn-vectors",
+      "reason": "optional model/vendor repository outside IREE compiler closure"
+    },
+    {
+      "path": "/scratch/jack/Merlin-IREE/third_party/gluon",
+      "reason": "optional model/vendor repository outside IREE compiler closure"
+    },
+    {
+      "path": "/scratch/jack/Merlin-IREE/third_party/cyclotron",
+      "reason": "optional model/vendor repository outside IREE compiler closure"
+    },
+    {
+      "path": "/scratch/jack/Merlin-IREE/third_party/radiance-kernels",
+      "reason": "optional model/vendor repository outside IREE compiler closure"
+    },
+    {
+      "path": "/scratch/jack/Merlin-IREE/third_party/npu_model",
+      "reason": "optional model/vendor repository outside IREE compiler closure"
+    },
+    {
+      "path": "/scratch/jack/Merlin-IREE/third_party/Understanding-PI0",
+      "reason": "optional model/vendor repository outside IREE compiler closure"
+    },
+    {
+      "path": "/scratch/jack/Merlin-IREE/third_party/lerobot",
+      "reason": "optional model/vendor repository outside IREE compiler closure"
+    },
+    {
+      "path": "/scratch/jack/Merlin-IREE/third_party/torch-mlir",
+      "reason": "optional model/vendor repository outside IREE compiler closure"
+    },
+    {
+      "path": "/scratch/jack/Merlin-IREE/third_party/autocomp",
+      "reason": "optional model/vendor repository outside IREE compiler closure"
+    }
+  ],
+  "compiler_build": "host-merlin-release build output (September9), not its older installed library",
+  "prebuilt_host": "Linux x86_64, glibc>=2.38",
+  "cpu_example": "2x2 FP32 matmul; explicit local-sync CPU; all expected values verified",
+  "gemmini_example": "Real IREE Gemmini pipeline, INT8 8x8, scalar RV64GC VMFB; compile only",
+  "gpu_or_fpga_accessed": false
+}
