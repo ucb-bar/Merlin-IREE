@@ -1,0 +1,1976 @@
+== perfX-resnet-plain-corrected: elf firesim-elfs/perfX-resnet-plain-corrected.elf maxHours=12 wait=yes (2026-10-27T17:40:54+00:00)
+waiting for runId lock
+/home/ubuntu/chipyard/.conda-env/lib/python3.10/site-packages/paramiko/transport.py:236: CryptographyDeprecationWarning: Blowfish has been deprecated
+  "class": algorithms.Blowfish,
+FireSim Manager. Docs: https://docs.fires.im
+Running: terminaterunfarm
+
+run_farm_hosts_dict defaultdict(<class 'list'>, {'f2.6xlarge': [(<runtools.run_farm.Inst object at 0x74f9c67f7a00>, None)], 'f2.12xlarge': [], 'f2.48xlarge': [], 'm4.16xlarge': [], 'z1d.3xlarge': [], 'z1d.6xlarge': [], 'z1d.12xlarge': []})
+set_server_hardware_config 0 None
+IMPORTANT!: This will terminate the following instances:
+f2.12xlarge
+[]
+f2.48xlarge
+[]
+f2.6xlarge
+[]
+m4.16xlarge
+[]
+z1d.12xlarge
+[]
+z1d.3xlarge
+[]
+z1d.6xlarge
+[]
+Instances terminated. Please confirm in your AWS Management Console.
+The full log of this run is:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-40-58-terminaterunfarm-QRQR724KIPR1Z13P.log
+/home/ubuntu/chipyard/.conda-env/lib/python3.10/site-packages/paramiko/transport.py:236: CryptographyDeprecationWarning: Blowfish has been deprecated
+  "class": algorithms.Blowfish,
+FireSim Manager. Docs: https://docs.fires.im
+Running: launchrunfarm
+
+run_farm_hosts_dict defaultdict(<class 'list'>, {'f2.6xlarge': [(<runtools.run_farm.Inst object at 0x789de133f9d0>, None)], 'f2.12xlarge': [], 'f2.48xlarge': [], 'm4.16xlarge': [], 'z1d.3xlarge': [], 'z1d.6xlarge': [], 'z1d.12xlarge': []})
+set_server_hardware_config 0 None
+LAUNCHING: {'ImageId': 'ami-<redacted>', 'EbsOptimized': True, 'BlockDeviceMappings': [{'DeviceName': '/dev/sda1', 'Ebs': {'VolumeSize': 300, 'VolumeType': 'gp2'}}, {'DeviceName': '/dev/sdb', 'NoDevice': ''}], 'InstanceType': 'f2.6xlarge', 'MinCount': 1, 'MaxCount': 1, 'NetworkInterfaces': [{'SubnetId': 'subnet-<redacted>', 'DeviceIndex': 0, 'AssociatePublicIpAddress': True, 'Groups': ['sg-<redacted>']}], 'KeyName': 'firesim', 'TagSpecifications': [{'ResourceType': 'instance', 'Tags': [{'Key': 'fsimcluster', 'Value': 'fsimdispatch-perfX-resnet-plain-corrected'}]}], 'InstanceMarketOptions': {}}
+Waiting for instance boots: 0 f2.12xlarge
+Waiting for instance boots: 0 f2.48xlarge
+Waiting for instance boots: 1 f2.6xlarge
+i-<redacted> booted!
+Waiting for instance boots: 0 m4.16xlarge
+Waiting for instance boots: 0 z1d.12xlarge
+Waiting for instance boots: 0 z1d.3xlarge
+Waiting for instance boots: 0 z1d.6xlarge
+The full log of this run is:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-40-59-launchrunfarm-QKRV13M1E7U2DTOQ.log
+/home/ubuntu/chipyard/.conda-env/lib/python3.10/site-packages/paramiko/transport.py:236: CryptographyDeprecationWarning: Blowfish has been deprecated
+  "class": algorithms.Blowfish,
+FireSim Manager. Docs: https://docs.fires.im
+Running: kill
+
+run_farm_hosts_dict defaultdict(<class 'list'>, {'f2.6xlarge': [(<runtools.run_farm.Inst object at 0x76b2c771f9d0>, None)], 'f2.12xlarge': [], 'f2.48xlarge': [], 'm4.16xlarge': [], 'z1d.3xlarge': [], 'z1d.6xlarge': [], 'z1d.12xlarge': []})
+set_server_hardware_config 0 None
+[192.168.3.155] Killing FPGA simulation for slot: 0.
+Warning: run() received nonzero return code 1 while executing 'sudo pkill -SIGKILL FireSim-f2'!
+Confirming exit...
+Warning: run() received nonzero return code 1 while executing 'screen -ls'!
+screenoutput No Sockets found in /run/screen/S-ubuntu.
+The full log of this run is:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-41-11-kill-BC7DN1O5BH3SAY99.log
+/home/ubuntu/chipyard/.conda-env/lib/python3.10/site-packages/paramiko/transport.py:236: CryptographyDeprecationWarning: Blowfish has been deprecated
+  "class": algorithms.Blowfish,
+FireSim Manager. Docs: https://docs.fires.im
+Running: infrasetup
+
+run_farm_hosts_dict defaultdict(<class 'list'>, {'f2.6xlarge': [(<runtools.run_farm.Inst object at 0x7e893fe079d0>, None)], 'f2.12xlarge': [], 'f2.48xlarge': [], 'm4.16xlarge': [], 'z1d.3xlarge': [], 'z1d.6xlarge': [], 'z1d.12xlarge': []})
+set_server_hardware_config 0 None
+[192.168.3.155] Checking if host instance is up...
+Building FPGA software driver for f2-firesim-FireSim-WithDefaultFireSimBridges_WithFireSimConfigTweaks_chipyard.GemminiRocketConfig-FRFCFS16GBQuadRankLLC4MB_BaseF2Config
+[localhost] run: make PLATFORM=f2 TARGET_PROJECT=firesim TARGET_PROJECT_MAKEFRAG=/home/ubuntu/chipyard/sims/firesim/deploy/../../../generators/firechip/chip/src/main/makefrag/firesim DESIGN=FireSim TARGET_CONFIG=WithDefaultFireSimBridges_WithFireSimConfigTweaks_chipyard.GemminiRocketConfig PLATFORM_CONFIG=FRFCFS16GBQuadRankLLC4MB_BaseF2Config f2
+[localhost] out: Error while loading conda entry point: menuinst (Plugin requires `conda` to be installed.)
+[localhost] out: mkdir -p /home/ubuntu/chipyard/sims/firesim/sim/midas/src/main/scala/target-symlinks
+[localhost] out: # make the symlink dir
+[localhost] out: # symlink things
+[localhost] out: # remove any folders that don't match
+[localhost] out: find /home/ubuntu/chipyard/sims/firesim/sim/midas/src/main/scala/target-symlinks/* -type d | grep -v -e "/home/ubuntu/chipyard/sims/firesim/sim/midas/src/main/scala/target-symlinks/bridgeinterfaces" -e "/home/ubuntu/chipyard/sims/firesim/sim/midas/src/main/scala/target-symlinks/goldengateimplementations" | xargs rm -rf
+[localhost] out: source /home/ubuntu/chipyard/env.sh && \
+[localhost] out: 	make -C /home/ubuntu/chipyard/sims/firesim-staging \
+[localhost] out: 		SBT_PROJECT=firechip \
+[localhost] out: 		MODEL=FireSim \
+[localhost] out: 		MODEL_PACKAGE=firechip.chip \
+[localhost] out: 		VLOG_MODEL=FireSim \
+[localhost] out: 		CONFIG=WithDefaultFireSimBridges_WithFireSimConfigTweaks_chipyard.GemminiRocketConfig \
+[localhost] out: 		CONFIG_PACKAGE=firechip.chip \
+[localhost] out: 		GENERATOR_PACKAGE=chipyard \
+[localhost] out: 		EXTRA_CHISEL_OPTIONS=--emit-legacy-sfc \
+[localhost] out: 		TB=unused \
+[localhost] out: 		TOP=unused
+[localhost] out: make[1]: Entering directory '/home/ubuntu/chipyard/sims/firesim-staging'
+[localhost] out: make[1]: Nothing to be done for 'default'.
+[localhost] out: make[1]: Leaving directory '/home/ubuntu/chipyard/sims/firesim-staging'
+[localhost] out: # firechip.chip.FireSim.WithDefaultFireSimBridges_WithFireSimConfigTweaks_chipyard.GemminiRocketConfig must be same as Chipyard
+[localhost] out: ln -sf /home/ubuntu/chipyard/sims/firesim-staging/generated-src/firechip.chip.FireSim.WithDefaultFireSimBridges_WithFireSimConfigTweaks_chipyard.GemminiRocketConfig/firechip.chip.FireSim.WithDefaultFireSimBridges_WithFireSimConfigTweaks_chipyard.GemminiRocketConfig.sfc.fir /home/ubuntu/chipyard/sims/firesim/sim/generated-src/f2/f2-firesim-FireSim-WithDefaultFireSimBridges_WithFireSimConfigTweaks_chipyard.GemminiRocketConfig-FRFCFS16GBQuadRankLLC4MB_BaseF2Config/firechip.chip.FireSim.WithDefaultFireSimBridges_WithFireSimConfigTweaks_chipyard.GemminiRocketConfig.fir
+[localhost] out: ln -sf /home/ubuntu/chipyard/sims/firesim-staging/generated-src/firechip.chip.FireSim.WithDefaultFireSimBridges_WithFireSimConfigTweaks_chipyard.GemminiRocketConfig/firechip.chip.FireSim.WithDefaultFireSimBridges_WithFireSimConfigTweaks_chipyard.GemminiRocketConfig.anno.json /home/ubuntu/chipyard/sims/firesim/sim/generated-src/f2/f2-firesim-FireSim-WithDefaultFireSimBridges_WithFireSimConfigTweaks_chipyard.GemminiRocketConfig-FRFCFS16GBQuadRankLLC4MB_BaseF2Config/firechip.chip.FireSim.WithDefaultFireSimBridges_WithFireSimConfigTweaks_chipyard.GemminiRocketConfig.anno.json
+[localhost] out: # .d needed to run metasim CI tests
+[localhost] out: ln -sf /home/ubuntu/chipyard/sims/firesim-staging/generated-src/firechip.chip.FireSim.WithDefaultFireSimBridges_WithFireSimConfigTweaks_chipyard.GemminiRocketConfig/firechip.chip.FireSim.WithDefaultFireSimBridges_WithFireSimConfigTweaks_chipyard.GemminiRocketConfig.d /home/ubuntu/chipyard/sims/firesim/sim/generated-src/f2/f2-firesim-FireSim-WithDefaultFireSimBridges_WithFireSimConfigTweaks_chipyard.GemminiRocketConfig-FRFCFS16GBQuadRankLLC4MB_BaseF2Config/firechip.chip.FireSim.WithDefaultFireSimBridges_WithFireSimConfigTweaks_chipyard.GemminiRocketConfig.d
+[localhost] out: 
+get_local_driver_dir f2-firesim-FireSim-WithDefaultFireSimBridges_WithFireSimConfigTweaks_chipyard.GemminiRocketConfig-FRFCFS16GBQuadRankLLC4MB_BaseF2Config
+[localhost] local: pwd
+[localhost] run: rsync -pthrvz -L ../sim/output/f2/f2-firesim-FireSim-WithDefaultFireSimBridges_WithFireSimConfigTweaks_chipyard.GemminiRocketConfig-FRFCFS16GBQuadRankLLC4MB_BaseF2Config/FireSim-f2 /tmp/tmpj6m47kfs/
+[localhost] out: sending incremental file list
+[localhost] out: FireSim-f2
+[localhost] out: 
+[localhost] out: sent 4.59M bytes  received 35 bytes  9.19M bytes/sec
+[localhost] out: total size is 13.21M  speedup is 2.88
+[localhost] out: 
+[localhost] local: pwd
+[localhost] run: rsync -pthrvz -L /home/ubuntu/chipyard/.conda-env/riscv-tools/lib/libriscv.so /tmp/tmpj6m47kfs/libriscv.so
+[localhost] out: sending incremental file list
+[localhost] out: libriscv.so
+[localhost] out: 
+[localhost] out: sent 30.67M bytes  received 35 bytes  20.45M bytes/sec
+[localhost] out: total size is 178.69M  speedup is 5.83
+[localhost] out: 
+[localhost] local: pwd
+[localhost] run: rsync -pthrvz -L /home/ubuntu/chipyard/.conda-env/lib/libdwarf.so.2.1.0 /tmp/tmpj6m47kfs/libdwarf.so.2
+[localhost] out: sending incremental file list
+[localhost] out: libdwarf.so.2.1.0
+[localhost] out: 
+[localhost] out: sent 269.27K bytes  received 35 bytes  538.60K bytes/sec
+[localhost] out: total size is 665.85K  speedup is 2.47
+[localhost] out: 
+[localhost] local: pwd
+[localhost] run: rsync -pthrvz -L /home/ubuntu/chipyard/.conda-env/lib/libelf-0.196.so /tmp/tmpj6m47kfs/libelf.so.1
+[localhost] out: sending incremental file list
+[localhost] out: libelf-0.196.so
+[localhost] out: 
+[localhost] out: sent 54.88K bytes  received 35 bytes  109.82K bytes/sec
+[localhost] out: total size is 126.99K  speedup is 2.31
+[localhost] out: 
+[localhost] local: pwd
+[localhost] run: rsync -pthrvz -L /home/ubuntu/chipyard/.conda-env/lib/libz.so.1.3.2 /tmp/tmpj6m47kfs/libz.so.1
+[localhost] out: sending incremental file list
+[localhost] out: libz.so.1.3.2
+[localhost] out: 
+[localhost] out: sent 62.17K bytes  received 35 bytes  124.41K bytes/sec
+[localhost] out: total size is 117.17K  speedup is 1.88
+[localhost] out: 
+[localhost] local: pwd
+[localhost] run: rsync -pthrvz -L /home/ubuntu/chipyard/.conda-env/lib/libstdc++.so.6.0.36 /tmp/tmpj6m47kfs/libstdc++.so.6
+[localhost] out: sending incremental file list
+[localhost] out: libstdc++.so.6.0.36
+[localhost] out: 
+[localhost] out: sent 8.20M bytes  received 35 bytes  16.41M bytes/sec
+[localhost] out: total size is 23.87M  speedup is 2.91
+[localhost] out: 
+[localhost] local: pwd
+[localhost] run: rsync -pthrvz -L /home/ubuntu/chipyard/.conda-env/lib/libgmp.so.10.5.0 /tmp/tmpj6m47kfs/libgmp.so.10
+[localhost] out: sending incremental file list
+[localhost] out: libgmp.so.10.5.0
+[localhost] out: 
+[localhost] out: sent 347.84K bytes  received 35 bytes  695.74K bytes/sec
+[localhost] out: total size is 753.05K  speedup is 2.16
+[localhost] out: 
+[localhost] local: pwd
+[localhost] run: rsync -pthrvz -L /home/ubuntu/chipyard/.conda-env/lib/libgcc_s.so.1 /tmp/tmpj6m47kfs/libgcc_s.so.1
+[localhost] out: sending incremental file list
+[localhost] out: libgcc_s.so.1
+[localhost] out: 
+[localhost] out: sent 364.38K bytes  received 35 bytes  728.83K bytes/sec
+[localhost] out: total size is 922.62K  speedup is 2.53
+[localhost] out: 
+[localhost] local: pwd
+[localhost] run: rsync -pthrvz -L /home/ubuntu/chipyard/.conda-env/lib/libzstd.so.1.5.7 /tmp/tmpj6m47kfs/libzstd.so.1
+[localhost] out: sending incremental file list
+[localhost] out: libzstd.so.1.5.7
+[localhost] out: 
+[localhost] out: sent 488.10K bytes  received 35 bytes  976.27K bytes/sec
+[localhost] out: total size is 1.20M  speedup is 2.46
+[localhost] out: 
+[localhost] local: pwd
+[localhost] run: find . -mindepth 1 -maxdepth 1 -printf "%P
+" | xargs tar -czvf /home/ubuntu/chipyard/sims/firesim/deploy/../sim/output/f2/f2-firesim-FireSim-WithDefaultFireSimBridges_WithFireSimConfigTweaks_chipyard.GemminiRocketConfig-FRFCFS16GBQuadRankLLC4MB_BaseF2Config/driver-bundle.tar.gz
+[localhost] out: libgcc_s.so.1
+[localhost] out: libz.so.1
+[localhost] out: libzstd.so.1
+[localhost] out: libelf.so.1
+[localhost] out: libdwarf.so.2
+[localhost] out: FireSim-f2
+[localhost] out: libriscv.so
+[localhost] out: libstdc++.so.6
+[localhost] out: libgmp.so.10
+[localhost] out: 
+[192.168.3.155] Copying FPGA simulation infrastructure for slot: 0.
+[192.168.3.155] Installing AWS FPGA SDK on remote nodes. Upstream hash: 7912866
+[192.168.3.155] Reserved 16 hugepages (1 simulation(s) x 8 + 8 slack).
+[192.168.3.155] Unloading XRT-related Kernel Modules.
+Warning: run() received nonzero return code 5 while executing 'sudo systemctl stop mpd'!
+Warning: run() received nonzero return code 1 while executing 'sudo yum remove -y xrt xrt-aws'!
+[192.168.3.155] Clearing FPGA Slot 0.
+[192.168.3.155] Checking for Cleared FPGA Slot 0.
+[192.168.3.155] Flashing FPGA Slot: 0 with agfi: agfi-02410ef1a8461b435.
+[192.168.3.155] Checking for Flashed FPGA Slot: 0 with agfi: agfi-02410ef1a8461b435.
+Warning: run() received nonzero return code 1 while executing 'sudo pkill -SIGKILL hw_server'!
+Warning: run() received nonzero return code 1 while executing 'sudo pkill -SIGKILL fpga-local-cmd'!
+[192.168.3.155] Starting Vivado hw_server.
+[192.168.3.155] Starting Vivado virtual JTAG.
+The full log of this run is:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-43-22-infrasetup-UMLLCDCE2XLJGWOA.log
+/home/ubuntu/chipyard/.conda-env/lib/python3.10/site-packages/paramiko/transport.py:236: CryptographyDeprecationWarning: Blowfish has been deprecated
+  "class": algorithms.Blowfish,
+FireSim Manager. Docs: https://docs.fires.im
+Running: runworkload
+
+run_farm_hosts_dict defaultdict(<class 'list'>, {'f2.6xlarge': [(<runtools.run_farm.Inst object at 0x7ca434b079d0>, None)], 'f2.12xlarge': [], 'f2.48xlarge': [], 'm4.16xlarge': [], 'z1d.3xlarge': [], 'z1d.6xlarge': [], 'z1d.12xlarge': []})
+set_server_hardware_config 0 None
+Creating the directory: /home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+[192.168.3.155] Checking if host instance is up...
+start_simulations_instance 1
+[192.168.3.155] Starting FPGA simulation for slot: 0.
+start_sim_slot slotno: 0 server_id 0 remote_sim_dir /home/ubuntu/sim_slot_0/ /home/ubuntu
+[2J
+FireSim Simulation Status @ 2026-10-27 17:45:30.167855
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:45:40.508368
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:45:50.848999
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:46:01.180878
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:46:11.511216
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:46:21.831508
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:46:32.393799
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:46:42.734098
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:46:53.054579
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:47:03.374969
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:47:13.695525
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:47:24.015990
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:47:34.578647
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:47:44.889189
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:47:55.209638
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:48:05.540214
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:48:15.860383
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:48:26.180561
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:48:36.743170
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:48:47.073396
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:48:57.403752
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:49:07.725429
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:49:18.056841
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:49:28.377213
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:49:38.930212
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:49:49.250781
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:49:59.572365
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:50:09.893203
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:50:20.224050
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:50:30.545111
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:50:41.098456
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:50:51.429527
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:51:01.761026
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:51:12.091170
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:51:22.411776
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:51:32.742411
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:51:43.315835
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:51:53.630843
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:52:03.961220
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:52:14.282631
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:52:24.603152
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:52:34.917880
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:52:45.470281
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:52:55.801142
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:53:06.129440
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:53:16.450677
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:53:26.771622
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:53:37.084584
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:53:47.647645
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:53:57.968879
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:54:08.299567
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:54:18.620492
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:54:28.951673
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:54:39.272288
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:54:49.829783
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:55:00.150025
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:55:10.470969
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:55:20.791452
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:55:31.121681
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:55:41.451736
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[2J
+FireSim Simulation Status @ 2026-10-27 17:55:52.014224
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [33mFalse[0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [33mTrue [0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+1/1 instances are still running.
+1/1 simulations are still running.
+--------------------------------------------------------------------------------
+[192.168.3.155] Slot 0, Job dispatch-perfX-resnet-plain-corrected0 completed!
+[2J
+FireSim Simulation Status @ 2026-10-27 17:56:03.565502
+--------------------------------------------------------------------------------
+This workload's output is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+This run's log is located in:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+This status will update every 10s.
+--------------------------------------------------------------------------------
+Instances
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Terminated: [32mTrue [0m
+--------------------------------------------------------------------------------
+Simulated Switches
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Pipes
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Simulated Nodes/Jobs
+--------------------------------------------------------------------------------
+Hostname/IP: 192.168.3.155 | Job: dispatch-perfX-resnet-plain-corrected0 | Sim running: [32mFalse[0m
+--------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------
+0/1 instances are still running.
+0/1 simulations are still running.
+--------------------------------------------------------------------------------
+FireSim Simulation Exited Successfully. See results in:
+/home/ubuntu/chipyard/sims/firesim/deploy/results-workload/2026-10-27--17-45-21-dispatch-perfX-resnet-plain-corrected/
+The full log of this run is:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-45-21-runworkload-E651G0ZG1XI9DCQT.log
+/home/ubuntu/chipyard/.conda-env/lib/python3.10/site-packages/paramiko/transport.py:236: CryptographyDeprecationWarning: Blowfish has been deprecated
+  "class": algorithms.Blowfish,
+FireSim Manager. Docs: https://docs.fires.im
+Running: terminaterunfarm
+
+run_farm_hosts_dict defaultdict(<class 'list'>, {'f2.6xlarge': [(<runtools.run_farm.Inst object at 0x7fae7491fa00>, None)], 'f2.12xlarge': [], 'f2.48xlarge': [], 'm4.16xlarge': [], 'z1d.3xlarge': [], 'z1d.6xlarge': [], 'z1d.12xlarge': []})
+set_server_hardware_config 0 None
+IMPORTANT!: This will terminate the following instances:
+f2.12xlarge
+[]
+f2.48xlarge
+[]
+f2.6xlarge
+[]
+m4.16xlarge
+[]
+z1d.12xlarge
+[]
+z1d.3xlarge
+[]
+z1d.6xlarge
+[]
+Instances terminated. Please confirm in your AWS Management Console.
+The full log of this run is:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-27--17-56-06-terminaterunfarm-ZXYCFHI7JH0A4XB8.log

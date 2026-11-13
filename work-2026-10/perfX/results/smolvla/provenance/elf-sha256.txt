@@ -1,0 +1,2 @@
+81951de158c4572ecbebdde9c963ba1e90f75cbdfc5366bccf2bfb05e72c6d30  runs/perfSM/build-plain/smolvla.elf
+a3eb92ae5e4f79c4835c95422de23f1e4910bd44710f91208e3bf276c276f795  runs/perfSM/build-trace/smolvla.elf

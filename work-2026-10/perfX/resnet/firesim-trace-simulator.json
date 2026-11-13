@@ -1,0 +1,17 @@
+[
+  {
+    "file": "/home/loren/work/runs/perfX/fpga/perfX-resnet-trace-corrected/dispatch-perfX-resnet-trace-corrected0/uartlog",
+    "metric": "target_cycles_emulated",
+    "value": 40608519842.0
+  },
+  {
+    "file": "/home/loren/work/runs/perfX/fpga/perfX-resnet-trace-corrected/dispatch-perfX-resnet-trace-corrected0/uartlog",
+    "metric": "fmr",
+    "value": 1.02
+  },
+  {
+    "file": "/home/loren/work/runs/perfX/fpga/perfX-resnet-trace-corrected/dispatch-perfX-resnet-trace-corrected0/uartlog",
+    "metric": "wallclock_seconds",
+    "value": 691.8
+  }
+]

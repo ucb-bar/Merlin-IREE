@@ -1,0 +1,18 @@
+{
+  "default": {
+    "flags_hex": "2089",
+    "host_write_calls": 1000,
+    "bytes": 14000,
+    "functional_dump_cycles": 4999994,
+    "word_count": 1000,
+    "words_exact": true
+  },
+  "buffered": {
+    "flags_hex": "2808",
+    "host_write_calls": 1,
+    "bytes": 14000,
+    "functional_dump_cycles": 729990,
+    "word_count": 1000,
+    "words_exact": true
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "weight_granularity": "PerTensor for lm_head, PerRow for other 154 linears",
+  "per_channel_vs_per_tensor": {
+    "max_abs": 1.1208486557006836,
+    "rmse": 0.20117224191006214,
+    "cosine": 0.9978415369987488,
+    "argmax_agreement": 16,
+    "positions": 16,
+    "greedy_token": 359,
+    "per_channel_greedy_token": 359
+  }
+}

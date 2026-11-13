@@ -1,0 +1,15 @@
+{
+ "att_qk_prefill_F$async_dispatch_0_batch_matmul_32x16x16x64_f32": "Rocket",
+ "att_pv_prefill_F$async_dispatch_0_batch_matmul_32x16x64x16_f32": "Rocket",
+ "att_qk_decode_F$async_dispatch_0_batch_matmul_32x1x64x64_f32": "Rocket",
+ "att_pv_decode_F$async_dispatch_0_batch_matmul_32x1x64x64_f32": "Rocket",
+ "mm_lm_fp32_shipped_F$async_dispatch_0_matmul_1x32000x2048_f32": "Rocket",
+ "att_qk_decode_chain_F$async_dispatch_0_elementwise_32x64x64_f32": "Rocket",
+ "att_qk_decode_chain_F$async_dispatch_1_elementwise_32x64_f32": "Rocket",
+ "att_qk_decode_chain_F$async_dispatch_2_elementwise_32x64_f32": "Rocket",
+ "att_qk_decode_chain_F$async_dispatch_3_elementwise_32x64_f32": "Rocket",
+ "att_qk_decode_chain_F$async_dispatch_4_elementwise_32x64_f32": "Rocket",
+ "att_pv_decode_chain_F$async_dispatch_0_elementwise_2048x64_f32": "Rocket",
+ "att_pv_decode_chain_F$async_dispatch_1_elementwise_32x64_f32": "Rocket",
+ "att_pv_decode_chain_F$async_dispatch_2_elementwise_32x64_f32": "Rocket"
+}

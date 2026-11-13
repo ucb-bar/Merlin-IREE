@@ -1,0 +1,34 @@
+{
+  "/home/loren/work/runs/perfSM/smolvla/payload-model.vmfb": {
+    "size": 553275071,
+    "sha256": "faef4fc909924fd1da36e180929e617e28e04a2e894b5bee8407f04c857e3d89"
+  },
+  "/home/loren/work/runs/fixW/smolvla/numerics.vmfb": {
+    "size": 553275071,
+    "sha256": "faef4fc909924fd1da36e180929e617e28e04a2e894b5bee8407f04c857e3d89"
+  },
+  "/home/loren/work/runs/perfX/smolvla/payload-model.vmfb": {
+    "size": 553275071,
+    "sha256": "faef4fc909924fd1da36e180929e617e28e04a2e894b5bee8407f04c857e3d89"
+  },
+  "/home/loren/work/runs/perfSM/smolvla/payload-cpu-golden.f32": {
+    "size": 6400,
+    "sha256": "74c9c6c5a16b91f6a918f11146813366eb39c65dabd59c62b01620c982d14a7b"
+  },
+  "/home/loren/work/runs/perfSM/smolvla/payload-pytorch-golden.f32": {
+    "size": 6400,
+    "sha256": "74c9c6c5a16b91f6a918f11146813366eb39c65dabd59c62b01620c982d14a7b"
+  },
+  "/home/loren/work/runs/fixJ/smol-fp32-peeled/output.bin": {
+    "size": 6400,
+    "sha256": "74c9c6c5a16b91f6a918f11146813366eb39c65dabd59c62b01620c982d14a7b"
+  },
+  "/home/loren/work/runs/perfX/build-plain/smolvla.elf": {
+    "embedded_vmfb_size": 553275071,
+    "embedded_vmfb_sha256": "faef4fc909924fd1da36e180929e617e28e04a2e894b5bee8407f04c857e3d89"
+  },
+  "/home/loren/work/runs/perfX/build-trace/smolvla.elf": {
+    "embedded_vmfb_size": 553275071,
+    "embedded_vmfb_sha256": "faef4fc909924fd1da36e180929e617e28e04a2e894b5bee8407f04c857e3d89"
+  }
+}

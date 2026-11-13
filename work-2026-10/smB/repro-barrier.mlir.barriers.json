@@ -1,0 +1,5 @@
+{
+  "barriers": 3,
+  "source": "runs/smB/repro.mlir",
+  "output": "runs/smB/repro-barrier.mlir"
+}

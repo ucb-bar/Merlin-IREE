@@ -1,0 +1,33 @@
+{
+  "source": "/home/loren/work/runs/smolvla/fp32/smolVLA.q.int8.mlir",
+  "cuts": {
+    "%6417": "/home/loren/work/runs/probeP2/capture-softmax/6417-raw.npy"
+  },
+  "inputs": [
+    {
+      "ssa": "%6417",
+      "shape": [
+        1,
+        15,
+        291,
+        291
+      ],
+      "dtype": "f32",
+      "path": "/home/loren/work/runs/probeP2/softmax-layer0/input0.bin"
+    }
+  ],
+  "outputs": [
+    {
+      "ssa": "%6418",
+      "shape": [
+        1,
+        15,
+        291,
+        291
+      ],
+      "dtype": "f32",
+      "reference": "/home/loren/work/runs/probeP2/capture-softmax/6418-ref.npy"
+    }
+  ],
+  "ops": 3
+}

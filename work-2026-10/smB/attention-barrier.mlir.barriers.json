@@ -1,0 +1,5 @@
+{
+  "barriers": 10,
+  "source": "runs/smB/attention.mlir",
+  "output": "runs/smB/attention-barrier.mlir"
+}

@@ -1,0 +1,2 @@
+iree_cc_binary(NAME resnet SRCS "${CMAKE_CURRENT_LIST_DIR}/libc_strict.c" "${CMAKE_CURRENT_LIST_DIR}/runner.c" "${CMAKE_CURRENT_LIST_DIR}/embed.S" DEPS iree::base iree::hal iree::hal::drivers::local_sync::sync_driver iree::hal::local iree::hal::local::loaders::embedded_elf_loader iree::modules::hal iree::vm iree::vm::bytecode::module)
+target_link_libraries(iree_.._.._.._.._gemR_resnet PRIVATE "-Wl,--defsym=__merlin_heap_size=134217728" "-Wl,--defsym=__merlin_stack_size_min=8388608")

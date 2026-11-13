@@ -1,0 +1,18 @@
+#!/bin/bash
+# push SRC_TARBALL DEST_DIR_ON_COMPUTE1 : chunked, verified copy over the SSM-proxied ssh (stalls on big streams).
+set -uo pipefail
+export SSH_AUTH_SOCK=/home/loren/.ssh/agent/sock
+F=$1; D=$2; C="ssh -F /scratch2/loren/aws/ssh/config -o ServerAliveInterval=15 -o ServerAliveCountMax=4 merlin-compute-1"
+W=$(mktemp -d /scratch2/loren/f2-cycles/stage/push.XXXX); split -b 16M -d -a 4 "$F" "$W/c."
+$C "mkdir -p $D/.parts"
+for p in "$W"/c.*; do b=$(basename $p); h=$(sha256sum < $p | cut -c1-64)
+  for t in 1 2 3 4 5 6; do
+    r=$($C "sha256sum < $D/.parts/$b 2>/dev/null | cut -c1-64")
+    [ "$r" = "$h" ] && break
+    timeout 300 $C "cat > $D/.parts/$b" < $p
+  done
+  [ "$($C "sha256sum < $D/.parts/$b | cut -c1-64")" = "$h" ] || { echo "FAILED chunk $b"; exit 1; }
+done
+H=$(sha256sum < "$F" | cut -c1-64)
+$C "cat $D/.parts/c.* > $D/$(basename $F) && rm -rf $D/.parts && sha256sum $D/$(basename $F)" ; echo "expect $H"
+rm -rf "$W"

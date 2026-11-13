@@ -1,0 +1,1 @@
+SMK 2026-10-27 21:56 UTC: both EXACT original zSM-smolvla-plain/trace F2s already TERMINATED; no exact-ID wrapper left to SIGINT; perfSM tmux killed successfully, perfTL/zperf preserved. ATTENTION: separate zSM-smolvla-plain-retry1 remains active (outside explicitly permitted exact IDs); fpga-status has stale original trace entry. REPORT runs/smK/REPORT.md.

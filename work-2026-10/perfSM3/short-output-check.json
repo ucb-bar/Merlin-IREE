@@ -1,0 +1,10 @@
+{
+  "buffered_plain_words": 1600,
+  "smB_matching_diagnostic_words": 1600,
+  "buffered_trace_words": 1600,
+  "plain_matches_smB": true,
+  "plain_matches_trace": true,
+  "diagnostic_output_sha256_hex_concatenated": "dad00e7b7b96329d82c22372411027826d946855f368f9aaf81ef7db67298002",
+  "comparison_source": "runs/smB/full-onewg.log",
+  "diagnostic_gate": "EXPECTED FAIL because only WG0 executes; not numerical acceptance"
+}

@@ -1,0 +1,1 @@
+SMB COMPLETE: full host BITWISE CPU+PyTorch PASS1600; Spike exact-attention slices BITWISE PASS; final fullRV ELF ready. WG0 scaled3.488T->430.335G(8.106x),17953dispatches metadata exact; <=100G target NOT MET, residual scalarQK/PV/projections. runs/smB/REPORT.md; ELF full-runtime/build-plain/smolvla.elf; noF2.

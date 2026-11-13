@@ -1,0 +1,22 @@
+{
+  "source": "/home/loren/work/runs/smA/pattern/barrier/probe.elf",
+  "source_sha256": "abf7263016f0baa6a5ebaf2652caf4a92fd3d6738867808f3871ad1ad8b9a257",
+  "changes": [
+    {
+      "offset": 5068,
+      "before": "0xc62a03",
+      "after": "0x100a13"
+    },
+    {
+      "offset": 5072,
+      "before": "0x1062a83",
+      "after": "0x100a93"
+    },
+    {
+      "offset": 5076,
+      "before": "0x1465b03",
+      "after": "0x100b13"
+    }
+  ],
+  "meaning": "DIAGNOSTIC ONLY altered computation; not numerical inference; scale intervals using original VM bytecode counts"
+}

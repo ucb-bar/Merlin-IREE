@@ -1,0 +1,2 @@
+MATMUL_16x128x128 vmfb=15999 bytes
+MATMUL_RESULT cycles=961037 macs=262144 instr_per_mac=3.666065216 output_hash=a973d8e1b68377cd

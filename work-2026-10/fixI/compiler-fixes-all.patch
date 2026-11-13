@@ -1,0 +1,1668 @@
+--- a/third_party/iree_bar/compiler/src/iree/compiler/Codegen/Common/AddFastMathFlags.cpp
++++ b/third_party/iree_bar/compiler/src/iree/compiler/Codegen/Common/AddFastMathFlags.cpp
+@@ -22,7 +22,7 @@
+   LLVM::FastmathFlags contract = LLVM::FastmathFlags::contract;
+   TypeSwitch<Operation *>(op)
+       .Case<LLVM::FMulOp, LLVM::FAddOp, LLVM::FSubOp, LLVM::FNegOp>(
+-          [&](auto llvmOp) { llvmOp.setFastmathFlags(contract); });
++          [&](auto llvmOp) { llvmOp.setFastmathFlags(llvmOp.getFastmathFlags() | contract); });
+ }
+ 
+ namespace {
+--- a/third_party/iree_bar/compiler/src/iree/compiler/Codegen/Common/test/add_fmfs.mlir
++++ b/third_party/iree_bar/compiler/src/iree/compiler/Codegen/Common/test/add_fmfs.mlir
+@@ -11,3 +11,11 @@
+ 
+ // CHECK: llvm.fmul %{{.*}}, %{{.*}}  {fastmathFlags = #llvm.fastmath<contract>} : f32
+ // CHECK: llvm.fadd %{{.*}}, %{{.*}}  {fastmathFlags = #llvm.fastmath<contract>} : f32
++
++// -----
++// CHECK-LABEL: llvm.func @preserve_existing_flags
++llvm.func @preserve_existing_flags(%a: f32, %b: f32) -> f32 {
++  // CHECK: llvm.fmul {{.*}}#llvm.fastmath<{{(nnan, contract|contract, nnan)}}>
++  %p = llvm.fmul %a, %b {fastmathFlags = #llvm.fastmath<nnan>} : f32
++  llvm.return %p : f32
++}
+--- a/third_party/iree_bar/compiler/src/iree/compiler/Codegen/LLVMCPU/Passes.cpp
++++ b/third_party/iree_bar/compiler/src/iree/compiler/Codegen/LLVMCPU/Passes.cpp
+@@ -611,8 +611,11 @@
+ 
+   modulePassManager.addPass(createCanonicalizerPass());
+   modulePassManager.addPass(createCSEPass());
+-  modulePassManager.addNestedPass<LLVM::LLVMFuncOp>(
+-      createAddFastMathFlagsPass());
++  // Contracting separate eager operations skips an observable rounding.
++  // Explicit llvm.intr.fma remains intact when strict rounding is requested.
++  if (cpuOpts.skipIntermediateRoundings)
++    modulePassManager.addNestedPass<LLVM::LLVMFuncOp>(
++        createAddFastMathFlagsPass());
+ }
+ 
+ void buildLLVMCPUCodegenConfigurationPassPipelineImpl(
+--- a/third_party/iree_bar/third_party/torch-mlir/lib/Conversion/TorchToLinalg/Uncategorized.cpp
++++ b/third_party/iree_bar/third_party/torch-mlir/lib/Conversion/TorchToLinalg/Uncategorized.cpp
+@@ -743,7 +743,7 @@
+       Value xPlusXCubeMulAlpha =
+           arith::AddFOp::create(b, loc, payloadArgs[0], xCubeMulAlpha);
+       Value cstBeta = arith::ConstantOp::create(
+-          b, loc, FloatAttr::get(elementType, 0.7977240352174656));
++          b, loc, FloatAttr::get(elementType, 0.7978845608028654));
+       Value betaMulX =
+           arith::MulFOp::create(b, loc, cstBeta, xPlusXCubeMulAlpha);
+       Value tanh = math::TanhOp::create(b, loc, betaMulX);
+--- a/third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms/CMakeLists.txt
++++ b/third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms/CMakeLists.txt
+@@ -32,6 +32,11 @@
+ 
+   LINK_LIBS PUBLIC
+   MLIRIR
++  MLIRParser
++  MLIRMathDialect
++  MLIRLinalgDialect
++  MLIRTensorDialect
++  TorchMLIRTorchConversionDialect
+   MLIRPass
+   MLIRTransforms
+   TorchMLIRTorchDialect
+--- a/third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms/DecomposeComplexOps.cpp
++++ b/third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms/DecomposeComplexOps.cpp
+@@ -7,10 +7,13 @@
+ //
+ //===----------------------------------------------------------------------===//
+ 
++#include "mlir/Dialect/Arith/IR/Arith.h"
+ #include "mlir/Dialect/Func/IR/FuncOps.h"
++#include "torch-mlir/Dialect/TorchConversion/IR/TorchConversionOps.h"
+ #include "mlir/Dialect/Utils/StaticValueUtils.h"
+ #include "mlir/IR/BuiltinDialect.h"
+ #include "mlir/IR/BuiltinTypes.h"
++#include "mlir/IR/DialectResourceBlobManager.h"
+ #include "mlir/Pass/Pass.h"
+ #include "mlir/Transforms/DialectConversion.h"
+ #include "mlir/Transforms/GreedyPatternRewriteDriver.h"
+@@ -24,6 +27,17 @@
+ #include "llvm/ADT/StringSet.h"
+ #include <cstdint>
+ #include <set>
++#include "mlir/Parser/Parser.h"
++#include "mlir/IR/IRMapping.h"
++#include "mlir/Dialect/Math/IR/Math.h"
++#include "mlir/Dialect/Linalg/IR/Linalg.h"
++#include "mlir/Dialect/Tensor/IR/Tensor.h"
++#include "llvm/Support/CommandLine.h"
++#include "llvm/Support/DynamicLibrary.h"
++#include <numeric>
++#include <cmath>
++#include <cstring>
++
+ using namespace mlir;
+ using namespace mlir::torch;
+ using namespace mlir::torch::Torch;
+@@ -32,6 +46,30 @@
+ #define GEN_PASS_DECL_DECOMPOSECOMPLEXOPS
+ #define GEN_PASS_DEF_DECOMPOSECOMPLEXOPS
+ #include "torch-mlir/Dialect/Torch/Transforms/Passes.h.inc"
++
++#include "PytorchCpuCompatibility.h"
++
++// Reuse widening integer mm without changing signedness or accumulation type.
++struct DecomposeAten_IntMmOp : public OpRewritePattern<Aten_IntMmOp> {
++  using OpRewritePattern::OpRewritePattern;
++  LogicalResult matchAndRewrite(Aten_IntMmOp op,
++                                PatternRewriter &rewriter) const override {
++    auto lhs = dyn_cast<ValueTensorType>(op->getOperand(0).getType());
++    auto rhs = dyn_cast<ValueTensorType>(op->getOperand(1).getType());
++    auto out = dyn_cast<ValueTensorType>(op->getResult(0).getType());
++    if (!lhs || !rhs || !out || !lhs.hasDtype() || !rhs.hasDtype() ||
++        !out.hasDtype() || !lhs.getDtype().isSignedInteger(8) ||
++        !rhs.getDtype().isSignedInteger(8) || !out.getDtype().isSignedInteger(32))
++      return rewriter.notifyMatchFailure(op, "expected signed i8 operands and i32 result");
++    OperationState state(op.getLoc(), "torch.aten.mm");
++    state.addOperands(op->getOperands());
++    state.addTypes(op->getResultTypes());
++    auto *mm = rewriter.create(state);
++    rewriter.replaceOp(op, mm->getResults());
++    return success();
++  }
++};
++
+ 
+ // Helper function to check whether the `dtype` is None or Float type.
+ static bool isNoneOrFloatDtype(MLIRContext *context, Value dtype) {
+@@ -13845,7 +13883,15 @@
+ public:
+   using impl::DecomposeComplexOpsBase<
+       DecomposeComplexOpsPass>::DecomposeComplexOpsBase;
++  void getDependentDialects(DialectRegistry &registry) const override {
++    impl::DecomposeComplexOpsBase<DecomposeComplexOpsPass>::getDependentDialects(registry);
++    registry.insert<arith::ArithDialect, func::FuncDialect, Torch::TorchDialect,
++                    linalg::LinalgDialect, math::MathDialect, tensor::TensorDialect,
++                    TorchConversion::TorchConversionDialect>();
++  }
+   void runOnOperation() override {
++    if (pytorchCpuNumerics && failed(applyCpuCompatibility(getOperation())))
++      return signalPassFailure();
+     MLIRContext *context = &getContext();
+     RewritePatternSet patterns(context);
+     // The strings in the `legalOps` ArrayRef don't exist during the call to the
+@@ -13853,6 +13899,8 @@
+     // `legalOpsSet` must be delayed to when `runOnOperation` gets called.
+     legalOpsSet.clear();
+     legalOpsSet.insert(legalOps.begin(), legalOps.end());
++
++    addPatternIfTargetOpIsIllegal<DecomposeAten_IntMmOp>(patterns);
+ 
+     addPatternIfTargetOpIsIllegal<DecomposeAtenScaledDotProductAttentionOp>(
+         patterns);
+--- /dev/null
++++ b/third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms/PytorchCpuCompatibility.h
+@@ -0,0 +1,302 @@
++// Copyright 2026. Apache-2.0 WITH LLVM-exception.
++// Opt-in compatibility with pinned PyTorch 2.10 CPU arithmetic. Algorithm
++// templates contain no model data. Unsupported shapes use ordinary lowering.
++
++static llvm::cl::opt<bool> pytorchCpuNumerics(
++    "torch-pytorch-cpu-numerics", llvm::cl::init(false),
++    llvm::cl::desc(
++        "Use scoped PyTorch 2.10 AVX2 CPU mean/softmax/SiLU algorithms"));
++static llvm::cl::opt<unsigned> pytorchCpuThreads(
++    "torch-pytorch-cpu-reference-threads", llvm::cl::init(16),
++    llvm::cl::desc("Reference PyTorch intra-op threads for SiLU scalar tails"));
++
++static llvm::cl::opt<std::string> pytorchCpuMathLibrary(
++    "torch-pytorch-cpu-constant-math-library", llvm::cl::init(""),
++    llvm::cl::desc(
++        "Optional host VML library for static f32 sin/cos evaluation; "
++        "must export vsSin/vsCos with 32-bit element counts"));
++
++namespace {
++#include "PytorchCpuConstantFold.h"
++#include "PytorchCpuExpTemplates.inc"
++struct CpuRecipe {
++  std::string text;
++  unsigned id = 0;
++  std::string emit(const std::string &rhs) {
++    auto v = "%n" + std::to_string(++id);
++    text += v + " = " + rhs + "\n";
++    return v;
++  }
++  std::string integer(int64_t n) {
++    return emit("torch.constant.int " + std::to_string(n));
++  }
++};
++static std::string cpuType(ArrayRef<int64_t> shape, bool builtin = false) {
++  std::string s = builtin ? "tensor<" : "!torch.vtensor<[";
++  for (unsigned i = 0; i < shape.size(); ++i) {
++    if (i)
++      s += builtin ? "x" : ",";
++    s += std::to_string(shape[i]);
++  }
++  return s + (builtin ? "xf32>" : "],f32>");
++}
++static LogicalResult cpuInstall(Operation *op, StringRef body,
++                                StringRef result) {
++  std::string input, output;
++  llvm::raw_string_ostream a(input), b(output);
++  op->getOperand(0).getType().print(a);
++  op->getResult(0).getType().print(b);
++  auto module = parseSourceString<ModuleOp>(
++      "module { func.func @recipe(%arg: " + input + ") -> " + output + " {\n" +
++          body.str() + "return " + result.str() + " : " + output + "\n}}",
++      op->getContext());
++  if (!module)
++    return op->emitError("invalid CPU arithmetic recipe");
++  auto fn = *module->getOps<func::FuncOp>().begin();
++  IRMapping map;
++  map.map(fn.getArgument(0), op->getOperand(0));
++  OpBuilder builder(op);
++  for (auto &inst : fn.front().without_terminator())
++    builder.clone(inst, map);
++  op->getResult(0).replaceAllUsesWith(
++      map.lookup(fn.front().getTerminator()->getOperand(0)));
++  op->erase();
++  return success();
++}
++static LogicalResult cpuMean(Operation *op, ArrayRef<int64_t> shape) {
++  int64_t n = shape.back(), axis;
++  bool keep;
++  auto list = op->getOperand(1).getDefiningOp<PrimListConstructOp>();
++  if (!list || list.getNumOperands() != 1 ||
++      !matchPattern(list.getOperand(0), m_TorchConstantInt(&axis)) ||
++      (axis != -1 && axis != int64_t(shape.size() - 1)) ||
++      !matchPattern(op->getOperand(2), m_TorchConstantBool(&keep)) || !keep ||
++      !isa<Torch::NoneType>(op->getOperand(3).getType()) || n % 8 || n < 8 ||
++      n / 32 > 256)
++    return success();
++  CpuRecipe r;
++  auto t = cpuType(shape);
++  auto sh = SmallVector<int64_t>(shape);
++  sh.back() = 8;
++  auto m = cpuType(sh);
++  sh.back() = 1;
++  auto s = cpuType(sh);
++  auto ax = r.integer(shape.size() - 1), one = r.integer(1);
++  auto none = r.emit("torch.constant.none");
++  auto slice = [&](std::string x, int start, int end, std::string from,
++                   std::string to) {
++    auto lo = r.integer(start), hi = r.integer(end);
++    return r.emit("torch.aten.slice.Tensor " + x + ", " + ax + ", " + lo +
++                  ", " + hi + ", " + one + " : " + from +
++                  ", !torch.int, !torch.int, !torch.int, !torch.int -> " + to);
++  };
++  auto add = [&](std::string a, std::string b, std::string ty) {
++    return r.emit("torch.aten.add.Tensor " + a + ", " + b + ", " + one + " : " +
++                  ty + ", " + ty + ", !torch.int -> " + ty);
++  };
++  auto zslice = slice("%arg", 0, 8, t, m);
++  auto z = r.emit(
++      "torch.aten.zeros_like " + zslice + ", " + none + ", " + none + ", " +
++      none + ", " + none + ", " + none + " : " + m +
++      ", !torch.none, !torch.none, !torch.none, !torch.none, !torch.none -> " +
++      m);
++  std::string levels[4][4];
++  for (auto &lev : levels)
++    for (auto &v : lev)
++      v = z;
++  for (int i = 0; i < n / 32; ++i) {
++    for (int k = 0; k < 4; ++k)
++      levels[0][k] =
++          add(levels[0][k],
++              slice("%arg", i * 32 + k * 8, i * 32 + (k + 1) * 8, t, m), m);
++    if ((i + 1) % 16 == 0)
++      for (int j = 1; j < 4; ++j) {
++        for (int k = 0; k < 4; ++k) {
++          levels[j][k] = add(levels[j][k], levels[j - 1][k], m);
++          levels[j - 1][k] = z;
++        }
++        if (((i + 1) & (15 << (j * 4))) != 0)
++          break;
++      }
++  }
++  for (int j = 1; j < 4; ++j)
++    for (int k = 0; k < 4; ++k)
++      levels[0][k] = add(levels[0][k], levels[j][k], m);
++  for (int k = (n / 32) * 4; k < n / 8; ++k)
++    levels[0][0] =
++        add(levels[0][0], slice("%arg", k * 8, (k + 1) * 8, t, m), m);
++  auto p = levels[0][0];
++  for (int k = 1; k < 4; ++k)
++    p = add(p, levels[0][k], m);
++  auto sum = slice(z, 0, 1, m, s);
++  for (int k = 0; k < 8; ++k)
++    sum = add(sum, slice(p, k, k + 1, m, s), s);
++  auto div = r.emit("torch.constant.float " + std::to_string(double(n)));
++  auto out = r.emit("torch.aten.div.Scalar " + sum + ", " + div + " : " + s +
++                    ", !torch.float -> " + s);
++  return cpuInstall(op, r.text, out);
++}
++static LogicalResult cpuSoftmax(Operation *op, ArrayRef<int64_t> shape) {
++  int64_t axis;
++  if (shape.back() != 16 ||
++      !matchPattern(op->getOperand(1), m_TorchConstantInt(&axis)) ||
++      (axis != -1 && axis != int64_t(shape.size() - 1)))
++    return success();
++  // Identity FP32 dtype requests are common in exported attention graphs.
++  // A real dtype conversion continues through ordinary lowering.
++  if (op->getName().getStringRef() == "torch.aten.softmax.int" &&
++      !isa<Torch::NoneType>(op->getOperand(2).getType())) {
++    int64_t dtype;
++    if (!matchPattern(op->getOperand(2), m_TorchConstantInt(&dtype)) || dtype != 6)
++      return success();
++  }
++  CpuRecipe r;
++  auto sh = SmallVector<int64_t>(shape);
++  auto t = cpuType(sh);
++  sh.back() = 1;
++  auto m = cpuType(sh);
++  auto ax = r.integer(shape.size() - 1), one = r.integer(1);
++  auto ds = r.emit("torch.prim.ListConstruct " + ax +
++                   " : (!torch.int) -> !torch.list<int>");
++  auto yes = r.emit("torch.constant.bool true");
++  auto max = r.emit("torch.aten.amax %arg, " + ds + ", " + yes + " : " + t +
++                    ", !torch.list<int>, !torch.bool -> " + m);
++  auto sub = r.emit("torch.aten.sub.Tensor %arg, " + max + ", " + one + " : " +
++                    t + ", " + m + ", !torch.int -> " + t);
++  auto exp = r.emit("torch.aten.exp " + sub + " : " + t + " -> " + t),
++       val = exp;
++  for (int n : {8, 4, 2, 1}) {
++    sh.back() = n * 2;
++    auto prev = cpuType(sh);
++    sh.back() = n;
++    auto cur = cpuType(sh);
++    auto lo = r.integer(0), mid = r.integer(n), hi = r.integer(n * 2);
++    auto a =
++        r.emit("torch.aten.slice.Tensor " + val + ", " + ax + ", " + lo + ", " +
++               mid + ", " + one + " : " + prev +
++               ", !torch.int, !torch.int, !torch.int, !torch.int -> " + cur);
++    auto b =
++        r.emit("torch.aten.slice.Tensor " + val + ", " + ax + ", " + mid +
++               ", " + hi + ", " + one + " : " + prev +
++               ", !torch.int, !torch.int, !torch.int, !torch.int -> " + cur);
++    val = r.emit("torch.aten.add.Tensor " + a + ", " + b + ", " + one + " : " +
++                 cur + ", " + cur + ", !torch.int -> " + cur);
++  }
++  auto rec = r.emit("torch.aten.reciprocal " + val + " : " + m + " -> " + m);
++  auto out = r.emit("torch.aten.mul.Tensor " + exp + ", " + rec + " : " + t +
++                    ", " + m + " -> " + t);
++  return cpuInstall(op, r.text, out);
++}
++static LogicalResult cpuExp(Operation *op, ArrayRef<int64_t> shape, bool silu) {
++  CpuRecipe r;
++  auto t = cpuType(shape), bt = cpuType(shape, true);
++  auto in = r.emit("torch_c.to_builtin_tensor %arg : " + t + " -> " + bt);
++  auto empty = r.emit("tensor.empty() : " + bt);
++  std::string dims, iters;
++  for (unsigned i = 0; i < shape.size(); ++i) {
++    if (i) {
++      dims += ",";
++      iters += ",";
++    }
++    dims += "d" + std::to_string(i);
++    iters += "\"parallel\"";
++  }
++  auto am = "affine_map<(" + dims + ")->(" + dims + ")>";
++  r.text += "%generic = linalg.generic {indexing_maps = [" + am + ", " + am +
++            "], iterator_types = [" + iters + "]} ins(" + in + " : " + bt +
++            ") outs(" + empty + " : " + bt +
++            ") {\n^bb0(%input: f32, %unused: f32):\n";
++  r.text += silu ? "%raw = arith.negf %input : f32\n"
++                 : "%raw = arith.bitcast %input : f32 to f32\n";
++  // Keep float-to-integer range reduction defined for Inf/NaN and extreme
++  // finite values. exp(-104) rounds to zero; exp(100) overflows to infinity.
++  r.text += R"mlir(
++%expLo = arith.constant -1.040000e+02 : f32
++%expHi = arith.constant 1.000000e+02 : f32
++%expZero = arith.constant 0.000000e+00 : f32
++%isNan = arith.cmpf uno, %raw, %raw : f32
++%finiteInput = arith.select %isNan, %expZero, %raw : f32
++%below = arith.cmpf olt, %finiteInput, %expLo : f32
++%clippedLo = arith.select %below, %expLo, %finiteInput : f32
++%above = arith.cmpf ogt, %clippedLo, %expHi : f32
++%x = arith.select %above, %expHi, %clippedLo : f32
++)mlir";
++  r.text += std::string(vectorExp) + "\n";
++  std::string res = vectorResult;
++  if (silu) {
++    r.text += std::string(scalarExp) + "\n";
++    int64_t count = 1;
++    for (auto d : shape)
++      count *= d;
++    int64_t tasks =
++                std::min<int64_t>(std::max(1u, pytorchCpuThreads.getValue()),
++                                  (count + 32767) / 32768),
++            chunk = (count + tasks - 1) / tasks;
++    auto idx = r.emit("linalg.index 0 : index");
++    for (unsigned i = 1; i < shape.size(); ++i) {
++      auto dim =
++          r.emit("arith.constant " + std::to_string(shape[i]) + " : index");
++      idx = r.emit("arith.muli " + idx + ", " + dim + " : index");
++      auto next = r.emit("linalg.index " + std::to_string(i) + " : index");
++      idx = r.emit("arith.addi " + idx + ", " + next + " : index");
++    }
++    auto mask = r.emit("arith.constant false");
++    for (int64_t task = 0; task < tasks; ++task) {
++      int64_t begin = task * chunk, end = std::min(count, begin + chunk),
++              tail = begin + (end - begin) / 32 * 32;
++      if (tail == end)
++        continue;
++      auto lo = r.emit("arith.constant " + std::to_string(tail) + " : index"),
++           hi = r.emit("arith.constant " + std::to_string(end) + " : index");
++      auto ge = r.emit("arith.cmpi uge, " + idx + ", " + lo + " : index"),
++           lt = r.emit("arith.cmpi ult, " + idx + ", " + hi + " : index");
++      auto both = r.emit("arith.andi " + ge + ", " + lt + " : i1");
++      mask = r.emit("arith.ori " + mask + ", " + both + " : i1");
++    }
++    res = r.emit("arith.select " + mask + ", " + scalarResult + ", " + res +
++                 " : f32");
++    auto one = r.emit("arith.constant 1.000000e+00 : f32");
++    auto den = r.emit("arith.addf " + one + ", " + res + " : f32");
++    res = r.emit("arith.divf %input, " + den + " : f32");
++  }
++  res = r.emit("arith.select %isNan, %raw, " + res + " : f32");
++  r.text += "linalg.yield " + res + " : f32\n} -> " + bt + "\n";
++  auto out =
++      r.emit("torch_c.from_builtin_tensor %generic : " + bt + " -> " + t);
++  return cpuInstall(op, r.text, out);
++}
++static LogicalResult applyCpuCompatibility(func::FuncOp fn) {
++  if (failed(cpuFoldStaticTrig(fn)))
++    return failure();
++  // Revisit after softmax expansion so its exp gets the same SLEEF algorithm.
++  for (int phase = 0; phase < 2; ++phase) {
++    SmallVector<Operation *> ops;
++    fn.walk([&](Operation *op) {
++      auto name = op->getName().getStringRef();
++      if (name == "torch.aten.mean.dim" || name == "torch.aten.softmax.int" ||
++          name == "torch.aten._softmax" || name == "torch.aten.exp" ||
++          name == "torch.aten.silu")
++        ops.push_back(op);
++    });
++    for (auto *op : ops) {
++      auto ty = dyn_cast<ValueTensorType>(op->getOperand(0).getType());
++      if (!ty || !ty.hasSizes() || !ty.hasDtype() || !ty.getDtype().isF32() ||
++          ty.getSizes().empty() ||
++          llvm::any_of(ty.getSizes(), [](int64_t n) { return n <= 0; }))
++        continue;
++      auto name = op->getName().getStringRef();
++      LogicalResult status = success();
++      if (name == "torch.aten.mean.dim")
++        status = cpuMean(op, ty.getSizes());
++      else if (name == "torch.aten.softmax.int" ||
++               name == "torch.aten._softmax")
++        status = cpuSoftmax(op, ty.getSizes());
++      else
++        status = cpuExp(op, ty.getSizes(), name == "torch.aten.silu");
++      if (failed(status))
++        return failure();
++    }
++  }
++  return success();
++}
++} // namespace
+--- /dev/null
++++ b/third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms/PytorchCpuConstantFold.h
+@@ -0,0 +1,216 @@
++// Dependency-closed static tensor evaluation. Never reads function inputs or
++// runtime files. Bounded to small tensors; unknown operations are rejected.
++struct CpuConstant {
++  SmallVector<int64_t> shape;
++  std::vector<float> data;
++};
++static std::optional<CpuConstant> cpuConstant(Value value, unsigned depth = 0) {
++  if (depth > 32)
++    return std::nullopt;
++  auto *op = value.getDefiningOp();
++  if (!op)
++    return std::nullopt;
++  auto ty = dyn_cast<ValueTensorType>(value.getType());
++  if (!ty || !ty.hasSizes() || !ty.hasDtype() ||
++      (!ty.getDtype().isF32() && !ty.getDtype().isSignedInteger(64)) ||
++      llvm::any_of(ty.getSizes(), [](int64_t n) { return n <= 0; }))
++    return std::nullopt;
++  CpuConstant out;
++  out.shape.assign(ty.getSizes().begin(), ty.getSizes().end());
++  int64_t size = 1;
++  for (auto d : out.shape) {
++    if (d > 65536 || size > 65536 / d)
++      return std::nullopt;
++    size *= d;
++  }
++  auto name = op->getName().getStringRef();
++  if (name == "torch.vtensor.literal") {
++    auto attr = cast<ValueTensorLiteralOp>(op).getValueAttr();
++    DenseElementsAttr dense;
++    if (auto a = dyn_cast<DenseElementsAttr>(attr))
++      dense = a;
++    else if (auto a = dyn_cast<DenseResourceElementsAttr>(attr)) {
++      auto *blob = a.getRawHandle().getBlob();
++      if (!blob)
++        return std::nullopt;
++      dense = DenseElementsAttr::getFromRawBuffer(cast<ShapedType>(a.getType()),
++                                                  blob->getData());
++    }
++    if (!dense)
++      return std::nullopt;
++    if (isa<mlir::FloatType>(dense.getElementType()))
++      for (auto f : dense.getValues<APFloat>())
++        out.data.push_back(f.convertToFloat());
++    else if (dense.getElementType().isInteger(64))
++      for (auto i : dense.getValues<APInt>())
++        out.data.push_back(float(i.getSExtValue()));
++    else
++      return std::nullopt;
++    return out;
++  }
++  auto index = [](ArrayRef<int64_t> shape, ArrayRef<int64_t> coord) {
++    int64_t off = 0;
++    for (unsigned i = 0; i < shape.size(); ++i)
++      off = off * shape[i] + coord[i];
++    return off;
++  };
++  auto coords = [](int64_t off, ArrayRef<int64_t> shape) {
++    SmallVector<int64_t> c(shape.size());
++    for (int i = int(shape.size()) - 1; i >= 0; --i) {
++      c[i] = off % shape[i];
++      off /= shape[i];
++    }
++    return c;
++  };
++  if (name == "torch.aten.cat") {
++    auto list = op->getOperand(0).getDefiningOp<PrimListConstructOp>();
++    int64_t axis;
++    if (!list || !matchPattern(op->getOperand(1), m_TorchConstantInt(&axis)))
++      return std::nullopt;
++    if (axis < 0)
++      axis += out.shape.size();
++    if (axis < 0 || axis >= int64_t(out.shape.size()))
++      return std::nullopt;
++    SmallVector<CpuConstant> xs;
++    for (auto v : list.getOperands()) {
++      auto x = cpuConstant(v, depth + 1);
++      if (!x)
++        return std::nullopt;
++      xs.push_back(std::move(*x));
++    }
++    for (int64_t i = 0; i < size; ++i) {
++      auto c = coords(i, out.shape);
++      int64_t pos = c[axis];
++      bool found = false;
++      for (auto &x : xs) {
++        if (pos < x.shape[axis]) {
++          c[axis] = pos;
++          out.data.push_back(x.data[index(x.shape, c)]);
++          found = true;
++          break;
++        }
++        pos -= x.shape[axis];
++      }
++      if (!found)
++        return std::nullopt;
++    }
++    return out;
++  }
++  auto x = cpuConstant(op->getOperand(0), depth + 1);
++  if (!x)
++    return std::nullopt;
++  if (name == "torch.aten.unsqueeze" ||
++      name == "torch.prims.convert_element_type") {
++    if (name == "torch.prims.convert_element_type" && !ty.getDtype().isF32())
++      return std::nullopt;
++    out.data = x->data;
++    return out;
++  }
++  if (name == "torch.aten.expand") {
++    if (x->shape.size() > out.shape.size())
++      return std::nullopt;
++    for (int64_t i = 0; i < size; ++i) {
++      auto c = coords(i, out.shape);
++      SmallVector<int64_t> xc(x->shape.size());
++      for (unsigned j = 0; j < xc.size(); ++j) {
++        auto ci = c[c.size() - xc.size() + j];
++        if (x->shape[j] != 1 &&
++            x->shape[j] != out.shape[c.size() - xc.size() + j])
++          return std::nullopt;
++        xc[j] = x->shape[j] == 1 ? 0 : ci;
++      }
++      out.data.push_back(x->data[index(x->shape, xc)]);
++    }
++    return out;
++  }
++  if (name == "torch.aten.transpose.int") {
++    int64_t a, b;
++    if (!matchPattern(op->getOperand(1), m_TorchConstantInt(&a)) ||
++        !matchPattern(op->getOperand(2), m_TorchConstantInt(&b)))
++      return std::nullopt;
++    int64_t rank = out.shape.size();
++    if (a < 0)
++      a += rank;
++    if (b < 0)
++      b += rank;
++    if (a < 0 || b < 0 || a >= rank || b >= rank)
++      return std::nullopt;
++    for (int64_t i = 0; i < size; ++i) {
++      auto c = coords(i, out.shape);
++      std::swap(c[a], c[b]);
++      out.data.push_back(x->data[index(x->shape, c)]);
++    }
++    return out;
++  }
++  if (name == "torch.aten.matmul") {
++    if (!ty.getDtype().isF32())
++      return std::nullopt;
++    auto y = cpuConstant(op->getOperand(1), depth + 1);
++    if (!y || x->shape.size() != 3 || y->shape.size() != 3 ||
++        out.shape.size() != 3 || x->shape[2] != 1 || y->shape[1] != 1 ||
++        x->shape[0] != y->shape[0])
++      return std::nullopt;
++    // Conservatively avoid signed-zero/exceptional-value differences between
++    // a BLAS K=1 kernel and a standalone multiplication.
++    auto unsupported = [](float f) {
++      return std::signbit(f) || !std::isfinite(f);
++    };
++    if (llvm::any_of(x->data, unsupported) ||
++        llvm::any_of(y->data, unsupported))
++      return std::nullopt;
++    for (int64_t i = 0; i < size; ++i) {
++      auto c = coords(i, out.shape);
++      out.data.push_back(x->data[c[0] * x->shape[1] + c[1]] *
++                         y->data[c[0] * y->shape[2] + c[2]]);
++    }
++    return out;
++  }
++  return std::nullopt;
++}
++static LogicalResult cpuFoldStaticTrig(func::FuncOp fn) {
++  SmallVector<Operation *> ops;
++  fn.walk([&](Operation *op) {
++    if (op->getName().getStringRef() == "torch.aten.sin" ||
++        op->getName().getStringRef() == "torch.aten.cos")
++      ops.push_back(op);
++  });
++  for (auto *op : ops) {
++    auto ty = dyn_cast<ValueTensorType>(op->getResult(0).getType());
++    if (!ty || !ty.hasDtype() || !ty.getDtype().isF32())
++      continue;
++    auto x = cpuConstant(op->getOperand(0));
++    if (!x)
++      continue;
++    if (!pytorchCpuMathLibrary.empty()) {
++      // An explicit target-reference math library is an algorithm dependency,
++      // not a source of model data. Only evaluate dependency-closed constants.
++      std::string error;
++      auto library = llvm::sys::DynamicLibrary::getPermanentLibrary(
++          pytorchCpuMathLibrary.c_str(), &error);
++      if (!library.isValid())
++        return op->emitError("cannot load constant math library: ") << error;
++      const char *symbol =
++          op->getName().getStringRef() == "torch.aten.sin" ? "vsSin" : "vsCos";
++      using VmlFunction = void (*)(int, const float *, float *);
++      auto function =
++          reinterpret_cast<VmlFunction>(library.getAddressOfSymbol(symbol));
++      if (!function)
++        return op->emitError("constant math library lacks ") << symbol;
++      std::vector<float> result(x->data.size());
++      function(int(x->data.size()), x->data.data(), result.data());
++      x->data = std::move(result);
++    } else {
++      for (auto &f : x->data)
++        f = op->getName().getStringRef() == "torch.aten.sin"
++                ? float(std::sin(double(f)))
++                : float(std::cos(double(f)));
++    }
++    OpBuilder b(op);
++    auto tensor = RankedTensorType::get(x->shape, b.getF32Type());
++    auto dense = DenseElementsAttr::get(tensor, ArrayRef<float>(x->data));
++    auto replacement = ValueTensorLiteralOp::create(b, op->getLoc(), dense);
++    op->replaceAllUsesWith(replacement.getOperation());
++    op->erase();
++  }
++  return success();
++}
+--- /dev/null
++++ b/third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms/PytorchCpuExpTemplates.inc
+@@ -0,0 +1,93 @@
++static constexpr const char *vectorExp = R"mlir(%e0 = arith.constant 1.44269504088896339e+00 : f32
++%e1 = arith.mulf %x, %e0 : f32
++%e2 = math.roundeven %e1 : f32
++%e3 = arith.fptosi %e2 : f32 to i32
++%e4 = arith.constant -6.93145751953125000e-01 : f32
++%e5 = math.fma %e2, %e4, %x : f32
++%e6 = arith.constant -1.42860676533018705e-06 : f32
++%e7 = math.fma %e2, %e6, %e5 : f32
++%e8 = arith.constant 1.98527617612853646e-04 : f32
++%e9 = arith.constant 1.39304355252534151e-03 : f32
++%e10 = math.fma %e8, %e7, %e9 : f32
++%e11 = arith.constant 8.33336077630519867e-03 : f32
++%e12 = math.fma %e10, %e7, %e11 : f32
++%e13 = arith.constant 4.16664853692054749e-02 : f32
++%e14 = math.fma %e12, %e7, %e13 : f32
++%e15 = arith.constant 1.66666671633720398e-01 : f32
++%e16 = math.fma %e14, %e7, %e15 : f32
++%e17 = arith.constant 5.00000000000000000e-01 : f32
++%e18 = math.fma %e16, %e7, %e17 : f32
++%e19 = arith.constant 1.00000000000000000e+00 : f32
++%e20 = arith.mulf %e7, %e7 : f32
++%e21 = math.fma %e20, %e18, %e7 : f32
++%e22 = arith.addf %e19, %e21 : f32
++%e23 = arith.constant 1 : i32
++%e24 = arith.shrsi %e3, %e23 : i32
++%e25 = arith.subi %e3, %e24 : i32
++%e26 = arith.constant 127 : i32
++%e27 = arith.addi %e24, %e26 : i32
++%e28 = arith.constant 23 : i32
++%e29 = arith.shli %e27, %e28 : i32
++%e30 = arith.bitcast %e29 : i32 to f32
++%e31 = arith.mulf %e22, %e30 : f32
++%e32 = arith.constant 127 : i32
++%e33 = arith.addi %e25, %e32 : i32
++%e34 = arith.constant 23 : i32
++%e35 = arith.shli %e33, %e34 : i32
++%e36 = arith.bitcast %e35 : i32 to f32
++%e37 = arith.mulf %e31, %e36 : f32
++%e38 = arith.constant -1.04000000000000000e+02 : f32
++%e39 = arith.cmpf olt, %x, %e38 : f32
++%e40 = arith.constant 0.00000000000000000e+00 : f32
++%e41 = arith.select %e39, %e40, %e37 : f32
++%e42 = arith.constant 1.00000000000000000e+02 : f32
++%e43 = arith.cmpf ogt, %x, %e42 : f32
++%e44 = arith.constant 0x7F800000 : f32
++%e45 = arith.select %e43, %e44, %e41 : f32)mlir";
++static constexpr const char *scalarExp = R"mlir(%s0 = arith.extf %x : f32 to f64
++%s1 = arith.constant 1.44269504088896339e+00 : f64
++%s2 = arith.mulf %s0, %s1 : f64
++%s3 = math.roundeven %s2 : f64
++%s4 = arith.fptosi %s3 : f64 to i64
++%s5 = arith.constant -6.93147180559945286e-01 : f64
++%s6 = math.fma %s3, %s5, %s0 : f64
++%s7 = arith.constant -2.31904681384629956e-17 : f64
++%s8 = math.fma %s3, %s7, %s6 : f64
++%s9 = arith.constant 1.14707455977297245e-11 : f64
++%s10 = arith.constant 1.60590438368216133e-10 : f64
++%s11 = math.fma %s9, %s8, %s10 : f64
++%s12 = arith.constant 2.08767569878681002e-09 : f64
++%s13 = math.fma %s11, %s8, %s12 : f64
++%s14 = arith.constant 2.50521083854417202e-08 : f64
++%s15 = math.fma %s13, %s8, %s14 : f64
++%s16 = arith.constant 2.75573192239858883e-07 : f64
++%s17 = math.fma %s15, %s8, %s16 : f64
++%s18 = arith.constant 2.75573192239858925e-06 : f64
++%s19 = math.fma %s17, %s8, %s18 : f64
++%s20 = arith.constant 2.48015873015873016e-05 : f64
++%s21 = math.fma %s19, %s8, %s20 : f64
++%s22 = arith.constant 1.98412698412698413e-04 : f64
++%s23 = math.fma %s21, %s8, %s22 : f64
++%s24 = arith.constant 1.38888888888888894e-03 : f64
++%s25 = math.fma %s23, %s8, %s24 : f64
++%s26 = arith.constant 8.33333333333333322e-03 : f64
++%s27 = math.fma %s25, %s8, %s26 : f64
++%s28 = arith.constant 4.16666666666666644e-02 : f64
++%s29 = math.fma %s27, %s8, %s28 : f64
++%s30 = arith.constant 1.66666666666666657e-01 : f64
++%s31 = math.fma %s29, %s8, %s30 : f64
++%s32 = arith.constant 5.00000000000000000e-01 : f64
++%s33 = math.fma %s31, %s8, %s32 : f64
++%s34 = arith.constant 1.00000000000000000e+00 : f64
++%s35 = math.fma %s33, %s8, %s34 : f64
++%s36 = arith.constant 1.00000000000000000e+00 : f64
++%s37 = math.fma %s35, %s8, %s36 : f64
++%s38 = arith.constant 1023 : i64
++%s39 = arith.addi %s4, %s38 : i64
++%s40 = arith.constant 52 : i64
++%s41 = arith.shli %s39, %s40 : i64
++%s42 = arith.bitcast %s41 : i64 to f64
++%s43 = arith.mulf %s37, %s42 : f64
++%s44 = arith.truncf %s43 : f64 to f32)mlir";
++static constexpr const char *vectorResult = "%e45";
++static constexpr const char *scalarResult = "%s44";
+--- a/third_party/iree_bar/third_party/torch-mlir/lib/Dialect/TorchConversion/Transforms/CMakeLists.txt
++++ b/third_party/iree_bar/third_party/torch-mlir/lib/Dialect/TorchConversion/Transforms/CMakeLists.txt
+@@ -3,6 +3,7 @@
+   MLIRControlFlowTransforms
+   MLIRIR
+   MLIRLinalgTransforms
++  MLIRMathDialect
+   MLIRMemRefTransforms
+   MLIRPass
+   MLIRTosaTransforms
+--- a/third_party/iree_bar/third_party/torch-mlir/lib/Dialect/TorchConversion/Transforms/ConvertCustomQuantOp.cpp
++++ b/third_party/iree_bar/third_party/torch-mlir/lib/Dialect/TorchConversion/Transforms/ConvertCustomQuantOp.cpp
+@@ -10,6 +10,9 @@
+ #include "mlir/Dialect/Arith/IR/Arith.h"
+ #include "mlir/Dialect/Func/IR/FuncOps.h"
+ #include "mlir/Dialect/Linalg/IR/Linalg.h"
++#include "mlir/Dialect/Math/IR/Math.h"
++#include "torch-mlir/Dialect/Torch/Utils/Utils.h"
++#include <cmath>
+ #include "mlir/Dialect/Tensor/IR/Tensor.h"
+ #include "mlir/Pass/Pass.h"
+ #include "mlir/Transforms/DialectConversion.h"
+@@ -345,6 +348,46 @@
+   }
+ };
+ 
++// Match TorchAO's _get_reduction_params: split partial blocks into a
++// group axis and a reduction axis. Dynamic dimensions are supported when
++// block_size=1; dynamic blocked axes require a runtime divisibility contract
++// and are deliberately rejected instead of inventing a qparam shape.
++struct AffineBlockLayout {
++  SmallVector<int64_t> shape;
++  SmallVector<ReassociationIndices> reassociation;
++  SmallVector<bool> reduce;
++  SmallVector<int64_t> retainedInputDims;
++};
++
++static FailureOr<AffineBlockLayout>
++getAffineBlockLayout(Value block, RankedTensorType inputType) {
++  SmallVector<int64_t> sizes;
++  if (!matchPattern(block, m_TorchListOfConstantInts(sizes)) ||
++      sizes.size() != static_cast<size_t>(inputType.getRank()))
++    return failure();
++  AffineBlockLayout layout;
++  for (int64_t i = 0; i < inputType.getRank(); ++i) {
++    int64_t n = inputType.getDimSize(i), bs = sizes[i];
++    if (bs <= 0 || n == 0 ||
++        (bs > 1 && (ShapedType::isDynamic(n) || n % bs != 0)))
++      return failure();
++    ReassociationIndices group;
++    if (bs > 1 && bs != n) {
++      group.push_back(layout.shape.size());
++      layout.shape.push_back(n / bs);
++      layout.reduce.push_back(false);
++      layout.retainedInputDims.push_back(i);
++    }
++    group.push_back(layout.shape.size());
++    layout.shape.push_back(bs > 1 ? bs : n);
++    layout.reduce.push_back(bs > 1);
++    if (bs == 1)
++      layout.retainedInputDims.push_back(i);
++    layout.reassociation.push_back(group);
++  }
++  return layout;
++}
++
+ class ConvertTorchAoChooseQParamsAffineOp
+     : public OpConversionPattern<OperatorOp> {
+ public:
+@@ -352,74 +395,157 @@
+   LogicalResult
+   matchAndRewrite(OperatorOp op, OpAdaptor adaptor,
+                   ConversionPatternRewriter &rewriter) const override {
+-    if (op.getName().str() != "torch.torchao.choose_qparams_affine") {
+-      return failure();
+-    }
+-    Location loc = op->getLoc();
+-    if (failed(verifyLinalgCompatibleTypes(op, rewriter))) {
+-      return failure();
+-    }
+-
+-    auto inputType = dyn_cast<RankedTensorType>(adaptor.getOperands()[0].getType());
+-    if (!inputType) {
+-      return failure();
+-    }
+-
+-    Type newScaleType = getTypeConverter()->convertType(op.getType(0));
+-    Type newZeroPointType = getTypeConverter()->convertType(op.getType(1));
+-    auto scaleType = dyn_cast<RankedTensorType>(newScaleType);
+-    auto zeroPointType = dyn_cast<RankedTensorType>(newZeroPointType);
+-    if (!scaleType || !zeroPointType) {
+-      return failure();
+-    }
+-
+-    if (inputType.getRank() < scaleType.getRank() ||
+-        inputType.getRank() < zeroPointType.getRank()) {
+-      return failure();
+-    }
+-
+-    SmallVector<Value> scaleDynDims;
+-    for (int64_t i = 0; i < scaleType.getRank(); ++i) {
+-      if (scaleType.isDynamicDim(i)) {
+-        scaleDynDims.push_back(
+-            tensor::DimOp::create(rewriter, loc, adaptor.getOperands()[0], i));
++    if (op.getName().str() != "torch.torchao.choose_qparams_affine")
++      return failure();
++    Location loc = op.getLoc();
++    auto reject = [&](StringRef message) -> LogicalResult {
++      op.emitOpError(message);
++      return failure();
++    };
++    auto operands = op->getOperands();
++    if (operands.size() != 10)
++      return reject("expected TorchAO affine qparams signature with keepdim");
++    std::string mapping;
++    bool keepdim;
++    int64_t qmin, qmax;
++    double eps;
++    if (!matchPattern(operands[1], m_TorchConstantStr(mapping)) ||
++        mapping != "SYMMETRIC")
++      return reject("only SYMMETRIC affine qparams are supported");
++    if (!matchPattern(operands[4], m_TorchConstantInt(&qmin)) ||
++        !matchPattern(operands[5], m_TorchConstantInt(&qmax)) || qmin >= qmax ||
++        !matchPattern(operands[6], m_TorchConstantFloat(&eps)) ||
++        !std::isfinite(eps) || eps <= 0 ||
++        !matchPattern(operands[9], m_TorchConstantBool(&keepdim)))
++      return reject("expected constant valid qrange, positive epsilon and keepdim");
++    Value input = adaptor.getOperands()[0];
++    auto inputType = dyn_cast<RankedTensorType>(input.getType());
++    auto scaleType = dyn_cast<RankedTensorType>(
++        getTypeConverter()->convertType(op.getType(0)));
++    auto zpType = dyn_cast<RankedTensorType>(
++        getTypeConverter()->convertType(op.getType(1)));
++    if (!inputType || !scaleType || !zpType ||
++        !isa<FloatType>(inputType.getElementType()) ||
++        !isa<FloatType>(scaleType.getElementType()) ||
++        !isa<FloatType, IntegerType>(zpType.getElementType()))
++      return reject("expected floating input/scale and numeric zero point");
++    auto layoutOr = getAffineBlockLayout(operands[2], inputType);
++    if (failed(layoutOr))
++      return reject("unsupported block_size: require positive divisible static blocks or unblocked dynamic axes");
++    auto &layout = *layoutOr;
++    SmallVector<int64_t> compactShape, resultShape;
++    SmallVector<Value> dynamicDims;
++    SmallVector<AffineExpr> reductionExprs;
++    SmallVector<utils::IteratorType> iterators;
++    for (int64_t i = 0; i < static_cast<int64_t>(layout.shape.size()); ++i) {
++      iterators.push_back(layout.reduce[i] ? utils::IteratorType::reduction
++                                           : utils::IteratorType::parallel);
++      if (!layout.reduce[i]) {
++        compactShape.push_back(layout.shape[i]);
++        reductionExprs.push_back(rewriter.getAffineDimExpr(i));
+       }
+     }
+-    SmallVector<Value> zeroPointDynDims;
+-    for (int64_t i = 0; i < zeroPointType.getRank(); ++i) {
+-      if (zeroPointType.isDynamicDim(i)) {
+-        zeroPointDynDims.push_back(
+-            tensor::DimOp::create(rewriter, loc, adaptor.getOperands()[0], i));
++    if (keepdim) {
++      for (int64_t i = 0; i < inputType.getRank(); ++i) {
++        auto group = layout.reassociation[i];
++        int64_t first = group.front();
++        resultShape.push_back(layout.reduce[first] ? 1 : layout.shape[first]);
+       }
+-    }
+-
++    } else {
++      resultShape = compactShape;
++    }
++    if (scaleType.getShape() != ArrayRef<int64_t>(resultShape) ||
++        zpType.getShape() != ArrayRef<int64_t>(resultShape))
++      return reject("qparam result shape does not match block_size/keepdim");
++    for (int64_t i = 0; i < static_cast<int64_t>(compactShape.size()); ++i)
++      if (ShapedType::isDynamic(compactShape[i]))
++        dynamicDims.push_back(tensor::DimOp::create(
++            rewriter, loc, input, layout.retainedInputDims[i]));
++
++    Value expanded = input;
++    if (layout.shape.size() != static_cast<size_t>(inputType.getRank()))
++      expanded = tensor::ExpandShapeOp::create(
++          rewriter, loc,
++          RankedTensorType::get(layout.shape, inputType.getElementType()),
++          input, layout.reassociation);
++    // TorchAO does reduction and division in the input dtype, then casts the
++    // scale to the requested output dtype. In particular do not cast to the
++    // scale dtype before reducing.
++    auto computeType = cast<FloatType>(inputType.getElementType());
++    auto constant = [&](double x) -> Value {
++      return arith::ConstantOp::create(rewriter, loc,
++                                       FloatAttr::get(computeType, x));
++    };
++    Value zero = constant(0.0);
++    Value empty = tensor::EmptyOp::create(rewriter, loc, compactShape,
++                                          computeType, dynamicDims);
++    Value init = linalg::FillOp::create(rewriter, loc, zero, empty).getResult(0);
++    auto inputMap = rewriter.getMultiDimIdentityMap(layout.shape.size());
++    auto outputMap = AffineMap::get(layout.shape.size(), 0, reductionExprs,
++                                    rewriter.getContext());
++    Value absmax = linalg::GenericOp::create(
++        rewriter, loc, init.getType(), expanded, init,
++        ArrayRef<AffineMap>{inputMap, outputMap}, iterators,
++        [&](OpBuilder &b, Location l, ValueRange args) {
++          Value abs = math::AbsFOp::create(b, l, args[0]);
++          Value max = arith::MaximumFOp::create(b, l, abs, args[1]);
++          linalg::YieldOp::create(b, l, max);
++        }).getResult(0);
++    Value divisor = constant((static_cast<double>(qmax) - qmin) / 2.0);
++    Value epsilon = constant(eps);
+     Value scaleEmpty = tensor::EmptyOp::create(
+-        rewriter, loc, scaleType.getShape(), scaleType.getElementType(),
+-        scaleDynDims);
+-    Value zeroPointEmpty = tensor::EmptyOp::create(
+-        rewriter, loc, zeroPointType.getShape(), zeroPointType.getElementType(),
+-        zeroPointDynDims);
+-
+-    auto getFloatConst = [&](double value, Type type) -> Value {
+-      auto floatType = dyn_cast<FloatType>(type);
+-      if (!floatType) {
+-        return Value();
+-      }
+-      return arith::ConstantOp::create(rewriter, loc,
+-                                       FloatAttr::get(floatType, value));
+-    };
+-
+-    Value one = getFloatConst(1.0, scaleType.getElementType());
+-    Value zero = getFloatConst(0.0, zeroPointType.getElementType());
+-    if (!one || !zero) {
+-      return failure();
+-    }
+-
+-    Value scales =
+-        linalg::FillOp::create(rewriter, loc, one, scaleEmpty).getResult(0);
+-    Value zeroPoints =
+-        linalg::FillOp::create(rewriter, loc, zero, zeroPointEmpty).getResult(0);
+-    rewriter.replaceOp(op, ValueRange{scales, zeroPoints});
++        rewriter, loc, compactShape, scaleType.getElementType(), dynamicDims);
++    auto identity = rewriter.getMultiDimIdentityMap(compactShape.size());
++    SmallVector<utils::IteratorType> parallel(compactShape.size(),
++                                              utils::IteratorType::parallel);
++    Value scales = linalg::GenericOp::create(
++        rewriter, loc, scaleEmpty.getType(), absmax, scaleEmpty,
++        ArrayRef<AffineMap>{identity, identity}, parallel,
++        [&](OpBuilder &b, Location l, ValueRange args) {
++          Value scale = arith::DivFOp::create(b, l, args[0], divisor);
++          scale = arith::MaximumFOp::create(b, l, scale, epsilon);
++          auto out = cast<FloatType>(scaleType.getElementType());
++          if (out.getWidth() > computeType.getWidth())
++            scale = arith::ExtFOp::create(b, l, out, scale);
++          else if (out.getWidth() < computeType.getWidth())
++            scale = arith::TruncFOp::create(b, l, out, scale);
++          else if (out != computeType) {
++            scale = arith::ExtFOp::create(b, l, b.getF32Type(), scale);
++            scale = arith::TruncFOp::create(b, l, out, scale);
++          }
++          linalg::YieldOp::create(b, l, scale);
++        }).getResult(0);
++    // Materialize keepdim by broadcasting over the singleton reduced
++    // axes. Avoid an index-typed shape tensor in the Torch input pipeline.
++    if (keepdim && compactShape != resultShape) {
++      Value keptEmpty = tensor::EmptyOp::create(
++          rewriter, loc, resultShape, scaleType.getElementType(), dynamicDims);
++      SmallVector<AffineExpr> keptInputExprs;
++      for (int64_t axis : layout.retainedInputDims)
++        keptInputExprs.push_back(rewriter.getAffineDimExpr(axis));
++      auto keptInputMap = AffineMap::get(resultShape.size(), 0,
++                                         keptInputExprs, rewriter.getContext());
++      auto keptOutputMap = rewriter.getMultiDimIdentityMap(resultShape.size());
++      SmallVector<utils::IteratorType> keptParallel(
++          resultShape.size(), utils::IteratorType::parallel);
++      scales = linalg::GenericOp::create(
++          rewriter, loc, scaleType, scales, keptEmpty,
++          ArrayRef<AffineMap>{keptInputMap, keptOutputMap}, keptParallel,
++          [&](OpBuilder &b, Location l, ValueRange args) {
++            linalg::YieldOp::create(b, l, args[0]);
++          }).getResult(0);
++    }
++    Value zpEmpty = tensor::EmptyOp::create(
++        rewriter, loc, resultShape, zpType.getElementType(), dynamicDims);
++    int64_t midpoint = (qmax + qmin + 1) / 2;
++    TypedAttr zpAttr;
++    if (auto f = dyn_cast<FloatType>(zpType.getElementType()))
++      zpAttr = FloatAttr::get(f, midpoint);
++    else
++      zpAttr = IntegerAttr::get(zpType.getElementType(), midpoint);
++    Value zp = arith::ConstantOp::create(rewriter, loc, zpAttr);
++    Value zps = linalg::FillOp::create(rewriter, loc, zp, zpEmpty).getResult(0);
++    rewriter.replaceOp(op, ValueRange{scales, zps});
+     return success();
+   }
+ };
+@@ -456,36 +582,30 @@
+       return failure();
+     }
+ 
++    auto layoutOr = getAffineBlockLayout(op->getOperand(1), inputType);
++    if (failed(layoutOr))
++      return rewriter.notifyMatchFailure(op, "unsupported quantize block_size");
++    auto &layout = *layoutOr;
++    auto originalResultType = resultType;
++    if (layout.shape.size() != static_cast<size_t>(inputType.getRank())) {
++      inputType = RankedTensorType::get(layout.shape, inputType.getElementType());
++      input = tensor::ExpandShapeOp::create(
++          rewriter, loc, inputType, input, layout.reassociation);
++      resultType = RankedTensorType::get(layout.shape,
++                                         resultType.getElementType());
++    }
+     int64_t rank = inputType.getRank();
+-    if (rank <= 0 || resultType.getRank() != rank) {
+-      return failure();
+-    }
+-    if (scaleType.getRank() != rank && scaleType.getRank() != rank - 1 &&
+-        scaleType.getRank() != 0) {
+-      return failure();
+-    }
+-    if (zeroPointType.getRank() != rank && zeroPointType.getRank() != rank - 1 &&
+-        zeroPointType.getRank() != 0) {
+-      return failure();
+-    }
+ 
+     auto resultElementType = dyn_cast<IntegerType>(resultType.getElementType());
+     if (!resultElementType) {
+       return failure();
+     }
+ 
+-    int64_t qmin = -127;
+-    int64_t qmax = 127;
+-    if (FailureOr<int64_t> maybeQmin =
+-            getConstantIntegerFromDefiningOp(qminValue);
+-        succeeded(maybeQmin)) {
+-      qmin = *maybeQmin;
+-    }
+-    if (FailureOr<int64_t> maybeQmax =
+-            getConstantIntegerFromDefiningOp(qmaxValue);
+-        succeeded(maybeQmax)) {
+-      qmax = *maybeQmax;
+-    }
++    auto maybeQmin = getConstantIntegerFromDefiningOp(qminValue);
++    auto maybeQmax = getConstantIntegerFromDefiningOp(qmaxValue);
++    if (failed(maybeQmin) || failed(maybeQmax) || *maybeQmin >= *maybeQmax)
++      return rewriter.notifyMatchFailure(op, "expected constant valid quantization range");
++    int64_t qmin = *maybeQmin, qmax = *maybeQmax;
+ 
+     SmallVector<Value> dynDims;
+     for (int64_t i = 0; i < rank; ++i) {
+@@ -503,23 +623,37 @@
+     }
+     AffineMap inputMap = AffineMap::get(rank, 0, dimExprs, rewriter.getContext());
+ 
+-    SmallVector<AffineExpr> scaleExprs;
+-    if (scaleType.getRank() == rank) {
+-      scaleExprs = dimExprs;
+-    } else if (scaleType.getRank() == rank - 1) {
+-      scaleExprs.assign(dimExprs.begin(), dimExprs.end() - 1);
+-    }
+-    AffineMap scaleMap =
+-        AffineMap::get(rank, 0, scaleExprs, rewriter.getContext());
+-
+-    SmallVector<AffineExpr> zeroPointExprs;
+-    if (zeroPointType.getRank() == rank) {
+-      zeroPointExprs = dimExprs;
+-    } else if (zeroPointType.getRank() == rank - 1) {
+-      zeroPointExprs.assign(dimExprs.begin(), dimExprs.end() - 1);
+-    }
+-    AffineMap zeroPointMap =
+-        AffineMap::get(rank, 0, zeroPointExprs, rewriter.getContext());
++    // Qparams are compact reductions, or keepdim shapes with singleton
++    // reduced axes. Validate the shape before constructing broadcast maps.
++    auto qparamMap = [&](RankedTensorType type) -> FailureOr<AffineMap> {
++      SmallVector<AffineExpr> retained, expressions;
++      SmallVector<int64_t> compactShape;
++      for (int64_t i = 0; i < rank; ++i)
++        if (!layout.reduce[i]) {
++          retained.push_back(dimExprs[i]);
++          compactShape.push_back(layout.shape[i]);
++        }
++      if (type.getShape() == ArrayRef<int64_t>(compactShape)) {
++        expressions = retained;
++      } else if (type.getRank() == static_cast<int64_t>(layout.reassociation.size())) {
++        for (auto [i, group] : llvm::enumerate(layout.reassociation)) {
++          int64_t axis = group.front();
++          int64_t expected = layout.reduce[axis] ? 1 : layout.shape[axis];
++          if (type.getDimSize(i) != expected)
++            return failure();
++          expressions.push_back(layout.reduce[axis]
++              ? rewriter.getAffineConstantExpr(0) : dimExprs[axis]);
++        }
++      } else {
++        return failure();
++      }
++      return AffineMap::get(rank, 0, expressions, rewriter.getContext());
++    };
++    auto scaleMapOr = qparamMap(scaleType);
++    auto zpMapOr = qparamMap(zeroPointType);
++    if (failed(scaleMapOr) || failed(zpMapOr))
++      return rewriter.notifyMatchFailure(op, "qparams do not match block_size");
++    AffineMap scaleMap = *scaleMapOr, zeroPointMap = *zpMapOr;
+ 
+     SmallVector<AffineMap, 4> indexingMaps = {inputMap, scaleMap, zeroPointMap,
+                                               inputMap};
+@@ -527,9 +661,17 @@
+         rank, utils::IteratorType::parallel);
+ 
+     FloatType computeType = dyn_cast<FloatType>(inputType.getElementType());
+-    if (!computeType) {
+-      computeType = rewriter.getF32Type();
+-    }
++    auto scaleElementType = dyn_cast<FloatType>(scaleType.getElementType());
++    if (!computeType || !scaleElementType)
++      return rewriter.notifyMatchFailure(op, "expected floating input and scale");
++    // Torch type promotion: f32 qparams keep BF16 activations in f32 here.
++    for (Type type : {scaleType.getElementType(), zeroPointType.getElementType()})
++      if (auto f = dyn_cast<FloatType>(type)) {
++        if (f.getWidth() > computeType.getWidth())
++          computeType = f;
++        else if (f.getWidth() == computeType.getWidth() && f != computeType)
++          computeType = rewriter.getF32Type();
++      }
+ 
+     Value quantized = linalg::GenericOp::create(
+                           rewriter, loc, empty.getType(),
+@@ -565,17 +707,23 @@
+                             };
+ 
+                             Value inputF = castToComputeType(args[0]);
+-                            Value scaleF = castToComputeType(args[1]);
+                             Value zeroPointF = castToComputeType(args[2]);
+-                            if (!inputF || !scaleF || !zeroPointF) {
++                            if (!inputF || !zeroPointF) {
+                               linalg::YieldOp::create(b, bodyLoc, args[3]);
+                               return;
+                             }
+ 
+-                            Value scaled =
+-                                arith::DivFOp::create(b, bodyLoc, inputF, scaleF);
++                            Value one = arith::ConstantOp::create(
++                                b, bodyLoc, FloatAttr::get(scaleElementType, 1.0));
++                            Value reciprocal = arith::DivFOp::create(
++                                b, bodyLoc, one, args[1]);
++                            reciprocal = castToComputeType(reciprocal);
++                            Value scaled = arith::MulFOp::create(
++                                b, bodyLoc, inputF, reciprocal);
++                            Value rounded = math::RoundEvenOp::create(
++                                b, bodyLoc, scaled);
+                             Value shifted = arith::AddFOp::create(
+-                                b, bodyLoc, scaled, zeroPointF);
++                                b, bodyLoc, rounded, zeroPointF);
+                             Value qminF = arith::ConstantOp::create(
+                                 b, bodyLoc, FloatAttr::get(computeType, qmin));
+                             Value qmaxF = arith::ConstantOp::create(
+@@ -585,8 +733,9 @@
+                             Value clamped = arith::MinimumFOp::create(
+                                 b, bodyLoc, clampedLow, qmaxF);
+ 
++                            auto torchResultType = cast<Torch::ValueTensorType>(op.getType(0));
+                             bool resultIsUnsigned =
+-                                resultElementType.isUnsignedInteger();
++                                torchResultType.getDtype().isUnsignedInteger();
+                             Value i32Quantized;
+                             if (resultIsUnsigned) {
+                               i32Quantized = arith::FPToUIOp::create(
+@@ -615,6 +764,9 @@
+                             linalg::YieldOp::create(b, bodyLoc, casted);
+                           })
+                           .getResult(0);
++    if (resultType != originalResultType)
++      quantized = tensor::CollapseShapeOp::create(
++          rewriter, loc, originalResultType, quantized, layout.reassociation);
+     rewriter.replaceOp(op, quantized);
+     return success();
+   }
+@@ -626,6 +778,7 @@
+     : public impl::ConvertCustomQuantOpBase<ConvertCustomQuantOpPass> {
+   void getDependentDialects(DialectRegistry &registry) const override {
+     registry.insert<arith::ArithDialect>();
++    registry.insert<math::MathDialect>();
+     registry.insert<func::FuncDialect>();
+     registry.insert<linalg::LinalgDialect>();
+     registry.insert<tensor::TensorDialect>();
+@@ -637,7 +790,7 @@
+     MLIRContext *context = &getContext();
+     ConversionTarget target(*context);
+     target.addLegalDialect<linalg::LinalgDialect, func::FuncDialect,
+-                           tensor::TensorDialect, arith::ArithDialect,
++                           tensor::TensorDialect, arith::ArithDialect, math::MathDialect,
+                            Torch::TorchDialect>();
+ 
+     TypeConverter typeConverter;
+--- a/third_party/iree_bar/third_party/torch-mlir/test/Conversion/TorchToLinalg/elementwise.mlir
++++ b/third_party/iree_bar/third_party/torch-mlir/test/Conversion/TorchToLinalg/elementwise.mlir
+@@ -131,3 +131,15 @@
+   %11 = torch.aten.add.Tensor %arg0, %arg1, %int1_13 : !torch.vtensor<[6,1],bf16>, !torch.vtensor<[1],bf16>, !torch.int -> !torch.vtensor<[6,1],bf16>
+   return %11 : !torch.vtensor<[6,1],bf16>
+ }
++
++// -----
++// sqrt(2/pi), correctly rounded to f32. The old 0.797724 coefficient
++// introduced a measurable error in every tanh GELU activation.
++// CHECK-LABEL: func.func @gelu_tanh_beta
++// CHECK: arith.constant 0.797884583 : f32
++// CHECK: math.tanh
++func.func @gelu_tanh_beta(%x: !torch.vtensor<[7],f32>) -> !torch.vtensor<[7],f32> {
++  %approx = torch.constant.str "tanh"
++  %y = torch.aten.gelu %x, %approx : !torch.vtensor<[7],f32>, !torch.str -> !torch.vtensor<[7],f32>
++  return %y : !torch.vtensor<[7],f32>
++}
+--- /dev/null
++++ b/third_party/iree_bar/third_party/torch-mlir/test/Dialect/Torch/Inputs/pytorch-cpu-numerics.py
+@@ -0,0 +1,58 @@
++import json,os,subprocess,time,argparse
++from pathlib import Path
++import numpy as np
++import torch
++parser=argparse.ArgumentParser()
++parser.add_argument('--compiler',default=os.environ.get('IREE_COMPILE','iree-compile'))
++parser.add_argument('--runtime',default=os.environ.get('IREE_RUN_MODULE','iree-run-module'))
++parser.add_argument('--constant-math-library',default='')
++parser.add_argument('--cpus',default=','.join(map(str,sorted(os.sched_getaffinity(0))[:30])))
++parser.add_argument('--workers',type=int,default=30)
++parser.add_argument('--work-dir',type=Path,default=Path('pytorch-cpu-numeric-tests'))
++args=parser.parse_args();D=args.work_dir.resolve();D.mkdir(parents=True,exist_ok=True)
++torch.set_num_threads(16);rng=np.random.default_rng(20261027)
++flags=['--iree-hal-target-backends=llvm-cpu','--iree-llvmcpu-target-cpu=host',f'--iree-llvmcpu-number-of-threads={args.workers}','--iree-opt-numeric-precision-reduction=false','--iree-llvmcpu-reassociate-fp-reductions=false','--iree-llvmcpu-skip-intermediate-roundings=false','--iree-input-demote-f64-to-f32=false','--torch-pytorch-cpu-numerics','--torch-pytorch-cpu-reference-threads=16']
++if args.constant_math_library:flags.append('--torch-pytorch-cpu-constant-math-library='+args.constant_math_library)
++commands=[];results=[]
++def run(cmd,log):
++ commands.append(cmd);(D/'commands.json').write_text(json.dumps(commands,indent=2))
++ with log.open('w') as f:subprocess.run(cmd,stdout=f,stderr=subprocess.STDOUT,check=True)
++def case(name,x,body,outshape,reference,exact=True):
++ d=D/name;d.mkdir(exist_ok=True)
++ def tt(s,dt='f32'):return '!torch.vtensor<['+','.join(map(str,s))+'],'+dt+'>'
++ dtype='si8' if x.dtype==np.int8 else 'f32';ity=tt(x.shape,dtype);oty=tt(outshape,'si32' if reference.dtype==np.int32 else 'f32')
++ text='module {func.func @main(%arg: '+ity+') -> '+oty+' {\n'+body.replace('$I',ity).replace('$O',oty)+'\nreturn %result : '+oty+'\n}}\n';(d/'input.mlir').write_text(text);x.tofile(d/'input.bin');np.save(d/'reference.npy',reference)
++ cmd=['taskset','-c',args.cpus,args.compiler,str(d/'input.mlir'),*flags,'-o',str(d/'model.vmfb')];run(cmd,d/'compile.log')
++ shape='x'.join(map(str,x.shape));ty='i8' if dtype=='si8' else 'f32';run(['taskset','-c',args.cpus,args.runtime,'--module='+str(d/'model.vmfb'),'--device=local-task',f'--task_topology_group_count={args.workers}','--function=main',f'--input={shape}x{ty}=@{d}/input.bin','--output=@'+str(d/'output.npy')],d/'run.log')
++ y=np.load(d/'output.npy');diff=np.abs(y.astype(np.float64)-reference);bits=int(np.count_nonzero(y.view(np.uint32)!=reference.view(np.uint32)));fail=int(np.count_nonzero(~np.isclose(y,reference,atol=.001,rtol=.001)));ok=bool(np.isfinite(y).all() and (bits==0 if exact else fail==0));r=dict(name=name,pass_test=ok,exact_required=exact,bit_mismatches=bits,failed_gate=fail,max_abs=float(diff.max()));results.append(r);(D/'results.json').write_text(json.dumps(results,indent=2));print(r,flush=True)
++for width in [720,2048,5632]:
++ x=(rng.normal(size=(1,16,width))**2).astype('f4');ref=torch.from_numpy(x).mean(-1,True).numpy();case('mean'+str(width),x,'''%axis = torch.constant.int -1
++%ds = torch.prim.ListConstruct %axis : (!torch.int) -> !torch.list<int>
++%keep = torch.constant.bool true
++%none = torch.constant.none
++%result = torch.aten.mean.dim %arg, %ds, %keep, %none : $I, !torch.list<int>, !torch.bool, !torch.none -> $O''',(1,16,1),ref)
++x=rng.normal(size=(1,32,16,16)).astype('f4');case('softmax16',x,'''%axis = torch.constant.int -1
++%none = torch.constant.none
++%result = torch.aten.softmax.int %arg, %axis, %none : $I, !torch.int, !torch.none -> $O''',x.shape,torch.from_numpy(x).softmax(-1).numpy())
++case('softmax16-explicit-f32',x,'''%axis = torch.constant.int -1
++%dtype = torch.constant.int 6
++%result = torch.aten.softmax.int %arg, %axis, %dtype : $I, !torch.int, !torch.int -> $O''',x.shape,torch.from_numpy(x).softmax(-1).numpy())
++x=rng.normal(size=(1,16,5632)).astype('f4');case('silu-tails',x,'%result = torch.aten.silu %arg : $I -> $O',x.shape,torch.nn.functional.silu(torch.from_numpy(x)).numpy())
++x=rng.integers(-128,128,size=(16,32),dtype=np.int8);w=rng.integers(-128,128,size=(32,17),dtype=np.int8);raw=w.tobytes().hex();body=f'%w = torch.vtensor.literal(dense<"0x{raw}"> : tensor<32x17xsi8>) : !torch.vtensor<[32,17],si8>\n%result = torch.aten._int_mm %arg, %w : $I, !torch.vtensor<[32,17],si8> -> $O';case('int-mm',x,body,(16,17),x.astype('i4')@w.astype('i4'))
++x=rng.normal(size=(32768,3)).astype('f4')
++case('separate-rounding',x,'''%axis = torch.constant.int 1
++%zero = torch.constant.int 0
++%one = torch.constant.int 1
++%two = torch.constant.int 2
++%a = torch.aten.select.int %arg, %axis, %zero : $I, !torch.int, !torch.int -> $O
++%b = torch.aten.select.int %arg, %axis, %one : $I, !torch.int, !torch.int -> $O
++%c = torch.aten.select.int %arg, %axis, %two : $I, !torch.int, !torch.int -> $O
++%p = torch.aten.mul.Tensor %a, %b : $O, $O -> $O
++%result = torch.aten.add.Tensor %p, %c, %one : $O, $O, !torch.int -> $O''',(32768,),x[:,0]*x[:,1]+x[:,2])
++if args.constant_math_library:
++ x=rng.normal(size=(1,16,64)).astype('f4')
++ for trig in ['sin','cos']:
++  body=f'%c = torch.vtensor.literal(dense<"0x{x.tobytes().hex()}"> : tensor<1x16x64xf32>) : $I\n%result = torch.aten.{trig} %c : $I -> $O'
++  case('static-'+trig,x,body,x.shape,getattr(torch,trig)(torch.from_numpy(x)).numpy())
++sys_exit=0 if all(r['pass_test'] for r in results) else 2
++raise SystemExit(sys_exit)
+--- /dev/null
++++ b/third_party/iree_bar/third_party/torch-mlir/test/Dialect/Torch/pytorch-cpu-numerics.mlir
+@@ -0,0 +1,81 @@
++// RUN: torch-mlir-opt %s -torch-decompose-complex-ops | FileCheck %s --check-prefix=MM
++// RUN: torch-mlir-opt %s -torch-decompose-complex-ops -torch-pytorch-cpu-numerics | FileCheck %s
++
++// MM-LABEL: func.func @integer_mm
++// MM: torch.aten.mm
++// MM-NOT: torch.aten._int_mm
++// CHECK-LABEL: func.func @integer_mm
++// CHECK: torch.aten.mm
++// CHECK-NOT: torch.aten._int_mm
++func.func @integer_mm(%a: !torch.vtensor<[2,32],si8>, %b: !torch.vtensor<[32,3],si8>) -> !torch.vtensor<[2,3],si32> {
++  %0 = torch.aten._int_mm %a, %b : !torch.vtensor<[2,32],si8>, !torch.vtensor<[32,3],si8> -> !torch.vtensor<[2,3],si32>
++  return %0 : !torch.vtensor<[2,3],si32>
++}
++// CHECK-LABEL: func.func @mean
++// CHECK: torch.aten.slice.Tensor
++// CHECK: torch.aten.add.Tensor
++// CHECK-NOT: torch.aten.mean.dim
++func.func @mean(%a: !torch.vtensor<[2,64],f32>) -> !torch.vtensor<[2,1],f32> {
++  %axis = torch.constant.int -1
++  %dims = torch.prim.ListConstruct %axis : (!torch.int) -> !torch.list<int>
++  %keep = torch.constant.bool true
++  %none = torch.constant.none
++  %0 = torch.aten.mean.dim %a, %dims, %keep, %none : !torch.vtensor<[2,64],f32>, !torch.list<int>, !torch.bool, !torch.none -> !torch.vtensor<[2,1],f32>
++  return %0 : !torch.vtensor<[2,1],f32>
++}
++// CHECK-LABEL: func.func @silu
++// CHECK: math.fma
++// CHECK: arith.extf
++// CHECK: arith.truncf
++// CHECK-NOT: torch.aten.silu
++func.func @silu(%a: !torch.vtensor<[1,33],f32>) -> !torch.vtensor<[1,33],f32> {
++  %0 = torch.aten.silu %a : !torch.vtensor<[1,33],f32> -> !torch.vtensor<[1,33],f32>
++  return %0 : !torch.vtensor<[1,33],f32>
++}
++// CHECK-LABEL: func.func @softmax
++// CHECK: linalg.generic
++// CHECK: math.fma
++// CHECK-NOT: torch.aten.softmax
++func.func @softmax(%a: !torch.vtensor<[2,16],f32>) -> !torch.vtensor<[2,16],f32> {
++  %axis = torch.constant.int -1
++  %none = torch.constant.none
++  %0 = torch.aten.softmax.int %a, %axis, %none : !torch.vtensor<[2,16],f32>, !torch.int, !torch.none -> !torch.vtensor<[2,16],f32>
++  return %0 : !torch.vtensor<[2,16],f32>
++}
++// Unsupported width retains the ordinary lowering.
++// CHECK-LABEL: func.func @unsupported_mean
++// CHECK: torch.aten.sum.dim_IntList
++func.func @unsupported_mean(%a: !torch.vtensor<[2,7],f32>) -> !torch.vtensor<[2,1],f32> {
++  %axis = torch.constant.int -1
++  %dims = torch.prim.ListConstruct %axis : (!torch.int) -> !torch.list<int>
++  %keep = torch.constant.bool true
++  %none = torch.constant.none
++  %0 = torch.aten.mean.dim %a, %dims, %keep, %none : !torch.vtensor<[2,7],f32>, !torch.list<int>, !torch.bool, !torch.none -> !torch.vtensor<[2,1],f32>
++  return %0 : !torch.vtensor<[2,1],f32>
++}
++
++// CHECK-LABEL: func.func @static_trig
++// CHECK: torch.vtensor.literal
++// CHECK-NOT: torch.aten.sin
++func.func @static_trig() -> !torch.vtensor<[3],f32> {
++  %c = torch.vtensor.literal(dense<[0.0, 1.0, 2.0]> : tensor<3xf32>) : !torch.vtensor<[3],f32>
++  %0 = torch.aten.sin %c : !torch.vtensor<[3],f32> -> !torch.vtensor<[3],f32>
++  return %0 : !torch.vtensor<[3],f32>
++}
++// CHECK-LABEL: func.func @dynamic_trig
++// CHECK: torch.aten.sin
++func.func @dynamic_trig(%arg: !torch.vtensor<[3],f32>) -> !torch.vtensor<[3],f32> {
++  %0 = torch.aten.sin %arg : !torch.vtensor<[3],f32> -> !torch.vtensor<[3],f32>
++  return %0 : !torch.vtensor<[3],f32>
++}
++
++// CHECK-LABEL: func.func @softmax_explicit_f32
++// CHECK: linalg.generic
++// CHECK: math.fma
++// CHECK-NOT: torch.aten.softmax
++func.func @softmax_explicit_f32(%a: !torch.vtensor<[2,16],f32>) -> !torch.vtensor<[2,16],f32> {
++  %axis = torch.constant.int -1
++  %dtype = torch.constant.int 6
++  %0 = torch.aten.softmax.int %a, %axis, %dtype : !torch.vtensor<[2,16],f32>, !torch.int, !torch.int -> !torch.vtensor<[2,16],f32>
++  return %0 : !torch.vtensor<[2,16],f32>
++}
+--- /dev/null
++++ b/third_party/iree_bar/third_party/torch-mlir/test/Dialect/TorchConversion/Inputs/custom-quant-numerics.py
+@@ -0,0 +1,130 @@
++#!/usr/bin/env python3
++"""Executable compiler numerical regressions against pinned TorchAO.
++Requires torch==2.10 and torchao==0.16. Run with --compiler, --runtime, --work-dir.
++"""
++import argparse, json, os, subprocess, tempfile
++from pathlib import Path
++import numpy as np
++import ml_dtypes
++import torch
++from torchao.quantization.quant_primitives import _choose_qparams_affine, _quantize_affine
++parser=argparse.ArgumentParser(description=__doc__)
++parser.add_argument('--compiler',required=True,type=Path)
++parser.add_argument('--runtime',required=True,type=Path)
++parser.add_argument('--work-dir',type=Path)
++args=parser.parse_args()
++C=args.compiler.resolve();RUN=args.runtime.resolve()
++D=args.work_dir or Path(tempfile.mkdtemp(prefix='affine-numerics-'))
++D.mkdir(parents=True,exist_ok=True)
++os.environ['OMP_NUM_THREADS']='8';torch.set_num_threads(8)
++commands=[];results={}
++def invoke(cmd,log):
++ commands.append([str(a) for a in cmd]);(D/'commands.json').write_text(json.dumps(commands,indent=2))
++ with log.open('w') as f:return subprocess.run(cmd,stdout=f,stderr=subprocess.STDOUT).returncode
++def execute(name,mlir,x,types,input_dtype="f32"):
++ p=D/(name+'.mlir');p.write_text(mlir);inp=D/(name+'-input.bin');x.astype(ml_dtypes.bfloat16 if input_dtype=='bf16' else 'f4').tofile(inp)
++ vmfb=D/(name+'.vmfb')
++ code=invoke([C,p,'--iree-hal-target-backends=llvm-cpu','--iree-llvmcpu-target-cpu=host','--iree-llvmcpu-number-of-threads=8','--iree-input-demote-f64-to-f32=false','--iree-vm-target-extension-f64=true','--iree-vm-target-truncate-unsupported-floats=false','-o',vmfb],D/(name+'-compile.log'))
++ if code:return {'compile_exit':code},None
++ outs=[D/f'{name}-{i}.bin' for i in range(len(types))]
++ shape='x'.join(map(str,x.shape))+'x'+input_dtype
++ code=invoke([RUN,f'--module={vmfb}','--device=local-task','--task_topology_group_count=8','--function=main',f'--input={shape}=@{inp}']+[f'--output=@{o}' for o in outs],D/(name+'-run.log'))
++ if code:return {'runtime_exit':code},None
++ return {},[np.fromfile(p,dtype=t) for p,t in zip(outs,types)]
++def tt(shape,dtype):return '!torch.vtensor<['+','.join(map(str,shape))+'],'+dtype+'>'
++def quant_ir(shape,block,keep=False,qmin=-127,qmax=127,fixed=None,unsigned=False,mapping='SYMMETRIC'):
++ qt='ui8' if unsigned else 'si8';xs=tt(shape,'f32');out=tt(shape,qt)
++ # Mirror the pinned _get_reduction_params, including singleton block axes.
++ compact=[]
++ for n,b in zip(shape,block):
++  if b==1:compact.append(n)
++  elif b!=n:compact.append(n//b)
++ ps=[n//b for n,b in zip(shape,block)] if keep else compact
++ pt=tt(ps,'f32');decls='\n'.join(f'%b{i} = torch.constant.int {b}' for i,b in enumerate(block))
++ bs=', '.join(f'%b{i}' for i in range(len(block)))
++ btypes=', '.join('!torch.int' for _ in block)
++ body=f'''%map = torch.constant.str "{mapping}"
++%dt = torch.constant.int {0 if unsigned else 1}
++%lo = torch.constant.int {qmin}
++%hi = torch.constant.int {qmax}
++%eps = torch.constant.float 1.000000e-05
++%none = torch.constant.none
++%keep = torch.constant.bool {'true' if keep else 'false'}
++{decls}
++%block = torch.prim.ListConstruct {bs} : ({btypes}) -> !torch.list<int>
++'''
++ if fixed is None:
++  body+=f'''%p:2 = torch.operator "torch.torchao.choose_qparams_affine"(%x, %map, %block, %dt, %lo, %hi, %eps, %none, %none, %keep) : ({xs}, !torch.str, !torch.list<int>, !torch.int, !torch.int, !torch.int, !torch.float, !torch.none, !torch.none, !torch.bool) -> ({pt}, {pt})\n'''
++  sc,zp='%p#0','%p#1'
++ else:
++  dims='x'.join(map(str,ps))+('x' if ps else '')
++  body+=f'%sc = torch.vtensor.literal(dense<{fixed[0]:.8e}> : tensor<{dims}f32>) : {pt}\n%zp = torch.vtensor.literal(dense<{fixed[1]:.8e}> : tensor<{dims}f32>) : {pt}\n'
++  sc,zp='%sc','%zp'
++ body+=f'''%q = torch.operator "torch.torchao.quantize_affine"(%x, %block, {sc}, {zp}, %dt, %lo, %hi) : ({xs}, !torch.list<int>, {pt}, {pt}, !torch.int, !torch.int, !torch.int) -> {out}
++return {sc}, {zp}, %q : {pt}, {pt}, {out}
++'''
++ return f'module {{ func.func @main(%x: {xs}) -> ({pt}, {pt}, {out}) {{\n{body}}}\n}}',ps
++cases=[
++ ('per_token',np.array([[-2,-.6,.6,2],[-4,-1.5,1.5,4]],'f4'),[1,4],False,-127,127,None,False),
++ ('zeros_epsilon',np.array([[0,0,0,0],[1e-8,-2e-8,0,1e-9]],'f4'),[1,4],False,-127,127,None,False),
++ ('partial_blocks',np.linspace(-5,3,24,dtype='f4').reshape(3,8),[1,4],False,-127,127,None,False),
++ ('dynamic_per_token',np.array([[-2,-.6,.6,2],[-4,-1.5,1.5,4]],'f4'),[1,4],False,-127,127,None,False),
++ ('per_channel',np.linspace(-8,7,15,dtype='f4').reshape(3,5),[3,1],False,-127,127,None,False),
++ ('keepdim',np.linspace(-5,3,24,dtype='f4').reshape(3,8),[1,8],True,-127,127,None,False),
++ ('all_axes',np.linspace(-8,7,15,dtype='f4').reshape(3,5),[3,5],False,-127,127,None,False),
++ ('ties_saturation',np.array([[-200,-3.5,-2.5,-1.5,-.5,0,.5,1.5,2.5,3.5,200]],'f4'),[1,11],False,-127,127,(1,0),False),
++ ('integer_zp',np.array([[-200,-3.5,-2.5,-1.5,-.5,0,.5,1.5,2.5,3.5,200]],'f4'),[1,11],False,-128,127,(1,3),False),
++ ('unsigned_zp',np.array([[-200,-3.5,-2.5,-1.5,-.5,0,.5,1.5,2.5,3.5,200]],'f4'),[1,11],False,0,255,(1,128),True),
++ ('unsigned_choose',np.linspace(-8,7,15,dtype='f4').reshape(3,5),[3,1],False,0,255,None,True),
++]
++for name,x,block,keep,lo,hi,fixed,unsigned in cases:
++ mlir,ps=quant_ir(x.shape,block,keep,lo,hi,fixed,unsigned)
++ if name=='dynamic_per_token':mlir=mlir.replace('[2,4]','[?,4]').replace('[2],f32','[?],f32')
++ result,actual=execute(name,mlir,x,['f4','f4','u1' if unsigned else 'i1'])
++ if actual is not None:
++  t=torch.from_numpy(x);dtype=torch.uint8 if unsigned else torch.int8
++  if fixed is None:s,z=_choose_qparams_affine(t,'SYMMETRIC',block,dtype,lo,hi,1e-5,torch.float32,torch.float32,keep)
++  else:s,z=torch.full(ps,fixed[0],dtype=torch.float32),torch.full(ps,fixed[1],dtype=torch.float32)
++  q=_quantize_affine(t,block,s,z,dtype,lo,hi)
++  expected=[s.numpy().ravel(),z.numpy().ravel(),q.numpy().ravel()]
++  result.update(scale_max_abs=float(np.max(abs(actual[0]-expected[0]))),scale_pass=bool(np.allclose(actual[0],expected[0],rtol=2e-7,atol=0)),zero_exact=bool(np.array_equal(actual[1],expected[1])),quant_exact=bool(np.array_equal(actual[2],expected[2])),quant_mismatches=int(np.count_nonzero(actual[2]!=expected[2])))
++  result['pass']=result['scale_pass'] and result['zero_exact'] and result['quant_exact']
++ results[name]=result
++ (D/'results.json').write_text(json.dumps(results,indent=2));print(name,result,flush=True)
++# Requested scale/zero dtype and BF16 arithmetic are independently exercised.
++x=np.array([[-2,-.6,.6,2],[-4,-1.5,1.5,4]],'f4')
++for name in ['requested_f64_qparams','bf16_qparams']:
++ mlir,_=quant_ir(x.shape,[1,4])
++ if name=='requested_f64_qparams':
++  mlir=mlir.replace('[2],f32','[2],f64').replace('%none = torch.constant.none','%none = torch.constant.none\n%f64 = torch.constant.int 7').replace('%eps, %none, %none, %keep','%eps, %f64, %f64, %keep').replace('!torch.float, !torch.none, !torch.none, !torch.bool','!torch.float, !torch.int, !torch.int, !torch.bool')
++  dtype=torch.float64;input_dtype='f32';transport='f8';t=torch.from_numpy(x)
++ else:
++  mlir=mlir.replace('f32','bf16');dtype=torch.bfloat16;input_dtype='bf16';transport=ml_dtypes.bfloat16;t=torch.from_numpy(x).to(dtype)
++ result,actual=execute(name,mlir,x,[transport,transport,'i1'],input_dtype)
++ if actual is not None:
++  sc,zp=_choose_qparams_affine(t,'SYMMETRIC',[1,4],torch.int8,-127,127,1e-5,dtype,dtype,False)
++  q=_quantize_affine(t,[1,4],sc,zp,torch.int8,-127,127)
++  scale_error=np.max(abs(actual[0].astype('f8')-sc.to(torch.float64).numpy().ravel()))
++  zero_exact=np.array_equal(actual[1].astype('f8'),zp.to(torch.float64).numpy().ravel())
++  qexact=np.array_equal(actual[2],q.numpy().ravel())
++  result.update(scale_max_abs=float(scale_error),zero_exact=bool(zero_exact),quant_exact=bool(qexact),pass_=bool(scale_error==0 and zero_exact and qexact));result['pass']=result.pop('pass_')
++ results[name]=result
++ (D/'results.json').write_text(json.dumps(results,indent=2));print(name,result,flush=True)
++# GELU sweep catches the local coefficient error at a tighter local gate.
++x=np.linspace(-8,8,4097,dtype='f4')
++mlir='''module {func.func @main(%x: !torch.vtensor<[4097],f32>) -> !torch.vtensor<[4097],f32> {
++%approx = torch.constant.str "tanh"
++%y = torch.aten.gelu %x, %approx : !torch.vtensor<[4097],f32>, !torch.str -> !torch.vtensor<[4097],f32>
++return %y : !torch.vtensor<[4097],f32>
++}}'''
++result,actual=execute('gelu',mlir,x,['f4'])
++if actual is not None:
++ expected=torch.nn.functional.gelu(torch.from_numpy(x),approximate='tanh').numpy()
++ err=abs(actual[0]-expected);result.update(max_abs=float(err.max()),pass_=bool(np.all(err<=2e-6)));result['pass']=result.pop('pass_')
++results['gelu']=result
++# Unsupported mappings must fail explicitly, never silently return unit scales.
++mlir,_=quant_ir((2,4),[1,4],mapping='ASYMMETRIC')
++result,actual=execute('unsupported_mapping',mlir,np.ones((2,4),'f4'),['f4','f4','i1'])
++result['pass']=result.get('compile_exit',0)!=0 and 'only SYMMETRIC affine qparams are supported' in (D/'unsupported_mapping-compile.log').read_text();results['unsupported_mapping']=result
++(D/'results.json').write_text(json.dumps(results,indent=2));print(json.dumps(results,indent=2))
++raise SystemExit(0 if all(r.get('pass',False) for r in results.values()) else 2)
+--- a/third_party/iree_bar/third_party/torch-mlir/test/Dialect/TorchConversion/convert-custom-quant-op.mlir
++++ b/third_party/iree_bar/third_party/torch-mlir/test/Dialect/TorchConversion/convert-custom-quant-op.mlir
+@@ -1,4 +1,5 @@
+ // RUN: torch-mlir-opt %s '-pass-pipeline=builtin.module(func.func(torch-convert-custom-quant-op))' -split-input-file -verify-diagnostics | FileCheck %s
++// RUN: torch-mlir-opt %s '-pass-pipeline=builtin.module(func.func(torch-convert-custom-quant-op))' -split-input-file -verify-diagnostics | FileCheck %s --check-prefix=FIX
+ 
+ // CHECK: #map = affine_map<(d0, d1, d2) -> (d0, d1, d2)>
+ // CHECK: #map1 = affine_map<(d0, d1, d2) -> (d0, d1, 0)>
+@@ -43,3 +44,99 @@
+   // CHECK: %[[CASTED:.*]] = tensor.cast %[[MATMUL]] : tensor<1x1x2xf16> to tensor<1x1x2xf16>
+   return %output : !torch.vtensor<[1,1,2],f16>
+ }
++
++// -----
++// FIX-LABEL: func.func @symmetric_per_token
++// FIX: linalg.generic
++// FIX: math.absf
++// FIX: arith.maximumf
++// FIX: arith.divf
++// FIX: arith.maximumf
++// FIX: math.roundeven
++// FIX: arith.addf
++// FIX: arith.maximumf
++// FIX: arith.minimumf
++// FIX: arith.fptosi
++module {
++ func.func @symmetric_per_token(%x: !torch.vtensor<[2,4],f32>) -> (!torch.vtensor<[2],f32>, !torch.vtensor<[2],f32>, !torch.vtensor<[2,4],si8>) {
++ %s = torch.constant.str "SYMMETRIC"
++ %one = torch.constant.int 1
++ %four = torch.constant.int 4
++ %min = torch.constant.int -127
++ %max = torch.constant.int 127
++ %eps = torch.constant.float 1.000000e-05
++ %none = torch.constant.none
++ %false = torch.constant.bool false
++ %block = torch.prim.ListConstruct %one, %four : (!torch.int, !torch.int) -> !torch.list<int>
++ %p:2 = torch.operator "torch.torchao.choose_qparams_affine"(%x, %s, %block, %one, %min, %max, %eps, %none, %none, %false) : (!torch.vtensor<[2,4],f32>, !torch.str, !torch.list<int>, !torch.int, !torch.int, !torch.int, !torch.float, !torch.none, !torch.none, !torch.bool) -> (!torch.vtensor<[2],f32>, !torch.vtensor<[2],f32>)
++ %q = torch.operator "torch.torchao.quantize_affine"(%x, %block, %p#0, %p#1, %one, %min, %max) : (!torch.vtensor<[2,4],f32>, !torch.list<int>, !torch.vtensor<[2],f32>, !torch.vtensor<[2],f32>, !torch.int, !torch.int, !torch.int) -> !torch.vtensor<[2,4],si8>
++ return %p#0, %p#1, %q : !torch.vtensor<[2],f32>, !torch.vtensor<[2],f32>, !torch.vtensor<[2,4],si8>
++ }
++}
++
++// -----
++// FIX-LABEL: func.func @symmetric_partial_block
++// FIX: tensor.expand_shape
++// FIX: math.absf
++// FIX: math.roundeven
++// FIX: tensor.collapse_shape
++module {
++ func.func @symmetric_partial_block(%x: !torch.vtensor<[2,8],f32>) -> (!torch.vtensor<[2,2],f32>, !torch.vtensor<[2,2],f32>, !torch.vtensor<[2,8],si8>) {
++ %s = torch.constant.str "SYMMETRIC"
++ %one = torch.constant.int 1
++ %four = torch.constant.int 4
++ %min = torch.constant.int -127
++ %max = torch.constant.int 127
++ %eps = torch.constant.float 1.000000e-05
++ %none = torch.constant.none
++ %false = torch.constant.bool false
++ %block = torch.prim.ListConstruct %one, %four : (!torch.int, !torch.int) -> !torch.list<int>
++ %p:2 = torch.operator "torch.torchao.choose_qparams_affine"(%x, %s, %block, %one, %min, %max, %eps, %none, %none, %false) : (!torch.vtensor<[2,8],f32>, !torch.str, !torch.list<int>, !torch.int, !torch.int, !torch.int, !torch.float, !torch.none, !torch.none, !torch.bool) -> (!torch.vtensor<[2,2],f32>, !torch.vtensor<[2,2],f32>)
++ %q = torch.operator "torch.torchao.quantize_affine"(%x, %block, %p#0, %p#1, %one, %min, %max) : (!torch.vtensor<[2,8],f32>, !torch.list<int>, !torch.vtensor<[2,2],f32>, !torch.vtensor<[2,2],f32>, !torch.int, !torch.int, !torch.int) -> !torch.vtensor<[2,8],si8>
++ return %p#0, %p#1, %q : !torch.vtensor<[2,2],f32>, !torch.vtensor<[2,2],f32>, !torch.vtensor<[2,8],si8>
++ }
++}
++
++// -----
++// FIX-LABEL: func.func @symmetric_per_channel
++// FIX: math.absf
++// FIX: math.roundeven
++module {
++ func.func @symmetric_per_channel(%x: !torch.vtensor<[3,5],f32>) -> (!torch.vtensor<[5],f32>, !torch.vtensor<[5],f32>, !torch.vtensor<[3,5],si8>) {
++ %s = torch.constant.str "SYMMETRIC"
++ %one = torch.constant.int 1
++ %four = torch.constant.int 3
++ %min = torch.constant.int -127
++ %max = torch.constant.int 127
++ %eps = torch.constant.float 1.000000e-05
++ %none = torch.constant.none
++ %false = torch.constant.bool false
++ %block = torch.prim.ListConstruct %four, %one : (!torch.int, !torch.int) -> !torch.list<int>
++ %p:2 = torch.operator "torch.torchao.choose_qparams_affine"(%x, %s, %block, %one, %min, %max, %eps, %none, %none, %false) : (!torch.vtensor<[3,5],f32>, !torch.str, !torch.list<int>, !torch.int, !torch.int, !torch.int, !torch.float, !torch.none, !torch.none, !torch.bool) -> (!torch.vtensor<[5],f32>, !torch.vtensor<[5],f32>)
++ %q = torch.operator "torch.torchao.quantize_affine"(%x, %block, %p#0, %p#1, %one, %min, %max) : (!torch.vtensor<[3,5],f32>, !torch.list<int>, !torch.vtensor<[5],f32>, !torch.vtensor<[5],f32>, !torch.int, !torch.int, !torch.int) -> !torch.vtensor<[3,5],si8>
++ return %p#0, %p#1, %q : !torch.vtensor<[5],f32>, !torch.vtensor<[5],f32>, !torch.vtensor<[3,5],si8>
++ }
++}
++
++// -----
++// FIX-LABEL: func.func @symmetric_dynamic_per_token
++// FIX: tensor.dim
++// FIX: math.absf
++// FIX: math.roundeven
++module {
++ func.func @symmetric_dynamic_per_token(%x: !torch.vtensor<[?,4],f32>) -> (!torch.vtensor<[?],f32>, !torch.vtensor<[?],f32>, !torch.vtensor<[?,4],si8>) {
++ %s = torch.constant.str "SYMMETRIC"
++ %one = torch.constant.int 1
++ %four = torch.constant.int 4
++ %min = torch.constant.int -127
++ %max = torch.constant.int 127
++ %eps = torch.constant.float 1.000000e-05
++ %none = torch.constant.none
++ %false = torch.constant.bool false
++ %block = torch.prim.ListConstruct %one, %four : (!torch.int, !torch.int) -> !torch.list<int>
++ %p:2 = torch.operator "torch.torchao.choose_qparams_affine"(%x, %s, %block, %one, %min, %max, %eps, %none, %none, %false) : (!torch.vtensor<[?,4],f32>, !torch.str, !torch.list<int>, !torch.int, !torch.int, !torch.int, !torch.float, !torch.none, !torch.none, !torch.bool) -> (!torch.vtensor<[?],f32>, !torch.vtensor<[?],f32>)
++ %q = torch.operator "torch.torchao.quantize_affine"(%x, %block, %p#0, %p#1, %one, %min, %max) : (!torch.vtensor<[?,4],f32>, !torch.list<int>, !torch.vtensor<[?],f32>, !torch.vtensor<[?],f32>, !torch.int, !torch.int, !torch.int) -> !torch.vtensor<[?,4],si8>
++ return %p#0, %p#1, %q : !torch.vtensor<[?],f32>, !torch.vtensor<[?],f32>, !torch.vtensor<[?,4],si8>
++ }
++}
++

@@ -1,0 +1,27 @@
+fpga region: us-east-1 (manager i-<redacted>)
+uploaded /home/loren/work/runs/fixW/resnet/resnet50-gemR.elf (sha256 9f5abc49744ee912...) -> firesim-elfs/gemW-resnet50-20261027-a1.elf
+run gemW-resnet50-20261027-a1 dispatched (ssm command 8aa9ddd7-138a-4bd3-bd6f-7615a4c0cd1b); this takes ~10-20 min + your workload
+[17:41:04] InProgress
+[17:57:19] Success
+== results: /home/loren/work/runs/fixW/fpga/gemW-resnet50-20261027-a1
+== uartlog (tail)
+LOGIT 996 bed6389c
+LOGIT 997 bf4b8294
+LOGIT 998 be00885e
+LOGIT 999 3f4b8294
+RESNET50_INT8_RESULT cycles=2088587357 max_abs=0 max_index=0 errors=0 top1=21
+RESNET50_INT8_PASS
+
+Simulation complete.
+*** PASSED *** after 36745337687 cycles
+
+Emulation Performance Summary
+------------------------------
+Wallclock Time Elapsed: 627.2 s
+Host Frequency: 60.000 MHz
+Target Cycles Emulated: 36745337687
+Effective Target Frequency: 58.587 MHz
+FMR: 1.02
+Note: The latter three figures are based on the fastest target clock.
+
+Script done on 2026-10-27 17:56:53+00:00 [COMMAND_EXIT_CODE="0"]

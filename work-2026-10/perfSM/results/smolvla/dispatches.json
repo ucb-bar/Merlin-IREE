@@ -1,0 +1,32 @@
+{
+  "started_utc": "2026-10-27T22:37:57.906317+00:00",
+  "eta": "~3-4 h invoke at 58.6 MHz plus ~25-30 min image load; max-hours=8",
+  "runs": [
+    {
+      "run_id": "zSM3-smolvla-plain",
+      "command": [
+        "fpga-run-elf",
+        "--max-hours",
+        "8",
+        "--run-id",
+        "zSM3-smolvla-plain",
+        "/home/loren/work/runs/perfSM3/full-runtime/build-plain/smolvla.elf"
+      ],
+      "pid": 40,
+      "log": "/home/loren/work/runs/perfSM3/dispatch-plain.log"
+    },
+    {
+      "run_id": "zSM3-smolvla-trace",
+      "command": [
+        "fpga-run-elf",
+        "--max-hours",
+        "8",
+        "--run-id",
+        "zSM3-smolvla-trace",
+        "/home/loren/work/runs/perfSM3/full-runtime/build-trace/smolvla.elf"
+      ],
+      "pid": 41,
+      "log": "/home/loren/work/runs/perfSM3/dispatch-trace.log"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+SMA CURRENT:3.488T->430.216G WG0 estimate(8.108x),TARGET1e11 NOT MET;18343 traces matched,dropped0. Hidden-loop materialization fixes old1093:12.957G->71.581M; remaining QK/PV/projection dominates. Plain ELF runs/smA/full/smolvla.elf SHA2567124930e07f08073c1a77303440a241f54be9ce3d17fdaf39556a2d124df45b3. Bitwise slices pass; fullRV/F2 not run. Script/report runs/smA/REPORT.md.

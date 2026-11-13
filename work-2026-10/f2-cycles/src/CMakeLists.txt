@@ -1,0 +1,27 @@
+# F2 cycle campaign runtime project (2026-10-28). One build dir per variant: plain or trace
+# (-DPERFX=ON adds -DPERFX_TRACE=1 to the patched local_executable.c and the runners).
+cmake_minimum_required(VERSION 3.26)
+project(f2cyc C CXX ASM)
+include(CheckCSourceCompiles)
+option(PERFX "per-dispatch rdcycle trace" OFF)
+if(PERFX)
+  add_compile_definitions(PERFX_TRACE=1)
+endif()
+set(IREE_BUILD_COMPILER OFF CACHE BOOL "" FORCE)
+set(IREE_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+set(IREE_BUILD_SAMPLES OFF CACHE BOOL "" FORCE)
+set(IREE_BUILD_TOOLS OFF CACHE BOOL "" FORCE)
+set(IREE_ENABLE_THREADING OFF CACHE BOOL "" FORCE)
+add_subdirectory(${IREE_SRC} iree)
+set(RT iree::base iree::hal iree::hal::drivers::local_sync::sync_driver iree::hal::local
+       iree::hal::local::loaders::embedded_elf_loader iree::modules::hal iree::vm iree::vm::bytecode::module)
+# Each app: <name>.elf from runner + libc_strict + an embed .S generated next to the payloads.
+foreach(app IN LISTS APPS)
+  if(NOT EXISTS ${APP_DIR}/${app}/runner.c)
+    continue()
+  endif()
+  add_executable(${app}.elf ${APP_DIR}/${app}/runner.c ${CMAKE_SOURCE_DIR}/libc_strict.c ${APP_DIR}/${app}/embed.S)
+  target_include_directories(${app}.elf PRIVATE ${APP_DIR}/${app})
+  set_source_files_properties(${APP_DIR}/${app}/embed.S PROPERTIES OBJECT_DEPENDS "${APP_DIR}/${app}/payload.stamp")
+  target_link_libraries(${app}.elf PRIVATE ${RT} "-Wl,--defsym=__merlin_heap_size=${HEAP_${app}}" "-Wl,--defsym=__merlin_stack_size_min=8388608")
+endforeach()

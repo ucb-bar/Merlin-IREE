@@ -1,0 +1,307 @@
+--- a/compiler/src/merlin/Dialect/Gemmini/Transforms/LegalizeForLLVMExport.cpp
++++ b/compiler/src/merlin/Dialect/Gemmini/Transforms/LegalizeForLLVMExport.cpp
+@@ -41,6 +41,8 @@
+ #include "compiler/src/merlin/Dialect/Gemmini/IR/GemminiOps.h"
+ #include "compiler/src/merlin/Dialect/Gemmini/Transforms/Transforms.h"
+ #include "iree/compiler/Dialect/HAL/IR/HALOps.h"
++#include "iree/compiler/Codegen/Dialect/Codegen/IR/IREECodegenOps.h"
++#include "iree/compiler/Codegen/Dialect/Codegen/IR/IREECodegenDialect.h"
+ #include "mlir/Support/LLVM.h"
+ #include "third_party/iree_bar/runtime/src/iree/hal/local/loaders/merlin_debug_addresses.h"
+ 
+@@ -91,71 +93,6 @@
+ 		/*has_side_effects=*/true, /*is_align_stack=*/false,
+ 		LLVM::TailCallKind::None, asmDialect,
+ 		/*operand_attrs=*/ArrayAttr());
+-}
+-
+-// FIX (2026-05-19) — gemmini-subspan-offset-dropped: when the memref
+-// operand of `gemmini.tile_matmul` comes from
+-// `hal.interface.binding.subspan offset(%c<N>)`, IREE's LLVMCPU lowering
+-// uses `MemRefDescriptor::fromStaticShape` whenever the bufferized
+-// memref's StridedLayoutAttr is fully static. That helper stores the
+-// raw binding base pointer in both `allocated_ptr` and `aligned_ptr`
+-// fields, and parks the static offset in the descriptor's `offset`
+-// slot. The Gemmini lowering reads `aligned_ptr` via
+-// `memref::ExtractAlignedPointerAsIndexOp` — so it never sees the
+-// subspan's `byte_offset` operand, and the resulting `mvin` reads
+-// bytes from rodata + 0 instead of rodata + N. Bindings that carry the
+-// `Indirect` flag are unaffected because the runtime pre-applies the
+-// offset to the binding pointer, but bare `ReadOnly` bindings reach
+-// Gemmini's mvin path with the offset still owed.
+-//
+-// `walkBackToSubspanByteOffset` walks the def-use chain backward from
+-// `operand` through view/cast/reinterpret/extract_strided_metadata ops
+-// to the originating `IREE::HAL::InterfaceBindingSubspanOp`, and
+-// returns its `byte_offset` SSA value (or {} if the chain doesn't lead
+-// to a subspan cleanly). The caller adds it to the pointer extracted
+-// from the memref descriptor.
+-static std::optional<Value> walkBackToSubspanByteOffset(Value operand) {
+-	Value cur = operand;
+-	// Bound iterations to avoid cycles in pathological IR.
+-	for (int hop = 0; hop < 16; ++hop) {
+-		if (!cur)
+-			return std::nullopt;
+-		Operation *def = cur.getDefiningOp();
+-		if (!def)
+-			return std::nullopt;
+-		if (auto subspan = dyn_cast<
+-				mlir::iree_compiler::IREE::HAL::InterfaceBindingSubspanOp>(
+-				def)) {
+-			// FIX (2026-05-21): always apply byte_offset, regardless of
+-			// the Indirect flag. Empirical evidence (bprobe traces) shows
+-			// the IREE local-task runtime does NOT pre-resolve the
+-			// byte_offset for Indirect bindings (or if it does, the
+-			// downstream codegen still applies its own GEP-based offset).
+-			// The standard memref->LLVM lowering ALWAYS applies the
+-			// byte_offset via the memref descriptor's offset field. For
+-			// the Gemmini MVIN/MVOUT lowering to be consistent with the
+-			// readers/writers in adjacent CPU dispatches, we MUST apply
+-			// the same offset here. The previous 2026-05-20 patch (skip
+-			// for Indirect) caused MVOUT to write at base+0 while the
+-			// next dispatch's standard codegen read at base+byte_offset,
+-			// silently dropping the matmul output — producing the long-
+-			// observed "constant" wrong i32 for dronet d16/d18.
+-			return subspan.getByteOffset();
+-		}
+-		// Common view-like ops that preserve the underlying allocation.
+-		if (auto vli = dyn_cast<ViewLikeOpInterface>(def)) {
+-			cur = vli.getViewSource();
+-			continue;
+-		}
+-		// Fall back to the first operand for unrecognised single-operand
+-		// passthrough ops (UnrealizedConversionCastOp, builtin.cast, etc.).
+-		if (def->getNumOperands() == 1) {
+-			cur = def->getOperand(0);
+-			continue;
+-		}
+-		return std::nullopt;
+-	}
+-	return std::nullopt;
+ }
+ 
+ template <typename IntrOp = MvinIntrOp>
+@@ -2011,81 +1948,48 @@
+ 		MemRefType bArrayType = dyn_cast<MemRefType>(bArray.getType());
+ 		MemRefType cArrayType = dyn_cast<MemRefType>(cArray.getType());
+ 		MemRefType dArrayType = dyn_cast<MemRefType>(dArray.getType());
+-		StridedLayoutAttr aArrayLayout =
+-			dyn_cast<StridedLayoutAttr>(aArrayType.getLayout());
+-		StridedLayoutAttr bArrayLayout =
+-			dyn_cast<StridedLayoutAttr>(bArrayType.getLayout());
+-		StridedLayoutAttr cArrayLayout =
+-			dyn_cast<StridedLayoutAttr>(cArrayType.getLayout());
+-		SmallVector<Type> resultType = {rewriter.getIndexType()};
+-		TypeRange typeRange(resultType);
+-		Location loc = tileMatMulOp.getLoc();
+-		IntegerType i64Type = rewriter.getI64Type();
+-		// FIX (2026-05-19) — gemmini-subspan-offset-dropped: when the memref
+-		// operand comes from `hal.interface.binding.subspan` with a non-zero
+-		// `byte_offset`, IREE's LLVMCPU lowering parks the byte_offset in the
+-		// memref descriptor's offset slot via `fromStaticShape` and stores the
+-		// raw binding base pointer (no offset) in `aligned_ptr`. Since the
+-		// Gemmini path reads `aligned_ptr` via ExtractAlignedPointerAsIndex,
+-		// it must re-apply the byte_offset by walking the def-use chain back
+-		// to the subspan op. Without this, `mvin` reads bytes from rodata + 0
+-		// instead of rodata + byte_offset for any `ReadOnly` (non-`Indirect`)
+-		// binding — silently producing wrong matmul output for every
+-		// non-first weight tensor (dronet's steer head, etc.).
+-		auto applySubspanOffset = [&](Value extracted, Value origMemref) {
+-			auto subspanOff = walkBackToSubspanByteOffset(origMemref);
+-			if (!subspanOff)
+-				return extracted;
+-			// byte_offset is an index-typed SSA value (bytes). The existing
+-			// static-layout addition below uses element-multiples, so we add
+-			// the dynamic byte offset directly in bytes here.
+-			return static_cast<Value>(
+-				rewriter.create<arith::AddIOp>(loc, extracted, *subspanOff));
+-		};
+-		Value aArrayExtractOp =
+-			rewriter.create<memref::ExtractAlignedPointerAsIndexOp>(
+-				loc, typeRange, aArray);
+-		aArrayExtractOp = applySubspanOffset(aArrayExtractOp, aArray);
+-		if (aArrayLayout) {
+-			Value offset = rewriter.create<arith::ConstantIndexOp>(
+-				loc, aArrayLayout.getOffset() * sizeOfElemT);
+-			aArrayExtractOp =
+-				rewriter.create<arith::AddIOp>(loc, aArrayExtractOp, offset);
+-		}
+-		Value aArrayindexCastOp =
+-			rewriter.create<arith::IndexCastOp>(loc, i64Type, aArrayExtractOp);
+-		Value bArrayExtractOp =
+-			rewriter.create<memref::ExtractAlignedPointerAsIndexOp>(
+-				loc, typeRange, bArray);
+-		bArrayExtractOp = applySubspanOffset(bArrayExtractOp, bArray);
+-		if (bArrayLayout) {
+-			Value offset = rewriter.create<arith::ConstantIndexOp>(
+-				loc, bArrayLayout.getOffset() * sizeOfElemT);
+-			bArrayExtractOp =
+-				rewriter.create<arith::AddIOp>(loc, bArrayExtractOp, offset);
+-		}
+-		Value bArrayindexCastOp =
+-			rewriter.create<arith::IndexCastOp>(loc, i64Type, bArrayExtractOp);
+-		Value cArrayExtractOp =
+-			rewriter.create<memref::ExtractAlignedPointerAsIndexOp>(
+-				loc, typeRange, cArray);
+-		cArrayExtractOp = applySubspanOffset(cArrayExtractOp, cArray);
+-		if (cArrayLayout) {
+-			Value offset = rewriter.create<arith::ConstantIndexOp>(
+-				loc, cArrayLayout.getOffset() * sizeOfElemT);
+-			cArrayExtractOp =
+-				rewriter.create<arith::AddIOp>(loc, cArrayExtractOp, offset);
+-		}
+-		Value cArrayindexCastOp =
+-			rewriter.create<arith::IndexCastOp>(loc, i64Type, cArrayExtractOp);
+-		Value dArrayExtractOp =
+-			rewriter.create<memref::ExtractAlignedPointerAsIndexOp>(
+-				loc, typeRange, dArray);
+-		// D is typically a stack alloca (emptyD), not a binding. The walkback
+-		// will gracefully return nullopt and applySubspanOffset is a no-op.
+-		dArrayExtractOp = applySubspanOffset(dArrayExtractOp, dArray);
+-		Value dArrayindexCastOp =
+-			rewriter.create<arith::IndexCastOp>(loc, i64Type, dArrayExtractOp);
++        Location loc = tileMatMulOp.getLoc();
++        IntegerType i64Type = rewriter.getI64Type();
++        // A workgroup tile is a view, not a packed allocation. Keep the
++        // physical row stride, and reject layouts the DMA cannot express.
++        auto rowStride = [](MemRefType type) -> FailureOr<int64_t> {
++          if (type.hasStaticShape() && type.getNumElements() == 0)
++            return int64_t(0);
++          SmallVector<int64_t> strides;
++          int64_t offset;
++          if (type.getRank() != 2 ||
++              failed(type.getStridesAndOffset(strides, offset)) ||
++              strides[1] != 1 || ShapedType::isDynamic(strides[0]) ||
++              strides[0] < 0)
++            return failure();
++          return strides[0];
++        };
++        auto aStride = rowStride(aArrayType), bStride = rowStride(bArrayType);
++        auto cStride = rowStride(cArrayType), dStride = rowStride(dArrayType);
++        if (failed(aStride) || failed(bStride) || failed(cStride) || failed(dStride))
++          return tileMatMulOp.emitOpError(
++              "requires static nonnegative row strides and unit inner strides");
++        // IREE's metadata op preserves binding byte offsets until binding
++        // optimization is complete. Its offset is in elements and includes
++        // subview offsets, including runtime workgroup indices. Extract the
++        // pointer from the returned zero-offset base, then add the offset
++        // exactly once. Do not walk back separately to the binding.
++        auto address = [&](Value memref) -> Value {
++          auto metadata = rewriter.create<
++              mlir::iree_compiler::IREE::Codegen::ExtractStridedMetadataOp>(loc, memref);
++          Value base = rewriter.create<memref::ExtractAlignedPointerAsIndexOp>(
++              loc, metadata.getBaseBuffer());
++          auto type = cast<MemRefType>(memref.getType());
++          Value bytes = rewriter.create<arith::ConstantIndexOp>(
++              loc, type.getElementTypeBitWidth() / 8);
++          Value offset = rewriter.create<arith::MulIOp>(loc, metadata.getOffset(), bytes);
++          Value pointer = rewriter.create<arith::AddIOp>(loc, base, offset);
++          return rewriter.create<arith::IndexCastOp>(loc, i64Type, pointer);
++        };
++        Value aArrayindexCastOp = address(aArray);
++        Value bArrayindexCastOp = address(bArray);
++        Value cArrayindexCastOp = address(cArray);
++        Value dArrayindexCastOp = address(dArray);
+ 		// 2026-05-21 Bug A fix attempt: explicitly mask bit 63 of every
+ 		// mvin/mvout rs1 derivative. The chipyard Gemmini RTL's DMA address
+ 		// register does NOT mask bit 63 (LoadController.scala:102 +
+@@ -2137,15 +2041,13 @@
+ 		}
+ 		llvm::ArrayRef<int64_t> aArrayShape = aArrayType.getShape();
+ 		llvm::ArrayRef<int64_t> bArrayShape = bArrayType.getShape();
+-		llvm::ArrayRef<int64_t> cArrayShape = cArrayType.getShape();
+-		llvm::ArrayRef<int64_t> dArrayShape = dArrayType.getShape();
+ 		size_t dimI = aArrayShape[0];
+ 		size_t dimK = aArrayShape[1];
+ 		size_t dimJ = bArrayShape[1];
+-		size_t strideA = aArrayShape[1];
+-		size_t strideB = bArrayShape[1];
+-		size_t strideC = cArrayShape[1];
+-		size_t strideD = dArrayShape[1];
++		size_t strideA = *aStride;
++		size_t strideB = *bStride;
++		size_t strideC = *cStride;
++		size_t strideD = *dStride;
+ 		scale_t aScaleFactor = tileMatMulOp.getAScaleFactor().convertToFloat();
+ 		scale_t bScaleFactor = tileMatMulOp.getBScaleFactor().convertToFloat();
+ 		scale_acc_t dScaleFactor =
+@@ -3672,6 +3574,11 @@
+ 		this->dispatchDebug = transformOpts.target.dispatchDebug;
+ 	}
+ 
++  void getDependentDialects(DialectRegistry &registry) const override {
++    Base::getDependentDialects(registry);
++    registry.insert<mlir::iree_compiler::IREE::Codegen::IREECodegenDialect>();
++  }
++
+ 	void runOnOperation() override {
+ 		// See LowerTileToISA: this pass also runs from a textual executable
+ 		// pipeline, potentially in a fresh worker MLIRContext.
+--- a/compiler/src/merlin/Dialect/Gemmini/Transforms/tests/CMakeLists.txt
++++ b/compiler/src/merlin/Dialect/Gemmini/Transforms/tests/CMakeLists.txt
+@@ -2,6 +2,8 @@
+   NAME
+   lit
+   SRCS
++  "unsupported-tile-layout.mlir"
++  "strided-tile-addresses.mlir"
+   "bounded-output-tiles.mlir"
+   "late-epilogue-views.mlir"
+   "native-int-mm.mlir"
+--- /dev/null
++++ b/compiler/src/merlin/Dialect/Gemmini/Transforms/tests/strided-tile-addresses.mlir
+@@ -0,0 +1,30 @@
++// RUN: iree-opt %s --iree-plugin=gemmini --pass-pipeline='builtin.module(func.func(merlin-gemmini-legalize-for-llvm-export{loop-ws=true}))' | FileCheck %s
++
++// Dynamic workgroup offsets and physical leading dimensions survive a tile.
++func.func @strided_tile(
++    %a: memref<16x24xi8, strided<[24, 1], offset: ?>>,
++    %b: memref<24x8xi8, strided<[40, 1], offset: ?>>,
++    %c: memref<16x8xi32, strided<[40, 1], offset: ?>>,
++    %d: memref<1x8xi32, strided<[40, 1], offset: ?>>) {
++  gemmini.tile_matmul %a, %b, %c, %d {
++    aScaleFactor = 1.0 : f32, bScaleFactor = 1.0 : f32,
++    dScaleFactor = 1.0 : f32, act = 0 : i64,
++    accScale = 1.0 : f32, bertScale = 0.0 : f32,
++    dataflow = 1 : i64, repeatingBias = true
++  } : memref<16x24xi8, strided<[24, 1], offset: ?>>,
++      memref<24x8xi8, strided<[40, 1], offset: ?>>,
++      memref<16x8xi32, strided<[40, 1], offset: ?>>,
++      memref<1x8xi32, strided<[40, 1], offset: ?>>
++  return
++}
++// CHECK-LABEL: func.func @strided_tile
++// CHECK: iree_codegen.extract_strided_metadata %arg0
++// CHECK: iree_codegen.extract_strided_metadata %arg1
++// CHECK: %[[CBASE:[a-zA-Z0-9_]+]], %[[COFF:[a-zA-Z0-9_]+]], {{.*}} = iree_codegen.extract_strided_metadata %arg2
++// CHECK: %[[C4:[a-zA-Z0-9_]+]] = arith.constant 4 : index
++// CHECK: arith.muli %[[COFF]], %[[C4]]
++// CHECK: %[[DBASE:[a-zA-Z0-9_]+]], %[[DOFF:[a-zA-Z0-9_]+]], {{.*}} = iree_codegen.extract_strided_metadata %arg3
++// CHECK: %[[D4:[a-zA-Z0-9_]+]] = arith.constant 4 : index
++// CHECK: arith.muli %[[DOFF]], %[[D4]]
++// CHECK: gemmini.intr.loop_ws.config_strides_ab %c24_i64{{.*}}, %c40_i64{{.*}}
++// CHECK: gemmini.intr.loop_ws.config_strides_dc %c0_i64{{.*}}, %c40_i64{{.*}}
+--- /dev/null
++++ b/compiler/src/merlin/Dialect/Gemmini/Transforms/tests/unsupported-tile-layout.mlir
+@@ -0,0 +1,21 @@
++// RUN: iree-opt %s --iree-plugin=gemmini --pass-pipeline='builtin.module(func.func(merlin-gemmini-legalize-for-llvm-export{loop-ws=true}))' > %t 2>&1; test $? -ne 0
++// RUN: FileCheck %s < %t
++// CHECK: requires static nonnegative row strides and unit inner strides
++
++// Dynamic workgroup offsets and physical leading dimensions survive a tile.
++func.func @unsupported_inner_stride(
++    %a: memref<16x24xi8, strided<[48, 2], offset: ?>>,
++    %b: memref<24x8xi8, strided<[40, 1], offset: ?>>,
++    %c: memref<16x8xi32, strided<[40, 1], offset: ?>>,
++    %d: memref<1x8xi32, strided<[40, 1], offset: ?>>) {
++  gemmini.tile_matmul %a, %b, %c, %d {
++    aScaleFactor = 1.0 : f32, bScaleFactor = 1.0 : f32,
++    dScaleFactor = 1.0 : f32, act = 0 : i64,
++    accScale = 1.0 : f32, bertScale = 0.0 : f32,
++    dataflow = 1 : i64, repeatingBias = true
++  } : memref<16x24xi8, strided<[48, 2], offset: ?>>,
++      memref<24x8xi8, strided<[40, 1], offset: ?>>,
++      memref<16x8xi32, strided<[40, 1], offset: ?>>,
++      memref<1x8xi32, strided<[40, 1], offset: ?>>
++  return
++}

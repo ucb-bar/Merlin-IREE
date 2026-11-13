@@ -1,0 +1,18 @@
+{
+  "remote": {
+    "runId": "zF2-resnet-trace-buffered-20261027",
+    "mode": "elf",
+    "arg": "firesim-elfs/zF2-resnet-trace-buffered-20261027.elf",
+    "elf_sha256": "09aebb551acb2f2a1a727c4eee0a7dc4afe5cbf6150f4064e6e8cf376936ecf6",
+    "hw_config": "f2_gemmini_rocket_ddr3llc_60mhz",
+    "agfi": "agfi-02410ef1a8461b435",
+    "chipyard": "157dd69e49b9866be2bf8db390ee78bc38cd4438",
+    "firesim": "e1bdea8bb042b900995436ecc3d7c44100eb9da0",
+    "started": "2026-10-27T21:29:10+00:00",
+    "finished": "2026-10-27T21:33:39+00:00",
+    "exit_status": 0,
+    "results_dir": "results-workload/2026-10-27--21-32-03-dispatch-zF2-resnet-trace-buffered-20261027"
+  },
+  "local_elf": "/home/loren/work/runs/perfX/build-trace/resnet.elf",
+  "verified_sha256": "09aebb551acb2f2a1a727c4eee0a7dc4afe5cbf6150f4064e6e8cf376936ecf6"
+}

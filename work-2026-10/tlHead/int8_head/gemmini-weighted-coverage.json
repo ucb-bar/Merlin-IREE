@@ -1,0 +1,944 @@
+{
+  "method": "source-stage weighted by static M*K*N from INT8 linalg.matmul operand/result shapes; Gemmini counted when generated source carries the Gemmini lowering pipeline marker",
+  "counts": {
+    "int8_gemmini_dispatches": 155,
+    "int8_gemmini_matmuls": 155,
+    "int8_gemmini_macs": 16550723584,
+    "all_int8_matmuls": 155,
+    "all_int8_macs": 16550723584,
+    "float_matmuls": 0,
+    "weighted_int8_matmul_coverage_pct": 100.0
+  },
+  "items": [
+    {
+      "file": "module_main$async_dispatch_1387.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_646.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_932.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_106.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_585.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_349.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_410.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_152.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_517.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_735.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_561.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1257.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_672.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_455.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1235.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_647.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_215.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_999.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_934.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_496.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_886.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1081.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_325.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_171.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1322.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_85.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_126.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_712.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1060.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_842.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_605.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1192.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_930.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_195.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1125.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1430.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1190.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_865.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_219.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_191.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_451.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_41.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1036.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1341.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_780.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_347.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_971.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_322.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_910.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1297.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1167.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_951.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1324.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_972.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1450.mlir",
+      "matmuls": 1,
+      "macs": 1048576000,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1362.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1406.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_452.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1365.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_776.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_520.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_24.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1170.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1105.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_607.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_87.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1129.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_236.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1166.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1062.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_821.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_997.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1361.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1385.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1194.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_89.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_412.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_62.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_257.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_739.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1040.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_516.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1320.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1255.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_674.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1231.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_711.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_867.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_22.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_975.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_800.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_301.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_715.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_737.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1426.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_414.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_387.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_841.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_61.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_217.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_282.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1127.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_777.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1037.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_366.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1300.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_609.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1427.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_284.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_260.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_906.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_626.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_802.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1064.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_475.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_280.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_756.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1276.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_995.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_542.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_431.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_150.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1259.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_845.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_869.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1102.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_192.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_691.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_386.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_650.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_907.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_479.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_582.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1016.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1101.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_65.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_804.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_540.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1146.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_670.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_544.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1389.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_321.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_130.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_477.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_345.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1232.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_154.mlir",
+      "matmuls": 1,
+      "macs": 8388608,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_20.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1296.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_581.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_1211.mlir",
+      "matmuls": 1,
+      "macs": 67108864,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_390.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_127.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    },
+    {
+      "file": "module_main$async_dispatch_256.mlir",
+      "matmuls": 1,
+      "macs": 184549376,
+      "gemmini": true
+    }
+  ]
+}

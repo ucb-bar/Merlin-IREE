@@ -1,0 +1,19 @@
+{
+  "command": [
+    "taskset",
+    "-c",
+    "25",
+    "/usr/bin/time",
+    "-v",
+    "timeout",
+    "600",
+    "/home/loren/work/chipyard/.conda-env/riscv-tools/bin/spike",
+    "--isa=rv64gc_zicntr",
+    "--extension=gemmini",
+    "-m16384",
+    "/home/loren/work/runs/smA/full/onewg.elf"
+  ],
+  "exit": 1,
+  "wall": 34.017953872680664,
+  "diagnostic_only": true
+}

@@ -1,0 +1,43 @@
+# attE1: scalar FP32 codegen options on bundled RV64GC
+
+Updated 2026-10-27 UTC. All new artifacts are under `/home/loren/work/runs/attE1/`. Snapshot and all other agents' directories were read-only. No network use, source edits, rebuilds, or tolerance changes. CPU work was pinned to cores 24–31 at most; Spike runs use one core (24), compiler/runtime builds use at most eight cores (24–31).
+
+## Question and method
+
+Measured the bundled `fixW` compiler's RV64GC + Gemmini-enabled path with FP32 operations left on scalar CPU. The VMFBs were compiled with the same baseline options as `runs/fixW/tinyllama/compile_numerics.sh`: `local`/`llvm-cpu`, `riscv64-unknown-elf`, `lp64d`, `+m,+a,+f,+d,+c`, 8-byte target vector width, no data tiling, no ukernels, async-internal, embedded ELF, and Gemmini plugin enabled with WS and MX disabled. The only changes were the option under test.
+
+Each VMFB ran in an isolated copy of the existing bare-metal IREE runner infrastructure. `rdcycle` brackets only `iree_vm_invoke`; output was copied and hashed after the timer. Spike on this machine has previously been verified to report cycle == instret (`runs/probeSPL/REPORT.md`, Known-good debug throughput probe); therefore the reported invocation cycle counts are used as dynamic instruction counts. The hash is a bitwise output check among compiler variants on identical seeded inputs; it is not a PyTorch reference gate. No tolerances were changed.
+
+Exact compile commands are reproducible from `sweep.sh`, `qk-sweep.sh`, `qk-risky-sweep.sh`, and `conv-sweep.sh`; their compiler/base option arrays are recorded verbatim there. Compiler help captured in `iree-compile-help.txt`. Snapshot compiler version: unknown IREE version, LLVM 23.0.0git, optimized/assertions (`compiler-version.txt`). RISC-V GCC is 16.1.0 (`riscv64-unknown-elf-gcc`); Spike is 1.1.1-dev per prior run record.
+
+## Results
+
+| Workload | Baseline instructions/MAC | Best tested existing option, bitwise output | Hand-unrolled C reference | Finding |
+|---|---:|---:|---:|---|
+| Standalone 16×128×128 `linalg.matmul` probe | 3.6661 | 3.6661; no tested option changed code/count/hash | 2.5339 | Existing generic CPU options did not close the measured gap for this probe. |
+| Exact smolVLA QK `batch_matmul(12,256,512,64)` | 3.8355 | 3.8355; no tested option changed code/count/hash | 2.4477 | Existing tested options did not improve this batch-matmul path. |
+| Exact patch-conv shape `conv_2d_nhwc_fhwc`, input 1×512×512×3, 768 filters of 16×16×3, output 1×32×32×768 | 24.2980 | **4.8235** with `--iree-llvmcpu-loop-unrolling`, output hash unchanged | pending | This is an existing option that materially improves scalar convolution without changing output bits. |
+
+All counts are Spike dynamic instructions inside one VMFB invocation divided by the stated MAC count. QK shape has 100,663,296 MACs; conv has 603,979,776 MACs. Logs and output hashes: `matmul-baseline.spike.log`, `sweep-results.txt`, `qk-baseline.spike.log`, `qk-results.txt`, `qk-risky-results.txt`, `conv-baseline.spike.log`, `conv-unroll.spike.log`, `conv-results.txt`.
+
+For the 16×128×128 matmul probe I tested `--iree-llvmcpu-loop-unrolling`, `--iree-llvmcpu-loop-vectorization`, `--iree-llvmcpu-slp-vectorization`, target vector widths 4/8/16 bytes, `--iree-llvmcpu-mlir-opt-level=O0/O3`, `--iree-opt-level=O3`, data tiling with 4096-byte matrix tile, all ukernels, distribution sizes 4/16/64, and aggressive RISC-V distribution. Each successful variant was 961,037 instructions, 3.6661/MAC, hash `a973d8e1b68377cd`. The three optimization-level attempts initially used invalid `0/3` values and failed CLI parsing; corrected `O0/O3` were then measured. `iree-opt-level` likewise needs `O3`, not `3`.
+
+For the exact QK probe, loop unrolling, loop vectorization, data tiling, and all ukernels each yielded 386,097,411 instructions, 3.8355/MAC, hash `6622489e10d8d281`. FP reduction reassociation and precision reduction were also tested separately: same instruction count and same hash. Risky math flags are not claimed as needed or beneficial.
+
+The hand-written C reference computes four adjacent output columns at once, keeps four scalar accumulators live, and unrolls K in groups of four with `__builtin_fmaf`. It is a measured scalar-code reference, not a numerical replacement or a promise of an attainable generic compiler bound. Sources/build logs/ELFs: `ideal.c`, `ideal_qk.c`, `ideal-build.log`, `ideal_qk-build.log`; Spike results: `ideal.spike.log`, `ideal-unrolled.spike.log`, `ideal_qk.spike.log`. Both C kernels preserve ascending-K accumulation per output; inputs are deterministic synthetic values. The 16×128 C kernel output hash matches the QK 16×128 C shape reference (`4d30c04828edab30`); the QK C kernel output hash is `b339bfe2778d4cbb`.
+
+The baseline exact TinyLlama lm_head has independent measured evidence in `runs/perfTL/results/tinyllama/spike-trace.csv`: dispatch 1456, `batch_matmul_1x16x32000x2048_f32`, 3,868,279,519 cycles / 1,048,576,000 MAC = **3.6891 instructions/MAC**. It is an existing trace measurement, not an options sweep. The smolVLA artifact `runs/smB/full-dispatches.json` records QK dispatches at ~3.535 instructions/MAC from its one-workgroup scaled trace; this differs from the isolated exact-shape invocation above (3.8355), so these figures should not be silently merged. The one-workgroup estimate is documented in `runs/smB/REPORT.md` / `full-summary.json` and has the stated edge-group/branch scaling limitations.
+
+The same smolVLA workgroup trace reports `elementwise_3072x64_f32` at 88.21G instructions across 288 dispatches (`runs/smB/full-summary.json`), an average of ~1,558 instructions per output element for 3072×64. It is an elementwise/reduction pattern, so MAC normalization is not meaningful. The run-level report identifies repeated scalar reductions/exp work in this family; it is not equivalent to a simple multiply. Patch-projection costs differ between the exact full-model artifact and probeSPL's sampled binary; see those source reports rather than treating their derived totals as directly interchangeable.
+
+## Interim interpretation
+
+**Measured:** the standard linalg batch-matmul probe did not respond to the tested snapshot options, while the linalg patch convolution improved 5.04× from an option already present in the compiler. The exact TinyLlama FP32 lm_head trace is ~3.69 instructions/MAC. Thus an option was omitted for conv; for the tested matmul codegen, no swept option was found. The scalar C ratios bound what this compiler path might approach with better loop structure, but not what a safe IREE flag guarantees.
+
+**Inferred from snapshot source:** these are CPU lowering decisions, not Gemmini plugin decisions: FP32 computation remains in the `third_party/iree_bar` LLVM CPU path; the hardware target remains RV64GC with no vector extension in the enabled feature string. `--iree-llvmcpu-loop-unrolling` is exposed by the bundled compiler and changes the conv result (experiment above). The option definitions and lowering implementation live in `iree-latest/source/Merlin-IREE/third_party/iree_bar/compiler/src/iree/compiler/Codegen/LLVMCPU/KernelDispatch.cpp` (default distribution/matmul tile settings, lines 72–105) and `LLVMCPUSelectLoweringStrategy.cpp` (pipeline configuration/validation, lines 239–299). The CLI confirms available controls; no compiler-source changes were made.
+
+## Limitations and next work
+
+This turn did not produce option sweeps for the actual lm_head shape, the full softmax-shaped PV elementwise graph, or the precise FP32 patch-projection dispatch from the full model. TinyLlama's actual trace supplies only baseline for lm_head. The PV/patch-projection figures above are inherited measured artifacts, not new per-option experiments. The exact conv probe is the equivalent NHWC/FHWC patch-convolution shape, compiled from a compact dependency-closed `linalg.conv_2d_nhwc_fhwc` reproducer; it is not sliced from the model's exported Torch IR. A follow-up should test `--iree-llvmcpu-loop-unrolling` on the model-derived FP32 QK/PV/patch-projection slices, preserve the original bitwise/reference constraints, and attribute all findings to the exact IR source path before deciding whether a pass/flag change or exporter rewrite is needed.
+
+Some failed/corrected setup attempts are retained: the initial existing attention MLIR compile without `--iree-input-demote-f64-to-f32=false` failed an f32→i64 bitcast verifier; the corrected compile passed. Initial VMFB embed paths during runtime setup were stale after the sweep script changed the include; they were corrected before the recorded runs. No results from those failed attempts are counted as performance results.

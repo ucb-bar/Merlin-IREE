@@ -1,0 +1,9 @@
+2.322674e-02 bounded-output-tiles.mlir
+2.395606e-02 fuse-matmul-rescale.mlir
+2.370214e-02 late-epilogue-views.mlir
+3.303647e-02 lower-tile-to-isa.mlir
+2.379155e-02 lower-tile-to-loop-ws.mlir
+2.133942e-02 matmul-lower-to-isa.mlir
+2.464938e-02 native-int-mm.mlir
+2.439404e-02 strided-tile-addresses.mlir
+2.836418e-02 unsupported-tile-layout.mlir

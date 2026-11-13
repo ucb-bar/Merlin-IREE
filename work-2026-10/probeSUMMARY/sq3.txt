@@ -1,0 +1,1 @@
+SQ3 PyTorch-only accuracy evidence (16 synthetic seeds): INT8 QK+PV fails fixed max_abs<=0.21 (worst 0.34784); QK-only 0.21679, PV-only int8 0.26045, PV-only uint8-prob 0.27054 also fail; cosine minima >=0.999868. No passing recipe identified; these are quantization deltas, no backend result. See runs/sq3/REPORT.md.

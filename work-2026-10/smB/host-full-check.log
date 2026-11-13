@@ -1,0 +1,8 @@
+EXEC @main
+{
+  "cpu_bitwise_equal": true,
+  "pytorch_gate_failures": 0,
+  "max_abs_cpu": 0.0,
+  "max_abs_pytorch": 0.0,
+  "output_sha256": "74c9c6c5a16b91f6a918f11146813366eb39c65dabd59c62b01620c982d14a7b"
+}

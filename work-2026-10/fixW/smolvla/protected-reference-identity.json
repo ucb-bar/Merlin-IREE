@@ -1,0 +1,13 @@
+{
+  "protected_reference": "/home/loren/work/runs/smolvla/fp32/smolVLA.q.int8.mlir.reference/pytorch.npy",
+  "shape": [
+    1,
+    50,
+    32
+  ],
+  "dtype": "float32",
+  "bytes": 6400,
+  "payload_sha256": "74c9c6c5a16b91f6a918f11146813366eb39c65dabd59c62b01620c982d14a7b",
+  "local_pytorch_golden_bit_identical": true,
+  "local_cpu_golden_bit_identical": true
+}

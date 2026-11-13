@@ -1,0 +1,107 @@
+sequence,begin,end,cycles,ordinal,workgroups_x,workgroups_y,workgroups_z,name,device,op_class,macs
+0,1609324,10534259,8924935,79,32,1,1,main_graph$async_dispatch_0_elementwise_transpose_3x224x224_f32xi8,Rocket scalar,elementwise/other,0
+1,10535583,12624968,2089385,80,196,1,1,main_graph$async_dispatch_1_elementwise_broadcast_12544x64_i32,Rocket scalar,elementwise/other,0
+2,12626247,28701744,16075497,81,28,1,1,main_graph$async_dispatch_2_generic_112x112x7x7x3_i8,Rocket scalar,elementwise/other,0
+3,28703458,68329977,39626519,82,3136,1,1,main_graph$async_dispatch_3_matmul_12544x64x147_i8xi8xi32,Gemmini,conv,118013952
+4,70827240,72952997,2125757,83,28,1,1,main_graph$async_dispatch_4_slow_memcpy,Rocket scalar,elementwise/other,0
+5,72954354,137496185,64541831,84,32,1,1,main_graph$async_dispatch_5_conv_64x56x56x3x3_f32,Rocket scalar,conv,1806336
+6,137497899,137614740,116841,85,784,1,1,main_graph$async_dispatch_6_matmul_3136x64x64_i8xi8xi32,Gemmini,conv,12845056
+7,137615986,139743787,2127801,86,196,1,1,main_graph$async_dispatch_7_elementwise_broadcast_3136x256_i32,Rocket scalar,elementwise/other,0
+8,139774414,140496139,721725,87,28,1,1,main_graph$async_dispatch_8_slow_memcpy,Rocket scalar,elementwise/other,0
+9,140497496,153737153,13239657,88,28,1,1,main_graph$async_dispatch_9_generic_56x56x3x3x64_i8,Rocket scalar,elementwise/other,0
+10,153739224,153865473,126249,89,784,1,1,main_graph$async_dispatch_10_matmul_3136x64x576_i8xi8xi32,Gemmini,conv,115605504
+11,153866719,155994520,2127801,90,196,1,1,main_graph$async_dispatch_11_elementwise_broadcast_3136x256_i32,Rocket scalar,elementwise/other,0
+12,155996234,156485475,489241,91,3136,1,1,main_graph$async_dispatch_12_matmul_3136x256x64_i8xi8xi32,Gemmini,conv,51380224
+13,156487189,244402684,87915495,92,3136,1,1,main_graph$async_dispatch_13_matmul_3136x256x64_i8xi8xi32,Gemmini,conv,51380224
+14,244404398,244525159,120761,93,784,1,1,main_graph$async_dispatch_14_matmul_3136x64x256_i8xi8xi32,Gemmini,conv,51380224
+15,244555786,245277505,721719,87,28,1,1,main_graph$async_dispatch_8_slow_memcpy,Rocket scalar,elementwise/other,0
+16,245278862,258518519,13239657,94,28,1,1,main_graph$async_dispatch_16_generic_56x56x3x3x64_i8,Rocket scalar,elementwise/other,0
+17,258520590,258645271,124681,95,784,1,1,main_graph$async_dispatch_17_matmul_3136x64x576_i8xi8xi32,Gemmini,conv,115605504
+18,258646517,260774318,2127801,96,196,1,1,main_graph$async_dispatch_18_elementwise_broadcast_3136x256_i32,Rocket scalar,elementwise/other,0
+19,260776032,348702862,87926830,97,3136,1,1,main_graph$async_dispatch_19_matmul_3136x256x64_i8xi8xi32,Gemmini,conv,51380224
+20,348704576,348825337,120761,98,784,1,1,main_graph$async_dispatch_20_matmul_3136x64x256_i8xi8xi32,Gemmini,conv,51380224
+21,348855964,349577683,721719,87,28,1,1,main_graph$async_dispatch_8_slow_memcpy,Rocket scalar,elementwise/other,0
+22,349579040,362818697,13239657,99,28,1,1,main_graph$async_dispatch_22_generic_56x56x3x3x64_i8,Rocket scalar,elementwise/other,0
+23,362820768,362945449,124681,100,784,1,1,main_graph$async_dispatch_23_matmul_3136x64x576_i8xi8xi32,Gemmini,conv,115605504
+24,362946695,365074496,2127801,101,196,1,1,main_graph$async_dispatch_24_elementwise_broadcast_3136x256_i32,Rocket scalar,elementwise/other,0
+25,365076210,452957054,87880844,102,3136,1,1,main_graph$async_dispatch_25_matmul_3136x256x64_i8xi8xi32,Gemmini,conv,51380224
+26,452958300,454022213,1063913,103,98,1,1,main_graph$async_dispatch_26_elementwise_broadcast_3136x128_i32,Rocket scalar,elementwise/other,0
+27,454023927,454268560,244633,104,1568,1,1,main_graph$async_dispatch_27_matmul_3136x128x256_i8xi8xi32,Gemmini,conv,102760448
+28,454269806,455335735,1065929,105,56,1,1,main_graph$async_dispatch_28_elementwise_broadcast_784x512_i32,Rocket scalar,elementwise/other,0
+29,455337014,456629423,1292409,106,32,1,1,main_graph$async_dispatch_29_generic_28x28x256_i8,Rocket scalar,elementwise/other,0
+30,456688644,458128849,1440205,107,28,1,1,main_graph$async_dispatch_30_slow_memcpy,Rocket scalar,elementwise/other,0
+31,458130206,464069283,5939077,108,28,1,1,main_graph$async_dispatch_31_generic_28x28x3x3x128_i8,Rocket scalar,elementwise/other,0
+32,464071354,464134491,63137,109,392,1,1,main_graph$async_dispatch_32_matmul_784x128x1152_i8xi8xi32,Gemmini,conv,115605504
+33,464135737,465201666,1065929,110,56,1,1,main_graph$async_dispatch_33_elementwise_broadcast_784x512_i32,Rocket scalar,elementwise/other,0
+34,465203380,465448013,244633,111,1568,1,1,main_graph$async_dispatch_34_matmul_784x512x128_i8xi8xi32,Gemmini,conv,51380224
+35,465449727,509412501,43962774,112,1568,1,1,main_graph$async_dispatch_35_matmul_784x512x256_i8xi8xi32,Gemmini,conv,102760448
+36,509414215,509474608,60393,113,392,1,1,main_graph$async_dispatch_36_matmul_784x128x512_i8xi8xi32,Gemmini,conv,51380224
+37,509491941,509853096,361155,114,14,1,1,main_graph$async_dispatch_37_slow_memcpy,Rocket scalar,elementwise/other,0
+38,509854453,515793334,5938881,115,28,1,1,main_graph$async_dispatch_38_generic_28x28x3x3x128_i8,Rocket scalar,elementwise/other,0
+39,515795405,515857366,61961,116,392,1,1,main_graph$async_dispatch_39_matmul_784x128x1152_i8xi8xi32,Gemmini,conv,115605504
+40,515858612,516924541,1065929,117,56,1,1,main_graph$async_dispatch_40_elementwise_broadcast_784x512_i32,Rocket scalar,elementwise/other,0
+41,516926255,560881533,43955278,118,1568,1,1,main_graph$async_dispatch_41_matmul_784x512x128_i8xi8xi32,Gemmini,conv,51380224
+42,560883247,560944032,60785,119,392,1,1,main_graph$async_dispatch_42_matmul_784x128x512_i8xi8xi32,Gemmini,conv,51380224
+43,560961365,561322514,361149,114,14,1,1,main_graph$async_dispatch_37_slow_memcpy,Rocket scalar,elementwise/other,0
+44,561323871,567262752,5938881,120,28,1,1,main_graph$async_dispatch_44_generic_28x28x3x3x128_i8,Rocket scalar,elementwise/other,0
+45,567264823,567327176,62353,121,392,1,1,main_graph$async_dispatch_45_matmul_784x128x1152_i8xi8xi32,Gemmini,conv,115605504
+46,567328422,568394351,1065929,122,56,1,1,main_graph$async_dispatch_46_elementwise_broadcast_784x512_i32,Rocket scalar,elementwise/other,0
+47,568396065,612354476,43958411,123,1568,1,1,main_graph$async_dispatch_47_matmul_784x512x128_i8xi8xi32,Gemmini,conv,51380224
+48,612356190,612416975,60785,124,392,1,1,main_graph$async_dispatch_48_matmul_784x128x512_i8xi8xi32,Gemmini,conv,51380224
+49,612434308,612795457,361149,114,14,1,1,main_graph$async_dispatch_37_slow_memcpy,Rocket scalar,elementwise/other,0
+50,612796814,618735695,5938881,125,28,1,1,main_graph$async_dispatch_50_generic_28x28x3x3x128_i8,Rocket scalar,elementwise/other,0
+51,618737766,618800119,62353,126,392,1,1,main_graph$async_dispatch_51_matmul_784x128x1152_i8xi8xi32,Gemmini,conv,115605504
+52,618801365,619867294,1065929,127,56,1,1,main_graph$async_dispatch_52_elementwise_broadcast_784x512_i32,Rocket scalar,elementwise/other,0
+53,619869008,663830664,43961656,128,1568,1,1,main_graph$async_dispatch_53_matmul_784x512x128_i8xi8xi32,Gemmini,conv,51380224
+54,663832378,663956275,123897,129,784,1,1,main_graph$async_dispatch_54_matmul_784x256x512_i8xi8xi32,Gemmini,conv,102760448
+55,663957554,664606891,649337,130,32,1,1,main_graph$async_dispatch_55_generic_14x14x512_i8,Rocket scalar,elementwise/other,0
+56,664639524,665361669,722145,131,28,1,1,main_graph$async_dispatch_56_slow_memcpy,Rocket scalar,elementwise/other,0
+57,665363026,668340851,2977825,132,56,1,1,main_graph$async_dispatch_57_generic_14x14x3x3x256_i8,Rocket scalar,elementwise/other,0
+58,668342922,668484067,141145,133,784,1,1,main_graph$async_dispatch_58_matmul_196x256x2304_i8xi8xi32,Gemmini,conv,115605504
+59,668485781,668987566,501785,134,3136,1,1,main_graph$async_dispatch_59_matmul_196x1024x256_i8xi8xi32,Gemmini,conv,51380224
+60,668989280,691461845,22472565,135,3136,1,1,main_graph$async_dispatch_60_matmul_196x1024x512_i8xi8xi32,Gemmini,conv,102760448
+61,691463559,691585888,122329,136,784,1,1,main_graph$async_dispatch_61_matmul_196x256x1024_i8xi8xi32,Gemmini,conv,51380224
+62,691596625,691777558,180933,137,8,1,1,main_graph$async_dispatch_62_slow_memcpy,Rocket scalar,elementwise/other,0
+63,691778915,694751644,2972729,138,56,1,1,main_graph$async_dispatch_63_generic_14x14x3x3x256_i8,Rocket scalar,elementwise/other,0
+64,694753715,694892508,138793,139,784,1,1,main_graph$async_dispatch_64_matmul_196x256x2304_i8xi8xi32,Gemmini,conv,115605504
+65,694894222,717361547,22467325,140,3136,1,1,main_graph$async_dispatch_65_matmul_196x1024x256_i8xi8xi32,Gemmini,conv,51380224
+66,717363261,717485590,122329,141,784,1,1,main_graph$async_dispatch_66_matmul_196x256x1024_i8xi8xi32,Gemmini,conv,51380224
+67,717496327,717677254,180927,137,8,1,1,main_graph$async_dispatch_62_slow_memcpy,Rocket scalar,elementwise/other,0
+68,717678611,720651340,2972729,142,56,1,1,main_graph$async_dispatch_68_generic_14x14x3x3x256_i8,Rocket scalar,elementwise/other,0
+69,720653411,720792204,138793,143,784,1,1,main_graph$async_dispatch_69_matmul_196x256x2304_i8xi8xi32,Gemmini,conv,115605504
+70,720793918,743246303,22452385,144,3136,1,1,main_graph$async_dispatch_70_matmul_196x1024x256_i8xi8xi32,Gemmini,conv,51380224
+71,743248017,743370346,122329,145,784,1,1,main_graph$async_dispatch_71_matmul_196x256x1024_i8xi8xi32,Gemmini,conv,51380224
+72,743381083,743562010,180927,137,8,1,1,main_graph$async_dispatch_62_slow_memcpy,Rocket scalar,elementwise/other,0
+73,743563367,746536096,2972729,146,56,1,1,main_graph$async_dispatch_73_generic_14x14x3x3x256_i8,Rocket scalar,elementwise/other,0
+74,746538167,746676960,138793,147,784,1,1,main_graph$async_dispatch_74_matmul_196x256x2304_i8xi8xi32,Gemmini,conv,115605504
+75,746678674,769103778,22425104,148,3136,1,1,main_graph$async_dispatch_75_matmul_196x1024x256_i8xi8xi32,Gemmini,conv,51380224
+76,769105492,769227821,122329,149,784,1,1,main_graph$async_dispatch_76_matmul_196x256x1024_i8xi8xi32,Gemmini,conv,51380224
+77,769238558,769419485,180927,137,8,1,1,main_graph$async_dispatch_62_slow_memcpy,Rocket scalar,elementwise/other,0
+78,769420842,772393571,2972729,150,56,1,1,main_graph$async_dispatch_78_generic_14x14x3x3x256_i8,Rocket scalar,elementwise/other,0
+79,772395642,772534435,138793,151,784,1,1,main_graph$async_dispatch_79_matmul_196x256x2304_i8xi8xi32,Gemmini,conv,115605504
+80,772536149,795008933,22472784,152,3136,1,1,main_graph$async_dispatch_80_matmul_196x1024x256_i8xi8xi32,Gemmini,conv,51380224
+81,795010647,795132976,122329,153,784,1,1,main_graph$async_dispatch_81_matmul_196x256x1024_i8xi8xi32,Gemmini,conv,51380224
+82,795143713,795324640,180927,137,8,1,1,main_graph$async_dispatch_62_slow_memcpy,Rocket scalar,elementwise/other,0
+83,795325997,798298726,2972729,154,56,1,1,main_graph$async_dispatch_83_generic_14x14x3x3x256_i8,Rocket scalar,elementwise/other,0
+84,798300797,798439590,138793,155,784,1,1,main_graph$async_dispatch_84_matmul_196x256x2304_i8xi8xi32,Gemmini,conv,115605504
+85,798441304,820894631,22453327,156,3136,1,1,main_graph$async_dispatch_85_matmul_196x1024x256_i8xi8xi32,Gemmini,conv,51380224
+86,820896345,821147250,250905,157,1568,1,1,main_graph$async_dispatch_86_matmul_196x512x1024_i8xi8xi32,Gemmini,conv,102760448
+87,821148529,821477610,329081,158,32,1,1,main_graph$async_dispatch_87_generic_7x7x1024_i8,Rocket scalar,elementwise/other,0
+88,821497051,821858796,361745,159,16,1,1,main_graph$async_dispatch_88_slow_memcpy,Rocket scalar,elementwise/other,0
+89,821860153,823356274,1496121,160,112,1,1,main_graph$async_dispatch_89_generic_7x7x3x3x512_i8,Rocket scalar,elementwise/other,0
+90,823358345,823646882,288537,161,1568,1,1,main_graph$async_dispatch_90_matmul_49x512x4608_i8xi8xi32,Gemmini,conv,115605504
+91,823648596,824658413,1009817,162,6272,1,1,main_graph$async_dispatch_91_matmul_49x2048x512_i8xi8xi32,Gemmini,conv,51380224
+92,824660127,836712166,12052039,163,6272,1,1,main_graph$async_dispatch_92_matmul_49x2048x1024_i8xi8xi32,Gemmini,conv,102760448
+93,836713880,836958513,244633,164,1568,1,1,main_graph$async_dispatch_93_matmul_49x512x2048_i8xi8xi32,Gemmini,conv,51380224
+94,836966054,837055499,89445,165,4,1,1,main_graph$async_dispatch_94_slow_memcpy,Rocket scalar,elementwise/other,0
+95,837056856,838551185,1494329,166,112,1,1,main_graph$async_dispatch_95_generic_7x7x3x3x512_i8,Rocket scalar,elementwise/other,0
+96,838553256,838837089,283833,167,1568,1,1,main_graph$async_dispatch_96_matmul_49x512x4608_i8xi8xi32,Gemmini,conv,115605504
+97,838838803,850972122,12133319,168,6272,1,1,main_graph$async_dispatch_97_matmul_49x2048x512_i8xi8xi32,Gemmini,conv,51380224
+98,850973836,851218469,244633,169,1568,1,1,main_graph$async_dispatch_98_matmul_49x512x2048_i8xi8xi32,Gemmini,conv,51380224
+99,851226010,851315449,89439,165,4,1,1,main_graph$async_dispatch_94_slow_memcpy,Rocket scalar,elementwise/other,0
+100,851316806,852811135,1494329,170,112,1,1,main_graph$async_dispatch_100_generic_7x7x3x3x512_i8,Rocket scalar,elementwise/other,0
+101,852813206,853097039,283833,171,1568,1,1,main_graph$async_dispatch_101_matmul_49x512x4608_i8xi8xi32,Gemmini,conv,115605504
+102,853098753,854089754,991001,172,6272,1,1,main_graph$async_dispatch_102_matmul_49x2048x512_i8xi8xi32,Gemmini,conv,51380224
+103,854091111,866647861,12556750,173,64,1,1,main_graph$async_dispatch_103_reduction_2048x49_i8xi8xf32,Rocket scalar,elementwise/other,0
+104,866649932,866722957,73025,174,125,1,1,main_graph$async_dispatch_104_matmul_1x1000x2048_i8xi8xi32,Gemmini,matmul,2048000
+105,866724314,866730932,6618,175,1,1,1,main_graph$async_dispatch_105_elementwise_1000_i8xf32,Rocket scalar,elementwise/other,0

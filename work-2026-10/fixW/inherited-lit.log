@@ -1,0 +1,6 @@
+{'name': 'smol', 'opt_exit': 0, 'check_exit': 0, 'pass_test': True}
+{'name': 'cpu', 'opt_exit': 0, 'check_exit': 0, 'pass_test': True}
+{'name': 'mm-default', 'opt_exit': 0, 'check_exit': 0, 'pass_test': True}
+{'name': 'fmf', 'opt_exit': 0, 'check_exit': 0, 'pass_test': True}
+{'name': 'quant', 'opt_exit': 0, 'check_exit': 0, 'pass_test': True}
+{'name': 'gelu', 'opt_exit': 0, 'check_exit': 0, 'pass_test': True}

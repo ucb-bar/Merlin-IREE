@@ -1,0 +1,6 @@
+{
+  "input": "runs/perfX/assembly/smolvla/module_module_linked_embedded_elf_riscv_64.s",
+  "input_sha256": "896f9b01db08eb909ab19ae19112a69c622dd367ad5d6065713a63623b9b959e",
+  "output_sha256": "9fcf1ce3bb14c6955efbe3ad37311623da5ae25add9cce84475359143a17d4b2",
+  "rewritten": 3
+}

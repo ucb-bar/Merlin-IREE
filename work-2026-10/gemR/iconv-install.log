@@ -1,0 +1,216 @@
+cd libcharset && make install prefix='/home/loren/work/runs/gemR/deps' exec_prefix='/home/loren/work/runs/gemR/deps' libdir='/home/loren/work/runs/gemR/deps/lib'
+make[1]: Entering directory '/home/loren/work/runs/gemR/libiconv-1.18/libcharset'
+cd lib && make all
+make[2]: Entering directory '/home/loren/work/runs/gemR/libiconv-1.18/libcharset/lib'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/loren/work/runs/gemR/libiconv-1.18/libcharset/lib'
+cd lib && make install prefix='/home/loren/work/runs/gemR/deps' exec_prefix='/home/loren/work/runs/gemR/deps' libdir='/home/loren/work/runs/gemR/deps/lib'
+make[2]: Entering directory '/home/loren/work/runs/gemR/libiconv-1.18/libcharset/lib'
+/bin/bash ../build-aux/mkinstalldirs /home/loren/work/runs/gemR/deps/lib ; \
+/bin/bash ../libtool --mode=install /usr/bin/install -c libcharset.la /home/loren/work/runs/gemR/deps/lib/libcharset.la
+mkdir -p -- /home/loren/work/runs/gemR/deps/lib
+libtool: install: /usr/bin/install -c .libs/libcharset.so.1.0.0 /home/loren/work/runs/gemR/deps/lib/libcharset.so.1.0.0
+libtool: install: (cd /home/loren/work/runs/gemR/deps/lib && { ln -s -f libcharset.so.1.0.0 libcharset.so.1 || { rm -f libcharset.so.1 && ln -s libcharset.so.1.0.0 libcharset.so.1; }; })
+libtool: install: (cd /home/loren/work/runs/gemR/deps/lib && { ln -s -f libcharset.so.1.0.0 libcharset.so || { rm -f libcharset.so && ln -s libcharset.so.1.0.0 libcharset.so; }; })
+libtool: install: /usr/bin/install -c .libs/libcharset.lai /home/loren/work/runs/gemR/deps/lib/libcharset.la
+libtool: install: /usr/bin/install -c .libs/libcharset.a /home/loren/work/runs/gemR/deps/lib/libcharset.a
+libtool: install: chmod 644 /home/loren/work/runs/gemR/deps/lib/libcharset.a
+libtool: install: ranlib /home/loren/work/runs/gemR/deps/lib/libcharset.a
+libtool: finish: PATH="/home/loren/.local/bin:/home/loren/bin:/home/loren/.codex/tmp/arg0-linux/codex-arg0mnYN5O:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/sbin" ldconfig -n /home/loren/work/runs/gemR/deps/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /home/loren/work/runs/gemR/deps/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[2]: Leaving directory '/home/loren/work/runs/gemR/libiconv-1.18/libcharset/lib'
+/bin/bash ./build-aux/mkinstalldirs /home/loren/work/runs/gemR/deps/include
+mkdir -p -- /home/loren/work/runs/gemR/deps/include
+/usr/bin/install -c -m 644 include/libcharset.h.inst /home/loren/work/runs/gemR/deps/include/libcharset.h
+/usr/bin/install -c -m 644 include/localcharset.h.inst /home/loren/work/runs/gemR/deps/include/localcharset.h
+make[1]: Leaving directory '/home/loren/work/runs/gemR/libiconv-1.18/libcharset'
+cd lib && make install prefix='/home/loren/work/runs/gemR/deps' exec_prefix='/home/loren/work/runs/gemR/deps' libdir='/home/loren/work/runs/gemR/deps/lib'
+make[1]: Entering directory '/home/loren/work/runs/gemR/libiconv-1.18/lib'
+if [ ! -d /home/loren/work/runs/gemR/deps/lib ] ; then /bin/bash ../build-aux/mkinstalldirs /home/loren/work/runs/gemR/deps/lib ; fi
+/bin/bash ../libtool --mode=install /usr/bin/install -c libiconv.la /home/loren/work/runs/gemR/deps/lib/libiconv.la
+libtool: install: /usr/bin/install -c .libs/libiconv.so.2.7.0 /home/loren/work/runs/gemR/deps/lib/libiconv.so.2.7.0
+libtool: install: (cd /home/loren/work/runs/gemR/deps/lib && { ln -s -f libiconv.so.2.7.0 libiconv.so.2 || { rm -f libiconv.so.2 && ln -s libiconv.so.2.7.0 libiconv.so.2; }; })
+libtool: install: (cd /home/loren/work/runs/gemR/deps/lib && { ln -s -f libiconv.so.2.7.0 libiconv.so || { rm -f libiconv.so && ln -s libiconv.so.2.7.0 libiconv.so; }; })
+libtool: install: /usr/bin/install -c .libs/libiconv.lai /home/loren/work/runs/gemR/deps/lib/libiconv.la
+libtool: finish: PATH="/home/loren/.local/bin:/home/loren/bin:/home/loren/.codex/tmp/arg0-linux/codex-arg0mnYN5O:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/sbin" ldconfig -n /home/loren/work/runs/gemR/deps/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /home/loren/work/runs/gemR/deps/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+case "linux-gnu" in \
+  aix*) (cd /home/loren/work/runs/gemR/deps/lib && \
+         objects=`ar t libiconv.a`" "`ar t /lib/libiconv.a` && \
+         ar x libiconv.a && ar x /lib/libiconv.a && \
+         ar q libiconv.new.a $objects && \
+         rm -f $objects && \
+         mv -f libiconv.new.a libiconv.a) ;; \
+esac
+make[1]: Leaving directory '/home/loren/work/runs/gemR/libiconv-1.18/lib'
+cd srclib && make install prefix='/home/loren/work/runs/gemR/deps' exec_prefix='/home/loren/work/runs/gemR/deps' libdir='/home/loren/work/runs/gemR/deps/lib'
+make[1]: Entering directory '/home/loren/work/runs/gemR/libiconv-1.18/srclib'
+cd .. && make  am--refresh
+make[2]: Entering directory '/home/loren/work/runs/gemR/libiconv-1.18'
+make[2]: Nothing to be done for 'am--refresh'.
+make[2]: Leaving directory '/home/loren/work/runs/gemR/libiconv-1.18'
+make[2]: Entering directory '/home/loren/work/runs/gemR/libiconv-1.18'
+make[2]: Nothing to be done for 'am--refresh'.
+make[2]: Leaving directory '/home/loren/work/runs/gemR/libiconv-1.18'
+cd .. && make  am--refresh
+make[2]: Entering directory '/home/loren/work/runs/gemR/libiconv-1.18'
+make[2]: Nothing to be done for 'am--refresh'.
+make[2]: Leaving directory '/home/loren/work/runs/gemR/libiconv-1.18'
+make  install-am
+make[2]: Entering directory '/home/loren/work/runs/gemR/libiconv-1.18/srclib'
+cd .. && make  am--refresh
+make[3]: Entering directory '/home/loren/work/runs/gemR/libiconv-1.18'
+make[3]: Nothing to be done for 'am--refresh'.
+make[3]: Leaving directory '/home/loren/work/runs/gemR/libiconv-1.18'
+make[3]: Entering directory '/home/loren/work/runs/gemR/libiconv-1.18'
+make[3]: Nothing to be done for 'am--refresh'.
+make[3]: Leaving directory '/home/loren/work/runs/gemR/libiconv-1.18'
+cd .. && make  am--refresh
+make[3]: Entering directory '/home/loren/work/runs/gemR/libiconv-1.18'
+make[3]: Nothing to be done for 'am--refresh'.
+make[3]: Leaving directory '/home/loren/work/runs/gemR/libiconv-1.18'
+make[3]: Entering directory '/home/loren/work/runs/gemR/libiconv-1.18/srclib'
+cd .. && make  am--refresh
+make[4]: Entering directory '/home/loren/work/runs/gemR/libiconv-1.18'
+make[4]: Nothing to be done for 'am--refresh'.
+make[4]: Leaving directory '/home/loren/work/runs/gemR/libiconv-1.18'
+make[4]: Entering directory '/home/loren/work/runs/gemR/libiconv-1.18'
+make[4]: Nothing to be done for 'am--refresh'.
+make[4]: Leaving directory '/home/loren/work/runs/gemR/libiconv-1.18'
+cd .. && make  am--refresh
+make[4]: Entering directory '/home/loren/work/runs/gemR/libiconv-1.18'
+make[4]: Nothing to be done for 'am--refresh'.
+make[4]: Leaving directory '/home/loren/work/runs/gemR/libiconv-1.18'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/loren/work/runs/gemR/libiconv-1.18/srclib'
+make[2]: Leaving directory '/home/loren/work/runs/gemR/libiconv-1.18/srclib'
+make[1]: Leaving directory '/home/loren/work/runs/gemR/libiconv-1.18/srclib'
+cd src && make install prefix='/home/loren/work/runs/gemR/deps' exec_prefix='/home/loren/work/runs/gemR/deps' libdir='/home/loren/work/runs/gemR/deps/lib'
+make[1]: Entering directory '/home/loren/work/runs/gemR/libiconv-1.18/src'
+test `ls -ld . | sed -e 's/^d\(.........\).*/\1/'` = rwxrwxrwx || chmod 777 .
+if [ ! -d /home/loren/work/runs/gemR/deps/bin ] ; then /bin/bash ../build-aux/mkinstalldirs /home/loren/work/runs/gemR/deps/bin ; fi
+mkdir -p -- /home/loren/work/runs/gemR/deps/bin
+case "linux-gnu" in \
+  hpux*) gcc  -g -O2 `if test -n ''; then  /home/loren/work/runs/gemR/deps/bin; fi` iconv.o ../srclib/libicrt.a -L/home/loren/work/runs/gemR/deps/lib -liconv   `if test -n ''; then echo " -Wl,+b -Wl,/home/loren/work/runs/gemR/deps/lib"; fi` -o iconv;; \
+  *) /bin/bash ../libtool --mode=link gcc  -g -O2 `if test -n ''; then  /home/loren/work/runs/gemR/deps/bin; fi` iconv.o ../srclib/libicrt.a  /home/loren/work/runs/gemR/deps/lib/libiconv.la  -o iconv;; \
+esac
+libtool: link: gcc -g -O2 iconv.o -o iconv  ../srclib/libicrt.a /home/loren/work/runs/gemR/deps/lib/libiconv.so -Wl,-rpath -Wl,/home/loren/work/runs/gemR/deps/lib -Wl,-rpath -Wl,/home/loren/work/runs/gemR/deps/lib
+/bin/bash ../libtool --mode=install /usr/bin/install -c iconv /home/loren/work/runs/gemR/deps/bin/iconv
+libtool: install: /usr/bin/install -c iconv /home/loren/work/runs/gemR/deps/bin/iconv
+make[1]: Leaving directory '/home/loren/work/runs/gemR/libiconv-1.18/src'
+if [ ! -d /home/loren/work/runs/gemR/deps/include ] ; then /bin/bash ./build-aux/mkinstalldirs /home/loren/work/runs/gemR/deps/include ; fi
+/usr/bin/install -c -m 644 include/iconv.h.inst /home/loren/work/runs/gemR/deps/include/iconv.h
+cd po && make install prefix='/home/loren/work/runs/gemR/deps' exec_prefix='/home/loren/work/runs/gemR/deps' datarootdir='/home/loren/work/runs/gemR/deps/share' datadir='/home/loren/work/runs/gemR/deps/share'
+make[1]: Entering directory '/home/loren/work/runs/gemR/libiconv-1.18/po'
+installing af.gmo as /home/loren/work/runs/gemR/deps/share/locale/af/LC_MESSAGES/libiconv.mo
+installing be.gmo as /home/loren/work/runs/gemR/deps/share/locale/be/LC_MESSAGES/libiconv.mo
+installing bg.gmo as /home/loren/work/runs/gemR/deps/share/locale/bg/LC_MESSAGES/libiconv.mo
+installing ca.gmo as /home/loren/work/runs/gemR/deps/share/locale/ca/LC_MESSAGES/libiconv.mo
+installing cs.gmo as /home/loren/work/runs/gemR/deps/share/locale/cs/LC_MESSAGES/libiconv.mo
+installing da.gmo as /home/loren/work/runs/gemR/deps/share/locale/da/LC_MESSAGES/libiconv.mo
+installing de.gmo as /home/loren/work/runs/gemR/deps/share/locale/de/LC_MESSAGES/libiconv.mo
+installing el.gmo as /home/loren/work/runs/gemR/deps/share/locale/el/LC_MESSAGES/libiconv.mo
+installing eo.gmo as /home/loren/work/runs/gemR/deps/share/locale/eo/LC_MESSAGES/libiconv.mo
+installing es.gmo as /home/loren/work/runs/gemR/deps/share/locale/es/LC_MESSAGES/libiconv.mo
+installing et.gmo as /home/loren/work/runs/gemR/deps/share/locale/et/LC_MESSAGES/libiconv.mo
+installing fi.gmo as /home/loren/work/runs/gemR/deps/share/locale/fi/LC_MESSAGES/libiconv.mo
+installing fr.gmo as /home/loren/work/runs/gemR/deps/share/locale/fr/LC_MESSAGES/libiconv.mo
+installing ga.gmo as /home/loren/work/runs/gemR/deps/share/locale/ga/LC_MESSAGES/libiconv.mo
+installing gl.gmo as /home/loren/work/runs/gemR/deps/share/locale/gl/LC_MESSAGES/libiconv.mo
+installing hr.gmo as /home/loren/work/runs/gemR/deps/share/locale/hr/LC_MESSAGES/libiconv.mo
+installing hu.gmo as /home/loren/work/runs/gemR/deps/share/locale/hu/LC_MESSAGES/libiconv.mo
+installing id.gmo as /home/loren/work/runs/gemR/deps/share/locale/id/LC_MESSAGES/libiconv.mo
+installing it.gmo as /home/loren/work/runs/gemR/deps/share/locale/it/LC_MESSAGES/libiconv.mo
+installing ja.gmo as /home/loren/work/runs/gemR/deps/share/locale/ja/LC_MESSAGES/libiconv.mo
+installing ka.gmo as /home/loren/work/runs/gemR/deps/share/locale/ka/LC_MESSAGES/libiconv.mo
+installing ko.gmo as /home/loren/work/runs/gemR/deps/share/locale/ko/LC_MESSAGES/libiconv.mo
+installing lt.gmo as /home/loren/work/runs/gemR/deps/share/locale/lt/LC_MESSAGES/libiconv.mo
+installing nl.gmo as /home/loren/work/runs/gemR/deps/share/locale/nl/LC_MESSAGES/libiconv.mo
+installing pl.gmo as /home/loren/work/runs/gemR/deps/share/locale/pl/LC_MESSAGES/libiconv.mo
+installing pt_BR.gmo as /home/loren/work/runs/gemR/deps/share/locale/pt_BR/LC_MESSAGES/libiconv.mo
+installing rm.gmo as /home/loren/work/runs/gemR/deps/share/locale/rm/LC_MESSAGES/libiconv.mo
+installing ro.gmo as /home/loren/work/runs/gemR/deps/share/locale/ro/LC_MESSAGES/libiconv.mo
+installing ru.gmo as /home/loren/work/runs/gemR/deps/share/locale/ru/LC_MESSAGES/libiconv.mo
+installing sk.gmo as /home/loren/work/runs/gemR/deps/share/locale/sk/LC_MESSAGES/libiconv.mo
+installing sl.gmo as /home/loren/work/runs/gemR/deps/share/locale/sl/LC_MESSAGES/libiconv.mo
+installing sq.gmo as /home/loren/work/runs/gemR/deps/share/locale/sq/LC_MESSAGES/libiconv.mo
+installing sr.gmo as /home/loren/work/runs/gemR/deps/share/locale/sr/LC_MESSAGES/libiconv.mo
+installing sv.gmo as /home/loren/work/runs/gemR/deps/share/locale/sv/LC_MESSAGES/libiconv.mo
+installing tr.gmo as /home/loren/work/runs/gemR/deps/share/locale/tr/LC_MESSAGES/libiconv.mo
+installing uk.gmo as /home/loren/work/runs/gemR/deps/share/locale/uk/LC_MESSAGES/libiconv.mo
+installing vi.gmo as /home/loren/work/runs/gemR/deps/share/locale/vi/LC_MESSAGES/libiconv.mo
+installing wa.gmo as /home/loren/work/runs/gemR/deps/share/locale/wa/LC_MESSAGES/libiconv.mo
+installing zh_CN.gmo as /home/loren/work/runs/gemR/deps/share/locale/zh_CN/LC_MESSAGES/libiconv.mo
+installing zh_TW.gmo as /home/loren/work/runs/gemR/deps/share/locale/zh_TW/LC_MESSAGES/libiconv.mo
+if test "libiconv" = "gettext-tools"; then \
+  /usr/bin/mkdir -p /home/loren/work/runs/gemR/deps/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sed quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sed Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /home/loren/work/runs/gemR/deps/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /home/loren/work/runs/gemR/deps/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/home/loren/work/runs/gemR/libiconv-1.18/po'
+cd man && make install prefix='/home/loren/work/runs/gemR/deps' exec_prefix='/home/loren/work/runs/gemR/deps' datarootdir='/home/loren/work/runs/gemR/deps/share' datadir='/home/loren/work/runs/gemR/deps/share' mandir='/home/loren/work/runs/gemR/deps/share/man'
+make[1]: Entering directory '/home/loren/work/runs/gemR/libiconv-1.18/man'
+if [ ! -d /home/loren/work/runs/gemR/deps/share/man/man1 ] ; then /bin/bash ../build-aux/mkinstalldirs /home/loren/work/runs/gemR/deps/share/man/man1 ; fi
+mkdir -p -- /home/loren/work/runs/gemR/deps/share/man/man1
+builddir="`pwd`"; cd . && for f in *.1 ; do (cd "$builddir"; echo /usr/bin/install -c -m 644 ./$f /home/loren/work/runs/gemR/deps/share/man/man1/$f ; /usr/bin/install -c -m 644 ./$f /home/loren/work/runs/gemR/deps/share/man/man1/$f) ; done
+/usr/bin/install -c -m 644 ./iconv.1 /home/loren/work/runs/gemR/deps/share/man/man1/iconv.1
+if [ ! -d /home/loren/work/runs/gemR/deps/share/man/man3 ] ; then /bin/bash ../build-aux/mkinstalldirs /home/loren/work/runs/gemR/deps/share/man/man3 ; fi
+mkdir -p -- /home/loren/work/runs/gemR/deps/share/man/man3
+builddir="`pwd`"; cd . && for f in *.3 ; do (cd "$builddir"; echo /usr/bin/install -c -m 644 ./$f /home/loren/work/runs/gemR/deps/share/man/man3/$f ; /usr/bin/install -c -m 644 ./$f /home/loren/work/runs/gemR/deps/share/man/man3/$f) ; done
+/usr/bin/install -c -m 644 ./iconv.3 /home/loren/work/runs/gemR/deps/share/man/man3/iconv.3
+/usr/bin/install -c -m 644 ./iconv_close.3 /home/loren/work/runs/gemR/deps/share/man/man3/iconv_close.3
+/usr/bin/install -c -m 644 ./iconv_open.3 /home/loren/work/runs/gemR/deps/share/man/man3/iconv_open.3
+/usr/bin/install -c -m 644 ./iconv_open_into.3 /home/loren/work/runs/gemR/deps/share/man/man3/iconv_open_into.3
+/usr/bin/install -c -m 644 ./iconvctl.3 /home/loren/work/runs/gemR/deps/share/man/man3/iconvctl.3
+if [ ! -d /home/loren/work/runs/gemR/deps/share/doc/ ] ; then /bin/bash ../build-aux/mkinstalldirs /home/loren/work/runs/gemR/deps/share/doc/ ; fi
+mkdir -p -- /home/loren/work/runs/gemR/deps/share/doc/
+builddir="`pwd`"; cd . && for f in *.html ; do (cd "$builddir"; echo /usr/bin/install -c -m 644 ./$f /home/loren/work/runs/gemR/deps/share/doc//$f ; /usr/bin/install -c -m 644 ./$f /home/loren/work/runs/gemR/deps/share/doc//$f) ; done
+/usr/bin/install -c -m 644 ./iconv.1.html /home/loren/work/runs/gemR/deps/share/doc//iconv.1.html
+/usr/bin/install -c -m 644 ./iconv.3.html /home/loren/work/runs/gemR/deps/share/doc//iconv.3.html
+/usr/bin/install -c -m 644 ./iconv_close.3.html /home/loren/work/runs/gemR/deps/share/doc//iconv_close.3.html
+/usr/bin/install -c -m 644 ./iconv_open.3.html /home/loren/work/runs/gemR/deps/share/doc//iconv_open.3.html
+/usr/bin/install -c -m 644 ./iconv_open_into.3.html /home/loren/work/runs/gemR/deps/share/doc//iconv_open_into.3.html
+/usr/bin/install -c -m 644 ./iconvctl.3.html /home/loren/work/runs/gemR/deps/share/doc//iconvctl.3.html
+make[1]: Leaving directory '/home/loren/work/runs/gemR/libiconv-1.18/man'

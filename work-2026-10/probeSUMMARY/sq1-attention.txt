@@ -1,0 +1,1 @@
+SQ1 canonical FP32-compute quantization: INT8 QK-only passes one seeded sample (0.15180 / 0.02415 RMSE / cosine 0.999925), while fixed-scale INT8 PV-only and QK+PV fail (max_abs 2.50903 and 2.51335); per-query dynamic PV test pending. No compiler pass or additional-seed gate claimed.

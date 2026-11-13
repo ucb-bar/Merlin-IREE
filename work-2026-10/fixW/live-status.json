@@ -1,0 +1,23 @@
+{
+  "updated": "2026-10-27 19:26:57 UTC",
+  "models": {
+    "resnet": {
+      "fpga": "PASS",
+      "cycles": 2088587357,
+      "bit_equal_spike": true,
+      "run_id": "gemW-resnet50-20261027-a1",
+      "remote_exit": 0,
+      "result": "/home/loren/work/runs/fixW/resnet/fpga-result.json"
+    },
+    "tinyllama": {
+      "fpga": "pending",
+      "run_id": "gemW-tinyllama-20261027-a1"
+    },
+    "smolvla": {
+      "fpga": "pending",
+      "run_id": "gemW-smolvla-20261027-a1",
+      "spike": "pending"
+    }
+  },
+  "all_fpga_results_available": false
+}

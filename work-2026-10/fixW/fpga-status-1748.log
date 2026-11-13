@@ -1,0 +1,14 @@
+fpga region: us-east-1 (manager i-<redacted>)
+hw_config: f2_gemmini_rocket_ddr3llc_60mhz
+FPGA runs active: 4 (parallel runs allowed, one F2 each)
+gemT-tinyllama-int8-20261027-a elf firesim-elfs/gemT-tinyllama-int8-20261027-a.elf since 2026-10-27T17:20:43+00:00
+gemW-resnet50-20261027-a1 elf firesim-elfs/gemW-resnet50-20261027-a1.elf since 2026-10-27T17:41:04+00:00
+perfX-resnet-plain elf firesim-elfs/perfX-resnet-plain.elf since 2026-10-27T17:38:14+00:00
+perfX-resnet-plain-corrected elf firesim-elfs/perfX-resnet-plain-corrected.elf since 2026-10-27T17:40:54+00:00
+recent runs:
+  perfX-resnet-plain exit 120 2026-10-27T17:44:52+00:00
+  gemR-resnet50-20261027-a1 exit 0 2026-10-27T17:36:10+00:00
+  run2-handoff-fixed-resnet-valid exit 0 2026-10-24T22:16:36+00:00
+  run2-orig-fixed-tinyllama1601-valid exit 0 2026-10-24T22:08:26+00:00
+  run2-orig-fixed-resnet-valid exit 0 2026-10-24T20:17:03+00:00
+

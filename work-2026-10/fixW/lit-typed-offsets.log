@@ -1,0 +1,15 @@
+-- Testing: 9 tests, 1 workers --
+PASS: fixW-gemmini :: unsupported-tile-layout.mlir (1 of 9)
+PASS: fixW-gemmini :: strided-tile-addresses.mlir (2 of 9)
+PASS: fixW-gemmini :: lower-tile-to-isa.mlir (3 of 9)
+PASS: fixW-gemmini :: lower-tile-to-loop-ws.mlir (4 of 9)
+PASS: fixW-gemmini :: bounded-output-tiles.mlir (5 of 9)
+PASS: fixW-gemmini :: fuse-matmul-rescale.mlir (6 of 9)
+PASS: fixW-gemmini :: native-int-mm.mlir (7 of 9)
+PASS: fixW-gemmini :: late-epilogue-views.mlir (8 of 9)
+PASS: fixW-gemmini :: matmul-lower-to-isa.mlir (9 of 9)
+
+Testing Time: 0.25s
+
+Total Discovered Tests: 9
+  Passed: 9 (100.00%)

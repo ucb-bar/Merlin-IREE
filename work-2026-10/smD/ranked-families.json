@@ -1,0 +1,642 @@
+{
+  "elementwise_786432_f32": [
+    61687431168,
+    3,
+    "main$async_dispatch_5257_elementwise_786432_f32"
+  ],
+  "elementwise_1572864_f32": [
+    2802397741056,
+    288,
+    "main$async_dispatch_15480_elementwise_1572864_f32"
+  ],
+  "elementwise_1270215_f32": [
+    24461847515,
+    8,
+    "main$async_dispatch_15835_elementwise_1270215_f32"
+  ],
+  "elementwise_broadcast_3072x64_f32": [
+    408577175808,
+    144,
+    "main$async_dispatch_11182_elementwise_broadcast_3072x64_f32"
+  ],
+  "elementwise_871215_f32": [
+    12271818328,
+    7,
+    "main$async_dispatch_17302_elementwise_871215_f32"
+  ],
+  "batch_matmul_15x291x291x64_f32": [
+    7086456000,
+    8,
+    "main$async_dispatch_17440_batch_matmul_15x291x291x64_f32"
+  ],
+  "batch_matmul_15x241x241x64_f32": [
+    3936913680,
+    7,
+    "main$async_dispatch_17301_batch_matmul_15x241x241x64_f32"
+  ],
+  "matmul_1024x3072x768_i8xi8xi32": [
+    19526025216,
+    36,
+    "main$async_dispatch_11367_matmul_1024x3072x768_i8xi8xi32"
+  ],
+  "elementwise_broadcast_279360_f32": [
+    4015660320,
+    8,
+    "main$async_dispatch_17450_elementwise_broadcast_279360_f32"
+  ],
+  "elementwise_180750_f32": [
+    3258030800,
+    8,
+    "main$async_dispatch_17547_elementwise_180750_f32"
+  ],
+  "elementwise_broadcast_241x960_f32xi8": [
+    2496591300,
+    7,
+    "main$async_dispatch_17349_elementwise_broadcast_241x960_f32xi8"
+  ],
+  "batch_matmul_12x256x512x64_f32": [
+    102483099648,
+    288,
+    "main$async_dispatch_15485_batch_matmul_12x256x512x64_f32"
+  ],
+  "elementwise_broadcast_231360_f32": [
+    2415716520,
+    7,
+    "main$async_dispatch_17311_elementwise_broadcast_231360_f32"
+  ],
+  "elementwise_1024x3072_f32xf32xi8": [
+    7328954880,
+    36,
+    "main$async_dispatch_855_elementwise_1024x3072_f32xf32xi8"
+  ],
+  "matmul_241x2560x960_i8xi8xi32": [
+    2647066880,
+    30,
+    "main$async_dispatch_17472_matmul_241x2560x960_i8xi8xi32"
+  ],
+  "batch_matmul_15x50x241x64_f32": [
+    858144000,
+    8,
+    "main$async_dispatch_17546_batch_matmul_15x50x241x64_f32"
+  ],
+  "elementwise_broadcast_50x960_f32xi8": [
+    591181980,
+    8,
+    "main$async_dispatch_17558_elementwise_broadcast_50x960_f32xi8"
+  ],
+  "elementwise_broadcast_48000_f32": [
+    572782500,
+    8,
+    "main$async_dispatch_17556_elementwise_broadcast_48000_f32"
+  ],
+  "elementwise_transpose_8x8x12288_f32xf32xi8": [
+    154766400,
+    3,
+    "main$async_dispatch_5254_elementwise_transpose_8x8x12288_f32xf32xi8"
+  ],
+  "elementwise_1024x768_f32xf32xi8": [
+    3630575040,
+    72,
+    "main$async_dispatch_15425_elementwise_1024x768_f32xf32xi8"
+  ],
+  "elementwise_transpose_1024x12x64_f32xf32xi8": [
+    1787323904,
+    36,
+    "main$async_dispatch_15499_elementwise_transpose_1024x12x64_f32xf32xi8"
+  ],
+  "elementwise_241x2560_f32xf32xi8": [
+    604643360,
+    15,
+    "main$async_dispatch_17372_elementwise_241x2560_f32xf32xi8"
+  ],
+  "reduction_1024x3072_f32": [
+    1064540096,
+    36,
+    "main$async_dispatch_10421_reduction_1024x3072_f32"
+  ],
+  "elementwise_12x256_f32": [
+    3648380256,
+    144,
+    "main$async_dispatch_4932_elementwise_12x256_f32"
+  ],
+  "matmul_1024x768x3072_i8xi8xi32": [
+    645374976,
+    36,
+    "main$async_dispatch_5166_matmul_1024x768x3072_i8xi8xi32"
+  ],
+  "matmul_1024x768x768_i8xi8xi32": [
+    2265474048,
+    144,
+    "main$async_dispatch_15426_matmul_1024x768x768_i8xi8xi32"
+  ],
+  "elementwise_241x960_f32xf32xi8": [
+    576300660,
+    39,
+    "main$async_dispatch_17283_elementwise_241x960_f32xf32xi8"
+  ],
+  "matmul_50x2048x720_i8xi8xi32": [
+    158188800,
+    32,
+    "main$async_dispatch_15884_matmul_50x2048x720_i8xi8xi32"
+  ],
+  "elementwise_32x32x768_f32": [
+    23989848,
+    3,
+    "main$async_dispatch_5425_elementwise_32x32x768_f32"
+  ],
+  "elementwise_1024x768_f32": [
+    572181312,
+    72,
+    "main$async_dispatch_850_elementwise_1024x768_f32"
+  ],
+  "reduction_1024x768_f32": [
+    845769536,
+    108,
+    "main$async_dispatch_169_reduction_1024x768_f32"
+  ],
+  "reduction_64x12288_f32": [
+    23598400,
+    3,
+    "main$async_dispatch_5253_reduction_64x12288_f32"
+  ],
+  "matmul_241x960x2560_i8xi8xi32": [
+    116909100,
+    15,
+    "main$async_dispatch_16102_matmul_241x960x2560_i8xi8xi32"
+  ],
+  "matmul_241x960x960_i8xi8xi32": [
+    199316640,
+    30,
+    "main$async_dispatch_17410_matmul_241x960x960_i8xi8xi32"
+  ],
+  "elementwise_broadcast_49152_f32": [
+    2132327424,
+    288,
+    "main$async_dispatch_4919_elementwise_broadcast_49152_f32"
+  ],
+  "elementwise_4365x291_f32": [
+    54897640,
+    8,
+    "main$async_dispatch_17448_elementwise_4365x291_f32"
+  ],
+  "elementwise_50x2048_f32xf32xi8": [
+    105468480,
+    16,
+    "main$async_dispatch_15887_elementwise_50x2048_f32xf32xi8"
+  ],
+  "reduction_241x2560_f32": [
+    98080011,
+    15,
+    "main$async_dispatch_15868_reduction_241x2560_f32"
+  ],
+  "matmul_50x720x1440_i8xi8xi32": [
+    6273000,
+    1,
+    "main$async_dispatch_15786_matmul_50x720x1440_i8xi8xi32"
+  ],
+  "elementwise_241x320_f32xf32xi8": [
+    80040490,
+    16,
+    "main$async_dispatch_16179_elementwise_241x320_f32xf32xi8"
+  ],
+  "elementwise_50x1440_f32xf32xi8": [
+    4691160,
+    1,
+    "main$async_dispatch_15785_elementwise_50x1440_f32xf32xi8"
+  ],
+  "elementwise_3615x241_f32": [
+    31908352,
+    7,
+    "main$async_dispatch_17309_elementwise_3615x241_f32"
+  ],
+  "elementwise_broadcast_5x3x64x241_f32": [
+    56907900,
+    15,
+    "main$async_dispatch_17544_elementwise_broadcast_5x3x64x241_f32"
+  ],
+  "elementwise_broadcast_5x3x64x291_f32": [
+    28293400,
+    8,
+    "main$async_dispatch_17438_elementwise_broadcast_5x3x64x291_f32"
+  ],
+  "elementwise_50x960_f32xf32xi8": [
+    26598648,
+    8,
+    "main$async_dispatch_16333_elementwise_50x960_f32xf32xi8"
+  ],
+  "elementwise_231360_f32": [
+    3274593,
+    1,
+    "main$async_dispatch_15792_elementwise_231360_f32"
+  ],
+  "elementwise_15x291x16_f32": [
+    24444680,
+    8,
+    "main$async_dispatch_17443_elementwise_15x291x16_f32"
+  ],
+  "transpose_8x8x12288_f32": [
+    8769600,
+    3,
+    "main$async_dispatch_15766_transpose_8x8x12288_f32"
+  ],
+  "transpose_32x8x3072_f32": [
+    8728560,
+    3,
+    "main$async_dispatch_15765_transpose_32x8x3072_f32"
+  ],
+  "transpose_12x1024x64_f32": [
+    103705984,
+    36,
+    "main$async_dispatch_15497_transpose_12x1024x64_f32"
+  ],
+  "elementwise_broadcast_291x291_f32xf32xi1xi1xi1": [
+    2528280,
+    1,
+    "main$async_dispatch_15790_elementwise_broadcast_291x291_f32xf32xi1xi1xi1"
+  ],
+  "reduction_241x960_f32": [
+    113908650,
+    46,
+    "main$async_dispatch_15845_reduction_241x960_f32"
+  ],
+  "elementwise_50x720_f32xf32xi8": [
+    84572784,
+    34,
+    "main$async_dispatch_17321_elementwise_50x720_f32xf32xi8"
+  ],
+  "elementwise_1x241x960_f32": [
+    2284380,
+    1,
+    "main$async_dispatch_15800_elementwise_1x241x960_f32"
+  ],
+  "elementwise_15x241x16_f32": [
+    14937832,
+    7,
+    "main$async_dispatch_17304_elementwise_15x241x16_f32"
+  ],
+  "matmul_241x320x960_i8xi8xi32": [
+    63517960,
+    32,
+    "main$async_dispatch_17514_matmul_241x320x960_i8xi8xi32"
+  ],
+  "matmul_241x320x320_i8xi8xi32": [
+    31474600,
+    16,
+    "main$async_dispatch_17537_matmul_241x320x320_i8xi8xi32"
+  ],
+  "elementwise_broadcast_48x960_i64xf32": [
+    1897608,
+    1,
+    "main$async_dispatch_15771_elementwise_broadcast_48x960_i64xf32"
+  ],
+  "elementwise_241x960_f32": [
+    54518130,
+    30,
+    "main$async_dispatch_17469_elementwise_241x960_f32"
+  ],
+  "elementwise_1x291x15x32_f32": [
+    24886000,
+    16,
+    "main$async_dispatch_17430_elementwise_1x291x15x32_f32"
+  ],
+  "transpose_512x12x64_f32": [
+    207508640,
+    144,
+    "main$async_dispatch_11135_transpose_512x12x64_f32"
+  ],
+  "elementwise_241x15x32_f32": [
+    18567136,
+    14,
+    "main$async_dispatch_17291_elementwise_241x15x32_f32"
+  ],
+  "elementwise_8192_f32": [
+    453722592,
+    1020,
+    "main$async_dispatch_15710_elementwise_8192_f32"
+  ],
+  "matmul_64x960x12288_i8xi8xi32": [
+    3183120,
+    3,
+    "main$async_dispatch_15769_matmul_64x960x12288_i8xi8xi32"
+  ],
+  "transpose_291x15x64_f32": [
+    8294720,
+    8,
+    "main$async_dispatch_17439_transpose_291x15x64_f32"
+  ],
+  "reduction_50x2048_f32": [
+    16142100,
+    16,
+    "main$async_dispatch_17492_reduction_50x2048_f32"
+  ],
+  "matmul_50x960x720_i8xi8xi32": [
+    16126500,
+    16,
+    "main$async_dispatch_16635_matmul_50x960x720_i8xi8xi32"
+  ],
+  "matmul_50x720x2048_i8xi8xi32": [
+    15828750,
+    16,
+    "main$async_dispatch_17494_matmul_50x720x2048_i8xi8xi32"
+  ],
+  "matmul_50x720x960_i8xi8xi32": [
+    15894000,
+    16,
+    "main$async_dispatch_17559_matmul_50x720x960_i8xi8xi32"
+  ],
+  "elementwise_750x241_f32": [
+    7870208,
+    8,
+    "main$async_dispatch_17554_elementwise_750x241_f32"
+  ],
+  "matmul_50x720x720_i8xi8xi32": [
+    981000,
+    1,
+    "main$async_dispatch_15789_matmul_50x720x720_i8xi8xi32"
+  ],
+  "elementwise_1024x8_f32": [
+    631320980,
+    3930,
+    "main$async_dispatch_700_elementwise_1024x8_f32"
+  ],
+  "transpose_241x15x64_f32": [
+    6111805,
+    7,
+    "main$async_dispatch_17300_transpose_241x15x64_f32"
+  ],
+  "matmul_50x720x32_i8xi8xi32": [
+    865125,
+    1,
+    "main$async_dispatch_15778_matmul_50x720x32_i8xi8xi32"
+  ],
+  "reduction_241x320_f32": [
+    13672894,
+    16,
+    "main$async_dispatch_17532_reduction_241x320_f32"
+  ],
+  "elementwise_broadcast_5x3x291x64_f32": [
+    6182967,
+    8,
+    "main$async_dispatch_15843_elementwise_broadcast_5x3x291x64_f32"
+  ],
+  "transpose_256x12x64_f32": [
+    103991520,
+    144,
+    "main$async_dispatch_15429_transpose_256x12x64_f32"
+  ],
+  "reduction_50x1440_f32": [
+    711800,
+    1,
+    "main$async_dispatch_15784_reduction_50x1440_f32"
+  ],
+  "elementwise_broadcast_5x3x241x64_f32": [
+    9677115,
+    15,
+    "main$async_dispatch_17555_elementwise_broadcast_5x3x241x64_f32"
+  ],
+  "elementwise_1x291x5x32_f32": [
+    9330573,
+    16,
+    "main$async_dispatch_17434_elementwise_1x291x5x32_f32"
+  ],
+  "slow_memcpy": [
+    333743786,
+    7849,
+    "main$async_dispatch_15965_slow_memcpy"
+  ],
+  "reduction_50x960_f32": [
+    7576150,
+    16,
+    "main$async_dispatch_17557_reduction_50x960_f32"
+  ],
+  "elementwise_241x5x32_f32": [
+    7109768,
+    16,
+    "main$async_dispatch_17517_elementwise_241x5x32_f32"
+  ],
+  "elementwise_15x50x16_f32": [
+    3334890,
+    8,
+    "main$async_dispatch_15966_elementwise_15x50x16_f32"
+  ],
+  "reduction_50x720_f32": [
+    12288900,
+    34,
+    "main$async_dispatch_17488_reduction_50x720_f32"
+  ],
+  "matmul_50x320x720_i8xi8xi32": [
+    5376500,
+    16,
+    "main$async_dispatch_17425_matmul_50x320x720_i8xi8xi32"
+  ],
+  "elementwise_50x15x32_f32": [
+    5304864,
+    16,
+    "main$async_dispatch_17540_elementwise_50x15x32_f32"
+  ],
+  "elementwise_50x720_f32": [
+    10191468,
+    33,
+    "main$async_dispatch_17567_elementwise_50x720_f32"
+  ],
+  "elementwise_1x15x291x8_f32": [
+    2193037,
+    8,
+    "main$async_dispatch_17444_elementwise_1x15x291x8_f32"
+  ],
+  "elementwise_15x291_f32": [
+    2100990,
+    8,
+    "main$async_dispatch_17447_elementwise_15x291_f32"
+  ],
+  "elementwise_15x241_f32": [
+    1523361,
+    7,
+    "main$async_dispatch_17308_elementwise_15x241_f32"
+  ],
+  "elementwise_1x15x241x8_f32": [
+    1432424,
+    7,
+    "main$async_dispatch_17305_elementwise_1x15x241x8_f32"
+  ],
+  "elementwise_broadcast_291x32_i64xf32": [
+    6433920,
+    32,
+    "main$async_dispatch_17433_elementwise_broadcast_291x32_i64xf32"
+  ],
+  "transpose_50x15x64_f32": [
+    1577240,
+    8,
+    "main$async_dispatch_17545_transpose_50x15x64_f32"
+  ],
+  "elementwise_241x8_f32": [
+    555027,
+    7,
+    "main$async_dispatch_15796_elementwise_241x8_f32"
+  ],
+  "elementwise_1x241x8_f32": [
+    16650746,
+    210,
+    "main$async_dispatch_17498_elementwise_1x241x8_f32"
+  ],
+  "elementwise_3072x8_f32": [
+    47062524,
+    288,
+    "main$async_dispatch_4920_elementwise_3072x8_f32"
+  ],
+  "elementwise_broadcast_241x32_i64xf32": [
+    4015488,
+    30,
+    "main$async_dispatch_17293_elementwise_broadcast_241x32_i64xf32"
+  ],
+  "elementwise_15x291x4_f32": [
+    884552,
+    8,
+    "main$async_dispatch_17445_elementwise_15x291x4_f32"
+  ],
+  "elementwise_50x32_f32xf32xi8": [
+    100690,
+    1,
+    "main$async_dispatch_15777_elementwise_50x32_f32xf32xi8"
+  ],
+  "elementwise_broadcast_50x720_f32": [
+    93306,
+    1,
+    "main$async_dispatch_15781_elementwise_broadcast_50x720_f32"
+  ],
+  "elementwise_32x32_f32": [
+    18619820,
+    360,
+    "main$async_dispatch_15667_elementwise_32x32_f32"
+  ],
+  "elementwise_15x241x4_f32": [
+    541170,
+    7,
+    "main$async_dispatch_17306_elementwise_15x241x4_f32"
+  ],
+  "elementwise_1x15x291x2_f32": [
+    511626,
+    8,
+    "main$async_dispatch_17446_elementwise_1x15x291x2_f32"
+  ],
+  "elementwise_1024_f32": [
+    470043,
+    15,
+    "main$async_dispatch_15757_elementwise_1024_f32"
+  ],
+  "elementwise_3072x4_f32": [
+    16896540,
+    288,
+    "main$async_dispatch_4929_elementwise_3072x4_f32"
+  ],
+  "elementwise_3072x2_f32": [
+    14216360,
+    288,
+    "main$async_dispatch_4930_elementwise_3072x2_f32"
+  ],
+  "elementwise_1x15x50x8_f32": [
+    320063,
+    8,
+    "main$async_dispatch_15967_elementwise_1x15x50x8_f32"
+  ],
+  "elementwise_1x15x241x2_f32": [
+    280063,
+    7,
+    "main$async_dispatch_17307_elementwise_1x15x241x2_f32"
+  ],
+  "matmul_50x32x720_i8xi8xi32": [
+    37450,
+    1,
+    "main$async_dispatch_17585_matmul_50x32x720_i8xi8xi32"
+  ],
+  "elementwise_360_f64xf32xf64xf64": [
+    35378,
+    1,
+    "main$async_dispatch_15779_elementwise_360_f64xf32xf64xf64"
+  ],
+  "elementwise_1x50x8_f32": [
+    3009146,
+    231,
+    "main$async_dispatch_17578_elementwise_1x50x8_f32"
+  ],
+  "elementwise_15x50_f32": [
+    232600,
+    8,
+    "main$async_dispatch_17553_elementwise_15x50_f32"
+  ],
+  "elementwise_broadcast_50x32_i64xf32": [
+    418352,
+    16,
+    "main$async_dispatch_17539_elementwise_broadcast_50x32_i64xf32"
+  ],
+  "matmul_1x960x32_i8xi8xi32": [
+    26100,
+    1,
+    "main$async_dispatch_15775_matmul_1x960x32_i8xi8xi32"
+  ],
+  "reduction_50x32_f32": [
+    16400,
+    1,
+    "main$async_dispatch_15776_reduction_50x32_f32"
+  ],
+  "elementwise_15x50x4_f32": [
+    115840,
+    8,
+    "main$async_dispatch_17551_elementwise_15x50x4_f32"
+  ],
+  "elementwise_1x15x50x2_f32": [
+    67827,
+    8,
+    "main$async_dispatch_17343_elementwise_1x15x50x2_f32"
+  ],
+  "scan_1x291xi64_dispatch_tensor_store": [
+    5489,
+    1,
+    "main$async_dispatch_15791_scan_1x291xi64_dispatch_tensor_store"
+  ],
+  "elementwise_720_f64xf32": [
+    3333,
+    1,
+    "main$async_dispatch_15780_elementwise_720_f64xf32"
+  ],
+  "elementwise_291_i64": [
+    2715,
+    1,
+    "main$async_dispatch_15819_elementwise_291_i64"
+  ],
+  "elementwise_32_f32xf32xi8": [
+    2040,
+    1,
+    "main$async_dispatch_15774_elementwise_32_f32xf32xi8"
+  ],
+  "elementwise_241_i64": [
+    1537,
+    1,
+    "main$async_dispatch_15910_elementwise_241_i64"
+  ],
+  "elementwise_50_i64": [
+    444,
+    1,
+    "main$async_dispatch_15954_elementwise_50_i64"
+  ],
+  "reduction_32_f32": [
+    378,
+    1,
+    "main$async_dispatch_15772_reduction_32_f32"
+  ],
+  "reduction_50_i64": [
+    299,
+    1,
+    "main$async_dispatch_15953_reduction_50_i64"
+  ],
+  "elementwise_broadcast_64_i1": [
+    846,
+    3,
+    "main$async_dispatch_15770_elementwise_broadcast_64_i1"
+  ],
+  "elementwise": [
+    98,
+    1,
+    "main$async_dispatch_15773_elementwise"
+  ]
+}

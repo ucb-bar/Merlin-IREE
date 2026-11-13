@@ -1,0 +1,4 @@
+CONV_RESULT cycles=2913307467 macs=603979776 instr_per_mac=4.823518241 output_hash=234b45c146be1fef
+CONV_RESULT cycles=14675477595 macs=603979776 instr_per_mac=24.297961916 output_hash=234b45c146be1fef
+CONV_RESULT cycles=14675477595 macs=603979776 instr_per_mac=24.297961916 output_hash=234b45c146be1fef
+CONV_RESULT cycles=14675477595 macs=603979776 instr_per_mac=24.297961916 output_hash=234b45c146be1fef

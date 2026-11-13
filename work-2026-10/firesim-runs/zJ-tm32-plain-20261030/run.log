@@ -1,0 +1,53 @@
+== zJ-tm32-plain-20261030: elf firesim-elfs/zJ-tm32-plain-20261030.elf maxHours=5 wait=yes (2026-10-30T01:15:53+00:00)
+waiting for runId lock
+/home/ubuntu/chipyard/.conda-env/lib/python3.10/site-packages/paramiko/transport.py:236: CryptographyDeprecationWarning: Blowfish has been deprecated
+  "class": algorithms.Blowfish,
+FireSim Manager. Docs: https://docs.fires.im
+Running: terminaterunfarm
+
+run_farm_hosts_dict defaultdict(<class 'list'>, {'f2.6xlarge': [(<runtools.run_farm.Inst object at 0x7e8011b1fa00>, None)], 'f2.12xlarge': [], 'f2.48xlarge': [], 'm4.16xlarge': [], 'z1d.3xlarge': [], 'z1d.6xlarge': [], 'z1d.12xlarge': []})
+set_server_hardware_config 0 None
+IMPORTANT!: This will terminate the following instances:
+f2.12xlarge
+[]
+f2.48xlarge
+[]
+f2.6xlarge
+[]
+m4.16xlarge
+[]
+z1d.12xlarge
+[]
+z1d.3xlarge
+[]
+z1d.6xlarge
+[]
+Instances terminated. Please confirm in your AWS Management Console.
+The full log of this run is:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-30--01-16-07-terminaterunfarm-8CTTOBE6V9IHLNXI.log
+/home/ubuntu/chipyard/.conda-env/lib/python3.10/site-packages/paramiko/transport.py:236: CryptographyDeprecationWarning: Blowfish has been deprecated
+  "class": algorithms.Blowfish,
+FireSim Manager. Docs: https://docs.fires.im
+Running: launchrunfarm
+
+run_farm_hosts_dict defaultdict(<class 'list'>, {'f2.6xlarge': [(<runtools.run_farm.Inst object at 0x7baf2b6079d0>, None)], 'f2.12xlarge': [], 'f2.48xlarge': [], 'm4.16xlarge': [], 'z1d.3xlarge': [], 'z1d.6xlarge': [], 'z1d.12xlarge': []})
+set_server_hardware_config 0 None
+LAUNCHING: {'ImageId': 'ami-<redacted>', 'EbsOptimized': True, 'BlockDeviceMappings': [{'DeviceName': '/dev/sda1', 'Ebs': {'VolumeSize': 300, 'VolumeType': 'gp2'}}, {'DeviceName': '/dev/sdb', 'NoDevice': ''}], 'InstanceType': 'f2.6xlarge', 'MinCount': 1, 'MaxCount': 1, 'NetworkInterfaces': [{'SubnetId': 'subnet-<redacted>', 'DeviceIndex': 0, 'AssociatePublicIpAddress': True, 'Groups': ['sg-<redacted>']}], 'KeyName': 'firesim', 'TagSpecifications': [{'ResourceType': 'instance', 'Tags': [{'Key': 'fsimcluster', 'Value': 'fsimdispatch-zJ-tm32-plain-20261030'}]}], 'InstanceMarketOptions': {}}
+Waiting for instance boots: 0 f2.12xlarge
+Waiting for instance boots: 0 f2.48xlarge
+Waiting for instance boots: 1 f2.6xlarge
+i-<redacted> booted!
+Waiting for instance boots: 0 m4.16xlarge
+Waiting for instance boots: 0 z1d.12xlarge
+Waiting for instance boots: 0 z1d.3xlarge
+Waiting for instance boots: 0 z1d.6xlarge
+The full log of this run is:
+/home/ubuntu/chipyard/sims/firesim/deploy/logs/2026-10-30--01-16-09-launchrunfarm-SWN30SM4D6I8XJ3U.log
+/home/ubuntu/chipyard/.conda-env/lib/python3.10/site-packages/paramiko/transport.py:236: CryptographyDeprecationWarning: Blowfish has been deprecated
+  "class": algorithms.Blowfish,
+FireSim Manager. Docs: https://docs.fires.im
+Running: kill
+
+run_farm_hosts_dict defaultdict(<class 'list'>, {'f2.6xlarge': [(<runtools.run_farm.Inst object at 0x756d70b0b9d0>, None)], 'f2.12xlarge': [], 'f2.48xlarge': [], 'm4.16xlarge': [], 'z1d.3xlarge': [], 'z1d.6xlarge': [], 'z1d.12xlarge': []})
+set_server_hardware_config 0 None
+[192.168.3.172] Killing FPGA simulation for slot: 0.

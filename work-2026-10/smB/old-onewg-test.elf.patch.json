@@ -1,0 +1,31 @@
+{
+  "source": "runs/perfX/build-trace/smolvla.elf",
+  "source_sha256": "3fa8c7834d8b7851bccb41d23206838c5474f44cc0431b49a22c61fd87aa2fff",
+  "changes": [
+    {
+      "va": "0x80043764",
+      "offset": 280420,
+      "old": "0xc62a03",
+      "new": "0x100a13",
+      "register": "s4",
+      "dispatch_state_offset": 12
+    },
+    {
+      "va": "0x80043768",
+      "offset": 280424,
+      "old": "0x1062a83",
+      "new": "0x100a93",
+      "register": "s5",
+      "dispatch_state_offset": 16
+    },
+    {
+      "va": "0x8004376c",
+      "offset": 280428,
+      "old": "0x1465b03",
+      "new": "0x100b13",
+      "register": "s6",
+      "dispatch_state_offset": 20
+    }
+  ],
+  "meaning": "DIAGNOSTIC ONLY WG0 loop bound clamp; true launch metadata unchanged; not numerical inference"
+}

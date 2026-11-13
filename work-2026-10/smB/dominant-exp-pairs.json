@@ -1,0 +1,7490 @@
+[
+  {
+    "before": {
+      "name": "main$async_dispatch_177_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132562,
+      "scaled_instructions": 6515687424,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 179,
+      "ordinal": 487,
+      "name": "main$async_dispatch_179_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 159575,
+      "scaled_instructions": 61276800
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_185_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263549,
+      "scaled_instructions": 12953960448,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 190,
+      "ordinal": 498,
+      "name": "main$async_dispatch_190_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 159577,
+      "scaled_instructions": 61277568
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_195_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132562,
+      "scaled_instructions": 6515687424,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 202,
+      "ordinal": 510,
+      "name": "main$async_dispatch_202_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 159575,
+      "scaled_instructions": 61276800
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_201_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263549,
+      "scaled_instructions": 12953960448,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 211,
+      "ordinal": 519,
+      "name": "main$async_dispatch_211_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 159577,
+      "scaled_instructions": 61277568
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_210_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132562,
+      "scaled_instructions": 6515687424,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 222,
+      "ordinal": 530,
+      "name": "main$async_dispatch_222_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 159575,
+      "scaled_instructions": 61276800
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_216_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263549,
+      "scaled_instructions": 12953960448,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 231,
+      "ordinal": 539,
+      "name": "main$async_dispatch_231_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 159577,
+      "scaled_instructions": 61277568
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_225_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132562,
+      "scaled_instructions": 6515687424,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 242,
+      "ordinal": 550,
+      "name": "main$async_dispatch_242_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 159575,
+      "scaled_instructions": 61276800
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_231_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263549,
+      "scaled_instructions": 12953960448,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 251,
+      "ordinal": 559,
+      "name": "main$async_dispatch_251_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 159577,
+      "scaled_instructions": 61277568
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_608_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132498,
+      "scaled_instructions": 6512541696,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 618,
+      "ordinal": 734,
+      "name": "main$async_dispatch_618_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151895,
+      "scaled_instructions": 58327680
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_616_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263485,
+      "scaled_instructions": 12950814720,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 629,
+      "ordinal": 745,
+      "name": "main$async_dispatch_629_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153433,
+      "scaled_instructions": 58918272
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_626_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132498,
+      "scaled_instructions": 6512541696,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 641,
+      "ordinal": 757,
+      "name": "main$async_dispatch_641_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151895,
+      "scaled_instructions": 58327680
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_632_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263485,
+      "scaled_instructions": 12950814720,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 650,
+      "ordinal": 766,
+      "name": "main$async_dispatch_650_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153433,
+      "scaled_instructions": 58918272
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_641_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132498,
+      "scaled_instructions": 6512541696,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 661,
+      "ordinal": 777,
+      "name": "main$async_dispatch_661_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151895,
+      "scaled_instructions": 58327680
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_647_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263485,
+      "scaled_instructions": 12950814720,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 670,
+      "ordinal": 786,
+      "name": "main$async_dispatch_670_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153433,
+      "scaled_instructions": 58918272
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_656_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132498,
+      "scaled_instructions": 6512541696,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 681,
+      "ordinal": 797,
+      "name": "main$async_dispatch_681_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151895,
+      "scaled_instructions": 58327680
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_662_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263485,
+      "scaled_instructions": 12950814720,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 690,
+      "ordinal": 806,
+      "name": "main$async_dispatch_690_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153433,
+      "scaled_instructions": 58918272
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_1039_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132498,
+      "scaled_instructions": 6512541696,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 1057,
+      "ordinal": 977,
+      "name": "main$async_dispatch_1057_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151895,
+      "scaled_instructions": 58327680
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_1047_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263485,
+      "scaled_instructions": 12950814720,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 1068,
+      "ordinal": 988,
+      "name": "main$async_dispatch_1068_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153433,
+      "scaled_instructions": 58918272
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_1057_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132498,
+      "scaled_instructions": 6512541696,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 1080,
+      "ordinal": 1000,
+      "name": "main$async_dispatch_1080_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151895,
+      "scaled_instructions": 58327680
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_1063_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263549,
+      "scaled_instructions": 12953960448,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 1089,
+      "ordinal": 1009,
+      "name": "main$async_dispatch_1089_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153433,
+      "scaled_instructions": 58918272
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_1072_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132498,
+      "scaled_instructions": 6512541696,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 1100,
+      "ordinal": 1020,
+      "name": "main$async_dispatch_1100_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151895,
+      "scaled_instructions": 58327680
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_1078_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263549,
+      "scaled_instructions": 12953960448,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 1109,
+      "ordinal": 1029,
+      "name": "main$async_dispatch_1109_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_1087_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132498,
+      "scaled_instructions": 6512541696,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 1120,
+      "ordinal": 1040,
+      "name": "main$async_dispatch_1120_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_1093_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263613,
+      "scaled_instructions": 12957106176,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 1129,
+      "ordinal": 1049,
+      "name": "main$async_dispatch_1129_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_1470_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 1496,
+      "ordinal": 1220,
+      "name": "main$async_dispatch_1496_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_1478_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 1507,
+      "ordinal": 1231,
+      "name": "main$async_dispatch_1507_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_1488_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 1519,
+      "ordinal": 1243,
+      "name": "main$async_dispatch_1519_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_1494_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 1528,
+      "ordinal": 1252,
+      "name": "main$async_dispatch_1528_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_1503_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 1539,
+      "ordinal": 1263,
+      "name": "main$async_dispatch_1539_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_1509_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 1548,
+      "ordinal": 1272,
+      "name": "main$async_dispatch_1548_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_1518_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 1559,
+      "ordinal": 1283,
+      "name": "main$async_dispatch_1559_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_1524_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 1568,
+      "ordinal": 1292,
+      "name": "main$async_dispatch_1568_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_1901_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 1935,
+      "ordinal": 1463,
+      "name": "main$async_dispatch_1935_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_1909_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 1946,
+      "ordinal": 1474,
+      "name": "main$async_dispatch_1946_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_1919_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 1958,
+      "ordinal": 1486,
+      "name": "main$async_dispatch_1958_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_1925_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 1967,
+      "ordinal": 1495,
+      "name": "main$async_dispatch_1967_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_1934_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 1978,
+      "ordinal": 1506,
+      "name": "main$async_dispatch_1978_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_1940_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 1987,
+      "ordinal": 1515,
+      "name": "main$async_dispatch_1987_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_1949_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 1998,
+      "ordinal": 1526,
+      "name": "main$async_dispatch_1998_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_1955_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 2007,
+      "ordinal": 1535,
+      "name": "main$async_dispatch_2007_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_2332_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 2374,
+      "ordinal": 1706,
+      "name": "main$async_dispatch_2374_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_2340_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 2385,
+      "ordinal": 1717,
+      "name": "main$async_dispatch_2385_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_2350_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 2397,
+      "ordinal": 1729,
+      "name": "main$async_dispatch_2397_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_2356_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 2406,
+      "ordinal": 1738,
+      "name": "main$async_dispatch_2406_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_2365_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 2417,
+      "ordinal": 1749,
+      "name": "main$async_dispatch_2417_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_2371_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 2426,
+      "ordinal": 1758,
+      "name": "main$async_dispatch_2426_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_2380_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 2437,
+      "ordinal": 1769,
+      "name": "main$async_dispatch_2437_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_2386_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 2446,
+      "ordinal": 1778,
+      "name": "main$async_dispatch_2446_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_2763_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 2813,
+      "ordinal": 1949,
+      "name": "main$async_dispatch_2813_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_2771_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 2824,
+      "ordinal": 1960,
+      "name": "main$async_dispatch_2824_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_2781_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 2836,
+      "ordinal": 1972,
+      "name": "main$async_dispatch_2836_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_2787_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 2845,
+      "ordinal": 1981,
+      "name": "main$async_dispatch_2845_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_2796_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 2856,
+      "ordinal": 1992,
+      "name": "main$async_dispatch_2856_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_2802_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 2865,
+      "ordinal": 2001,
+      "name": "main$async_dispatch_2865_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_2811_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 2876,
+      "ordinal": 2012,
+      "name": "main$async_dispatch_2876_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_2817_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 2885,
+      "ordinal": 2021,
+      "name": "main$async_dispatch_2885_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_3194_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 3252,
+      "ordinal": 2192,
+      "name": "main$async_dispatch_3252_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_3202_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 3263,
+      "ordinal": 2203,
+      "name": "main$async_dispatch_3263_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_3212_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 3275,
+      "ordinal": 2215,
+      "name": "main$async_dispatch_3275_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_3218_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 3284,
+      "ordinal": 2224,
+      "name": "main$async_dispatch_3284_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_3227_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 3295,
+      "ordinal": 2235,
+      "name": "main$async_dispatch_3295_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_3233_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 3304,
+      "ordinal": 2244,
+      "name": "main$async_dispatch_3304_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_3242_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 3315,
+      "ordinal": 2255,
+      "name": "main$async_dispatch_3315_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_3248_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 3324,
+      "ordinal": 2264,
+      "name": "main$async_dispatch_3324_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_3625_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 3691,
+      "ordinal": 2435,
+      "name": "main$async_dispatch_3691_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_3633_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 3702,
+      "ordinal": 2446,
+      "name": "main$async_dispatch_3702_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_3643_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 3714,
+      "ordinal": 2458,
+      "name": "main$async_dispatch_3714_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_3649_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 3723,
+      "ordinal": 2467,
+      "name": "main$async_dispatch_3723_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_3658_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 3734,
+      "ordinal": 2478,
+      "name": "main$async_dispatch_3734_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_3664_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 3743,
+      "ordinal": 2487,
+      "name": "main$async_dispatch_3743_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_3673_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 3754,
+      "ordinal": 2498,
+      "name": "main$async_dispatch_3754_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_3679_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 3763,
+      "ordinal": 2507,
+      "name": "main$async_dispatch_3763_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_4056_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 4130,
+      "ordinal": 2678,
+      "name": "main$async_dispatch_4130_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_4064_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 4141,
+      "ordinal": 2689,
+      "name": "main$async_dispatch_4141_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_4074_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 4153,
+      "ordinal": 2701,
+      "name": "main$async_dispatch_4153_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_4080_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 4162,
+      "ordinal": 2710,
+      "name": "main$async_dispatch_4162_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_4089_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 4173,
+      "ordinal": 2721,
+      "name": "main$async_dispatch_4173_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_4095_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 4182,
+      "ordinal": 2730,
+      "name": "main$async_dispatch_4182_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_4104_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 4193,
+      "ordinal": 2741,
+      "name": "main$async_dispatch_4193_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_4110_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 4202,
+      "ordinal": 2750,
+      "name": "main$async_dispatch_4202_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_4487_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 4569,
+      "ordinal": 2921,
+      "name": "main$async_dispatch_4569_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_4495_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 4580,
+      "ordinal": 2932,
+      "name": "main$async_dispatch_4580_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_4505_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 4592,
+      "ordinal": 2944,
+      "name": "main$async_dispatch_4592_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_4511_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 4601,
+      "ordinal": 2953,
+      "name": "main$async_dispatch_4601_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_4520_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 4612,
+      "ordinal": 2964,
+      "name": "main$async_dispatch_4612_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_4526_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 4621,
+      "ordinal": 2973,
+      "name": "main$async_dispatch_4621_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_4535_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 4632,
+      "ordinal": 2984,
+      "name": "main$async_dispatch_4632_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_4541_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 4641,
+      "ordinal": 2993,
+      "name": "main$async_dispatch_4641_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_4918_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 5008,
+      "ordinal": 3164,
+      "name": "main$async_dispatch_5008_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_4926_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 5019,
+      "ordinal": 3175,
+      "name": "main$async_dispatch_5019_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_4936_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 5031,
+      "ordinal": 3187,
+      "name": "main$async_dispatch_5031_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_4942_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 5040,
+      "ordinal": 3196,
+      "name": "main$async_dispatch_5040_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_4951_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 5051,
+      "ordinal": 3207,
+      "name": "main$async_dispatch_5051_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_4957_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 5060,
+      "ordinal": 3216,
+      "name": "main$async_dispatch_5060_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_4966_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 5071,
+      "ordinal": 3227,
+      "name": "main$async_dispatch_5071_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_4972_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 5080,
+      "ordinal": 3236,
+      "name": "main$async_dispatch_5080_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_5434_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 5539,
+      "ordinal": 3495,
+      "name": "main$async_dispatch_5539_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 159547,
+      "scaled_instructions": 61266048
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_5442_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 5550,
+      "ordinal": 3506,
+      "name": "main$async_dispatch_5550_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 159549,
+      "scaled_instructions": 61266816
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_5452_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 5562,
+      "ordinal": 3518,
+      "name": "main$async_dispatch_5562_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 159547,
+      "scaled_instructions": 61266048
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_5458_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 5571,
+      "ordinal": 3527,
+      "name": "main$async_dispatch_5571_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 159549,
+      "scaled_instructions": 61266816
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_5467_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 5582,
+      "ordinal": 3538,
+      "name": "main$async_dispatch_5582_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 159547,
+      "scaled_instructions": 61266048
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_5473_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 5591,
+      "ordinal": 3547,
+      "name": "main$async_dispatch_5591_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 159549,
+      "scaled_instructions": 61266816
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_5482_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 5602,
+      "ordinal": 3558,
+      "name": "main$async_dispatch_5602_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 159547,
+      "scaled_instructions": 61266048
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_5488_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 5611,
+      "ordinal": 3567,
+      "name": "main$async_dispatch_5611_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 159549,
+      "scaled_instructions": 61266816
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_5865_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 5978,
+      "ordinal": 3738,
+      "name": "main$async_dispatch_5978_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_5873_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 5989,
+      "ordinal": 3749,
+      "name": "main$async_dispatch_5989_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_5883_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 6001,
+      "ordinal": 3761,
+      "name": "main$async_dispatch_6001_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_5889_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 6010,
+      "ordinal": 3770,
+      "name": "main$async_dispatch_6010_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_5898_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 6021,
+      "ordinal": 3781,
+      "name": "main$async_dispatch_6021_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_5904_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 6030,
+      "ordinal": 3790,
+      "name": "main$async_dispatch_6030_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_5913_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 6041,
+      "ordinal": 3801,
+      "name": "main$async_dispatch_6041_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_5919_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 6050,
+      "ordinal": 3810,
+      "name": "main$async_dispatch_6050_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_6296_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 6417,
+      "ordinal": 3981,
+      "name": "main$async_dispatch_6417_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_6304_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 6428,
+      "ordinal": 3992,
+      "name": "main$async_dispatch_6428_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_6314_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 6440,
+      "ordinal": 4004,
+      "name": "main$async_dispatch_6440_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_6320_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 6449,
+      "ordinal": 4013,
+      "name": "main$async_dispatch_6449_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_6329_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 6460,
+      "ordinal": 4024,
+      "name": "main$async_dispatch_6460_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_6335_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 6469,
+      "ordinal": 4033,
+      "name": "main$async_dispatch_6469_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_6344_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 6480,
+      "ordinal": 4044,
+      "name": "main$async_dispatch_6480_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_6350_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 6489,
+      "ordinal": 4053,
+      "name": "main$async_dispatch_6489_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_6727_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 6856,
+      "ordinal": 4224,
+      "name": "main$async_dispatch_6856_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_6735_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 6867,
+      "ordinal": 4235,
+      "name": "main$async_dispatch_6867_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_6745_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 6879,
+      "ordinal": 4247,
+      "name": "main$async_dispatch_6879_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_6751_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 6888,
+      "ordinal": 4256,
+      "name": "main$async_dispatch_6888_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_6760_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 6899,
+      "ordinal": 4267,
+      "name": "main$async_dispatch_6899_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_6766_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 6908,
+      "ordinal": 4276,
+      "name": "main$async_dispatch_6908_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_6775_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 6919,
+      "ordinal": 4287,
+      "name": "main$async_dispatch_6919_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_6781_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 6928,
+      "ordinal": 4296,
+      "name": "main$async_dispatch_6928_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_7158_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 7295,
+      "ordinal": 4467,
+      "name": "main$async_dispatch_7295_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_7166_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 7306,
+      "ordinal": 4478,
+      "name": "main$async_dispatch_7306_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_7176_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 7318,
+      "ordinal": 4490,
+      "name": "main$async_dispatch_7318_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_7182_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 7327,
+      "ordinal": 4499,
+      "name": "main$async_dispatch_7327_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_7191_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 7338,
+      "ordinal": 4510,
+      "name": "main$async_dispatch_7338_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_7197_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 7347,
+      "ordinal": 4519,
+      "name": "main$async_dispatch_7347_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_7206_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 7358,
+      "ordinal": 4530,
+      "name": "main$async_dispatch_7358_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_7212_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 7367,
+      "ordinal": 4539,
+      "name": "main$async_dispatch_7367_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_7589_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 7734,
+      "ordinal": 4710,
+      "name": "main$async_dispatch_7734_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_7597_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 7745,
+      "ordinal": 4721,
+      "name": "main$async_dispatch_7745_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_7607_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 7757,
+      "ordinal": 4733,
+      "name": "main$async_dispatch_7757_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_7613_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 7766,
+      "ordinal": 4742,
+      "name": "main$async_dispatch_7766_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_7622_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 7777,
+      "ordinal": 4753,
+      "name": "main$async_dispatch_7777_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_7628_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 7786,
+      "ordinal": 4762,
+      "name": "main$async_dispatch_7786_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_7637_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 7797,
+      "ordinal": 4773,
+      "name": "main$async_dispatch_7797_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_7643_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 7806,
+      "ordinal": 4782,
+      "name": "main$async_dispatch_7806_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_8020_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 8173,
+      "ordinal": 4953,
+      "name": "main$async_dispatch_8173_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_8028_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 8184,
+      "ordinal": 4964,
+      "name": "main$async_dispatch_8184_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_8038_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 8196,
+      "ordinal": 4976,
+      "name": "main$async_dispatch_8196_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_8044_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 8205,
+      "ordinal": 4985,
+      "name": "main$async_dispatch_8205_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_8053_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 8216,
+      "ordinal": 4996,
+      "name": "main$async_dispatch_8216_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_8059_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 8225,
+      "ordinal": 5005,
+      "name": "main$async_dispatch_8225_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_8068_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 8236,
+      "ordinal": 5016,
+      "name": "main$async_dispatch_8236_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_8074_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 8245,
+      "ordinal": 5025,
+      "name": "main$async_dispatch_8245_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_8451_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 8612,
+      "ordinal": 5196,
+      "name": "main$async_dispatch_8612_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_8459_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 8623,
+      "ordinal": 5207,
+      "name": "main$async_dispatch_8623_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_8469_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 8635,
+      "ordinal": 5219,
+      "name": "main$async_dispatch_8635_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_8475_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 8644,
+      "ordinal": 5228,
+      "name": "main$async_dispatch_8644_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_8484_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 8655,
+      "ordinal": 5239,
+      "name": "main$async_dispatch_8655_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_8490_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 8664,
+      "ordinal": 5248,
+      "name": "main$async_dispatch_8664_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_8499_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 8675,
+      "ordinal": 5259,
+      "name": "main$async_dispatch_8675_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_8505_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 8684,
+      "ordinal": 5268,
+      "name": "main$async_dispatch_8684_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_8882_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 9051,
+      "ordinal": 5439,
+      "name": "main$async_dispatch_9051_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_8890_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 9062,
+      "ordinal": 5450,
+      "name": "main$async_dispatch_9062_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_8900_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 9074,
+      "ordinal": 5462,
+      "name": "main$async_dispatch_9074_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_8906_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 9083,
+      "ordinal": 5471,
+      "name": "main$async_dispatch_9083_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_8915_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 9094,
+      "ordinal": 5482,
+      "name": "main$async_dispatch_9094_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_8921_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 9103,
+      "ordinal": 5491,
+      "name": "main$async_dispatch_9103_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_8930_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 9114,
+      "ordinal": 5502,
+      "name": "main$async_dispatch_9114_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_8936_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 9123,
+      "ordinal": 5511,
+      "name": "main$async_dispatch_9123_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_9313_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 9490,
+      "ordinal": 5682,
+      "name": "main$async_dispatch_9490_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_9321_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 9501,
+      "ordinal": 5693,
+      "name": "main$async_dispatch_9501_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_9331_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 9513,
+      "ordinal": 5705,
+      "name": "main$async_dispatch_9513_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_9337_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 9522,
+      "ordinal": 5714,
+      "name": "main$async_dispatch_9522_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_9346_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 9533,
+      "ordinal": 5725,
+      "name": "main$async_dispatch_9533_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_9352_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 9542,
+      "ordinal": 5734,
+      "name": "main$async_dispatch_9542_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_9361_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 9553,
+      "ordinal": 5745,
+      "name": "main$async_dispatch_9553_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_9367_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 9562,
+      "ordinal": 5754,
+      "name": "main$async_dispatch_9562_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_9744_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 9929,
+      "ordinal": 5925,
+      "name": "main$async_dispatch_9929_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_9752_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 9940,
+      "ordinal": 5936,
+      "name": "main$async_dispatch_9940_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_9762_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 9952,
+      "ordinal": 5948,
+      "name": "main$async_dispatch_9952_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_9768_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 9961,
+      "ordinal": 5957,
+      "name": "main$async_dispatch_9961_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_9777_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 9972,
+      "ordinal": 5968,
+      "name": "main$async_dispatch_9972_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_9783_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 9981,
+      "ordinal": 5977,
+      "name": "main$async_dispatch_9981_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_9792_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 9992,
+      "ordinal": 5988,
+      "name": "main$async_dispatch_9992_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_9798_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 10001,
+      "ordinal": 5997,
+      "name": "main$async_dispatch_10001_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_10175_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 10368,
+      "ordinal": 6168,
+      "name": "main$async_dispatch_10368_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_10183_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 10379,
+      "ordinal": 6179,
+      "name": "main$async_dispatch_10379_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_10193_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 10391,
+      "ordinal": 6191,
+      "name": "main$async_dispatch_10391_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_10199_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 10400,
+      "ordinal": 6200,
+      "name": "main$async_dispatch_10400_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_10208_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 10411,
+      "ordinal": 6211,
+      "name": "main$async_dispatch_10411_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_10214_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 10420,
+      "ordinal": 6220,
+      "name": "main$async_dispatch_10420_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_10223_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 10431,
+      "ordinal": 6231,
+      "name": "main$async_dispatch_10431_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_10229_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 10440,
+      "ordinal": 6240,
+      "name": "main$async_dispatch_10440_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_10691_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 10899,
+      "ordinal": 6491,
+      "name": "main$async_dispatch_10899_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 159547,
+      "scaled_instructions": 61266048
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_10699_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 10910,
+      "ordinal": 6502,
+      "name": "main$async_dispatch_10910_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 159549,
+      "scaled_instructions": 61266816
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_10709_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 10922,
+      "ordinal": 6514,
+      "name": "main$async_dispatch_10922_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 159547,
+      "scaled_instructions": 61266048
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_10715_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 10931,
+      "ordinal": 6523,
+      "name": "main$async_dispatch_10931_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 159549,
+      "scaled_instructions": 61266816
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_10724_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 10942,
+      "ordinal": 6534,
+      "name": "main$async_dispatch_10942_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 159547,
+      "scaled_instructions": 61266048
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_10730_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 10951,
+      "ordinal": 6543,
+      "name": "main$async_dispatch_10951_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 159549,
+      "scaled_instructions": 61266816
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_10739_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 10962,
+      "ordinal": 6554,
+      "name": "main$async_dispatch_10962_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 159547,
+      "scaled_instructions": 61266048
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_10745_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 10971,
+      "ordinal": 6563,
+      "name": "main$async_dispatch_10971_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 159549,
+      "scaled_instructions": 61266816
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_11122_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 11338,
+      "ordinal": 6734,
+      "name": "main$async_dispatch_11338_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_11130_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 11349,
+      "ordinal": 6745,
+      "name": "main$async_dispatch_11349_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_11140_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 11361,
+      "ordinal": 6757,
+      "name": "main$async_dispatch_11361_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_11146_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 11370,
+      "ordinal": 6766,
+      "name": "main$async_dispatch_11370_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_11155_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 11381,
+      "ordinal": 6777,
+      "name": "main$async_dispatch_11381_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_11161_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 11390,
+      "ordinal": 6786,
+      "name": "main$async_dispatch_11390_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_11170_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 11401,
+      "ordinal": 6797,
+      "name": "main$async_dispatch_11401_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_11176_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 11410,
+      "ordinal": 6806,
+      "name": "main$async_dispatch_11410_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_11553_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 11777,
+      "ordinal": 6977,
+      "name": "main$async_dispatch_11777_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_11561_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 11788,
+      "ordinal": 6988,
+      "name": "main$async_dispatch_11788_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_11571_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 11800,
+      "ordinal": 7000,
+      "name": "main$async_dispatch_11800_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_11577_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 11809,
+      "ordinal": 7009,
+      "name": "main$async_dispatch_11809_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_11586_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 11820,
+      "ordinal": 7020,
+      "name": "main$async_dispatch_11820_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_11592_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 11829,
+      "ordinal": 7029,
+      "name": "main$async_dispatch_11829_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_11601_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 11840,
+      "ordinal": 7040,
+      "name": "main$async_dispatch_11840_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_11607_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 11849,
+      "ordinal": 7049,
+      "name": "main$async_dispatch_11849_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_11984_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 12216,
+      "ordinal": 7220,
+      "name": "main$async_dispatch_12216_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_11992_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 12227,
+      "ordinal": 7231,
+      "name": "main$async_dispatch_12227_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_12002_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 12239,
+      "ordinal": 7243,
+      "name": "main$async_dispatch_12239_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_12008_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 12248,
+      "ordinal": 7252,
+      "name": "main$async_dispatch_12248_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_12017_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 12259,
+      "ordinal": 7263,
+      "name": "main$async_dispatch_12259_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_12023_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 12268,
+      "ordinal": 7272,
+      "name": "main$async_dispatch_12268_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_12032_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 12279,
+      "ordinal": 7283,
+      "name": "main$async_dispatch_12279_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_12038_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 12288,
+      "ordinal": 7292,
+      "name": "main$async_dispatch_12288_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_12415_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 12655,
+      "ordinal": 7463,
+      "name": "main$async_dispatch_12655_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_12423_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 12666,
+      "ordinal": 7474,
+      "name": "main$async_dispatch_12666_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_12433_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 12678,
+      "ordinal": 7486,
+      "name": "main$async_dispatch_12678_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_12439_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 12687,
+      "ordinal": 7495,
+      "name": "main$async_dispatch_12687_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_12448_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 12698,
+      "ordinal": 7506,
+      "name": "main$async_dispatch_12698_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_12454_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 12707,
+      "ordinal": 7515,
+      "name": "main$async_dispatch_12707_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_12463_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 12718,
+      "ordinal": 7526,
+      "name": "main$async_dispatch_12718_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_12469_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 12727,
+      "ordinal": 7535,
+      "name": "main$async_dispatch_12727_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_12846_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 13094,
+      "ordinal": 7706,
+      "name": "main$async_dispatch_13094_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_12854_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 13105,
+      "ordinal": 7717,
+      "name": "main$async_dispatch_13105_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_12864_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 13117,
+      "ordinal": 7729,
+      "name": "main$async_dispatch_13117_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_12870_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 13126,
+      "ordinal": 7738,
+      "name": "main$async_dispatch_13126_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_12879_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 13137,
+      "ordinal": 7749,
+      "name": "main$async_dispatch_13137_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_12885_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 13146,
+      "ordinal": 7758,
+      "name": "main$async_dispatch_13146_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_12894_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 13157,
+      "ordinal": 7769,
+      "name": "main$async_dispatch_13157_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_12900_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 13166,
+      "ordinal": 7778,
+      "name": "main$async_dispatch_13166_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_13277_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 13533,
+      "ordinal": 7949,
+      "name": "main$async_dispatch_13533_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_13285_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 13544,
+      "ordinal": 7960,
+      "name": "main$async_dispatch_13544_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_13295_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 13556,
+      "ordinal": 7972,
+      "name": "main$async_dispatch_13556_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_13301_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 13565,
+      "ordinal": 7981,
+      "name": "main$async_dispatch_13565_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_13310_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 13576,
+      "ordinal": 7992,
+      "name": "main$async_dispatch_13576_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_13316_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 13585,
+      "ordinal": 8001,
+      "name": "main$async_dispatch_13585_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_13325_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 13596,
+      "ordinal": 8012,
+      "name": "main$async_dispatch_13596_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_13331_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 13605,
+      "ordinal": 8021,
+      "name": "main$async_dispatch_13605_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_13708_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 13972,
+      "ordinal": 8192,
+      "name": "main$async_dispatch_13972_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_13716_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 13983,
+      "ordinal": 8203,
+      "name": "main$async_dispatch_13983_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_13726_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 13995,
+      "ordinal": 8215,
+      "name": "main$async_dispatch_13995_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_13732_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 14004,
+      "ordinal": 8224,
+      "name": "main$async_dispatch_14004_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_13741_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 14015,
+      "ordinal": 8235,
+      "name": "main$async_dispatch_14015_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_13747_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 14024,
+      "ordinal": 8244,
+      "name": "main$async_dispatch_14024_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_13756_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 14035,
+      "ordinal": 8255,
+      "name": "main$async_dispatch_14035_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_13762_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 14044,
+      "ordinal": 8264,
+      "name": "main$async_dispatch_14044_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_14139_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 14411,
+      "ordinal": 8435,
+      "name": "main$async_dispatch_14411_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_14147_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 14422,
+      "ordinal": 8446,
+      "name": "main$async_dispatch_14422_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_14157_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 14434,
+      "ordinal": 8458,
+      "name": "main$async_dispatch_14434_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_14163_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 14443,
+      "ordinal": 8467,
+      "name": "main$async_dispatch_14443_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_14172_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 14454,
+      "ordinal": 8478,
+      "name": "main$async_dispatch_14454_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_14178_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 14463,
+      "ordinal": 8487,
+      "name": "main$async_dispatch_14463_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_14187_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 14474,
+      "ordinal": 8498,
+      "name": "main$async_dispatch_14474_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_14193_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 14483,
+      "ordinal": 8507,
+      "name": "main$async_dispatch_14483_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_14570_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 14850,
+      "ordinal": 8678,
+      "name": "main$async_dispatch_14850_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_14578_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 14861,
+      "ordinal": 8689,
+      "name": "main$async_dispatch_14861_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_14588_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 14873,
+      "ordinal": 8701,
+      "name": "main$async_dispatch_14873_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_14594_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 14882,
+      "ordinal": 8710,
+      "name": "main$async_dispatch_14882_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_14603_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 14893,
+      "ordinal": 8721,
+      "name": "main$async_dispatch_14893_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_14609_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 14902,
+      "ordinal": 8730,
+      "name": "main$async_dispatch_14902_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_14618_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 14913,
+      "ordinal": 8741,
+      "name": "main$async_dispatch_14913_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_14624_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 14922,
+      "ordinal": 8750,
+      "name": "main$async_dispatch_14922_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_15001_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 15289,
+      "ordinal": 8921,
+      "name": "main$async_dispatch_15289_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_15009_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 15300,
+      "ordinal": 8932,
+      "name": "main$async_dispatch_15300_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_15019_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 15312,
+      "ordinal": 8944,
+      "name": "main$async_dispatch_15312_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_15025_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 15321,
+      "ordinal": 8953,
+      "name": "main$async_dispatch_15321_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_15034_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 15332,
+      "ordinal": 8964,
+      "name": "main$async_dispatch_15332_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_15040_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 15341,
+      "ordinal": 8973,
+      "name": "main$async_dispatch_15341_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_15049_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 15352,
+      "ordinal": 8984,
+      "name": "main$async_dispatch_15352_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_15055_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 15361,
+      "ordinal": 8993,
+      "name": "main$async_dispatch_15361_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_15432_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 15728,
+      "ordinal": 9164,
+      "name": "main$async_dispatch_15728_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_15440_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 15739,
+      "ordinal": 9175,
+      "name": "main$async_dispatch_15739_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_15450_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 15751,
+      "ordinal": 9187,
+      "name": "main$async_dispatch_15751_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_15456_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 15760,
+      "ordinal": 9196,
+      "name": "main$async_dispatch_15760_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_15465_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 15771,
+      "ordinal": 9207,
+      "name": "main$async_dispatch_15771_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_15471_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 15780,
+      "ordinal": 9216,
+      "name": "main$async_dispatch_15780_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_15480_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 132470,
+      "scaled_instructions": 6511165440,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 15791,
+      "ordinal": 9227,
+      "name": "main$async_dispatch_15791_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 151867,
+      "scaled_instructions": 58316928
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  },
+  {
+    "before": {
+      "name": "main$async_dispatch_15486_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263457,
+      "scaled_instructions": 12949438464,
+      "category": "other_scalar"
+    },
+    "after": {
+      "index": 15800,
+      "ordinal": 9236,
+      "name": "main$async_dispatch_15800_elementwise_3072x512_f32",
+      "xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153405,
+      "scaled_instructions": 58907520
+    },
+    "basis": "chronological order of288 score/exp tensors of identical1536K element shape; fusion boundaries differ"
+  }
+]

@@ -1,0 +1,21 @@
+ninja: Entering directory `runs/fixW/resnet/build'
+[0/2] Re-checking globbed directories...
+[1/5] Building C object runtime/plugins/CMakeFiles/iree_.._.._.._resnet_stdio_default.dir/home/loren/work/runs/fixW/resnet/stdio_probe.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[2/5] Building C object runtime/plugins/CMakeFiles/iree_.._.._.._resnet_stdio_buffered.dir/home/loren/work/runs/fixW/resnet/stdio_probe.c.obj
+clang: warning: argument unused during compilation: '-fno-plt' [-Wunused-command-line-argument]
+[3/5] Linking C executable runtime/plugins/stdio_default
+FAILED: [code=1] runtime/plugins/stdio_default 
+: && /home/loren/work/chipyard/.conda-env/riscv-tools/bin/riscv64-unknown-elf-gcc runtime/plugins/CMakeFiles/iree_.._.._.._resnet_stdio_default.dir/home/loren/work/runs/fixW/resnet/stdio_probe.c.obj   -march=rv64imafdc -mabi=lp64d -mcmodel=medany -mstrict-align -static -specs=/home/loren/work/chipyard/.conda-env/riscv-tools/riscv64-unknown-elf/lib/htif.specs -T/home/loren/work/runs/fixW/resnet/toolchain/htif.ld -o runtime/plugins/stdio_default && :
+/home/loren/work/chipyard/.conda-env/riscv-tools/riscv64-unknown-elf/bin/ld: warning: runtime/plugins/stdio_default has a LOAD segment with RWX permissions
+/home/loren/work/chipyard/.conda-env/riscv-tools/riscv64-unknown-elf/bin/ld: runtime/plugins/CMakeFiles/iree_.._.._.._resnet_stdio_default.dir/home/loren/work/runs/fixW/resnet/stdio_probe.c.obj: in function `__wrap__write':
+stdio_probe.c:(.text+0x16): undefined reference to `__real__write'
+collect2: error: ld returned 1 exit status
+[4/5] Linking C executable runtime/plugins/stdio_buffered
+FAILED: [code=1] runtime/plugins/stdio_buffered 
+: && /home/loren/work/chipyard/.conda-env/riscv-tools/bin/riscv64-unknown-elf-gcc runtime/plugins/CMakeFiles/iree_.._.._.._resnet_stdio_buffered.dir/home/loren/work/runs/fixW/resnet/stdio_probe.c.obj   -march=rv64imafdc -mabi=lp64d -mcmodel=medany -mstrict-align -static -specs=/home/loren/work/chipyard/.conda-env/riscv-tools/riscv64-unknown-elf/lib/htif.specs -T/home/loren/work/runs/fixW/resnet/toolchain/htif.ld -o runtime/plugins/stdio_buffered && :
+/home/loren/work/chipyard/.conda-env/riscv-tools/riscv64-unknown-elf/bin/ld: warning: runtime/plugins/stdio_buffered has a LOAD segment with RWX permissions
+/home/loren/work/chipyard/.conda-env/riscv-tools/riscv64-unknown-elf/bin/ld: runtime/plugins/CMakeFiles/iree_.._.._.._resnet_stdio_buffered.dir/home/loren/work/runs/fixW/resnet/stdio_probe.c.obj: in function `__wrap__write':
+stdio_probe.c:(.text+0x1a): undefined reference to `__real__write'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.

@@ -1,0 +1,51 @@
+[
+ {
+  "id": "att_qk_prefill_F",
+  "pass_": true,
+  "elements": 8192,
+  "bit_diffs": 6054,
+  "max_rel": 4.967152449353307e-07
+ },
+ {
+  "id": "att_pv_prefill_F",
+  "pass_": true,
+  "elements": 32768,
+  "bit_diffs": 17082,
+  "max_rel": 2.601429685000767e-07
+ },
+ {
+  "id": "att_qk_decode_F",
+  "pass_": true,
+  "elements": 2048,
+  "bit_diffs": 1533,
+  "max_rel": 4.1579914977774024e-07
+ },
+ {
+  "id": "att_pv_decode_F",
+  "pass_": true,
+  "elements": 2048,
+  "bit_diffs": 1492,
+  "max_rel": 4.176929166987975e-07
+ },
+ {
+  "id": "mm_lm_fp32_shipped_F",
+  "pass_": true,
+  "elements": 32000,
+  "bit_diffs": 0,
+  "max_rel": NaN
+ },
+ {
+  "id": "att_qk_decode_chain_F",
+  "pass_": true,
+  "elements": 2048,
+  "bit_diffs": 0,
+  "max_rel": 0.0
+ },
+ {
+  "id": "att_pv_decode_chain_F",
+  "pass_": true,
+  "elements": 2048,
+  "bit_diffs": 0,
+  "max_rel": 0.0
+ }
+]

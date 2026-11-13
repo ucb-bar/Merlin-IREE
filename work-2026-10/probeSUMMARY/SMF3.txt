@@ -1,0 +1,10 @@
+SMF3 2026-10-27 22:38 UTC: smB buffered plain/trace ELFs built (VMFB hash e078de20...); WG0 short output bitwise matches smB, SPL trace estimate unchanged at 430.335G. Dispatched zSM3 plain/trace (SSM 14dc0617 / 24c8066c, max 8h) after smK3 confirmed retry1 gone; full plain Spike and both F2 runs in progress.
+SMF3 2026-10-27 22:39 UTC: F2 acquired two distinct running instances (plain i-<redacted>, trace i-<redacted>); both SSM jobs InProgress. Full plain Spike still running; no numerical or F2 result yet.
+SMF3 2026-10-27 22:41 UTC: both dispatched SSM jobs still InProgress; full plain Spike is running with stdout buffered through the model invocation, so only the startup banner is visible. No result or failure inferred.
+SMF3 2026-10-27 22:42 UTC: parser staged; smB assembly catalog classifies 10,987 exports (444 Gemmini, 10,543 scalar). Both F2 SSM runs remain InProgress; full plain Spike is buffered and still active.
+SMF3 2026-10-27 22:43 UTC: short buffered plain/trace WG0 output is bitwise equal across all 1600 words to smB/full-onewg.log. All 17,953 SPL-style per-dispatch estimates match smB/full-dispatches.json exactly; total 430,334,661,263.
+SMF3 2026-10-27 22:44 UTC: both F2 SSM commands remain InProgress; no failure or returned data. Full plain Spike continues with output buffered.
+SMF3 2026-10-27 22:45 UTC: capacity remains exactly four physical F2s (two TinyLlama, two SMF3); both SMF3 instances running, SSM InProgress. Spike still running.
+SMF3 2026-10-27 22:46 UTC: embedded-payload audit passes for both ELFs: each contains all 557,989,519 VMFB bytes with exact SHA256 e078de20...; no ELF payload mismatch.
+SMF3 2026-10-27 22:48 UTC: both SSM invocations still InProgress; no returned artifact, failure, or retry condition. Full plain Spike remains active.
+SMF3 2026-10-27 22:57 UTC: both exact F2 run IDs remain running; full Spike remains in invocation and has not emitted its buffered output. No numerical result yet.

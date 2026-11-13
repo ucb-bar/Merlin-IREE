@@ -1,0 +1,24 @@
+{
+ "spike_plain_pass": true,
+ "spike_trace_pass": true,
+ "firesim_plain_pass": true,
+ "firesim_trace_pass": true,
+ "firesim_plain_checks": {
+  "att_qk_prefill_F": 0,
+  "att_pv_prefill_F": 0,
+  "att_qk_decode_F": 0,
+  "att_pv_decode_F": 0,
+  "mm_lm_fp32_shipped_F": 0,
+  "att_qk_decode_chain_F": 0,
+  "att_pv_decode_chain_F": 0
+ },
+ "firesim_trace_checks": {
+  "att_qk_prefill_F": 0,
+  "att_pv_prefill_F": 0,
+  "att_qk_decode_F": 0,
+  "att_pv_decode_F": 0,
+  "mm_lm_fp32_shipped_F": 0,
+  "att_qk_decode_chain_F": 0,
+  "att_pv_decode_chain_F": 0
+ }
+}

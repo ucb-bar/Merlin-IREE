@@ -1,0 +1,141 @@
+//===----------------------------------------------------------------------===//
+// Disassembly: module.__init (#0)
+//===----------------------------------------------------------------------===//
+[00000000]    <block>
+[00000001]    %i0 = vm.const.i32 13  // 0x0000000D
+[00000008]    %i1 = vm.const.i32 28  // 0x0000001C
+[0000000F]    %i2 = vm.const.i32 2  // 0x00000002
+[00000016]    %r0 = vm.const.ref.zero
+[00000019]    %i3 = vm.const.i32 1  // 0x00000001
+[00000020]    %i4 = vm.const.i32 8  // 0x00000008
+[00000027]    %i5 = vm.const.i32 3  // 0x00000003
+[0000002E]    %i6 = vm.const.i32.zero
+[00000031]    %i8:9 = vm.const.i64 65536  // 0x0000000000010000
+[0000003C]    %i10:11 = vm.const.i64 8192  // 0x0000000000002000
+[00000047]    %i12:13 = vm.const.i64.zero
+[0000004A]    %i14:15 = vm.const.i64 -1  // 0xFFFFFFFFFFFFFFFF
+[00000055]    %r1 = vm.global.load.ref .refs[0] : !hal.device
+[00000060]    %r2 = vm.global.load.ref .refs[1] : !hal.executable
+[0000006B]    %r3 = vm.call @hal.command_buffer.create(%R1, %i6, %i5, %i14, %i5)
+[00000080]    vm.call.variadic @hal.command_buffer.dispatch(%r3, %R2, %i6, %i4, %i3, %i3, %i12, %i6, %i6, %r0, %i12, %i10, %i6, %i3, %r0, %i12, %i8, %i6, %i2, %R0, %i12, %i10)
+[000000CA]    vm.call @hal.command_buffer.execution_barrier(%r3, %i1, %i0, %i12)
+[000000DC]    vm.call @hal.command_buffer.finalize(%r3)
+[000000E8]    vm.return %R3
+
+//===----------------------------------------------------------------------===//
+// Disassembly: module.main (#1)
+//===----------------------------------------------------------------------===//
+[00000000]    <block>
+[00000001]    %i0 = vm.const.i32 16  // 0x00000010
+[00000008]    %i1 = vm.const.i32 1  // 0x00000001
+[0000000F]    %i2 = vm.const.i32 553648160  // 0x21000020
+[00000016]    %i3 = vm.const.i32 3075  // 0x00000C03
+[0000001D]    %i4 = vm.const.i32 48  // 0x00000030
+[00000024]    %i6:7 = vm.const.i64 16  // 0x0000000000000010
+[0000002F]    %i8:9 = vm.const.i64 128  // 0x0000000000000080
+[0000003A]    %i10:11 = vm.const.i64 8192  // 0x0000000000002000
+[00000045]    %i12:13 = vm.const.i64 65536  // 0x0000000000010000
+[00000050]    %i14:15 = vm.const.i64.zero
+[00000053]    %i16:17 = vm.const.i64 -1  // 0xFFFFFFFFFFFFFFFF
+[0000005E]    %r2 = vm.const.ref.zero
+[00000061]    %i5 = vm.const.i32 -1  // 0xFFFFFFFF
+[00000068]    %r3 = vm.global.load.ref .refs[0] : !hal.device
+[00000073]    %r4 = vm.global.load.ref .refs[2] : !hal.command_buffer
+[0000007E]    %r5 = vm.const.ref.rodata 5  // 0x7a1313e73adc 6b
+[00000085]    vm.call.variadic @hal.buffer_view.assert(%r0, %R5, %i2, %i1, %i6, %i8)
+[000000A6]    %r5 = vm.call @hal.buffer_view.buffer(%R0)
+[000000B4]    %r0 = vm.call @hal.device.allocator(%r3)
+[000000C2]    %r6 = vm.const.ref.rodata 6  // 0x7a1313e73af0 6b
+[000000C9]    vm.call @hal.buffer.assert(%r5, %r6, %r0, %i10, %i0, %i3)
+[000000DE]    %r7 = vm.const.ref.rodata 7  // 0x7a1313e73b04 6b
+[000000E5]    vm.call.variadic @hal.buffer_view.assert(%r1, %R7, %i2, %i1, %i8, %i8)
+[00000106]    %r7 = vm.call @hal.buffer_view.buffer(%R1)
+[00000114]    vm.call @hal.buffer.assert(%r7, %R6, %R0, %i12, %i0, %i3)
+[0000012A]    %r0 = vm.call @hal.fence.create(%r3, %i14)
+[0000013A]    %r1 = vm.call @hal.device.queue.alloca(%r3, %i16, %R2, %r0, %i14, %i4, %i3, %i10, %i14)
+[00000158]    %r2 = vm.call @hal.fence.create(%r3, %i14)
+[00000168]    vm.call.variadic @hal.device.queue.execute.indirect(%R3, %i16, %R0, %r2, %R4, %i14, %R5, %i14, %i10, %R7, %i14, %i12, %r1, %i14, %i10)
+[000001A0]    vm.call.variadic.yieldable @hal.fence.await(%i5, %i14, %R2) -> ^000001BE(%i0)
+[000001BE]    <block>
+[000001BF]    vm.cond_br %i0, ^000001FC(), ^000001CE()
+[000001CE]    <block>
+[000001CF]    %r0 = vm.call.variadic @hal.buffer_view.create(%R1, %i14, %i10, %i2, %i1, %i6, %i8)
+[000001F6]    vm.return %R0
+[000001FC]    <block>
+[000001FD]    vm.discard.refs %r1
+[00000202]    vm.fail %i0, "failed to wait on timepoint"
+
+//===----------------------------------------------------------------------===//
+// Disassembly: module.__init (#2)
+//===----------------------------------------------------------------------===//
+[00000000]    <block>
+[00000001]    %i0 = vm.const.i32 1  // 0x00000001
+[00000008]    %r0 = vm.const.ref.zero
+[0000000B]    %i1 = vm.const.i32 14  // 0x0000000E
+[00000012]    %i2:3 = vm.const.i64 -1  // 0xFFFFFFFFFFFFFFFF
+[0000001D]    %i4 = vm.const.i32 18  // 0x00000012
+[00000024]    %i5 = vm.const.i32.zero
+[00000027]    %i6:7 = vm.const.i64.zero
+[0000002A]    %i8:9 = vm.const.i64 1  // 0x0000000000000001
+[00000035]    %r1 = vm.const.ref.zero
+[00000038]    %i10 = vm.call @hal.devices.count()
+[00000044]    %i12:13 = vm.ext.i32.i64.s %i10
+[00000049]    vm.br ^00000064(%r1->%r2, %i6->%i10, %i7->%i11, %i6->%i14, %i7->%i15)
+[00000064]    <block>
+[00000065]    %i16 = vm.cmp.nz.ref %r2
+[0000006A]    %i16 = vm.xor.i32 %i16, %i0
+[00000071]    %i17 = vm.cmp.lt.i64.s %i10:11, %i12:13
+[00000078]    %i17 = vm.and.i32 %i16, %i17
+[0000007F]    vm.cond_br %i17, ^0000008E(), ^0000016C()
+[0000008E]    <block>
+[0000008F]    vm.discard.refs %r2
+[00000094]    %i17 = vm.trunc.i64.i32 %i10:11
+[00000099]    %r3 = vm.call @hal.devices.get(%i17)
+[000000A6]    %r4 = vm.const.ref.rodata 0  // 0x7a1313e73a50 13b
+[000000AD]    %r5 = vm.const.ref.rodata 1  // 0x7a1313e73a6c 6b
+[000000B4]    %i17, %i18 = vm.call @hal.device.query.i64(%r3, %R4, %R5)
+[000000C8]    %i20 = vm.cmp.nz.i64 %i18:19
+[000000CD]    %i20 = vm.select.i32 %i17 ? %i20 : %i5
+[000000D6]    vm.cond_br %i20, ^000000EA(), ^00000126(%i5->%i17)
+[000000EA]    <block>
+[000000EB]    %r4 = vm.const.ref.rodata 2  // 0x7a1313e73a80 21b
+[000000F2]    %r5 = vm.const.ref.rodata 3  // 0x7a1313e73aa4 21b
+[000000F9]    %i17, %i18 = vm.call @hal.device.query.i64(%r3, %R4, %R5)
+[0000010C]    %i20 = vm.cmp.nz.i64 %i18:19
+[00000111]    %i20 = vm.select.i32 %i17 ? %i20 : %i5
+[0000011A]    vm.br ^00000126(%i20->%i17)
+[00000126]    <block>
+[00000127]    %i18 = vm.cmp.eq.i64 %i14:15, %i6:7
+[0000012E]    %i20:21 = vm.select.i64 %i17 ? %i8:9 : %i6:7
+[00000137]    %i20:21 = vm.add.i64 %i14:15, %i20:21
+[0000013E]    %i18 = vm.and.i32 %i17, %i18
+[00000145]    %r3 = vm.select.ref %i18 ? %R3 : %r1 -> !hal.device
+[00000152]    %i10:11 = vm.add.i64 %i10:11, %i8:9
+[00000159]    vm.br ^00000064(%R3->%r2, %i20->%i14, %i21->%i15)
+[0000016C]    <block>
+[0000016D]    vm.discard.refs %r1
+[00000172]    vm.cond_br %i16, ^00000182(), ^00000381()
+[00000182]    <block>
+[00000183]    vm.discard.refs %r0, %r2
+[0000018A]    vm.fail %i4, "HAL device `__device_0` not found or unavailable: #hal.device.target<"local", [#hal.executable.target<"llvm-cpu", "embedded-elf-riscv_64", {cpu = "", cpu_features = "+m,+a,+f,+d,+c", data_layout = "e-m:e-p:64:64-i64:64-i128:128-n32:64-S128", iree.encoding.resolver = #iree_cpu.cpu_encoding_resolver<>, link_ukernel_bitcode = false, max_stack_allocation_size = 32768 : i64, native_vector_size = 8 : i64, target_abi = "lp64d", target_triple = "riscv64-unknown-unknown-eabi-elf", ukernels = "none"}>]>"
+[00000381]    <block>
+[00000382]    %r1 = vm.const.ref.rodata 2  // 0x7a1313e73a80 21b
+[00000389]    %r3 = vm.const.ref.rodata 3  // 0x7a1313e73aa4 21b
+[00000390]    %i0, %i8 = vm.call @hal.device.query.i64(%r2, %R1, %r3)
+[000003A4]    %i4 = vm.cmp.nz.i64 %i8:9
+[000003A9]    %i5 = vm.select.i32 %i0 ? %i4 : %i5
+[000003B2]    %i8:9 = vm.select.i64 %i5 ? %i6:7 : %i2:3
+[000003BB]    %i0 = vm.cmp.eq.i64 %i8:9, %i6:7
+[000003C2]    vm.global.store.ref %r2, .refs[0] : !hal.device
+[000003CD]    vm.cond_br %i0, ^000003DC(), ^0000041E()
+[000003DC]    <block>
+[000003DD]    %r1 = vm.const.ref.rodata 4  // 0x7a1313e743e0 10616b
+[000003E4]    %r4 = vm.call @hal.executable.create(%R2, %i2, %R3, %R1, %R0)
+[000003FA]    vm.global.store.ref %R4, .refs[1] : !hal.executable
+[00000405]    %r1 = vm.call @module.__init()
+[00000410]    vm.global.store.ref %R1, .refs[2] : !hal.command_buffer
+[0000041B]    vm.return 
+[0000041E]    <block>
+[0000041F]    vm.discard.refs %r0, %r2, %r3
+[00000428]    vm.fail %i1, "HAL device `__device_0` does not support any variant of executable `main_dispatch_0`; available formats: [embedded-elf-riscv_64]"
+

@@ -1,0 +1,317 @@
+11:25:29
+c1-zK-kprof-plain-rerun rc=0 start=2026-10-28T11:20:24Z end=2026-10-28T11:23:34Z uart_lines=253
+r1-kernels-plain rc=2 start=2026-10-28T11:11:20Z end=2026-10-28T11:18:20Z uart_lines=194
+r1-resnet-plain rc=0 start=2026-10-28T11:11:22Z end=2026-10-28T11:14:13Z uart_lines=6
+r2-resnetfx-trace rc=running start=2026-10-28T11:23:57Z end= uart_lines=60
+r1-tiny-plain rc=running start=2026-10-28T11:12:18Z end= uart_lines=3
+r1-tiny-trace rc=running start=2026-10-28T11:12:34Z end= uart_lines=1
+r1-kernels-trace rc=running start=2026-10-28T11:12:37Z end= uart_lines=1233
+r1-resnet-trace rc=0 start=2026-10-28T11:12:39Z end=2026-10-28T11:17:40Z uart_lines=224
+r2-resnetfx-plain rc=running start=2026-10-28T11:23:54Z end= uart_lines=3
+24 kernel cases; 5 model rows; 16 in-model rows
+tables written
+11:35:41
+c1-zK-kprof-plain-rerun rc=0 start=2026-10-28T11:20:24Z end=2026-10-28T11:23:34Z uart_lines=253
+r1-kernels-plain rc=2 start=2026-10-28T11:11:20Z end=2026-10-28T11:18:20Z uart_lines=194
+r1-resnet-plain rc=0 start=2026-10-28T11:11:22Z end=2026-10-28T11:14:13Z uart_lines=6
+r1-smol-trace rc=running start=2026-10-28T11:28:37Z end= uart_lines=1
+r2-resnetfx-trace rc=0 start=2026-10-28T11:23:57Z end=2026-10-28T11:27:57Z uart_lines=224
+r1-tiny-plain rc=0 start=2026-10-28T11:12:18Z end=2026-10-28T11:29:22Z uart_lines=6
+r1-tiny-trace rc=running start=2026-10-28T11:12:34Z end= uart_lines=1015
+r1-kernels-trace rc=2 start=2026-10-28T11:12:37Z end=2026-10-28T11:32:58Z uart_lines=1556
+r1-resnet-trace rc=0 start=2026-10-28T11:12:39Z end=2026-10-28T11:17:40Z uart_lines=224
+r1-smol-plain rc=running start=2026-10-28T11:28:34Z end= uart_lines=1
+r2-resnetfx-plain rc=0 start=2026-10-28T11:23:54Z end=2026-10-28T11:25:45Z uart_lines=6
+24 kernel cases; 7 model rows; 26 in-model rows
+tables written
+11:45:56
+c1-zK-kprof-plain-rerun rc=0 start=2026-10-28T11:20:24Z end=2026-10-28T11:23:34Z uart_lines=253
+r1-kernels-plain rc=2 start=2026-10-28T11:11:20Z end=2026-10-28T11:18:20Z uart_lines=194
+r1-resnet-plain rc=0 start=2026-10-28T11:11:22Z end=2026-10-28T11:14:13Z uart_lines=6
+r1-smol-trace rc=running start=2026-10-28T11:28:37Z end= uart_lines=1
+r2-resnetfx-trace rc=0 start=2026-10-28T11:23:57Z end=2026-10-28T11:27:57Z uart_lines=224
+r1-tiny-plain rc=0 start=2026-10-28T11:12:18Z end=2026-10-28T11:29:22Z uart_lines=6
+r1-tiny-trace rc=running start=2026-10-28T11:12:34Z end= uart_lines=1648
+r1-kernels-trace rc=2 start=2026-10-28T11:12:37Z end=2026-10-28T11:32:58Z uart_lines=1556
+r1-resnet-trace rc=0 start=2026-10-28T11:12:39Z end=2026-10-28T11:17:40Z uart_lines=224
+r1-smol-plain rc=running start=2026-10-28T11:28:34Z end= uart_lines=1
+r2-resnetfx-plain rc=0 start=2026-10-28T11:23:54Z end=2026-10-28T11:25:45Z uart_lines=6
+24 kernel cases; 8 model rows; 34 in-model rows
+tables written
+11:56:12
+c1-zK-kprof-plain-rerun rc=0 start=2026-10-28T11:20:24Z end=2026-10-28T11:23:34Z uart_lines=253
+r1-kernels-plain rc=2 start=2026-10-28T11:11:20Z end=2026-10-28T11:18:20Z uart_lines=194
+r1-resnet-plain rc=0 start=2026-10-28T11:11:22Z end=2026-10-28T11:14:13Z uart_lines=6
+r1-smol-trace rc=running start=2026-10-28T11:28:37Z end= uart_lines=1
+r2-resnetfx-trace rc=0 start=2026-10-28T11:23:57Z end=2026-10-28T11:27:57Z uart_lines=224
+r1-tiny-plain rc=0 start=2026-10-28T11:12:18Z end=2026-10-28T11:29:22Z uart_lines=6
+r1-tiny-trace rc=running start=2026-10-28T11:12:34Z end= uart_lines=2677
+r1-kernels-trace rc=2 start=2026-10-28T11:12:37Z end=2026-10-28T11:32:58Z uart_lines=1556
+r1-resnet-trace rc=0 start=2026-10-28T11:12:39Z end=2026-10-28T11:17:40Z uart_lines=224
+r1-smol-plain rc=running start=2026-10-28T11:28:34Z end= uart_lines=1
+r2-resnetfx-plain rc=0 start=2026-10-28T11:23:54Z end=2026-10-28T11:25:45Z uart_lines=6
+24 kernel cases; 8 model rows; 34 in-model rows
+tables written
+12:06:27
+c1-zK-kprof-plain-rerun rc=0 start=2026-10-28T11:20:24Z end=2026-10-28T11:23:34Z uart_lines=253
+r1-kernels-plain rc=2 start=2026-10-28T11:11:20Z end=2026-10-28T11:18:20Z uart_lines=194
+r1-resnet-plain rc=0 start=2026-10-28T11:11:22Z end=2026-10-28T11:14:13Z uart_lines=6
+r1-smol-trace rc=running start=2026-10-28T11:28:37Z end= uart_lines=1
+r2-resnetfx-trace rc=0 start=2026-10-28T11:23:57Z end=2026-10-28T11:27:57Z uart_lines=224
+r1-tiny-plain rc=0 start=2026-10-28T11:12:18Z end=2026-10-28T11:29:22Z uart_lines=6
+r1-tiny-trace rc=0 start=2026-10-28T11:12:34Z end=2026-10-28T11:58:51Z uart_lines=2926
+r1-kernels-trace rc=2 start=2026-10-28T11:12:37Z end=2026-10-28T11:32:58Z uart_lines=1556
+r1-resnet-trace rc=0 start=2026-10-28T11:12:39Z end=2026-10-28T11:17:40Z uart_lines=224
+r1-smol-plain rc=running start=2026-10-28T11:28:34Z end= uart_lines=1
+r2-resnetfx-plain rc=0 start=2026-10-28T11:23:54Z end=2026-10-28T11:25:45Z uart_lines=6
+24 kernel cases; 8 model rows; 34 in-model rows
+tables written
+12:16:42
+c1-zK-kprof-plain-rerun rc=0 start=2026-10-28T11:20:24Z end=2026-10-28T11:23:34Z uart_lines=253
+r1-kernels-plain rc=2 start=2026-10-28T11:11:20Z end=2026-10-28T11:18:20Z uart_lines=194
+r1-resnet-plain rc=0 start=2026-10-28T11:11:22Z end=2026-10-28T11:14:13Z uart_lines=6
+r1-smol-trace rc=running start=2026-10-28T11:28:37Z end= uart_lines=1
+r2-resnetfx-trace rc=0 start=2026-10-28T11:23:57Z end=2026-10-28T11:27:57Z uart_lines=224
+r1-tiny-plain rc=0 start=2026-10-28T11:12:18Z end=2026-10-28T11:29:22Z uart_lines=6
+r1-tiny-trace rc=0 start=2026-10-28T11:12:34Z end=2026-10-28T11:58:51Z uart_lines=2926
+r1-kernels-trace rc=2 start=2026-10-28T11:12:37Z end=2026-10-28T11:32:58Z uart_lines=1556
+r1-resnet-trace rc=0 start=2026-10-28T11:12:39Z end=2026-10-28T11:17:40Z uart_lines=224
+r1-smol-plain rc=running start=2026-10-28T11:28:34Z end= uart_lines=1
+r2-resnetfx-plain rc=0 start=2026-10-28T11:23:54Z end=2026-10-28T11:25:45Z uart_lines=6
+24 kernel cases; 8 model rows; 34 in-model rows
+tables written
+12:26:58
+c1-zK-kprof-plain-rerun rc=0 start=2026-10-28T11:20:24Z end=2026-10-28T11:23:34Z uart_lines=253
+r1-kernels-plain rc=2 start=2026-10-28T11:11:20Z end=2026-10-28T11:18:20Z uart_lines=194
+r1-resnet-plain rc=0 start=2026-10-28T11:11:22Z end=2026-10-28T11:14:13Z uart_lines=6
+r1-smol-trace rc=running start=2026-10-28T11:28:37Z end= uart_lines=1
+r2-resnetfx-trace rc=0 start=2026-10-28T11:23:57Z end=2026-10-28T11:27:57Z uart_lines=224
+r1-tiny-plain rc=0 start=2026-10-28T11:12:18Z end=2026-10-28T11:29:22Z uart_lines=6
+r1-tiny-trace rc=0 start=2026-10-28T11:12:34Z end=2026-10-28T11:58:51Z uart_lines=2926
+r1-kernels-trace rc=2 start=2026-10-28T11:12:37Z end=2026-10-28T11:32:58Z uart_lines=1556
+r1-resnet-trace rc=0 start=2026-10-28T11:12:39Z end=2026-10-28T11:17:40Z uart_lines=224
+r1-smol-plain rc=running start=2026-10-28T11:28:34Z end= uart_lines=1
+r2-resnetfx-plain rc=0 start=2026-10-28T11:23:54Z end=2026-10-28T11:25:45Z uart_lines=6
+24 kernel cases; 8 model rows; 34 in-model rows
+tables written
+12:37:14
+c1-zK-kprof-plain-rerun rc=0 start=2026-10-28T11:20:24Z end=2026-10-28T11:23:34Z uart_lines=253
+r1-kernels-plain rc=2 start=2026-10-28T11:11:20Z end=2026-10-28T11:18:20Z uart_lines=194
+r1-resnet-plain rc=0 start=2026-10-28T11:11:22Z end=2026-10-28T11:14:13Z uart_lines=6
+r1-smol-trace rc=running start=2026-10-28T11:28:37Z end= uart_lines=1
+r2-resnetfx-trace rc=0 start=2026-10-28T11:23:57Z end=2026-10-28T11:27:57Z uart_lines=224
+ssh: connect to host 192.168.3.142 port 22: Connection timed out
+r1-kernels-trace rc=2 start=2026-10-28T11:12:37Z end=2026-10-28T11:32:58Z uart_lines=1556
+r1-resnet-trace rc=0 start=2026-10-28T11:12:39Z end=2026-10-28T11:17:40Z uart_lines=224
+r1-smol-plain rc=running start=2026-10-28T11:28:34Z end= uart_lines=1
+r2-resnetfx-plain rc=0 start=2026-10-28T11:23:54Z end=2026-10-28T11:25:45Z uart_lines=6
+24 kernel cases; 8 model rows; 34 in-model rows
+tables written
+12:47:36
+c1-zK-kprof-plain-rerun rc=0 start=2026-10-28T11:20:24Z end=2026-10-28T11:23:34Z uart_lines=253
+r1-kernels-plain rc=2 start=2026-10-28T11:11:20Z end=2026-10-28T11:18:20Z uart_lines=194
+r1-resnet-plain rc=0 start=2026-10-28T11:11:22Z end=2026-10-28T11:14:13Z uart_lines=6
+r1-smol-trace rc=running start=2026-10-28T11:28:37Z end= uart_lines=1
+r2-resnetfx-trace rc=0 start=2026-10-28T11:23:57Z end=2026-10-28T11:27:57Z uart_lines=224
+ssh: connect to host 192.168.3.142 port 22: No route to host
+r1-kernels-trace rc=2 start=2026-10-28T11:12:37Z end=2026-10-28T11:32:58Z uart_lines=1556
+r1-resnet-trace rc=0 start=2026-10-28T11:12:39Z end=2026-10-28T11:17:40Z uart_lines=224
+r1-smol-plain rc=running start=2026-10-28T11:28:34Z end= uart_lines=1
+r2-resnetfx-plain rc=0 start=2026-10-28T11:23:54Z end=2026-10-28T11:25:45Z uart_lines=6
+24 kernel cases; 12 model rows; 52 in-model rows
+tables written
+12:57:53
+c1-zK-kprof-plain-rerun rc=0 start=2026-10-28T11:20:24Z end=2026-10-28T11:23:34Z uart_lines=253
+r1-kernels-plain rc=2 start=2026-10-28T11:11:20Z end=2026-10-28T11:18:20Z uart_lines=194
+r1-resnet-plain rc=0 start=2026-10-28T11:11:22Z end=2026-10-28T11:14:13Z uart_lines=6
+r1-smol-trace rc=running start=2026-10-28T11:28:37Z end= uart_lines=1
+r2-resnetfx-trace rc=0 start=2026-10-28T11:23:57Z end=2026-10-28T11:27:57Z uart_lines=224
+ssh: connect to host 192.168.3.142 port 22: No route to host
+r1-kernels-trace rc=2 start=2026-10-28T11:12:37Z end=2026-10-28T11:32:58Z uart_lines=1556
+r1-resnet-trace rc=0 start=2026-10-28T11:12:39Z end=2026-10-28T11:17:40Z uart_lines=224
+r1-smol-plain rc=running start=2026-10-28T11:28:34Z end= uart_lines=1
+r2-resnetfx-plain rc=0 start=2026-10-28T11:23:54Z end=2026-10-28T11:25:45Z uart_lines=6
+24 kernel cases; 12 model rows; 52 in-model rows
+tables written
+13:08:11
+c1-zK-kprof-plain-rerun rc=0 start=2026-10-28T11:20:24Z end=2026-10-28T11:23:34Z uart_lines=253
+r1-kernels-plain rc=2 start=2026-10-28T11:11:20Z end=2026-10-28T11:18:20Z uart_lines=194
+r1-resnet-plain rc=0 start=2026-10-28T11:11:22Z end=2026-10-28T11:14:13Z uart_lines=6
+r1-smol-trace rc=running start=2026-10-28T11:28:37Z end= uart_lines=1
+r2-resnetfx-trace rc=0 start=2026-10-28T11:23:57Z end=2026-10-28T11:27:57Z uart_lines=224
+ssh: connect to host 192.168.3.142 port 22: No route to host
+r1-kernels-trace rc=2 start=2026-10-28T11:12:37Z end=2026-10-28T11:32:58Z uart_lines=1556
+r1-resnet-trace rc=0 start=2026-10-28T11:12:39Z end=2026-10-28T11:17:40Z uart_lines=224
+r1-smol-plain rc=running start=2026-10-28T11:28:34Z end= uart_lines=1
+r2-resnetfx-plain rc=0 start=2026-10-28T11:23:54Z end=2026-10-28T11:25:45Z uart_lines=6
+24 kernel cases; 12 model rows; 52 in-model rows
+tables written
+13:18:28
+c1-zK-kprof-plain-rerun rc=0 start=2026-10-28T11:20:24Z end=2026-10-28T11:23:34Z uart_lines=253
+r1-kernels-plain rc=2 start=2026-10-28T11:11:20Z end=2026-10-28T11:18:20Z uart_lines=194
+r1-resnet-plain rc=0 start=2026-10-28T11:11:22Z end=2026-10-28T11:14:13Z uart_lines=6
+r1-smol-trace rc=running start=2026-10-28T11:28:37Z end= uart_lines=1
+r2-resnetfx-trace rc=0 start=2026-10-28T11:23:57Z end=2026-10-28T11:27:57Z uart_lines=224
+ssh: connect to host 192.168.3.142 port 22: No route to host
+r1-kernels-trace rc=2 start=2026-10-28T11:12:37Z end=2026-10-28T11:32:58Z uart_lines=1556
+r1-resnet-trace rc=0 start=2026-10-28T11:12:39Z end=2026-10-28T11:17:40Z uart_lines=224
+r1-smol-plain rc=running start=2026-10-28T11:28:34Z end= uart_lines=1
+r2-resnetfx-plain rc=0 start=2026-10-28T11:23:54Z end=2026-10-28T11:25:45Z uart_lines=6
+24 kernel cases; 12 model rows; 52 in-model rows
+tables written
+13:28:44
+c1-zK-kprof-plain-rerun rc=0 start=2026-10-28T11:20:24Z end=2026-10-28T11:23:34Z uart_lines=253
+r1-kernels-plain rc=2 start=2026-10-28T11:11:20Z end=2026-10-28T11:18:20Z uart_lines=194
+r1-resnet-plain rc=0 start=2026-10-28T11:11:22Z end=2026-10-28T11:14:13Z uart_lines=6
+r1-smol-trace rc=running start=2026-10-28T11:28:37Z end= uart_lines=1
+r2-resnetfx-trace rc=0 start=2026-10-28T11:23:57Z end=2026-10-28T11:27:57Z uart_lines=224
+ssh: connect to host 192.168.3.142 port 22: No route to host
+r1-kernels-trace rc=2 start=2026-10-28T11:12:37Z end=2026-10-28T11:32:58Z uart_lines=1556
+r1-resnet-trace rc=0 start=2026-10-28T11:12:39Z end=2026-10-28T11:17:40Z uart_lines=224
+r1-smol-plain rc=running start=2026-10-28T11:28:34Z end= uart_lines=1
+r2-resnetfx-plain rc=0 start=2026-10-28T11:23:54Z end=2026-10-28T11:25:45Z uart_lines=6
+24 kernel cases; 12 model rows; 52 in-model rows
+tables written
+13:39:01
+c1-zK-kprof-plain-rerun rc=0 start=2026-10-28T11:20:24Z end=2026-10-28T11:23:34Z uart_lines=253
+r1-kernels-plain rc=2 start=2026-10-28T11:11:20Z end=2026-10-28T11:18:20Z uart_lines=194
+r1-resnet-plain rc=0 start=2026-10-28T11:11:22Z end=2026-10-28T11:14:13Z uart_lines=6
+r1-smol-trace rc=running start=2026-10-28T11:28:37Z end= uart_lines=1
+r2-resnetfx-trace rc=0 start=2026-10-28T11:23:57Z end=2026-10-28T11:27:57Z uart_lines=224
+ssh: connect to host 192.168.3.142 port 22: No route to host
+r1-kernels-trace rc=2 start=2026-10-28T11:12:37Z end=2026-10-28T11:32:58Z uart_lines=1556
+r1-resnet-trace rc=0 start=2026-10-28T11:12:39Z end=2026-10-28T11:17:40Z uart_lines=224
+r1-smol-plain rc=running start=2026-10-28T11:28:34Z end= uart_lines=1
+r2-resnetfx-plain rc=0 start=2026-10-28T11:23:54Z end=2026-10-28T11:25:45Z uart_lines=6
+24 kernel cases; 12 model rows; 52 in-model rows
+tables written
+13:49:17
+c1-zK-kprof-plain-rerun rc=0 start=2026-10-28T11:20:24Z end=2026-10-28T11:23:34Z uart_lines=253
+r1-kernels-plain rc=2 start=2026-10-28T11:11:20Z end=2026-10-28T11:18:20Z uart_lines=194
+r1-resnet-plain rc=0 start=2026-10-28T11:11:22Z end=2026-10-28T11:14:13Z uart_lines=6
+r1-smol-trace rc=running start=2026-10-28T11:28:37Z end= uart_lines=1
+r2-resnetfx-trace rc=0 start=2026-10-28T11:23:57Z end=2026-10-28T11:27:57Z uart_lines=224
+ssh: connect to host 192.168.3.142 port 22: No route to host
+r1-kernels-trace rc=2 start=2026-10-28T11:12:37Z end=2026-10-28T11:32:58Z uart_lines=1556
+r1-resnet-trace rc=0 start=2026-10-28T11:12:39Z end=2026-10-28T11:17:40Z uart_lines=224
+r1-smol-plain rc=running start=2026-10-28T11:28:34Z end= uart_lines=1
+r2-resnetfx-plain rc=0 start=2026-10-28T11:23:54Z end=2026-10-28T11:25:45Z uart_lines=6
+24 kernel cases; 12 model rows; 52 in-model rows
+tables written
+13:59:34
+c1-zK-kprof-plain-rerun rc=0 start=2026-10-28T11:20:24Z end=2026-10-28T11:23:34Z uart_lines=253
+r1-kernels-plain rc=2 start=2026-10-28T11:11:20Z end=2026-10-28T11:18:20Z uart_lines=194
+r1-resnet-plain rc=0 start=2026-10-28T11:11:22Z end=2026-10-28T11:14:13Z uart_lines=6
+r1-smol-trace rc=running start=2026-10-28T11:28:37Z end= uart_lines=1
+r2-resnetfx-trace rc=0 start=2026-10-28T11:23:57Z end=2026-10-28T11:27:57Z uart_lines=224
+ssh: connect to host 192.168.3.142 port 22: No route to host
+r1-kernels-trace rc=2 start=2026-10-28T11:12:37Z end=2026-10-28T11:32:58Z uart_lines=1556
+r1-resnet-trace rc=0 start=2026-10-28T11:12:39Z end=2026-10-28T11:17:40Z uart_lines=224
+r1-smol-plain rc=running start=2026-10-28T11:28:34Z end= uart_lines=1
+r2-resnetfx-plain rc=0 start=2026-10-28T11:23:54Z end=2026-10-28T11:25:45Z uart_lines=6
+24 kernel cases; 12 model rows; 52 in-model rows
+tables written
+14:09:52
+c1-zK-kprof-plain-rerun rc=0 start=2026-10-28T11:20:24Z end=2026-10-28T11:23:34Z uart_lines=253
+r1-kernels-plain rc=2 start=2026-10-28T11:11:20Z end=2026-10-28T11:18:20Z uart_lines=194
+r1-resnet-plain rc=0 start=2026-10-28T11:11:22Z end=2026-10-28T11:14:13Z uart_lines=6
+r1-smol-trace rc=running start=2026-10-28T11:28:37Z end= uart_lines=1
+r2-resnetfx-trace rc=0 start=2026-10-28T11:23:57Z end=2026-10-28T11:27:57Z uart_lines=224
+ssh: connect to host 192.168.3.142 port 22: No route to host
+r1-kernels-trace rc=2 start=2026-10-28T11:12:37Z end=2026-10-28T11:32:58Z uart_lines=1556
+r1-resnet-trace rc=0 start=2026-10-28T11:12:39Z end=2026-10-28T11:17:40Z uart_lines=224
+r1-smol-plain rc=running start=2026-10-28T11:28:34Z end= uart_lines=1
+r2-resnetfx-plain rc=0 start=2026-10-28T11:23:54Z end=2026-10-28T11:25:45Z uart_lines=6
+24 kernel cases; 12 model rows; 52 in-model rows
+tables written
+14:20:09
+c1-zK-kprof-plain-rerun rc=0 start=2026-10-28T11:20:24Z end=2026-10-28T11:23:34Z uart_lines=253
+r1-kernels-plain rc=2 start=2026-10-28T11:11:20Z end=2026-10-28T11:18:20Z uart_lines=194
+r1-resnet-plain rc=0 start=2026-10-28T11:11:22Z end=2026-10-28T11:14:13Z uart_lines=6
+r1-smol-trace rc=running start=2026-10-28T11:28:37Z end= uart_lines=1
+r2-resnetfx-trace rc=0 start=2026-10-28T11:23:57Z end=2026-10-28T11:27:57Z uart_lines=224
+ssh: connect to host 192.168.3.142 port 22: No route to host
+r1-kernels-trace rc=2 start=2026-10-28T11:12:37Z end=2026-10-28T11:32:58Z uart_lines=1556
+r1-resnet-trace rc=0 start=2026-10-28T11:12:39Z end=2026-10-28T11:17:40Z uart_lines=224
+r1-smol-plain rc=running start=2026-10-28T11:28:34Z end= uart_lines=1
+r2-resnetfx-plain rc=0 start=2026-10-28T11:23:54Z end=2026-10-28T11:25:45Z uart_lines=6
+24 kernel cases; 12 model rows; 52 in-model rows
+tables written
+14:30:26
+c1-zK-kprof-plain-rerun rc=0 start=2026-10-28T11:20:24Z end=2026-10-28T11:23:34Z uart_lines=253
+r1-kernels-plain rc=2 start=2026-10-28T11:11:20Z end=2026-10-28T11:18:20Z uart_lines=194
+r1-resnet-plain rc=0 start=2026-10-28T11:11:22Z end=2026-10-28T11:14:13Z uart_lines=6
+r1-smol-trace rc=running start=2026-10-28T11:28:37Z end= uart_lines=1
+r2-resnetfx-trace rc=0 start=2026-10-28T11:23:57Z end=2026-10-28T11:27:57Z uart_lines=224
+ssh: connect to host 192.168.3.142 port 22: No route to host
+r1-kernels-trace rc=2 start=2026-10-28T11:12:37Z end=2026-10-28T11:32:58Z uart_lines=1556
+r1-resnet-trace rc=0 start=2026-10-28T11:12:39Z end=2026-10-28T11:17:40Z uart_lines=224
+r1-smol-plain rc=running start=2026-10-28T11:28:34Z end= uart_lines=1
+r2-resnetfx-plain rc=0 start=2026-10-28T11:23:54Z end=2026-10-28T11:25:45Z uart_lines=6
+24 kernel cases; 12 model rows; 52 in-model rows
+tables written
+14:40:43
+c1-zK-kprof-plain-rerun rc=0 start=2026-10-28T11:20:24Z end=2026-10-28T11:23:34Z uart_lines=253
+r1-kernels-plain rc=2 start=2026-10-28T11:11:20Z end=2026-10-28T11:18:20Z uart_lines=194
+r1-resnet-plain rc=0 start=2026-10-28T11:11:22Z end=2026-10-28T11:14:13Z uart_lines=6
+r1-smol-trace rc=running start=2026-10-28T11:28:37Z end= uart_lines=1
+r2-resnetfx-trace rc=0 start=2026-10-28T11:23:57Z end=2026-10-28T11:27:57Z uart_lines=224
+ssh: connect to host 192.168.3.142 port 22: No route to host
+r1-kernels-trace rc=2 start=2026-10-28T11:12:37Z end=2026-10-28T11:32:58Z uart_lines=1556
+r1-resnet-trace rc=0 start=2026-10-28T11:12:39Z end=2026-10-28T11:17:40Z uart_lines=224
+r1-smol-plain rc=running start=2026-10-28T11:28:34Z end= uart_lines=1
+r2-resnetfx-plain rc=0 start=2026-10-28T11:23:54Z end=2026-10-28T11:25:45Z uart_lines=6
+24 kernel cases; 12 model rows; 52 in-model rows
+tables written
+14:51:00
+c1-zK-kprof-plain-rerun rc=0 start=2026-10-28T11:20:24Z end=2026-10-28T11:23:34Z uart_lines=253
+r1-kernels-plain rc=2 start=2026-10-28T11:11:20Z end=2026-10-28T11:18:20Z uart_lines=194
+r1-resnet-plain rc=0 start=2026-10-28T11:11:22Z end=2026-10-28T11:14:13Z uart_lines=6
+r1-smol-trace rc=running start=2026-10-28T11:28:37Z end= uart_lines=1
+r2-resnetfx-trace rc=0 start=2026-10-28T11:23:57Z end=2026-10-28T11:27:57Z uart_lines=224
+ssh: connect to host 192.168.3.142 port 22: No route to host
+r1-kernels-trace rc=2 start=2026-10-28T11:12:37Z end=2026-10-28T11:32:58Z uart_lines=1556
+r1-resnet-trace rc=0 start=2026-10-28T11:12:39Z end=2026-10-28T11:17:40Z uart_lines=224
+r1-smol-plain rc=running start=2026-10-28T11:28:34Z end= uart_lines=1
+r2-resnetfx-plain rc=0 start=2026-10-28T11:23:54Z end=2026-10-28T11:25:45Z uart_lines=6
+24 kernel cases; 12 model rows; 52 in-model rows
+tables written
+15:01:17
+c1-zK-kprof-plain-rerun rc=0 start=2026-10-28T11:20:24Z end=2026-10-28T11:23:34Z uart_lines=253
+r1-kernels-plain rc=2 start=2026-10-28T11:11:20Z end=2026-10-28T11:18:20Z uart_lines=194
+r1-resnet-plain rc=0 start=2026-10-28T11:11:22Z end=2026-10-28T11:14:13Z uart_lines=6
+r1-smol-trace rc=running start=2026-10-28T11:28:37Z end= uart_lines=1
+r2-resnetfx-trace rc=0 start=2026-10-28T11:23:57Z end=2026-10-28T11:27:57Z uart_lines=224
+ssh: connect to host 192.168.3.142 port 22: No route to host
+r1-kernels-trace rc=2 start=2026-10-28T11:12:37Z end=2026-10-28T11:32:58Z uart_lines=1556
+r1-resnet-trace rc=0 start=2026-10-28T11:12:39Z end=2026-10-28T11:17:40Z uart_lines=224
+r1-smol-plain rc=running start=2026-10-28T11:28:34Z end= uart_lines=1
+r2-resnetfx-plain rc=0 start=2026-10-28T11:23:54Z end=2026-10-28T11:25:45Z uart_lines=6
+24 kernel cases; 12 model rows; 52 in-model rows
+tables written
+15:11:33
+c1-zK-kprof-plain-rerun rc=0 start=2026-10-28T11:20:24Z end=2026-10-28T11:23:34Z uart_lines=253
+r1-kernels-plain rc=2 start=2026-10-28T11:11:20Z end=2026-10-28T11:18:20Z uart_lines=194
+r1-resnet-plain rc=0 start=2026-10-28T11:11:22Z end=2026-10-28T11:14:13Z uart_lines=6
+r1-smol-trace rc=running start=2026-10-28T11:28:37Z end= uart_lines=1
+r2-resnetfx-trace rc=0 start=2026-10-28T11:23:57Z end=2026-10-28T11:27:57Z uart_lines=224
+ssh: connect to host 192.168.3.142 port 22: No route to host
+r1-kernels-trace rc=2 start=2026-10-28T11:12:37Z end=2026-10-28T11:32:58Z uart_lines=1556
+r1-resnet-trace rc=0 start=2026-10-28T11:12:39Z end=2026-10-28T11:17:40Z uart_lines=224
+r1-smol-plain rc=running start=2026-10-28T11:28:34Z end= uart_lines=1
+r2-resnetfx-plain rc=0 start=2026-10-28T11:23:54Z end=2026-10-28T11:25:45Z uart_lines=6
+24 kernel cases; 12 model rows; 52 in-model rows
+tables written
+15:21:50
+c1-zK-kprof-plain-rerun rc=0 start=2026-10-28T11:20:24Z end=2026-10-28T11:23:34Z uart_lines=253
+r1-kernels-plain rc=2 start=2026-10-28T11:11:20Z end=2026-10-28T11:18:20Z uart_lines=194
+r1-resnet-plain rc=0 start=2026-10-28T11:11:22Z end=2026-10-28T11:14:13Z uart_lines=6
+r1-smol-trace rc=running start=2026-10-28T11:28:37Z end= uart_lines=1
+r2-resnetfx-trace rc=0 start=2026-10-28T11:23:57Z end=2026-10-28T11:27:57Z uart_lines=224
+ssh: connect to host 192.168.3.142 port 22: No route to host
+r1-kernels-trace rc=2 start=2026-10-28T11:12:37Z end=2026-10-28T11:32:58Z uart_lines=1556
+r1-resnet-trace rc=0 start=2026-10-28T11:12:39Z end=2026-10-28T11:17:40Z uart_lines=224
+r1-smol-plain rc=running start=2026-10-28T11:28:34Z end= uart_lines=1
+r2-resnetfx-plain rc=0 start=2026-10-28T11:23:54Z end=2026-10-28T11:25:45Z uart_lines=6
+24 kernel cases; 12 model rows; 52 in-model rows
+tables written

@@ -1,0 +1,1 @@
+P2 COMPLETE: full decoder layers0/8 + attention0/8/15 BITWISE PASS vs host+native;20 probes/11,095,006 values,0 gate failures,Spike=host bitwise throughout; only inherited SiLU scalar-tail expf gap2.98e-8 within gate (1-element repro); no full-model/F2 claim; runs/probeP2/REPORT.md.

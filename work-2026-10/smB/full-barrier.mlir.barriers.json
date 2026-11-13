@@ -1,0 +1,5 @@
+{
+  "barriers": 1539,
+  "source": "runs/smB/full-input.mlir",
+  "output": "runs/smB/full-barrier.mlir"
+}

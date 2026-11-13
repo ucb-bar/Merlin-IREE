@@ -1,0 +1,412 @@
+[
+  {
+    "path": "/home/loren/work/runs/smB/full-onewg-patch.txt",
+    "bytes": 470,
+    "sha256": "3f6d9eef812e07a77eb7fbd41dfc8fa9c7c5bdb5e79d6d7d1ffa372e4a5faf28"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/repro-barrier.elf",
+    "bytes": 864520,
+    "sha256": "8e919d7aa320534bfddd2d7d8f9b0727f29b11ed15b35c8be913735af0386ef3"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/make_attention_repro.py",
+    "bytes": 1343,
+    "sha256": "0fbab62822eea31ab8aab1b7654730be9fd858b1864763f4be90ea11b92e8591"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/patch_onewg.py",
+    "bytes": 1838,
+    "sha256": "de1544a318ea1862c14bc591535644dadea85306d72f4f4464e89145132c750f"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/full-summary.txt",
+    "bytes": 12667,
+    "sha256": "01a260d30973f714b50c17867c6d5a1beab829c1d96f3993399ce638aeb67168"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/rewrite_barriers.py",
+    "bytes": 1747,
+    "sha256": "ba049b8bbc91f7c4339cca3f4f14ab337162f07082313464397590a4f2bb6f3e"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/attention.elf",
+    "bytes": 7025688,
+    "sha256": "bb083e53f1e19bc93144e5571715555cfb1c8e2bd4c5bbff88aa1972924ca379"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/full-barrier.mlir.barriers.json",
+    "bytes": 104,
+    "sha256": "c706c7bfa6228108ac66ea98e8db8ec650e3c6a6dd4c468d57619ff43111ba52"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/sdpa-full-input.mlir",
+    "bytes": 97349,
+    "sha256": "dae024a589bf42131b3fbf7955276878649211c6285343809907483bc35d3ae6"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/attention.mlir",
+    "bytes": 26618,
+    "sha256": "d1c8145e0f8273abdac5fe5bc660ff187cdf6a2c4b6c5dded11eea1b6b6c0c32"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/tool-hash-final-check.txt",
+    "bytes": 177,
+    "sha256": "24199b94f7602f2a59704c6521668ffb31e8bb9a7cc68957a472412ee7e5d488"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/setup_full_runtime.py",
+    "bytes": 2399,
+    "sha256": "98be673bf040c61046ae7989c201388dc00bd317415f8bf91a84235450173417"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/tool-hashes.txt",
+    "bytes": 363,
+    "sha256": "6403564a492204f072b72e13375dff91083433cf3afb5cf213bb4d8892f98a44"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/attention.vmfb",
+    "bytes": 36944,
+    "sha256": "d7b99eed790e2536f6c02885b7fbb83961081b364d642219d71cb36072a24b22"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/repro.vmfb",
+    "bytes": 9503,
+    "sha256": "b66f8d71e096697b7e2e6643ccb2508ea0497ed4ba933680c7b43e8fa36bc0ce"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/sdpa-full.mlir",
+    "bytes": 745,
+    "sha256": "27b63b15be8d095ee2eb0c7419be5b447597d91bf5d26a97ce7f54bd8db37f66"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/embedded-payload-identity.json",
+    "bytes": 654,
+    "sha256": "4b85f12e86b728448e01af7b27aa0fd881a9c15eb5c1303076c121c58c873774"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/repro-results.json",
+    "bytes": 392,
+    "sha256": "50ff4148882e43e13bf8ec1efb610ead2da5616a00384e9bc11746303a6dda9c"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/full-barrier.mlir",
+    "bytes": 1118697946,
+    "sha256": "4fc715e4405c9a8ef2a94b4e1cf073f2635a2a91b847a65468cc37cf4fbeef92"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/attention-barrier.vmfb",
+    "bytes": 46264,
+    "sha256": "fa9877d16c2788187f29f9a979e1aced31b162bf7a35aac8f1da9ee3c27f9c0e"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/runtime-test-patch.json",
+    "bytes": 470,
+    "sha256": "00cd73a8a32bc1bf39bcd4461a161dd78b317c31ed58db11089ada60da051f4c"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/full-barrier.vmfb",
+    "bytes": 557989519,
+    "sha256": "e078de2049f71da0c2e1132500cbd2078ffb2434336217d131b8f2710aab7615"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/full-dispatches.json",
+    "bytes": 3971658,
+    "sha256": "ed73c4e9f7238524b37ae7d9de0e9209b33ab8dbf8462a76934a454e1b90923e"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/repro-barrier.vmfb",
+    "bytes": 12260,
+    "sha256": "962e5f67b41955ae452f52c0a493cb7c6248e279becabb583f945e96a6e19300"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/attention-barrier.mlir.barriers.json",
+    "bytes": 106,
+    "sha256": "f14ebacdd0b8c9deac84caba03d3d5df18ffa9a9857922a38cc3694deba61349"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/repro-host.vmfb",
+    "bytes": 10253,
+    "sha256": "3a16e02d9f6d4f9aae3643d4f42b3a5d380418efa948dde086396c990e728e8f"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/compile_full_rv.sh",
+    "bytes": 503,
+    "sha256": "b644cec2eb6fd000f86b22105bfc9e68691d22d78a28795c5af24cf4b439a256"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/setup_runtime.py",
+    "bytes": 732,
+    "sha256": "627e596a4ae81a7aa28d78f09dc18aa1cf30030d4b325b467e9e4daa9304b165"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/reproduce.sh",
+    "bytes": 1202,
+    "sha256": "c0daf88540664a9a4b0165ce02430093ce134a249ed402461d7ad637050b5e2a"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/repro-output.bin",
+    "bytes": 98304,
+    "sha256": "5928f4302bb2632b023d7efa954b8d7be2a392bfa1ac3b33849ff9272da50786"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/scale_trace.py",
+    "bytes": 1772,
+    "sha256": "d56035eedc5625a1e73404206d598d24205bd231fab361bc7bb59dc71f304957"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/repro.mlir",
+    "bytes": 4688,
+    "sha256": "48a3868d8464cea255f625f5c5c4f6f0a4e0035ae6396c59327764bdb927cfb5"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/spike-version.txt",
+    "bytes": 3462,
+    "sha256": "c5573d08c9380e48fe3fca1042a02857ba6e265e996bd31c0953fc0f644dc98c"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/lower_full.sh",
+    "bytes": 752,
+    "sha256": "2eb806623ab26833732569577c40cd88dbdeb9b34fdeb8791a17236f5901108c"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/attention-output.bin",
+    "bytes": 12288,
+    "sha256": "b42702701af173ad060a3913bdcbf244d9d368afc22429de7eeb3086450ddc2d"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/after_compile.sh",
+    "bytes": 826,
+    "sha256": "6d7d774e2b46a8516ee1e8c86ecf2907a64cf1b6609074fde6c76128522191ad"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/full-summary.json",
+    "bytes": 12666,
+    "sha256": "319194bfabfa9228bc66edebd7c060a0532acd22577d597ab4749f9a3e950832"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/repro-barrier.mlir.barriers.json",
+    "bytes": 97,
+    "sha256": "13d6b78a7c10f67d273f8b11ddf094849e3970d0dc659d314d5d1953b94970f6"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/gcc-version.txt",
+    "bytes": 252,
+    "sha256": "afb4a9a79d8ffd42852f18b621cd3ff2010a54a767420cacc901588abae26573"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/compare_repro.py",
+    "bytes": 768,
+    "sha256": "7518d2542debdc343a1b9772da85b231cfc546e51fab9c52456d07baa16b3404"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/repro.elf",
+    "bytes": 861768,
+    "sha256": "fe09b8757d3959ef6df36d4df8582b2a8b372b33cec9de624c6bf11085df097d"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/make_manifest.py",
+    "bytes": 646,
+    "sha256": "fd744a642d7b376336ff09c80c434425abd98f5cf44368bae8e561f5ef13c6a4"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/dominant-exp-pairs.json",
+    "bytes": 190186,
+    "sha256": "af6a9e834a253acd0c51745271f1577f4101ec7c8a85914e22511f1bb6f695c6"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/compare_attention.py",
+    "bytes": 853,
+    "sha256": "efc5322cdd632f2c27415109435feee5deb76d3fd141dba0a99af27d3f0a2f84"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/runtime-test-onewg.elf.patch.json",
+    "bytes": 794,
+    "sha256": "bddcc0f3791d761a3ffca01d27a94788935dd4b6708e3bf091ee9cc47715919d"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/make_repro.py",
+    "bytes": 485,
+    "sha256": "8cf084cf38823e3240b60cfc4a17c01a2aece1f4b5229245242b4a901ed63934"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/trace-inline-disassembly.txt",
+    "bytes": 6211,
+    "sha256": "01a51dd5a61d10a695bf4110ae9dd9191fb30d58ad1104f6743f7d68a18eff79"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/check_embeds.py",
+    "bytes": 982,
+    "sha256": "43fb80d469ce32a7ccd2b73cab08f31fe2a0a2b60b12b0316689157d116b13b5"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/clang-version.txt",
+    "bytes": 159,
+    "sha256": "66a5929f5b3ce6bda67043a48806a627beaf967491c63f520c35a830d1734f01"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/repro-barrier.mlir",
+    "bytes": 4971,
+    "sha256": "d9263c53ac659a4644e9970e44ae4bd0d7688c474c658ac559bd7a16fb38d0aa"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/restore-full.json",
+    "bytes": 66,
+    "sha256": "c773ad9396731fc77cf05aa1875292ab6de5459dba91bb7a37ebe7242aecacbe"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/full-barrier-host.vmfb",
+    "bytes": 562997133,
+    "sha256": "cdd221b2137b20a6405152ab1f22563a5e44c0f066005cc0840dccc43e0f48bc"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/host_repro.py",
+    "bytes": 863,
+    "sha256": "13aeac65904fdba4f95ebf04acafda73e47fe90af1b4be3cfe5bf01ef71da56e"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/attention-barrier.elf",
+    "bytes": 7034968,
+    "sha256": "e78dbdbfd7d3ee98e7aeadf209ba86ad52cc83e6b4b30e4401ff09350c62913a"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/full-barrier-host-output.bin",
+    "bytes": 6400,
+    "sha256": "74c9c6c5a16b91f6a918f11146813366eb39c65dabd59c62b01620c982d14a7b"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/full-input.mlir",
+    "bytes": 33744128,
+    "sha256": "42745b27ad8bb9d924bbaa5dbc9e925667a5144498184336f29df4e7a257bb2b"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/check_dispatch_metadata.py",
+    "bytes": 1467,
+    "sha256": "9aaad8a41be8c62a1c5c399f96c502d751d1223814c682fbfc1a83e2cc6ad29b"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/restore_resources.py",
+    "bytes": 870,
+    "sha256": "f7ab1d3e2e8313f1a774c62c9b74f9163df2833033a0479fa8763ac0c360037c"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/check_host_full.py",
+    "bytes": 1243,
+    "sha256": "cfaf1f18b2737f31751dec0aea376da8032159f6977c961d1589f42e7e06d3c0"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/attention-results.json",
+    "bytes": 404,
+    "sha256": "1545b9000d45117243004290217db54da9b47476aeff95beb703963158e32b0f"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/compile_host.sh",
+    "bytes": 508,
+    "sha256": "6122c171865ec20bf881e13816be0ae55d1a3787afe675ce77265f6384274de5"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/run_full_spike.sh",
+    "bytes": 440,
+    "sha256": "36d2d6b8724ab1951e562ffc5b1d44db0303b124584e6c90a56838b36788bede"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/attention-barrier.mlir",
+    "bytes": 27788,
+    "sha256": "508772944e28fbe173a7d139a2345581e74428fb0e453ffc9c65657bd1fac926"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/full-onewg.elf",
+    "bytes": 563388712,
+    "sha256": "a4e9241cdde1ee3cfa3aaa217144fded545a311c8fdac8ba8f88b2bce76bbf31"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/attention-barrier-output.bin",
+    "bytes": 12288,
+    "sha256": "b42702701af173ad060a3913bdcbf244d9d368afc22429de7eeb3086450ddc2d"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/metadata-check.json",
+    "bytes": 86,
+    "sha256": "7c2623f53e511cddc7d9ed292493e3d8770f7dcf0483006e8912912fb7aaeba5"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/full-onewg-exit.txt",
+    "bytes": 2,
+    "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/sdpa-input.mlir",
+    "bytes": 3371,
+    "sha256": "fd3578e5f32540b3035d15e2298a1765cffc9a65b10430ab2d418acad14725dd"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/compile_rv.sh",
+    "bytes": 1003,
+    "sha256": "9b70c41dabe706ce837d4cd419470194805eb1fe378c91c3aaef7b184d3776b7"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/native-audit.txt",
+    "bytes": 64,
+    "sha256": "926850424a90a99e57dd5b35a5326e07a1e713b4d6454bfbdc2661a475afc06f"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/full-onewg.elf.patch.json",
+    "bytes": 794,
+    "sha256": "95eec161888006573213c85995785938ebbafa12d151493c8047965ef4c6aaab"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/host-full-results.json",
+    "bytes": 196,
+    "sha256": "048759e9d4eb7d7fd7d2110976402d05f02d4fcb4e7168ecfefccaecc17ef656"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/host-run-command.json",
+    "bytes": 1383,
+    "sha256": "738ff62bdb9f32a52e05c4345e57b14372e7f61eed9f7724af8825b076329cfe"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/export-names.json",
+    "bytes": 600015,
+    "sha256": "f9b1578451b5f6ebae92c1f7cc3c9b8bf0d8fa98402c10037d23f07eb3277a55"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/repro-barrier-output.bin",
+    "bytes": 98304,
+    "sha256": "5928f4302bb2632b023d7efa954b8d7be2a392bfa1ac3b33849ff9272da50786"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/patch-test.json",
+    "bytes": 470,
+    "sha256": "eba0c5f21d5f5d47c12026f9a91e8018fb5ebdc5a2f66d892cff63d3b9707154"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/old-onewg-test.elf.patch.json",
+    "bytes": 783,
+    "sha256": "832d27f0914967809d5f245bdcdd01c905b2eb194e1f903cc524330704c614bd"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/sdpa.mlir",
+    "bytes": 724,
+    "sha256": "3b5478d6189f3758106e84aecbf6eaae7cc0adcc862465b76806e5780a3f1313"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/compiler-version.txt",
+    "bytes": 118,
+    "sha256": "15e536503d89880b30e93bb4f59e04c2c90367ff48fc4473cc1fc21fc8377e9c"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/audit_native.py",
+    "bytes": 614,
+    "sha256": "c842398988206d0fcf1165dbcedbda339f3670ee3e5bc5b4aa594b0eb71a6d9d"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/full-runtime/build-plain/smolvla.elf",
+    "bytes": 563388432,
+    "sha256": "858236e3b5aedcff6f3ee31c36a7a254c6aaf9c3c7aa467f9a1e1670d1a43182"
+  },
+  {
+    "path": "/home/loren/work/runs/smB/full-runtime/build-trace/smolvla.elf",
+    "bytes": 563388712,
+    "sha256": "e760985b91916726bb57230d57cd9171fb3b8b660922d3ef949340db8621748f"
+  }
+]

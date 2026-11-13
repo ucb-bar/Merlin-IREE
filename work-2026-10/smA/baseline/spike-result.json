@@ -1,0 +1,18 @@
+{
+  "command": [
+    "taskset",
+    "-c",
+    "24",
+    "timeout",
+    "180",
+    "/home/loren/work/chipyard/.conda-env/riscv-tools/bin/spike",
+    "--isa=rv64gc_zicntr",
+    "--extension=gemmini",
+    "-m2048",
+    "/home/loren/work/runs/smA/baseline/probe.elf"
+  ],
+  "exit": 0,
+  "wall": 25.135770082473755,
+  "different_bits": 0,
+  "cycles": 3124119499
+}

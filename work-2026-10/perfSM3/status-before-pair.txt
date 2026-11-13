@@ -1,0 +1,14 @@
+fpga region: us-east-1 (manager i-<redacted>)
+hw_config: f2_gemmini_rocket_ddr3llc_60mhz
+FPGA runs active: 4 (parallel runs allowed, one F2 each)
+zSM-smolvla-plain-retry1 elf firesim-elfs/zSM-smolvla-plain-retry1.elf since 2026-10-27T21:38:12+00:00
+zSM-smolvla-trace elf firesim-elfs/zSM-smolvla-trace.elf since 2026-10-27T21:32:56+00:00
+zTL-tinyllama-plain elf firesim-elfs/zTL-tinyllama-plain.elf since 2026-10-27T21:38:50+00:00
+zTL-tinyllama-trace elf firesim-elfs/zTL-tinyllama-trace.elf since 2026-10-27T21:38:50+00:00
+recent runs:
+  zSM-smolvla-plain-retry1 exit 120 2026-10-27T22:33:19+00:00
+  zSM-smolvla-trace exit 120 2026-10-27T21:38:05+00:00
+  zSM-smolvla-plain exit 1 2026-10-27T21:35:57+00:00
+  zF2-resnet-trace-buffered-20261027 exit 0 2026-10-27T21:33:39+00:00
+  zF2-resnet-plain-buffered-20261027 exit 0 2026-10-27T21:26:32+00:00
+

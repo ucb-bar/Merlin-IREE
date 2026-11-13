@@ -1,0 +1,4 @@
+fpga region: us-east-1 (manager i-<redacted>)
+uploaded /home/loren/work/runs/perfSM3/full-runtime/build-trace/smolvla.elf (sha256 a8eaf980d9244195...) -> firesim-elfs/zSM3-smolvla-trace.elf
+run zSM3-smolvla-trace dispatched (ssm command 24c8066c-432d-48a8-b944-fe7a2140b600); this takes ~10-20 min + your workload
+[22:38:08] InProgress

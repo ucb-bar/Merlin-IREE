@@ -1,0 +1,10 @@
+{'name': 'mean720', 'pass_test': True, 'exact_required': True, 'bit_mismatches': 0, 'failed_gate': 0, 'max_abs': 0.0}
+{'name': 'mean2048', 'pass_test': True, 'exact_required': True, 'bit_mismatches': 0, 'failed_gate': 0, 'max_abs': 0.0}
+{'name': 'mean5632', 'pass_test': True, 'exact_required': True, 'bit_mismatches': 0, 'failed_gate': 0, 'max_abs': 0.0}
+{'name': 'softmax16', 'pass_test': True, 'exact_required': True, 'bit_mismatches': 0, 'failed_gate': 0, 'max_abs': 0.0}
+{'name': 'softmax16-explicit-f32', 'pass_test': True, 'exact_required': True, 'bit_mismatches': 0, 'failed_gate': 0, 'max_abs': 0.0}
+{'name': 'silu-tails', 'pass_test': True, 'exact_required': True, 'bit_mismatches': 0, 'failed_gate': 0, 'max_abs': 0.0}
+{'name': 'int-mm', 'pass_test': True, 'exact_required': True, 'bit_mismatches': 0, 'failed_gate': 0, 'max_abs': 0.0}
+{'name': 'separate-rounding', 'pass_test': True, 'exact_required': True, 'bit_mismatches': 0, 'failed_gate': 0, 'max_abs': 0.0}
+{'name': 'static-sin', 'pass_test': True, 'exact_required': True, 'bit_mismatches': 0, 'failed_gate': 0, 'max_abs': 0.0}
+{'name': 'static-cos', 'pass_test': True, 'exact_required': True, 'bit_mismatches': 0, 'failed_gate': 0, 'max_abs': 0.0}

@@ -1,0 +1,26 @@
+[
+  {
+    "model": "resnet",
+    "mode": "plain",
+    "before_whole_cycles": 36745337687.0,
+    "after_whole_cycles": 3275786012.0,
+    "before_invoke_cycles": 2088208536,
+    "after_invoke_cycles": 2088237773,
+    "before_wall_seconds": 627.2,
+    "after_wall_seconds": 70.7,
+    "whole_cycle_reduction_percent": 91.08516557963507,
+    "bitwise_equal_before": true
+  },
+  {
+    "model": "resnet",
+    "mode": "trace",
+    "before_whole_cycles": 40608519842.0,
+    "after_whole_cycles": 3630629417.0,
+    "before_invoke_cycles": 2088660305,
+    "after_invoke_cycles": 2088249127,
+    "before_wall_seconds": 691.8,
+    "after_wall_seconds": 76.8,
+    "whole_cycle_reduction_percent": 91.05943917403026,
+    "bitwise_equal_before": true
+  }
+]

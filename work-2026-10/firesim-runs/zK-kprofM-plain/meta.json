@@ -1,0 +1,3 @@
+{"runId":"zK-kprofM-plain","mode":"elf","arg":"firesim-elfs/zK-kprofM-plain.elf","elf_sha256":"2316d4f8475ab78a04280485643f64857dceb37b39189eb0098f2647e105fd5b","hw_config":"f2_gemmini_rocket_ddr3llc_60mhz","agfi":"agfi-02410ef1a8461b435",
+ "chipyard":"157dd69e49b9866be2bf8db390ee78bc38cd4438","firesim":"e1bdea8bb042b900995436ecc3d7c44100eb9da0",
+ "started":"2026-10-28T05:44:51+00:00","finished":"2026-10-28T05:49:46+00:00","exit_status":0,"results_dir":"results-workload/2026-10-28--05-47-28-dispatch-zK-kprofM-plain"}

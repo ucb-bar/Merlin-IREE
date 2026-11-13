@@ -1,0 +1,14 @@
+#!/bin/bash
+# ssmrun INSTANCE SCRIPTFILE [timeout_s]: run a bash script as root on INSTANCE via SSM, print stdout+stderr.
+set -uo pipefail
+I=$1; F=$2; T=${3:-600}
+B=$(base64 -w0 "$F")
+CID=$(aws ssm send-command --region us-east-1 --instance-ids "$I" --document-name AWS-RunShellScript \
+  --timeout-seconds 60 --parameters "{\"commands\":[\"echo $B | base64 -d > /tmp/ssmrun.sh; bash /tmp/ssmrun.sh 2>&1\"],\"executionTimeout\":[\"$T\"]}" \
+  --query Command.CommandId --output text) || exit 1
+while :; do
+  s=$(aws ssm get-command-invocation --region us-east-1 --command-id $CID --instance-id $I --query Status --output text 2>/dev/null)
+  case $s in Success|Failed|TimedOut|Cancelled) break;; esac; sleep 3
+done
+aws ssm get-command-invocation --region us-east-1 --command-id $CID --instance-id $I --query StandardOutputContent --output text
+echo "[ssmrun status $s cmd $CID]"

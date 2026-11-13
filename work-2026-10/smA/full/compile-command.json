@@ -1,0 +1,18 @@
+[
+  "bash",
+  "/home/loren/work/runs/smA/compile.sh",
+  "/home/loren/work/runs/smA/full/barrier.mlir",
+  "/home/loren/work/runs/smA/full/model.vmfb",
+  "--torch-pytorch-cpu-numerics",
+  "--torch-pytorch-cpu-reference-threads=24",
+  "--torch-pytorch-cpu-constant-math-library=/home/loren/work/runs/smolvla/venv/lib/python3.12/site-packages/torch/lib/libtorch_cpu.so",
+  "--iree-opt-numeric-precision-reduction=false",
+  "--iree-llvmcpu-reassociate-fp-reductions=false",
+  "--iree-llvmcpu-skip-intermediate-roundings=false",
+  "--iree-input-demote-f64-to-f32=false",
+  "--iree-opt-const-eval=false",
+  "--iree-gemmini-bank-rows=2048",
+  "--iree-gemmini-acc-rows=512",
+  "--compile-from=global-optimization",
+  "--iree-hal-dump-executable-intermediates-to=/home/loren/work/runs/smA/full/ir"
+]

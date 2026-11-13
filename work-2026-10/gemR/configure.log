@@ -1,0 +1,42 @@
+-- The C compiler identification is Clang 23.0.0
+-- The CXX compiler identification is Clang 23.0.0
+-- The ASM compiler identification is Clang with GNU-like command-line
+-- Found assembler: /home/loren/work/runs/gemR/clang/bin/clang
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/loren/work/runs/gemR/clang/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/loren/work/runs/gemR/clang/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Could not find `nvcc` executable in any searched paths, please set CUDAToolkit_ROOT
+-- IREE HAL drivers:
+--   - local-sync
+-- IREE HAL local executable library loaders:
+--   - embedded-elf
+--   - vmvx-module
+-- IREE HAL local executable plugin mechanisms:
+--   - embedded-elf
+-- Looking for dlopen
+-- Looking for dlopen - not found
+-- Performing Test IREE_SUPPORTS_VISIBILITY_DEFAULT
+-- Performing Test IREE_SUPPORTS_VISIBILITY_DEFAULT - Success
+-- Found Git: /usr/bin/git (found version "2.43.0")
+fatal: not a git repository (or any of the parent directories): .git
+-- Not adding LLVM/MLIR because the configuration does not require it
+-- Disabling compiler loader (platform does not support library loading)
+-- Configuring IREE runtime plugins
+-- Runtime tracing disabled
+-- iree_allocator_system() using `IREE_ALLOCATOR_LIBC_*`
+-- Performing Test IREE_UK_BUILD_RISCV_64_V
+-- Performing Test IREE_UK_BUILD_RISCV_64_V - Success
+-- Performing Test IREE_UK_BUILD_RISCV_64_ZVFH
+-- Performing Test IREE_UK_BUILD_RISCV_64_ZVFH - Success
+CMake Error at runtime/src/iree/builtins/ukernel/arch/riscv_64/CMakeLists.txt:155 (check_c_source_compiles):
+  Unknown CMake command "check_c_source_compiles".
+
+
+-- Configuring incomplete, errors occurred!

@@ -1,0 +1,119 @@
+model,app,invoke,dispatch_shape,placement,calls,cycles_per_call,cycles_total,MACs_total,MACs_per_cycle,pct_of_256_peak,pct_of_model_invoke,log
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,cold,matmul_3136x256x64_i8xi8xi32,Gemmini,4,235179704.8,940718819,205520896,0.2185,0.0853,24.3029,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,cold,matmul_784x512x128_i8xi8xi32,Gemmini,4,104556843.8,418227375,205520896,0.4914,0.192,10.8046,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,cold,matmul_196x1024x256_i8xi8xi32,Gemmini,6,60129444.7,360776668,308281344,0.8545,0.3338,9.3204,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,cold,matmul_49x512x4608_i8xi8xi32,Gemmini,3,71061405.0,213184215,346816512,1.6268,0.6355,5.5075,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,cold,matmul_784x512x256_i8xi8xi32,Gemmini,1,191029058.0,191029058,102760448,0.5379,0.2101,4.9351,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,cold,matmul_12544x64x147_i8xi8xi32,Gemmini,1,178836957.0,178836957,118013952,0.6599,0.2578,4.6201,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,cold,matmul_49x2048x512_i8xi8xi32,Gemmini,3,48256981.0,144770943,154140672,1.0647,0.4159,3.7401,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,cold,matmul_3136x64x576_i8xi8xi32,Gemmini,3,43615965.0,130847895,346816512,2.6505,1.0354,3.3804,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,cold,conv_64x56x56x3x3_f32,Rocket,1,125487366.0,125487366,0,,,3.2419,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,cold,matmul_49x2048x1024_i8xi8xi32,Gemmini,1,106377723.0,106377723,102760448,0.966,0.3773,2.7482,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,cold,matmul_196x256x2304_i8xi8xi32,Gemmini,6,17236018.7,103416112,693633024,6.7072,2.62,2.6717,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,cold,matmul_196x1024x512_i8xi8xi32,Gemmini,1,100186770.0,100186770,102760448,1.0257,0.4007,2.5883,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,cold,matmul_784x128x1152_i8xi8xi32,Gemmini,4,22441590.2,89766361,462422016,5.1514,2.0123,2.3191,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,cold,matmul_3136x128x256_i8xi8xi32,Gemmini,1,84912872.0,84912872,102760448,1.2102,0.4727,2.1937,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,cold,matmul_3136x64x256_i8xi8xi32,Gemmini,2,42321519.5,84643039,102760448,1.214,0.4742,2.1867,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,cold,matmul_784x128x512_i8xi8xi32,Gemmini,3,21543220.0,64629660,154140672,2.385,0.9316,1.6697,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,cold,generic_56x56x3x3x64_i8,Rocket,3,20664214.3,61992643,0,,,1.6015,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,cold,matmul_196x256x1024_i8xi8xi32,Gemmini,5,12394874.0,61974370,256901120,4.1453,1.6193,1.6011,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,cold,matmul_49x512x2048_i8xi8xi32,Gemmini,2,29545566.0,59091132,102760448,1.739,0.6793,1.5266,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,cold,generic_28x28x3x3x128_i8,Rocket,4,10900394.8,43601579,0,,,1.1264,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,cold,matmul_784x256x512_i8xi8xi32,Gemmini,1,43066787.0,43066787,102760448,2.3861,0.9321,1.1126,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,cold,matmul_3136x64x64_i8xi8xi32,Gemmini,1,41912879.0,41912879,12845056,0.3065,0.1197,1.0828,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,cold,generic_14x14x3x3x256_i8,Rocket,6,4764141.2,28584847,0,,,0.7385,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,cold,matmul_196x512x1024_i8xi8xi32,Gemmini,1,24981556.0,24981556,102760448,4.1135,1.6068,0.6454,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,cold,generic_7x7x3x3x512_i8,Rocket,3,2409452.3,7228357,0,,,0.1867,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,cold,matmul_1x1000x2048_i8xi8xi32,Gemmini,1,1129901.0,1129901,2048000,1.8125,0.708,0.0292,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,warm1,matmul_3136x256x64_i8xi8xi32,Gemmini,4,235182127.2,940728509,205520896,0.2185,0.0853,24.3169,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,warm1,matmul_784x512x128_i8xi8xi32,Gemmini,4,104553720.2,418214881,205520896,0.4914,0.192,10.8104,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,warm1,matmul_196x1024x256_i8xi8xi32,Gemmini,6,60140886.7,360845320,308281344,0.8543,0.3337,9.3275,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,warm1,matmul_49x512x4608_i8xi8xi32,Gemmini,3,71057363.7,213172091,346816512,1.6269,0.6355,5.5103,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,warm1,matmul_784x512x256_i8xi8xi32,Gemmini,1,191022546.0,191022546,102760448,0.5379,0.2101,4.9377,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,warm1,matmul_12544x64x147_i8xi8xi32,Gemmini,1,178846785.0,178846785,118013952,0.6599,0.2578,4.623,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,warm1,matmul_49x2048x512_i8xi8xi32,Gemmini,3,48253681.0,144761043,154140672,1.0648,0.4159,3.7419,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,warm1,matmul_3136x64x576_i8xi8xi32,Gemmini,3,43612273.0,130836819,346816512,2.6508,1.0355,3.382,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,warm1,conv_64x56x56x3x3_f32,Rocket,1,125862102.0,125862102,0,,,3.2534,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,warm1,matmul_49x2048x1024_i8xi8xi32,Gemmini,1,106376175.0,106376175,102760448,0.966,0.3773,2.7497,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,warm1,matmul_196x256x2304_i8xi8xi32,Gemmini,6,17235533.2,103413199,693633024,6.7074,2.6201,2.6731,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,warm1,matmul_196x1024x512_i8xi8xi32,Gemmini,1,100182419.0,100182419,102760448,1.0257,0.4007,2.5896,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,warm1,matmul_784x128x1152_i8xi8xi32,Gemmini,4,22438502.2,89754009,462422016,5.1521,2.0125,2.3201,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,warm1,matmul_3136x128x256_i8xi8xi32,Gemmini,1,84912416.0,84912416,102760448,1.2102,0.4727,2.1949,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,warm1,matmul_3136x64x256_i8xi8xi32,Gemmini,2,42321872.5,84643745,102760448,1.214,0.4742,2.188,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,warm1,matmul_784x128x512_i8xi8xi32,Gemmini,3,21541228.0,64623684,154140672,2.3852,0.9317,1.6705,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,warm1,matmul_196x256x1024_i8xi8xi32,Gemmini,5,12393914.0,61969570,256901120,4.1456,1.6194,1.6019,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,warm1,generic_56x56x3x3x64_i8,Rocket,3,20656139.7,61968419,0,,,1.6018,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,warm1,matmul_49x512x2048_i8xi8xi32,Gemmini,2,29544558.0,59089116,102760448,1.7391,0.6793,1.5274,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,warm1,generic_28x28x3x3x128_i8,Rocket,4,10898849.8,43595399,0,,,1.1269,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,warm1,matmul_784x256x512_i8xi8xi32,Gemmini,1,43067805.0,43067805,102760448,2.386,0.932,1.1133,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,warm1,matmul_3136x64x64_i8xi8xi32,Gemmini,1,41895138.0,41895138,12845056,0.3066,0.1198,1.0829,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,warm1,generic_14x14x3x3x256_i8,Rocket,6,4763705.0,28582230,0,,,0.7388,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,warm1,matmul_196x512x1024_i8xi8xi32,Gemmini,1,24984653.0,24984653,102760448,4.1129,1.6066,0.6458,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,warm1,generic_7x7x3x3x512_i8,Rocket,3,2409986.7,7229960,0,,,0.1869,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; kprofC flag set)",resnet,warm1,matmul_1x1000x2048_i8xi8xi32,Gemmini,1,1128755.0,1128755,2048000,1.8144,0.7087,0.0292,runs/r1-resnet-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,cold,matmul_3136x256x64_i8xi8xi32,Gemmini,4,123221766.5,492887066,205520896,0.417,0.1629,23.6049,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,cold,matmul_784x512x128_i8xi8xi32,Gemmini,4,61831938.8,247327755,205520896,0.831,0.3246,11.8448,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,cold,matmul_196x1024x256_i8xi8xi32,Gemmini,6,36368789.0,218212734,308281344,1.4128,0.5519,10.4504,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,cold,matmul_49x512x4608_i8xi8xi32,Gemmini,3,65901607.0,197704821,346816512,1.7542,0.6852,9.4683,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,cold,conv_64x56x56x3x3_f32,Rocket,1,128725509.0,128725509,0,,,6.1648,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,cold,matmul_49x2048x512_i8xi8xi32,Gemmini,3,32497066.0,97491198,154140672,1.5811,0.6176,4.669,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,cold,matmul_784x512x256_i8xi8xi32,Gemmini,1,82857489.0,82857489,102760448,1.2402,0.4845,3.9681,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,cold,matmul_49x2048x1024_i8xi8xi32,Gemmini,1,79620341.0,79620341,102760448,1.2906,0.5042,3.8131,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,cold,matmul_12544x64x147_i8xi8xi32,Gemmini,1,62631139.0,62631139,118013952,1.8843,0.736,2.9995,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,cold,generic_56x56x3x3x64_i8,Rocket,3,20323918.7,60971756,0,,,2.92,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,cold,matmul_49x512x2048_i8xi8xi32,Gemmini,2,24361185.5,48722371,102760448,2.1091,0.8239,2.3334,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,cold,matmul_196x1024x512_i8xi8xi32,Gemmini,1,45287604.0,45287604,102760448,2.2691,0.8864,2.1689,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,cold,matmul_196x256x2304_i8xi8xi32,Gemmini,6,6893173.7,41359042,693633024,16.771,6.5512,1.9807,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,cold,generic_28x28x3x3x128_i8,Rocket,4,10294493.2,41177973,0,,,1.9721,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,cold,generic_14x14x3x3x256_i8,Rocket,6,5066674.5,30400047,0,,,1.4559,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,cold,matmul_196x256x1024_i8xi8xi32,Gemmini,5,2077699.6,10388498,256901120,24.7294,9.6599,0.4975,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,cold,generic_7x7x3x3x512_i8,Rocket,3,2522505.7,7567517,0,,,0.3624,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,cold,matmul_784x128x1152_i8xi8xi32,Gemmini,4,1762750.8,7051003,462422016,65.5824,25.6181,0.3377,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,cold,matmul_3136x64x576_i8xi8xi32,Gemmini,3,2163250.0,6489750,346816512,53.4407,20.8753,0.3108,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,cold,matmul_196x512x1024_i8xi8xi32,Gemmini,1,4268876.0,4268876,102760448,24.072,9.4031,0.2044,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,cold,matmul_784x128x512_i8xi8xi32,Gemmini,3,902755.7,2708267,154140672,56.9149,22.2324,0.1297,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,cold,matmul_3136x64x256_i8xi8xi32,Gemmini,2,1219567.0,2439134,102760448,42.1299,16.457,0.1168,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,cold,matmul_3136x128x256_i8xi8xi32,Gemmini,1,2261914.0,2261914,102760448,45.4307,17.7464,0.1083,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,cold,matmul_784x256x512_i8xi8xi32,Gemmini,1,1783517.0,1783517,102760448,57.6167,22.5065,0.0854,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,cold,matmul_1x1000x2048_i8xi8xi32,Gemmini,1,1094331.0,1094331,2048000,1.8715,0.731,0.0524,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,cold,matmul_3136x64x64_i8xi8xi32,Gemmini,1,752828.0,752828,12845056,17.0624,6.665,0.0361,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,warm1,matmul_3136x256x64_i8xi8xi32,Gemmini,4,123218857.2,492875429,205520896,0.417,0.1629,23.634,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,warm1,matmul_784x512x128_i8xi8xi32,Gemmini,4,61831815.8,247327263,205520896,0.831,0.3246,11.8597,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,warm1,matmul_196x1024x256_i8xi8xi32,Gemmini,6,36370312.8,218221877,308281344,1.4127,0.5518,10.464,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,warm1,matmul_49x512x4608_i8xi8xi32,Gemmini,3,65905929.7,197717789,346816512,1.7541,0.6852,9.4808,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,warm1,conv_64x56x56x3x3_f32,Rocket,1,128702974.0,128702974,0,,,6.1715,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,warm1,matmul_49x2048x512_i8xi8xi32,Gemmini,3,32495372.7,97486118,154140672,1.5812,0.6176,4.6746,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,warm1,matmul_784x512x256_i8xi8xi32,Gemmini,1,82866750.0,82866750,102760448,1.2401,0.4844,3.9736,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,warm1,matmul_49x2048x1024_i8xi8xi32,Gemmini,1,79626892.0,79626892,102760448,1.2905,0.5041,3.8182,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,warm1,matmul_12544x64x147_i8xi8xi32,Gemmini,1,62645621.0,62645621,118013952,1.8838,0.7359,3.0039,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,warm1,generic_56x56x3x3x64_i8,Rocket,3,20321720.0,60965160,0,,,2.9234,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,warm1,matmul_49x512x2048_i8xi8xi32,Gemmini,2,24360777.0,48721554,102760448,2.1091,0.8239,2.3363,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,warm1,matmul_196x1024x512_i8xi8xi32,Gemmini,1,45287069.0,45287069,102760448,2.2691,0.8864,2.1716,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,warm1,matmul_196x256x2304_i8xi8xi32,Gemmini,6,6889159.3,41334956,693633024,16.7808,6.555,1.9821,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,warm1,generic_28x28x3x3x128_i8,Rocket,4,10296134.8,41184539,0,,,1.9749,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,warm1,generic_14x14x3x3x256_i8,Rocket,6,5067221.3,30403328,0,,,1.4579,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,warm1,matmul_196x256x1024_i8xi8xi32,Gemmini,5,2076460.8,10382304,256901120,24.7441,9.6657,0.4978,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,warm1,generic_7x7x3x3x512_i8,Rocket,3,2522272.0,7566816,0,,,0.3628,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,warm1,matmul_784x128x1152_i8xi8xi32,Gemmini,4,1762368.2,7049473,462422016,65.5967,25.6237,0.338,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,warm1,matmul_3136x64x576_i8xi8xi32,Gemmini,3,2162618.3,6487855,346816512,53.4563,20.8814,0.3111,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,warm1,matmul_196x512x1024_i8xi8xi32,Gemmini,1,4276266.0,4276266,102760448,24.0304,9.3869,0.2051,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,warm1,matmul_784x128x512_i8xi8xi32,Gemmini,3,902920.3,2708761,154140672,56.9045,22.2283,0.1299,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,warm1,matmul_3136x64x256_i8xi8xi32,Gemmini,2,1224387.0,2448774,102760448,41.964,16.3922,0.1174,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,warm1,matmul_3136x128x256_i8xi8xi32,Gemmini,1,2266494.0,2266494,102760448,45.3389,17.7105,0.1087,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,warm1,matmul_784x256x512_i8xi8xi32,Gemmini,1,1787236.0,1787236,102760448,57.4969,22.4597,0.0857,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,warm1,matmul_1x1000x2048_i8xi8xi32,Gemmini,1,1091983.0,1091983,2048000,1.8755,0.7326,0.0524,runs/r2-resnetfx-trace/uartlog
+"ResNet-50 INT8 (ONNX QDQ, b1; fixW ResNet flag set)",resnetfx,warm1,matmul_3136x64x64_i8xi8xi32,Gemmini,1,751553.0,751553,12845056,17.0914,6.6763,0.036,runs/r2-resnetfx-trace/uartlog
+"TinyLlama-1.1B INT8 (torchao dyn, seq16)",tiny,cold,batch_matmul_1x16x32000x2048_f32,Rocket,1,10933636785.0,10933636785,1048576000,0.0959,0.0375,81.837,runs/r1-tiny-trace/uartlog
+"TinyLlama-1.1B INT8 (torchao dyn, seq16)",tiny,cold,matmul_16x5632x2048_i8xi8xi32,Gemmini,44,23311255.9,1025695261,8120172544,7.9167,3.0925,7.6772,runs/r1-tiny-trace/uartlog
+"TinyLlama-1.1B INT8 (torchao dyn, seq16)",tiny,cold,matmul_16x2048x5632_i8xi8xi32,Gemmini,22,15836892.5,348411636,4060086272,11.6531,4.552,2.6078,runs/r1-tiny-trace/uartlog
+"TinyLlama-1.1B INT8 (torchao dyn, seq16)",tiny,cold,matmul_16x2048x2048_i8xi8xi32,Gemmini,44,4485671.1,197369530,2952790016,14.9607,5.844,1.4773,runs/r1-tiny-trace/uartlog
+"TinyLlama-1.1B INT8 (torchao dyn, seq16)",tiny,cold,batch_matmul_32x16x64x16_f32,Rocket,22,5213578.4,114698725,11534336,0.1006,0.0393,0.8585,runs/r1-tiny-trace/uartlog
+"TinyLlama-1.1B INT8 (torchao dyn, seq16)",tiny,cold,batch_matmul_32x16x16x64_f32,Rocket,22,4779970.6,105159353,11534336,0.1097,0.0428,0.7871,runs/r1-tiny-trace/uartlog
+"TinyLlama-1.1B INT8 (torchao dyn, seq16)",tiny,cold,matmul_16x256x2048_i8xi8xi32,Gemmini,44,308888.0,13591070,369098752,27.1574,10.6084,0.1017,runs/r1-tiny-trace/uartlog
+"TinyLlama-1.1B INT8 (torchao dyn, seq16)",tiny,warm1,batch_matmul_1x16x32000x2048_f32,Rocket,1,10933754828.0,10933754828,1048576000,0.0959,0.0375,81.8447,runs/r1-tiny-trace/uartlog
+"TinyLlama-1.1B INT8 (torchao dyn, seq16)",tiny,warm1,matmul_16x5632x2048_i8xi8xi32,Gemmini,44,23310542.4,1025663867,8120172544,7.917,3.0926,7.6776,runs/r1-tiny-trace/uartlog
+"TinyLlama-1.1B INT8 (torchao dyn, seq16)",tiny,warm1,matmul_16x2048x5632_i8xi8xi32,Gemmini,22,15839695.8,348473307,4060086272,11.6511,4.5512,2.6085,runs/r1-tiny-trace/uartlog
+"TinyLlama-1.1B INT8 (torchao dyn, seq16)",tiny,warm1,matmul_16x2048x2048_i8xi8xi32,Gemmini,44,4481760.1,197197443,2952790016,14.9738,5.8491,1.4761,runs/r1-tiny-trace/uartlog
+"TinyLlama-1.1B INT8 (torchao dyn, seq16)",tiny,warm1,batch_matmul_32x16x64x16_f32,Rocket,22,5213275.2,114692055,11534336,0.1006,0.0393,0.8585,runs/r1-tiny-trace/uartlog
+"TinyLlama-1.1B INT8 (torchao dyn, seq16)",tiny,warm1,batch_matmul_32x16x16x64_f32,Rocket,22,4779703.5,105153478,11534336,0.1097,0.0428,0.7871,runs/r1-tiny-trace/uartlog
+"TinyLlama-1.1B INT8 (torchao dyn, seq16)",tiny,warm1,matmul_16x256x2048_i8xi8xi32,Gemmini,44,308797.3,13587082,369098752,27.1654,10.6115,0.1017,runs/r1-tiny-trace/uartlog

@@ -1,0 +1,55 @@
+{
+  "expf": {
+    "count": 5,
+    "first": [
+      ".type\texpf,@function",
+      ".type\tfrexpf,@function",
+      "call\tfrexpf",
+      ".type\tldexpf,@function",
+      ".type\t.promoted_doubles.expf,@object"
+    ]
+  },
+  "tanhf": {
+    "count": 0,
+    "first": []
+  },
+  "sqrtf": {
+    "count": 0,
+    "first": []
+  },
+  "erff": {
+    "count": 0,
+    "first": []
+  },
+  "exp": {
+    "count": 6,
+    "first": [
+      ".type\texpf,@function",
+      ".type\tfrexpf,@function",
+      "call\tfrexpf",
+      ".type\tldexpf,@function",
+      ".type\t__exp2f_data,@object",
+      ".type\t.promoted_doubles.expf,@object"
+    ]
+  },
+  "tanh": {
+    "count": 0,
+    "first": []
+  },
+  "sqrt": {
+    "count": 0,
+    "first": []
+  },
+  "logf": {
+    "count": 0,
+    "first": []
+  },
+  "__merlin": {
+    "count": 0,
+    "first": []
+  },
+  "vml": {
+    "count": 0,
+    "first": []
+  }
+}

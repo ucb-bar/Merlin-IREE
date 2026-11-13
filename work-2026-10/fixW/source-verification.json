@@ -1,0 +1,6 @@
+{
+  "native_diff": "source-vs-K.diff.log",
+  "expected_changed_or_added_paths": 30,
+  "unexpected_lines": [],
+  "pass": true
+}

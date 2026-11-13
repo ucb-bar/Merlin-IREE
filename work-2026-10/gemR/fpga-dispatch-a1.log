@@ -1,0 +1,27 @@
+fpga region: us-east-1 (manager i-<redacted>)
+uploaded /home/loren/work/runs/gemR/resnet50-gemR.elf (sha256 28c7afcf83f71018...) -> firesim-elfs/gemR-resnet50-20261027-a1.elf
+run gemR-resnet50-20261027-a1 dispatched (ssm command 53bcfe89-5c18-4eba-ac59-bb59a1e61a9b); this takes ~10-20 min + your workload
+[17:18:00] InProgress
+[17:36:19] Success
+== results: /home/loren/work/runs/gemR/fpga/gemR-resnet50-20261027-a1
+== uartlog (tail)
+LOGIT 998 00000000
+LOGIT 999 3f361685
+RESNET50_INT8_RESULT cycles=1760982669 max_abs=5.85761 max_index=0 errors=302 top1=0
+RESNET50_INT8_FAILED: /home/loren/work/runs/gemR/runner.c:209: DATA_LOSS; Gemmini output differs from INT8 QDQ golden
+
+*** FAILED *** (tohost = 1)
+
+Simulation complete.
+*** FAILED *** (code = 1) after 36647104202 cycles
+
+Emulation Performance Summary
+------------------------------
+Wallclock Time Elapsed: 617.0 s
+Host Frequency: 60.000 MHz
+Target Cycles Emulated: 36647104202
+Effective Target Frequency: 59.395 MHz
+FMR: 1.01
+Note: The latter three figures are based on the fastest target clock.
+
+Script done on 2026-10-27 17:36:01+00:00 [COMMAND_EXIT_CODE="1"]

@@ -1,0 +1,40 @@
+
+exec
+/bin/bash -lc "cat > runs/gemT/LIVE_HANDOFF.md <<'EOF'
+# Live state — 2026-10-27 18:03 UTC
+
+Task remains active until F2 result is collected and own F2 shutdown verified. User authorized dispatch and one infrastructure retry, at most2 attempts total. Do not spawn agents. Do not modify snapshot or other runs.
+
+Spike finished strict numerical FAIL (not infrastructure). ELF e3785f15d2d50df3185d614aa372e1272dcefb52315917afad55f74b478a5752 is fixed, uploaded. See REPORT.md, spike.metrics.json. One invoke;0 RVV;4,625,165,105 functional cycles; max_abs19.0520577431;511745 failures. Full raw readback in spike.output.bin.
+
+F2 attempt1: gemT-tinyllama-int8-20261027-a. Dispatch started17:20:43UTC; SSM e8906dd3-1398-4b72-9b63-45c88ad708f6 on manager i-<redacted>/us-east-1. hw_config confirmed f2_gemmini_rocket_ddr3llc_60mhz. max12h. Currently InProgress, no returned logs. Large1.5GB load expected long. Do not retry numerical failure. Retry once only diagnosed infrastructure failure.
+
+Local exec sessions:24873 watcher launched dispatch (bash dispatch_fpga.sh output fpga-dispatch.log);56988 collect_when_done.sh waits for == results: then runs finalize_fpga.py and fpga-status, saving fpga-analysis.log and fpga-status-after.log. Session94364 Spike completed. No need rerun build/Spike/dispatch.
+
+Next: poll tail fpga-dispatch.log; results under fpga/<runid>/, also s3://fsim-artifacts-<AWS_ACCOUNT_ID>/firesim-runs/<runid>/. AWS default credentials work; AWS_PROFILE=fpga does not exist here. fpga-status wrapper handles credentials automatically. Upon results inspect run.log and uartlog. finalize_fpga.py normalizes CRLF, checks all words against Spike, emits result-manifest.json plus metrics. Inspect FMR/wall/rdcycle evidence from logs; manual interpretation may be needed. Confirm own run absent from active fpga-status; do not interfere with others. Update REPORT.md current status and final hashes/manifest. Final answer must report honest numerics FAIL and hardware results with links.
+
+Monitoring commentary at least every60sec per developer. Each sleep currently50sec. No new actions pending except monitoring/result interpretation/possible infrastructure retry and final packaging.
+EOF" in /home/loren/work
+ succeeded in 0ms:
+exec
+/bin/bash -lc 'tail -3 runs/gemT/fpga-dispatch.log; date -u' in /home/loren/work
+ succeeded in 0ms:
+uploaded /home/loren/work/runs/gemT/build/tinyllama.elf (sha256 e3785f15d2d50df3...) -> firesim-elfs/gemT-tinyllama-int8-20261027-a.elf
+run gemT-tinyllama-int8-20261027-a dispatched (ssm command e8906dd3-1398-4b72-9b63-45c88ad708f6); this takes ~10-20 min + your workload
+[17:20:43] InProgress
+Tue Oct 27 18:03:52 UTC 2026
+
+codex
+F2 is still in progress. No result files have returned.
+
+exec
+/bin/bash -lc 'tail -3 runs/gemT/fpga-dispatch.log; aws s3 ls s3://fsim-artifacts-<AWS_ACCOUNT_ID>/firesim-runs/gemT-tinyllama-int8-20261027-a/ --recursive > runs/gemT/fpga-s3-progress.log 2>&1; head -4 runs/gemT/fpga-s3-progress.log; date -u' in /home/loren/work
+ succeeded in 672ms:
+uploaded /home/loren/work/runs/gemT/build/tinyllama.elf (sha256 e3785f15d2d50df3...) -> firesim-elfs/gemT-tinyllama-int8-20261027-a.elf
+run gemT-tinyllama-int8-20261027-a dispatched (ssm command e8906dd3-1398-4b72-9b63-45c88ad708f6); this takes ~10-20 min + your workload
+[17:20:43] InProgress
+Tue Oct 27 18:04:48 UTC 2026
+
+codex
+Attempt 1 remains active, about 44 minutes after dispatch. Hardware timing and readback are still pending.
+

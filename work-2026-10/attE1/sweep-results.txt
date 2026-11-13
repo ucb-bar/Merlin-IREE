@@ -1,0 +1,17 @@
+MATMUL_RESULT cycles=961037 macs=262144 instr_per_mac=3.666065216 output_hash=a973d8e1b68377cd
+MATMUL_RESULT cycles=961037 macs=262144 instr_per_mac=3.666065216 output_hash=a973d8e1b68377cd
+MATMUL_RESULT cycles=961037 macs=262144 instr_per_mac=3.666065216 output_hash=a973d8e1b68377cd
+MATMUL_RESULT cycles=961037 macs=262144 instr_per_mac=3.666065216 output_hash=a973d8e1b68377cd
+MATMUL_RESULT cycles=961037 macs=262144 instr_per_mac=3.666065216 output_hash=a973d8e1b68377cd
+opt0 COMPILE_FAIL
+opt3 COMPILE_FAIL
+globalopt3 COMPILE_FAIL
+MATMUL_RESULT cycles=961037 macs=262144 instr_per_mac=3.666065216 output_hash=a973d8e1b68377cd
+MATMUL_RESULT cycles=961037 macs=262144 instr_per_mac=3.666065216 output_hash=a973d8e1b68377cd
+MATMUL_RESULT cycles=961037 macs=262144 instr_per_mac=3.666065216 output_hash=a973d8e1b68377cd
+MATMUL_RESULT cycles=961037 macs=262144 instr_per_mac=3.666065216 output_hash=a973d8e1b68377cd
+MATMUL_RESULT cycles=961037 macs=262144 instr_per_mac=3.666065216 output_hash=a973d8e1b68377cd
+MATMUL_RESULT cycles=961037 macs=262144 instr_per_mac=3.666065216 output_hash=a973d8e1b68377cd
+MATMUL_RESULT cycles=961037 macs=262144 instr_per_mac=3.666065216 output_hash=a973d8e1b68377cd
+MATMUL_RESULT cycles=961037 macs=262144 instr_per_mac=3.666065216 output_hash=a973d8e1b68377cd
+MATMUL_RESULT cycles=961037 macs=262144 instr_per_mac=3.666065216 output_hash=a973d8e1b68377cd

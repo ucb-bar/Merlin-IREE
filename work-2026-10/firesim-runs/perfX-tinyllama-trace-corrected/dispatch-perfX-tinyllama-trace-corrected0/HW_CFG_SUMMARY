@@ -1,0 +1,6 @@
+RuntimeHWConfig: f2_gemmini_rocket_ddr3llc_60mhz
+DeployQuintuplet: None
+DeployMakefrag: None
+AGFI: agfi-02410ef1a8461b435
+Bitstream tar: None
+CustomRuntimeConf: None

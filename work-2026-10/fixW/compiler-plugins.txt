@@ -1,0 +1,7 @@
+Loaded plugins:
+  input_stablehlo
+  input_torch
+  input_tosa
+  hal_target_llvm_cpu
+  hal_target_local
+  gemmini

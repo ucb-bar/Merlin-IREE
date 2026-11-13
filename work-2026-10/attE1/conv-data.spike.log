@@ -1,0 +1,2 @@
+CONV_1x512x512x3_f768x16x16x3 vmfb=9735 bytes
+CONV_RESULT cycles=14675477595 macs=603979776 instr_per_mac=24.297961916 output_hash=234b45c146be1fef

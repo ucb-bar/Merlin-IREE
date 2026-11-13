@@ -1,0 +1,59 @@
+-- Testing: 9 tests, 1 workers --
+FAIL: fixW-gemmini :: unsupported-tile-layout.mlir (1 of 9)
+******************** TEST 'fixW-gemmini :: unsupported-tile-layout.mlir' FAILED ********************
+Exit Code: 1
+
+Command Output (stderr):
+--
+iree-opt /home/loren/work/runs/fixW/lit/unsupported-tile-layout.mlir --iree-plugin=gemmini --pass-pipeline='builtin.module(func.func(merlin-gemmini-legalize-for-llvm-export{loop-ws=true}))' > /home/loren/work/runs/fixW/lit-output/Output/unsupported-tile-layout.mlir.tmp 2>&1; test $? -ne 0 # RUN: at line 1
++ iree-opt /home/loren/work/runs/fixW/lit/unsupported-tile-layout.mlir --iree-plugin=gemmini '--pass-pipeline=builtin.module(func.func(merlin-gemmini-legalize-for-llvm-export{loop-ws=true}))'
++ test 1 -ne 0
+FileCheck /home/loren/work/runs/fixW/lit/unsupported-tile-layout.mlir < /home/loren/work/runs/fixW/lit-output/Output/unsupported-tile-layout.mlir.tmp # RUN: at line 2
++ FileCheck /home/loren/work/runs/fixW/lit/unsupported-tile-layout.mlir
+/home/loren/work/runs/fixW/lit/unsupported-tile-layout.mlir:3:11: error: CHECK: expected string not found in input
+// CHECK: requires static nonnegative row strides and unit inner strides
+          ^
+<stdin>:1:1: note: scanning from here
+/home/loren/work/runs/fixW/lit/unsupported-tile-layout.mlir:4:10: error: custom op 'func.func' expected valid '@'-identifier for symbol name
+^
+<stdin>:1:98: note: possible intended match here
+/home/loren/work/runs/fixW/lit/unsupported-tile-layout.mlir:4:10: error: custom op 'func.func' expected valid '@'-identifier for symbol name
+                                                                                                 ^
+
+Input file: <stdin>
+Check file: /home/loren/work/runs/fixW/lit/unsupported-tile-layout.mlir
+
+-dump-input=help explains the following input dump.
+
+Input was:
+<<<<<<
+           1: /home/loren/work/runs/fixW/lit/unsupported-tile-layout.mlir:4:10: error: custom op 'func.func' expected valid '@'-identifier for symbol name 
+check:3'0     X~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ error: no match found
+check:3'1                                                                                                      ?                                            possible intended match
+           2: func.func(merlin-gemmini-legalize-for-llvm-export{loop-ws=true}))' | FileCheck %s 
+check:3'0     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+           3:  ^ 
+check:3'0     ~~~
+>>>>>>
+
+--
+
+********************
+PASS: fixW-gemmini :: lower-tile-to-isa.mlir (2 of 9)
+PASS: fixW-gemmini :: bounded-output-tiles.mlir (3 of 9)
+PASS: fixW-gemmini :: strided-tile-addresses.mlir (4 of 9)
+PASS: fixW-gemmini :: native-int-mm.mlir (5 of 9)
+PASS: fixW-gemmini :: lower-tile-to-loop-ws.mlir (6 of 9)
+PASS: fixW-gemmini :: fuse-matmul-rescale.mlir (7 of 9)
+PASS: fixW-gemmini :: late-epilogue-views.mlir (8 of 9)
+PASS: fixW-gemmini :: matmul-lower-to-isa.mlir (9 of 9)
+********************
+Failed Tests (1):
+  fixW-gemmini :: unsupported-tile-layout.mlir
+
+
+Testing Time: 0.24s
+
+Total Discovered Tests: 9
+  Passed: 8 (88.89%)
+  Failed: 1 (11.11%)

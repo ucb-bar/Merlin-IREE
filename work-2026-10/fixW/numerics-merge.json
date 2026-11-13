@@ -1,0 +1,132 @@
+[
+  {
+    "path": "third_party/iree_bar/compiler/plugins/input/Torch/test/pytorch-cpu-kv-plugin.mlir",
+    "old_sha256": null,
+    "new_sha256": "6365e96e9b8a1bfbe4afc5f7b0f3c67b42f8199632505011bce75e882c8a9590"
+  },
+  {
+    "path": "third_party/iree_bar/compiler/plugins/input/Torch/torch-mlir/CMakeLists.txt",
+    "old_sha256": "f380f917bf343c83e58938591e5c1dbc038f798c006adaf9d85a8d38241beac9",
+    "new_sha256": "b2eca4e84e94288ec3024020e2f8d896e4e7518cacb450cecda8b4d8870eef70"
+  },
+  {
+    "path": "third_party/iree_bar/compiler/src/iree/compiler/Codegen/Common/AddFastMathFlags.cpp",
+    "old_sha256": "54f09137a8626132d4a9d799075559259897e049536afd7258bb0af80f41034d",
+    "new_sha256": "fdd70d7bc846f469c67c28c9f3e755019c53db1fceefbacd636bbf25e5b4d288"
+  },
+  {
+    "path": "third_party/iree_bar/compiler/src/iree/compiler/Codegen/Common/test/add_fmfs.mlir",
+    "old_sha256": "dc2ccfff0abefaec7653796550c0b2151196f8afc966a06987730b0e2e6e5330",
+    "new_sha256": "f13fac4bf1e19360fb3849f4c6955e556b594f2dd514ab1a5e7365c3ba9e64e5"
+  },
+  {
+    "path": "third_party/iree_bar/compiler/src/iree/compiler/Codegen/LLVMCPU/Passes.cpp",
+    "old_sha256": "3bb279510ab34d3964b1ab37bccce3c6a7bd4feeadf1cbb76587e64f6c0c36ef",
+    "new_sha256": "3f814f9e058bb5b8f287a123a4ad8db4af91ee389849ee0a5c66ea60b999d1d5"
+  },
+  {
+    "path": "third_party/iree_bar/third_party/torch-mlir/lib/Conversion/TorchToLinalg/Uncategorized.cpp",
+    "old_sha256": "642f81b6246df5a46a6774556ae2e89f9c6fb6021f1b2201742fbb7dc6d060f7",
+    "new_sha256": "e197ecc7f004e17655cb59dadb758f34c5f2c60247a28704d7b1b0d4067ab61e"
+  },
+  {
+    "path": "third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms/CMakeLists.txt",
+    "old_sha256": "10803042672df01eacb6e2977d844dbd8e4b61b68fc1a1808aa80b221c102d3e",
+    "new_sha256": "18043540624aeeef3519af53bfc069f70083586e22aad88ef15eff1b3b656979"
+  },
+  {
+    "path": "third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms/DecomposeComplexOps.cpp",
+    "old_sha256": "cf2c20f8bb6a44096c0bd332c8bf21395aa35ffdfd10fa6861a4866b81ec98db",
+    "new_sha256": "deaef457b8d557c2bbd71e9586ea2062b3582ef556914c7bb231de26dc1a845f"
+  },
+  {
+    "path": "third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms/PytorchCpuBf16Recipes.inc",
+    "old_sha256": null,
+    "new_sha256": "d8d5601d4e06e9ba6ca6bbbdc4d4ebe3204e50001a3d7916bbf4e9b37945558a"
+  },
+  {
+    "path": "third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms/PytorchCpuCompatibility.h",
+    "old_sha256": null,
+    "new_sha256": "369d7c873342090da4e129f801fe55003196eb034d63abbd270a712c700d9a07"
+  },
+  {
+    "path": "third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms/PytorchCpuConstantFold.h",
+    "old_sha256": null,
+    "new_sha256": "4f4f5859abf2f7f3dcd3ec4e7bfc4d330fd30172b640fb81b5f858b956aad7b5"
+  },
+  {
+    "path": "third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms/PytorchCpuDoubleTrig.inc",
+    "old_sha256": null,
+    "new_sha256": "bebc33fe060a0fc45abda169564b4a77924bcf88c859168a242d8751bd351603"
+  },
+  {
+    "path": "third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms/PytorchCpuExpTemplates.inc",
+    "old_sha256": null,
+    "new_sha256": "9c28fe2de45ed97cd960fd7f859ed75d9492d14f28faa0e91b33cbd8de23d0d4"
+  },
+  {
+    "path": "third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms/PytorchCpuFormulaFold.h",
+    "old_sha256": null,
+    "new_sha256": "016529b94251b133c182bb350426106fe88f051a7e4b518632880367dcfb6c17"
+  },
+  {
+    "path": "third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms/PytorchCpuKvRecipes.inc",
+    "old_sha256": null,
+    "new_sha256": "33d9caf7f6d0ac59177a2c9cbf143bfbde44dbf3fa8bdb398a36d6ce809debbb"
+  },
+  {
+    "path": "third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms/PytorchCpuMath.cpp",
+    "old_sha256": null,
+    "new_sha256": "e9e9238c8f38297dbef1ff836b5853e624772e327680887817a8c51c6c788ecc"
+  },
+  {
+    "path": "third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms/PytorchCpuRecipeProvenance.txt",
+    "old_sha256": null,
+    "new_sha256": "0f139ce21600c33931c735a0a5895e674f81fba80e5a72d68159add2d3ed8f21"
+  },
+  {
+    "path": "third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms/PytorchCpuSmol.h",
+    "old_sha256": null,
+    "new_sha256": "20c6360ad6d822716ccdebf817a688ef87733be2520561e3728bc791d080d503"
+  },
+  {
+    "path": "third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms/PytorchCpuSmolRecipes.inc",
+    "old_sha256": null,
+    "new_sha256": "2b060ed1753e99b9694ab16885f1af739b072eff691c0ae5af51db3003c0b94c"
+  },
+  {
+    "path": "third_party/iree_bar/third_party/torch-mlir/test/Conversion/TorchToLinalg/Inputs/bf16-opmath-numerics.py",
+    "old_sha256": null,
+    "new_sha256": "0a379ad8e92a43bdb875ec4dcf55d6ff8147a841007ddad5c561ef1b33bfb53d"
+  },
+  {
+    "path": "third_party/iree_bar/third_party/torch-mlir/test/Conversion/TorchToLinalg/bf16-scalar-opmath.mlir",
+    "old_sha256": null,
+    "new_sha256": "25798ab3a1ba987e50c8afc5eadb52256eaf53d4689e06b202a5c80557ce6a70"
+  },
+  {
+    "path": "third_party/iree_bar/third_party/torch-mlir/test/Dialect/Torch/Inputs/pytorch-cpu-numerics.py",
+    "old_sha256": null,
+    "new_sha256": "029eebe0296100719749d8b1e39350ff5b64eacc9ae9ceccd039a3839f09ca9c"
+  },
+  {
+    "path": "third_party/iree_bar/third_party/torch-mlir/test/Dialect/Torch/Inputs/pytorch-cpu-smol-fixtures.json",
+    "old_sha256": null,
+    "new_sha256": "db946658b9acdc70d47359bd1acace0ae26971215244a22d816c70231d749479"
+  },
+  {
+    "path": "third_party/iree_bar/third_party/torch-mlir/test/Dialect/Torch/Inputs/pytorch-cpu-smol.py",
+    "old_sha256": null,
+    "new_sha256": "7dc97697737c6467d66a18be216507d130ef49e8a7b6592f2ef842c3531deb26"
+  },
+  {
+    "path": "third_party/iree_bar/third_party/torch-mlir/test/Dialect/Torch/pytorch-cpu-numerics.mlir",
+    "old_sha256": null,
+    "new_sha256": "ba14943430580cfa3180b66e7c7d3a6c3256552b6480df92d029bc43e113bc8e"
+  },
+  {
+    "path": "third_party/iree_bar/third_party/torch-mlir/test/Dialect/Torch/pytorch-cpu-smol.mlir",
+    "old_sha256": null,
+    "new_sha256": "9720943013ad03647cbc5245971a832827fa53648b98671726af12b113a2c773"
+  }
+]

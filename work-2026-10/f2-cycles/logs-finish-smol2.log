@@ -1,0 +1,11 @@
+RC 0 END 2026-10-28T11:27:48Z
+dcd6273ae215fd49f212c77a128f36286c6ef667bc9a48851da36099128c781a  apps/smol/model.vmfb
+ok apps/smol
+10178 dispatches; 443 Gemmini
+==> logs/build-plain-smol.log <==
+3230671075798be399aa9923fe1554bcd00265e3693a67d2e0073a52edf7103a  /scratch/loren/f2cyc/build-plain/smol.elf
+
+==> logs/build-trace-smol.log <==
+51a8d79de44c38e2b177bf4f24c2ab7d00a040f879f305b959ab222e117b195a  /scratch/loren/f2cyc/build-trace/smol.elf
+submitted r1-smol-plain on ip-192-168-3-211 3230671075798be399aa9923fe1554bcd00265e3693a67d2e0073a52edf7103a prog.elf
+submitted r1-smol-trace on ip-192-168-3-251 51a8d79de44c38e2b177bf4f24c2ab7d00a040f879f305b959ab222e117b195a prog.elf

@@ -1,0 +1,17 @@
+{
+  "cycles": 864621908,
+  "total": 1000,
+  "finite": 1000,
+  "failed": 302,
+  "max_abs": 5.857609152793884,
+  "rmse": 0.9929053925767465,
+  "atol": 0.8,
+  "rtol": 0.1,
+  "top1": 0,
+  "golden_top1": 21,
+  "pass_gate": false,
+  "bit_equal_cpu": false,
+  "output_sha256": "30048da58c0fbec7786104fb4b56a9000286f31449e74840040dcdabd1da4fe3",
+  "historical_cycles": 939242971,
+  "cycle_ratio_vs_historical": 0.9205519069037569
+}

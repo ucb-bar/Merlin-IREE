@@ -1,0 +1,252 @@
+{
+  "anchor": "same occurrence rank of unchanged QK shape in graph order",
+  "qk_rank": 23,
+  "before": [
+    {
+      "name": "main$async_dispatch_1092_batch_matmul_12x256x512x64_f32",
+      "original_xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 926703,
+      "scaled_instructions": 355853952,
+      "category": "attention"
+    },
+    {
+      "name": "main$async_dispatch_1093_elementwise_1572864_f32",
+      "original_xyz": [
+        49152,
+        1,
+        1
+      ],
+      "onewg_instructions": 263613,
+      "scaled_instructions": 12957106176,
+      "category": "other_scalar"
+    },
+    {
+      "name": "main$async_dispatch_1094_elementwise_broadcast_49152_f32",
+      "original_xyz": [
+        1536,
+        1,
+        1
+      ],
+      "onewg_instructions": 4846,
+      "scaled_instructions": 7443456,
+      "category": "other_scalar"
+    },
+    {
+      "name": "main$async_dispatch_1095_elementwise_3072x8_f32",
+      "original_xyz": [
+        6,
+        1,
+        1
+      ],
+      "onewg_instructions": 27261,
+      "scaled_instructions": 163566,
+      "category": "other_scalar"
+    },
+    {
+      "name": "main$async_dispatch_1096_elementwise_3072x4_f32",
+      "original_xyz": [
+        3,
+        1,
+        1
+      ],
+      "onewg_instructions": 19582,
+      "scaled_instructions": 58746,
+      "category": "other_scalar"
+    },
+    {
+      "name": "main$async_dispatch_1097_elementwise_3072x2_f32",
+      "original_xyz": [
+        2,
+        1,
+        1
+      ],
+      "onewg_instructions": 24707,
+      "scaled_instructions": 49414,
+      "category": "other_scalar"
+    },
+    {
+      "name": "main$async_dispatch_1098_elementwise_12x256_f32",
+      "original_xyz": [
+        24,
+        1,
+        1
+      ],
+      "onewg_instructions": 1055686,
+      "scaled_instructions": 25336464,
+      "category": "other_scalar"
+    },
+    {
+      "name": "main$async_dispatch_1099_elementwise_broadcast_3072x64_f32",
+      "original_xyz": [
+        192,
+        1,
+        1
+      ],
+      "onewg_instructions": 14777922,
+      "scaled_instructions": 2837361024,
+      "category": "other_scalar"
+    }
+  ],
+  "after": [
+    {
+      "index": 1150,
+      "name": "main$async_dispatch_1150_batch_matmul_12x256x512x64_f32",
+      "ordinal": 1049,
+      "original_xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 927759,
+      "scaled_instructions": 356259456
+    },
+    {
+      "index": 1151,
+      "name": "main$async_dispatch_1151_elementwise_broadcast_3072_f32",
+      "ordinal": 1050,
+      "original_xyz": [
+        96,
+        1,
+        1
+      ],
+      "onewg_instructions": 131742,
+      "scaled_instructions": 12647232
+    },
+    {
+      "index": 1152,
+      "name": "main$async_dispatch_1152_elementwise_3072_f32",
+      "ordinal": 1051,
+      "original_xyz": [
+        1,
+        1,
+        1
+      ],
+      "onewg_instructions": 26200,
+      "scaled_instructions": 26200
+    },
+    {
+      "index": 1153,
+      "name": "main$async_dispatch_1153_elementwise_3072x512_f32",
+      "ordinal": 1052,
+      "original_xyz": [
+        384,
+        1,
+        1
+      ],
+      "onewg_instructions": 153406,
+      "scaled_instructions": 58907904
+    },
+    {
+      "index": 1154,
+      "name": "main$async_dispatch_1154_elementwise_broadcast_49152_f32",
+      "ordinal": 1053,
+      "original_xyz": [
+        1536,
+        1,
+        1
+      ],
+      "onewg_instructions": 4818,
+      "scaled_instructions": 7400448
+    },
+    {
+      "index": 1155,
+      "name": "main$async_dispatch_1155_elementwise_3072x8_f32",
+      "ordinal": 1054,
+      "original_xyz": [
+        6,
+        1,
+        1
+      ],
+      "onewg_instructions": 27229,
+      "scaled_instructions": 163374
+    },
+    {
+      "index": 1156,
+      "name": "main$async_dispatch_1156_elementwise_3072x4_f32",
+      "ordinal": 1055,
+      "original_xyz": [
+        3,
+        1,
+        1
+      ],
+      "onewg_instructions": 19552,
+      "scaled_instructions": 58656
+    },
+    {
+      "index": 1157,
+      "name": "main$async_dispatch_1157_elementwise_3072x2_f32",
+      "ordinal": 1056,
+      "original_xyz": [
+        2,
+        1,
+        1
+      ],
+      "onewg_instructions": 24677,
+      "scaled_instructions": 49354
+    },
+    {
+      "index": 1158,
+      "name": "main$async_dispatch_1158_elementwise_12x256_f32",
+      "ordinal": 1057,
+      "original_xyz": [
+        1,
+        1,
+        1
+      ],
+      "onewg_instructions": 318164,
+      "scaled_instructions": 318164
+    },
+    {
+      "index": 1159,
+      "name": "main$async_dispatch_1159_elementwise_3072x64_f32",
+      "ordinal": 1058,
+      "original_xyz": [
+        192,
+        1,
+        1
+      ],
+      "onewg_instructions": 3186544,
+      "scaled_instructions": 611816448
+    },
+    {
+      "index": 1160,
+      "name": "main$async_dispatch_1160_elementwise_3072x64_f32",
+      "ordinal": 1059,
+      "original_xyz": [
+        48,
+        1,
+        1
+      ],
+      "onewg_instructions": 16036,
+      "scaled_instructions": 769728
+    },
+    {
+      "index": 1161,
+      "name": "main$async_dispatch_259_slow_memcpy",
+      "ordinal": 567,
+      "original_xyz": [
+        48,
+        1,
+        1
+      ],
+      "onewg_instructions": 10935,
+      "scaled_instructions": 524880
+    },
+    {
+      "index": 1162,
+      "name": "main$async_dispatch_260_slow_memcpy",
+      "ordinal": 568,
+      "original_xyz": [
+        48,
+        1,
+        1
+      ],
+      "onewg_instructions": 10937,
+      "scaled_instructions": 524976
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+Error: Please prefix the command with 'sudo' or login as root
+Error: (-13) Permission denied
+Error: (-13) Permission denied
+Error: (-13) Permission denied

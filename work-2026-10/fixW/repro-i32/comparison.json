@@ -1,0 +1,16 @@
+{
+  "baseline": {
+    "exact": false,
+    "failed": 1277,
+    "max_abs": 4128,
+    "cycles": 31396,
+    "output_sha256": "af9ff517ad00e59dd18fa0727ea71405cd14608f7f593ecb1546c1d2c4b19aa8"
+  },
+  "fixed": {
+    "exact": true,
+    "failed": 0,
+    "max_abs": 0,
+    "cycles": 31516,
+    "output_sha256": "081bbc0aea31a9bec01c3fd0ad90d85eeaa9604fddd77468db7f2ae071435aa1"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "words": {
+    "host": 128,
+    "original": 128,
+    "table": 128
+  },
+  "original_host_bitwise": true,
+  "table_host_bitwise": true,
+  "instructions": {
+    "original": 3346444,
+    "table": 1184268
+  },
+  "ratio": 2.825748901431095,
+  "scaled_projection_after": 21830471609.405396
+}

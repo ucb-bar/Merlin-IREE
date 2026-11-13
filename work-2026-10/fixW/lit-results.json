@@ -1,0 +1,38 @@
+[
+  {
+    "name": "smol",
+    "opt_exit": 0,
+    "check_exit": 0,
+    "pass_test": true
+  },
+  {
+    "name": "cpu",
+    "opt_exit": 0,
+    "check_exit": 0,
+    "pass_test": true
+  },
+  {
+    "name": "mm-default",
+    "opt_exit": 0,
+    "check_exit": 0,
+    "pass_test": true
+  },
+  {
+    "name": "fmf",
+    "opt_exit": 0,
+    "check_exit": 0,
+    "pass_test": true
+  },
+  {
+    "name": "quant",
+    "opt_exit": 0,
+    "check_exit": 0,
+    "pass_test": true
+  },
+  {
+    "name": "gelu",
+    "opt_exit": 0,
+    "check_exit": 0,
+    "pass_test": true
+  }
+]

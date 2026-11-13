@@ -1,0 +1,60 @@
+[
+  {
+    "name": "baseline",
+    "dispatches": [
+      {
+        "name": "main$async_dispatch_0_elementwise_1572864_f32",
+        "onewg": 265996,
+        "xyz": [
+          49152,
+          1,
+          1
+        ],
+        "estimate": 13074235392,
+        "actual_full": 13068600344,
+        "relative_error": 0.0004311898636174255
+      }
+    ]
+  },
+  {
+    "name": "barrier",
+    "dispatches": [
+      {
+        "name": "main$async_dispatch_0_elementwise_broadcast_3072_f32",
+        "onewg": 132133,
+        "xyz": [
+          96,
+          1,
+          1
+        ],
+        "estimate": 12684768,
+        "actual_full": 12682650,
+        "relative_error": 0.00016699979893791914
+      },
+      {
+        "name": "main$async_dispatch_1_elementwise_broadcast_3072_f32",
+        "onewg": 132146,
+        "xyz": [
+          96,
+          1,
+          1
+        ],
+        "estimate": 12686016,
+        "actual_full": 12683225,
+        "relative_error": 0.00022005444198932054
+      },
+      {
+        "name": "main$async_dispatch_2_elementwise_3072x512_f32",
+        "onewg": 401196,
+        "xyz": [
+          384,
+          1,
+          1
+        ],
+        "estimate": 154059264,
+        "actual_full": 154044073,
+        "relative_error": 9.861463478701969e-05
+      }
+    ]
+  }
+]

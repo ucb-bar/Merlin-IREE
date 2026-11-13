@@ -1,0 +1,40 @@
+ succeeded in 0ms:
+SMOLVLA_INT8 inputs=11 outputs=1600 dim=16 bank_rows=2048 acc_rows=512 vmfb=545498167 bytes
+
+codex
+No new result or failure has appeared. The F2 watcher remains pending and will dispatch as soon as Spike reports completion.
+
+exec
+/bin/bash -lc 'tail -3 /home/loren/work/runs/gemV/spike.log; head -3 /home/loren/work/runs/gemV/spike-time.log; test ! -f /home/loren/work/runs/gemV/fpga-dispatch.log || tail -4 /home/loren/work/runs/gemV/fpga-dispatch.log; date -u' in /home/loren/work
+ succeeded in 0ms:
+SMOLVLA_INT8 inputs=11 outputs=1600 dim=16 bank_rows=2048 acc_rows=512 vmfb=545498167 bytes
+Tue Oct 27 18:01:32 UTC 2026
+
+codex
+Spike is still active with no stderr or output tensor. I’m continuing to monitor the single invocation.
+
+exec
+/bin/bash -lc 'tail -3 /home/loren/work/runs/gemV/spike.log; head -3 /home/loren/work/runs/gemV/spike-time.log; test ! -f /home/loren/work/runs/gemV/fpga-dispatch.log || tail -4 /home/loren/work/runs/gemV/fpga-dispatch.log' in /home/loren/work
+ succeeded in 0ms:
+SMOLVLA_INT8 inputs=11 outputs=1600 dim=16 bank_rows=2048 acc_rows=512 vmfb=545498167 bytes
+
+codex
+The run is still in progress. There is no new information in the log since the last check.
+
+exec
+/bin/bash -lc 'tail -3 /home/loren/work/runs/gemV/spike.log; head -3 /home/loren/work/runs/gemV/spike-time.log; test ! -f /home/loren/work/runs/gemV/fpga-dispatch.log || tail -4 /home/loren/work/runs/gemV/fpga-dispatch.log; date -u' in /home/loren/work
+ succeeded in 0ms:
+SMOLVLA_INT8 inputs=11 outputs=1600 dim=16 bank_rows=2048 acc_rows=512 vmfb=545498167 bytes
+Tue Oct 27 18:03:43 UTC 2026
+
+codex
+Spike remains active after roughly forty-eight minutes. The ELF and unchanged gate are preserved; F2 dispatch will follow completion.
+
+exec
+/bin/bash -lc 'tail -3 /home/loren/work/runs/gemV/spike.log; head -3 /home/loren/work/runs/gemV/spike-time.log; test ! -f /home/loren/work/runs/gemV/fpga-dispatch.log || tail -4 /home/loren/work/runs/gemV/fpga-dispatch.log' in /home/loren/work
+ succeeded in 0ms:
+SMOLVLA_INT8 inputs=11 outputs=1600 dim=16 bank_rows=2048 acc_rows=512 vmfb=545498167 bytes
+
+codex
+No result or trap has appeared. I’m continuing to wait for the timed invoke to finish.
+

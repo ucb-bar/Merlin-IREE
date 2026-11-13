@@ -1,0 +1,8 @@
+{
+  "dispatch_records": 17953,
+  "dispatch_by_dispatch_identical_to_smB": true,
+  "scaled_instruction_sum": 430334661263,
+  "smB_scaled_instruction_sum": 430334661263,
+  "sha256_json_perfsm3": "ed73c4e9f7238524b37ae7d9de0e9209b33ab8dbf8462a76934a454e1b90923e",
+  "sha256_json_smB": "ed73c4e9f7238524b37ae7d9de0e9209b33ab8dbf8462a76934a454e1b90923e"
+}

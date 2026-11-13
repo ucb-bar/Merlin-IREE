@@ -1,0 +1,18 @@
+[
+  {
+    "name": "pattern",
+    "elements": 1572864,
+    "finite": 1572864,
+    "different_bits": 149625,
+    "gate_failures": 0,
+    "max_abs": 5.960464477539063e-08
+  },
+  {
+    "name": "softmax",
+    "elements": 1270215,
+    "finite": 1270215,
+    "different_bits": 0,
+    "gate_failures": 0,
+    "max_abs": 0.0
+  }
+]

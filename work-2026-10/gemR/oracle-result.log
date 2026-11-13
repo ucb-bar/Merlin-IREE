@@ -1,0 +1,5 @@
+model_sha256=7a491fdefb8ffafe16ae030e05959bfd7bd48e93da0d9df43a984ffe1ca5bc56
+input_sha256=cf96680f3b1abed9505b1ed766a48c06572794a28c48e157a8569c3cc3b27233
+output_sha256=41dc5867e09c0c2747b145c392926053d34d9867566bdeb8b566d2e7c02d2b3b
+output_shape=(1, 1000) output_dtype=float32
+top1=21 optimization_levels_bit_exact=true

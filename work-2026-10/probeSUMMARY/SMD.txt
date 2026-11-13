@@ -1,0 +1,1 @@
+SMD: all17586 dispatches ranked; projection integer-offset-table Spike128/128 BITWISE vs original AND independent host fmaf,3.346444M->1.184268M(2.826x); estimated3projections61.687G->21.830G saves39.857G. Scripts runs/smD/rewrite_projection.py and rewrite_full_assembly.py; NOT fullELF integrated. FP32 QK102.483G remains above100G alone. REPORT runs/smD/REPORT.md.

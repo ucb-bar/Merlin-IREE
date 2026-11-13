@@ -1,0 +1,40 @@
+exec
+/bin/bash -lc 'tail -6 runs/fixN/logs/package-build.log; cat runs/fixN/final.tar.gz.sha256' in /home/loren/work
+ succeeded in 0ms:
+{
+  "files": 3720,
+  "archive_bytes": 256986754,
+  "sha256": "31d6e150fa5d3f6c566293310ed78ff8df8134556e235ed55ec43a789c57c1f5"
+}
+31d6e150fa5d3f6c566293310ed78ff8df8134556e235ed55ec43a789c57c1f5  final.tar.gz
+
+exec
+/bin/bash -lc 'taskset -c 68-75 python3 runs/fixN/verify_archive.py > runs/fixN/logs/archive-verification.log 2>&1' in /home/loren/work
+ succeeded in 11016ms:
+exec
+/bin/bash -lc "python3 - <<'PY'
+from pathlib import Path
+import json
+R=Path('runs/fixN');r=json.loads((R/'archive-verification.json').read_text());print({k:v for k,v in r.items() if k"'!='"'commands'});print((R/'final.tar.gz.sha256').read_text().strip());assert r['archive_sha256']==(R/'final.tar.gz.sha256').read_text().split()[0]
+PY" in /home/loren/work
+ succeeded in 0ms:
+{'archive_sha256': '31d6e150fa5d3f6c566293310ed78ff8df8134556e235ed55ec43a789c57c1f5', 'verified_files': 3719, 'all_hashes_pass': True, 'bundled_library_resolution': True, 'gemmini_registered': True, 'portable_compile_run_matmul': [19.0, 22.0, 43.0, 50.0]}
+31d6e150fa5d3f6c566293310ed78ff8df8134556e235ed55ec43a789c57c1f5  final.tar.gz
+
+codex
+Built and verified the final compiler. All requested gates pass; both smolVLA INT8 variants are bitwise exact. Gemmini coverage matches 54/0, 154/1, and 443/3.
+
+- [FINAL.md — results, build instructions, limitations](/home/loren/work/runs/fixN/FINAL.md)
+- [Consolidated patch](/home/loren/work/runs/fixN/merlin-iree-fixes.patch)
+- [Compiler and evidence archive](/home/loren/work/runs/fixN/final.tar.gz) · [SHA256](/home/loren/work/runs/fixN/final.tar.gz.sha256)
+
+Pinned math dependencies remain explicit. Gemmini validation is compile-only.
+tokens used
+303,701
+Built and verified the final compiler. All requested gates pass; both smolVLA INT8 variants are bitwise exact. Gemmini coverage matches 54/0, 154/1, and 443/3.
+
+- [FINAL.md — results, build instructions, limitations](/home/loren/work/runs/fixN/FINAL.md)
+- [Consolidated patch](/home/loren/work/runs/fixN/merlin-iree-fixes.patch)
+- [Compiler and evidence archive](/home/loren/work/runs/fixN/final.tar.gz) · [SHA256](/home/loren/work/runs/fixN/final.tar.gz.sha256)
+
+Pinned math dependencies remain explicit. Gemmini validation is compile-only.

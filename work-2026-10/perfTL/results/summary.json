@@ -1,0 +1,22 @@
+[
+  {
+    "model": "tinyllama",
+    "Spike_numerics": "PASS",
+    "Spike_trace_numerics": "PASS",
+    "FireSim_plain_cycles": 13362634591,
+    "FireSim_instrumented_cycles": 13360147904,
+    "instrumentation_overhead_percent": -0.018609256902635263,
+    "Spike_plain_cycles": 4751658908,
+    "Spike_instrumented_cycles": 4751696797,
+    "Gemmini_dispatch_busy_percent": 11.866454274247532,
+    "Rocket_scalar_dispatch_percent": 88.07170360349927,
+    "Gemmini_MAC_utilization_percent_estimate": 3.819615664359291,
+    "overall_MAC_utilization_percent_estimate": 0.4532529462631913,
+    "Gemmini_dispatches": 154,
+    "Rocket_scalar_dispatches": 1303,
+    "plain_trace_outputs_bitwise_equal": true,
+    "build_label": "NUMERICS PASS",
+    "numerics": "PASS",
+    "trace_numerics": "PASS"
+  }
+]

@@ -1,0 +1,28 @@
+Files runs/fixK/src/compiler/src/merlin/Dialect/Gemmini/Transforms/LegalizeForLLVMExport.cpp and runs/fixW/src/compiler/src/merlin/Dialect/Gemmini/Transforms/LegalizeForLLVMExport.cpp differ
+Files runs/fixK/src/compiler/src/merlin/Dialect/Gemmini/Transforms/tests/CMakeLists.txt and runs/fixW/src/compiler/src/merlin/Dialect/Gemmini/Transforms/tests/CMakeLists.txt differ
+Only in runs/fixW/src/compiler/src/merlin/Dialect/Gemmini/Transforms/tests: strided-tile-addresses.mlir
+Only in runs/fixW/src/compiler/src/merlin/Dialect/Gemmini/Transforms/tests: unsupported-tile-layout.mlir
+Only in runs/fixW/src/third_party/iree_bar/compiler/plugins/input/Torch: test
+Files runs/fixK/src/third_party/iree_bar/compiler/plugins/input/Torch/torch-mlir/CMakeLists.txt and runs/fixW/src/third_party/iree_bar/compiler/plugins/input/Torch/torch-mlir/CMakeLists.txt differ
+Files runs/fixK/src/third_party/iree_bar/compiler/src/iree/compiler/Codegen/Common/AddFastMathFlags.cpp and runs/fixW/src/third_party/iree_bar/compiler/src/iree/compiler/Codegen/Common/AddFastMathFlags.cpp differ
+Files runs/fixK/src/third_party/iree_bar/compiler/src/iree/compiler/Codegen/Common/test/add_fmfs.mlir and runs/fixW/src/third_party/iree_bar/compiler/src/iree/compiler/Codegen/Common/test/add_fmfs.mlir differ
+Files runs/fixK/src/third_party/iree_bar/compiler/src/iree/compiler/Codegen/LLVMCPU/Passes.cpp and runs/fixW/src/third_party/iree_bar/compiler/src/iree/compiler/Codegen/LLVMCPU/Passes.cpp differ
+Files runs/fixK/src/third_party/iree_bar/third_party/torch-mlir/lib/Conversion/TorchToLinalg/Uncategorized.cpp and runs/fixW/src/third_party/iree_bar/third_party/torch-mlir/lib/Conversion/TorchToLinalg/Uncategorized.cpp differ
+Files runs/fixK/src/third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms/CMakeLists.txt and runs/fixW/src/third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms/CMakeLists.txt differ
+Files runs/fixK/src/third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms/DecomposeComplexOps.cpp and runs/fixW/src/third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms/DecomposeComplexOps.cpp differ
+Only in runs/fixW/src/third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms: PytorchCpuBf16Recipes.inc
+Only in runs/fixW/src/third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms: PytorchCpuCompatibility.h
+Only in runs/fixW/src/third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms: PytorchCpuConstantFold.h
+Only in runs/fixW/src/third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms: PytorchCpuDoubleTrig.inc
+Only in runs/fixW/src/third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms: PytorchCpuExpTemplates.inc
+Only in runs/fixW/src/third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms: PytorchCpuFormulaFold.h
+Only in runs/fixW/src/third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms: PytorchCpuKvRecipes.inc
+Only in runs/fixW/src/third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms: PytorchCpuMath.cpp
+Only in runs/fixW/src/third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms: PytorchCpuRecipeProvenance.txt
+Only in runs/fixW/src/third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms: PytorchCpuSmol.h
+Only in runs/fixW/src/third_party/iree_bar/third_party/torch-mlir/lib/Dialect/Torch/Transforms: PytorchCpuSmolRecipes.inc
+Only in runs/fixW/src/third_party/iree_bar/third_party/torch-mlir/test/Conversion/TorchToLinalg: Inputs
+Only in runs/fixW/src/third_party/iree_bar/third_party/torch-mlir/test/Conversion/TorchToLinalg: bf16-scalar-opmath.mlir
+Only in runs/fixW/src/third_party/iree_bar/third_party/torch-mlir/test/Dialect/Torch: Inputs
+Only in runs/fixW/src/third_party/iree_bar/third_party/torch-mlir/test/Dialect/Torch: pytorch-cpu-numerics.mlir
+Only in runs/fixW/src/third_party/iree_bar/third_party/torch-mlir/test/Dialect/Torch: pytorch-cpu-smol.mlir

@@ -1,0 +1,396 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether make sets $(MAKE)... (cached) yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether the compiler is clang... no
+checking for compiler option needed when checking for declarations... none
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... none
+checking how to run the C preprocessor... gcc -E
+checking for strip... /usr/bin/strip
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for sys/param.h... yes
+checking for sys/socket.h... yes
+checking for error.h... yes
+checking for limits.h... yes
+checking for sys/time.h... yes
+checking for stdbool.h... yes
+checking for stdckdint.h... no
+checking for features.h... yes
+checking for crtdefs.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for egrep -e... /usr/bin/grep -E
+checking for Minix Amsterdam compiler... no
+checking for ar... ar
+checking for ranlib... ranlib
+checking for gcc option to support large files... none needed
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... /usr/bin/strip
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for ld... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking 32-bit host C ABI... no
+checking for shared library path variable... LD_LIBRARY_PATH
+checking whether to activate relocatable installation... no
+checking how to copy files... cp -p
+checking how to make hard links... ln
+checking whether ln -s works... yes
+checking for windres... no
+checking whether the -Werror option is usable... yes
+checking for simple visibility declarations... yes
+checking for shared library run path origin... done
+checking for ELF binary format... yes
+checking for the common suffixes of directories in the library search path... lib,lib,lib64
+checking for iconv... yes
+checking for working iconv... yes
+checking whether iconv is compatible with its POSIX signature... yes
+checking whether NLS is requested... yes
+checking for msgfmt... no
+checking for gmsgfmt... :
+checking for xgettext... no
+checking for msgmerge... no
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyPreferredLanguages... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for mbstate_t... yes
+checking for getc_unlocked... yes
+checking for mbrtowc... yes
+checking for wcrtomb... yes
+checking for mbsinit... yes
+checking for setlocale... yes
+checking whether <wchar.h> is standalone... yes
+checking for memmove... yes
+checking for nl_langinfo and CODESET... yes
+checking for symlink... yes
+checking for canonicalize_file_name... yes
+checking for realpath... yes
+checking for lstat... yes
+checking for _set_invalid_parameter_handler... no
+checking for fcntl... yes
+checking for getdtablesize... yes
+checking for getexecname... no
+checking for readlink... yes
+checking for setenv... yes
+checking for working fcntl.h... yes
+checking for wchar.h... (cached) yes
+checking for EILSEQ... yes
+checking whether byte ordering is bigendian... no
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking whether the preprocessor supports include_next... yes
+checking whether source code line length is unlimited... yes
+checking whether lstat correctly handles trailing slash... yes
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether // is distinct from /... no
+checking whether realpath works... yes
+checking for faccessat... yes
+checking for getcwd... yes
+checking for C/C++ restrict keyword... __restrict__
+checking if environ is properly declared... yes
+checking for complete errno.h... yes
+checking for error... yes
+checking whether error_at_line is declared... yes
+checking for error_at_line... yes
+checking for working error function... yes
+checking whether strerror_r is declared... yes
+checking whether strerror_r returns char *... yes
+checking whether ctype.h defines __header_inline... no
+checking for pid_t... yes
+checking for mode_t... yes
+checking whether stat file-mode macros are broken... no
+checking for nlink_t... yes
+checking whether getdtablesize is declared... yes
+checking whether limits.h has WORD_BIT, BOOL_WIDTH etc.... yes
+checking whether limits.h has SSIZE_MAX... yes
+checking for wint_t... yes
+checking whether wint_t is large enough... yes
+checking whether the compiler produces multi-arch binaries... no
+checking whether stdint.h conforms to C99... yes
+checking whether stdint.h works without ISO C predefines... yes
+checking whether stdint.h has UINTMAX_WIDTH etc.... yes
+checking whether malloc is ptrdiff_t safe... yes
+checking whether malloc, realloc, calloc set errno on failure... yes
+checking whether malloc (0) returns nonnull... yes
+checking whether <limits.h> defines MIN and MAX... no
+checking whether <sys/param.h> defines MIN and MAX... yes
+checking for O_CLOEXEC... yes
+checking for promoted mode_t type... mode_t
+checking for sigset_t... yes
+checking for SIGPIPE... yes
+checking whether realloc should abort upon undefined behaviour... no
+checking whether setenv is declared... yes
+checking whether _putenv is declared... no
+checking for ssize_t... yes
+checking for uid_t... yes
+checking for gid_t... yes
+checking for volatile sig_atomic_t... yes
+checking for sighandler_t... yes
+checking whether C symbols are prefixed with underscore at the linker level... no
+checking for good max_align_t... yes
+checking whether NULL can be used in arbitrary expressions... yes
+checking for unreachable... no
+checking whether nullptr_t needs <stddef.h>... no
+checking for clean definition of __STDC_VERSION_STDDEF_H__... yes
+checking whether fcloseall is declared... yes
+checking whether getw is declared... yes
+checking whether putw is declared... yes
+checking which flavor of printf attribute matches inttypes macros... system
+checking for an english Unicode locale... en_US.UTF-8
+checking whether ecvt is declared... yes
+checking whether fcvt is declared... yes
+checking whether gcvt is declared... yes
+checking whether MB_CUR_MAX is correct... yes
+checking whether strerror(0) succeeds... yes
+checking for off64_t... yes
+checking for struct timespec in <time.h>... yes
+checking for TIME_UTC in <time.h>... yes
+checking whether execvpe is declared... yes
+checking whether clearerr_unlocked is declared... yes
+checking whether feof_unlocked is declared... yes
+checking whether ferror_unlocked is declared... yes
+checking whether fflush_unlocked is declared... yes
+checking whether fgets_unlocked is declared... yes
+checking whether fputc_unlocked is declared... yes
+checking whether fputs_unlocked is declared... yes
+checking whether fread_unlocked is declared... yes
+checking whether fwrite_unlocked is declared... yes
+checking whether getc_unlocked is declared... yes
+checking whether getchar_unlocked is declared... yes
+checking whether putc_unlocked is declared... yes
+checking whether putchar_unlocked is declared... yes
+checking whether <wchar.h> uses 'inline' correctly... yes
+checking whether wcsdup is declared... yes
+checking for C compiler option to allow warnings... -Wno-error
+checking for alignas and alignof... yes, <stdalign.h> macros
+checking for static_assert... yes, an <assert.h> macro
+checking for __builtin_expect... yes
+checking for readlinkat... yes
+checking whether // is distinct from /... (cached) no
+checking whether dup2 works... yes
+checking whether fcntl handles F_DUPFD correctly... yes
+checking whether fcntl understands F_DUPFD_CLOEXEC... needs runtime check
+checking whether free is known to preserve errno... yes
+checking whether getdtablesize works... yes
+checking for getprogname... no
+checking whether program_invocation_name is declared... yes
+checking whether program_invocation_name is declared... (cached) yes
+checking whether program_invocation_short_name is declared... yes
+checking whether __argv is declared... no
+checking whether the -Werror option is usable... (cached) yes
+checking for simple visibility declarations... (cached) yes
+checking whether the compiler supports the __inline keyword... yes
+checking for mbstate_t... (cached) yes
+checking for mempcpy... yes
+checking whether open recognizes a trailing slash... yes
+checking whether program_invocation_name is declared... (cached) yes
+checking whether program_invocation_short_name is declared... (cached) yes
+checking for raise... yes
+checking for sigprocmask... yes
+checking for rawmemchr... yes
+checking whether readlink signature is correct... yes
+checking whether readlink handles trailing slash correctly... yes
+checking whether readlink truncates results correctly... yes
+checking whether realloc (..., 0) returns nonnull... no
+checking for faccessat... (cached) yes
+checking for getcwd... (cached) yes
+checking whether free is known to preserve errno... (cached) yes
+checking for mempcpy... (cached) yes
+checking for rawmemchr... (cached) yes
+checking for search.h... yes
+checking for tsearch... yes
+checking for sigprocmask... (cached) yes
+checking for ssize_t... (cached) yes
+checking whether stat handles trailing slashes on files... yes
+checking for struct stat.st_atim.tv_nsec... yes
+checking whether struct stat.st_atim is of type struct timespec... yes
+checking for struct stat.st_birthtimespec.tv_nsec... no
+checking for struct stat.st_birthtimensec... no
+checking for struct stat.st_birthtim.tv_nsec... no
+checking for bool, true, false... no
+checking for working strerror function... yes
+checking for variable-length arrays... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating lib/Makefile
+config.status: creating srclib/Makefile
+config.status: creating src/Makefile
+config.status: creating po/Makefile.in
+config.status: creating man/Makefile
+config.status: creating tests/Makefile
+config.status: creating include/iconv.h
+config.status: creating include/iconv.h.inst
+config.status: creating config.h
+config.status: creating lib/config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+=== configuring in libcharset (/home/loren/work/runs/gemR/libiconv-1.18/libcharset)
+configure: running /bin/bash ./configure --disable-option-checking '--prefix=/home/loren/work/runs/gemR/deps'  --cache-file=/dev/null --srcdir=.
+checking whether make sets $(MAKE)... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking how to run the C preprocessor... gcc -E
+checking for a BSD-compatible install... /usr/bin/install -c
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... ranlib
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for gawk... gawk
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for ld... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking 32-bit host C ABI... no
+checking for shared library path variable... LD_LIBRARY_PATH
+checking whether to activate relocatable installation... no
+checking whether the -Werror option is usable... yes
+checking for simple visibility declarations... yes
+checking for nl_langinfo and CODESET... yes
+checking for symlink... yes
+checking for working fcntl.h... no
+checking for setlocale... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating lib/Makefile
+config.status: creating include/libcharset.h
+config.status: creating include/libcharset.h.inst
+config.status: creating include/localcharset.h
+config.status: creating include/localcharset.h.inst
+config.status: creating config.h
+config.status: executing libtool commands

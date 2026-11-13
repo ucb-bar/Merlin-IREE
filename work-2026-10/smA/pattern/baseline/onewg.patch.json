@@ -1,0 +1,22 @@
+{
+  "source": "/home/loren/work/runs/smA/pattern/baseline/probe.elf",
+  "source_sha256": "dfacd597364f480d5fd4cf691d12b91d6adc85fcba8882059acc8a0d7eae9a9e",
+  "changes": [
+    {
+      "offset": 5068,
+      "before": "0xc62a03",
+      "after": "0x100a13"
+    },
+    {
+      "offset": 5072,
+      "before": "0x1062a83",
+      "after": "0x100a93"
+    },
+    {
+      "offset": 5076,
+      "before": "0x1465b03",
+      "after": "0x100b13"
+    }
+  ],
+  "meaning": "DIAGNOSTIC ONLY altered computation; not numerical inference; scale intervals using original VM bytecode counts"
+}

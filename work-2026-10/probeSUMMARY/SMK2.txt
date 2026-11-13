@@ -1,0 +1,5 @@
+ATTENTION / CLEANUP FAILED — SMK2 — 2026-10-27 22:19:51 UTC
+zSM-smolvla-plain-retry1 F2 i-<redacted> REMAINS RUNNING in us-east-1 after ten-minute observation (22:09:51–22:19:51 UTC; 11 successful exact-filter EC2 checks).
+The authorized local dispatch wrapper is absent. Host /proc exact argv inspection via tmux found eligible []; no SIGINT could be sent. Additional host pgrep found only inspection command wrappers. No alternate cancellation method used, per user instruction. No direct SSM cancellation or EC2 stop/terminate, no session kills, no other process/F2 targeted. Both TinyLlama runs untouched.
+Final fpga-status exits 0 and still lists retry active. Last exact pending/running EC2 query exits 0 and confirms running. Cancellation NOT achieved. Outstanding running F2 requires owner attention under separately authorized action.
+Exact commands, versions and evidence: /home/loren/work/runs/smK2/REPORT.md; cancel-exact.log; monitor.log; poll-10.json; status-final.txt.
